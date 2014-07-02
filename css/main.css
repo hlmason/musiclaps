@@ -6,14 +6,14 @@ html, body {
 }
 
 body {
-	/*background-color: lightgray;*/
+	background-color: white;
 	color: #555;
 	font-family: 'Arial', sans-serif; 
 }
-#background {
+/*#background {
   background-image: url("../img/background.gif");
   background-repeat: repeat;
-}
+}*/
 
 /* ===================================
     Nav
@@ -23,14 +23,21 @@ nav {
 	text-transform: uppercase;
 	width: 90%;
 }
+nav > a {
+	float: left;
+}
 nav li {
 	border-left: 1px solid #555;
 	display: inline-block;
 	float: right;
 	line-height: 0;
+	margin-top: 20px;
 	padding: 1.5% 2%;
 }
-nav a:link {
+nav li:last-child {
+	border-left: none;
+}
+nav a:link:not(#logo) {
 	color: #333;
 	padding: 10px;
 	text-decoration: none;
@@ -40,25 +47,46 @@ nav a:visited {
 	color: #333;
 }
 nav a:hover, nav a:focus {
-	color: #000;
-	font-weight: bold;
-}
-nav > a {
-	float: left;
+	color: black;
+	text-decoration: underline !important;
 }
 
 /* ===================================
     Landing Page
 =================================== */
-section {
-	background-color: cyan;
-	height: 500px;
-	margin-top: 15px;
-	z-index: -1;
-}
 h1 {
-	margin: 0 auto;
+	font-family: 'Roboto Condensed', sans-serif;
+	left: 25%;
+	position: absolute;
+}
+#landing-page-photo {
+	background-color: lightgray;
+	height: 400px;
 	text-align: center;
+}
+#stage-top, #stage-bottom {
+	background-color: black;
+}
+#stage-top {
+	height: 151px;
+	margin: -33px auto 0;
+	width: 90%;
+}
+#stage-bottom {
+	height: 99px;
+}
+#stage-bottom ul {
+	margin-top: 0;
+	position: absolute;
+}
+#stage-top a, #stage-bottom li {
+	display: inline-block;
+}
+#stage-top a:first-child {
+	float: left;
+}
+#stage-top a:last-child {
+	float: right;
 }
 
 /* ===================================
@@ -76,16 +104,16 @@ footer {
 #wrapper {
 	height: auto !important;
 	height: 100%;
-	margin: 0 0 -35px;
+	margin: 0 0 -25px;
 	min-height: 100%;
 }
 #content-wrapper {
 	min-width: 94.2%;
-	padding: 0 0 35px;
+	padding: 0 0 25px;
 }
 #footer-wrapper {
 	background-color: #333;
-	height: 35px;
+	height: 25px;
 	min-width: 94.2%;
 }
 #footer-inner-wrapper, #content-inner-wrapper {
