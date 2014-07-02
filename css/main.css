@@ -1,0 +1,93 @@
+/* ===================================
+    Global
+=================================== */
+html, body {
+	height: 100%;
+}
+
+body {
+	/*background-color: lightgray;*/
+	color: #555;
+	font-family: 'Arial', sans-serif; 
+}
+#background {
+  background-image: url("../img/background.gif");
+  background-repeat: repeat;
+}
+
+/* ===================================
+    Nav
+=================================== */
+nav {
+	margin: 0 auto;
+	text-transform: uppercase;
+	width: 90%;
+}
+nav li {
+	border-left: 1px solid #555;
+	display: inline-block;
+	float: right;
+	line-height: 0;
+	padding: 1.5% 2%;
+}
+nav a:link {
+	color: #333;
+	padding: 10px;
+	text-decoration: none;
+   	vertical-align: middle; 
+}
+nav a:visited {
+	color: #333;
+}
+nav a:hover, nav a:focus {
+	color: #000;
+	font-weight: bold;
+}
+nav > a {
+	float: left;
+}
+
+/* ===================================
+    Landing Page
+=================================== */
+section {
+	background-color: cyan;
+	height: 500px;
+	margin-top: 15px;
+	z-index: -1;
+}
+h1 {
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* ===================================
+    Footer
+=================================== */
+footer {
+	font-size: 14px;
+	margin: 0 auto;
+	text-transform: uppercase;
+	width: 90%;
+}
+#wrapper, #content-wrapper, #footer-wrapper, #footer-inner-wrapper, #content-inner-wrapper {
+	width: 100%;
+}
+#wrapper {
+	height: auto !important;
+	height: 100%;
+	margin: 0 0 -35px;
+	min-height: 100%;
+}
+#content-wrapper {
+	min-width: 94.2%;
+	padding: 0 0 35px;
+}
+#footer-wrapper {
+	background-color: #333;
+	height: 35px;
+	min-width: 94.2%;
+}
+#footer-inner-wrapper, #content-inner-wrapper {
+	margin: 0 auto;
+}
