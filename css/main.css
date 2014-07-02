@@ -31,7 +31,7 @@ nav li {
 	display: inline-block;
 	float: right;
 	line-height: 0;
-	margin-top: 20px;
+	margin-top: 25px;
 	padding: 1.5% 2%;
 }
 nav li:last-child {
@@ -54,39 +54,42 @@ nav a:hover, nav a:focus {
 /* ===================================
     Landing Page
 =================================== */
-h1 {
-	font-family: 'Roboto Condensed', sans-serif;
-	left: 25%;
-	position: absolute;
-}
 #landing-page-photo {
 	background-color: lightgray;
 	height: 400px;
 	text-align: center;
+}
+h1 {
+	font-family: 'Roboto Condensed', sans-serif;
+	left: 25%;
+	position: absolute;
 }
 #stage-top, #stage-bottom {
 	background-color: black;
 }
 #stage-top {
 	height: 151px;
-	margin: -33px auto 0;
+	margin: -56px auto 0;
 	width: 90%;
-}
-#stage-bottom {
-	height: 99px;
-}
-#stage-bottom ul {
-	margin-top: 0;
-	position: absolute;
-}
-#stage-top a, #stage-bottom li {
-	display: inline-block;
 }
 #stage-top a:first-child {
 	float: left;
 }
 #stage-top a:last-child {
 	float: right;
+}
+#stage-bottom {
+	height: 130px;
+	text-align: center;
+}
+#stage-bottom ul {
+	margin-top: -100px;
+	padding-left: 0;
+	/*top: 0;*/
+	/*position: absolute;*/
+}
+#stage-top a, #stage-bottom li {
+	display: inline-block;
 }
 
 /* ===================================
