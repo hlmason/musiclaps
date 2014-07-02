@@ -8,12 +8,13 @@ html, body {
 body {
 	background-color: white;
 	color: #555;
-	font-family: 'Arial', sans-serif; 
+	font-family: 'Roboto', sans-serif; 
 }
 /*#background {
   background-image: url("../img/background.gif");
   background-repeat: repeat;
 }*/
+ul { padding-left: 0;}
 
 /* ===================================
     Nav
@@ -59,7 +60,7 @@ nav a:hover, nav a:focus {
 	height: 400px;
 	text-align: center;
 }
-h1 {
+#landing-page-photo h1 {
 	font-family: 'Roboto Condensed', sans-serif;
 	left: 27.5%;
 	position: absolute;
@@ -137,3 +138,28 @@ footer {
 #footer-inner-wrapper, #content-inner-wrapper {
 	margin: 0 auto;
 }
+
+/* ===================================
+    Media Queries
+=================================== */
+@media only screen and (max-width: 1092px) {
+/* 1st breaking point of record button */
+	#stage-bottom img { max-width: 70% }
+	#stage-bottom li { padding: 0; }
+}
+@media only screen and (max-width: 1022px) {
+/* Breaking point of nav */
+	nav ul { float: left; margin-left: -13px; margin-top: 0; }
+	nav li { margin-top: 0; }
+	#landing-page-photo h1 { position: relative; float: left; }
+}
+@media only screen and (max-width: 973px) {
+/* 2nd breaking point of record button */
+	#stage-top img { max-width: 80%; }
+	#stage-bottom ul { margin-right: 30px; margin-top: -105px; }
+}
+/*@media only screen and (max-width: 933px) {
+ 3rd breaking point of record button 
+	#stage-top img { max-width: 80%; }
+	#stage-bottom ul { margin-right: 30px; margin-top: -105px; }
+}*/
