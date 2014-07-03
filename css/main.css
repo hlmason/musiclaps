@@ -42,6 +42,9 @@ ul {
 .navbar-toggle {
 	margin-top: 29px;
 }
+.navbar-collapse {
+	border-top: none;
+}
 
 /* ===================================
     Landing Page
@@ -158,8 +161,14 @@ ul {
 	#stage-top img { max-width: 80%; }
 	#stage-bottom ul { margin-right: 30px; margin-top: -105px; }
 }*/
+@media only screen and (max-width: 768px) {
+/* Breaking point of logo */
+	.navbar-right { margin-top: 0; }
+	.navbar li:hover, .navbar li:focus { background-color: lightgray !important; width: 100%;}
+}
 @media only screen and (max-width: 513px) {
 /* Breaking point of logo */
+	body { padding-top: 60px; }
 	.navbar-brand img { width: 215px; }
 	.navbar-toggle { margin-top: 10px; }
 }
