@@ -5,7 +5,6 @@ html, body {
 	height: 100%;
 }
 body {
-	/*color: #555;*/
 	font-family: 'Roboto', sans-serif;
 	padding-top: 120px; 
 }
@@ -23,6 +22,7 @@ ul {
     Nav
 =================================== */
 .navbar-default {
+	background-color: #fff; /* Also controls footer color */
 	border: none;
 	text-transform: uppercase;
 }
@@ -49,18 +49,18 @@ ul {
 /* ===================================
     Landing Page
 =================================== */
-#landing-page-photo {
+#landing-page-photo-frame, #landing-page-photo {
 	background-color: lightgray;
+	height: 20px;
+}
+#landing-page-photo {
 	height: 400px;
 	text-align: center;
 }
 #landing-page-photo h1 {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 32px;
-	font-weight: bold;
-	left: 27.5%;
-	line-height: 130%;
-	position: absolute;
+	margin-top: 0;
 }
 #stage-top, #stage-bottom {
 	background-color: black;
@@ -109,66 +109,63 @@ ul {
 /* ===================================
     Footer
 =================================== */
-/*footer {
-	font-size: 14px;
-	margin: 0 auto;
-	text-transform: uppercase;
-	width: 90%;
-}
-#wrapper, #content-wrapper, #footer-wrapper, #footer-inner-wrapper, #content-inner-wrapper {
-	width: 100%;
-}
 #wrapper {
-	height: auto !important;
-	height: 100%;
-	margin: 0 0 -25px;
-	min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -50px; 
+    min-height: 100%;
 }
-#content-wrapper {
-	min-width: 94.2%;
-	padding: 0 0 25px;
+.space-above-footer {
+	height: 100px;
 }
-#footer-wrapper {
-	background-color: #333;
-	height: 25px;
-	min-width: 94.2%;
+footer {
+	/*background-color: lightgray !important;*/
 }
-#footer-inner-wrapper, #content-inner-wrapper {
-	margin: 0 auto;
+footer a {
+	font-size: 12px !important;
+	letter-spacing: 1px;
 }
-*/
+footer a:hover, footer a:focus {
+	text-decoration: none;
+}
+
 /* ===================================
     Media Queries
 =================================== */
 @media only screen and (max-width: 1092px) {
-/* 1st breaking point of record button */
+/* 1st breakpoint of record button */
 	#stage-bottom img { max-width: 70% }
 	#stage-bottom li { padding: 0; }
 }
 @media only screen and (max-width: 991px) {
-/* Breaking point of nav */
+/* Breakpoint of nav */
 	.navbar-right { margin-top: 25px; }
-	.nav a { padding-left: 0 !important; } 
-	/*#landing-page-photo h1 { position: relative; float: left; }*/
+	.nav li { border-left: none; margin-top: 10px; }
+	.nav a { padding-left: 0 !important; }
+	#landing-page-photo-frame { height: 35px; } 
 }
 @media only screen and (max-width: 973px) {
-/* 2nd breaking point of record button */
+/* 2nd breakpoint of record button */
 	#stage-top img { max-width: 80%; }
 	#stage-bottom ul { margin-right: 30px; margin-top: -105px; }
 }
 /*@media only screen and (max-width: 933px) {
- 3rd breaking point of record button 
+ 3rd breakpoint of record button 
 	#stage-top img { max-width: 80%; }
 	#stage-bottom ul { margin-right: 30px; margin-top: -105px; }
 }*/
 @media only screen and (max-width: 768px) {
-/* Breaking point of logo */
-	.navbar-right { margin-top: 0; }
+/* Breakpoint of Bootstrap's menu icon */
 	.navbar li:hover, .navbar li:focus { background-color: lightgray !important; width: 100%;}
 }
+@media only screen and (max-width: 560px) {
+/* Breakpoint of '#landing-page-photo h1' */
+	#landing-page-photo h1 { font-size: 22px; }
+}
 @media only screen and (max-width: 513px) {
-/* Breaking point of logo */
+/* Breakpoint of logo */
 	body { padding-top: 60px; }
 	.navbar-brand img { width: 215px; }
+	.navbar-right { margin-top: 0; }
 	.navbar-toggle { margin-top: 10px; }
 }
