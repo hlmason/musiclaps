@@ -144,9 +144,8 @@ ul {
 }
 @media only screen and (max-width: 991px) {
 /* Breaking point of nav */
-	/*.navbar { float: left;}*/
-	/*nav ul { margin-left: -13px; margin-top: 0; }*/
-	/*nav li { margin-top: 0; }*/
+	.navbar-right { margin-top: 25px; }
+	.nav a { padding-left: 0 !important; } 
 	/*#landing-page-photo h1 { position: relative; float: left; }*/
 }
 @media only screen and (max-width: 973px) {
@@ -159,3 +158,8 @@ ul {
 	#stage-top img { max-width: 80%; }
 	#stage-bottom ul { margin-right: 30px; margin-top: -105px; }
 }*/
+@media only screen and (max-width: 513px) {
+/* Breaking point of logo */
+	.navbar-brand img { width: 215px; }
+	.navbar-toggle { margin-top: 10px; }
+}
