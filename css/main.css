@@ -14,7 +14,12 @@ body {
   background-image: url("../img/background.gif");
   background-repeat: repeat;
 }*/
-ul { padding-left: 0;}
+ul { 
+	padding-left: 0;
+}
+.hidden-1030 {
+	display: none;
+}
 
 /* ===================================
     Nav
@@ -138,20 +143,23 @@ footer {
 #footer-inner-wrapper, #content-inner-wrapper {
 	margin: 0 auto;
 }
+.red {
+	color: red;
+}
 
 /* ===================================
     Media Queries
 =================================== */
-@media only screen and (max-width: 1092px) {
-/* 1st breaking point of record button */
-	#stage-bottom img { max-width: 70% }
-	#stage-bottom li { padding: 0; }
-}
-@media only screen and (max-width: 1022px) {
+@media only screen and (max-width: 1184px) {
 /* Breaking point of nav */
 	nav ul { float: left; margin-left: -13px; margin-top: 0; }
 	nav li { margin-top: 0; }
 	#landing-page-photo h1 { position: relative; float: left; }
+}
+@media only screen and (max-width: 1092px) {
+/* 1st breaking point of record button */
+	#stage-bottom img { max-width: 70% }
+	#stage-bottom li { padding: 0; }
 }
 @media only screen and (max-width: 973px) {
 /* 2nd breaking point of record button */
