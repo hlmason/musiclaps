@@ -92,7 +92,7 @@ img {
 #stage-top a:last-child { /* Sign up record link */
 	float: right;
 }
-#stage-top img:first-child, #stage-top img:last-child {
+#stage-top img {
 	margin-top: -15px;
 	width: 90%;
 }
@@ -138,28 +138,22 @@ footer a:hover, footer a:focus {
 /* ===================================
     Media Queries
 =================================== */
-@media only screen and (max-width: 1092px) {
-/* 1st breakpoint of record button */
-/*	#stage-bottom img { max-width: 70% }
-	#stage-bottom li { padding: 0; }*/
-}
 @media only screen and (max-width: 991px) {
-/* Breakpoint of nav */
+/* Breakpoint of nav and record button */
 	.navbar-right { margin-top: 30px; }
 	.nav li { border-left: none; margin-top: 10px; }
 	/*.nav li:first-child { padding-left: 0; }*/
 	.nav a { padding-bottom: 0 !important; padding-left: 0 !important; }
-	#landing-page-photo-frame { height: 35px; } 
-}
-@media only screen and (max-width: 973px) {
-/* 2nd breakpoint of record button */
-/*	#stage-top img { max-width: 80%; }
-	#stage-bottom ul { margin-right: 30px; margin-top: -105px; }*/
+	#landing-page-photo-frame { height: 35px; }
+	#stage-top img { width: 75% }
+	#stage-bottom li { width: 65px; } 
 }
 @media only screen and (max-width: 768px) {
 /* Breakpoint of Bootstrap's menu icon */
 	.navbar li:hover, .navbar li:focus { background-color: lightgray !important; width: 100%;}
 	.navbar a:not(.navbar-brand) { margin-left: 30px; }
+	#stage-top img { width: 70% }
+	#stage-bottom li { width: 60px; }
 }
 @media only screen and (max-width: 560px) {
 /* Breakpoint of '#landing-page-photo h1' */
