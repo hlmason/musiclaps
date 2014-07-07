@@ -35,8 +35,8 @@
 
 	<div class="container" id="wrapper">
 		
-		<div id="landing-page-photo-frame"></div><!-- Adds margin above photo -->
-		<div id="landing-page-photo">
+		<div id="landing-page-image-frame"></div><!-- Adds margin above image -->
+		<div id="landing-page-image">
 			<h1 class="row">Online Music Collaboration Made Simple</h1>
 			<h1 class="row">...Just Log in and Start Recording.</h1>
 			<p>insert image</p>
@@ -46,9 +46,11 @@
 			<div id="stage-top-inner">
 				<div class="row">
 					<p>
-						<sup>...............</sup>
+						<sup>...............</sup><!-- Visible at viewport widths > 471px -->
+						<sup>.......</sup><!-- Visible at viewport widths < 472px -->
 						&nbsp;&nbsp;&nbsp;Record Sound Check&nbsp;&nbsp;&nbsp;
-						<sup>...............</sup>
+						<sup>...............</sup><!-- Visible at viewport widths > 471px -->
+						<sup>.......</sup><!-- Visible at viewport widths < 472px -->
 					</p>
 				</div>
 				<div class="row">
@@ -61,8 +63,10 @@
 				</div>
 			</div>
 		</div>
+		
 		<div id="stage-bottom">
-			<ul>
+			
+			<ul><!-- Visible at viewport widths > 627px -->
 				<li>
 					<a href="#">
 						<img src="img/musiclaps_play-button.png" alt="Play button">
@@ -84,6 +88,34 @@
 					</a>
 				</li>
 			</ul>
+			
+			<ul><!-- Visible at viewport widths < 628px -->
+				<div class="row">
+					<li>
+						<a href="#">
+							<img src="img/musiclaps_play-button.png" alt="Play button">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/musiclaps_pause-button.png" alt="Pause button">
+						</a>
+					</li>
+				</div>
+				<div class="row">
+					<li>
+						<a href="#">
+							<img src="img/musiclaps_stop-button.png" alt="Stop button">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/musiclaps_record-button.png" alt="Record button">
+						</a>
+					</li>
+				</div>
+			</ul>
+
 		</div>
 		
 		<div class="space-above-footer"></div>
