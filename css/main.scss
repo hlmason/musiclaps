@@ -1,0 +1,235 @@
+@import "_customized.bootstrap.min.scss";
+
+/* ===================================
+    Global
+=================================== */
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	// padding-top: 120px;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+/* ===================================
+    Nav
+=================================== */
+.navbar-default {
+	background-color: #fff; // Also controls footer color
+	border: none;
+	text-transform: uppercase;
+}
+
+.navbar-brand {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+.nav li {
+	border-left: 1px solid #999;
+	margin-top: 20px;
+	padding: 0 10px;
+	&:first-child {
+		border-left: none;
+	}
+}
+
+.navbar-toggle {
+	margin-top: 29px;
+}
+
+.navbar-collapse {
+	border-top: none;
+}
+
+/* ===================================
+    Landing Page
+=================================== */
+#landing-page-hero-frame, #landing-page-hero {
+	background-color: lightgray;
+	height: 20px;
+	margin-top: 10px;
+}
+
+#landing-page-hero {
+	height: 400px;
+	text-align: center;
+	h1 {
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 32px;
+		font-weight: normal; // For customized Bootstrap
+		line-height: 35px; // For customized Bootstrap
+		margin-top: -10px;
+		margin-bottom: 10px; // For customized Bootstrap
+	}
+	// img {
+	// 	margin-top: 51px;
+	// }
+}
+
+#landing-page-hero-img {
+	background-image: url('../img/musician-silhouette.gif');
+	background-position: center;
+	background-repeat: no-repeat;
+	// background-size: cover;
+	height: 100%;
+	// width: 100%;
+}
+
+#stage-top, #stage-bottom {
+	background-color: black;
+}
+
+#stage-top {
+	height: 161px;
+	margin: -56px auto 0;
+	text-align: center;
+	width: 90%;
+	p {
+		color: cyan;
+		font-size: 12px;
+		margin-top: 10px;
+		text-transform: uppercase;
+		sup {		
+			letter-spacing: 4px;
+		}
+	}
+	a:first-child { // Sign In record
+		float: left;
+	}
+	a:last-child { // Sign Up record
+		float: right;
+	}
+	img {
+		margin-top: -15px;
+		width: 90%; // Width of Sign In/Up record
+	}
+	sup {
+		&:nth-child(2), &:last-child {
+			display: none; // Only visible at viewport widths < 472px
+		}
+	}
+}
+
+#stage-top-inner {
+	margin: 0 auto;
+	width: 80%;
+}
+
+#stage-bottom {
+	height: 135px;
+	text-align: center;
+	ul {
+		margin-top: -110px;
+		padding-left: 0;
+		&:last-child {
+			display: none; // Only visible at viewport widths < 628px
+			// margin-top: -20px; */ To pass W3C markup validation */
+		}
+		li {
+			display: inline-block;
+			img {
+				width: 75%;
+			}
+		}
+	}
+}
+// #stage-bottom ul:last-child li /* { To pass W3C markup validation */
+// 	margin-left: 5px;
+// 	margin-right: 5px;
+// }
+
+/* ===================================
+    Footer
+=================================== */
+#wrapper {
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -50px; 
+    min-height: 100%;
+}
+
+.space-above-footer {
+	height: 100px;
+}
+
+footer {
+	// background-color: lightgray !important;
+	height: 50px;
+	a {
+		font-size: 12px !important;
+		letter-spacing: 1px;
+	}
+}
+
+/* ===================================
+    Media Queries
+=================================== */
+@media only screen and (max-width: 991px) {
+// Breakpoint of nav and Sign Up record
+	.navbar-right { margin-top: 30px; }
+	.nav {
+		li { 
+			border-left: none; margin-top: 10px;
+			&:first-child { padding-left: 0; }
+			a { padding-left: 0; }
+		}
+	}
+	#landing-page-hero-frame { height: 35px; }
+	#stage-top {
+		p { margin-top: 26px; }
+		img { width: 75%; }
+	} 
+	#stage-bottom li { margin-top: 20px; width: 59px; }
+}
+
+@media only screen and (max-width: 768px) {
+// Breakpoint of Bootstrap's collapsed menu
+	.nav li:first-child { padding-left: 10px; }
+	.navbar a:not(.navbar-brand) { margin-left: 15px; }
+	#stage-top img { margin-top: 0; width: 60%; }
+	#stage-bottom { height: 115px; }
+}
+
+@media only screen and (max-width: 688px) {
+// Breakpoint of Sign Up record
+	#stage-top img { width: 45%; }
+	#stage-bottom li { width: 37px; }
+}
+
+@media only screen and (max-width: 627px) {
+// Breakpoint of record button
+	#stage-top { height: 61px; margin-top: -162px; }
+	#stage-bottom ul { margin-top: -30px; }
+	#stage-bottom ul:first-child { display: none; }
+	#stage-bottom ul:last-child { display: inline-block; }
+}
+
+@media only screen and (max-width: 560px) {
+// Breakpoint of 'Online Music Collaboration Made Simple...Just Log in and Start Recording'
+	#landing-page-hero h1 { font-size: 21px; }
+}
+
+@media only screen and (max-width: 528px) {
+// Breakpoint of logo
+	// body { padding-top: 60px; }
+	.navbar-brand img { width: 215px; }
+	.navbar-toggle { margin-top: 10px; }
+	.navbar-right { margin-top: 0; }
+}
+
+@media only screen and (max-width: 471px) {
+// Breakpoint of 'Record Sound Check'
+	#landing-page-hero h1 { font-size: 21px; }
+	#stage-top-inner { width: 100%; }
+	#stage-top sup {
+		&:first-child, &:nth-child(3) { display: none; }
+		&:nth-child(2), &:last-child { display: inline-block; }
+	}
+}
