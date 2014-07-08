@@ -8,6 +8,9 @@ body {
 	font-family: 'Roboto', sans-serif;
 	/*padding-top: 120px; */
 }
+.container {
+	max-width: 1000px;
+}
 img {
 	max-width: 100%;
 	height: auto;
@@ -44,16 +47,16 @@ img {
 /* ===================================
     Landing Page
 =================================== */
-#landing-page-image-frame, #landing-page-image {
-	background-color: lightgray;
+#landing-page-hero-frame, #landing-page-hero {
+	/*background-color: lightgray;*/
 	height: 20px;
 	margin-top: 10px;
 }
-#landing-page-image {
+#landing-page-hero {
 	height: 400px;
 	text-align: center;
 }
-#landing-page-image h1 {
+#landing-page-hero h1 {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 32px;
 	font-weight: normal; /* Only for customized Bootstrap */
@@ -61,9 +64,17 @@ img {
 	margin-top: -10px;
 	margin-bottom: 10px; /* Only for customized Bootstrap */
 }
-#landing-page-image p {
-	margin-top: 80px;
+#landing-page-hero img {
+	margin-top: 51px;
 }
+/*#landing-page-hero-img {
+	background-image: url('../img/musician-silhouette.gif');
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100%;
+	overflow: hidden;
+	width: 100%;
+}*/
 #stage-top, #stage-bottom {
 	background-color: black;
 }
@@ -156,7 +167,7 @@ footer a:hover, footer a:focus {
 	.nav li { border-left: none; margin-top: 10px; }
 	.nav li:first-child { padding-left: 0; }
 	.nav a { padding-left: 0 !important; }
-	#landing-page-image-frame { height: 35px; }
+	#landing-page-hero-frame { height: 35px; }
 	#stage-top p { margin-top: 26px; }
 	#stage-top img { width: 75%; }
 	#stage-bottom li { margin-top: 20px; width: 59px; }
@@ -164,11 +175,17 @@ footer a:hover, footer a:focus {
 @media only screen and (max-width: 768px) {
 /* Breakpoint of Bootstrap's menu icon */
 	.nav li:first-child { padding-left: 10px; }
-	.navbar li:hover, .navbar li:focus { background-color: lightgray !important; width: 100%;}
+	/*.navbar li:hover, .navbar li:focus { background-color: lightgray !important; }*/
 	.navbar a:not(.navbar-brand) { margin-left: 30px; }
 	#stage-bottom { height: 115px; }
 	#stage-top img { margin-top: 0; width: 60%; }
 	#stage-bottom li { width: 48px; }
+}
+@media only screen and (max-width: 728px) {
+/* Breakpoint of hero image */
+	#landing-page-hero img { margin-top: 52px;
+}
+
 }
 @media only screen and (max-width: 688px) {
 /* Breakpoint of record button */
@@ -184,7 +201,7 @@ footer a:hover, footer a:focus {
 }
 @media only screen and (max-width: 560px) {
 /* Breakpoint of 'Online Music Collaboration Made Simple...Just Log in and Start Recording' */
-	#landing-page-image h1 { font-size: 21px; }
+	#landing-page-hero h1 { font-size: 21px; }
 }
 @media only screen and (max-width: 528px) {
 /* Breakpoint of logo */
@@ -195,7 +212,7 @@ footer a:hover, footer a:focus {
 }
 @media only screen and (max-width: 471px) {
 /* Breakpoint of 'Record Sound Check' */
-	#landing-page-image h1 { font-size: 21px; }
+	#landing-page-hero h1 { font-size: 21px; }
 	#stage-top-inner { width: 100%; }
 	#stage-top sup:first-child, #stage-top sup:nth-child(3) { display: none; }
 	#stage-top sup:nth-child(2), #stage-top sup:last-child { display: inline-block; }
