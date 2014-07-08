@@ -8,9 +8,6 @@ body {
 	font-family: 'Roboto', sans-serif;
 	/*padding-top: 120px; */
 }
-.container {
-	max-width: 1000px;
-}
 img {
 	max-width: 100%;
 	height: auto;
@@ -65,16 +62,16 @@ img {
 	margin-bottom: 10px; /* Only for customized Bootstrap */
 }
 #landing-page-hero img {
-	margin-top: 51px;
+	/*margin-top: 51px;*/
 }
-/*#landing-page-hero-img {
+#landing-page-hero-img {
 	background-image: url('../img/musician-silhouette.gif');
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: cover;
 	height: 100%;
-	overflow: hidden;
-	width: 100%;
-}*/
+	/*width: 100%;*/
+}
 #stage-top, #stage-bottom {
 	background-color: black;
 }
