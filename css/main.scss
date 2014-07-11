@@ -109,6 +109,10 @@ img {
 	img {
 		margin-top: -15px;
 		width: 90%; // Width of Sign In/Up record
+		&:hover {
+			margin-top: -20px;
+			width: 100%;
+		}
 	}
 	sup {
 		&:nth-child(2), &:last-child {
@@ -184,7 +188,13 @@ footer {
 	#landing-page-hero-frame { height: 35px; }
 	#stage-top {
 		p { margin-top: 26px; }
-		img { width: 75%; }
+		img { 
+			width: 75%;
+			&:hover {
+				margin-top: -25px;
+				width: 85%;
+			}
+		}
 	} 
 	#stage-bottom li { margin-top: 20px; width: 59px; }
 }
