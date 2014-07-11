@@ -1977,7 +1977,7 @@ img {
     margin-top: -10px;
     margin-bottom: 10px; }
   #landing-page-hero img {
-    margin-top: 51px; }
+    margin-top: 108px; }
 
 #landing-page-hero-img {
   background-image: url("../img/musician-silhouette.gif");
@@ -1985,39 +1985,32 @@ img {
   background-repeat: no-repeat;
   height: 100%; }
 
-#stage-top, #stage-bottom {
-  background-color: black; }
-
-#stage-top {
+#stage {
+  background-color: black;
   height: 161px;
-  margin: -56px auto 0;
+  margin: 0 auto;
   text-align: center;
-  width: 90%; }
-  #stage-top p {
+  width: 100%; }
+  #stage #stage-inner {
+    margin: 0 auto;
+    width: 90%; }
+  #stage p {
     color: lightgray;
     font-size: 12px;
     margin-top: 10px;
     text-transform: uppercase; }
-    #stage-top p sup {
+    #stage p sup {
       letter-spacing: 4px; }
-  #stage-top sup:nth-child(2), #stage-top sup:last-child {
+  #stage sup:nth-child(2), #stage sup:last-child {
     display: none; }
-
-#stage-top-inner {
-  margin: 0 auto;
-  width: 80%; }
-
-#stage-bottom {
-  height: 135px;
-  text-align: center; }
-  #stage-bottom ul {
-    margin-top: -110px;
+  #stage ul {
+    margin-top: 10px;
     padding-left: 0; }
-    #stage-bottom ul li {
+    #stage ul li {
       display: inline-block; }
-      #stage-bottom ul li img {
+      #stage ul li img {
         width: 75%; }
-        #stage-bottom ul li img:hover {
+        #stage ul li img:hover {
           margin-top: -9px;
           width: 85%; }
 
@@ -2056,7 +2049,7 @@ footer {
   #landing-page-hero-frame {
     height: 35px; }
 
-  #stage-top p {
+  #stage p {
     margin-top: 26px; } }
 @media only screen and (max-width: 991px) and (min-width: 769px) {
   .navbar-collapse {
@@ -2066,15 +2059,12 @@ footer {
     padding-left: 10px; }
 
   .navbar a:not(.navbar-brand) {
-    margin-left: 15px; }
-
-  #stage-bottom {
-    height: 115px; } }
+    margin-left: 15px; } }
 @media only screen and (max-width: 613px) {
   #landing-page-hero h1 {
     font-size: 21px; } }
 @media only screen and (max-width: 560px) {
-  #stage-bottom li {
+  #stage li {
     margin-top: 20px;
     width: 59px; } }
 @media only screen and (max-width: 528px) {
@@ -2084,10 +2074,10 @@ footer {
   .navbar-right {
     margin-top: 0; } }
 @media only screen and (max-width: 471px) {
-  #stage-top-inner {
+  #stage-inner {
     width: 100%; }
 
-  #stage-top sup:first-child, #stage-top sup:nth-child(3) {
+  #stage sup:first-child, #stage sup:nth-child(3) {
     display: none; }
-  #stage-top sup:nth-child(2), #stage-top sup:last-child {
+  #stage sup:nth-child(2), #stage sup:last-child {
     display: inline-block; } }
