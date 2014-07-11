@@ -2010,6 +2010,9 @@ img {
   #stage-top img {
     margin-top: -15px;
     width: 90%; }
+    #stage-top img:hover {
+      margin-top: -20px;
+      width: 100%; }
   #stage-top sup:nth-child(2), #stage-top sup:last-child {
     display: none; }
 
@@ -2053,7 +2056,8 @@ footer {
 =================================== */
 @media only screen and (max-width: 991px) {
   .navbar-right {
-    margin-top: 30px; }
+    margin-top: 30px;
+    float: left !important; }
 
   .nav li {
     border-left: none;
@@ -2070,6 +2074,9 @@ footer {
     margin-top: 26px; }
   #stage-top img {
     width: 75%; }
+    #stage-top img:hover {
+      margin-top: -25px;
+      width: 85%; }
 
   #stage-bottom li {
     margin-top: 20px;
