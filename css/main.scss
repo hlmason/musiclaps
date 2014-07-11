@@ -173,7 +173,7 @@ footer {
 =================================== */
 @media only screen and (max-width: 991px) {
 // Breakpoint of nav and Sign Up record
-	.navbar-right { margin-top: 30px; }
+	.navbar-right { margin-top: 30px; float: left !important; }
 	.nav {
 		li { 
 			border-left: none; margin-top: 10px;
