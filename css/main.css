@@ -1935,8 +1935,8 @@ body {
   font-family: 'Roboto', sans-serif; }
 
 img {
-  height: auto;
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto; }
 
 /* ===================================
     Nav
@@ -1946,19 +1946,15 @@ img {
   border: none;
   text-transform: uppercase; }
 
-.navbar-brand {
-  padding-bottom: 0;
-  padding-top: 0; }
-
 .nav li {
   border-left: 1px solid #999;
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 0 10px; }
   .nav li:first-child {
     border-left: none; }
 
 .navbar-toggle {
-  margin-top: 29px; }
+  margin-top: 25px; }
 
 .navbar-collapse {
   border-top: none; }
@@ -1968,8 +1964,7 @@ img {
 =================================== */
 #landing-page-hero-frame, #landing-page-hero {
   background-color: lightgray;
-  height: 20px;
-  margin-top: 10px; }
+  height: 30px; }
 
 #landing-page-hero {
   height: 400px;
@@ -1981,6 +1976,8 @@ img {
     line-height: 35px;
     margin-top: -10px;
     margin-bottom: 10px; }
+  #landing-page-hero img {
+    margin-top: 51px; }
 
 #landing-page-hero-img {
   background-image: url("../img/musician-silhouette.gif");
@@ -1997,22 +1994,12 @@ img {
   text-align: center;
   width: 90%; }
   #stage-top p {
-    color: cyan;
+    color: lightgray;
     font-size: 12px;
     margin-top: 10px;
     text-transform: uppercase; }
     #stage-top p sup {
       letter-spacing: 4px; }
-  #stage-top a:first-child {
-    float: left; }
-  #stage-top a:last-child {
-    float: right; }
-  #stage-top img {
-    margin-top: -15px;
-    width: 90%; }
-    #stage-top img:hover {
-      margin-top: -20px;
-      width: 100%; }
   #stage-top sup:nth-child(2), #stage-top sup:last-child {
     display: none; }
 
@@ -2026,12 +2013,13 @@ img {
   #stage-bottom ul {
     margin-top: -110px;
     padding-left: 0; }
-    #stage-bottom ul:last-child {
-      display: none; }
     #stage-bottom ul li {
       display: inline-block; }
       #stage-bottom ul li img {
         width: 75%; }
+        #stage-bottom ul li img:hover {
+          margin-top: -9px;
+          width: 85%; }
 
 /* ===================================
     Footer
@@ -2056,12 +2044,10 @@ footer {
 =================================== */
 @media only screen and (max-width: 991px) {
   .navbar-right {
-    margin-top: 30px;
     float: left !important; }
 
   .nav li {
-    border-left: none;
-    margin-top: 10px; }
+    border-left: none; }
     .nav li:first-child {
       padding-left: 0; }
     .nav li a {
@@ -2071,16 +2057,10 @@ footer {
     height: 35px; }
 
   #stage-top p {
-    margin-top: 26px; }
-  #stage-top img {
-    width: 75%; }
-    #stage-top img:hover {
-      margin-top: -25px;
-      width: 85%; }
-
-  #stage-bottom li {
-    margin-top: 20px;
-    width: 59px; } }
+    margin-top: 26px; } }
+@media only screen and (max-width: 991px) and (min-width: 769px) {
+  .navbar-collapse {
+    padding: 0; } }
 @media only screen and (max-width: 768px) {
   .nav li:first-child {
     padding-left: 10px; }
@@ -2088,47 +2068,22 @@ footer {
   .navbar a:not(.navbar-brand) {
     margin-left: 15px; }
 
-  #stage-top img {
-    margin-top: 0;
-    width: 60%; }
-
   #stage-bottom {
     height: 115px; } }
-@media only screen and (max-width: 688px) {
-  #stage-top img {
-    width: 45%; }
-
-  #stage-bottom li {
-    width: 37px; } }
-@media only screen and (max-width: 627px) {
-  #stage-top {
-    height: 61px;
-    margin-top: -162px; }
-
-  #stage-bottom ul {
-    margin-top: -30px; }
-
-  #stage-bottom ul:first-child {
-    display: none; }
-
-  #stage-bottom ul:last-child {
-    display: inline-block; } }
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 613px) {
   #landing-page-hero h1 {
     font-size: 21px; } }
+@media only screen and (max-width: 560px) {
+  #stage-bottom li {
+    margin-top: 20px;
+    width: 59px; } }
 @media only screen and (max-width: 528px) {
-  .navbar-brand img {
-    width: 215px; }
-
   .navbar-toggle {
     margin-top: 10px; }
 
   .navbar-right {
     margin-top: 0; } }
 @media only screen and (max-width: 471px) {
-  #landing-page-hero h1 {
-    font-size: 21px; }
-
   #stage-top-inner {
     width: 100%; }
 

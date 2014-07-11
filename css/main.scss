@@ -13,8 +13,8 @@ body {
 }
 
 img {
-	height: auto;
 	max-width: 100%;
+	height: auto;
 }
 
 /* ===================================
@@ -26,14 +26,9 @@ img {
 	text-transform: uppercase;
 }
 
-.navbar-brand {
-	padding-bottom: 0;
-	padding-top: 0;
-}
-
 .nav li {
 	border-left: 1px solid #999;
-	margin-top: 20px;
+	margin-top: 15px;
 	padding: 0 10px;
 	&:first-child {
 		border-left: none;
@@ -41,7 +36,7 @@ img {
 }
 
 .navbar-toggle {
-	margin-top: 29px;
+	margin-top: 25px;
 }
 
 .navbar-collapse {
@@ -53,8 +48,8 @@ img {
 =================================== */
 #landing-page-hero-frame, #landing-page-hero {
 	background-color: lightgray;
-	height: 20px;
-	margin-top: 10px;
+	height: 30px;
+	// margin-top: 0px;
 }
 
 #landing-page-hero {
@@ -68,9 +63,9 @@ img {
 		margin-top: -10px;
 		margin-bottom: 10px; // For customized Bootstrap
 	}
-	// img {
-	// 	margin-top: 51px;
-	// }
+	img {
+		margin-top: 51px;
+	}
 }
 
 #landing-page-hero-img {
@@ -92,26 +87,12 @@ img {
 	text-align: center;
 	width: 90%;
 	p {
-		color: cyan;
+		color: lightgray;
 		font-size: 12px;
 		margin-top: 10px;
 		text-transform: uppercase;
 		sup {		
 			letter-spacing: 4px;
-		}
-	}
-	a:first-child { // Sign In record
-		float: left;
-	}
-	a:last-child { // Sign Up record
-		float: right;
-	}
-	img {
-		margin-top: -15px;
-		width: 90%; // Width of Sign In/Up record
-		&:hover {
-			margin-top: -20px;
-			width: 100%;
 		}
 	}
 	sup {
@@ -132,14 +113,14 @@ img {
 	ul {
 		margin-top: -110px;
 		padding-left: 0;
-		&:last-child {
-			display: none; // Only visible at viewport widths < 628px
-			// margin-top: -20px; */ To pass W3C markup validation */
-		}
 		li {
 			display: inline-block;
 			img {
 				width: 75%;
+				&:hover {
+					margin-top: -9px;
+					width: 85%;
+				}
 			}
 		}
 	}
@@ -176,11 +157,11 @@ footer {
     Media Queries
 =================================== */
 @media only screen and (max-width: 991px) {
-// Breakpoint of nav and Sign Up record
-	.navbar-right { margin-top: 30px; float: left !important; }
+// Breakpoint of nav
+	.navbar-right { float: left !important; }
 	.nav {
 		li { 
-			border-left: none; margin-top: 10px;
+			border-left: none;
 			&:first-child { padding-left: 0; }
 			a { padding-left: 0; }
 		}
@@ -188,55 +169,39 @@ footer {
 	#landing-page-hero-frame { height: 35px; }
 	#stage-top {
 		p { margin-top: 26px; }
-		img { 
-			width: 75%;
-			&:hover {
-				margin-top: -25px;
-				width: 85%;
-			}
-		}
 	} 
-	#stage-bottom li { margin-top: 20px; width: 59px; }
 }
+
+@media only screen and (max-width: 991px) and (min-width: 769px) {
+// Btwn breakpoint of nav and Bootstrap's collapsed menu
+	.navbar-collapse { padding: 0; }
+} 
 
 @media only screen and (max-width: 768px) {
 // Breakpoint of Bootstrap's collapsed menu
 	.nav li:first-child { padding-left: 10px; }
 	.navbar a:not(.navbar-brand) { margin-left: 15px; }
-	#stage-top img { margin-top: 0; width: 60%; }
 	#stage-bottom { height: 115px; }
 }
 
-@media only screen and (max-width: 688px) {
-// Breakpoint of Sign Up record
-	#stage-top img { width: 45%; }
-	#stage-bottom li { width: 37px; }
-}
-
-@media only screen and (max-width: 627px) {
-// Breakpoint of record button
-	#stage-top { height: 61px; margin-top: -162px; }
-	#stage-bottom ul { margin-top: -30px; }
-	#stage-bottom ul:first-child { display: none; }
-	#stage-bottom ul:last-child { display: inline-block; }
+@media only screen and (max-width: 613px) {
+	#landing-page-hero h1 { font-size: 21px; }
 }
 
 @media only screen and (max-width: 560px) {
 // Breakpoint of 'Online Music Collaboration Made Simple...Just Log in and Start Recording'
-	#landing-page-hero h1 { font-size: 21px; }
+	#stage-bottom li { margin-top: 20px; width: 59px; }
 }
 
 @media only screen and (max-width: 528px) {
 // Breakpoint of logo
 	// body { padding-top: 60px; }
-	.navbar-brand img { width: 215px; }
 	.navbar-toggle { margin-top: 10px; }
 	.navbar-right { margin-top: 0; }
 }
 
 @media only screen and (max-width: 471px) {
 // Breakpoint of 'Record Sound Check'
-	#landing-page-hero h1 { font-size: 21px; }
 	#stage-top-inner { width: 100%; }
 	#stage-top sup {
 		&:first-child, &:nth-child(3) { display: none; }
