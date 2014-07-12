@@ -1963,7 +1963,6 @@ img {
     Landing Page
 =================================== */
 #landing-page-hero-frame, #landing-page-hero {
-  background-color: lightgray;
   height: 30px; }
 
 #landing-page-hero {
@@ -1979,30 +1978,23 @@ img {
   #landing-page-hero img {
     margin-top: 108px; }
 
-#landing-page-hero-img {
-  background-image: url("../img/musician-silhouette.gif");
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%; }
-
 #stage {
   background-color: black;
   height: 161px;
-  margin: 0 auto;
   text-align: center;
   width: 100%; }
   #stage #stage-inner {
     margin: 0 auto;
     width: 90%; }
   #stage p {
-    color: lightgray;
+    color: cyan;
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 15px;
     text-transform: uppercase; }
     #stage p sup {
       letter-spacing: 4px; }
-  #stage sup:nth-child(2), #stage sup:last-child {
-    display: none; }
+      #stage p sup:nth-child(2), #stage p sup:last-child {
+        display: none; }
   #stage ul {
     margin-top: 10px;
     padding-left: 0; }
