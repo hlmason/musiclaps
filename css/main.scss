@@ -104,10 +104,12 @@ img {
 		li {
 			display: inline-block;
 			img {
+				transition: 0s linear;
 				width: 75%;
 				&:hover {
-					margin-top: -9px;
-					width: 85%;
+					-webkit-transform: scale(1.1);
+						-ms-transform: scale(1.1);
+							transform: scale(1.1);
 				}
 			}
 		}
