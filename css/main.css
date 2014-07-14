@@ -2001,10 +2001,12 @@ img {
     #stage ul li {
       display: inline-block; }
       #stage ul li img {
+        transition: 0s linear;
         width: 75%; }
         #stage ul li img:hover {
-          margin-top: -9px;
-          width: 85%; }
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1); }
 
 /* ===================================
     Footer
