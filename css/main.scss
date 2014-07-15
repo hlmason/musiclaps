@@ -104,45 +104,42 @@ img {
 /* ===================================
     Landing Page
 =================================== */
-#landing-page-hero-frame, #landing-page-hero {
-	// background-color: lightgray;
-	height: 30px;
-	// margin-top: 0px;
+h1 {
+	color: #444;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 32px;
+	font-weight: normal; // For customized Bootstrap
+	letter-spacing: 0.5px;
+	// line-height: 45px; // For customized Bootstrap
+	margin-top: 0;
+	margin-bottom: 0; // For customized Bootstrap
+	text-align: center;
+	span {
+		color: $musiclaps-blue;
+	}
 }
 
 #landing-page-hero {
-	height: 400px;
+	margin-top: 20px;
 	text-align: center;
-	h1 {
-		color: #444;
-		font-family: 'Roboto Condensed', sans-serif;
-		font-size: 32px;
-		font-weight: normal; // For customized Bootstrap
-		letter-spacing: 0.5px;
-		line-height: 45px; // For customized Bootstrap
-		margin-top: -10px;
-		margin-bottom: 10px; // For customized Bootstrap
-		span {
-			color: $musiclaps-blue;
-		}
-	}
 	img {
-		margin-top: 98px;
+		margin-top: 270px;
 	}
 }
 
-// #landing-page-hero-img {
-// 	background-image: url('../img/musician-silhouette.gif');
-// 	background-position: center;
-// 	background-repeat: no-repeat;
-// 	// background-size: cover;
-// 	height: 100%;
-// 	// width: 100%;
-// }
+.musical-notes-map {
+	background-image: url('../img/musical-notes-map.png');
+	// background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
 
 #stage {
 	background-color: black;
 	height: 161px;
+	margin-top: -20px;
 	text-align: center;
 	width: 100%;
 	#stage-inner {
