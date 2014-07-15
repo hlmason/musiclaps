@@ -1926,6 +1926,12 @@ tbody.collapse.in {
   transform: translate3d(0, 0, 0); }
 
 /* ===================================
+    Variables
+=================================== */
+/* ===================================
+    Mixins
+=================================== */
+/* ===================================
     Global
 =================================== */
 html, body {
@@ -1947,14 +1953,29 @@ img {
   text-transform: uppercase; }
 
 .nav li {
-  border-left: 1px solid #999;
-  margin-top: 15px;
-  padding: 0 10px; }
-  .nav li:first-child {
+  margin-top: 23px; }
+  .nav li a {
+    color: #444 !important;
+    line-height: 0; }
+
+.navbar-left li {
+  border-left: 1px solid #cecece; }
+  .navbar-left li:first-child {
     border-left: none; }
 
+.navbar-right li {
+  border: 1px solid #cecece; }
+  .navbar-right li:first-child {
+    background-color: lightgray;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; }
+  .navbar-right li:last-child {
+    background-color: #38AAFF;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; }
+
 .navbar-toggle {
-  margin-top: 25px; }
+  margin-top: 23px; }
 
 .navbar-collapse {
   border-top: none; }
@@ -1987,7 +2008,7 @@ img {
     margin: 0 auto;
     width: 90%; }
   #stage p {
-    color: cyan;
+    color: #38AAFF;
     font-size: 12px;
     margin-top: 15px;
     text-transform: uppercase; }
@@ -2030,16 +2051,6 @@ footer {
     Media Queries
 =================================== */
 @media only screen and (max-width: 991px) {
-  .navbar-right {
-    float: left !important; }
-
-  .nav li {
-    border-left: none; }
-    .nav li:first-child {
-      padding-left: 0; }
-    .nav li a {
-      padding-left: 0; }
-
   #landing-page-hero-frame {
     height: 35px; }
 
@@ -2049,11 +2060,13 @@ footer {
   .navbar-collapse {
     padding: 0; } }
 @media only screen and (max-width: 768px) {
-  .nav li:first-child {
-    padding-left: 10px; }
+  .navbar-right li:first-child, .navbar-right li:last-child {
+    background-color: #fff;
+    border: none;
+    border-radius: 0; }
 
   .navbar a:not(.navbar-brand) {
-    margin-left: 15px; } }
+    margin-left: 10px; } }
 @media only screen and (max-width: 613px) {
   #landing-page-hero h1 {
     font-size: 21px; } }

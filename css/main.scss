@@ -1,6 +1,20 @@
 @import "_customized.bootstrap.min.scss";
 
 /* ===================================
+    Variables
+=================================== */
+$nav-border: 1px solid #cecece;
+
+/* ===================================
+    Mixins
+=================================== */
+// @mixin border-radius($radius) {
+// 	-webkit-border-radius: $radius;
+// 	-moz-border-radius: $radius;
+// 		 border-radius: $radius;
+// }
+
+/* ===================================
     Global
 =================================== */
 html, body {
@@ -23,20 +37,48 @@ img {
 .navbar-default {
 	background-color: #fff; // Also controls footer color
 	border: none;
+	// border-color: #E7E7E7;
+	// box-shadow: 1px 1px 0.5px #cecece
+	// height: 78px;
 	text-transform: uppercase;
 }
 
 .nav li {
-	border-left: 1px solid #999;
-	margin-top: 15px;
-	padding: 0 10px;
+	// &:not(.navbar-right-li) {
+	// 	padding: 10px;
+	// }
+	margin-top: 23px;
+	a {
+		color: #444 !important;
+		line-height: 0;
+	}
+}
+
+.navbar-left li {
+	border-left: $nav-border;
+	// margin-top: 13px;
 	&:first-child {
 		border-left: none;
 	}
 }
 
+.navbar-right li {
+	border: $nav-border;
+	// margin-top: 23px;
+	&:first-child {
+		background-color: lightgray;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+	&:last-child {
+		background-color: #38AAFF;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+}
+
 .navbar-toggle {
-	margin-top: 25px;
+	margin-top: 23px;
 }
 
 .navbar-collapse {
@@ -87,7 +129,7 @@ img {
 		width: 90%;
 	}
 	p {
-		color: cyan;
+		color: #38AAFF;
 		font-size: 12px;
 		margin-top: 15px;
 		text-transform: uppercase;
@@ -144,14 +186,6 @@ footer {
 =================================== */
 @media only screen and (max-width: 991px) {
 // Breakpoint of nav
-	.navbar-right { float: left !important; }
-	.nav {
-		li { 
-			border-left: none;
-			&:first-child { padding-left: 0; }
-			a { padding-left: 0; }
-		}
-	}
 	#landing-page-hero-frame { height: 35px; }
 	#stage {
 		p { margin-top: 26px; }
@@ -165,8 +199,9 @@ footer {
 
 @media only screen and (max-width: 768px) {
 // Breakpoint of Bootstrap's collapsed menu
-	.nav li:first-child { padding-left: 10px; }
-	.navbar a:not(.navbar-brand) { margin-left: 15px; }
+	.navbar-right li:first-child, .navbar-right li:last-child { background-color: #fff; border: none; border-radius: 0; }
+	// .navbar li:hover { background-color: lightgray; padding-bottom: 10px; padding-top: 10px; }
+	.navbar a:not(.navbar-brand) { margin-left: 10px; }
 }
 
 @media only screen and (max-width: 613px) {
