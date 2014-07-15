@@ -1956,23 +1956,30 @@ img {
   margin-top: 23px; }
   .nav li a {
     color: #444 !important;
+    letter-spacing: 0.5px;
     line-height: 0; }
+    .nav li a:hover {
+      color: #666 !important; }
 
 .navbar-left li {
   border-left: 1px solid #cecece; }
   .navbar-left li:first-child {
     border-left: none; }
 
-.navbar-right li {
-  border: 1px solid #cecece; }
-  .navbar-right li:first-child {
-    background-color: lightgray;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px; }
-  .navbar-right li:last-child {
-    background-color: #38AAFF;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px; }
+.navbar-right li:first-child a:hover, .navbar-right li:last-child a:hover {
+  color: black !important; }
+.navbar-right li:first-child {
+  background-color: lightgray;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; }
+  .navbar-right li:first-child:hover {
+    background-color: #D9D9D9; }
+.navbar-right li:last-child {
+  background-color: #38aaff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px; }
+  .navbar-right li:last-child:hover {
+    background-color: #45B7FF; }
 
 .navbar-toggle {
   margin-top: 23px; }
@@ -1990,14 +1997,18 @@ img {
   height: 400px;
   text-align: center; }
   #landing-page-hero h1 {
+    color: #444;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 32px;
     font-weight: normal;
-    line-height: 35px;
+    letter-spacing: 0.5px;
+    line-height: 45px;
     margin-top: -10px;
     margin-bottom: 10px; }
+    #landing-page-hero h1 span {
+      color: #38aaff; }
   #landing-page-hero img {
-    margin-top: 108px; }
+    margin-top: 98px; }
 
 #stage {
   background-color: black;
@@ -2008,7 +2019,7 @@ img {
     margin: 0 auto;
     width: 90%; }
   #stage p {
-    color: #38AAFF;
+    color: #38aaff;
     font-size: 12px;
     margin-top: 15px;
     text-transform: uppercase; }
@@ -2061,7 +2072,7 @@ footer {
     padding: 0; } }
 @media only screen and (max-width: 768px) {
   .navbar-right li:first-child, .navbar-right li:last-child {
-    background-color: #fff;
+    background-color: #fff !important;
     border: none;
     border-radius: 0; }
 
