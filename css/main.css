@@ -1978,6 +1978,8 @@ img {
   background-color: #38aaff;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px; }
+  .navbar-right li:last-child a {
+    color: white !important; }
   .navbar-right li:last-child:hover {
     background-color: #45B7FF; }
 
@@ -2006,7 +2008,7 @@ h1 {
   margin-top: 20px;
   text-align: center; }
   #landing-page-hero img {
-    margin-top: 270px; }
+    margin-top: 220px; }
 
 .musical-notes-map {
   background-image: url("../img/musical-notes-map.png");
@@ -2016,7 +2018,7 @@ h1 {
   width: 100%; }
 
 #stage {
-  background-color: black;
+  background-color: #444;
   height: 161px;
   margin-top: -20px;
   text-align: center;
@@ -2024,27 +2026,32 @@ h1 {
   #stage #stage-inner {
     margin: 0 auto;
     width: 90%; }
-  #stage p {
-    color: #38aaff;
-    font-size: 12px;
-    margin-top: 15px;
-    text-transform: uppercase; }
-    #stage p sup {
-      letter-spacing: 4px; }
-      #stage p sup:nth-child(2), #stage p sup:last-child {
-        display: none; }
-  #stage ul {
-    margin-top: 10px;
-    padding-left: 0; }
-    #stage ul li {
-      display: inline-block; }
-      #stage ul li img {
-        transition: 0s linear;
-        width: 75%; }
-        #stage ul li img:hover {
-          -webkit-transform: scale(1.1);
-          -ms-transform: scale(1.1);
-          transform: scale(1.1); }
+    #stage #stage-inner #soundcheck, #stage #stage-inner #record-demo {
+      margin-top: 50px; }
+      #stage #stage-inner #soundcheck a, #stage #stage-inner #record-demo a {
+        color: white;
+        font-family: 'Allerta Stencil', sans-serif;
+        font-size: 26px; }
+    #stage #stage-inner #soundcheck {
+      -webkit-transform: rotate(7deg);
+      -ms-transform: rotate(7deg);
+      transform: rotate(7deg); }
+    #stage #stage-inner #record-demo {
+      -webkit-transform: rotate(-7deg);
+      -ms-transform: rotate(-7deg);
+      transform: rotate(-7deg); }
+    #stage #stage-inner ul {
+      margin-top: -40px;
+      padding-left: 0; }
+      #stage #stage-inner ul li {
+        display: inline-block; }
+        #stage #stage-inner ul li img {
+          transition: 0s linear;
+          width: 75%; }
+          #stage #stage-inner ul li img:hover {
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1); }
 
 /* ===================================
     Footer

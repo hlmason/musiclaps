@@ -15,6 +15,12 @@ $musiclaps-blue: #38AAFF; // Whatever shade of blue you want
 // 		 border-radius: $radius;
 // }
 
+@mixin transform($degrees) {
+	-webkit-transform:rotate($degrees);
+		-ms-transform:rotate($degrees);
+			transform:rotate($degrees);
+}
+
 /* ===================================
     Global
 =================================== */
@@ -87,6 +93,9 @@ img {
 		background-color: $musiclaps-blue;
 		border-top-right-radius: 10px;
 		border-bottom-right-radius: 10px;
+		a {
+			color: white !important;
+		}
 		&:hover {
 			background-color: #45B7FF;
 		}
@@ -123,7 +132,7 @@ h1 {
 	margin-top: 20px;
 	text-align: center;
 	img {
-		margin-top: 270px;
+		margin-top: 220px;
 	}
 }
 
@@ -137,7 +146,7 @@ h1 {
 }
 
 #stage {
-	background-color: black;
+	background-color: #444;
 	height: 161px;
 	margin-top: -20px;
 	text-align: center;
@@ -145,31 +154,34 @@ h1 {
 	#stage-inner {
 		margin: 0 auto;
 		width: 90%;
-	}
-	p {
-		color: $musiclaps-blue;
-		font-size: 12px;
-		margin-top: 15px;
-		text-transform: uppercase;
-		sup {		
-			letter-spacing: 4px;
-			&:nth-child(2), &:last-child {
-				display: none; // Only visible at viewport widths < 472px
+		#soundcheck, #record-demo {
+			margin-top: 50px;
+			a {
+				color: white;
+				font-family: 'Allerta Stencil', sans-serif;
+				font-size: 26px;
+				// text-transform: uppercase;
 			}
 		}
-	}
-	ul {
-		margin-top: 10px;
-		padding-left: 0;
-		li {
-			display: inline-block;
-			img {
-				transition: 0s linear;
-				width: 75%;
-				&:hover {
-					-webkit-transform: scale(1.1);
-						-ms-transform: scale(1.1);
-							transform: scale(1.1);
+		#soundcheck {
+			@include transform(7deg);
+		}
+		#record-demo {
+			@include transform(-7deg);
+		}
+		ul {
+			margin-top: -40px;
+			padding-left: 0;
+			li {
+				display: inline-block;
+				img {
+					transition: 0s linear;
+					width: 75%;
+					&:hover {
+						-webkit-transform: scale(1.1);
+							-ms-transform: scale(1.1);
+								transform: scale(1.1);
+					}
 				}
 			}
 		}
