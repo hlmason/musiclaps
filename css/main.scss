@@ -60,7 +60,7 @@ img {
 		letter-spacing: 0.5px;
 		line-height: 0;
 		&:hover {
-			color: #666 !important;
+			color: $musiclaps-blue !important;
 		}
 	}
 }
@@ -128,7 +128,7 @@ h1.landing-page {
 }
 
 #landing-page-hero {
-	margin-top: 10px;
+	margin-top: 20px;
 	text-align: center;
 	img {
 		margin-top: 220px;
@@ -179,6 +179,7 @@ h1.landing-page {
 		p {
 			color: $musiclaps-blue;
 			font-size: 12px;
+			letter-spacing: 0.5px;
 			margin-top: 20px;
 			text-transform: uppercase;
 			sup {		
@@ -233,22 +234,28 @@ footer {
 /* ===================================
     Media Queries
 =================================== */
+@media only screen and (max-width: 1087px) {
+// Breakpoint of "Click on any button to start"
+	#stage-inner {
+		sup {
+			&:first-child, &:nth-child(3) { display: none; }
+			&:nth-child(2), &:last-child { display: inline-block !important; }
+		}
+	}
+}
+
 @media only screen and (max-width: 1016px) {
 // Breakpoint of Sound Check" and "Record a Demo"
 	#stage-inner { width: 100% !important; }
 }
 
 @media only screen and (max-width: 818px) {
-// Breakpoint of "Click on any button to start"
+// Breakpoint of "Record a Demo"
 	#stage-inner {
 		#soundcheck, #record-demo {
 			a {
 				font-size: 20px !important;
 			}
-		}
-		sup {
-			&:first-child, &:nth-child(3) { display: none; }
-			&:nth-child(2), &:last-child { display: inline-block !important; }
 		}
 		ul {
 			margin-top: -20px !important;
@@ -270,10 +277,10 @@ footer {
 		margin-top: 0;
 		li {
 			&:first-child, &:last-child { 
-				background-color: white !important; /* Changes "Log in" and "Register" button color to match the rest of the links in the collapsed menu */
-				border: none; /* Removes "Log in" and "Register" border color to match the rest of the links in the collapsed menu */
+				background-color: white !important; // Changes "Log in" and "Register" button color to match the rest of the links in the collapsed menu
+				border: none; // Removes "Log in" and "Register" border color to match the rest of the links in the collapsed menu
 				a:hover {
-					color: #666 !important; /* Changes "Log in" and "Register" link color to match the rest of the links in the collapsed menu */
+					color: #666 !important; // Changes "Log in" and "Register" link color to match the rest of the links in the collapsed menu
 				} 
 			}
 			&:last-child {
@@ -281,7 +288,7 @@ footer {
 				padding-bottom: 10px;
 			}
 			&:last-child a {
-				color: $musiclaps-dark-gray !important; /* Changes "Register" link color so that it's visible and matches the rest of the links in the collapsed menu */
+				color: $musiclaps-dark-gray !important; // Changes "Register" link color so that it's visible and matches the rest of the links in the collapsed menu
 			}
 		}
 	}
@@ -305,4 +312,3 @@ footer {
 // Breakpoint of "Online Music Collaboration Made Simple...Just Log in and Start Recording" 
 	h1.landing-page { font-size: 20px; }
 }
-

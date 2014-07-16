@@ -1962,7 +1962,7 @@ img {
     letter-spacing: 0.5px;
     line-height: 0; }
     .nav li a:hover {
-      color: #666 !important; }
+      color: #38aaff !important; }
 
 .navbar-left li {
   border-left: 1px solid #38aaff; }
@@ -2010,7 +2010,7 @@ h1.landing-page {
     color: #38aaff; }
 
 #landing-page-hero {
-  margin-top: 10px;
+  margin-top: 20px;
   text-align: center; }
   #landing-page-hero img {
     margin-top: 220px; }
@@ -2055,6 +2055,7 @@ h1.landing-page {
     #stage #stage-inner p {
       color: #38aaff;
       font-size: 12px;
+      letter-spacing: 0.5px;
       margin-top: 20px;
       text-transform: uppercase; }
       #stage #stage-inner p sup {
@@ -2095,16 +2096,17 @@ footer {
 /* ===================================
     Media Queries
 =================================== */
+@media only screen and (max-width: 1087px) {
+  #stage-inner sup:first-child, #stage-inner sup:nth-child(3) {
+    display: none; }
+  #stage-inner sup:nth-child(2), #stage-inner sup:last-child {
+    display: inline-block !important; } }
 @media only screen and (max-width: 1016px) {
   #stage-inner {
     width: 100% !important; } }
 @media only screen and (max-width: 818px) {
   #stage-inner #soundcheck a, #stage-inner #record-demo a {
     font-size: 20px !important; }
-  #stage-inner sup:first-child, #stage-inner sup:nth-child(3) {
-    display: none; }
-  #stage-inner sup:nth-child(2), #stage-inner sup:last-child {
-    display: inline-block !important; }
   #stage-inner ul {
     margin-top: -20px !important; }
     #stage-inner ul img {
@@ -2127,18 +2129,14 @@ footer {
     margin-top: 0; }
     .navbar-right li:first-child, .navbar-right li:last-child {
       background-color: white !important;
-      /* Changes "Log in" and "Register" button color to match the rest of the links in the collapsed menu */
-      border: none;
-      /* Removes "Log in" and "Register" border color to match the rest of the links in the collapsed menu */ }
+      border: none; }
       .navbar-right li:first-child a:hover, .navbar-right li:last-child a:hover {
-        color: #666 !important;
-        /* Changes "Log in" and "Register" link color to match the rest of the links in the collapsed menu */ }
+        color: #666 !important; }
     .navbar-right li:last-child {
       border-bottom: 1px solid #cecece;
       padding-bottom: 10px; }
     .navbar-right li:last-child a {
-      color: #444444 !important;
-      /* Changes "Register" link color so that it's visible and matches the rest of the links in the collapsed menu */ }
+      color: #444444 !important; }
 
   h1.landing-page {
     font-size: 24px; }
