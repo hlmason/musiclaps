@@ -1955,7 +1955,7 @@ img {
 .nav li {
   margin-top: 23px; }
   .nav li a {
-    color: #444 !important;
+    color: #444444 !important;
     letter-spacing: 0.5px;
     line-height: 0; }
     .nav li a:hover {
@@ -1966,7 +1966,7 @@ img {
   .navbar-left li:first-child {
     border-left: none; }
 
-.navbar-right li:first-child a:hover, .navbar-right li:last-child a:hover {
+.navbar-right li:first-child a:hover {
   color: black !important; }
 .navbar-right li:first-child {
   background-color: lightgray;
@@ -1993,7 +1993,7 @@ img {
     Landing Page
 =================================== */
 h1 {
-  color: #444;
+  color: #444444;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 32px;
   font-weight: normal;
@@ -2003,6 +2003,9 @@ h1 {
   text-align: center; }
   h1 span {
     color: #38aaff; }
+  h1:first-child {
+    border-top: 1px solid #cecece;
+    padding-top: 10px; }
 
 #landing-page-hero {
   margin-top: 20px;
@@ -2011,27 +2014,34 @@ h1 {
     margin-top: 220px; }
 
 .musical-notes-map {
-  background-image: url("../img/musical-notes-map.png");
+  background-image: url("../img/world_map_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%; }
 
 #stage {
-  background-color: #444;
+  background-color: #444444;
   height: 161px;
   margin-top: -20px;
   text-align: center;
   width: 100%; }
   #stage #stage-inner {
     margin: 0 auto;
-    width: 90%; }
+    width: 80%; }
     #stage #stage-inner #soundcheck, #stage #stage-inner #record-demo {
       margin-top: 50px; }
       #stage #stage-inner #soundcheck a, #stage #stage-inner #record-demo a {
         color: white;
         font-family: 'Allerta Stencil', sans-serif;
         font-size: 26px; }
+    #stage #stage-inner #soundcheck, #stage #stage-inner #record-demo {
+      padding: 5px 0; }
+      #stage #stage-inner #soundcheck a:hover, #stage #stage-inner #record-demo a:hover {
+        color: #38aaff;
+        cursor: pointer;
+        cursor: hand;
+        text-decoration: none; }
     #stage #stage-inner #soundcheck {
       -webkit-transform: rotate(7deg);
       -ms-transform: rotate(7deg);
@@ -2041,7 +2051,7 @@ h1 {
       -ms-transform: rotate(-7deg);
       transform: rotate(-7deg); }
     #stage #stage-inner ul {
-      margin-top: -40px;
+      margin-top: -48px;
       padding-left: 0; }
       #stage #stage-inner ul li {
         display: inline-block; }
