@@ -4,7 +4,8 @@
     Variables
 =================================== */
 $nav-border: 1px solid #cecece;
-$musiclaps-gray: #444; // Whichever shade of gray is in the logo - TBD
+$musiclaps-light-gray: #e7e7e7;
+$musiclaps-dark-gray: #444; // Whichever shade of gray is in the logo - TBD
 $musiclaps-blue: #38AAFF; // Whatever shade of blue you want
 
 /* ===================================
@@ -43,15 +44,19 @@ img {
     Nav
 =================================== */
 .navbar-default {
-	background-color: #fff; // Also controls footer color
-	border: none;
+	background-color: $musiclaps-light-gray; // Also controls footer color because they share the Bootstrap class name
+	border-bottom: $nav-border;
 	text-transform: uppercase;
+}
+
+.navbar-header {
+	height: 78px;
 }
 
 .nav li {
 	margin-top: 23px;
 	a {
-		color: $musiclaps-gray !important;
+		color: $musiclaps-dark-gray !important;
 		letter-spacing: 0.5px;
 		line-height: 0;
 		&:hover {
@@ -61,14 +66,14 @@ img {
 }
 
 .navbar-left li {
-	border-left: $nav-border;
+	border-left: 1px solid $musiclaps-blue;
 	&:first-child {
 		border-left: none;
 	}
 }
 
 .navbar-right li {
-	// border: $nav-border;
+	border: $nav-border;
 	&:first-child {
 		background-color: lightgray;
 		border-bottom-left-radius: 10px;
@@ -104,8 +109,8 @@ img {
 /* ===================================
     Landing Page
 =================================== */
-h1 {
-	color: $musiclaps-gray;
+h1.landing-page {
+	color: $musiclaps-dark-gray;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 30px;
 	font-weight: normal; // For customized Bootstrap
@@ -113,10 +118,10 @@ h1 {
 	margin-top: 0;
 	margin-bottom: 0; // For customized Bootstrap
 	text-align: center;
-	&:first-child {
-		border-top: $nav-border;
-		padding-top: 10px;
-	}
+	// &:first-child {
+	// 	border-top: $nav-border;
+	// 	padding-top: 10px;
+	// }
 	span {
 		color: $musiclaps-blue;
 	}
@@ -140,7 +145,7 @@ h1 {
 }
 
 #stage {
-	background-color: $musiclaps-gray;
+	background-color: $musiclaps-dark-gray;
 	height: 161px;
 	margin-top: -20px;
 	text-align: center;
@@ -150,6 +155,8 @@ h1 {
 		width: 80%;
 		#soundcheck, #record-demo {
 			margin-top: 55px;
+			padding-left: 0;
+			padding-right: 0;
 			a {
 				color: white;
 				font-family: 'Allerta Stencil', sans-serif;
@@ -226,7 +233,7 @@ footer {
 /* ===================================
     Media Queries
 =================================== */
-@media only screen and (max-width: 1040px) {
+@media only screen and (max-width: 1016px) {
 // Breakpoint of Sound Check" and "Record a Demo"
 	#stage-inner { width: 100% !important; }
 }
@@ -254,17 +261,28 @@ footer {
 
 @media only screen and (max-width: 768px) {
 // Breakpoint of Bootstrap's collapsed menu
+	.navbar-default { background-color: #fff; border: none; }
+	.navbar-header { background-color: $musiclaps-light-gray; }
 	.navbar a:not(.navbar-brand) { margin-left: 10px; }
 	// .navbar li:hover { background-color: lightgray; padding-bottom: 10px; padding-top: 10px; }
-	.navbar-right li {
-		&:first-child, &:last-child { 
-			background-color: #fff !important; /* Turns "Log in" and "Register" buttons white to match the rest of the links in the collapsed menu */
-			a:hover {
-				color: #666 !important; /* Turns hover over "Log in" and "Register" links gray to match the rest of the links in the collapsed menu */
-			} 
-		}
-		&:last-child a {
-			color: $musiclaps-gray !important; /* Turns "Register" link gray so that it's visible and matches the rest of the links in the collapsed menu */
+	.navbar-left { margin-top: 0; }
+	.navbar-right {
+		margin-top: 0;
+		li {
+			&:first-child, &:last-child { 
+				background-color: white !important; /* Changes "Log in" and "Register" button color to match the rest of the links in the collapsed menu */
+				border: none; /* Removes "Log in" and "Register" border color to match the rest of the links in the collapsed menu */
+				a:hover {
+					color: #666 !important; /* Changes "Log in" and "Register" link color to match the rest of the links in the collapsed menu */
+				} 
+			}
+			&:last-child {
+				border-bottom: $nav-border;
+				padding-bottom: 10px;
+			}
+			&:last-child a {
+				color: $musiclaps-dark-gray !important; /* Changes "Register" link color so that it's visible and matches the rest of the links in the collapsed menu */
+			}
 		}
 	}
 	h1.landing-page { font-size: 24px; }
