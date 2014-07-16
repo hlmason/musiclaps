@@ -1995,7 +1995,7 @@ img {
 h1 {
   color: #444444;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: normal;
   letter-spacing: 0.5px;
   margin-top: 0;
@@ -2048,6 +2048,15 @@ h1 {
       -webkit-transform: rotate(-7deg);
       -ms-transform: rotate(-7deg);
       transform: rotate(-7deg); }
+    #stage #stage-inner p {
+      color: #38aaff;
+      font-size: 12px;
+      margin-top: 20px;
+      text-transform: uppercase; }
+      #stage #stage-inner p sup {
+        letter-spacing: 4px; }
+        #stage #stage-inner p sup:nth-child(2), #stage #stage-inner p sup:last-child {
+          display: none; }
     #stage #stage-inner ul {
       margin-top: -40px;
       padding-left: 0; }
@@ -2082,6 +2091,20 @@ footer {
 /* ===================================
     Media Queries
 =================================== */
+@media only screen and (max-width: 1040px) {
+  #stage-inner {
+    width: 100% !important; } }
+@media only screen and (max-width: 818px) {
+  #stage-inner #soundcheck a, #stage-inner #record-demo a {
+    font-size: 20px !important; }
+  #stage-inner sup:first-child, #stage-inner sup:nth-child(3) {
+    display: none; }
+  #stage-inner sup:nth-child(2), #stage-inner sup:last-child {
+    display: inline-block !important; }
+  #stage-inner ul {
+    margin-top: -20px !important; }
+    #stage-inner ul img {
+      width: 65% !important; } }
 @media only screen and (max-width: 768px) {
   .navbar a:not(.navbar-brand) {
     margin-left: 10px; }
@@ -2094,25 +2117,17 @@ footer {
       /* Turns hover over "Log in" and "Register" links gray to match the rest of the links in the collapsed menu */ }
   .navbar-right li:last-child a {
     color: #444444 !important;
-    /* Turns "Register" link gray so that it's visible and matches the rest of the links in the collapsed menu */ } }
-@media only screen and (max-width: 613px) {
-  #landing-page-hero h1 {
-    font-size: 21px; } }
-@media only screen and (max-width: 560px) {
-  #stage li {
-    margin-top: 20px;
-    width: 59px; } }
-@media only screen and (max-width: 528px) {
-  .navbar-toggle {
-    margin-top: 10px; }
+    /* Turns "Register" link gray so that it's visible and matches the rest of the links in the collapsed menu */ }
 
-  .navbar-right {
-    margin-top: 0; } }
-@media only screen and (max-width: 471px) {
-  #stage-inner {
-    width: 100%; }
+  h1.landing-page {
+    font-size: 24px; }
 
-  #stage sup:first-child, #stage sup:nth-child(3) {
+  #stage-inner #soundcheck a, #stage-inner #record-demo a {
     display: none; }
-  #stage sup:nth-child(2), #stage sup:last-child {
-    display: inline-block; } }
+  #stage-inner p {
+    margin-top: -30px !important; }
+  #stage-inner ul {
+    margin-top: -40px !important; } }
+@media only screen and (max-width: 590px) {
+  h1.landing-page {
+    font-size: 20px; } }

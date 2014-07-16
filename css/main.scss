@@ -107,7 +107,7 @@ img {
 h1 {
 	color: $musiclaps-gray;
 	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 32px;
+	font-size: 30px;
 	font-weight: normal; // For customized Bootstrap
 	letter-spacing: 0.5px;
 	margin-top: 0;
@@ -169,6 +169,18 @@ h1 {
 			@include transform(-7deg);
 
 		}
+		p {
+			color: $musiclaps-blue;
+			font-size: 12px;
+			margin-top: 20px;
+			text-transform: uppercase;
+			sup {		
+				letter-spacing: 4px;
+				&:nth-child(2), &:last-child {
+					display: none; // Only visible at viewport widths <= 818px
+				}
+			}
+		}
 		ul {
 			margin-top: -40px;
 			padding-left: 0;
@@ -214,9 +226,30 @@ footer {
 /* ===================================
     Media Queries
 =================================== */
-@media only screen and (max-width: 1164px) {
-// Breakpoint of "Click on any button to start"
+@media only screen and (max-width: 1040px) {
+// Breakpoint of Sound Check" and "Record a Demo"
+	#stage-inner { width: 100% !important; }
+}
 
+@media only screen and (max-width: 818px) {
+// Breakpoint of "Click on any button to start"
+	#stage-inner {
+		#soundcheck, #record-demo {
+			a {
+				font-size: 20px !important;
+			}
+		}
+		sup {
+			&:first-child, &:nth-child(3) { display: none; }
+			&:nth-child(2), &:last-child { display: inline-block !important; }
+		}
+		ul {
+			margin-top: -20px !important;
+			img {
+				width: 65% !important;
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -234,29 +267,24 @@ footer {
 			color: $musiclaps-gray !important; /* Turns "Register" link gray so that it's visible and matches the rest of the links in the collapsed menu */
 		}
 	}
-}
-
-@media only screen and (max-width: 613px) {
-	#landing-page-hero h1 { font-size: 21px; }
-}
-
-@media only screen and (max-width: 560px) {
-// Breakpoint of 'Online Music Collaboration Made Simple...Just Log in and Start Recording'
-	#stage li { margin-top: 20px; width: 59px; }
-}
-
-@media only screen and (max-width: 528px) {
-// Breakpoint of logo
-	// body { padding-top: 60px; }
-	.navbar-toggle { margin-top: 10px; }
-	.navbar-right { margin-top: 0; }
-}
-
-@media only screen and (max-width: 471px) {
-// Breakpoint of 'Record Sound Check'
-	#stage-inner { width: 100%; }
-	#stage sup {
-		&:first-child, &:nth-child(3) { display: none; }
-		&:nth-child(2), &:last-child { display: inline-block; }
+	h1.landing-page { font-size: 24px; }
+	#stage-inner {
+		#soundcheck, #record-demo {
+			a {
+				display: none;
+			}
+		}
+		p {
+			margin-top: -30px !important;
+		}
+		ul {
+			margin-top: -40px !important;
+		}
 	}
 }
+
+@media only screen and (max-width: 590px) {
+// Breakpoint of "Online Music Collaboration Made Simple...Just Log in and Start Recording" 
+	h1.landing-page { font-size: 20px; }
+}
+

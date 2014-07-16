@@ -56,8 +56,8 @@
 	</nav>
 
 	<div id="wrapper">
-		<h1>Online <span>Music Collaboration</span> Made Simple</h1>
-		<h1>...Just Log in and Start Recording</h1>
+		<h1 class="landing-page">Online <span>Music Collaboration</span> Made Simple</h1>
+		<h1 class="landing-page">...Just Log in and Start Recording</h1>
 		<div class="musical-notes-map" id="landing-page-hero">
 			<img src="img/musician-silhouette.gif" alt="Silhouette of four musicians">
 		</div>
@@ -66,9 +66,17 @@
 			<div id="stage-inner">
 				<div class="row">
 					<div id="soundcheck" class="col-sm-4">
-						<a>Sound Check</a>
+						<a>Soundcheck</a>
 					</div>
-					<div class="col-sm-4"></div>
+					<div class="col-sm-4">
+						<p>
+							<sup>...</sup><!-- Visible at viewport widths >= 819px -->
+							<sup></sup><!-- Visible at viewport widths <= 818px -->
+							&nbsp;&nbsp;&nbsp;Click on any button to start&nbsp;&nbsp;&nbsp;
+							<sup>...</sup><!-- Visible at viewport widths >= 819px -->
+							<sup></sup><!-- Visible at viewport widths <= 818px -->
+						</p>
+					</div>
 					<div id="record-demo" class="col-sm-4">
 						<a>Record a Demo</a>
 					</div>
