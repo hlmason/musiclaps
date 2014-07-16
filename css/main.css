@@ -1966,22 +1966,22 @@ img {
   .navbar-left li:first-child {
     border-left: none; }
 
-.navbar-right li:first-child a:hover {
-  color: black !important; }
 .navbar-right li:first-child {
   background-color: lightgray;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px; }
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px; }
   .navbar-right li:first-child:hover {
-    background-color: #D9D9D9; }
+    background-color: #d9d9d9; }
+  .navbar-right li:first-child a:hover {
+    color: black !important; }
 .navbar-right li:last-child {
   background-color: #38aaff;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px; }
-  .navbar-right li:last-child a {
-    color: white !important; }
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px; }
   .navbar-right li:last-child:hover {
     background-color: #45B7FF; }
+  .navbar-right li:last-child a {
+    color: white !important; }
 
 .navbar-toggle {
   margin-top: 23px; }
@@ -2001,14 +2001,14 @@ h1 {
   margin-top: 0;
   margin-bottom: 0;
   text-align: center; }
-  h1 span {
-    color: #38aaff; }
   h1:first-child {
     border-top: 1px solid #cecece;
     padding-top: 10px; }
+  h1 span {
+    color: #38aaff; }
 
 #landing-page-hero {
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center; }
   #landing-page-hero img {
     margin-top: 220px; }
@@ -2030,18 +2030,16 @@ h1 {
     margin: 0 auto;
     width: 80%; }
     #stage #stage-inner #soundcheck, #stage #stage-inner #record-demo {
-      margin-top: 50px; }
+      margin-top: 55px; }
       #stage #stage-inner #soundcheck a, #stage #stage-inner #record-demo a {
         color: white;
         font-family: 'Allerta Stencil', sans-serif;
         font-size: 26px; }
-    #stage #stage-inner #soundcheck, #stage #stage-inner #record-demo {
-      padding: 5px 0; }
-      #stage #stage-inner #soundcheck a:hover, #stage #stage-inner #record-demo a:hover {
-        color: #38aaff;
-        cursor: pointer;
-        cursor: hand;
-        text-decoration: none; }
+        #stage #stage-inner #soundcheck a:hover, #stage #stage-inner #record-demo a:hover {
+          color: #38aaff;
+          cursor: pointer;
+          cursor: hand;
+          text-decoration: none; }
     #stage #stage-inner #soundcheck {
       -webkit-transform: rotate(7deg);
       -ms-transform: rotate(7deg);
@@ -2051,7 +2049,7 @@ h1 {
       -ms-transform: rotate(-7deg);
       transform: rotate(-7deg); }
     #stage #stage-inner ul {
-      margin-top: -48px;
+      margin-top: -40px;
       padding-left: 0; }
       #stage #stage-inner ul li {
         display: inline-block; }
@@ -2084,23 +2082,19 @@ footer {
 /* ===================================
     Media Queries
 =================================== */
-@media only screen and (max-width: 991px) {
-  #landing-page-hero-frame {
-    height: 35px; }
-
-  #stage p {
-    margin-top: 26px; } }
-@media only screen and (max-width: 991px) and (min-width: 769px) {
-  .navbar-collapse {
-    padding: 0; } }
 @media only screen and (max-width: 768px) {
+  .navbar a:not(.navbar-brand) {
+    margin-left: 10px; }
+
   .navbar-right li:first-child, .navbar-right li:last-child {
     background-color: #fff !important;
-    border: none;
-    border-radius: 0; }
-
-  .navbar a:not(.navbar-brand) {
-    margin-left: 10px; } }
+    /* Turns "Log in" and "Register" buttons white to match the rest of the links in the collapsed menu */ }
+    .navbar-right li:first-child a:hover, .navbar-right li:last-child a:hover {
+      color: #666 !important;
+      /* Turns hover over "Log in" and "Register" links gray to match the rest of the links in the collapsed menu */ }
+  .navbar-right li:last-child a {
+    color: #444444 !important;
+    /* Turns "Register" link gray so that it's visible and matches the rest of the links in the collapsed menu */ } }
 @media only screen and (max-width: 613px) {
   #landing-page-hero h1 {
     font-size: 21px; } }
