@@ -1944,13 +1944,17 @@ img {
   max-width: 100%;
   height: auto; }
 
+a:hover {
+  cursor: pointer;
+  cursor: hand;
+  text-decoration: none; }
+
 /* ===================================
     Nav
 =================================== */
 .navbar-default {
   background-color: #e7e7e7;
-  border-bottom: 1px solid #cecece;
-  text-transform: uppercase; }
+  border-bottom: 1px solid #cecece; }
 
 .navbar-header {
   height: 78px; }
@@ -1959,8 +1963,10 @@ img {
   margin-top: 23px; }
   .nav li a {
     color: #444444 !important;
+    font-size: 14px;
     letter-spacing: 0.5px;
-    line-height: 0; }
+    line-height: 0;
+    text-transform: uppercase; }
     .nav li a:hover {
       color: #38aaff !important; }
 
@@ -2006,8 +2012,10 @@ h1.landing-page {
   margin-top: 0;
   margin-bottom: 0;
   text-align: center; }
-  h1.landing-page span {
+  h1.landing-page a {
     color: #38aaff; }
+    h1.landing-page a:hover {
+      color: #444444 !important; }
 
 #landing-page-hero {
   margin-top: 20px;
@@ -2040,10 +2048,7 @@ h1.landing-page {
         font-family: 'Allerta Stencil', sans-serif;
         font-size: 26px; }
         #stage #stage-inner #soundcheck a:hover, #stage #stage-inner #record-demo a:hover {
-          color: #38aaff;
-          cursor: pointer;
-          cursor: hand;
-          text-decoration: none; }
+          color: #38aaff; }
     #stage #stage-inner #soundcheck {
       -webkit-transform: rotate(7deg);
       -ms-transform: rotate(7deg);
@@ -2074,6 +2079,32 @@ h1.landing-page {
             -webkit-transform: scale(1.1);
             -ms-transform: scale(1.1);
             transform: scale(1.1); }
+
+/* ===================================
+    Who We Are
+=================================== */
+#container-who-we-are {
+  background-color: #e7e7e7; }
+  #container-who-we-are h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    margin-top: 0;
+    padding-top: 30px;
+    text-align: center; }
+  #container-who-we-are p {
+    font-size: 18px;
+    letter-spacing: 0.25px;
+    margin-top: 0; }
+    #container-who-we-are p span {
+      text-shadow: 0.5px 0.5px 2px #38aaff; }
+    #container-who-we-are p a {
+      color: #1f91e6 !important;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      line-height: 0;
+      text-transform: uppercase; }
+      #container-who-we-are p a:hover {
+        color: #444444 !important; }
 
 /* ===================================
     Footer

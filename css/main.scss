@@ -17,6 +17,14 @@ $musiclaps-blue: #38AAFF; // Whatever shade of blue you want
 // 		 border-radius: $radius;
 // }
 
+@mixin primary-link($color) {
+	color: $color !important;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	line-height: 0;
+	text-transform: uppercase;
+}
+
 @mixin transform($degrees) {
 	-webkit-transform:rotate($degrees);
 		-ms-transform:rotate($degrees);
@@ -40,13 +48,18 @@ img {
 	height: auto;
 }
 
+a:hover {
+	cursor: pointer;
+	cursor: hand;
+	text-decoration: none;
+}
+
 /* ===================================
     Nav
 =================================== */
 .navbar-default {
 	background-color: $musiclaps-light-gray; // Also controls footer color because they share the Bootstrap class name
 	border-bottom: $nav-border;
-	text-transform: uppercase;
 }
 
 .navbar-header {
@@ -56,9 +69,7 @@ img {
 .nav li {
 	margin-top: 23px;
 	a {
-		color: $musiclaps-dark-gray !important;
-		letter-spacing: 0.5px;
-		line-height: 0;
+		@include primary-link($musiclaps-dark-gray);
 		&:hover {
 			color: $musiclaps-blue !important;
 		}
@@ -122,8 +133,11 @@ h1.landing-page {
 	// 	border-top: $nav-border;
 	// 	padding-top: 10px;
 	// }
-	span {
+	a {
 		color: $musiclaps-blue;
+		&:hover {
+				color: $musiclaps-dark-gray !important;
+		}
 	}
 }
 
@@ -163,9 +177,6 @@ h1.landing-page {
 				font-size: 26px;
 				&:hover {
 					color: $musiclaps-blue;
-					cursor: pointer;
-					cursor: hand;
-					text-decoration: none;
 				}
 			}
 		}
@@ -207,6 +218,34 @@ h1.landing-page {
 		}
 	}
 }
+	/* ===================================
+	    Who We Are
+	=================================== */
+	#container-who-we-are {
+		background-color: $musiclaps-light-gray;
+		h2 {
+			font-size: 26px;
+			margin-bottom: 15px;
+			margin-top: 0;
+			padding-top: 30px;
+			text-align: center;
+
+		}
+		p {
+			font-size: 18px;
+			letter-spacing: 0.25px;
+			margin-top: 0;
+			span {
+				text-shadow: 0.5px 0.5px 2px $musiclaps-blue;
+			}
+			a {
+				@include primary-link(#1F91E6);
+				&:hover {
+					color: $musiclaps-dark-gray !important;
+				}
+			}
+		}
+	}
 
 /* ===================================
     Footer
