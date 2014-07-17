@@ -2018,17 +2018,33 @@ h1.landing-page {
       color: #444444 !important; }
 
 #landing-page-hero {
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center; }
-  #landing-page-hero img {
-    margin-top: 220px; }
+  #landing-page-hero .musical-notes-map {
+    background-image: url("../img/world_map_bg.png");
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    -webkit-animation: moveSlideshow 20s linear infinite normal forwards;
+    -moz-animation: moveSlideshow 20s linear infinite normal forwards;
+    -webkit-transition: opacity 0.5s ease-out linear infinite normal forwards;
+    -moz-transition: opacity 0.5s ease-out linear infinite normal forwards;
+    -ms-transition: opacity 0.5s ease-out linear infinite normal forwards;
+    -o-transition: opacity 0.5s ease-out linear infinite normal forwards; }
 
-.musical-notes-map {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -1; }
+@-webkit-keyframes moveSlideshow {
+  0% {
+    left: 0; }
 
+  100% {
+    left: 1010px; } }
+@-moz-keyframes moveSlideshow {
+  0% {
+    left: 0; }
+
+  100% {
+    left: 1010px; } }
 #stage {
   background-color: #444444;
   height: 161px;
