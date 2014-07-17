@@ -2023,8 +2023,9 @@ h1.landing-page {
   #landing-page-hero .musical-notes-map {
     background-image: url("../img/world_map_bg.png");
     height: 100%;
+    margin-left: -1010em;
     position: absolute;
-    width: 100%;
+    width: 5000em;
     z-index: -1;
     -webkit-animation: moveSlideshow 20s linear infinite normal forwards;
     -moz-animation: moveSlideshow 20s linear infinite normal forwards;
