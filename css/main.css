@@ -2024,9 +2024,10 @@ h1.landing-page {
     margin-top: 220px; }
 
 .musical-notes-map {
-  background-image: url("../img/world_map_bg.png");
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  position: absolute;
+  z-index: -1; }
 
 #stage {
   background-color: #444444;

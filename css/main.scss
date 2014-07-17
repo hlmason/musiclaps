@@ -171,12 +171,14 @@ h1.landing-page {
 }
 
 .musical-notes-map {
-	background-image: url('../img/world_map_bg.png');
+	// background-image: url('../img/world_map_bg.png');
 	// background-position: center;
 	// background-repeat: no-repeat;
 	// background-size: cover;
 	height: 100%;
 	width: 100%;
+	position: absolute;
+	z-index: -1;
 }
 
 #stage {
