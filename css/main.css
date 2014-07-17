@@ -2083,28 +2083,41 @@ h1.landing-page {
 /* ===================================
     Who We Are
 =================================== */
-#container-who-we-are {
-  background-color: #e7e7e7; }
-  #container-who-we-are h2 {
+#who-we-are {
+  background-color: #e7e7e7;
+  padding-bottom: 30px; }
+  #who-we-are h2 {
     font-size: 26px;
     margin-bottom: 15px;
     margin-top: 0;
     padding-top: 30px;
     text-align: center; }
-  #container-who-we-are p {
+  #who-we-are img {
+    margin-top: 50px;
+    -webkit-transform: rotate(-16deg);
+    -ms-transform: rotate(-16deg);
+    transform: rotate(-16deg); }
+  #who-we-are p {
     font-size: 18px;
     letter-spacing: 0.25px;
     margin-top: 0; }
-    #container-who-we-are p span {
+    #who-we-are p span {
       text-shadow: 0.5px 0.5px 2px #38aaff; }
-    #container-who-we-are p a {
+    #who-we-are p a {
       color: #1f91e6 !important;
       font-size: 14px;
       letter-spacing: 0.5px;
       line-height: 0;
       text-transform: uppercase; }
-      #container-who-we-are p a:hover {
+      #who-we-are p a:hover {
         color: #444444 !important; }
+
+/* ===================================
+    Backstage
+=================================== */
+#backstage {
+  background-color: white;
+  padding-top: 30px; }
 
 /* ===================================
     Footer
