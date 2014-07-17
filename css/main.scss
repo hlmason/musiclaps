@@ -39,7 +39,6 @@ $musiclaps-blue: #38AAFF; // Whatever shade of blue you want
 		span {
 			// text-shadow: 0.5px 0.5px 2px $musiclaps-blue;
 			// background-color: #52C4FF;
-			font-weight: bold;
 			// padding-bottom: 3px;
 			// padding-left: 5px;
 			// padding-right: 5px;
@@ -350,7 +349,7 @@ footer {
 				background-color: white !important; // Changes "Log in" and "Register" button color to match the rest of the links in the collapsed menu
 				border: none; // Removes "Log in" and "Register" border color to match the rest of the links in the collapsed menu
 				a:hover {
-					color: #666 !important; // Changes "Log in" and "Register" link color to match the rest of the links in the collapsed menu
+					color: $musiclaps-blue !important; // Changes "Log in" and "Register" link color to match the rest of the links in the collapsed menu
 				} 
 			}
 			&:last-child {

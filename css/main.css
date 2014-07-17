@@ -2098,8 +2098,6 @@ h1.landing-page {
     font-size: 18px;
     letter-spacing: 0.25px;
     margin-top: 0; }
-    #who-we-are p span {
-      font-weight: bold; }
   #who-we-are a {
     color: #1f91e6 !important;
     font-size: 14px;
@@ -2119,8 +2117,6 @@ h1.landing-page {
     font-size: 18px;
     letter-spacing: 0.25px;
     margin-top: 0; }
-    #backstage p span {
-      font-weight: bold; }
   #backstage a {
     color: #1f91e6 !important;
     font-size: 14px;
@@ -2193,7 +2189,7 @@ footer {
       background-color: white !important;
       border: none; }
       .navbar-right li:first-child a:hover, .navbar-right li:last-child a:hover {
-        color: #666 !important; }
+        color: #38aaff !important; }
     .navbar-right li:last-child {
       border-bottom: 1px solid #cecece;
       padding-bottom: 10px; }
