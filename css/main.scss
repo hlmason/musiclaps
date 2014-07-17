@@ -31,6 +31,28 @@ $musiclaps-blue: #38AAFF; // Whatever shade of blue you want
 			transform:rotate($degrees);
 }
 
+@mixin section-paragraph {
+	p {
+		font-size: 18px;
+		letter-spacing: 0.25px;
+		margin-top: 0;
+		span {
+			// text-shadow: 0.5px 0.5px 2px $musiclaps-blue;
+			// background-color: #52C4FF;
+			font-weight: bold;
+			// padding-bottom: 3px;
+			// padding-left: 5px;
+			// padding-right: 5px;
+		}
+	}
+	a {
+		@include primary-link(#1F91E6);
+		&:hover {
+			color: $musiclaps-dark-gray !important;
+		}
+	}
+}
+
 /* ===================================
     Global
 =================================== */
@@ -152,8 +174,8 @@ h1.landing-page {
 .musical-notes-map {
 	background-image: url('../img/world_map_bg.png');
 	// background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	// background-repeat: no-repeat;
+	// background-size: cover;
 	height: 100%;
 	width: 100%;
 }
@@ -161,12 +183,11 @@ h1.landing-page {
 #stage {
 	background-color: $musiclaps-dark-gray;
 	height: 161px;
-	margin-top: -20px;
 	text-align: center;
 	width: 100%;
 	#stage-inner {
 		margin: 0 auto;
-		width: 80%;
+		width: 60%;
 		#soundcheck, #record-demo {
 			margin-top: 55px;
 			padding-left: 0;
@@ -191,7 +212,7 @@ h1.landing-page {
 			color: $musiclaps-blue;
 			font-size: 12px;
 			letter-spacing: 0.5px;
-			margin-top: 20px;
+			margin-top: 25px;
 			text-transform: uppercase;
 			sup {		
 				letter-spacing: 4px;
@@ -201,7 +222,7 @@ h1.landing-page {
 			}
 		}
 		ul {
-			margin-top: -40px;
+			margin-top: -37px;
 			padding-left: 0;
 			li {
 				display: inline-block;
@@ -236,20 +257,7 @@ h1.landing-page {
 			margin-top: 50px;
 			@include transform(-16deg);
 		}
-		p {
-			font-size: 18px;
-			letter-spacing: 0.25px;
-			margin-top: 0;
-			span {
-				text-shadow: 0.5px 0.5px 2px $musiclaps-blue;
-			}
-			a {
-				@include primary-link(#1F91E6);
-				&:hover {
-					color: $musiclaps-dark-gray !important;
-				}
-			}
-		}
+		@include section-paragraph;
 	}
 	/* ===================================
 	    Backstage
@@ -257,6 +265,12 @@ h1.landing-page {
 	#backstage {
 		background-color: white;
 		padding-top: 30px;
+		@include section-paragraph;
+		li {
+			list-style-type: none;
+			padding-left: 50px;
+			padding-top: 10px;
+		}
 	}
 
 /* ===================================
@@ -285,6 +299,11 @@ footer {
 /* ===================================
     Media Queries
 =================================== */
+@media only screen and (max-width: 1444px) {
+// Breakpoint of "Click on any button to start"
+	#stage-inner { width: 80% !important; }
+}
+
 @media only screen and (max-width: 1087px) {
 // Breakpoint of "Click on any button to start"
 	#stage-inner {

@@ -2025,20 +2025,17 @@ h1.landing-page {
 
 .musical-notes-map {
   background-image: url("../img/world_map_bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100%;
   width: 100%; }
 
 #stage {
   background-color: #444444;
   height: 161px;
-  margin-top: -20px;
   text-align: center;
   width: 100%; }
   #stage #stage-inner {
     margin: 0 auto;
-    width: 80%; }
+    width: 60%; }
     #stage #stage-inner #soundcheck, #stage #stage-inner #record-demo {
       margin-top: 55px;
       padding-left: 0;
@@ -2061,14 +2058,14 @@ h1.landing-page {
       color: #38aaff;
       font-size: 12px;
       letter-spacing: 0.5px;
-      margin-top: 20px;
+      margin-top: 25px;
       text-transform: uppercase; }
       #stage #stage-inner p sup {
         letter-spacing: 4px; }
         #stage #stage-inner p sup:nth-child(2), #stage #stage-inner p sup:last-child {
           display: none; }
     #stage #stage-inner ul {
-      margin-top: -40px;
+      margin-top: -37px;
       padding-left: 0; }
       #stage #stage-inner ul li {
         display: inline-block; }
@@ -2102,15 +2099,15 @@ h1.landing-page {
     letter-spacing: 0.25px;
     margin-top: 0; }
     #who-we-are p span {
-      text-shadow: 0.5px 0.5px 2px #38aaff; }
-    #who-we-are p a {
-      color: #1f91e6 !important;
-      font-size: 14px;
-      letter-spacing: 0.5px;
-      line-height: 0;
-      text-transform: uppercase; }
-      #who-we-are p a:hover {
-        color: #444444 !important; }
+      font-weight: bold; }
+  #who-we-are a {
+    color: #1f91e6 !important;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 0;
+    text-transform: uppercase; }
+    #who-we-are a:hover {
+      color: #444444 !important; }
 
 /* ===================================
     Backstage
@@ -2118,6 +2115,24 @@ h1.landing-page {
 #backstage {
   background-color: white;
   padding-top: 30px; }
+  #backstage p {
+    font-size: 18px;
+    letter-spacing: 0.25px;
+    margin-top: 0; }
+    #backstage p span {
+      font-weight: bold; }
+  #backstage a {
+    color: #1f91e6 !important;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 0;
+    text-transform: uppercase; }
+    #backstage a:hover {
+      color: #444444 !important; }
+  #backstage li {
+    list-style-type: none;
+    padding-left: 50px;
+    padding-top: 10px; }
 
 /* ===================================
     Footer
@@ -2140,6 +2155,9 @@ footer {
 /* ===================================
     Media Queries
 =================================== */
+@media only screen and (max-width: 1444px) {
+  #stage-inner {
+    width: 80% !important; } }
 @media only screen and (max-width: 1087px) {
   #stage-inner sup:first-child, #stage-inner sup:nth-child(3) {
     display: none; }
