@@ -150,10 +150,6 @@ h1.landing-page {
 	margin-top: 0;
 	margin-bottom: 0; // For customized Bootstrap
 	text-align: center;
-	// &:first-child {
-	// 	border-top: $nav-border;
-	// 	padding-top: 10px;
-	// }
 	a {
 		color: $musiclaps-blue;
 		&:hover {
@@ -165,10 +161,7 @@ h1.landing-page {
 #landing-page-hero {
 	margin-top: 30px;
 	text-align: center;
-	// img {
-	// 	margin-top: 220px;
-	// }
-	.musical-notes-map {
+	#musical-notes-map {
 		background-image: url('../img/musical-notes-map.png');
 		height: 100%;
 		margin-left: -1010em;
