@@ -253,6 +253,11 @@ hr {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
+  
+ul {
+	list-style: none;
+	padding-left:0;
+}
 
 @media (min-width: 768px) {
   .container {
@@ -2019,13 +2024,32 @@ h1.landing-page {
 
 #landing-page-hero {
   margin-top: 30px;
-  text-align: center; }
+  text-align: center; 
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  }
+  
+  .musician {
+	width:100% ;
+	min-width: 320px;
+	height: auto;
+	z-index: 1000;
+	position: fixed;
+	margin-bottom: 0;
+	margin-top: 5em;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+  
   #landing-page-hero .musical-notes-map {
     background-image: url("../img/musical-notes-map.png");
     height: 100%;
     margin-left: -1010em;
-    position: absolute;
     width: 5000em;
+	position: absolute;
     z-index: -1;
     -webkit-animation: moveSlideshow 20s linear infinite normal forwards;
     -moz-animation: moveSlideshow 20s linear infinite normal forwards;
@@ -2109,9 +2133,9 @@ h1.landing-page {
     text-align: center; }
   #who-we-are img {
     margin-top: 50px;
-    -webkit-transform: rotate(-16deg);
+    /*-webkit-transform: rotate(-16deg);
     -ms-transform: rotate(-16deg);
-    transform: rotate(-16deg); }
+    transform: rotate(-16deg);*/ }
   #who-we-are p {
     font-size: 18px;
     letter-spacing: 0.25px;
@@ -2145,7 +2169,7 @@ h1.landing-page {
       color: #444444 !important; }
   #backstage li {
     list-style-type: none;
-    padding-left: 50px;
+    padding-left: 0;
     padding-top: 10px; }
 
 /* ===================================
