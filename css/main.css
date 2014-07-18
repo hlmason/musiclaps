@@ -2184,7 +2184,6 @@ footer {
       width: 65% !important; } }
 @media only screen and (max-width: 768px) {
   .navbar-default {
-    background-color: #fff;
     border: none; }
 
   .navbar-header {
@@ -2199,12 +2198,11 @@ footer {
   .navbar-right {
     margin-top: 0; }
     .navbar-right li:first-child, .navbar-right li:last-child {
-      background-color: white !important;
+      background-color: #e7e7e7 !important;
       border: none; }
       .navbar-right li:first-child a:hover, .navbar-right li:last-child a:hover {
         color: #38aaff !important; }
     .navbar-right li:last-child {
-      border-bottom: 1px solid #cecece;
       padding-bottom: 10px; }
     .navbar-right li:last-child a {
       color: #444444 !important; }

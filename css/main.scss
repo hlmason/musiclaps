@@ -358,7 +358,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
 // Breakpoint of Bootstrap's collapsed menu
-	.navbar-default { background-color: #fff; border: none; }
+	.navbar-default { border: none; }
 	.navbar-header { background-color: $musiclaps-light-gray; }
 	.navbar a:not(.navbar-brand) { margin-left: 10px; }
 	// .navbar li:hover { background-color: lightgray; padding-bottom: 10px; padding-top: 10px; }
@@ -367,14 +367,13 @@ footer {
 		margin-top: 0;
 		li {
 			&:first-child, &:last-child { 
-				background-color: white !important; // Changes "Log in" and "Register" button color to match the rest of the links in the collapsed menu
+				background-color: $musiclaps-light-gray !important; // Changes "Log in" and "Register" button color to match the rest of the links in the collapsed menu
 				border: none; // Removes "Log in" and "Register" border color to match the rest of the links in the collapsed menu
 				a:hover {
 					color: $musiclaps-blue !important; // Changes "Log in" and "Register" link color to match the rest of the links in the collapsed menu
 				} 
 			}
 			&:last-child {
-				border-bottom: $nav-border;
 				padding-bottom: 10px;
 			}
 			&:last-child a {
