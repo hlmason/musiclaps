@@ -25,6 +25,16 @@ $musiclaps-blue: #38AAFF; // Whatever shade of blue you want
 	text-transform: uppercase;
 }
 
+@mixin heading($font-size, $margin-bottom, $margin-top) {
+	color: $musiclaps-dark-gray;
+	font-size: $font-size;
+	font-weight: normal; // For customized Bootstrap
+	letter-spacing: 0.5px;
+	margin-bottom: $margin-bottom;
+	margin-top: $margin-top;
+	text-align: center;
+}
+
 @mixin transform($degrees) {
 	-webkit-transform:rotate($degrees);
 		-ms-transform:rotate($degrees);
@@ -35,6 +45,7 @@ $musiclaps-blue: #38AAFF; // Whatever shade of blue you want
 	p {
 		font-size: 18px;
 		letter-spacing: 0.25px;
+		margin-bottom: 0;
 		margin-top: 0;
 		span {
 			// text-shadow: 0.5px 0.5px 2px $musiclaps-blue;
@@ -67,6 +78,10 @@ body {
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+li { 
+	list-style-type: none;
 }
 
 a:hover {
@@ -142,14 +157,8 @@ a:hover {
     Landing Page
 =================================== */
 h1.landing-page {
-	color: $musiclaps-dark-gray;
+	@include heading(30px, 0, 0);
 	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 30px;
-	font-weight: normal; // For customized Bootstrap
-	letter-spacing: 0.5px;
-	margin-top: 0;
-	margin-bottom: 0; // For customized Bootstrap
-	text-align: center;
 	a {
 		color: $musiclaps-blue;
 		&:hover {
@@ -160,6 +169,8 @@ h1.landing-page {
 
 #landing-page-hero {
 	margin-top: 30px;
+	overflow: hidden;
+	position: relative;
 	text-align: center;
 	#musical-notes-map {
 		background-image: url('../img/musical-notes-map.png');
@@ -245,38 +256,38 @@ h1.landing-page {
 		}
 	}
 }
+
 	/* ===================================
-	    Who We Are
+	    Who We Are, Backstage
 	=================================== */
+	#who-we-are, #backstage {
+		h2 {
+			@include heading(26px, 15px, 30px);
+		}
+		@include section-paragraph;
+		ul {
+			margin-top: 0;
+			padding-left: 0;
+			li:first-child {
+				padding-top: 20px;
+			}
+			li:not(.first-list-item) {
+				padding-top: 10px;
+			}
+		}
+	}
+
 	#who-we-are {
 		background-color: $musiclaps-light-gray;
 		padding-bottom: 30px;
-		h2 {
-			font-size: 26px;
-			margin-bottom: 15px;
-			margin-top: 0;
-			padding-top: 30px;
-			text-align: center;
-
-		}
 		img {
-			margin-top: 50px;
-			@include transform(-16deg);
+			margin-top: 80px;
 		}
-		@include section-paragraph;
 	}
-	/* ===================================
-	    Backstage
-	=================================== */
+
 	#backstage {
 		background-color: white;
 		padding-top: 30px;
-		@include section-paragraph;
-		li {
-			list-style-type: none;
-			padding-left: 50px;
-			padding-top: 10px;
-		}
 	}
 
 /* ===================================

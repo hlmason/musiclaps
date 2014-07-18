@@ -1944,6 +1944,9 @@ img {
   max-width: 100%;
   height: auto; }
 
+li {
+  list-style-type: none; }
+
 a:hover {
   cursor: pointer;
   cursor: hand;
@@ -2005,13 +2008,13 @@ a:hover {
 =================================== */
 h1.landing-page {
   color: #444444;
-  font-family: 'Roboto Condensed', sans-serif;
   font-size: 30px;
   font-weight: normal;
   letter-spacing: 0.5px;
-  margin-top: 0;
   margin-bottom: 0;
-  text-align: center; }
+  margin-top: 0;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif; }
   h1.landing-page a {
     color: #38aaff; }
     h1.landing-page a:hover {
@@ -2019,6 +2022,8 @@ h1.landing-page {
 
 #landing-page-hero {
   margin-top: 30px;
+  overflow: hidden;
+  position: relative;
   text-align: center; }
   #landing-page-hero #musical-notes-map {
     background-image: url("../img/musical-notes-map.png");
@@ -2096,57 +2101,46 @@ h1.landing-page {
             transform: scale(1.1); }
 
 /* ===================================
-    Who We Are
+    Who We Are, Backstage
 =================================== */
+#who-we-are h2, #backstage h2 {
+  color: #444444;
+  font-size: 26px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  text-align: center; }
+#who-we-are p, #backstage p {
+  font-size: 18px;
+  letter-spacing: 0.25px;
+  margin-bottom: 0;
+  margin-top: 0; }
+#who-we-are a, #backstage a {
+  color: #1f91e6 !important;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 0;
+  text-transform: uppercase; }
+  #who-we-are a:hover, #backstage a:hover {
+    color: #444444 !important; }
+#who-we-are ul, #backstage ul {
+  margin-top: 0;
+  padding-left: 0; }
+  #who-we-are ul li:first-child, #backstage ul li:first-child {
+    padding-top: 20px; }
+  #who-we-are ul li:not(.first-list-item), #backstage ul li:not(.first-list-item) {
+    padding-top: 10px; }
+
 #who-we-are {
   background-color: #e7e7e7;
   padding-bottom: 30px; }
-  #who-we-are h2 {
-    font-size: 26px;
-    margin-bottom: 15px;
-    margin-top: 0;
-    padding-top: 30px;
-    text-align: center; }
   #who-we-are img {
-    margin-top: 50px;
-    -webkit-transform: rotate(-16deg);
-    -ms-transform: rotate(-16deg);
-    transform: rotate(-16deg); }
-  #who-we-are p {
-    font-size: 18px;
-    letter-spacing: 0.25px;
-    margin-top: 0; }
-  #who-we-are a {
-    color: #1f91e6 !important;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    line-height: 0;
-    text-transform: uppercase; }
-    #who-we-are a:hover {
-      color: #444444 !important; }
+    margin-top: 80px; }
 
-/* ===================================
-    Backstage
-=================================== */
 #backstage {
   background-color: white;
   padding-top: 30px; }
-  #backstage p {
-    font-size: 18px;
-    letter-spacing: 0.25px;
-    margin-top: 0; }
-  #backstage a {
-    color: #1f91e6 !important;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    line-height: 0;
-    text-transform: uppercase; }
-    #backstage a:hover {
-      color: #444444 !important; }
-  #backstage li {
-    list-style-type: none;
-    padding-left: 50px;
-    padding-top: 10px; }
 
 /* ===================================
     Footer
