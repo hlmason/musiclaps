@@ -17,12 +17,10 @@ $musiclaps-blue: #38AAFF; // Whatever shade of blue you want
 // 		 border-radius: $radius;
 // }
 
-@mixin primary-link($color) {
+@mixin primary-link($color, $font-size) {
 	color: $color !important;
-	font-size: 14px;
-	letter-spacing: 0.5px;
+	font-size: $font-size;
 	line-height: 0;
-	text-transform: uppercase;
 }
 
 @mixin heading($font-size, $margin-bottom, $margin-top) {
@@ -41,7 +39,7 @@ $musiclaps-blue: #38AAFF; // Whatever shade of blue you want
 			transform:rotate($degrees);
 }
 
-@mixin section-paragraph {
+@mixin section-paragraph-and-links {
 	p {
 		font-size: 18px;
 		letter-spacing: 0.25px;
@@ -56,7 +54,7 @@ $musiclaps-blue: #38AAFF; // Whatever shade of blue you want
 		}
 	}
 	a {
-		@include primary-link(#1F91E6);
+		@include primary-link(#1F91E6, 16px);
 		&:hover {
 			color: $musiclaps-dark-gray !important;
 		}
@@ -105,7 +103,9 @@ a:hover {
 .nav li {
 	margin-top: 23px;
 	a {
-		@include primary-link($musiclaps-dark-gray);
+		@include primary-link($musiclaps-dark-gray, 14px);
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
 		&:hover {
 			color: $musiclaps-blue !important;
 		}
@@ -257,14 +257,15 @@ h1.landing-page {
 	}
 }
 
-	/* ===================================
-	    Who We Are, Backstage
-	=================================== */
-	#who-we-are, #backstage {
+	/* ===============================================================
+	    Who We Are, Backstage, Music Education, Contests and Auditions
+	=============================================================== */
+	#who-we-are, #backstage, #music-ed, #contests-and-auditions {
+		padding-bottom: 30px;
 		h2 {
 			@include heading(26px, 15px, 30px);
 		}
-		@include section-paragraph;
+		@include section-paragraph-and-links;
 		ul {
 			margin-top: 0;
 			padding-left: 0;
@@ -275,19 +276,21 @@ h1.landing-page {
 				padding-top: 10px;
 			}
 		}
-	}
-
-	#who-we-are {
-		background-color: $musiclaps-light-gray;
-		padding-bottom: 30px;
 		img {
 			margin-top: 80px;
 		}
 	}
 
-	#backstage {
+	#who-we-are, #backstage, #music-ed {
+		border-bottom: $nav-border;
+	}
+
+	#who-we-are, #music-ed {
+		background-color: $musiclaps-light-gray;
+	}
+
+	#backstage, #contests-and-auditions {
 		background-color: white;
-		padding-top: 30px;
 	}
 
 /* ===================================

@@ -1967,8 +1967,8 @@ a:hover {
   .nav li a {
     color: #444444 !important;
     font-size: 14px;
-    letter-spacing: 0.5px;
     line-height: 0;
+    letter-spacing: 0.5px;
     text-transform: uppercase; }
     .nav li a:hover {
       color: #38aaff !important; }
@@ -2100,47 +2100,48 @@ h1.landing-page {
             -ms-transform: scale(1.1);
             transform: scale(1.1); }
 
-/* ===================================
-    Who We Are, Backstage
-=================================== */
-#who-we-are h2, #backstage h2 {
-  color: #444444;
-  font-size: 26px;
-  font-weight: normal;
-  letter-spacing: 0.5px;
-  margin-bottom: 15px;
-  margin-top: 30px;
-  text-align: center; }
-#who-we-are p, #backstage p {
-  font-size: 18px;
-  letter-spacing: 0.25px;
-  margin-bottom: 0;
-  margin-top: 0; }
-#who-we-are a, #backstage a {
-  color: #1f91e6 !important;
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  line-height: 0;
-  text-transform: uppercase; }
-  #who-we-are a:hover, #backstage a:hover {
-    color: #444444 !important; }
-#who-we-are ul, #backstage ul {
-  margin-top: 0;
-  padding-left: 0; }
-  #who-we-are ul li:first-child, #backstage ul li:first-child {
-    padding-top: 20px; }
-  #who-we-are ul li:not(.first-list-item), #backstage ul li:not(.first-list-item) {
-    padding-top: 10px; }
-
-#who-we-are {
-  background-color: #e7e7e7;
+/* ===============================================================
+    Who We Are, Backstage, Music Education, Contests and Auditions
+=============================================================== */
+#who-we-are, #backstage, #music-ed, #contests-and-auditions {
   padding-bottom: 30px; }
-  #who-we-are img {
+  #who-we-are h2, #backstage h2, #music-ed h2, #contests-and-auditions h2 {
+    color: #444444;
+    font-size: 26px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    text-align: center; }
+  #who-we-are p, #backstage p, #music-ed p, #contests-and-auditions p {
+    font-size: 18px;
+    letter-spacing: 0.25px;
+    margin-bottom: 0;
+    margin-top: 0; }
+  #who-we-are a, #backstage a, #music-ed a, #contests-and-auditions a {
+    color: #1f91e6 !important;
+    font-size: 16px;
+    line-height: 0; }
+    #who-we-are a:hover, #backstage a:hover, #music-ed a:hover, #contests-and-auditions a:hover {
+      color: #444444 !important; }
+  #who-we-are ul, #backstage ul, #music-ed ul, #contests-and-auditions ul {
+    margin-top: 0;
+    padding-left: 0; }
+    #who-we-are ul li:first-child, #backstage ul li:first-child, #music-ed ul li:first-child, #contests-and-auditions ul li:first-child {
+      padding-top: 20px; }
+    #who-we-are ul li:not(.first-list-item), #backstage ul li:not(.first-list-item), #music-ed ul li:not(.first-list-item), #contests-and-auditions ul li:not(.first-list-item) {
+      padding-top: 10px; }
+  #who-we-are img, #backstage img, #music-ed img, #contests-and-auditions img {
     margin-top: 80px; }
 
-#backstage {
-  background-color: white;
-  padding-top: 30px; }
+#who-we-are, #backstage, #music-ed {
+  border-bottom: 1px solid #cecece; }
+
+#who-we-are, #music-ed {
+  background-color: #e7e7e7; }
+
+#backstage, #contests-and-auditions {
+  background-color: white; }
 
 /* ===================================
     Footer
