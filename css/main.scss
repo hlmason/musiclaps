@@ -319,12 +319,12 @@ footer {
 /* ===================================
     Media Queries
 =================================== */
-@media only screen and (max-width: 1444px) {
+@media only screen and (max-width: 1474px) {
 // Breakpoint of "Click on any button to start"
 	#stage-inner { width: 80% !important; }
 }
 
-@media only screen and (max-width: 1087px) {
+@media only screen and (max-width: 1117px) {
 // Breakpoint of "Click on any button to start"
 	#stage-inner {
 		sup {
@@ -358,7 +358,6 @@ footer {
 
 @media only screen and (max-width: 768px) {
 // Breakpoint of Bootstrap's collapsed menu
-	.navbar-default { border: none; }
 	.navbar-header { background-color: $musiclaps-light-gray; }
 	.navbar a:not(.navbar-brand) { margin-left: 10px; }
 	// .navbar li:hover { background-color: lightgray; padding-bottom: 10px; padding-top: 10px; }

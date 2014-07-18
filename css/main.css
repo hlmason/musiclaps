@@ -2164,10 +2164,10 @@ footer {
 /* ===================================
     Media Queries
 =================================== */
-@media only screen and (max-width: 1444px) {
+@media only screen and (max-width: 1474px) {
   #stage-inner {
     width: 80% !important; } }
-@media only screen and (max-width: 1087px) {
+@media only screen and (max-width: 1117px) {
   #stage-inner sup:first-child, #stage-inner sup:nth-child(3) {
     display: none; }
   #stage-inner sup:nth-child(2), #stage-inner sup:last-child {
@@ -2183,9 +2183,6 @@ footer {
     #stage-inner ul img {
       width: 65% !important; } }
 @media only screen and (max-width: 768px) {
-  .navbar-default {
-    border: none; }
-
   .navbar-header {
     background-color: #e7e7e7; }
 
