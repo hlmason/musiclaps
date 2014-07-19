@@ -91,16 +91,16 @@ a:hover {
 /* ===================================
     Nav
 =================================== */
-.navbar-default {
-	background-color: $musiclaps-light-gray; // Also controls footer color because they share the Bootstrap class name
+nav.navbar-default {
+	background-color: $musiclaps-light-gray;
 	border-bottom: $nav-border;
 }
 
-.navbar-header {
+nav .navbar-header {
 	height: 78px;
 }
 
-.nav li {
+nav .nav li {
 	margin-top: 23px;
 	a {
 		@include primary-link($musiclaps-dark-gray, 14px);
@@ -112,14 +112,14 @@ a:hover {
 	}
 }
 
-.navbar-left li {
+nav .navbar-left li {
 	border-left: 1px solid $musiclaps-blue;
 	&:first-child {
 		border-left: none;
 	}
 }
 
-.navbar-right li {
+nav .navbar-right li {
 	border: $nav-border;
 	&:first-child {
 		background-color: lightgray;
@@ -145,11 +145,11 @@ a:hover {
 	}
 }
 
-.navbar-toggle {
+nav .navbar-toggle {
 	margin-top: 23px;
 }
 
-.navbar-collapse {
+nav .navbar-collapse {
 	border-top: none;
 }
 
@@ -315,11 +315,19 @@ h1.landing-page {
 }
 
 footer {
-	// background-color: lightgray !important;
+	background-color: $musiclaps-light-gray !important;
+	border-top: $nav-border;
 	height: 50px;
-	a {
+	a.navbar-brand {
 		font-size: 12px !important;
 		letter-spacing: 1px;
+		margin-right: 10px;
+	}
+	a:not(.navbar-brand) {
+		padding-left: 0;
+	}
+	#facebook-icon {
+		width: 29px;
 	}
 }
 
@@ -368,7 +376,7 @@ footer {
 	.navbar a:not(.navbar-brand) { margin-left: 10px; }
 	// .navbar li:hover { background-color: lightgray; padding-bottom: 10px; padding-top: 10px; }
 	.navbar-left { margin-top: 0; }
-	.navbar-right {
+	nav .navbar-right {
 		margin-top: 0;
 		li {
 			&:first-child, &:last-child { 

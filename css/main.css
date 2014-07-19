@@ -1955,52 +1955,52 @@ a:hover {
 /* ===================================
     Nav
 =================================== */
-.navbar-default {
+nav.navbar-default {
   background-color: #e7e7e7;
   border-bottom: 1px solid #cecece; }
 
-.navbar-header {
+nav .navbar-header {
   height: 78px; }
 
-.nav li {
+nav .nav li {
   margin-top: 23px; }
-  .nav li a {
+  nav .nav li a {
     color: #444444 !important;
     font-size: 14px;
     line-height: 0;
     letter-spacing: 0.5px;
     text-transform: uppercase; }
-    .nav li a:hover {
+    nav .nav li a:hover {
       color: #38aaff !important; }
 
-.navbar-left li {
+nav .navbar-left li {
   border-left: 1px solid #38aaff; }
-  .navbar-left li:first-child {
+  nav .navbar-left li:first-child {
     border-left: none; }
 
-.navbar-right li {
+nav .navbar-right li {
   border: 1px solid #cecece; }
-  .navbar-right li:first-child {
+  nav .navbar-right li:first-child {
     background-color: lightgray;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px; }
-    .navbar-right li:first-child:hover {
+    nav .navbar-right li:first-child:hover {
       background-color: #d9d9d9; }
-    .navbar-right li:first-child a:hover {
+    nav .navbar-right li:first-child a:hover {
       color: black !important; }
-  .navbar-right li:last-child {
+  nav .navbar-right li:last-child {
     background-color: #38aaff;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px; }
-    .navbar-right li:last-child:hover {
+    nav .navbar-right li:last-child:hover {
       background-color: #45B7FF; }
-    .navbar-right li:last-child a {
+    nav .navbar-right li:last-child a {
       color: white !important; }
 
-.navbar-toggle {
+nav .navbar-toggle {
   margin-top: 23px; }
 
-.navbar-collapse {
+nav .navbar-collapse {
   border-top: none; }
 
 /* ===================================
@@ -2162,10 +2162,17 @@ h1.landing-page {
   height: 100px; }
 
 footer {
+  background-color: #e7e7e7 !important;
+  border-top: 1px solid #cecece;
   height: 50px; }
-  footer a {
+  footer a.navbar-brand {
     font-size: 12px !important;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    margin-right: 10px; }
+  footer a:not(.navbar-brand) {
+    padding-left: 0; }
+  footer #facebook-icon {
+    width: 29px; }
 
 /* ===================================
     Media Queries
@@ -2195,16 +2202,16 @@ footer {
   .navbar-left {
     margin-top: 0; }
 
-  .navbar-right {
+  nav .navbar-right {
     margin-top: 0; }
-    .navbar-right li:first-child, .navbar-right li:last-child {
+    nav .navbar-right li:first-child, nav .navbar-right li:last-child {
       background-color: #e7e7e7 !important;
       border: none; }
-      .navbar-right li:first-child a:hover, .navbar-right li:last-child a:hover {
+      nav .navbar-right li:first-child a:hover, nav .navbar-right li:last-child a:hover {
         color: #38aaff !important; }
-    .navbar-right li:last-child {
+    nav .navbar-right li:last-child {
       padding-bottom: 10px; }
-    .navbar-right li:last-child a {
+    nav .navbar-right li:last-child a {
       color: #444444 !important; }
 
   h1.landing-page {
