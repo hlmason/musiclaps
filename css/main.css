@@ -2163,16 +2163,25 @@ h1.landing-page {
 
 footer {
   background-color: #e7e7e7 !important;
-  border-top: 1px solid #cecece;
-  height: 50px; }
-  footer a.navbar-brand {
-    font-size: 12px !important;
-    letter-spacing: 1px;
-    margin-right: 10px; }
-  footer a:not(.navbar-brand) {
-    padding-left: 0; }
-  footer #facebook-icon {
-    width: 29px; }
+  border-top: 1px solid #cecece !important; }
+  footer .navbar-brand img {
+    width: 50%; }
+  footer .navbar-left li {
+    border-left: 1px solid #444444;
+    margin-top: 13px; }
+    footer .navbar-left li:first-child {
+      border-left: none; }
+    footer .navbar-left li a {
+      color: #444444 !important;
+      font-size: 12px;
+      line-height: 0; }
+      footer .navbar-left li a:hover {
+        color: #38aaff !important; }
+  footer ul:last-child a {
+    padding-left: 0;
+    padding-right: 5px; }
+    footer ul:last-child a #facebook-icon {
+      width: 27px; }
 
 /* ===================================
     Media Queries
