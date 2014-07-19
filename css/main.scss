@@ -276,9 +276,6 @@ h1.landing-page {
 				padding-top: 10px;
 			}
 		}
-		img {
-			margin-top: 80px;
-		}
 	}
 
 	#who-we-are, #backstage, #music-ed {
@@ -291,6 +288,16 @@ h1.landing-page {
 
 	#backstage, #contests-and-auditions {
 		background-color: white;
+	}
+
+	#who-we-are img {
+		margin-top: 120px;
+		width: 200px;
+	}
+
+	#backstage img, #music-ed img, #contests-and-auditions img {
+		margin-top: 80px;
+		width: 150px;
 	}
 
 /* ===================================
@@ -356,9 +363,8 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 // Breakpoint of Bootstrap's collapsed menu
-	.navbar-header { background-color: $musiclaps-light-gray; }
 	.navbar a:not(.navbar-brand) { margin-left: 10px; }
 	// .navbar li:hover { background-color: lightgray; padding-bottom: 10px; padding-top: 10px; }
 	.navbar-left { margin-top: 0; }
