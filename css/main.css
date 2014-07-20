@@ -2027,11 +2027,9 @@ h1.landing-page {
     width: 5000em;
     z-index: -1;
     -webkit-animation: moveSlideshow 20s linear infinite normal forwards;
-    -moz-animation: moveSlideshow 20s linear infinite normal forwards;
+    animation: moveSlideshow 20s linear infinite normal forwards;
     -webkit-transition: opacity 0.5s ease-out linear infinite normal forwards;
-    -moz-transition: opacity 0.5s ease-out linear infinite normal forwards;
-    -ms-transition: opacity 0.5s ease-out linear infinite normal forwards;
-    -o-transition: opacity 0.5s ease-out linear infinite normal forwards; }
+    transition: opacity 0.5s ease-out linear infinite normal forwards; }
 
 @-webkit-keyframes moveSlideshow {
   0% {
@@ -2039,7 +2037,7 @@ h1.landing-page {
 
   100% {
     left: 1010px; } }
-@-moz-keyframes moveSlideshow {
+@keyframes moveSlideshow {
   0% {
     left: 0; }
 
