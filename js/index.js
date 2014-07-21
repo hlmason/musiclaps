@@ -1,3 +1,5 @@
+// Randomly rotates through silhouette images of musicians on landing page
+
 function musician_silhouette_randomizer() {
 	
 	images = new Array(5);  
@@ -17,6 +19,9 @@ function musician_silhouette_randomizer() {
 	document.write(images[index]);  
 
 }
+
+
+// Makes logo lighter if you hover over it
 
 $(document).ready(function()
 {
