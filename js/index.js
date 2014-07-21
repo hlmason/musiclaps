@@ -17,3 +17,19 @@ function musician_silhouette_randomizer() {
 	document.write(images[index]);  
 
 }
+
+$(document).ready(function()
+{
+	var navbar_brand_img = $('.navbar-brand-img-js');
+
+	$(navbar_brand_img).hover(function() 
+	{	
+		if (navbar_brand_img.attr('src') == 'img/musiclaps-logo-original-darker.png')
+		{
+			navbar_brand_img.attr('src', 'img/musiclaps-logo-original-lighter.png');
+		} else {
+			navbar_brand_img.attr('src', 'img/musiclaps-logo-original-darker.png');
+		}
+	});
+});
+
