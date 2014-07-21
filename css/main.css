@@ -2201,6 +2201,9 @@ footer {
     #stage-inner ul img {
       width: 65% !important; } }
 @media only screen and (max-width: 991px) {
+  #who-we-are img, #backstage img, #music-ed img, #contests-and-auditions img {
+    display: none; }
+
   footer .navbar-brand {
     position: absolute; }
   footer .navbar-left, footer .navbar-right {
@@ -2209,15 +2212,6 @@ footer {
     float: left !important;
     padding-bottom: 15px; } }
 @media only screen and (max-width: 767px) {
-  footer .navbar-left {
-    margin-left: 5px;
-    /* Removes border to the left of links */ }
-    footer .navbar-left li {
-      border: none; }
-  footer .navbar-right {
-    float: right !important;
-    text-align: right; }
-
   nav.navbar a:not(.navbar-brand) {
     margin-left: 10px; }
   nav .navbar-left {
@@ -2245,7 +2239,23 @@ footer {
   #stage-inner p {
     margin-top: -30px !important; }
   #stage-inner ul {
-    margin-top: -40px !important; } }
+    margin-top: -40px !important; }
+
+  #who-we-are h2, #backstage h2, #music-ed h2, #contests-and-auditions h2 {
+    font-size: 22px; }
+  #who-we-are p, #backstage p, #music-ed p, #contests-and-auditions p {
+    font-size: 16px; }
+  #who-we-are a, #backstage a, #music-ed a, #contests-and-auditions a {
+    font-size: 14px; }
+
+  footer .navbar-left {
+    margin-left: 5px;
+    /* Removes border to the left of links */ }
+    footer .navbar-left li {
+      border: none; }
+  footer .navbar-right {
+    float: right !important;
+    text-align: right; } }
 @media only screen and (max-width: 590px) {
   h1.landing-page {
     font-size: 20px; } }
