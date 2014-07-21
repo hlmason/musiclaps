@@ -2201,12 +2201,12 @@ footer {
     #stage-inner ul img {
       width: 65% !important; } }
 @media only screen and (max-width: 767px) {
-  .navbar a:not(.navbar-brand) {
+  nav.navbar a:not(.navbar-brand) {
     margin-left: 10px; }
-
-  .navbar-left {
+  nav .navbar-left {
     margin-top: 0; }
-
+    nav .navbar-left li {
+      border: none !important; }
   nav .navbar-right {
     margin-top: 0; }
     nav .navbar-right li:first-child, nav .navbar-right li:last-child {
