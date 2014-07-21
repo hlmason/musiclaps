@@ -380,6 +380,9 @@ footer {
 
 @media only screen and (max-width: 991px) {
 // Breakpoint of social media icons on footer
+	#who-we-are, #backstage, #music-ed, #contests-and-auditions {
+		img { display: none; }
+	}
 	footer {
 		.navbar-brand { position: absolute; } 
 		.navbar-left, .navbar-right {
@@ -394,16 +397,6 @@ footer {
 
 @media only screen and (max-width: 767px) {
 // Breakpoint of Bootstrap's collapsed menu
-	footer {
-		.navbar-left {
-			margin-left: 5px;
-			li { border: none; } /* Removes border to the left of links */
-		}
-		.navbar-right {
-			float: right !important;
-			text-align: right;
-		}
-	}
 	nav {
 		&.navbar a:not(.navbar-brand) { margin-left: 10px; }
 		// .navbar li:hover { background-color: lightgray; padding-bottom: 10px; padding-top: 10px; }
@@ -431,6 +424,21 @@ footer {
 		}
 		p { margin-top: -30px !important; }
 		ul { margin-top: -40px !important; }
+	}
+	#who-we-are, #backstage, #music-ed, #contests-and-auditions {
+		h2 { font-size: 22px; }
+		p { font-size: 16px; }
+		a { font-size: 14px; }
+	}
+	footer {
+		.navbar-left {
+			margin-left: 5px;
+			li { border: none; } /* Removes border to the left of links */
+		}
+		.navbar-right {
+			float: right !important;
+			text-align: right;
+		}
 	}
 }
 
