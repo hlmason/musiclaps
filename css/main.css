@@ -2200,13 +2200,31 @@ footer {
     margin-top: -20px !important; }
     #stage-inner ul img {
       width: 65% !important; } }
+@media only screen and (max-width: 991px) {
+  footer .navbar-brand {
+    position: absolute; }
+  footer .navbar-left, footer .navbar-right {
+    margin-top: 50px; }
+  footer .navbar-left {
+    float: left !important;
+    padding-bottom: 15px; } }
 @media only screen and (max-width: 767px) {
+  footer .navbar-left {
+    margin-left: 5px;
+    /* Removes border to the left of links */ }
+    footer .navbar-left li {
+      border: none; }
+  footer .navbar-right {
+    float: right !important;
+    text-align: right; }
+
   nav.navbar a:not(.navbar-brand) {
     margin-left: 10px; }
   nav .navbar-left {
     margin-top: 0; }
     nav .navbar-left li {
-      border: none !important; }
+      border: none;
+      /* Removes border to the left of links */ }
   nav .navbar-right {
     margin-top: 0; }
     nav .navbar-right li:first-child, nav .navbar-right li:last-child {

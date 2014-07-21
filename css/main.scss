@@ -369,29 +369,47 @@ footer {
 // Breakpoint of "Record a Demo"
 	#stage-inner {
 		#soundcheck, #record-demo {
-			a {
-				font-size: 20px !important;
-			}
+			a { font-size: 20px !important; }
 		}
 		ul {
 			margin-top: -20px !important;
-			img {
-				width: 65% !important;
-			}
+			img { width: 65% !important; }
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+// Breakpoint of social media icons on footer
+	footer {
+		.navbar-brand { position: absolute; } 
+		.navbar-left, .navbar-right {
+			margin-top: 50px;
+		}
+		.navbar-left { 
+			float: left !important; 
+			padding-bottom: 15px; 
 		}
 	}
 }
 
 @media only screen and (max-width: 767px) {
 // Breakpoint of Bootstrap's collapsed menu
+	footer {
+		.navbar-left {
+			margin-left: 5px;
+			li { border: none; } /* Removes border to the left of links */
+		}
+		.navbar-right {
+			float: right !important;
+			text-align: right;
+		}
+	}
 	nav {
 		&.navbar a:not(.navbar-brand) { margin-left: 10px; }
 		// .navbar li:hover { background-color: lightgray; padding-bottom: 10px; padding-top: 10px; }
 	 	.navbar-left { 
 			margin-top: 0;
-			li {
-				border: none !important;
-			} 
+			li { border: none; /* Removes border to the left of links */ } 
 		}
 		.navbar-right {
 			margin-top: 0;
@@ -399,32 +417,20 @@ footer {
 				&:first-child, &:last-child { 
 					background-color: $musiclaps-light-gray !important; // Changes "Log in" and "Register" button color to match the rest of the links in the collapsed menu
 					border: none; // Removes "Log in" and "Register" border color to match the rest of the links in the collapsed menu
-					a:hover {
-						color: $musiclaps-blue !important; // Changes "Log in" and "Register" link color to match the rest of the links in the collapsed menu
-					} 
+					a:hover { color: $musiclaps-blue !important; } // Changes "Log in" and "Register" link color to match the rest of the links in the collapsed menu
 				}
-				&:last-child {
-					padding-bottom: 10px;
-				}
-				&:last-child a {
-					color: $musiclaps-dark-gray !important; // Changes "Register" link color so that it's visible and matches the rest of the links in the collapsed menu
-				}
+				&:last-child { padding-bottom: 10px; }
+				&:last-child a { color: $musiclaps-dark-gray !important; } // Changes "Register" link color so that it's visible and matches the rest of the links in the collapsed menu
 			}
 		}
 	}
 	h1.landing-page { font-size: 24px; }
 	#stage-inner {
 		#soundcheck, #record-demo {
-			a {
-				display: none;
-			}
+			a { display: none; }
 		}
-		p {
-			margin-top: -30px !important;
-		}
-		ul {
-			margin-top: -40px !important;
-		}
+		p { margin-top: -30px !important; }
+		ul { margin-top: -40px !important; }
 	}
 }
 
