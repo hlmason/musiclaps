@@ -2155,8 +2155,11 @@ h1.landing-page {
 footer {
   background-color: #e7e7e7 !important;
   border-top: 1px solid #cecece !important; }
-  footer .navbar-brand img {
-    width: 50%; }
+  footer .navbar-brand {
+    color: #444444 !important;
+    font-size: 12px; }
+    footer .navbar-brand img {
+      width: 50%; }
   footer .navbar-left li {
     border-left: 1px solid #444444;
     margin-top: 13px; }
@@ -2170,7 +2173,9 @@ footer {
         color: #38aaff !important; }
   footer ul:last-child a {
     padding-left: 0;
-    padding-right: 5px; }
+    padding-right: 14.5px;
+    /* http://www.youtube.com/yt/brand/using-logo.html: "Apply half of the icon's height as a base for clear space" */
+    /* https://about.twitter.com/press/brand-assets: "When using the bird with other logos and graphic elements, maintain a safety space that equals 200% the size of the square around the bird. */ }
     footer ul:last-child a #facebook-icon {
       width: 27px; }
 

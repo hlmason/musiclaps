@@ -314,8 +314,12 @@ h1.landing-page {
 footer {
 	background-color: $musiclaps-light-gray !important;
 	border-top: $nav-border !important;
-	.navbar-brand img {
-		width: 50%;
+	.navbar-brand {
+		color: $musiclaps-dark-gray !important;
+		font-size: 12px;
+		img {
+			width: 50%;
+		}
 	}
 	.navbar-left li {
 		@include nav-border($musiclaps-dark-gray);
@@ -326,13 +330,12 @@ footer {
 				color: $musiclaps-blue !important;
 			}
 		}
-		// &:first-child {
-		// 	margin-right: 50px;
-		// }
 	}
 	ul:last-child a {
 		padding-left: 0;
-		padding-right: 5px;
+		padding-right: 14.5px; 
+		/* http://www.youtube.com/yt/brand/using-logo.html: "Apply half of the icon's height as a base for clear space" */
+		/* https://about.twitter.com/press/brand-assets: "When using the bird with other logos and graphic elements, maintain a safety space that equals 200% the size of the square around the bird. */
 		#facebook-icon {
 			width: 27px;
 		}
