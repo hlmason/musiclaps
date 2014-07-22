@@ -274,6 +274,63 @@ h1.landing-page {
 	}
 }
 
+	/* ===================================
+	    Responsive Slider
+	=================================== */
+	.wmuSlider {
+		height: 161px;
+	    position: relative;
+	    overflow: hidden;
+	}
+	.wmuSlider .wmuSliderWrapper {
+	    display: none;
+	}
+	.wmuSlider .wmuSliderWrapper article {
+		height: 161px;
+	    position: relative;
+	    text-align: center;
+	}
+	.wmuSlider .wmuSliderWrapper article img {
+	    max-width: 100%;
+	    width: auto;
+	    // height: auto;
+	    height: 161px;
+	}
+
+
+	/* mwuGallery */
+.wmuGallery .wmuGalleryImage {
+    position: relative;
+    text-align: center;
+}
+.wmuGallery .wmuGalleryImage img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+/* Default Skin */
+.wmuGallery .wmuGalleryImage {
+    margin-bottom: 10px;
+}
+
+	.wmuSliderPrev, .wmuSliderNext {
+	    position: absolute;
+	    width: 40px;
+	    height: 80px;
+	    text-indent: -9999px;
+	    background: url(../img/sprites.png) no-repeat 0 0;
+	    top: 50%;
+	    margin-top: -40px;
+	    z-index: 2;
+	}
+	.wmuSliderPrev {
+	    background-position: 100% 0;
+	    left: 20px;
+	}
+	.wmuSliderNext {
+	    right: 20px;
+	}
+
 	/* ===============================================================
 	    Who We Are, Backstage, Music Education, Contests and Auditions
 	=============================================================== */
@@ -450,6 +507,7 @@ footer {
 		p { font-size: 16px; }
 		a { font-size: 14px; }
 	}
+	.wmuSlider { display: none; }
 	footer {
 		.navbar-left {
 			margin-left: 5px;
