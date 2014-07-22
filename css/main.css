@@ -2122,6 +2122,8 @@ h1.landing-page {
       padding-top: 20px; }
     #who-we-are ul li:not(.first-list-item), #backstage ul li:not(.first-list-item), #music-ed ul li:not(.first-list-item), #contests-and-auditions ul li:not(.first-list-item) {
       padding-top: 10px; }
+    #who-we-are ul a:visited, #backstage ul a:visited, #music-ed ul a:visited, #contests-and-auditions ul a:visited {
+      color: #444444 !important; }
 
 #who-we-are, #backstage, #music-ed {
   border-bottom: 1px solid #cecece; }
@@ -2137,8 +2139,16 @@ h1.landing-page {
   width: 200px; }
 
 #backstage img, #music-ed img, #contests-and-auditions img {
-  margin-top: 80px;
   width: 150px; }
+
+#backstage img {
+  margin-top: 80px; }
+
+#music-ed img {
+  margin-top: 70px; }
+
+#contests-and-auditions img {
+  margin-top: 100px; }
 
 /* ===================================
     Footer

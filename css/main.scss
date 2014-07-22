@@ -272,6 +272,9 @@ h1.landing-page {
 			li:not(.first-list-item) {
 				padding-top: 10px;
 			}
+			a:visited {
+				color: $musiclaps-dark-gray !important;
+			}
 		}
 	}
 
@@ -293,8 +296,19 @@ h1.landing-page {
 	}
 
 	#backstage img, #music-ed img, #contests-and-auditions img {
-		margin-top: 80px;
 		width: 150px;
+	}
+
+	#backstage img {
+		margin-top: 80px;
+	}
+
+	#music-ed img {
+		margin-top: 70px;
+	}
+
+	#contests-and-auditions img {
+		margin-top: 100px;
 	}
 
 /* ===================================
