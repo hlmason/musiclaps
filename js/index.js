@@ -23,8 +23,8 @@ function musician_silhouette_randomizer() {
 
 // Makes logo lighter if you hover over it
 
-$(document).ready(function()
-{
+$(document).ready(function() {
+
 	var navbar_brand_img = $('.navbar-brand-img-js');
 
 	$(navbar_brand_img).hover(function() 
@@ -36,5 +36,6 @@ $(document).ready(function()
 			navbar_brand_img.attr('src', 'img/musiclaps-logo-original-darker.png');
 		}
 	});
+
 });
 
