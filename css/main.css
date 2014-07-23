@@ -2224,7 +2224,7 @@ h1.landing-page {
             transform: scale(1.1); }
 
 /* ===================================
-    Responsive Slider
+    Image Slider - need to refactor
 =================================== */
 .wmuSlider {
   height: 161px;
@@ -2275,6 +2275,7 @@ h1.landing-page {
 
 .wmuSliderPrev {
   background-position: 100% 0;
+  /* Controls direction of left slider button */
   left: 100px; }
 
 .wmuSliderNext {
@@ -2446,7 +2447,7 @@ footer {
   .wmuSlider {
     display: none; }
 
-  /* Hides image slider */
+  /* Hides image slider below stage */
   footer .navbar-left {
     margin-left: 5px;
     /* Removes border to the left of links */ }

@@ -274,21 +274,24 @@ h1.landing-page {
 }
 
 	/* ===================================
-	    Responsive Slider
-	=================================== */
+	    Image Slider - need to refactor
+	=================================== */	
 	.wmuSlider {
 		height: 161px;
 	    position: relative;
 	    overflow: hidden;
 	}
+
 	.wmuSlider .wmuSliderWrapper {
 	    display: none;
 	}
+
 	.wmuSlider .wmuSliderWrapper article {
 		height: 161px;
 	    position: relative;
 	    text-align: center;
 	}
+
 	.wmuSlider .wmuSliderWrapper article img {
 	    max-width: 100%;
 	    opacity: 0.9;
@@ -301,7 +304,6 @@ h1.landing-page {
 	    	opacity: 1;
 	    }
 	}
-
 
 	/* mwuGallery */
 .wmuGallery .wmuGalleryImage {
@@ -328,10 +330,12 @@ h1.landing-page {
 	    margin-top: -40px;
 	    z-index: 2;
 	}
+
 	.wmuSliderPrev {
-	    background-position: 100% 0;
+	    background-position: 100% 0; /* Controls direction of left slider button */
 	    left: 100px;
 	}
+
 	.wmuSliderNext {
 	    right: 100px;
 	}
@@ -518,7 +522,7 @@ footer {
 		p { font-size: 16px; }
 		a { font-size: 14px; }
 	}
-	.wmuSlider { display: none; } /* Hides image slider */
+	.wmuSlider { display: none; } /* Hides image slider below stage */
 	footer {
 		.navbar-left {
 			margin-left: 5px;
