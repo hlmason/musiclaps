@@ -1,0 +1,589 @@
+@import "_customized.bootstrap.min.scss";
+
+/* ===================================
+    Variables
+=================================== */
+$nav-border: 1px solid #cecece;
+$musiclaps-light-gray: #e7e7e7;
+$musiclaps-dark-gray: #444; // Whichever shade of gray is in the logo - TBD
+$musiclaps-blue: #38AAFF; // Whatever shade of blue you want
+
+/* ===================================
+    Mixins
+=================================== */
+// @mixin border-radius($radius) {
+// 	-webkit-border-radius: $radius;
+// 	-moz-border-radius: $radius;
+// 		 border-radius: $radius;
+// }
+
+@mixin nav-border($color) {
+	border-left: 1px solid $color;
+	&:first-child {
+	border-left: none;
+	}
+}
+
+@mixin nav-link($color, $font-size) {
+	color: $color !important;
+	font-size: $font-size;
+	line-height: 0;
+}
+
+@mixin heading($font-size, $margin-bottom, $margin-top) {
+	color: $musiclaps-dark-gray;
+	font-size: $font-size;
+	font-weight: normal; // For customized Bootstrap
+	letter-spacing: 0.5px;
+	margin-bottom: $margin-bottom;
+	margin-top: $margin-top;
+	text-align: center;
+}
+
+@mixin transform($degrees) {
+	-webkit-transform:rotate($degrees);
+	   -moz-transform:rotate($degrees);
+		-ms-transform:rotate($degrees);
+		 -o-transform:rotate($degrees);
+			transform:rotate($degrees);
+}
+
+@mixin section-paragraph-and-links {
+	p {
+		font-size: 18px;
+		letter-spacing: 0.25px;
+		margin-bottom: 0;
+		margin-top: 0;
+		span {
+			// text-shadow: 0.5px 0.5px 2px $musiclaps-blue;
+			// background-color: #52C4FF;
+			// padding-bottom: 3px;
+			// padding-left: 5px;
+			// padding-right: 5px;
+		}
+	}
+	a {
+		@include nav-link(#1F91E6, 16px);
+		&:hover, &:focus {
+			color: $musiclaps-dark-gray !important;
+		}
+	}
+}
+
+/* ===================================
+    Global
+=================================== */
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	// padding-top: 120px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+li { 
+	list-style-type: none;
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+/* ===================================
+    Modal
+=================================== */
+button.close {
+	background-color: white;
+	border: none;
+}
+
+.close {
+	color: $musiclaps-blue;
+	float: right;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 1;
+	text-shadow: 0 1px 0 #fff;
+	&:hover, &:focus {
+		color: #52C4FF;	
+	}
+}
+
+/* ===================================
+    Nav
+=================================== */
+nav {
+	&.navbar-default {
+		background-color: $musiclaps-light-gray;
+		border-bottom: $nav-border;
+	}
+	.navbar-header {
+		height: 78px;
+		img {
+			height: 45px;
+			width: 155px;
+		}
+	}
+	.nav li {
+		margin-top: 23px;
+		a {
+			@include nav-link($musiclaps-dark-gray, 14px);
+			letter-spacing: 0.5px;
+			text-transform: uppercase;
+			&:hover, &:focus {
+				color: $musiclaps-blue !important;
+			}
+		}
+	}
+	.navbar-left li {
+		@include nav-border($musiclaps-blue);
+	}
+	.navbar-right li {
+		border: $nav-border;
+		&:first-child {
+			background-color: lightgray;
+			border-bottom-left-radius: 10px;
+			border-top-left-radius: 10px;
+			&:hover {
+				background-color: #d9d9d9;
+			}
+			a:hover {
+				color: black !important;
+			}
+		}
+		&:last-child {
+			background-color: $musiclaps-blue;
+			border-bottom-right-radius: 10px;
+			border-top-right-radius: 10px;
+			&:hover {
+				background-color: #45B7FF;
+			}
+			a {
+				color: white !important;
+			}
+		}
+	}
+	.navbar-toggle {
+		margin-top: 23px;
+	}
+	.navbar-collapse {
+		border-top: none;
+	}
+} 
+
+/* ===================================
+    Landing Page
+=================================== */
+h1.landing-page {
+	@include heading(30px, 0, 0);
+	font-family: 'Roboto Condensed', sans-serif;
+	a {
+		color: $musiclaps-blue;
+		&:hover, &:focus {
+				color: $musiclaps-dark-gray !important;
+		}
+	}
+}
+
+	/* ===================================
+	    Musical Notes Map
+	=================================== */
+
+	#landing-page-hero {
+		margin-top: 30px;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		#musical-notes-map {
+			background-image: url('../img/landing-page/musical-notes-map.png');
+			height: 100%;
+			margin-left: -1010em;
+			position: absolute;
+			width: 5000em;
+			z-index: -1;
+		    -webkit-animation: moveSlideshow 20s linear infinite normal forwards;
+		       -moz-animation: moveSlideshow 20s linear infinite normal forwards;
+		    	 -o-animation: moveSlideshow 20s linear infinite normal forwards;
+		       		animation: moveSlideshow 20s linear infinite normal forwards;
+		  	-webkit-transition: opacity 0.5s ease-out linear infinite normal forwards;
+		  	   -moz-transition: opacity 0.5s ease-out linear infinite normal forwards;
+		  		 -o-transition: opacity 0.5s ease-out linear infinite normal forwards;
+		       	 	transition: opacity 0.5s ease-out linear infinite normal forwards; 
+		}
+	}
+
+			@-webkit-keyframes moveSlideshow {
+			    0% { left: 0; }
+			    100% { left: 1010px; }
+			}
+			@-moz-keyframes moveSlideshow {
+			    0% { left: 0; }
+			    100% { left: 1010px; }
+			}
+			@-o-keyframes moveSlideshow {
+			    0% { left: 0; }
+			    100% { left: 1010px; }
+			}
+			@keyframes moveSlideshow {
+			    0% { left: 0; }
+			    100% { left: 1010px; }
+			}
+
+	/* ===================================
+	    Stage
+	=================================== */
+	#stage {
+		background-color: $musiclaps-dark-gray;
+		height: 161px;
+		text-align: center;
+		width: 100%;
+		#stage-inner {
+			margin: 0 auto;
+			width: 60%;
+			#soundcheck, #record-demo {
+				margin-top: 55px;
+				padding-left: 0;
+				padding-right: 0;
+				a {
+					color: white;
+					font-family: 'Allerta Stencil', sans-serif;
+					font-size: 26px;
+					&:hover, &:focus {
+						color: $musiclaps-blue;
+					}
+				}
+			}
+			#soundcheck {
+				@include transform(7deg);
+			}
+			#record-demo {
+				@include transform(-7deg);
+
+			}
+			p {
+				color: $musiclaps-blue;
+				font-size: 12px;
+				margin-top: 25px;
+				text-transform: uppercase;
+				sup {		
+					letter-spacing: 4px;
+					&:nth-child(2), &:last-child {
+						display: none; // Only visible at viewport widths <= 818px
+					}
+				}
+			}
+			ul {
+				margin-top: -37px;
+				padding-left: 0;
+				li {
+					display: inline-block;
+					img {
+						-webkit-transition: 0s linear;
+						   -moz-transition: 0s linear;
+							 -o-transition: 0s linear;
+								transition: 0s linear;
+						width: 75%;
+						&:hover {
+							-webkit-transform: scale(1.1);
+							   -moz-transform: scale(1.1);
+								-ms-transform: scale(1.1);
+								 -o-transform: scale(1.1);
+									transform: scale(1.1);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/* ===================================
+	    Image Slider
+	=================================== */	
+	.wmuSlider {
+		height: 161px;
+	    position: relative;
+	    overflow: hidden;
+		// .wmuSliderWrapper {
+	 //    	display: none;
+		// }
+		.wmuSliderWrapper article {
+			height: 161px;
+		    // position: relative;
+		    text-align: center;
+		    img {
+		    	// max-width: 100%;
+			    opacity: 0.9;
+			    // width: auto;
+			    height: 161px;
+			    width: 161px;
+			    &:hover {
+			    	cursor: pointer;
+			    	opacity: 1;
+			    }
+		    }
+		}
+	}
+
+	.wmuSliderPrev, .wmuSliderNext {
+	    position: absolute;
+	    width: 40px;
+	    height: 80px;
+	    text-indent: -9999px;
+	    background: url(../img/landing-page/sprites.png) no-repeat 0 0;
+	    top: 50%;
+	    margin-top: -40px;
+	    // z-index: 2;
+	}
+
+	.wmuSliderPrev {
+	    background-position: 100% 0; /* Controls direction of left slider button */
+	    left: 100px;
+	}
+
+	.wmuSliderNext {
+	    right: 100px;
+	}
+
+	/* ===============================================================
+	    Who We Are, Backstage, Music Education, Contests and Auditions
+	=============================================================== */
+	#who-we-are, #backstage, #music-ed, #contests-and-auditions {
+		padding-bottom: 30px;
+		h2 {
+			@include heading(26px, 15px, 30px);
+		}
+		@include section-paragraph-and-links;
+		ul {
+			margin-top: 0;
+			padding-left: 0;
+			li:first-child {
+				padding-top: 20px;
+			}
+			li:not(.first-list-item) {
+				padding-top: 10px;
+			}
+			a:visited {
+				color: $musiclaps-dark-gray !important;
+			}
+		}
+	}
+
+	#who-we-are, #backstage, #music-ed {
+		border-bottom: $nav-border;
+	}
+
+	#who-we-are, #music-ed {
+		background-color: $musiclaps-light-gray;
+	}
+
+	#backstage, #contests-and-auditions {
+		background-color: white;
+	}
+
+	#who-we-are img {
+		margin-top: 120px;
+		width: 200px;
+	}
+
+	#backstage img, #music-ed img, #contests-and-auditions img {
+		width: 150px;
+	}
+
+	#backstage img {
+		margin-top: 80px;
+	}
+
+	#music-ed img {
+		margin-top: 70px;
+	}
+
+	#contests-and-auditions img {
+		margin-top: 100px;
+	}
+
+/* ===================================
+    Footer
+=================================== */
+#wrapper {
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -50px; 
+    min-height: 100%;
+}
+
+.space-above-footer {
+	height: 100px;
+}
+
+footer {
+	background-color: $musiclaps-light-gray !important;
+	border-top: $nav-border !important;
+	.navbar-brand {
+		color: $musiclaps-dark-gray !important;
+		font-size: 12px;
+		img {
+			width: 50%;
+		}
+	}
+	.navbar-left li {
+		@include nav-border($musiclaps-dark-gray);
+		margin-top: 13px;
+		a {
+			@include nav-link($musiclaps-dark-gray, 12px);
+			&:hover, &:focus {
+				color: $musiclaps-blue !important;
+			}
+		}
+	}
+	ul:last-child a {
+		padding-left: 0;
+		padding-right: 14.5px; 
+		/* http://www.youtube.com/yt/brand/using-logo.html: "Apply half of the icon's height as a base for clear space" */
+		/* https://about.twitter.com/press/brand-assets: "When using the bird with other logos and graphic elements, maintain a safety space that equals 200% the size of the square around the bird. */
+		#facebook-icon {
+			width: 27px;
+		}
+	}
+	#twitter-icon {
+		height: 29px;
+		width: 29px;
+	}
+	#youtube-icon {
+		height: 29px;
+		width: 69px;
+	}
+}
+
+/* ===================================
+    Media Queries
+=================================== */
+@media only screen and (max-width: 1474px) {
+// Breakpoint of "Click on any button to start"
+	#stage-inner { width: 80% !important; }
+}
+
+@media only screen and (max-width: 1199px) {
+// Breakpoint of slider buttons
+	.wmuSliderPrev { left: 0; }
+	.wmuSliderNext { right: 0; }
+}
+
+@media only screen and (max-width: 1117px) {
+// Breakpoint of "Click on any button to start"
+	#stage-inner {
+		sup {
+			&:first-child, &:nth-child(3) { display: none; }
+			&:nth-child(2), &:last-child { display: inline-block !important; }
+		}
+	}
+}
+
+@media only screen and (max-width: 1016px) {
+// Breakpoint of Sound Check" and "Record a Demo"
+	#stage-inner { width: 100% !important; }
+}
+
+@media only screen and (max-width: 818px) {
+// Breakpoint of "Record a Demo"
+	#stage-inner {
+		#soundcheck, #record-demo {
+			a { font-size: 20px !important; }
+		}
+		ul {
+			margin-top: -20px !important;
+			img { width: 65% !important; }
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+// Breakpoint of social media icons on footer
+	#who-we-are, #backstage, #music-ed, #contests-and-auditions {
+		img { display: none; }
+	}
+	footer {
+		.navbar-brand { position: absolute; } 
+		.navbar-left, .navbar-right {
+			margin-top: 50px;
+		}
+		.navbar-left { 
+			float: left !important; 
+			padding-bottom: 15px; 
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+// Breakpoint of Bootstrap's collapsed menu
+	nav {
+		&.navbar a:not(.navbar-brand) { margin-left: 10px; }
+		// .navbar li:hover { background-color: lightgray; padding-bottom: 10px; padding-top: 10px; }
+	 	.navbar-left { 
+			margin-top: 0;
+			li { border: none; /* Removes border to the left of links */ } 
+		}
+		.navbar-right {
+			margin-top: 0;
+			li {
+				&:first-child, &:last-child { 
+					background-color: $musiclaps-light-gray !important; // Changes "Log in" and "Register" button color to match the rest of the links in the collapsed menu
+					border: none; // Removes "Log in" and "Register" border color to match the rest of the links in the collapsed menu
+					a:hover, a:focus { color: $musiclaps-blue !important; } // Changes "Log in" and "Register" link color to match the rest of the links in the collapsed menu
+				}
+				&:last-child { padding-bottom: 10px; }
+				&:last-child a { color: $musiclaps-dark-gray !important; } // Changes "Register" link color so that it's visible and matches the rest of the links in the collapsed menu
+			}
+		}
+	}
+	h1.landing-page { font-size: 24px; }
+	#musical-notes-map { // Makes map static on smaller devices
+		margin-left: 0;
+		width: auto;
+	    -webkit-animation: none 0 ease 0 1 normal none running;
+	       -moz-animation: none 0 ease 0 1 normal none running;
+	    	 -o-animation: none 0 ease 0 1 normal none running;
+	       		animation: none 0 ease 0 1 normal none running;
+	  	-webkit-transition: all 0 ease 0;
+	  	   -moz-transition: all 0 ease 0;
+	  		 -o-transition: all 0 ease 0;
+	       	 	transition: all 0 ease 0; 
+	}
+	#stage-inner {
+		#soundcheck, #record-demo {
+			a { display: none; }
+		}
+		p { margin-top: -30px !important; }
+		ul { margin-top: -40px !important; }
+	}
+	#who-we-are, #backstage, #music-ed, #contests-and-auditions {
+		h2 { font-size: 22px; }
+		p { font-size: 16px; }
+		a { font-size: 14px; }
+	}
+	.wmuSlider { display: none; } /* Hides image slider below stage */
+	footer {
+		.navbar-left {
+			margin-left: 5px;
+			li { border: none; } /* Removes border to the left of links */
+		}
+		.navbar-right {
+			float: right !important;
+			text-align: right;
+		}
+	}
+}
+
+@media only screen and (max-width: 590px) {
+// Breakpoint of "Online Music Collaboration Made Simple...Just Log in and Start Recording" 
+	h1.landing-page { font-size: 20px; }
+}
