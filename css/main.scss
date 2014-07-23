@@ -62,7 +62,7 @@ $musiclaps-blue: #38AAFF; // Whatever shade of blue you want
 	}
 	a {
 		@include nav-link(#1F91E6, 16px);
-		&:hover {
+		&:hover, &:focus {
 			color: $musiclaps-dark-gray !important;
 		}
 	}
@@ -89,9 +89,12 @@ li {
 	list-style-type: none;
 }
 
+a:hover, a:focus {
+	text-decoration: none;
+}
+
 a:hover {
 	cursor: pointer;
-	text-decoration: none;
 }
 
 /* ===================================
@@ -109,7 +112,7 @@ button.close {
 	font-weight: 700;
 	line-height: 1;
 	text-shadow: 0 1px 0 #fff;
-	&:hover {
+	&:hover, &:focus {
 		color: #52C4FF;	
 	}
 }
@@ -131,7 +134,7 @@ nav {
 			@include nav-link($musiclaps-dark-gray, 14px);
 			letter-spacing: 0.5px;
 			text-transform: uppercase;
-			&:hover {
+			&:hover, &:focus {
 				color: $musiclaps-blue !important;
 			}
 		}
@@ -180,7 +183,7 @@ h1.landing-page {
 	font-family: 'Roboto Condensed', sans-serif;
 	a {
 		color: $musiclaps-blue;
-		&:hover {
+		&:hover, &:focus {
 				color: $musiclaps-dark-gray !important;
 		}
 	}
@@ -203,6 +206,8 @@ h1.landing-page {
 			width: 5000em;
 			z-index: -1;
 		    -webkit-animation: moveSlideshow 20s linear infinite normal forwards;
+		       -moz-animation: moveSlideshow 20s linear infinite normal forwards;
+		    	 -o-animation: moveSlideshow 20s linear infinite normal forwards;
 		       		animation: moveSlideshow 20s linear infinite normal forwards;
 		  	-webkit-transition: opacity 0.5s ease-out linear infinite normal forwards;
 		       	 	transition: opacity 0.5s ease-out linear infinite normal forwards; 
@@ -210,6 +215,14 @@ h1.landing-page {
 	}
 
 			@-webkit-keyframes moveSlideshow {
+			    0% { left: 0; }
+			    100% { left: 1010px; }
+			}
+			@-moz-keyframes moveSlideshow {
+			    0% { left: 0; }
+			    100% { left: 1010px; }
+			}
+			@-o-keyframes moveSlideshow {
 			    0% { left: 0; }
 			    100% { left: 1010px; }
 			}
@@ -237,7 +250,7 @@ h1.landing-page {
 					color: white;
 					font-family: 'Allerta Stencil', sans-serif;
 					font-size: 26px;
-					&:hover {
+					&:hover, &:focus {
 						color: $musiclaps-blue;
 					}
 				}
@@ -413,7 +426,7 @@ footer {
 		margin-top: 13px;
 		a {
 			@include nav-link($musiclaps-dark-gray, 12px);
-			&:hover {
+			&:hover, &:focus {
 				color: $musiclaps-blue !important;
 			}
 		}
@@ -503,7 +516,7 @@ footer {
 				&:first-child, &:last-child { 
 					background-color: $musiclaps-light-gray !important; // Changes "Log in" and "Register" button color to match the rest of the links in the collapsed menu
 					border: none; // Removes "Log in" and "Register" border color to match the rest of the links in the collapsed menu
-					a:hover { color: $musiclaps-blue !important; } // Changes "Log in" and "Register" link color to match the rest of the links in the collapsed menu
+					a:hover, a:focus { color: $musiclaps-blue !important; } // Changes "Log in" and "Register" link color to match the rest of the links in the collapsed menu
 				}
 				&:last-child { padding-bottom: 10px; }
 				&:last-child a { color: $musiclaps-dark-gray !important; } // Changes "Register" link color so that it's visible and matches the rest of the links in the collapsed menu
@@ -515,6 +528,8 @@ footer {
 		margin-left: 0;
 		width: auto;
 	    -webkit-animation: none 0 ease 0 1 normal none running;
+	       -moz-animation: none 0 ease 0 1 normal none running;
+	    	 -o-animation: none 0 ease 0 1 normal none running;
 	       		animation: none 0 ease 0 1 normal none running;
 	  	-webkit-transition: all 0 ease 0;
 	       	 	transition: all 0 ease 0; 

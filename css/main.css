@@ -2063,9 +2063,11 @@ img {
 li {
   list-style-type: none; }
 
-a:hover {
-  cursor: pointer;
+a:hover, a:focus {
   text-decoration: none; }
+
+a:hover {
+  cursor: pointer; }
 
 /* ===================================
     Modal
@@ -2081,7 +2083,7 @@ button.close {
   font-weight: 700;
   line-height: 1;
   text-shadow: 0 1px 0 #fff; }
-  .close:hover {
+  .close:hover, .close:focus {
     color: #52C4FF; }
 
 /* ===================================
@@ -2100,7 +2102,7 @@ nav .nav li {
     line-height: 0;
     letter-spacing: 0.5px;
     text-transform: uppercase; }
-    nav .nav li a:hover {
+    nav .nav li a:hover, nav .nav li a:focus {
       color: #38aaff !important; }
 nav .navbar-left li {
   border-left: 1px solid #38aaff; }
@@ -2143,7 +2145,7 @@ h1.landing-page {
   font-family: 'Roboto Condensed', sans-serif; }
   h1.landing-page a {
     color: #38aaff; }
-    h1.landing-page a:hover {
+    h1.landing-page a:hover, h1.landing-page a:focus {
       color: #444444 !important; }
 
 /* ===================================
@@ -2162,11 +2164,25 @@ h1.landing-page {
     width: 5000em;
     z-index: -1;
     -webkit-animation: moveSlideshow 20s linear infinite normal forwards;
+    -moz-animation: moveSlideshow 20s linear infinite normal forwards;
+    -o-animation: moveSlideshow 20s linear infinite normal forwards;
     animation: moveSlideshow 20s linear infinite normal forwards;
     -webkit-transition: opacity 0.5s ease-out linear infinite normal forwards;
     transition: opacity 0.5s ease-out linear infinite normal forwards; }
 
 @-webkit-keyframes moveSlideshow {
+  0% {
+    left: 0; }
+
+  100% {
+    left: 1010px; } }
+@-moz-keyframes moveSlideshow {
+  0% {
+    left: 0; }
+
+  100% {
+    left: 1010px; } }
+@-o-keyframes moveSlideshow {
   0% {
     left: 0; }
 
@@ -2197,7 +2213,7 @@ h1.landing-page {
         color: white;
         font-family: 'Allerta Stencil', sans-serif;
         font-size: 26px; }
-        #stage #stage-inner #soundcheck a:hover, #stage #stage-inner #record-demo a:hover {
+        #stage #stage-inner #soundcheck a:hover, #stage #stage-inner #soundcheck a:focus, #stage #stage-inner #record-demo a:hover, #stage #stage-inner #record-demo a:focus {
           color: #38aaff; }
     #stage #stage-inner #soundcheck {
       -webkit-transform: rotate(7deg);
@@ -2285,7 +2301,7 @@ h1.landing-page {
     color: #1f91e6 !important;
     font-size: 16px;
     line-height: 0; }
-    #who-we-are a:hover, #backstage a:hover, #music-ed a:hover, #contests-and-auditions a:hover {
+    #who-we-are a:hover, #who-we-are a:focus, #backstage a:hover, #backstage a:focus, #music-ed a:hover, #music-ed a:focus, #contests-and-auditions a:hover, #contests-and-auditions a:focus {
       color: #444444 !important; }
   #who-we-are ul, #backstage ul, #music-ed ul, #contests-and-auditions ul {
     margin-top: 0;
@@ -2351,7 +2367,7 @@ footer {
       color: #444444 !important;
       font-size: 12px;
       line-height: 0; }
-      footer .navbar-left li a:hover {
+      footer .navbar-left li a:hover, footer .navbar-left li a:focus {
         color: #38aaff !important; }
   footer ul:last-child a {
     padding-left: 0;
@@ -2412,7 +2428,7 @@ footer {
     nav .navbar-right li:first-child, nav .navbar-right li:last-child {
       background-color: #e7e7e7 !important;
       border: none; }
-      nav .navbar-right li:first-child a:hover, nav .navbar-right li:last-child a:hover {
+      nav .navbar-right li:first-child a:hover, nav .navbar-right li:first-child a:focus, nav .navbar-right li:last-child a:hover, nav .navbar-right li:last-child a:focus {
         color: #38aaff !important; }
     nav .navbar-right li:last-child {
       padding-bottom: 10px; }
@@ -2426,6 +2442,8 @@ footer {
     margin-left: 0;
     width: auto;
     -webkit-animation: none 0 ease 0 1 normal none running;
+    -moz-animation: none 0 ease 0 1 normal none running;
+    -o-animation: none 0 ease 0 1 normal none running;
     animation: none 0 ease 0 1 normal none running;
     -webkit-transition: all 0 ease 0;
     transition: all 0 ease 0; }
