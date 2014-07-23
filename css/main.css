@@ -2065,7 +2065,6 @@ li {
 
 a:hover {
   cursor: pointer;
-  cursor: hand;
   text-decoration: none; }
 
 /* ===================================
@@ -2242,8 +2241,13 @@ h1.landing-page {
 
 .wmuSlider .wmuSliderWrapper article img {
   max-width: 100%;
+  opacity: 0.9;
   width: auto;
   height: 161px; }
+  .wmuSlider .wmuSliderWrapper article img:hover {
+    cursor: pointer;
+    background-color: white;
+    opacity: 1; }
 
 /* mwuGallery */
 .wmuGallery .wmuGalleryImage {
@@ -2271,10 +2275,10 @@ h1.landing-page {
 
 .wmuSliderPrev {
   background-position: 100% 0;
-  left: 20px; }
+  left: 100px; }
 
 .wmuSliderNext {
-  right: 20px; }
+  right: 100px; }
 
 /* ===============================================================
     Who We Are, Backstage, Music Education, Contests and Auditions
@@ -2370,6 +2374,12 @@ footer {
 @media only screen and (max-width: 1474px) {
   #stage-inner {
     width: 80% !important; } }
+@media only screen and (max-width: 1199px) {
+  .wmuSliderPrev {
+    left: 0; }
+
+  .wmuSliderNext {
+    right: 0; } }
 @media only screen and (max-width: 1117px) {
   #stage-inner sup:first-child, #stage-inner sup:nth-child(3) {
     display: none; }
@@ -2436,6 +2446,7 @@ footer {
   .wmuSlider {
     display: none; }
 
+  /* Hides image slider */
   footer .navbar-left {
     margin-left: 5px;
     /* Removes border to the left of links */ }
