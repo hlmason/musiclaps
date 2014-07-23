@@ -91,8 +91,27 @@ li {
 
 a:hover {
 	cursor: pointer;
-	cursor: hand;
 	text-decoration: none;
+}
+
+/* ===================================
+    Modal
+=================================== */
+button.close {
+	background-color: white;
+	border: none;
+}
+
+.close {
+	color: $musiclaps-blue;
+	float: right;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 1;
+	text-shadow: 0 1px 0 #fff;
+	&:hover {
+		color: #52C4FF;	
+	}
 }
 
 /* ===================================
@@ -254,6 +273,73 @@ h1.landing-page {
 	}
 }
 
+	/* ===================================
+	    Image Slider - need to refactor
+	=================================== */	
+	.wmuSlider {
+		height: 161px;
+	    position: relative;
+	    overflow: hidden;
+	}
+
+	.wmuSlider .wmuSliderWrapper {
+	    display: none;
+	}
+
+	.wmuSlider .wmuSliderWrapper article {
+		height: 161px;
+	    position: relative;
+	    text-align: center;
+	}
+
+	.wmuSlider .wmuSliderWrapper article img {
+	    max-width: 100%;
+	    opacity: 0.9;
+	    width: auto;
+	    // height: auto;
+	    height: 161px;
+	    &:hover {
+	    	cursor: pointer;
+	    	background-color: white;
+	    	opacity: 1;
+	    }
+	}
+
+	/* mwuGallery */
+.wmuGallery .wmuGalleryImage {
+    position: relative;
+    text-align: center;
+}
+.wmuGallery .wmuGalleryImage img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+/* Default Skin */
+.wmuGallery .wmuGalleryImage {
+    margin-bottom: 10px;
+}
+
+	.wmuSliderPrev, .wmuSliderNext {
+	    position: absolute;
+	    width: 40px;
+	    height: 80px;
+	    text-indent: -9999px;
+	    background: url(../img/sprites.png) no-repeat 0 0;
+	    top: 50%;
+	    margin-top: -40px;
+	    z-index: 2;
+	}
+
+	.wmuSliderPrev {
+	    background-position: 100% 0; /* Controls direction of left slider button */
+	    left: 100px;
+	}
+
+	.wmuSliderNext {
+	    right: 100px;
+	}
+
 	/* ===============================================================
 	    Who We Are, Backstage, Music Education, Contests and Auditions
 	=============================================================== */
@@ -364,6 +450,12 @@ footer {
 	#stage-inner { width: 80% !important; }
 }
 
+@media only screen and (max-width: 1199px) {
+// Breakpoint of slider buttons
+	.wmuSliderPrev { left: 0; }
+	.wmuSliderNext { right: 0; }
+}
+
 @media only screen and (max-width: 1117px) {
 // Breakpoint of "Click on any button to start"
 	#stage-inner {
@@ -444,6 +536,7 @@ footer {
 		p { font-size: 16px; }
 		a { font-size: 14px; }
 	}
+	.wmuSlider { display: none; } /* Hides image slider below stage */
 	footer {
 		.navbar-left {
 			margin-left: 5px;
