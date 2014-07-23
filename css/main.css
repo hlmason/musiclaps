@@ -2168,6 +2168,8 @@ h1.landing-page {
     -o-animation: moveSlideshow 20s linear infinite normal forwards;
     animation: moveSlideshow 20s linear infinite normal forwards;
     -webkit-transition: opacity 0.5s ease-out linear infinite normal forwards;
+    -moz-transition: opacity 0.5s ease-out linear infinite normal forwards;
+    -o-transition: opacity 0.5s ease-out linear infinite normal forwards;
     transition: opacity 0.5s ease-out linear infinite normal forwards; }
 
 @-webkit-keyframes moveSlideshow {
@@ -2217,11 +2219,15 @@ h1.landing-page {
           color: #38aaff; }
     #stage #stage-inner #soundcheck {
       -webkit-transform: rotate(7deg);
+      -moz-transform: rotate(7deg);
       -ms-transform: rotate(7deg);
+      -o-transform: rotate(7deg);
       transform: rotate(7deg); }
     #stage #stage-inner #record-demo {
       -webkit-transform: rotate(-7deg);
+      -moz-transform: rotate(-7deg);
       -ms-transform: rotate(-7deg);
+      -o-transform: rotate(-7deg);
       transform: rotate(-7deg); }
     #stage #stage-inner p {
       color: #38aaff;
@@ -2238,11 +2244,16 @@ h1.landing-page {
       #stage #stage-inner ul li {
         display: inline-block; }
         #stage #stage-inner ul li img {
+          -webkit-transition: 0s linear;
+          -moz-transition: 0s linear;
+          -o-transition: 0s linear;
           transition: 0s linear;
           width: 75%; }
           #stage #stage-inner ul li img:hover {
             -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
             -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
             transform: scale(1.1); }
 
 /* ===================================
@@ -2446,6 +2457,8 @@ footer {
     -o-animation: none 0 ease 0 1 normal none running;
     animation: none 0 ease 0 1 normal none running;
     -webkit-transition: all 0 ease 0;
+    -moz-transition: all 0 ease 0;
+    -o-transition: all 0 ease 0;
     transition: all 0 ease 0; }
 
   #stage-inner #soundcheck a, #stage-inner #record-demo a {

@@ -42,7 +42,9 @@ $musiclaps-blue: #38AAFF; // Whatever shade of blue you want
 
 @mixin transform($degrees) {
 	-webkit-transform:rotate($degrees);
+	   -moz-transform:rotate($degrees);
 		-ms-transform:rotate($degrees);
+		 -o-transform:rotate($degrees);
 			transform:rotate($degrees);
 }
 
@@ -210,6 +212,8 @@ h1.landing-page {
 		    	 -o-animation: moveSlideshow 20s linear infinite normal forwards;
 		       		animation: moveSlideshow 20s linear infinite normal forwards;
 		  	-webkit-transition: opacity 0.5s ease-out linear infinite normal forwards;
+		  	   -moz-transition: opacity 0.5s ease-out linear infinite normal forwards;
+		  		 -o-transition: opacity 0.5s ease-out linear infinite normal forwards;
 		       	 	transition: opacity 0.5s ease-out linear infinite normal forwards; 
 		}
 	}
@@ -280,11 +284,16 @@ h1.landing-page {
 				li {
 					display: inline-block;
 					img {
-						transition: 0s linear;
+						-webkit-transition: 0s linear;
+						   -moz-transition: 0s linear;
+							 -o-transition: 0s linear;
+								transition: 0s linear;
 						width: 75%;
 						&:hover {
 							-webkit-transform: scale(1.1);
+							   -moz-transform: scale(1.1);
 								-ms-transform: scale(1.1);
+								 -o-transform: scale(1.1);
 									transform: scale(1.1);
 						}
 					}
@@ -532,6 +541,8 @@ footer {
 	    	 -o-animation: none 0 ease 0 1 normal none running;
 	       		animation: none 0 ease 0 1 normal none running;
 	  	-webkit-transition: all 0 ease 0;
+	  	   -moz-transition: all 0 ease 0;
+	  		 -o-transition: all 0 ease 0;
 	       	 	transition: all 0 ease 0; 
 	}
 	#stage-inner {
