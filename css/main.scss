@@ -186,139 +186,126 @@ h1.landing-page {
 	}
 }
 
-#landing-page-hero {
-	margin-top: 30px;
-	overflow: hidden;
-	position: relative;
-	text-align: center;
-	#musical-notes-map {
-		background-image: url('../img/landing-page/musical-notes-map.png');
-		height: 100%;
-		margin-left: -1010em;
-		position: absolute;
-		width: 5000em;
-		z-index: -1;
-	    -webkit-animation: moveSlideshow 20s linear infinite normal forwards;
-	       		animation: moveSlideshow 20s linear infinite normal forwards;
-	  	-webkit-transition: opacity 0.5s ease-out linear infinite normal forwards;
-	       	 	transition: opacity 0.5s ease-out linear infinite normal forwards; 
+	/* ===================================
+	    Musical Notes Map
+	=================================== */
+
+	#landing-page-hero {
+		margin-top: 30px;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		#musical-notes-map {
+			background-image: url('../img/landing-page/musical-notes-map.png');
+			height: 100%;
+			margin-left: -1010em;
+			position: absolute;
+			width: 5000em;
+			z-index: -1;
+		    -webkit-animation: moveSlideshow 20s linear infinite normal forwards;
+		       		animation: moveSlideshow 20s linear infinite normal forwards;
+		  	-webkit-transition: opacity 0.5s ease-out linear infinite normal forwards;
+		       	 	transition: opacity 0.5s ease-out linear infinite normal forwards; 
+		}
 	}
-}
 
-		@-webkit-keyframes moveSlideshow {
-		    0% { left: 0; }
-		    100% { left: 1010px; }
-		}
-		@keyframes moveSlideshow {
-		    0% { left: 0; }
-		    100% { left: 1010px; }
-		}
-
-#stage {
-	background-color: $musiclaps-dark-gray;
-	height: 161px;
-	text-align: center;
-	width: 100%;
-	#stage-inner {
-		margin: 0 auto;
-		width: 60%;
-		#soundcheck, #record-demo {
-			margin-top: 55px;
-			padding-left: 0;
-			padding-right: 0;
-			a {
-				color: white;
-				font-family: 'Allerta Stencil', sans-serif;
-				font-size: 26px;
-				&:hover {
-					color: $musiclaps-blue;
-				}
+			@-webkit-keyframes moveSlideshow {
+			    0% { left: 0; }
+			    100% { left: 1010px; }
 			}
-		}
-		#soundcheck {
-			@include transform(7deg);
-		}
-		#record-demo {
-			@include transform(-7deg);
-
-		}
-		p {
-			color: $musiclaps-blue;
-			font-size: 12px;
-			margin-top: 25px;
-			text-transform: uppercase;
-			sup {		
-				letter-spacing: 4px;
-				&:nth-child(2), &:last-child {
-					display: none; // Only visible at viewport widths <= 818px
-				}
+			@keyframes moveSlideshow {
+			    0% { left: 0; }
+			    100% { left: 1010px; }
 			}
-		}
-		ul {
-			margin-top: -37px;
-			padding-left: 0;
-			li {
-				display: inline-block;
-				img {
-					transition: 0s linear;
-					width: 75%;
+
+	/* ===================================
+	    Stage
+	=================================== */
+	#stage {
+		background-color: $musiclaps-dark-gray;
+		height: 161px;
+		text-align: center;
+		width: 100%;
+		#stage-inner {
+			margin: 0 auto;
+			width: 60%;
+			#soundcheck, #record-demo {
+				margin-top: 55px;
+				padding-left: 0;
+				padding-right: 0;
+				a {
+					color: white;
+					font-family: 'Allerta Stencil', sans-serif;
+					font-size: 26px;
 					&:hover {
-						-webkit-transform: scale(1.1);
-							-ms-transform: scale(1.1);
-								transform: scale(1.1);
+						color: $musiclaps-blue;
+					}
+				}
+			}
+			#soundcheck {
+				@include transform(7deg);
+			}
+			#record-demo {
+				@include transform(-7deg);
+
+			}
+			p {
+				color: $musiclaps-blue;
+				font-size: 12px;
+				margin-top: 25px;
+				text-transform: uppercase;
+				sup {		
+					letter-spacing: 4px;
+					&:nth-child(2), &:last-child {
+						display: none; // Only visible at viewport widths <= 818px
+					}
+				}
+			}
+			ul {
+				margin-top: -37px;
+				padding-left: 0;
+				li {
+					display: inline-block;
+					img {
+						transition: 0s linear;
+						width: 75%;
+						&:hover {
+							-webkit-transform: scale(1.1);
+								-ms-transform: scale(1.1);
+									transform: scale(1.1);
+						}
 					}
 				}
 			}
 		}
 	}
-}
 
 	/* ===================================
-	    Image Slider - need to refactor
+	    Image Slider
 	=================================== */	
 	.wmuSlider {
 		height: 161px;
 	    position: relative;
 	    overflow: hidden;
+		// .wmuSliderWrapper {
+	 //    	display: none;
+		// }
+		.wmuSliderWrapper article {
+			height: 161px;
+		    // position: relative;
+		    text-align: center;
+		    img {
+		    	// max-width: 100%;
+			    opacity: 0.9;
+			    // width: auto;
+			    height: 161px;
+			    &:hover {
+			    	cursor: pointer;
+			    	opacity: 1;
+			    }
+		    }
+		}
 	}
-
-	.wmuSlider .wmuSliderWrapper {
-	    display: none;
-	}
-
-	.wmuSlider .wmuSliderWrapper article {
-		height: 161px;
-	    position: relative;
-	    text-align: center;
-	}
-
-	.wmuSlider .wmuSliderWrapper article img {
-	    max-width: 100%;
-	    opacity: 0.9;
-	    width: auto;
-	    // height: auto;
-	    height: 161px;
-	    &:hover {
-	    	cursor: pointer;
-	    	background-color: white;
-	    	opacity: 1;
-	    }
-	}
-
-	/* mwuGallery */
-.wmuGallery .wmuGalleryImage {
-    position: relative;
-    text-align: center;
-}
-.wmuGallery .wmuGalleryImage img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
-}
-/* Default Skin */
-.wmuGallery .wmuGalleryImage {
-    margin-bottom: 10px;
-}
 
 	.wmuSliderPrev, .wmuSliderNext {
 	    position: absolute;
@@ -328,7 +315,7 @@ h1.landing-page {
 	    background: url(../img/landing-page/sprites.png) no-repeat 0 0;
 	    top: 50%;
 	    margin-top: -40px;
-	    z-index: 2;
+	    // z-index: 2;
 	}
 
 	.wmuSliderPrev {

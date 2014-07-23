@@ -2146,6 +2146,9 @@ h1.landing-page {
     h1.landing-page a:hover {
       color: #444444 !important; }
 
+/* ===================================
+    Musical Notes Map
+=================================== */
 #landing-page-hero {
   margin-top: 30px;
   overflow: hidden;
@@ -2175,6 +2178,9 @@ h1.landing-page {
 
   100% {
     left: 1010px; } }
+/* ===================================
+    Stage
+=================================== */
 #stage {
   background-color: #444444;
   height: 161px;
@@ -2224,44 +2230,21 @@ h1.landing-page {
             transform: scale(1.1); }
 
 /* ===================================
-    Image Slider - need to refactor
+    Image Slider
 =================================== */
 .wmuSlider {
   height: 161px;
   position: relative;
   overflow: hidden; }
-
-.wmuSlider .wmuSliderWrapper {
-  display: none; }
-
-.wmuSlider .wmuSliderWrapper article {
-  height: 161px;
-  position: relative;
-  text-align: center; }
-
-.wmuSlider .wmuSliderWrapper article img {
-  max-width: 100%;
-  opacity: 0.9;
-  width: auto;
-  height: 161px; }
-  .wmuSlider .wmuSliderWrapper article img:hover {
-    cursor: pointer;
-    background-color: white;
-    opacity: 1; }
-
-/* mwuGallery */
-.wmuGallery .wmuGalleryImage {
-  position: relative;
-  text-align: center; }
-
-.wmuGallery .wmuGalleryImage img {
-  max-width: 100%;
-  width: auto;
-  height: auto; }
-
-/* Default Skin */
-.wmuGallery .wmuGalleryImage {
-  margin-bottom: 10px; }
+  .wmuSlider .wmuSliderWrapper article {
+    height: 161px;
+    text-align: center; }
+    .wmuSlider .wmuSliderWrapper article img {
+      opacity: 0.9;
+      height: 161px; }
+      .wmuSlider .wmuSliderWrapper article img:hover {
+        cursor: pointer;
+        opacity: 1; }
 
 .wmuSliderPrev, .wmuSliderNext {
   position: absolute;
@@ -2270,8 +2253,7 @@ h1.landing-page {
   text-indent: -9999px;
   background: url(../img/landing-page/sprites.png) no-repeat 0 0;
   top: 50%;
-  margin-top: -40px;
-  z-index: 2; }
+  margin-top: -40px; }
 
 .wmuSliderPrev {
   background-position: 100% 0;
