@@ -511,6 +511,14 @@ footer {
 		}
 	}
 	h1.landing-page { font-size: 24px; }
+	#musical-notes-map { // Makes map static on smaller devices
+		margin-left: 0;
+		width: auto;
+	    -webkit-animation: none 0 ease 0 1 normal none running;
+	       		animation: none 0 ease 0 1 normal none running;
+	  	-webkit-transition: all 0 ease 0;
+	       	 	transition: all 0 ease 0; 
+	}
 	#stage-inner {
 		#soundcheck, #record-demo {
 			a { display: none; }
