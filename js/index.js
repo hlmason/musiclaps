@@ -1,6 +1,6 @@
 // Randomly rotates through silhouette images of musicians on landing page
 
-function musician_silhouette_randomizer() {
+function musicianSilhouetteRandomizer() {
 	
 	images = new Array(5);  
 	  
@@ -25,15 +25,15 @@ function musician_silhouette_randomizer() {
 
 $(document).ready(function() {
 
-	var navbar_brand_img = $('.navbar-brand-img-js');
+	var navbarBrandImg = $('.navbar-brand-img-js');
 
-	$(navbar_brand_img).hover(function() 
+	$(navbarBrandImg).hover(function() 
 	{	
-		if (navbar_brand_img.attr('src') == 'img/nav-and-footer/musiclaps-logo-original-darker.png')
+		if (navbarBrandImg.attr('src') == 'img/nav-and-footer/musiclaps-logo-original-darker.png')
 		{
-			navbar_brand_img.attr('src', 'img/nav-and-footer/musiclaps-logo-original-lighter.png');
+			navbarBrandImg.attr('src', 'img/nav-and-footer/musiclaps-logo-original-lighter.png');
 		} else {
-			navbar_brand_img.attr('src', 'img/nav-and-footer/musiclaps-logo-original-darker.png');
+			navbarBrandImg.attr('src', 'img/nav-and-footer/musiclaps-logo-original-darker.png');
 		}
 	});
 
