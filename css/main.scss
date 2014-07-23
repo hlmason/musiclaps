@@ -129,6 +129,10 @@ nav {
 	}
 	.navbar-header {
 		height: 78px;
+		img {
+			height: 45px;
+			width: 155px;
+		}
 	}
 	.nav li {
 		margin-top: 23px;
@@ -321,6 +325,7 @@ h1.landing-page {
 			    opacity: 0.9;
 			    // width: auto;
 			    height: 161px;
+			    width: 161px;
 			    &:hover {
 			    	cursor: pointer;
 			    	opacity: 1;
@@ -448,6 +453,14 @@ footer {
 		#facebook-icon {
 			width: 27px;
 		}
+	}
+	#twitter-icon {
+		height: 29px;
+		width: 29px;
+	}
+	#youtube-icon {
+		height: 29px;
+		width: 69px;
 	}
 }
 

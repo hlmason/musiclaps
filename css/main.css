@@ -2094,6 +2094,9 @@ nav.navbar-default {
   border-bottom: 1px solid #cecece; }
 nav .navbar-header {
   height: 78px; }
+  nav .navbar-header img {
+    height: 45px;
+    width: 155px; }
 nav .nav li {
   margin-top: 23px; }
   nav .nav li a {
@@ -2268,7 +2271,8 @@ h1.landing-page {
     text-align: center; }
     .wmuSlider .wmuSliderWrapper article img {
       opacity: 0.9;
-      height: 161px; }
+      height: 161px;
+      width: 161px; }
       .wmuSlider .wmuSliderWrapper article img:hover {
         cursor: pointer;
         opacity: 1; }
@@ -2387,6 +2391,12 @@ footer {
     /* https://about.twitter.com/press/brand-assets: "When using the bird with other logos and graphic elements, maintain a safety space that equals 200% the size of the square around the bird. */ }
     footer ul:last-child a #facebook-icon {
       width: 27px; }
+  footer #twitter-icon {
+    height: 29px;
+    width: 29px; }
+  footer #youtube-icon {
+    height: 29px;
+    width: 69px; }
 
 /* ===================================
     Media Queries
