@@ -1,13 +1,17 @@
-var help = $('#help');
-var h1 = $('h1');
+// Makes logo lighter if you hover over it
 
-$(window).resize(function() {
-  if ($(window).width() < 1184) {
-    help.addClass('group');
-    h1.addClass('red');
-  }
-  else {
-    help.removeClass('group');
-    h1.removeClass('red');
-  }
+$(document).ready(function() {
+
+	var navbarBrandImg = $('.navbar-brand-img-js');
+
+	$(navbarBrandImg).hover(function() 
+	{	
+		if (navbarBrandImg.attr('src') == 'img/nav-and-footer/musiclaps-logo-original-darker.png')
+		{
+			navbarBrandImg.attr('src', 'img/nav-and-footer/musiclaps-logo-original-lighter.png');
+		} else {
+			navbarBrandImg.attr('src', 'img/nav-and-footer/musiclaps-logo-original-darker.png');
+		}
+	});
+
 });

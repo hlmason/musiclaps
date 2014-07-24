@@ -1,38 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="description" content="Official Site of Musiclaps">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="favicon.ico">
-	<link rel="apple-touch-icon-precomposed" sizes="228x228" href="favicon-228.png">
-	<link rel="apple-touch-icon-precomposed" sizes="195x195" href="favicon-195.png">
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon-152.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon-144.png">
-    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="favicon-128.png">
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon-120.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon-114.png">
-    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="favicon-96.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon-72.png">
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon-57.png">
-    <link rel="apple-touch-icon-precomposed" sizes="48x48" href="favicon-48.png">
-	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+<?php
+	require_once('include/config.php');
+	include(ROOT_PATH . 'include/header.php');
+?>
+
 	<title>Musiclaps | Play with the World Today</title>
-	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
-	<script>
-		  WebFont.load({
-		    google: {
-		      families: ['Roboto Condensed', 'Roboto', 'Allerta Stencil' ]
-		    }
-		  });
-	</script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="js/index.js"></script>
-	<!-- [if lt IE 9]> -->
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <!-- [endif] -->
-	<script src="js/wmuSlider.min.js"></script>
+	<script src="<?php echo BASE_URL; ?>js/index.js"></script>
+	<script src="<?php echo BASE_URL; ?>js/wmuSlider.min.js"></script>
 </head>
 <body>
 
@@ -44,7 +17,7 @@
 	                    <span class="icon-bar"></span>
 	                    <span class="icon-bar"></span>
 	            </button>
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="<?php echo BASE_URL; ?>">
 					<img class="navbar-brand-img-js" src="img/nav-and-footer/musiclaps-logo-original-darker.png" alt="Musiclaps logo">
 				</a>
 			</div>
@@ -96,10 +69,10 @@
 				</div>
 				<div class="row">		
 					<ul>
-						<li><a href="https://www.musiclaps.com/play?try=rec"><img src="img/landing-page/play-btn.png" alt="Play button"></a></li>
-						<li><a href="https://www.musiclaps.com/play?try=rec"><img src="img/landing-page/pause-btn.png" alt="Pause button"></a></li>
-						<li><a href="https://www.musiclaps.com/play?try=rec"><img src="img/landing-page/stop-btn.png" alt="Stop button"></a></li>
-						<li><a href="https://www.musiclaps.com/play?try=rec"><img src="img/landing-page/record-btn.png" alt="Record button"></a></li>
+						<li><a href="https://www.musiclaps.com/play?try=rec"><img src="<?php echo BASE_URL; ?>img/landing-page/play-btn.png" alt="Play button"></a></li>
+						<li><a href="https://www.musiclaps.com/play?try=rec"><img src="<?php echo BASE_URL; ?>img/landing-page/pause-btn.png" alt="Pause button"></a></li>
+						<li><a href="https://www.musiclaps.com/play?try=rec"><img src="<?php echo BASE_URL; ?>img/landing-page/stop-btn.png" alt="Stop button"></a></li>
+						<li><a href="https://www.musiclaps.com/play?try=rec"><img src="<?php echo BASE_URL; ?>img/landing-page/record-btn.png" alt="Record button"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -158,7 +131,7 @@
 						</ul>
 					</div>
 					<div class="col-md-4">
-						<img src="img/landing-page/collaborate.png" alt="Silhouette of two people with music notes between them">
+						<img src="<?php echo BASE_URL; ?>img/landing-page/collaborate.png" alt="Silhouette of two people with music notes between them">
 					</div>
 					<div class="col-md-1"></div>
 				</div>
@@ -181,7 +154,7 @@
 						</ul>
 					</div>
 					<div class="col-md-4">
-						<img src="img/landing-page/backstage.png" alt="Backstage pass">
+						<img src="<?php echo BASE_URL; ?>img/landing-page/backstage.png" alt="Backstage pass">
 					</div>
 					<div class="col-md-1"></div>
 				</div>
@@ -200,7 +173,7 @@
 						</ul>
 					</div>
 					<div class="col-md-4">
-						<img src="img/landing-page/music-book.png" alt="Book with music note">
+						<img src="<?php echo BASE_URL; ?>img/landing-page/music-book.png" alt="Book with music note">
 					</div>
 					<div class="col-md-1"></div>
 				</div>
@@ -222,38 +195,13 @@
 						</ul>
 					</div>
 					<div class="col-md-4">
-						<img src="img/landing-page/trophy.png" alt="Trophy">
+						<img src="<?php echo BASE_URL; ?>img/landing-page/trophy.png" alt="Trophy">
 					</div>
 					<div class="col-sm-1"></div>
 				</div>
 			</div>
 		</section>
-		
-		<div class="space-above-footer"></div>
-	</div>
 
-	<footer class="navbar-default">
-		<div class="container">
-			<a class="navbar-brand" href="#">
-				<img class="navbar-brand-img-js" src="img/nav-and-footer/musiclaps-logo-original-darker.png" alt="Musiclaps logo">&nbsp; &copy; 2014
-			</a>
-			<ul class="nav navbar-nav navbar-left">
-				<li><a href="https://www.musiclaps.com/play?about=us">About</a></li>
-				<li><a href="#">Press</a></li>
-				<li><a href="https://www.musiclaps.com/play?contact=us">Contact</a></li>
-				<li><a href="https://www.musiclaps.com/play?service=policy">Privacy</a></li>
-				<li><a href="https://www.musiclaps.com/play?service=terms">Terms</a></li>
-				<li><a href="https://www.musiclaps.com/play?faq=view">FAQs</a></li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="https://www.facebook.com/Musiclaps" target="blank"><img id="facebook-icon" src="img/nav-and-footer/facebook-icon.png" alt="Facebook icon"></a></li>
-				<li><a href="https://twitter.com/musiclaps" target="blank"><img id="twitter-icon" src="img/nav-and-footer/twitter-icon.png" alt="Twitter icon"></a></li>
-				<li><a href="https://www.youtube.com/user/Musiclaps" target="blank"><img id="youtube-icon" src="img/nav-and-footer/youtube-icon.png" alt="YouTube icon"></a></li>
-			</ul>
-		</div>
-	</footer>
-
-	<script src="js/customized.bootstrap.min.js"></script>
-
-</body>
-</html>
+		<?php
+			include(ROOT_PATH . 'include/footer.php');
+		?>
