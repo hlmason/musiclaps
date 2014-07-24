@@ -18,7 +18,7 @@
 	                    <span class="icon-bar"></span>
 	            </button>
 				<a class="navbar-brand" href="<?php echo BASE_URL; ?>">
-					<img class="navbar-brand-img-js" src="img/nav-and-footer/musiclaps-logo-original-darker.png" alt="Musiclaps logo">
+					<img class="navbar-brand-img-js" src="<?php echo BASE_URL; ?>img/nav-and-footer/musiclaps-logo-original-darker.png" alt="Musiclaps logo">
 				</a>
 			</div>
 			<div class="collapse navbar-collapse">

@@ -31,3 +31,4 @@
 	<!-- [if lt IE 9]> -->
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <!-- [endif] -->
+    <script src="<?php echo BASE_URL; ?>js/customized.bootstrap.min.js"></script>

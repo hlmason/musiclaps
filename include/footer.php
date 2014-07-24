@@ -23,7 +23,5 @@
 		</div>
 	</footer>
 
-	<script src="js/customized.bootstrap.min.js"></script>
-
 </body>
 </html>
