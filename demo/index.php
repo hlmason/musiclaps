@@ -1,9 +1,10 @@
 <?php
 	require_once('../include/config.php');
+
+	$pageTitle = "Demo";
 	include(ROOT_PATH . 'include/header.php');
 ?>
 
-	<title>Musiclaps | Demo</title>
 	<script src="<?php echo BASE_URL; ?>js/demo.js"></script>
 </head>
 <body>

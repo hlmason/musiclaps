@@ -5,7 +5,7 @@
 	<footer class="navbar-default">
 		<div class="container">
 			<a class="navbar-brand" href="<?php echo BASE_URL; ?>">
-				<img class="navbar-brand-img-js" src="<?php echo BASE_URL; ?>img/nav-and-footer/musiclaps-logo-original-darker.png" alt="Musiclaps logo">&nbsp; &copy; 2014
+				<img class="navbar-brand-img-js" src="<?php echo BASE_URL; ?>img/nav-and-footer/musiclaps-logo-original-darker.png" alt="Musiclaps logo">&nbsp; &copy; <?php echo date('Y'); ?>
 			</a>
 			<ul class="nav navbar-nav navbar-left">
 				<li><a href="https://www.musiclaps.com/play?about=us">About</a></li>

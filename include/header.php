@@ -18,6 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="48x48" href="<?php echo BASE_URL; ?>favicon-48.png">
 	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>css/main.css">
+	<title>Musiclaps | <?php echo $pageTitle; ?></title>
 	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
 	<script>
 		  WebFont.load({

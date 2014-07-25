@@ -1,9 +1,10 @@
 <?php
 	require_once('include/config.php');
+
+	$pageTitle = "Play with the World Today";
 	include(ROOT_PATH . 'include/header.php');
 ?>
 
-	<title>Musiclaps | Play with the World Today</title>
 	<script src="<?php echo BASE_URL; ?>js/index.js"></script>
 	<script src="<?php echo BASE_URL; ?>js/wmuSlider.min.js"></script>
 </head>
@@ -52,7 +53,7 @@
 			<div id="stage-inner">
 				<div class="row">
 					<div id="soundcheck" class="col-sm-4">
-						<a href="https://www.musiclaps.com/play?try=rec">Soundcheck</a>
+						<a href="<?php echo BASE_URL; ?>demo/">Soundcheck</a>
 					</div>
 					<div class="col-sm-4">
 						<p>
@@ -64,15 +65,15 @@
 						</p>
 					</div>
 					<div id="record-demo" class="col-sm-4">
-						<a href="https://www.musiclaps.com/play?try=rec">Record a Demo</a>
+						<a href="<?php echo BASE_URL; ?>demo/">Record a Demo</a>
 					</div>
 				</div>
 				<div class="row">		
 					<ul>
-						<li><a href="https://www.musiclaps.com/play?try=rec"><img src="<?php echo BASE_URL; ?>img/landing-page/play-btn.png" alt="Play button"></a></li>
-						<li><a href="https://www.musiclaps.com/play?try=rec"><img src="<?php echo BASE_URL; ?>img/landing-page/pause-btn.png" alt="Pause button"></a></li>
-						<li><a href="https://www.musiclaps.com/play?try=rec"><img src="<?php echo BASE_URL; ?>img/landing-page/stop-btn.png" alt="Stop button"></a></li>
-						<li><a href="https://www.musiclaps.com/play?try=rec"><img src="<?php echo BASE_URL; ?>img/landing-page/record-btn.png" alt="Record button"></a></li>
+						<li><a href="<?php echo BASE_URL; ?>demo/"><img src="<?php echo BASE_URL; ?>img/landing-page/play-btn.png" alt="Play button"></a></li>
+						<li><a href="<?php echo BASE_URL; ?>demo/"><img src="<?php echo BASE_URL; ?>img/landing-page/pause-btn.png" alt="Pause button"></a></li>
+						<li><a href="<?php echo BASE_URL; ?>demo/"><img src="<?php echo BASE_URL; ?>img/landing-page/stop-btn.png" alt="Stop button"></a></li>
+						<li><a href="<?php echo BASE_URL; ?>demo/"><img src="<?php echo BASE_URL; ?>img/landing-page/record-btn.png" alt="Record button"></a></li>
 					</ul>
 				</div>
 			</div>
