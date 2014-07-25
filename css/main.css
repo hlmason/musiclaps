@@ -2105,7 +2105,7 @@ nav .nav li {
     line-height: 0;
     letter-spacing: 0.5px;
     text-transform: uppercase; }
-    nav .nav li a:hover, nav .nav li a:focus {
+    nav .nav li a:hover, nav .nav li a:focus, nav .nav li a.active {
       color: #38aaff !important; }
 nav .navbar-left li {
   border-left: 1px solid #38aaff; }

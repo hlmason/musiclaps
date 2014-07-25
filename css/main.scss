@@ -140,7 +140,7 @@ nav {
 			@include nav-link($musiclaps-dark-gray, 14px);
 			letter-spacing: 0.5px;
 			text-transform: uppercase;
-			&:hover, &:focus {
+			&:hover, &:focus, &.active {
 				color: $musiclaps-blue !important;
 			}
 		}

@@ -1,40 +1,9 @@
 <?php
 	require_once('include/config.php');
 
-	$pageTitle = "Play with the World Today";
+	$pageTitle = 'Play with the World Today';
 	include(ROOT_PATH . 'include/header.php');
 ?>
-
-	<script src="<?php echo BASE_URL; ?>js/index.js"></script>
-	<script src="<?php echo BASE_URL; ?>js/wmuSlider.min.js"></script>
-</head>
-<body>
-
-	<nav class="navbar navbar-default">
-		<div class="container">
-			<div class="navbar-header"><!-- For Firefox and IE -->
-	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	                    <span class="icon-bar"></span>
-	                    <span class="icon-bar"></span>
-	                    <span class="icon-bar"></span>
-	            </button>
-				<a class="navbar-brand" href="<?php echo BASE_URL; ?>">
-					<img class="navbar-brand-img-js" src="<?php echo BASE_URL; ?>img/nav-and-footer/musiclaps-logo-original-darker.png" alt="Musiclaps logo">
-				</a>
-			</div>
-			<div class="collapse navbar-collapse">
-				<ul class="nav navbar-nav navbar-left">
-					<li><a href="https://www.musiclaps.com/play?m=rs&show=all&svv=new">Music</a></li>
-					<li><a href="#">People</a></li>
-					<li><a href="https://www.musiclaps.com/play?about=us">Our Story</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="https://www.musiclaps.com/play?login=user">Log in</a></li>
-					<li><a href="https://www.musiclaps.com/play?join=new&60BD52EBC3673E6C5196F3E1">Register</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
 
 	<div id="wrapper">
 
