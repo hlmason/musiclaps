@@ -31,7 +31,10 @@
 		
 		<div class="container">
 			<div class="row col-xs-12">
-				<iframe width="620" height="380" src="https://www.musiclaps.com/embed/player?songid=null" frameborder="0" scrolling="no"></iframe>
+				<iframe id="live-player-video" width="620" height="380" src="https://www.musiclaps.com/embed/player?songid=null" frameborder="0" scrolling="no"></iframe>
+			</div>
+			<div class="row col-xs-12">
+				<iframe id="live-player" width="620" height="380" src="https://www.musiclaps.com/embed/player?songid=null" frameborder="0" scrolling="no"></iframe>
 			</div>
 		</div>
 
