@@ -119,23 +119,22 @@ a:hover {
 		border-bottom-left-radius: 5px;
 		border-bottom-right-radius: 5px;
 		border-top: 0.5px solid $musiclaps-light-gray;
+		.bold {
+			font-weight: bold;
+		}
 	}
-}
-
-button.close {
-	background-color: white;
-	border: none;
-}
-
-.close {
-	color: $musiclaps-blue;
-	float: right;
-	font-size: 21px;
-	font-weight: 400;
-	line-height: 1;
-	text-shadow: 0 1px 0 #fff;
-	&:hover, &:focus {
-		color: #52C4FF;	
+	button.close {
+		background-color: white;
+		border: none;
+			color: $musiclaps-blue;
+		float: right;
+		font-size: 21px;
+		font-weight: 400;
+		line-height: 1;
+		text-shadow: 0 1px 0 #fff;
+		&:hover, &:focus {
+			color: #52C4FF;	
+		}
 	}
 }
 

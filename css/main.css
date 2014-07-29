@@ -2087,20 +2087,19 @@ a:hover {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border-top: 0.5px solid #e7e7e7; }
-
-button.close {
-  background-color: white;
-  border: none; }
-
-.close {
-  color: #38aaff;
-  float: right;
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 1;
-  text-shadow: 0 1px 0 #fff; }
-  .close:hover, .close:focus {
-    color: #52C4FF; }
+    .modal-content .modal-body .bold {
+      font-weight: bold; }
+  .modal-content button.close {
+    background-color: white;
+    border: none;
+    color: #38aaff;
+    float: right;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1;
+    text-shadow: 0 1px 0 #fff; }
+    .modal-content button.close:hover, .modal-content button.close:focus {
+      color: #52C4FF; }
 
 /* ===================================
     Nav

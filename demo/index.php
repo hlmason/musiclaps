@@ -19,8 +19,8 @@
 				<div class="modal-body">
 					Would you like a practice run?<br><br>
 					<form>
-						<input type="radio" name="selection" value="yes">&nbsp; Yes<br>
-						<input type="radio" name="selection" value="no">&nbsp; No<br>
+						<input type="radio" name="selection" value="yes">&nbsp; <span class="bold">Yes</span>, please walk me through it<br>
+						<input type="radio" name="selection" value="no">&nbsp; <span class="bold">No</span> thanks, I'm ok without one<br>
 					</form>
 				</div>
 			</div>

@@ -7,9 +7,12 @@ $(document).ready(function() {
     });
 
 	$('input').on('click', function() { // Checks whether user wants demo
-		if($('input[value="no"]').is(':checked')) { 
+		if($('input[value="yes"]').is(':checked')) { 
 			$('#wantDemo').modal('hide');
 			$('iframe').show();
+		}
+		if($('input[value="no"]').is(':checked')) { 
+			$('#wantDemo').modal('hide');
 		}
 	});
 
