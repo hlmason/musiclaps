@@ -6,7 +6,7 @@
 	include(ROOT_PATH . 'include/header.php');
 ?>
 
-	<div class="modal fade" id="selectSong" tabindex="-1" role="dialog" aria-labelledby="selectSongLabel" aria-hidden="true">
+	<div class="modal fade" id="wantDemo" tabindex="-1" role="dialog" aria-labelledby="wantDemoLabel" aria-hidden="true">
 		<div class="modal-dialog modal-sm">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -14,13 +14,13 @@
 						<span aria-hidden="true">&times;</span>
 						<span class="sr-only">Close</span>
 					</button>
-					<h4 class="modal-title" id="selectSongLabel">Welcome to soundcheck!</h4>
+					<h4 class="modal-title" id="wantDemoLabel">Welcome to soundcheck</h4>
 				</div>
 				<div class="modal-body">
 					Would you like a practice run?<br><br>
 					<form>
-						<input type="radio" name="yes" value="yes">&nbsp; Yes<br>
-						<input type="radio" name="no" value="no">&nbsp; No<br>
+						<input type="radio" name="selection" value="yes">&nbsp; Yes<br>
+						<input type="radio" name="selection" value="no">&nbsp; No<br>
 					</form>
 				</div>
 			</div>

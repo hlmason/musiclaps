@@ -5,7 +5,7 @@
 	<footer class="navbar-default">
 		<div class="container">
 			<a class="navbar-brand" href="<?php echo BASE_URL; ?>">
-				<img class="navbar-brand-img-js" src="<?php echo BASE_URL; ?>img/nav-and-footer/musiclaps-logo-original-darker.png" alt="Musiclaps logo">&nbsp; &copy; <?php echo date('Y'); ?>
+				<img src="<?php echo BASE_URL; ?>img/nav-and-footer/musiclaps-logo-original-darker.png" alt="Musiclaps logo">&nbsp; &copy; <?php echo date('Y'); ?>
 			</a>
 			<ul class="nav navbar-nav navbar-left">
 				<li><a class="<?php if ($page == "About") { echo "active"; } ?>" href="https://www.musiclaps.com/play?about=us">About</a></li>
@@ -26,7 +26,7 @@
 	<script>
 		  WebFont.load({
 		    google: {
-		      families: ['Roboto Condensed', 'Roboto', 'Allerta Stencil' ]
+		      families: ['Roboto Condensed', 'Roboto:400,700', 'Allerta Stencil' ]
 		    }
 		  });
 	</script>
