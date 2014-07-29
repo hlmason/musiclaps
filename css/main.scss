@@ -7,6 +7,7 @@ $nav-border: 1px solid #cecece;
 $musiclaps-light-gray: #e7e7e7;
 $musiclaps-dark-gray: #444; // Whichever shade of gray is in the logo - TBD
 $musiclaps-blue: #38AAFF; // Whatever shade of blue you want
+$modal-border: 5px solid $musiclaps-light-gray;
 
 /* ===================================
     Mixins
@@ -410,6 +411,28 @@ h1.landing-page {
 	#contests-and-auditions img {
 		margin-top: 100px;
 	}
+
+/* ===================================
+    Demo Page
+=================================== */
+.modal-content {
+	color: $musiclaps-dark-gray;
+	border-left: $modal-border;
+	border-right: $modal-border;
+	.modal-header {
+		border-top: $modal-border;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		font-weight: 900;
+		text-transform: uppercase;
+	}
+	.modal-body {
+		border-bottom: $modal-border;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		border-top: 0.5px solid $musiclaps-light-gray;
+	}
+}
 
 /* ===================================
     Footer
