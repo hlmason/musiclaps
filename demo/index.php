@@ -15,13 +15,13 @@
 						<span aria-hidden="true">&times;</span>
 						<span class="sr-only">Close</span>
 					</button>
-					<h4 class="modal-title" id="wantDemoLabel">Welcome to soundcheck</h4>
+					<h4 class="modal-title" id="wantDemoLabel">Welcome to soundcheck !</h4>
 				</div>
 				<div class="modal-body">
-					Would you like a practice run?<br><br>
+					Would you like a walkthrough?<br><br>
 					<form>
-						<input type="radio" name="selection" value="yes">&nbsp; <span class="bold">Yes</span>, please walk me through it<br>
-						<input type="radio" name="selection" value="no">&nbsp; <span class="bold">No</span> thanks, I'm ok without one<br>
+						<input type="radio" name="selection" value="yes">&nbsp; <span class="bold">Yes</span> please, I'm new to this<br>
+						<input type="radio" name="selection" value="no">&nbsp; <span class="bold">No</span> thanks, I can figure it out<br>
 					</form>
 				</div>
 			</div>
@@ -47,6 +47,35 @@
 		</div>
 	</div>
 	<!-- End of video modal -->
+
+	<!-- Select a song modal -->
+	<div class="modal fade" id="selectSong" tabindex="-1" role="dialog" aria-labelledby="selectSongLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+						<span class="sr-only">Close</span>
+					</button>
+					<h4 class="modal-title" id="selectSongLabel">First select a song from our sample music</h4>
+				</div>
+				<div class="modal-body">
+					<ul>
+						<li><a>Get Lucky</a> (Daft Punk)</li>
+						<li><a>Somebody That I Used To Know</a> (Gotye)</li>
+						<li><a>Rolling In The Deep</a> (Adele)</li>
+						<li><a>Haven't Met You Yet</a> (Michael Buble)</li>
+						<li><a>No One</a> (Alicia Keys)</li>
+						<li><a>If I Ain't Got You</a> (Alicia Keys)</li>
+						<li><a>Greatest Love Of All</a> (Whitney Houston)</li>
+						<li><a>Let It Be</a> (The Beatles)</li>
+						<li><a>Yesterday</a> (The Beatles)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End of select a song modal -->
 
 	<div id="wrapper">
 		
