@@ -57,7 +57,7 @@
 						<span aria-hidden="true">&times;</span>
 						<span class="sr-only">Close</span>
 					</button>
-					<h4 class="modal-title" id="selectSongLabel">First select a song from our sample music</h4>
+					<h4 class="modal-title" id="selectSongLabel"><span>First</span> select a song <span>from our sample music</span></h4>
 				</div>
 				<div class="modal-body">
 					<ul>
@@ -71,6 +71,7 @@
 						<li><a>Let It Be</a> (The Beatles)</li>
 						<li><a>Yesterday</a> (The Beatles)</li>
 					</ul>
+					<img class="pull-right" src="<?php echo BASE_URL; ?>img/demo-page/rainbow-music-notes.png" alt="Music notes of different colors">
 				</div>
 			</div>
 		</div>

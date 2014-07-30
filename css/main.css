@@ -2082,23 +2082,34 @@ a:hover {
     border-top-right-radius: 5px;
     font-weight: bold;
     text-transform: uppercase; }
+    .modal-content .modal-header button.close {
+      background-color: white;
+      border: none;
+      color: #38aaff;
+      float: right;
+      font-size: 21px;
+      font-weight: 400;
+      line-height: 1;
+      text-shadow: 0 1px 0 #fff; }
+      .modal-content .modal-header button.close:hover, .modal-content .modal-header button.close:focus {
+        color: #52C4FF; }
+    .modal-content .modal-header span {
+      font-weight: normal; }
   .modal-content .modal-body {
     border-bottom: 5px solid #e7e7e7;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px; }
-    .modal-content .modal-body .bold {
+    .modal-content .modal-body span.bold {
       font-weight: bold; }
-  .modal-content button.close {
-    background-color: white;
-    border: none;
-    color: #38aaff;
-    float: right;
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 1;
-    text-shadow: 0 1px 0 #fff; }
-    .modal-content button.close:hover, .modal-content button.close:focus {
-      color: #52C4FF; }
+    .modal-content .modal-body ul {
+      padding-left: 0;
+      display: inline-block; }
+      .modal-content .modal-body ul a:hover {
+        color: #444444; }
+    .modal-content .modal-body img {
+      margin-top: 15px;
+      height: 179px;
+      width: 270px; }
 
 /* ===================================
     Nav

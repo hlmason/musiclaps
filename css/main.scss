@@ -113,26 +113,41 @@ a:hover {
 		border-top-right-radius: 5px;
 		font-weight: bold;
 		text-transform: uppercase;
+		button.close {
+			background-color: white;
+			border: none;
+			color: $musiclaps-blue;
+			float: right;
+			font-size: 21px;
+			font-weight: 400;
+			line-height: 1;
+			text-shadow: 0 1px 0 #fff;
+			&:hover, &:focus {
+				color: #52C4FF;	
+			}
+		}
+		span {
+			font-weight: normal;
+		}
 	}
 	.modal-body {
 		border-bottom: $modal-border;
 		border-bottom-left-radius: 5px;
 		border-bottom-right-radius: 5px;
-		.bold {
+		span.bold {
 			font-weight: bold;
 		}
-	}
-	button.close {
-		background-color: white;
-		border: none;
-		color: $musiclaps-blue;
-		float: right;
-		font-size: 21px;
-		font-weight: 400;
-		line-height: 1;
-		text-shadow: 0 1px 0 #fff;
-		&:hover, &:focus {
-			color: #52C4FF;	
+		ul {
+			padding-left: 0;
+			display: inline-block;
+			a:hover {
+				color: $musiclaps-dark-gray;
+			}
+		}
+		img {
+			margin-top: 15px;
+			height: 179px;
+			width: 270px;
 		}
 	}
 }
@@ -147,7 +162,7 @@ nav {
 	}
 	.navbar-header {
 		height: 78px;
-		img {
+		img { // Musiclaps logo
 			height: 45px;
 			width: 155px;
 		}
@@ -305,7 +320,7 @@ h1.landing-page {
 				padding-left: 0;
 				li {
 					display: inline-block;
-					img {
+					img { // Play, pause, stop, and record buttons
 						-webkit-transition: 0s linear;
 						   -moz-transition: 0s linear;
 							 -o-transition: 0s linear;
@@ -338,7 +353,7 @@ h1.landing-page {
 			height: 161px;
 		    // position: relative;
 		    text-align: center;
-		    img {
+		    img { // Album covers
 		    	// max-width: 100%;
 			    opacity: 0.9;
 			    // width: auto;
@@ -352,7 +367,7 @@ h1.landing-page {
 		}
 	}
 
-	.wmuSliderPrev, .wmuSliderNext {
+	.wmuSliderPrev, .wmuSliderNext { // Left and right arrow buttons
 	    position: absolute;
 	    width: 40px;
 	    height: 80px;
@@ -456,7 +471,7 @@ footer {
 	.navbar-brand {
 		color: $musiclaps-dark-gray !important;
 		font-size: 12px;
-		img {
+		img { // Musiclaps logo
 			width: 50%;
 		}
 	}
@@ -526,7 +541,7 @@ footer {
 		}
 		ul {
 			margin-top: -20px !important;
-			img { width: 65% !important; }
+			img { width: 65% !important; } // Play, pause, stop, and record buttons
 		}
 	}
 }
