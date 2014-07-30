@@ -30,6 +30,5 @@
 		    }
 		  });
 	</script>
-	<script src="<?php echo BASE_URL; ?>js/demo.js"></script>
 </body>
 </html>

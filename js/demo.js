@@ -1,21 +1,18 @@
 $(document).ready(function() {
 
 	var wantDemo = $('#wantDemo');
-
-    $('iframe').hide();
+	var demoVideo = $('#demoVideo');
 
     $(window).load(function(){ // Displays modal upon page load
         wantDemo.modal('show');
     });
 
-	$('input').on('click', function() { // Checks whether user wants demo
-		if($('input[value="yes"]').is(':checked')) { // If yes,
+	$('input').on('click', function() { // Asks whether user wants demo
+		if ($ ('input[value="yes"]').is(':checked') ) { // If yes,
 			wantDemo.modal('hide'); // modal is hidden
-			$('#live-player-video').fadeIn('slow'); // and Live Player demo video is displayed;
-		}
-		if($('input[value="no"]').is(':checked')) { // If no,
-			wantDemo.modal('hide'); // modal is hidden
-			$('#live-player').fadeIn('slow'); // and actual Live Player is displayed.
+			demoVideo.modal('show'); // and demo video is displayed;
+		} else if ( $('input[value="no"]').is(':checked') ) { // if no,
+			wantDemo.modal('hide'); // modal is hidden and Live Player is revealed.
 		}
 	});
 

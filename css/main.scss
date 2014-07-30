@@ -118,7 +118,6 @@ a:hover {
 		border-bottom: $modal-border;
 		border-bottom-left-radius: 5px;
 		border-bottom-right-radius: 5px;
-		border-top: 0.5px solid $musiclaps-light-gray;
 		.bold {
 			font-weight: bold;
 		}
@@ -429,6 +428,13 @@ h1.landing-page {
 	#contests-and-auditions img {
 		margin-top: 100px;
 	}
+
+/* ===================================
+    Live Player Page
+=================================== */
+#live-player-container {
+	text-align: center;
+}
 
 /* ===================================
     Footer

@@ -2085,10 +2085,11 @@ a:hover {
   .modal-content .modal-body {
     border-bottom: 5px solid #e7e7e7;
     border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-top: 0.5px solid #e7e7e7; }
+    border-bottom-right-radius: 5px; }
     .modal-content .modal-body .bold {
       font-weight: bold; }
+  .modal-content .modal-lg .modal-body {
+    border-top: none; }
   .modal-content button.close {
     background-color: white;
     border: none;
@@ -2367,6 +2368,12 @@ h1.landing-page {
 
 #contests-and-auditions img {
   margin-top: 100px; }
+
+/* ===================================
+    Live Player Page
+=================================== */
+#live-player-container {
+  text-align: center; }
 
 /* ===================================
     Footer
