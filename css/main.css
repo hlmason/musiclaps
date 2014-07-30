@@ -2093,7 +2093,7 @@ a:hover {
       text-shadow: 0 1px 0 #fff; }
       .modal-content .modal-header button.close:hover, .modal-content .modal-header button.close:focus {
         color: #52C4FF; }
-    .modal-content .modal-header span {
+    .modal-content .modal-header span.normal {
       font-weight: normal; }
   .modal-content .modal-body {
     border-bottom: 5px solid #e7e7e7;
@@ -2382,7 +2382,28 @@ h1.landing-page {
     Live Player Page
 =================================== */
 #live-player-container {
+  margin-bottom: 20px;
   text-align: center; }
+
+#recording-instructions h1#demo-header {
+  text-align: center; }
+#recording-instructions h2 {
+  font-size: 18px;
+  font-weight: normal; }
+  #recording-instructions h2 span {
+    font-weight: bold; }
+    #recording-instructions h2 span.red {
+      color: red; }
+    #recording-instructions h2 span.green {
+      color: green; }
+#recording-instructions #recording-buttons-img {
+  margin-top: 15px; }
+#recording-instructions #allow-flash-instructions {
+  margin-top: 25px; }
+#recording-instructions #record-start-instructions {
+  margin-top: 40px; }
+#recording-instructions #recording-area-img {
+  margin-top: 17px; }
 
 /* ===================================
     Footer

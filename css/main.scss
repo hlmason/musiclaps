@@ -126,7 +126,7 @@ a:hover {
 				color: #52C4FF;	
 			}
 		}
-		span {
+		span.normal {
 			font-weight: normal;
 		}
 	}
@@ -448,8 +448,42 @@ h1.landing-page {
     Live Player Page
 =================================== */
 #live-player-container {
+	margin-bottom: 20px;
 	text-align: center;
 }
+
+#recording-instructions {
+	h1#demo-header {
+		text-align: center;
+	}
+	h2 {
+		font-size: 18px;
+		font-weight: normal;
+		span {
+			font-weight: bold;
+			&.red {
+				color: red;
+			}
+			&.green {
+				color: green;
+			}
+		}
+	}
+	#recording-buttons-img {
+		margin-top: 15px;
+	}
+	#allow-flash-instructions {
+		margin-top: 25px;
+	}
+	#record-start-instructions {
+		margin-top: 40px;
+	}
+	#recording-area-img {
+		margin-top: 17px;
+	}
+}
+
+
 
 /* ===================================
     Footer
