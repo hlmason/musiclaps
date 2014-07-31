@@ -12,11 +12,11 @@ $modal-border: 5px solid $musiclaps-light-gray;
 /* ===================================
     Mixins
 =================================== */
-// @mixin border-radius($radius) {
-// 	-webkit-border-radius: $radius;
-// 	-moz-border-radius: $radius;
-// 		 border-radius: $radius;
-// }
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+		 border-radius: $radius;
+}
 
 @mixin nav-border($color) {
 	border-left: 1px solid $color;
@@ -238,7 +238,7 @@ h1.landing-page {
 		position: relative;
 		text-align: center;
 		#musical-notes-map {
-			background-image: url('../img/landing-page/musical-notes-map.png');
+			background-image: url('../img/landing-pg/musical-notes-map.png');
 			height: 100%;
 			margin-left: -1010em;
 			position: absolute;
@@ -372,7 +372,7 @@ h1.landing-page {
 	    width: 40px;
 	    height: 80px;
 	    text-indent: -9999px;
-	    background: url(../img/landing-page/sprites.png) no-repeat 0 0;
+	    background: url(../img/landing-pg/sprites.png) no-repeat 0 0;
 	    top: 50%;
 	    margin-top: -40px;
 	    // z-index: 2;
@@ -448,8 +448,11 @@ h1.landing-page {
     Live Player Page
 =================================== */
 #live-player-container {
-	margin-bottom: 20px;
 	text-align: center;
+}
+
+#select-song-container a:hover {
+	color: $musiclaps-dark-gray;
 }
 
 #recording-instructions {
@@ -473,17 +476,36 @@ h1.landing-page {
 		margin-top: 15px;
 	}
 	#allow-flash-instructions {
-		margin-top: 25px;
+		margin-top: 35px;
+	}
+	#allow-flash-img {
+		margin-top: 10px;
 	}
 	#record-start-instructions {
-		margin-top: 40px;
+		margin-top: 45px;
 	}
 	#recording-area-img {
-		margin-top: 17px;
+		margin-top: 22px;
+	}
+	#submit-container {
+		text-align: center;
+	}
+	input#save {
+		@include border-radius(10px);
+		background-color: green;
+		border: none;
+		color: white;
+		letter-spacing: 0.5px;
+		margin-top: 50px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 10px;
+		&:hover {
+			background-color: #1A9A1A;
+		}
 	}
 }
-
-
 
 /* ===================================
     Footer

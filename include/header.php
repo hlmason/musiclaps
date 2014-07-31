@@ -26,7 +26,7 @@
     <script src="<?php echo BASE_URL; ?>js/customized.bootstrap.min.js"></script>
 	<script src="<?php echo BASE_URL; ?>js/index.js"></script>
 	<script src="<?php echo BASE_URL; ?>js/wmuSlider.min.js"></script>
-	<script src="<?php echo BASE_URL; ?>js/demo.js"></script>
+	<script src="<?php echo BASE_URL; ?>js/live-player.js"></script>
 </head>
 <body>
 

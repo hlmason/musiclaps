@@ -22,7 +22,7 @@
 			<div id="stage-inner">
 				<div class="row">
 					<div id="soundcheck" class="col-sm-4">
-						<a href="<?php echo BASE_URL; ?>demo/">Soundcheck</a>
+						<a href="<?php echo BASE_URL; ?>live-player/">Soundcheck</a>
 					</div>
 					<div class="col-sm-4">
 						<p>
@@ -34,15 +34,15 @@
 						</p>
 					</div>
 					<div id="record-demo" class="col-sm-4">
-						<a href="<?php echo BASE_URL; ?>demo/">Record a Demo</a>
+						<a href="<?php echo BASE_URL; ?>live-player/">Record a Demo</a>
 					</div>
 				</div>
 				<div class="row">		
 					<ul>
-						<li><a href="<?php echo BASE_URL; ?>demo/"><img src="<?php echo BASE_URL; ?>img/landing-page/play-btn.png" alt="Play button"></a></li>
-						<li><a href="<?php echo BASE_URL; ?>demo/"><img src="<?php echo BASE_URL; ?>img/landing-page/pause-btn.png" alt="Pause button"></a></li>
-						<li><a href="<?php echo BASE_URL; ?>demo/"><img src="<?php echo BASE_URL; ?>img/landing-page/stop-btn.png" alt="Stop button"></a></li>
-						<li><a href="<?php echo BASE_URL; ?>demo/"><img src="<?php echo BASE_URL; ?>img/landing-page/record-btn.png" alt="Record button"></a></li>
+						<li><a href="<?php echo BASE_URL; ?>live-player/"><img src="<?php echo BASE_URL; ?>img/landing-pg/play-btn.png" alt="Play button"></a></li>
+						<li><a href="<?php echo BASE_URL; ?>live-player/"><img src="<?php echo BASE_URL; ?>img/landing-pg/pause-btn.png" alt="Pause button"></a></li>
+						<li><a href="<?php echo BASE_URL; ?>live-player/"><img src="<?php echo BASE_URL; ?>img/landing-pg/stop-btn.png" alt="Stop button"></a></li>
+						<li><a href="<?php echo BASE_URL; ?>live-player/"><img src="<?php echo BASE_URL; ?>img/landing-pg/record-btn.png" alt="Record button"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -101,7 +101,7 @@
 						</ul>
 					</div>
 					<div class="col-md-4">
-						<img src="<?php echo BASE_URL; ?>img/landing-page/collaborate.png" alt="Silhouette of two people with music notes between them">
+						<img src="<?php echo BASE_URL; ?>img/landing-pg/collaborate.png" alt="Silhouette of two people with music notes between them">
 					</div>
 					<div class="col-md-1"></div>
 				</div>
@@ -124,7 +124,7 @@
 						</ul>
 					</div>
 					<div class="col-md-4">
-						<img src="<?php echo BASE_URL; ?>img/landing-page/backstage.png" alt="Backstage pass">
+						<img src="<?php echo BASE_URL; ?>img/landing-pg/backstage.png" alt="Backstage pass">
 					</div>
 					<div class="col-md-1"></div>
 				</div>
@@ -143,7 +143,7 @@
 						</ul>
 					</div>
 					<div class="col-md-4">
-						<img src="<?php echo BASE_URL; ?>img/landing-page/music-book.png" alt="Book with music note">
+						<img src="<?php echo BASE_URL; ?>img/landing-pg/music-book.png" alt="Book with music note">
 					</div>
 					<div class="col-md-1"></div>
 				</div>
@@ -165,7 +165,7 @@
 						</ul>
 					</div>
 					<div class="col-md-4">
-						<img src="<?php echo BASE_URL; ?>img/landing-page/trophy.png" alt="Trophy">
+						<img src="<?php echo BASE_URL; ?>img/landing-pg/trophy.png" alt="Trophy">
 					</div>
 					<div class="col-sm-1"></div>
 				</div>

@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-	var wantDemo = $('#wantDemo');
-	var demoVideo = $('#demoVideo');
-	var selectSong = $('#selectSong');
+	// var wantDemo = $('#wantDemo');
+	// var demoVideo = $('#demoVideo');
+	// var selectSong = $('#selectSong');
 
     $(window).load(function(){ // Displays modal upon page load
         wantDemo.modal('show');
@@ -19,6 +19,10 @@ $(document).ready(function() {
 	});
 
 	$('.close').on('click', function() {
+		selectSong.modal('show');
+	});
+
+	$('#selectSongJS').click(function() {
 		selectSong.modal('show');
 	});
 

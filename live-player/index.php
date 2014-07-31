@@ -41,7 +41,7 @@
 					<h4 class="modal-title" id="demoVideoLabel">Demo Video</h4>
 				</div>
 				<div class="modal-body">
-					<!-- <iframe width="560" height="315" src="//www.youtube.com/embed/MuCs5Z-MbA4" frameborder="0" allowfullscreen></iframe> -->
+					<iframe width="560" height="315" src="//www.youtube.com/embed/MuCs5Z-MbA4" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
@@ -57,7 +57,7 @@
 						<span aria-hidden="true">&times;</span>
 						<span class="sr-only">Close</span>
 					</button>
-					<h4 class="modal-title" id="selectSongLabel"><span class="normal">First</span> select a song <span class="normal">from our sample music</span></h4>
+					<h4 class="modal-title" id="selectSongLabel"><span class="normal"></span>Select a song <span class="normal">from our sample music</span></h4>
 				</div>
 				<div class="modal-body">
 					<ul>
@@ -71,7 +71,7 @@
 						<li><a>Let It Be</a> (The Beatles)</li>
 						<li><a>Yesterday</a> (The Beatles)</li>
 					</ul>
-					<img class="pull-right" src="<?php echo BASE_URL; ?>img/demo-page/rainbow-music-notes.png" alt="Music notes of different colors">
+					<img class="pull-right" src="<?php echo BASE_URL; ?>img/live-player-pg/rainbow-music-notes.png" alt="Music notes of different colors">
 				</div>
 			</div>
 		</div>
@@ -84,6 +84,9 @@
 				<div class="row col-xs-12" id="live-player-container">
 					<iframe width="620" height="380" src="https://www.musiclaps.com/embed/player?songid=null" frameborder="0" scrolling="no"></iframe>
 				</div>
+				<div class="row col-xs-6 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3" id="select-song-container">
+					<a id="selectSongJS">Select a song from our library</a>
+				</div>
 			</div>
 			
 			<section id="recording-instructions">
@@ -93,10 +96,10 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-6 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3">
-							<h2>1. Click the <span class="red">REC</span> button (above).</h2>
+							<h2><span>1. </span>Click the <span class="red">REC</span> button (above).</h2>
 						</div>
 						<div class="col-xs-6 col-sm-5 col-md-4 col-lg-3" id="recording-buttons-img">
-							<img src="<?php echo BASE_URL; ?>img/demo-page/recording-buttons.png" alt="Recording buttons">
+							<img src="<?php echo BASE_URL; ?>img/live-player-pg/recording-buttons.png" alt="Recording buttons">
 						</div>
 						<div class="col-sm-1 col-md-2 col-lg-3"></div>
 					</div>
@@ -107,10 +110,10 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-6 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3" id="allow-flash-instructions">
-							<h2>2. <span class="green">Allow Flash</span> to run (so that the mic can record).</h2>
+							<h2><span>2. </span><span class="green">Allow Flash</span>.<br>(so that you can record).</h2>
 						</div>
-						<div class="col-xs-6 col-sm-5 col-md-4 col-lg-3">
-							<img src="<?php echo BASE_URL; ?>img/demo-page/allow-flash.png">
+						<div class="col-xs-6 col-sm-5 col-md-4 col-lg-3" id="allow-flash-img" >
+							<img src="<?php echo BASE_URL; ?>img/live-player-pg/allow-flash.png">
 						</div>
 						<div class="col-sm-1 col-md-2 col-lg-3"></div>
 					</div>
@@ -121,15 +124,20 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-6 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3" id="record-start-instructions">
-							<h2>3. Click <span class="red">REC START</span> (above).</h2>
+							<h2><span>3. </span>Click <span class="red">REC START</span> (above).</h2>
 						</div>
 						<div class="col-xs-6 col-sm-5 col-md-4 col-lg-3" id="recording-area-img">
-							<img src="<?php echo BASE_URL; ?>img/demo-page/recording-area.png">
+							<img src="<?php echo BASE_URL; ?>img/live-player-pg/recording-area.png">
 						</div>
 						<div class="col-sm-1 col-md-2 col-lg-3"></div>
 					</div>
 				</div>
 				<!-- End of Step 3 -->
+
+				<div class="container" id="submit-container">
+					<input id="save" type="submit" value="Save Recording">
+				</div>
+
 			</section>
 
 	</div>
