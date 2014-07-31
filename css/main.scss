@@ -13,7 +13,6 @@ $modal-border: 5px solid $musiclaps-light-gray;
     Mixins
 =================================== */
 @mixin border-radius($radius) {
-	-webkit-border-radius: $radius;
 	-moz-border-radius: $radius;
 		 border-radius: $radius;
 }
@@ -448,10 +447,11 @@ h1.landing-page {
     Live Player Page
 =================================== */
 #live-player-container {
+	margin-left: 0;
 	text-align: center;
 }
 
-#select-song-container a:hover {
+#select-song-container a:hover, #recording-instructions {
 	color: $musiclaps-dark-gray;
 }
 
@@ -480,6 +480,12 @@ h1.landing-page {
 	}
 	#allow-flash-img {
 		margin-top: 10px;
+	}
+	#allow-flash-chrome-container {
+		margin-top: 15px;
+		p {
+			margin-bottom: 0;
+		}
 	}
 	#record-start-instructions {
 		margin-top: 45px;

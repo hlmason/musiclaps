@@ -2382,9 +2382,10 @@ h1.landing-page {
     Live Player Page
 =================================== */
 #live-player-container {
+  margin-left: 0;
   text-align: center; }
 
-#select-song-container a:hover {
+#select-song-container a:hover, #recording-instructions {
   color: #444444; }
 
 #recording-instructions h1#demo-header {
@@ -2404,6 +2405,10 @@ h1.landing-page {
   margin-top: 35px; }
 #recording-instructions #allow-flash-img {
   margin-top: 10px; }
+#recording-instructions #allow-flash-chrome-container {
+  margin-top: 15px; }
+  #recording-instructions #allow-flash-chrome-container p {
+    margin-bottom: 0; }
 #recording-instructions #record-start-instructions {
   margin-top: 45px; }
 #recording-instructions #recording-area-img {
@@ -2411,7 +2416,6 @@ h1.landing-page {
 #recording-instructions #submit-container {
   text-align: center; }
 #recording-instructions input#save {
-  -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   background-color: green;
