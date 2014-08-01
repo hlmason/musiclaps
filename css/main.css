@@ -2577,3 +2577,8 @@ footer {
 @media only screen and (max-width: 590px) {
   h1.landing-page {
     font-size: 20px; } }
+@media only screen and (max-width: 580px) {
+  .modal-body {
+    text-align: center; }
+    .modal-body img {
+      display: none; } }

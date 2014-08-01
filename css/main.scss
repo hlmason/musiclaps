@@ -615,9 +615,7 @@ footer {
 	}
 	footer {
 		.navbar-brand { position: absolute; } 
-		.navbar-left, .navbar-right {
-			margin-top: 50px;
-		}
+		.navbar-left, .navbar-right { margin-top: 50px; }
 		.navbar-left { 
 			float: left !important; 
 			padding-bottom: 15px; 
@@ -689,3 +687,12 @@ footer {
 // Breakpoint of "Online Music Collaboration Made Simple...Just Log in and Start Recording" 
 	h1.landing-page { font-size: 20px; }
 }
+
+@media only screen and (max-width: 580px) {
+// Breakpoint of Select a song modal
+	.modal-body {
+		text-align: center;
+		img { display: none; }
+	}
+}
+

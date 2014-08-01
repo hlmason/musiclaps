@@ -84,7 +84,7 @@
 				<div class="row col-xs-12" id="live-player-container">
 					<iframe width="620" height="380" src="https://www.musiclaps.com/embed/player?songid=null" frameborder="0" scrolling="no"></iframe>
 				</div>
-				<div class="row col-xs-6 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3" id="select-song-container">
+				<div class="row col-xs-11 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3" id="select-song-container">
 					<a id="selectSongJS">Select a song from our library</a>
 				</div>
 			</div>
