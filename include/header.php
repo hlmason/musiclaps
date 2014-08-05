@@ -55,3 +55,7 @@
 			</div>
 		</div>
 	</nav>
+
+<?php
+	$date = date_default_timezone_set('America/Los_Angeles');
+?>
