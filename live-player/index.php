@@ -61,11 +61,11 @@
 				</div>
 				<div class="modal-body">
 					<ul>
+						<li><a>Let It Go</a> (Frozen)</li>
 						<li><a>Get Lucky</a> (Daft Punk)</li>
 						<li><a>Somebody That I Used To Know</a> (Gotye)</li>
 						<li><a>Rolling In The Deep</a> (Adele)</li>
 						<li><a>Haven't Met You Yet</a> (Michael Buble)</li>
-						<li><a>No One</a> (Alicia Keys)</li>
 						<li><a>If I Ain't Got You</a> (Alicia Keys)</li>
 						<li><a>Greatest Love Of All</a> (Whitney Houston)</li>
 						<li><a>Let It Be</a> (The Beatles)</li>
