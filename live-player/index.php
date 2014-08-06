@@ -20,8 +20,8 @@
 				<div class="modal-body">
 					Would you like a walkthrough?<br><br>
 					<form>
-						<input type="radio" name="selection" value="yes">&nbsp; <span class="bold">Yes</span> please, I'm new to this<br>
-						<input type="radio" name="selection" value="no">&nbsp; <span class="bold">No</span> thanks, I can figure it out<br>
+						<input type="radio" name="selection" value="yes">&nbsp; <a id="yes"><span class="bold">Yes</span> please, I'm new to this</a><br>
+						<input type="radio" name="selection" value="no">&nbsp; <a id="no"><span class="bold">No</span> thanks, I can figure it out</a><br>
 					</form>
 				</div>
 			</div>
@@ -63,10 +63,10 @@
 					<ul>
 						<li><a>Let It Go</a> (Frozen)</li>
 						<li><a>Get Lucky</a> (Daft Punk)</li>
-						<li><a>Somebody That I Used To Know</a> (Gotye)</li>
 						<li><a>Rolling In The Deep</a> (Adele)</li>
 						<li><a>Haven't Met You Yet</a> (Michael Buble)</li>
 						<li><a>If I Ain't Got You</a> (Alicia Keys)</li>
+						<li><a>Come As You Are</a> (Nirvana)</li>
 						<li><a>Greatest Love Of All</a> (Whitney Houston)</li>
 						<li><a>Let It Be</a> (The Beatles)</li>
 						<li><a>Yesterday</a> (The Beatles)</li>
