@@ -143,14 +143,17 @@ a:hover {
 			font-weight: normal;
 		}
 	}
-	h4.login-modal-header, h4.register-modal-header {
-			font-size: 18px;
+	h2.login-modal-header, h2.register-modal-header {
 			letter-spacing: 0.5px;
 			text-transform: capitalize;
 		}
 	.modal-body {
 		border-bottom-left-radius: 5px;
 		border-bottom-right-radius: 5px;
+		h4 {
+			margin-bottom: 0;
+			margin-top: 12px;
+		}
 		span.bold {
 			font-weight: bold;
 		}
@@ -161,32 +164,32 @@ a:hover {
 				color: $musiclaps-dark-gray;
 			}
 		}
-		img:not(#sn-login-modal-body img) {
+		#rainbow-music-notes {
 			margin-top: 15px;
 			height: 179px;
 			width: 270px;
 		}
 	}
-	#sn-login-modal-body, #login-modal-body, #register-modal-body, .modal-footer {
+	#sn-login-modal-body, #sn-login-modal-body-sm, #login-modal-body, #register-modal-body, .modal-footer {
 		text-align: center;
 	}
-	#sn-login-modal-body {
+	#sn-login-modal-body, #sn-login-modal-body-sm {
 		border-bottom: 1px solid #e7e7e7;
 		border-radius: 0;
 		padding-bottom: 0;
 		padding-top: 0;
-		li:not(#first-list-item) {
-			margin-top: 15px;
+		width: 100%;
+	}
+	#sn-login-modal-body { 
+		li {
+			display: inline-block;
+			img {
+				margin-left: 10px;
+			}
 		}
-		img { // Social media icons
-			margin-bottom: 1px;
-		}
-		input { // Social media login buttons
-			@include modal-submit(3px, 6px, 3px, 6px);
-			border-bottom-right-radius: 5px;
-			border-top-right-radius: 5px;
-			margin-left: 2px;
-		}
+	}
+	#sn-login-modal-body-sm {
+		display: none;
 	}
 	#login-modal-body {
 		padding-top: 0;
@@ -697,6 +700,24 @@ footer {
 			}
 		}
 	}
+	#sn-login-modal-body {
+		display: none;
+	}
+	#sn-login-modal-body-sm {
+		display: inline-block !important;
+		li:not(.first-list-item) {
+			margin-top: 15px;
+		}
+		img { // Social media icons
+			margin-bottom: 1px;
+		}
+		input { // Social media login buttons
+			@include modal-submit(3px, 6px, 3px, 6px);
+			border-bottom-right-radius: 5px;
+			border-top-right-radius: 5px;
+			margin-left: 2px;
+		}
+	}
 	h1.landing-page { font-size: 24px; }
 	#musical-notes-map { // Makes map static on smaller devices
 		margin-left: 0;
@@ -742,8 +763,6 @@ footer {
 
 @media only screen and (max-width: 580px) {
 // Breakpoint of Select a song modal
-	.modal-body {
-		img { display: none; }
-	}
+	#rainbow-music-notes { display: none; }
 }
 

@@ -71,7 +71,7 @@
 						<li><a>Let It Be</a> (The Beatles)</li>
 						<li><a>Yesterday</a> (The Beatles)</li>
 					</ul>
-					<img class="pull-right" src="<?php echo BASE_URL; ?>img/live-player-pg/rainbow-music-notes.png" alt="Music notes of different colors">
+					<img class="pull-right" id="rainbow-music-notes" src="<?php echo BASE_URL; ?>img/live-player-pg/rainbow-music-notes.png" alt="Music notes of different colors">
 				</div>
 			</div>
 		</div>

@@ -66,7 +66,7 @@
 						<span aria-hidden="true">&times;</span>
 						<span class="sr-only">Close</span>
 					</button>
-					<h4 class="modal-title register-modal-header" id="registerLabel">Register</h4>
+					<h2 class="modal-title register-modal-header" id="registerLabel">Register</h2>
 				</div>
 				<div class="modal-body" id="register-modal-body">
 					<form>
@@ -101,21 +101,38 @@
 	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
 		<div class="modal-dialog modal-sm">
 			<div class="modal-content">
+
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">
 						<span aria-hidden="true">&times;</span>
 						<span class="sr-only">Close</span>
 					</button>
-					<h4 class="modal-title login-modal-header" id="loginLabel">Log in</h4>
+					<h2 class="modal-title login-modal-header" id="loginLabel">Log in</h2>
 				</div>
+
+				<!-- Visible at viewport widths >= 768px -->
 				<div class="modal-body" id="sn-login-modal-body">
+					<h4>Login using:</h4>
 					<ul>
-						<li id="first-list-item"><form><img id="facebook-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/facebook-icon.png" alt="Facebook icon"><input type="submit" value="Log in with Facebook"></form></li>
+						<!-- TODO: Edit markup for functional login -->
+						<li><a><img id="facebook-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/facebook-icon.png" alt="Facebook icon"></a></li>
+						<li><a><img id="twitter-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/twitter-icon.png" alt="Twitter icon"></a></li>
+						<li><a><img id="google-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/google-icon.jpg" alt="Google icon"></a></li>
+						<li><a><img id="microsoft-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/microsoft-icon.jpg" alt="Microsoft icon"></a></li>
+					</ul>
+				</div>
+
+				<!-- Visible at viewport widths <= 767px -->
+				<div class="modal-body" id="sn-login-modal-body-sm">
+					<ul>
+						<!-- TODO: Edit markup for functional login -->
+						<li class="first-list-item"><form><img id="facebook-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/facebook-icon.png" alt="Facebook icon"><input type="submit" value="Log in with Facebook"></form></li>
 						<li><form><img id="twitter-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/twitter-icon.png" alt="Twitter icon"><input type="submit" value="Log in with Twitter"></form></li>
 						<li><form><img id="google-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/google-icon.jpg" alt="Google icon"><input type="submit" value="Log in with Google"></form></li>
 						<li><form><img id="microsoft-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/microsoft-icon.jpg" alt="Microsoft icon"><input type="submit" value="Log in with Microsoft"></form></li>
 					</ul>
 				</div>
+
 				<form>
 					<div class="modal-body" id="login-modal-body">
 							<input type="email" id="email" name="email" placeholder="Email Address" label="Email Address">
@@ -126,6 +143,7 @@
 						<input type="submit" value="Log in">
 				    </div>
 				</form>
+
 			</div>
 		</div>
 	</div>
