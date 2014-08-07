@@ -2069,11 +2069,21 @@ a:hover, a:focus {
 a:hover {
   cursor: pointer; }
 
+#facebook-icon, #google-icon {
+  height: 27px;
+  width: 27px; }
+
+#twitter-icon,
+#microsoft-icon {
+  height: 29px;
+  width: 29px; }
+
 /* ===================================
     Modal
 =================================== */
 .modal-content {
   color: #444444;
+  border-bottom: 5px solid #e7e7e7;
   border-left: 5px solid #e7e7e7;
   border-right: 5px solid #e7e7e7; }
   .modal-content .modal-header {
@@ -2095,8 +2105,11 @@ a:hover {
         color: #52C4FF; }
     .modal-content .modal-header span.normal {
       font-weight: normal; }
+  .modal-content h4.login-modal-header, .modal-content h4.register-modal-header {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    text-transform: capitalize; }
   .modal-content .modal-body {
-    border-bottom: 5px solid #e7e7e7;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px; }
     .modal-content .modal-body span.bold {
@@ -2110,6 +2123,40 @@ a:hover {
       margin-top: 15px;
       height: 179px;
       width: 270px; }
+  .modal-content #sn-login-modal-body, .modal-content #login-modal-body, .modal-content #register-modal-body, .modal-content .modal-footer {
+    text-align: center; }
+  .modal-content #sn-login-modal-body {
+    border-bottom: 1px solid #e7e7e7;
+    border-radius: 0; }
+  .modal-content #login-modal-body {
+    padding-top: 0; }
+    .modal-content #login-modal-body input {
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      border: 1px solid #e7e7e7;
+      margin-top: 20px;
+      padding-bottom: 5px;
+      padding-left: 8px;
+      padding-top: 5px;
+      width: 90%; }
+  .modal-content .modal-footer a {
+    margin-right: 58px; }
+    .modal-content .modal-footer a:hover {
+      color: #444444;
+      cursor: pointer; }
+  .modal-content .modal-footer input {
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    border: 1px solid #cecece;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px; }
+    .modal-content .modal-footer input:hover {
+      background-color: #d9d9d9; }
+    .modal-content .modal-footer input a:hover {
+      color: black !important; }
 
 /* ===================================
     Nav
@@ -2463,15 +2510,9 @@ footer {
         color: #38aaff !important; }
   footer ul:last-child a {
     padding-left: 0;
-    padding-right: 14.5px;
-    /* http://www.youtube.com/yt/brand/using-logo.html: "Apply half of the icon's height as a base for clear space" */
-    /* https://about.twitter.com/press/brand-assets: "When using the bird with other logos and graphic elements, maintain a safety space that equals 200% the size of the square around the bird. */ }
-    footer ul:last-child a #facebook-icon {
-      width: 27px; }
-  footer #twitter-icon {
-    height: 29px;
-    width: 29px; }
+    padding-right: 14.5px; }
   footer #youtube-icon {
+    /* http://www.youtube.com/yt/brand/using-logo.html: "Apply half of the icon's height as a base for clear space" */
     height: 29px;
     width: 69px; }
 

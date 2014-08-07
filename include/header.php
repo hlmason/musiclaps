@@ -26,6 +26,7 @@
     <script src="<?php echo BASE_URL; ?>js/customized.bootstrap.min.js"></script>
 	<script src="<?php echo BASE_URL; ?>js/index.js"></script>
 	<script src="<?php echo BASE_URL; ?>js/wmuSlider.min.js"></script>
+	<script src="<?php echo BASE_URL; ?>js/header.js"></script>
 	<script src="<?php echo BASE_URL; ?>js/live-player.js"></script>
 </head>
 <body>
@@ -49,12 +50,86 @@
 					<li><a class="<?php if ($page == "Our Story") { echo "active"; } ?>" href="https://www.musiclaps.com/play?about=us">Our Story</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="https://www.musiclaps.com/play?login=user">Log in</a></li>
-					<li><a href="https://www.musiclaps.com/play?join=new&60BD52EBC3673E6C5196F3E1">Register</a></li>
+					<li><a id="loginJS">Log in</a></li>
+					<li><a id="registerJS">Register</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
+
+	<!-- Register modal -->
+	<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="registerLabel" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+						<span class="sr-only">Close</span>
+					</button>
+					<h4 class="modal-title register-modal-header" id="registerLabel">Register</h4>
+				</div>
+				<div class="modal-body" id="register-modal-body">
+					<form>
+						<div>
+							<label for="first_name">First Name</label>
+							<input id="first_name" type="text" name="first_name" tabindex="1">
+						</div>
+						<div>
+							<label for="last_name">Last Name</label>
+							<input id="last_name" type="text" name="last_name" tabindex="2">
+						</div>
+						<div>
+							<label for="email">Email Address</label>
+							<input type="email" id="email" name="email" tabindex="3">
+						</div>
+						<div>
+							<label for="password">Password</label>
+							<input id="password" type="text" name="password" tabindex="4">
+						</div>
+						<div>
+							<label for="confirm_password">Confirm Password</label>
+							<input id="confirm_password" type="text" name="confirm_password" tabindex="5">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End of register modal -->
+
+	<!-- Login modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+						<span class="sr-only">Close</span>
+					</button>
+					<h4 class="modal-title login-modal-header" id="loginLabel">Log in</h4>
+				</div>
+				<div class="modal-body" id="sn-login-modal-body">
+					<ul>
+						<li><a><img id="facebook-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/facebook-icon.png" alt="Facebook icon"></a>Login with Facebook</li>
+						<li><a><img id="twitter-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/twitter-icon.png" alt="Twitter icon"></a>Login with Twitter</li>
+						<li><a><img id="google-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/google-icon.jpg" alt="Google icon"></a>Login with Google</li>
+						<li><a><img id="microsoft-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/microsoft-icon.jpg" alt="Microsoft icon"></a>Login with Microsoft</li>
+					</ul>
+				</div>
+				<div class="modal-body" id="login-modal-body">
+					<form>
+						<input type="email" id="email" name="email" placeholder="Email Address" label="Email Address">
+						<input id="password" type="text" name="password" placeholder="Password">
+					</form>
+				</div>
+				<div class="modal-footer">
+					<a>Forgot Password</a>
+					<input type="submit" value="Log in">
+			    </div>
+			</div>
+		</div>
+	</div>
+	<!-- End of login modal -->
 
 <?php
 	$date = date_default_timezone_set('America/Los_Angeles'); // Required to use PHP date() function

@@ -54,13 +54,6 @@ $modal-border: 5px solid $musiclaps-light-gray;
 		letter-spacing: 0.25px;
 		margin-bottom: 0;
 		margin-top: 0;
-		span {
-			// text-shadow: 0.5px 0.5px 2px $musiclaps-blue;
-			// background-color: #52C4FF;
-			// padding-bottom: 3px;
-			// padding-left: 5px;
-			// padding-right: 5px;
-		}
 	}
 	a {
 		@include nav-link(#1F91E6, 16px);
@@ -99,11 +92,23 @@ a:hover {
 	cursor: pointer;
 }
 
+#facebook-icon, #google-icon {
+	height: 27px;
+	width: 27px;
+}
+
+#twitter-icon, /* https://about.twitter.com/press/brand-assets: "When using the bird with other logos and graphic elements, maintain a safety space that equals 200% the size of the square around the bird. */
+#microsoft-icon {
+	height: 29px;
+	width: 29px;
+}
+
 /* ===================================
     Modal
 =================================== */
 .modal-content {
 	color: $musiclaps-dark-gray;
+	border-bottom: $modal-border;
 	border-left: $modal-border;
 	border-right: $modal-border;
 	.modal-header {
@@ -129,8 +134,12 @@ a:hover {
 			font-weight: normal;
 		}
 	}
+	h4.login-modal-header, h4.register-modal-header {
+			font-size: 18px;
+			letter-spacing: 0.5px;
+			text-transform: capitalize;
+		}
 	.modal-body {
-		border-bottom: $modal-border;
 		border-bottom-left-radius: 5px;
 		border-bottom-right-radius: 5px;
 		span.bold {
@@ -147,6 +156,49 @@ a:hover {
 			margin-top: 15px;
 			height: 179px;
 			width: 270px;
+		}
+	}
+	#sn-login-modal-body, #login-modal-body, #register-modal-body, .modal-footer {
+		text-align: center;
+	}
+	#sn-login-modal-body {
+		border-bottom: 1px solid #e7e7e7;
+		border-radius: 0;
+	}
+	#login-modal-body {
+		padding-top: 0;
+		input {
+			@include border-radius(5px);
+			border: 1px solid $musiclaps-light-gray; 
+			margin-top: 20px;
+			padding-bottom: 5px;
+			padding-left: 8px;
+			padding-top: 5px;
+			width: 90%;
+		}
+	}
+	.modal-footer {
+		a { // Forgot password link
+			margin-right: 58px;
+			&:hover {
+				color: $musiclaps-dark-gray;
+				cursor: pointer;
+			}
+		}
+		input { // Log in button
+			@include border-radius(10px);
+			background-color: lightgray;
+			border: $nav-border;
+			padding-bottom: 5px;
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-top: 5px;
+			&:hover {
+				background-color: #d9d9d9;
+			}
+			a:hover {
+				color: black !important;
+			}
 		}
 	}
 }
@@ -211,7 +263,7 @@ nav {
 	.navbar-collapse {
 		border-top: none;
 	}
-} 
+}
 
 /* ===================================
     Landing Page
@@ -550,17 +602,8 @@ footer {
 	ul:last-child a {
 		padding-left: 0;
 		padding-right: 14.5px; 
-		/* http://www.youtube.com/yt/brand/using-logo.html: "Apply half of the icon's height as a base for clear space" */
-		/* https://about.twitter.com/press/brand-assets: "When using the bird with other logos and graphic elements, maintain a safety space that equals 200% the size of the square around the bird. */
-		#facebook-icon {
-			width: 27px;
-		}
 	}
-	#twitter-icon {
-		height: 29px;
-		width: 29px;
-	}
-	#youtube-icon {
+	#youtube-icon { /* http://www.youtube.com/yt/brand/using-logo.html: "Apply half of the icon's height as a base for clear space" */
 		height: 29px;
 		width: 69px;
 	}
