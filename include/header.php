@@ -110,22 +110,22 @@
 				</div>
 				<div class="modal-body" id="sn-login-modal-body">
 					<ul>
-						<li><a><img id="facebook-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/facebook-icon.png" alt="Facebook icon"></a>Login with Facebook</li>
-						<li><a><img id="twitter-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/twitter-icon.png" alt="Twitter icon"></a>Login with Twitter</li>
-						<li><a><img id="google-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/google-icon.jpg" alt="Google icon"></a>Login with Google</li>
-						<li><a><img id="microsoft-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/microsoft-icon.jpg" alt="Microsoft icon"></a>Login with Microsoft</li>
+						<li id="first-list-item"><form><img id="facebook-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/facebook-icon.png" alt="Facebook icon"><input type="submit" value="Log in with Facebook"></form></li>
+						<li><form><img id="twitter-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/twitter-icon.png" alt="Twitter icon"><input type="submit" value="Log in with Twitter"></form></li>
+						<li><form><img id="google-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/google-icon.jpg" alt="Google icon"><input type="submit" value="Log in with Google"></form></li>
+						<li><form><img id="microsoft-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/microsoft-icon.jpg" alt="Microsoft icon"><input type="submit" value="Log in with Microsoft"></form></li>
 					</ul>
 				</div>
-				<div class="modal-body" id="login-modal-body">
-					<form>
-						<input type="email" id="email" name="email" placeholder="Email Address" label="Email Address">
-						<input id="password" type="text" name="password" placeholder="Password">
-					</form>
-				</div>
-				<div class="modal-footer">
-					<a>Forgot Password</a>
-					<input type="submit" value="Log in">
-			    </div>
+				<form>
+					<div class="modal-body" id="login-modal-body">
+							<input type="email" id="email" name="email" placeholder="Email Address" label="Email Address">
+							<input id="password" type="text" name="password" placeholder="Password">
+					</div>
+					<div class="modal-footer">
+						<a>Forgot Password</a>
+						<input type="submit" value="Log in">
+				    </div>
+				</form>
 			</div>
 		</div>
 	</div>

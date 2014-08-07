@@ -30,6 +30,15 @@ $modal-border: 5px solid $musiclaps-light-gray;
 	line-height: 0;
 }
 
+@mixin modal-submit($padding-top, $padding-right, $padding-bottom, $padding-left) {
+	background-color: $musiclaps-light-gray;
+	border: $nav-border;
+	padding: $padding-top $padding-right $padding-bottom $padding-left;
+	&:hover {
+		background-color: #d9d9d9;
+	}
+}
+
 @mixin heading($font-size, $margin-bottom, $margin-top) {
 	color: $musiclaps-dark-gray;
 	font-size: $font-size;
@@ -152,7 +161,7 @@ a:hover {
 				color: $musiclaps-dark-gray;
 			}
 		}
-		img {
+		img:not(#sn-login-modal-body img) {
 			margin-top: 15px;
 			height: 179px;
 			width: 270px;
@@ -164,6 +173,20 @@ a:hover {
 	#sn-login-modal-body {
 		border-bottom: 1px solid #e7e7e7;
 		border-radius: 0;
+		padding-bottom: 0;
+		padding-top: 0;
+		li:not(#first-list-item) {
+			margin-top: 15px;
+		}
+		img { // Social media icons
+			margin-bottom: 1px;
+		}
+		input { // Social media login buttons
+			@include modal-submit(3px, 6px, 3px, 6px);
+			border-bottom-right-radius: 5px;
+			border-top-right-radius: 5px;
+			margin-left: 2px;
+		}
 	}
 	#login-modal-body {
 		padding-top: 0;
@@ -187,18 +210,7 @@ a:hover {
 		}
 		input { // Log in button
 			@include border-radius(10px);
-			background-color: lightgray;
-			border: $nav-border;
-			padding-bottom: 5px;
-			padding-left: 10px;
-			padding-right: 10px;
-			padding-top: 5px;
-			&:hover {
-				background-color: #d9d9d9;
-			}
-			a:hover {
-				color: black !important;
-			}
+			@include modal-submit(5px, 10px, 5px, 10px);
 		}
 	}
 }
@@ -555,10 +567,7 @@ h1.landing-page {
 		color: white;
 		letter-spacing: 0.5px;
 		margin-top: 50px;
-		padding-bottom: 10px;
-		padding-left: 20px;
-		padding-right: 20px;
-		padding-top: 10px;
+		padding: 10px 20px;
 		&:hover {
 			background-color: #1A9A1A;
 		}
