@@ -20,8 +20,8 @@
 				<div class="modal-body">
 					Would you like a walkthrough?<br><br>
 					<form>
-						<input type="radio" name="selection" value="yes">&nbsp; <a id="yes"><span class="bold">Yes</span> please, I'm new to this</a><br>
-						<input type="radio" name="selection" value="no">&nbsp; <a id="no"><span class="bold">No</span> thanks, I can figure it out</a><br>
+						<input type="radio" name="selection" value="yes">&nbsp; <a class="yes-or-no" id="yes"><span class="bold">Yes</span> please, I'm new to this</a><br>
+						<input type="radio" name="selection" value="no">&nbsp; <a class="yes-or-no" id="no"><span class="bold">No</span> thanks, I can figure it out</a><br>
 					</form>
 				</div>
 			</div>

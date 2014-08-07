@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-	// var wantDemo = $('#wantDemo');
-	// var demoVideo = $('#demoVideo');
-	// var selectSong = $('#selectSong');
+	var wantDemo = $('#wantDemo');
+	var demoVideo = $('#demoVideo');
+	var selectSong = $('#selectSong');
 
     $(window).load(function(){ // Displays modal upon page load
         wantDemo.modal('show');
@@ -20,7 +20,7 @@ $(document).ready(function() {
 	});
 
 	// Text to right of radio buttons is selectable for mobile UX
-	$('a').on('click', function() { // Asks whether user wants demo
+	$('.yes-or-no').on('click', function() { // Asks whether user wants demo
 		$(this).data('clicked', true);
 		if ( $('#yes').data('clicked') ) { // If yes,
 			wantDemo.modal('hide'); // modal is hidden
@@ -31,9 +31,9 @@ $(document).ready(function() {
 		}
 	});
 
-	$('.close').on('click', function() {
-		selectSong.modal('show');
-	});
+	// $('.close').on('click', function() {
+	// 	selectSong.modal('show');
+	// });
 
 	$('#selectSongJS').click(function() {
 		selectSong.modal('show');
