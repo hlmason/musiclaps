@@ -2582,6 +2582,8 @@ footer {
 
   #sn-login-modal-body-sm {
     display: inline-block !important; }
+    #sn-login-modal-body-sm ul {
+      text-align: left; }
     #sn-login-modal-body-sm li:not(.first-list-item) {
       margin-top: 15px; }
     #sn-login-modal-body-sm img {

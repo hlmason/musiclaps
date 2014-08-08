@@ -699,17 +699,12 @@ footer {
 			}
 		}
 	}
-	#sn-login-modal-body {
-		display: none;
-	}
+	#sn-login-modal-body { display: none; }
 	#sn-login-modal-body-sm {
 		display: inline-block !important;
-		li:not(.first-list-item) {
-			margin-top: 15px;
-		}
-		img { // Social media icons
-			margin-bottom: 1px;
-		}
+		ul { text-align: left; }
+		li:not(.first-list-item) { margin-top: 15px; }
+		img { margin-bottom: 1px; } // Social media icons
 		input { // Social media login buttons
 			@include modal-submit(3px, 6px, 3px, 6px);
 			border-bottom-right-radius: 5px;
