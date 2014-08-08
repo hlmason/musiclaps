@@ -2152,9 +2152,8 @@ nav .navbar-collapse {
         color: #52C4FF; }
     .modal-content .modal-header span.normal {
       font-weight: normal; }
-  .modal-content h2.login-modal-heading, .modal-content h2.register-modal-heading {
-    letter-spacing: 0.5px;
-    text-transform: capitalize; }
+  .modal-content h2.register-modal-heading, .modal-content h2.email-registration-modal-heading, .modal-content h2.login-modal-heading {
+    letter-spacing: 0.5px; }
   .modal-content h3.want-demo-heading, .modal-content h3.select-song-heading {
     text-transform: uppercase; }
   .modal-content .modal-body {
@@ -2174,34 +2173,43 @@ nav .navbar-collapse {
       margin-top: 15px;
       height: 179px;
       width: 270px; }
-  .modal-content #register-modal-body, .modal-content #register-modal-body-optional, .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm, .modal-content #login-modal-body, .modal-content .modal-footer {
+  .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm,
+  .modal-content #register-modal-body, .modal-content #login-modal-body, .modal-content .modal-footer {
     text-align: center; }
-  .modal-content #register-modal-body, .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm {
+  .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm, .modal-content #register-modal-body {
     border-bottom: 1px solid #e7e7e7;
     border-radius: 0;
-    padding-bottom: 0;
     padding-top: 0;
     width: 100%; }
+  .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm {
+    padding-bottom: 0; }
   .modal-content #sn-login-modal-body li {
     display: inline-block; }
     .modal-content #sn-login-modal-body li img {
       margin-left: 10px; }
   .modal-content #sn-login-modal-body-sm {
     display: none; }
-  .modal-content #login-modal-body, .modal-content #register-modal-body {
+  .modal-content #register-modal-body, .modal-content #login-modal-body {
     padding-top: 0; }
-    .modal-content #login-modal-body input, .modal-content #register-modal-body input {
+    .modal-content #register-modal-body input, .modal-content #login-modal-body input {
       -moz-border-radius: 5px;
       border-radius: 5px;
-      border: 1px solid #e7e7e7;
+      border: 1px solid #cecece;
       margin-top: 20px;
       padding-bottom: 5px;
       padding-left: 8px;
       padding-top: 5px;
       width: 90%; }
+  .modal-content #register-modal-body label {
+    margin-bottom: 2px;
+    margin-top: 10px; }
+    .modal-content #register-modal-body label span.musiclaps-blue {
+      color: #38aaff; }
+  .modal-content #register-modal-body input {
+    margin-top: 0; }
   .modal-content .modal-footer a {
     margin-right: 58px; }
-    .modal-content .modal-footer a:hover {
+    .modal-content .modal-footer a:hover, .modal-content .modal-footer a:focus {
       color: #444444;
       cursor: pointer; }
   .modal-content .modal-footer input {
@@ -2210,8 +2218,10 @@ nav .navbar-collapse {
     background-color: #e7e7e7;
     border: 1px solid #cecece;
     padding: 5px 10px 5px 10px; }
-    .modal-content .modal-footer input:hover {
+    .modal-content .modal-footer input:hover, .modal-content .modal-footer input:focus {
       background-color: #d9d9d9; }
+  .modal-content #register-modal-footer, .modal-content #email-registration-modal-footer {
+    border-top: none; }
 
 /* ===================================
     Landing Page
@@ -2478,7 +2488,7 @@ h1.landing-page {
   letter-spacing: 0.5px;
   margin-top: 50px;
   padding: 10px 20px; }
-  #recording-instructions input#save:hover {
+  #recording-instructions input#save:hover, #recording-instructions input#save:focus {
     background-color: #1A9A1A; }
 
 /* ===================================
@@ -2596,7 +2606,7 @@ footer {
       border-bottom-right-radius: 5px;
       border-top-right-radius: 5px;
       margin-left: 2px; }
-      #sn-login-modal-body-sm input:hover {
+      #sn-login-modal-body-sm input:hover, #sn-login-modal-body-sm input:focus {
         background-color: #d9d9d9; }
 
   h1.landing-page {

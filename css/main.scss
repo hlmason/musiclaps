@@ -34,7 +34,7 @@ $modal-border: 5px solid $musiclaps-light-gray;
 	background-color: $musiclaps-light-gray;
 	border: $nav-border;
 	padding: $padding-top $padding-right $padding-bottom $padding-left;
-	&:hover {
+	&:hover, &:focus {
 		background-color: #d9d9d9;
 	}
 }
@@ -143,7 +143,7 @@ nav {
 	}
 	.navbar-right li {
 		border: $nav-border;
-		&:first-child {
+		&:first-child { // Log in button
 			background-color: lightgray;
 			border-bottom-left-radius: 10px;
 			border-top-left-radius: 10px;
@@ -154,7 +154,7 @@ nav {
 				color: black !important;
 			}
 		}
-		&:last-child {
+		&:last-child { // Register button
 			background-color: $musiclaps-blue;
 			border-bottom-right-radius: 10px;
 			border-top-right-radius: 10px;
@@ -204,9 +204,8 @@ nav {
 			font-weight: normal;
 		}
 	}
-	h2.login-modal-heading, h2.register-modal-heading {
+	h2.register-modal-heading, h2.email-registration-modal-heading, h2.login-modal-heading {
 			letter-spacing: 0.5px;
-			text-transform: capitalize;
 		}
 	h3.want-demo-heading, h3.select-song-heading {
 		text-transform: uppercase;
@@ -234,16 +233,19 @@ nav {
 			width: 270px;
 		}
 	}
-	#register-modal-body, #register-modal-body-optional, #sn-login-modal-body, #sn-login-modal-body-sm, #login-modal-body, .modal-footer {
+	#sn-login-modal-body, #sn-login-modal-body-sm, 
+	#register-modal-body, #login-modal-body, .modal-footer {
 		text-align: center;
 	}
-	#register-modal-body, #sn-login-modal-body, #sn-login-modal-body-sm {
+	#sn-login-modal-body, #sn-login-modal-body-sm, #register-modal-body {
 		border-bottom: 1px solid #e7e7e7;
 		border-radius: 0;
-		padding-bottom: 0;
 		padding-top: 0;
 		width: 100%;
 	}
+	#sn-login-modal-body, #sn-login-modal-body-sm {
+		padding-bottom: 0;
+	} 
 	#sn-login-modal-body { 
 		li {
 			display: inline-block;
@@ -255,11 +257,11 @@ nav {
 	#sn-login-modal-body-sm {
 		display: none; // Invisible at viewport widths >= 768px
 	}
-	#login-modal-body, #register-modal-body {
+	#register-modal-body, #login-modal-body {
 		padding-top: 0;
 		input {
 			@include border-radius(5px);
-			border: 1px solid $musiclaps-light-gray; 
+			border: $nav-border;
 			margin-top: 20px;
 			padding-bottom: 5px;
 			padding-left: 8px;
@@ -267,10 +269,22 @@ nav {
 			width: 90%;
 		}
 	}
+	#register-modal-body {
+		label {
+			margin-bottom: 2px;
+			margin-top: 10px;
+			span.musiclaps-blue {
+				color: $musiclaps-blue;
+			}
+		}
+		input {
+			margin-top: 0;
+		}
+	}
 	.modal-footer {
 		a { // Forgot password link
 			margin-right: 58px;
-			&:hover {
+			&:hover, &:focus {
 				color: $musiclaps-dark-gray;
 				cursor: pointer;
 			}
@@ -279,6 +293,9 @@ nav {
 			@include border-radius(10px);
 			@include modal-submit(5px, 10px, 5px, 10px);
 		}
+	}
+	#register-modal-footer, #email-registration-modal-footer {
+		border-top: none;
 	}
 }
 
@@ -291,7 +308,7 @@ h1.landing-page {
 	a {
 		color: $musiclaps-blue;
 		&:hover, &:focus {
-				color: $musiclaps-dark-gray !important;
+			color: $musiclaps-dark-gray !important;
 		}
 	}
 }
@@ -573,7 +590,7 @@ h1.landing-page {
 		letter-spacing: 0.5px;
 		margin-top: 50px;
 		padding: 10px 20px;
-		&:hover {
+		&:hover, &:focus {
 			background-color: #1A9A1A;
 		}
 	}

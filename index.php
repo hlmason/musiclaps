@@ -113,7 +113,7 @@
 				<div class="row">
 					<div class="col-md-6 col-md-offset-1">					
 						<h2>Backstage</h2>
-						<p><!-- Keep to 45-75 characters per line -->
+						<p><!-- Keep to approximately 45-75 characters per line -->
 							Music collaboration would not exist without people.  You will find these individuals here in our backstage section.
 						</p>
 						<ul>

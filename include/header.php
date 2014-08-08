@@ -74,7 +74,7 @@
 					include(ROOT_PATH . 'include/social-network-login-modal.php');
 				?>
 				
-				<div class="modal-footer">
+				<div class="modal-footer" id="register-modal-footer">
 					<input id="registerWithEmail" type="submit" value="Register with Email">
 			    </div>
 
@@ -96,22 +96,33 @@
 					<h2 class="modal-title email-registration-modal-heading" id="emailRegistrationLabel">Email Registration</h2>
 				</div>
 				
-				<div class="modal-body" id="email-registration-modal-body">
+				<div class="modal-body" id="register-modal-body">
 					<form>
-						<input id="first_name" type="text" name="first_name" placeholder="First Name">
-						<input id="last_name" type="text" name="last_name" placeholder="Last Name">
-						<input type="email" id="email" name="email" placeholder="Email Address">
-						<input id="password" type="text" name="password" placeholder="Password">
-						<input id="confirm_password" type="text" name="confirm_password" placeholder="Confirm Password">
+						<div>
+							<label for="first_name"><span class="musiclaps-blue">*</span> First Name</label>
+							<input id="first_name" type="text" name="first_name">
+						</div>
+						<div>
+							<label for="last_name"><span class="musiclaps-blue">*</span> Last Name</label>
+							<input id="last_name" type="text" name="last_name">
+						</div>
+						<div>
+							<label for="email"><span class="musiclaps-blue">*</span> Email Address</label>
+							<input type="email" id="email" name="email">
+						</div>
+						<div>
+							<label for="password"><span class="musiclaps-blue">*</span> Password</label>
+							<input id="password" type="text" name="password">
+						</div>
+						<div>
+							<label for="confirm_password"><span class="musiclaps-blue">*</span> Confirm Password</label>
+							<input id="confirm_password" type="text" name="confirm_password">
+						</div>
 					</form>
 				</div>
 				
 				<form>
-					<div class="modal-body" id="email-registration-modal-body-optional">
-						<input type="email" id="email" name="email" placeholder="Email Address" label="Email Address">
-						<input id="password" type="text" name="password" placeholder="Password">
-					</div>
-					<div class="modal-footer">
+					<div class="modal-footer" id="email-registration-modal-footer">
 						<input type="submit" value="Register">
 				    </div>
 				</form>
@@ -140,8 +151,8 @@
 
 				<form>
 					<div class="modal-body" id="login-modal-body">
-							<input type="email" id="email" name="email" placeholder="Email Address" label="Email Address">
-							<input id="password" type="text" name="password" placeholder="Password">
+						<input type="email" id="email" name="email" placeholder="Email Address" label="Email Address">
+						<input id="password" type="text" name="password" placeholder="Password">
 					</div>
 					<div class="modal-footer">
 						<a>Forgot Password</a>
