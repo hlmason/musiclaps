@@ -15,7 +15,7 @@
 						<span aria-hidden="true">&times;</span>
 						<span class="sr-only">Close</span>
 					</button>
-					<h4 class="modal-title" id="wantDemoLabel">Welcome to soundcheck !</h4>
+					<h3 class="modal-title want-demo-heading" id="wantDemoLabel">Welcome to soundcheck !</h3>
 				</div>
 				<div class="modal-body">
 					Would you like a walkthrough?<br><br>
@@ -57,7 +57,7 @@
 						<span aria-hidden="true">&times;</span>
 						<span class="sr-only">Close</span>
 					</button>
-					<h4 class="modal-title" id="selectSongLabel"><span class="normal"></span>Select a song <span class="normal">from our sample music</span></h4>
+					<h3 class="modal-title select-song-heading" id="selectSongLabel"><span class="normal"></span>Select a song <span class="normal">from our sample music</span></h3>
 				</div>
 				<div class="modal-body">
 					<ul>
@@ -90,7 +90,7 @@
 			</div>
 			
 			<section id="recording-instructions">
-				<h1 id="demo-header">Record in 3 steps:</h1>
+				<h1 id="demo-heading">Record in 3 steps:</h1>
 				
 				<!-- Step 1 -->
 				<div class="container">

@@ -187,7 +187,6 @@ nav {
 		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
 		font-weight: bold;
-		text-transform: uppercase;
 		button.close {
 			background-color: white;
 			border: none;
@@ -205,10 +204,13 @@ nav {
 			font-weight: normal;
 		}
 	}
-	h2.login-modal-header, h2.register-modal-header {
+	h2.login-modal-heading, h2.register-modal-heading {
 			letter-spacing: 0.5px;
 			text-transform: capitalize;
 		}
+	h3.want-demo-heading, h3.select-song-heading {
+		text-transform: uppercase;
+	}
 	.modal-body {
 		border-bottom-left-radius: 5px;
 		border-bottom-right-radius: 5px;
@@ -232,10 +234,10 @@ nav {
 			width: 270px;
 		}
 	}
-	#sn-login-modal-body, #sn-login-modal-body-sm, #login-modal-body, #register-modal-body, .modal-footer {
+	#register-modal-body, #register-modal-body-optional, #sn-login-modal-body, #sn-login-modal-body-sm, #login-modal-body, .modal-footer {
 		text-align: center;
 	}
-	#sn-login-modal-body, #sn-login-modal-body-sm {
+	#register-modal-body, #sn-login-modal-body, #sn-login-modal-body-sm {
 		border-bottom: 1px solid #e7e7e7;
 		border-radius: 0;
 		padding-bottom: 0;
@@ -253,7 +255,7 @@ nav {
 	#sn-login-modal-body-sm {
 		display: none; // Invisible at viewport widths >= 768px
 	}
-	#login-modal-body {
+	#login-modal-body, #register-modal-body {
 		padding-top: 0;
 		input {
 			@include border-radius(5px);
@@ -523,7 +525,7 @@ h1.landing-page {
 }
 
 #recording-instructions {
-	h1#demo-header {
+	h1#demo-heading {
 		text-align: center;
 	}
 	h2 {
@@ -760,3 +762,7 @@ footer {
 	#rainbow-music-notes { display: none; }
 }
 
+@media only screen and (max-width: 417px) {
+// Breakpoint of Select a song heading
+	h3.select-song-heading { font-size: 15px; }
+}

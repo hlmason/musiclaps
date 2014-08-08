@@ -2138,8 +2138,7 @@ nav .navbar-collapse {
     border-top: 5px solid #e7e7e7;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    font-weight: bold;
-    text-transform: uppercase; }
+    font-weight: bold; }
     .modal-content .modal-header button.close {
       background-color: white;
       border: none;
@@ -2153,9 +2152,11 @@ nav .navbar-collapse {
         color: #52C4FF; }
     .modal-content .modal-header span.normal {
       font-weight: normal; }
-  .modal-content h2.login-modal-header, .modal-content h2.register-modal-header {
+  .modal-content h2.login-modal-heading, .modal-content h2.register-modal-heading {
     letter-spacing: 0.5px;
     text-transform: capitalize; }
+  .modal-content h3.want-demo-heading, .modal-content h3.select-song-heading {
+    text-transform: uppercase; }
   .modal-content .modal-body {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px; }
@@ -2173,9 +2174,9 @@ nav .navbar-collapse {
       margin-top: 15px;
       height: 179px;
       width: 270px; }
-  .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm, .modal-content #login-modal-body, .modal-content #register-modal-body, .modal-content .modal-footer {
+  .modal-content #register-modal-body, .modal-content #register-modal-body-optional, .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm, .modal-content #login-modal-body, .modal-content .modal-footer {
     text-align: center; }
-  .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm {
+  .modal-content #register-modal-body, .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm {
     border-bottom: 1px solid #e7e7e7;
     border-radius: 0;
     padding-bottom: 0;
@@ -2187,9 +2188,9 @@ nav .navbar-collapse {
       margin-left: 10px; }
   .modal-content #sn-login-modal-body-sm {
     display: none; }
-  .modal-content #login-modal-body {
+  .modal-content #login-modal-body, .modal-content #register-modal-body {
     padding-top: 0; }
-    .modal-content #login-modal-body input {
+    .modal-content #login-modal-body input, .modal-content #register-modal-body input {
       -moz-border-radius: 5px;
       border-radius: 5px;
       border: 1px solid #e7e7e7;
@@ -2441,7 +2442,7 @@ h1.landing-page {
 #select-song-container a:hover, #recording-instructions {
   color: #444444; }
 
-#recording-instructions h1#demo-header {
+#recording-instructions h1#demo-heading {
   text-align: center; }
 #recording-instructions h2 {
   font-size: 18px;
@@ -2645,3 +2646,6 @@ footer {
 @media only screen and (max-width: 580px) {
   #rainbow-music-notes {
     display: none; } }
+@media only screen and (max-width: 417px) {
+  h3.select-song-heading {
+    font-size: 15px; } }

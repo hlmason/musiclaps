@@ -61,37 +61,45 @@
 	<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="registerLabel" aria-hidden="true">
 		<div class="modal-dialog modal-sm">
 			<div class="modal-content">
+				
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">
 						<span aria-hidden="true">&times;</span>
 						<span class="sr-only">Close</span>
 					</button>
-					<h2 class="modal-title register-modal-header" id="registerLabel">Register</h2>
+					<h2 class="modal-title register-modal-heading" id="registerLabel">Register</h2>
 				</div>
+				
 				<div class="modal-body" id="register-modal-body">
 					<form>
 						<div>
-							<label for="first_name">First Name</label>
-							<input id="first_name" type="text" name="first_name" tabindex="1">
+							<input id="first_name" type="text" name="first_name" placeholder="First Name">
 						</div>
 						<div>
-							<label for="last_name">Last Name</label>
-							<input id="last_name" type="text" name="last_name" tabindex="2">
+							<input id="last_name" type="text" name="last_name" placeholder="Last Name">
 						</div>
 						<div>
-							<label for="email">Email Address</label>
-							<input type="email" id="email" name="email" tabindex="3">
+							<input type="email" id="email" name="email" placeholder="Email Address">
 						</div>
 						<div>
-							<label for="password">Password</label>
-							<input id="password" type="text" name="password" tabindex="4">
+							<input id="password" type="text" name="password" placeholder="Password">
 						</div>
 						<div>
-							<label for="confirm_password">Confirm Password</label>
-							<input id="confirm_password" type="text" name="confirm_password" tabindex="5">
+							<input id="confirm_password" type="text" name="confirm_password" placeholder="Confirm Password">
 						</div>
 					</form>
 				</div>
+				
+				<form>
+					<div class="modal-body" id="register-modal-body-optional">
+							<input type="email" id="email" name="email" placeholder="Email Address" label="Email Address">
+							<input id="password" type="text" name="password" placeholder="Password">
+					</div>
+					<div class="modal-footer">
+						<input type="submit" value="Register">
+				    </div>
+				</form>
+
 			</div>
 		</div>
 	</div>
@@ -107,7 +115,7 @@
 						<span aria-hidden="true">&times;</span>
 						<span class="sr-only">Close</span>
 					</button>
-					<h2 class="modal-title login-modal-header" id="loginLabel">Log in</h2>
+					<h2 class="modal-title login-modal-heading" id="loginLabel">Log in</h2>
 				</div>
 
 				<!-- Visible at viewport widths >= 768px -->
