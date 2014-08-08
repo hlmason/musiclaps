@@ -20,7 +20,7 @@ $(document).ready(function() {
 	});
 
 	// Text to right of radio buttons is selectable for mobile UX
-	$('.yes-or-no').on('click', function() { // Asks whether user wants demo
+	$('.yesOrNo').on('click', function() { // Asks whether user wants demo
 		$(this).data('clicked', true);
 		if ( $('#yes').data('clicked') ) { // If yes,
 			wantDemo.modal('hide'); // modal is hidden

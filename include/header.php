@@ -69,31 +69,47 @@
 					</button>
 					<h2 class="modal-title register-modal-heading" id="registerLabel">Register</h2>
 				</div>
+
+				<?php
+					include(ROOT_PATH . 'include/social-network-login-modal.php');
+				?>
 				
-				<div class="modal-body" id="register-modal-body">
+				<div class="modal-footer">
+					<input id="registerWithEmail" type="submit" value="Register with Email">
+			    </div>
+
+			</div>
+		</div>
+	</div>
+	<!-- End of register modal -->
+
+	<!-- Email registration modal -->
+	<div class="modal fade" id="emailRegistration" tabindex="-1" role="dialog" aria-labelledby="emailRegistrationLabel" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+						<span class="sr-only">Close</span>
+					</button>
+					<h2 class="modal-title email-registration-modal-heading" id="emailRegistrationLabel">Email Registration</h2>
+				</div>
+				
+				<div class="modal-body" id="email-registration-modal-body">
 					<form>
-						<div>
-							<input id="first_name" type="text" name="first_name" placeholder="First Name">
-						</div>
-						<div>
-							<input id="last_name" type="text" name="last_name" placeholder="Last Name">
-						</div>
-						<div>
-							<input type="email" id="email" name="email" placeholder="Email Address">
-						</div>
-						<div>
-							<input id="password" type="text" name="password" placeholder="Password">
-						</div>
-						<div>
-							<input id="confirm_password" type="text" name="confirm_password" placeholder="Confirm Password">
-						</div>
+						<input id="first_name" type="text" name="first_name" placeholder="First Name">
+						<input id="last_name" type="text" name="last_name" placeholder="Last Name">
+						<input type="email" id="email" name="email" placeholder="Email Address">
+						<input id="password" type="text" name="password" placeholder="Password">
+						<input id="confirm_password" type="text" name="confirm_password" placeholder="Confirm Password">
 					</form>
 				</div>
 				
 				<form>
-					<div class="modal-body" id="register-modal-body-optional">
-							<input type="email" id="email" name="email" placeholder="Email Address" label="Email Address">
-							<input id="password" type="text" name="password" placeholder="Password">
+					<div class="modal-body" id="email-registration-modal-body-optional">
+						<input type="email" id="email" name="email" placeholder="Email Address" label="Email Address">
+						<input id="password" type="text" name="password" placeholder="Password">
 					</div>
 					<div class="modal-footer">
 						<input type="submit" value="Register">
@@ -103,7 +119,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- End of register modal -->
+	<!-- End of email registration modal -->
 
 	<!-- Login modal -->
 	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
@@ -118,29 +134,9 @@
 					<h2 class="modal-title login-modal-heading" id="loginLabel">Log in</h2>
 				</div>
 
-				<!-- Visible at viewport widths >= 768px -->
-				<div class="modal-body" id="sn-login-modal-body">
-					<h4>Login using:</h4>
-					<ul>
-						<!-- TODO: Edit markup for functional login -->
-						<li><a><img id="facebook-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/facebook-icon.png" alt="Facebook icon"></a></li>
-						<li><a><img id="twitter-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/twitter-icon.png" alt="Twitter icon"></a></li>
-						<li><a><img id="google-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/google-icon.jpg" alt="Google icon"></a></li>
-						<li><a><img id="microsoft-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/microsoft-icon.jpg" alt="Microsoft icon"></a></li>
-					</ul>
-				</div>
-
-				<!-- TODO: Make this look better at viewport widths closer to 767px  -->
-				<!-- Visible at viewport widths <= 767px -->
-				<div class="modal-body" id="sn-login-modal-body-sm">
-					<ul>
-						<!-- TODO: Edit markup for functional login -->
-						<li class="first-list-item"><form><img id="facebook-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/facebook-icon.png" alt="Facebook icon"><input type="submit" value="Log in with Facebook"></form></li>
-						<li><form><img id="twitter-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/twitter-icon.png" alt="Twitter icon"><input type="submit" value="Log in with Twitter"></form></li>
-						<li><form><img id="google-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/google-icon.jpg" alt="Google icon"><input type="submit" value="Log in with Google"></form></li>
-						<li><form><img id="microsoft-icon" src="<?php echo BASE_URL; ?>img/nav-and-footer/microsoft-icon.jpg" alt="Microsoft icon"><input type="submit" value="Log in with Microsoft"></form></li>
-					</ul>
-				</div>
+				<?php
+					include(ROOT_PATH . 'include/social-network-login-modal.php');
+				?>
 
 				<form>
 					<div class="modal-body" id="login-modal-body">
