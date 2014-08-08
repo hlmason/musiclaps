@@ -2145,7 +2145,7 @@ nav .navbar-collapse {
       color: #38aaff;
       float: right;
       font-size: 21px;
-      font-weight: 400;
+      font-weight: normal;
       line-height: 1;
       text-shadow: 0 1px 0 #fff; }
       .modal-content .modal-header button.close:hover, .modal-content .modal-header button.close:focus {
@@ -2452,7 +2452,7 @@ h1.landing-page {
 #select-song-container a:hover, #recording-instructions {
   color: #444444; }
 
-#recording-instructions h1#demo-heading {
+#recording-instructions h1 {
   text-align: center; }
 #recording-instructions h2 {
   font-size: 18px;
@@ -2529,6 +2529,27 @@ footer {
     /* http://www.youtube.com/yt/brand/using-logo.html: "Apply half of the icon's height as a base for clear space" */
     height: 29px;
     width: 69px; }
+
+/* ===================================
+    Privacy Page
+=================================== */
+#privacy-page h1 {
+  color: #444444;
+  font-size: 30px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px; }
+
+#privacy-page h3 {
+  margin-bottom: 0; }
+
+#privacy-page p:not(#first-paragraph) {
+  margin-top: 0;
+  word-spacing: 1px; }
 
 /* ===================================
     Media Queries
@@ -2649,7 +2670,11 @@ footer {
       border: none; }
   footer .navbar-right {
     float: right !important;
-    text-align: right; } }
+    text-align: right; }
+
+  #privacy-page h1 {
+    font-size: 28px;
+    margin-top: 0; } }
 @media only screen and (max-width: 590px) {
   h1.landing-page {
     font-size: 20px; } }

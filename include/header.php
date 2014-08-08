@@ -164,7 +164,3 @@
 		</div>
 	</div>
 	<!-- End of login modal -->
-
-<?php
-	$date = date_default_timezone_set('America/Los_Angeles'); // Required to use PHP date() function
-?>

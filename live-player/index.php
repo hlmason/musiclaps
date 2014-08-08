@@ -90,7 +90,7 @@
 			</div>
 			
 			<section id="recording-instructions">
-				<h1 id="demo-heading">Record in 3 steps:</h1>
+				<h1>Record in 3 steps:</h1>
 				
 				<!-- Step 1 -->
 				<div class="container">
