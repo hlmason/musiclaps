@@ -5,7 +5,7 @@
 =================================== */
 $nav-border: 1px solid #cecece;
 $musiclaps-light-gray: #e7e7e7;
-$musiclaps-dark-gray: #444; // Whichever shade of gray is in the logo - TBD
+$musiclaps-dark-gray: #444; // Whichever shade of gray is in the final logo - TBD
 $musiclaps-blue: #38AAFF; // Whatever shade of blue you want
 $modal-border: 5px solid $musiclaps-light-gray;
 
@@ -42,7 +42,7 @@ $modal-border: 5px solid $musiclaps-light-gray;
 @mixin heading($font-size, $margin-bottom, $margin-top) {
 	color: $musiclaps-dark-gray;
 	font-size: $font-size;
-	font-weight: normal; // For customized Bootstrap
+	font-weight: normal; // For customized Bootstrap CSS file
 	letter-spacing: 0.5px;
 	margin-bottom: $margin-bottom;
 	margin-top: $margin-top;
@@ -81,7 +81,7 @@ html, body {
 
 body {
 	font-family: 'Roboto', sans-serif;
-	// padding-top: 120px;
+	// padding-top: 120px; // For fixed Bootstrap nav bar
 }
 
 img {
@@ -110,6 +110,68 @@ a:hover {
 #microsoft-icon {
 	height: 29px;
 	width: 29px;
+}
+
+/* ===================================
+    Nav
+=================================== */
+nav {
+	&.navbar-default {
+		background-color: $musiclaps-light-gray;
+		border-bottom: $nav-border;
+	}
+	.navbar-header {
+		height: 78px;
+		img { // Musiclaps logo
+			height: 45px;
+			width: 155px;
+		}
+	}
+	.nav li {
+		margin-top: 23px;
+		a {
+			@include nav-link($musiclaps-dark-gray, 14px);
+			letter-spacing: 0.5px;
+			text-transform: uppercase;
+			&:hover, &:focus, &.active {
+				color: $musiclaps-blue !important;
+			}
+		}
+	}
+	.navbar-left li {
+		@include nav-border($musiclaps-blue);
+	}
+	.navbar-right li {
+		border: $nav-border;
+		&:first-child {
+			background-color: lightgray;
+			border-bottom-left-radius: 10px;
+			border-top-left-radius: 10px;
+			&:hover {
+				background-color: #d9d9d9;
+			}
+			a:hover {
+				color: black !important;
+			}
+		}
+		&:last-child {
+			background-color: $musiclaps-blue;
+			border-bottom-right-radius: 10px;
+			border-top-right-radius: 10px;
+			&:hover {
+				background-color: #45B7FF;
+			}
+			a {
+				color: white !important;
+			}
+		}
+	}
+	.navbar-toggle {
+		margin-top: 23px;
+	}
+	.navbar-collapse {
+		border-top: none;
+	}
 }
 
 /* ===================================
@@ -189,7 +251,7 @@ a:hover {
 		}
 	}
 	#sn-login-modal-body-sm {
-		display: none;
+		display: none; // Invisible at viewport widths >= 768px
 	}
 	#login-modal-body {
 		padding-top: 0;
@@ -215,68 +277,6 @@ a:hover {
 			@include border-radius(10px);
 			@include modal-submit(5px, 10px, 5px, 10px);
 		}
-	}
-}
-
-/* ===================================
-    Nav
-=================================== */
-nav {
-	&.navbar-default {
-		background-color: $musiclaps-light-gray;
-		border-bottom: $nav-border;
-	}
-	.navbar-header {
-		height: 78px;
-		img { // Musiclaps logo
-			height: 45px;
-			width: 155px;
-		}
-	}
-	.nav li {
-		margin-top: 23px;
-		a {
-			@include nav-link($musiclaps-dark-gray, 14px);
-			letter-spacing: 0.5px;
-			text-transform: uppercase;
-			&:hover, &:focus, &.active {
-				color: $musiclaps-blue !important;
-			}
-		}
-	}
-	.navbar-left li {
-		@include nav-border($musiclaps-blue);
-	}
-	.navbar-right li {
-		border: $nav-border;
-		&:first-child {
-			background-color: lightgray;
-			border-bottom-left-radius: 10px;
-			border-top-left-radius: 10px;
-			&:hover {
-				background-color: #d9d9d9;
-			}
-			a:hover {
-				color: black !important;
-			}
-		}
-		&:last-child {
-			background-color: $musiclaps-blue;
-			border-bottom-right-radius: 10px;
-			border-top-right-radius: 10px;
-			&:hover {
-				background-color: #45B7FF;
-			}
-			a {
-				color: white !important;
-			}
-		}
-	}
-	.navbar-toggle {
-		margin-top: 23px;
-	}
-	.navbar-collapse {
-		border-top: none;
 	}
 }
 
@@ -377,7 +377,7 @@ h1.landing-page {
 				sup {		
 					letter-spacing: 4px;
 					&:nth-child(2), &:last-child {
-						display: none; // Only visible at viewport widths <= 818px
+						display: none; // Invisible at viewport widths <= 1117px
 					}
 				}
 			}
@@ -682,7 +682,6 @@ footer {
 // Breakpoint of Bootstrap's collapsed menu
 	nav {
 		&.navbar a:not(.navbar-brand) { margin-left: 10px; }
-		// .navbar li:hover { background-color: lightgray; padding-bottom: 10px; padding-top: 10px; }
 	 	.navbar-left { 
 			margin-top: 0;
 			li { border: none; /* Removes border to the left of links */ } 

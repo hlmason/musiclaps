@@ -22,19 +22,19 @@
 			<div id="stage-inner">
 				<div class="row">
 					<div id="soundcheck" class="col-sm-4">
-						<a href="<?php echo BASE_URL; ?>live-player/">Soundcheck</a>
+						<a href="<?php echo BASE_URL; ?>live-player/">Soundcheck</a><!-- Visible at viewport widths >= 768px -->
 					</div>
 					<div class="col-sm-4">
 						<p>
-							<sup>...</sup><!-- Visible at viewport widths >= 819px -->
-							<sup></sup><!-- Visible at viewport widths <= 818px -->
+							<sup>...</sup><!-- Visible at viewport widths >= 1118px -->
+							<sup></sup><!-- Visible at viewport widths <= 1117px -->
 							&nbsp;&nbsp;&nbsp;Click on any button to start&nbsp;&nbsp;&nbsp;
-							<sup>...</sup><!-- Visible at viewport widths >= 819px -->
-							<sup></sup><!-- Visible at viewport widths <= 818px -->
+							<sup>...</sup><!-- Visible at viewport widths >= 1118px -->
+							<sup></sup><!-- Visible at viewport widths <= 1117px -->
 						</p>
 					</div>
 					<div id="record-demo" class="col-sm-4">
-						<a href="<?php echo BASE_URL; ?>live-player/">Record a Demo</a>
+						<a href="<?php echo BASE_URL; ?>live-player/">Record a Demo</a><!-- Visible at viewport widths >= 768px -->
 					</div>
 				</div>
 				<div class="row">		
