@@ -4,7 +4,7 @@ $(document).ready(function() {
 	var demoVideo = $('#demoVideo');
 	var selectSong = $('#selectSong');
 
-    $(window).load(function(){ // Displays modal upon page load
+    $(window).load(function() { // Displays modal upon page load
         wantDemo.modal('show');
     });
 
