@@ -27,11 +27,11 @@
 	</footer>
 	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
 	<script>
-		  WebFont.load({
+		WebFont.load({
 		    google: {
 		      families: ['Roboto Condensed', 'Roboto:400,700', 'Allerta Stencil' ]
 		    }
-		  });
+		});
 	</script>
 </body>
 </html>

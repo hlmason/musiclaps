@@ -35,9 +35,9 @@
 		<div class="container">
 			<div class="navbar-header"><!-- For Firefox and IE -->
 	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	                    <span class="icon-bar"></span>
-	                    <span class="icon-bar"></span>
-	                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
 	            </button>
 				<a class="navbar-brand" href="<?php echo BASE_URL; ?>">
 					<img src="<?php echo BASE_URL; ?>img/nav-and-footer/musiclaps-logo.png" alt="Musiclaps logo">
