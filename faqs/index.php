@@ -13,6 +13,8 @@
 					
 				<!-- Keep paragraphs to approximately 45-75 characters per line -->
 
+				<h1>Musiclaps FAQs</h1>
+
 				<h4>Q. What is Musiclaps?</h4>
 					<p>
 						A. Musiclaps is a new online collaboration service that allows worldwide communication through music, by performing and recording music using musiclaps Live Player, 

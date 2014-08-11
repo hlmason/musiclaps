@@ -643,10 +643,12 @@ footer {
 	/* ===================================
 	    Privacy, Terms, and FAQs Pages
 	=================================== */
-	#privacy-page h1, #terms-page h1 {
-		@include heading(30px, 0, 0);
-		font-weight: bold;
-		margin-top: 15px;
+	#privacy-page, #terms-page, #faqs-page {
+		h1 {
+			@include heading(30px, 0, 0);
+			font-weight: bold;
+			margin-top: 15px;
+		}
 	}
 
 	#privacy-page h3, #terms-page h3, #faqs-page h4 {
@@ -785,9 +787,11 @@ footer {
 			text-align: right;
 		}
 	}
-	#privacy-page h1 {
-		font-size: 28px;
-		margin-top: 0;
+	#privacy-page, #terms-page, #faqs-page {
+		h1 {
+			font-size: 28px;
+			margin-top: 0;
+		}
 	}
 }
 

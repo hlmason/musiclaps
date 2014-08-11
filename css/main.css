@@ -2533,7 +2533,7 @@ footer {
 /* ===================================
     Privacy, Terms, and FAQs Pages
 =================================== */
-#privacy-page h1, #terms-page h1 {
+#privacy-page h1, #terms-page h1, #faqs-page h1 {
   color: #444444;
   font-size: 30px;
   font-weight: normal;
@@ -2672,7 +2672,7 @@ footer {
     float: right !important;
     text-align: right; }
 
-  #privacy-page h1 {
+  #privacy-page h1, #terms-page h1, #faqs-page h1 {
     font-size: 28px;
     margin-top: 0; } }
 @media only screen and (max-width: 590px) {
