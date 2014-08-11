@@ -39,10 +39,10 @@
 				</div>
 				<div class="row">		
 					<ul>
-						<li><a href="<?php echo BASE_URL; ?>live-player/"><img src="<?php echo BASE_URL; ?>img/landing-pg/play-btn.png" alt="Play button"></a></li>
-						<li><a href="<?php echo BASE_URL; ?>live-player/"><img src="<?php echo BASE_URL; ?>img/landing-pg/pause-btn.png" alt="Pause button"></a></li>
-						<li><a href="<?php echo BASE_URL; ?>live-player/"><img src="<?php echo BASE_URL; ?>img/landing-pg/stop-btn.png" alt="Stop button"></a></li>
-						<li><a href="<?php echo BASE_URL; ?>live-player/"><img src="<?php echo BASE_URL; ?>img/landing-pg/record-btn.png" alt="Record button"></a></li>
+						<li><a href="<?php echo BASE_URL; ?>live-player/"><img src="<?php echo BASE_URL; ?>assets/images/landing-pg/play-btn.png" alt="Play button"></a></li>
+						<li><a href="<?php echo BASE_URL; ?>live-player/"><img src="<?php echo BASE_URL; ?>assets/images/landing-pg/pause-btn.png" alt="Pause button"></a></li>
+						<li><a href="<?php echo BASE_URL; ?>live-player/"><img src="<?php echo BASE_URL; ?>assets/images/landing-pg/stop-btn.png" alt="Stop button"></a></li>
+						<li><a href="<?php echo BASE_URL; ?>live-player/"><img src="<?php echo BASE_URL; ?>assets/images/landing-pg/record-btn.png" alt="Record button"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -51,32 +51,32 @@
 		<div class="container wmuSlider">
 		    <div class="row wmuSliderWrapper">
 		    	<article>
-		            <img src="img/sample-album-covers/electric-ladyland.jpg">
-		            <img src="img/sample-album-covers/in-a-sentimental-mood.jpg">
-		            <img src="img/sample-album-covers/miseducation-of-lauryn-hill.jpg">
-		            <img src="img/sample-album-covers/suburbs.jpg">
-		            <img src="img/sample-album-covers/21.jpg">
+		            <img src="assets/images/sample-album-covers/electric-ladyland.jpg">
+		            <img src="assets/images/sample-album-covers/in-a-sentimental-mood.jpg">
+		            <img src="assets/images/sample-album-covers/miseducation-of-lauryn-hill.jpg">
+		            <img src="assets/images/sample-album-covers/suburbs.jpg">
+		            <img src="assets/images/sample-album-covers/21.jpg">
 		        </article>
 		    	<article>
-		            <img src="img/sample-album-covers/at-folsom-prison.jpg">
-		            <img src="img/sample-album-covers/help.png">
-		            <img src="img/sample-album-covers/fire-of-unknown-origin.jpg">
-		            <img src="img/sample-album-covers/bodyguard.jpg">
-		            <img src="img/sample-album-covers/mandatory-fun.jpg">
+		            <img src="assets/images/sample-album-covers/at-folsom-prison.jpg">
+		            <img src="assets/images/sample-album-covers/help.png">
+		            <img src="assets/images/sample-album-covers/fire-of-unknown-origin.jpg">
+		            <img src="assets/images/sample-album-covers/bodyguard.jpg">
+		            <img src="assets/images/sample-album-covers/mandatory-fun.jpg">
 		        </article>
 		        <article>
-		            <img src="img/sample-album-covers/dark-side-of-the-moon.jpg">
-		            <img src="img/sample-album-covers/dreamboat-annie.jpg">
-		            <img src="img/sample-album-covers/rumours.jpg">
-		            <img src="img/sample-album-covers/damn-the-torpedoes.jpg">
-		            <img src="img/sample-album-covers/nebraska.jpg">
+		            <img src="assets/images/sample-album-covers/dark-side-of-the-moon.jpg">
+		            <img src="assets/images/sample-album-covers/dreamboat-annie.jpg">
+		            <img src="assets/images/sample-album-covers/rumours.jpg">
+		            <img src="assets/images/sample-album-covers/damn-the-torpedoes.jpg">
+		            <img src="assets/images/sample-album-covers/nebraska.jpg">
 		        </article>
 		        <article>
-		        	<img src="img/sample-album-covers/lungs.jpg">
-		            <img src="img/sample-album-covers/colour-the-small-one.jpg">
-		            <img src="img/sample-album-covers/im-over-it.jpg">
-		            <img src="img/sample-album-covers/holy-fire.jpg">
-		            <img src="img/sample-album-covers/mobius-strips.jpg">
+		        	<img src="assets/images/sample-album-covers/lungs.jpg">
+		            <img src="assets/images/sample-album-covers/colour-the-small-one.jpg">
+		            <img src="assets/images/sample-album-covers/im-over-it.jpg">
+		            <img src="assets/images/sample-album-covers/holy-fire.jpg">
+		            <img src="assets/images/sample-album-covers/mobius-strips.jpg">
 		        </article>
 		    </div>
 		</div>
@@ -101,7 +101,7 @@
 						</ul>
 					</div>
 					<div class="col-md-4">
-						<img src="<?php echo BASE_URL; ?>img/landing-pg/collaborate.png" alt="Silhouette of two people with music notes between them">
+						<img src="<?php echo BASE_URL; ?>assets/images/landing-pg/collaborate.png" alt="Silhouette of two people with music notes between them">
 					</div>
 					<div class="col-md-1"></div>
 				</div>
@@ -124,7 +124,7 @@
 						</ul>
 					</div>
 					<div class="col-md-4">
-						<img src="<?php echo BASE_URL; ?>img/landing-pg/backstage.png" alt="Backstage pass">
+						<img src="<?php echo BASE_URL; ?>assets/images/landing-pg/backstage.png" alt="Backstage pass">
 					</div>
 					<div class="col-md-1"></div>
 				</div>
@@ -143,7 +143,7 @@
 						</ul>
 					</div>
 					<div class="col-md-4">
-						<img src="<?php echo BASE_URL; ?>img/landing-pg/music-book.png" alt="Book with music note">
+						<img src="<?php echo BASE_URL; ?>assets/images/landing-pg/music-book.png" alt="Book with music note">
 					</div>
 					<div class="col-md-1"></div>
 				</div>
@@ -165,7 +165,7 @@
 						</ul>
 					</div>
 					<div class="col-md-4">
-						<img src="<?php echo BASE_URL; ?>img/landing-pg/trophy.png" alt="Trophy">
+						<img src="<?php echo BASE_URL; ?>assets/images/landing-pg/trophy.png" alt="Trophy">
 					</div>
 					<div class="col-sm-1"></div>
 				</div>

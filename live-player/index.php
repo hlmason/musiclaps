@@ -71,7 +71,7 @@
 						<li><a>Let It Be</a> (The Beatles)</li>
 						<li><a>Yesterday</a> (The Beatles)</li>
 					</ul>
-					<img class="pull-right" id="rainbow-music-notes" src="<?php echo BASE_URL; ?>img/live-player-pg/rainbow-music-notes.png" alt="Music notes of different colors">
+					<img class="pull-right" id="rainbow-music-notes" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Music notes of different colors">
 				</div>
 			</div>
 		</div>
@@ -99,7 +99,7 @@
 						<h2><span>1. </span>Click the <span class="red">REC</span> button (above).</h2>
 					</div>
 					<div class="col-xs-6 col-sm-5 col-md-4 col-lg-3" id="recording-buttons-img">
-						<img src="<?php echo BASE_URL; ?>img/live-player-pg/recording-buttons.png" alt="Recording buttons">
+						<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/recording-buttons.png" alt="Recording buttons">
 					</div>
 					<div class="col-sm-1 col-md-2 col-lg-3"></div>
 				</div>
@@ -113,14 +113,14 @@
 						<h2><span>2. </span><span class="green">Allow Flash</span>.<br>(so that you can record).</h2>
 					</div>
 					<div class="col-xs-6 col-sm-5 col-md-4 col-lg-3" id="allow-flash-img">
-						<img src="<?php echo BASE_URL; ?>img/live-player-pg/allow-flash.png" alt="Pop-up">
+						<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/allow-flash.png" alt="Pop-up">
 					</div>
 					<div class="col-sm-1 col-md-2 col-lg-3"></div>
 				</div>
 				<div class="row">
 					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-9 col-md-offset-2 col-lg-8 col-lg-offset-3" id="allow-flash-chrome-container">
 						<p>We recommend using <a href="https://www.google.com/intl/en_us/chrome/browser/" target="blank">Google Chrome</a>.&nbsp; In Chrome, you may also need to click "Allow" at the top of the page:</p>
-						<img src="<?php echo BASE_URL; ?>img/live-player-pg/chrome-allow-flash.png" alt="Pop-up in Google Chrome">
+						<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/chrome-allow-flash.png" alt="Pop-up in Google Chrome">
 					</div>
 					<div class="col-sm-1 col-md-2 col-lg-3"></div>
 				</div>
@@ -135,7 +135,7 @@
 						<h2><span>3. </span>Click <span class="red">REC START</span> (above).</h2>
 					</div>
 					<div class="col-xs-6 col-sm-5 col-md-4 col-lg-3" id="recording-area-img">
-						<img src="<?php echo BASE_URL; ?>img/live-player-pg/recording-area.png" alt="Recording area of Live Player">
+						<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/recording-area.png" alt="Recording area of Live Player">
 					</div>
 					<div class="col-sm-1 col-md-2 col-lg-3"></div>
 				</div>
