@@ -4,7 +4,7 @@
 	$pageTitle = 'My Profile';
 	$page = 'Profile';
 	
-	include(ROOT_PATH . 'include/header.php');
+	include(ROOT_PATH . 'include/header-logged-in.php');
 	include(ROOT_PATH . 'include/connection.php');
 	include(ROOT_PATH . 'controllers/profile.php');
 

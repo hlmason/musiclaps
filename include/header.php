@@ -108,7 +108,11 @@
 						</div>
 						<div>
 							<label for="email"><span class="musiclaps-blue">*</span> Email Address</label>
-							<input type="email" id="email" name="email">
+							<input id="email" type="email" name="email">
+						</div>
+						<div>
+							<label for="username"><span class="musiclaps-blue">*</span> Username</label>
+							<input id="username" type="username" name="username">
 						</div>
 						<div>
 							<label for="password"><span class="musiclaps-blue">*</span> Password</label>
@@ -149,10 +153,13 @@
 					include(ROOT_PATH . 'include/social-network-login-modal.php');
 				?>
 
-				<form>
+				<form action="login.php" method="post">
 					<div class="modal-body" id="login-modal-body">
-						<input type="email" id="email" name="email" placeholder="Email Address" label="Email Address">
+						<input id="userid" type="text" name="userid" placeholder="Username">
 						<input id="password" type="text" name="password" placeholder="Password">
+						<div class="error-message">	
+							<?= (! empty($_SESSION['login_error']) ? $_SESSION['login_error'] : '' ) ?>
+						</div>
 					</div>
 					<div class="modal-footer">
 						<a>Forgot Password</a>
