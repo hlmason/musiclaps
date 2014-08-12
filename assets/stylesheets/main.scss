@@ -101,6 +101,17 @@ a:hover {
 	cursor: pointer;
 }
 
+.modal-footer, .navbar-right {
+	input { // Modal buttons and nav "Log out" button
+		@include border-radius(10px);
+		@include modal-submit(5px, 10px, 5px, 10px);
+	}
+}
+
+span.musiclaps-blue {
+	color: $musiclaps-blue;
+}
+
 #facebook-icon, #google-icon {
 	height: 27px;
 	width: 27px;
@@ -141,9 +152,9 @@ nav {
 	.navbar-left li {
 		@include nav-border($musiclaps-blue);
 	}
-	.navbar-right li {
+	.navbar-right#logged-out li {
 		border: $nav-border;
-		&:first-child { // Log in button
+		&:first-child { // "Log in" button
 			background-color: lightgray;
 			border-bottom-left-radius: 10px;
 			border-top-left-radius: 10px;
@@ -154,7 +165,7 @@ nav {
 				color: black !important;
 			}
 		}
-		&:last-child { // Register button
+		&:last-child { // "Register" button
 			background-color: $musiclaps-blue;
 			border-bottom-right-radius: 10px;
 			border-top-right-radius: 10px;
@@ -173,6 +184,15 @@ nav {
 		border-top: none;
 	}
 }
+
+	/* ===================================
+	    Logged in Nav
+	=================================== */
+	#welcome-user {
+		margin-right: 20px;
+		margin-top: 28px;
+	}
+
 
 /* ===================================
     Modal
@@ -259,7 +279,7 @@ nav {
 	}
 	#register-modal-body, #login-modal-body {
 		padding-top: 0;
-		input {
+		input { // Form fields
 			@include border-radius(5px);
 			border: $nav-border;
 			margin-top: 20px;
@@ -273,25 +293,23 @@ nav {
 		label {
 			margin-bottom: 2px;
 			margin-top: 10px;
-			span.musiclaps-blue {
-				color: $musiclaps-blue;
-			}
 		}
-		input {
+		input { // Form fields
 			margin-top: 0;
 		}
 	}
+	#login-modal-body {
+		input:first-child { // Form field
+			margin-top: 15px;
+		}
+	}
 	.modal-footer {
-		a { // Forgot password link
+		a { // "Forgot password" link
 			margin-right: 58px;
 			&:hover, &:focus {
 				color: $musiclaps-dark-gray;
 				cursor: pointer;
 			}
-		}
-		input { // Log in button
-			@include border-radius(10px);
-			@include modal-submit(5px, 10px, 5px, 10px);
 		}
 	}
 	#register-modal-footer, #email-registration-modal-footer {
@@ -582,7 +600,7 @@ h1.landing-page {
 	#submit-container {
 		text-align: center;
 	}
-	input#save {
+	input#save {  // "Save" button
 		@include border-radius(10px);
 		background-color: green;
 		border: none;
@@ -809,11 +827,11 @@ footer {
 }
 
 @media only screen and (max-width: 580px) {
-// Breakpoint of Select a song modal
+// Breakpoint of "Select a song" modal
 	#rainbow-music-notes { display: none; }
 }
 
 @media only screen and (max-width: 417px) {
-// Breakpoint of Select a song heading
+// Breakpoint of "Select a song" heading
 	h3.select-song-heading { font-size: 15px; }
 }

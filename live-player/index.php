@@ -7,7 +7,7 @@
 	include(ROOT_PATH . 'include/header.php');
 ?>
 
-	<!-- Welcome modal -->
+	<!-- "Welcome to Soundcheck" modal -->
 	<div class="modal fade" id="wantDemo" tabindex="-1" role="dialog" aria-labelledby="wantDemoLabel" aria-hidden="true">
 		<div class="modal-dialog modal-sm">
 			<div class="modal-content">
@@ -49,7 +49,7 @@
 	</div>
 	<!-- End of video modal -->
 
-	<!-- Select a song modal -->
+	<!-- "Select a Song" modal -->
 	<div class="modal fade" id="selectSong" tabindex="-1" role="dialog" aria-labelledby="selectSongLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">

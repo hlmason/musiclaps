@@ -2069,6 +2069,18 @@ a:hover, a:focus {
 a:hover {
   cursor: pointer; }
 
+.modal-footer input, .navbar-right input {
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #e7e7e7;
+  border: 1px solid #cecece;
+  padding: 5px 10px 5px 10px; }
+  .modal-footer input:hover, .modal-footer input:focus, .navbar-right input:hover, .navbar-right input:focus {
+    background-color: #d9d9d9; }
+
+span.musiclaps-blue {
+  color: #38aaff; }
+
 #facebook-icon, #google-icon {
   height: 27px;
   width: 27px; }
@@ -2103,28 +2115,35 @@ nav .navbar-left li {
   border-left: 1px solid #38aaff; }
   nav .navbar-left li:first-child {
     border-left: none; }
-nav .navbar-right li {
+nav .navbar-right#logged-out li {
   border: 1px solid #cecece; }
-  nav .navbar-right li:first-child {
+  nav .navbar-right#logged-out li:first-child {
     background-color: lightgray;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px; }
-    nav .navbar-right li:first-child:hover {
+    nav .navbar-right#logged-out li:first-child:hover {
       background-color: #d9d9d9; }
-    nav .navbar-right li:first-child a:hover {
+    nav .navbar-right#logged-out li:first-child a:hover {
       color: black !important; }
-  nav .navbar-right li:last-child {
+  nav .navbar-right#logged-out li:last-child {
     background-color: #38aaff;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px; }
-    nav .navbar-right li:last-child:hover {
+    nav .navbar-right#logged-out li:last-child:hover {
       background-color: #45B7FF; }
-    nav .navbar-right li:last-child a {
+    nav .navbar-right#logged-out li:last-child a {
       color: white !important; }
 nav .navbar-toggle {
   margin-top: 23px; }
 nav .navbar-collapse {
   border-top: none; }
+
+/* ===================================
+    Logged in Nav
+=================================== */
+#welcome-user {
+  margin-right: 20px;
+  margin-top: 28px; }
 
 /* ===================================
     Modal
@@ -2203,23 +2222,15 @@ nav .navbar-collapse {
   .modal-content #register-modal-body label {
     margin-bottom: 2px;
     margin-top: 10px; }
-    .modal-content #register-modal-body label span.musiclaps-blue {
-      color: #38aaff; }
   .modal-content #register-modal-body input {
     margin-top: 0; }
+  .modal-content #login-modal-body input:first-child {
+    margin-top: 15px; }
   .modal-content .modal-footer a {
     margin-right: 58px; }
     .modal-content .modal-footer a:hover, .modal-content .modal-footer a:focus {
       color: #444444;
       cursor: pointer; }
-  .modal-content .modal-footer input {
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    background-color: #e7e7e7;
-    border: 1px solid #cecece;
-    padding: 5px 10px 5px 10px; }
-    .modal-content .modal-footer input:hover, .modal-content .modal-footer input:focus {
-      background-color: #d9d9d9; }
   .modal-content #register-modal-footer, .modal-content #email-registration-modal-footer {
     border-top: none; }
 

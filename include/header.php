@@ -49,7 +49,7 @@
 					<li><a class="<?php if ($page == "People") { echo "active"; } ?>" href="#">People</a></li>
 					<li><a class="<?php if ($page == "Our Story") { echo "active"; } ?>" href="https://www.musiclaps.com/play?about=us">Our Story</a></li>
 				</ul>
-				<ul class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav navbar-right" id="logged-out">
 					<li><a id="loginJS">Log in</a></li>
 					<li><a id="registerJS">Register</a></li>
 				</ul>
