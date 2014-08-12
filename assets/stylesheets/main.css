@@ -2552,6 +2552,13 @@ footer {
   word-spacing: 1px; }
 
 /* ===================================
+    Profile Page
+=================================== */
+.error-message {
+  color: red;
+  text-align: center; }
+
+/* ===================================
     Media Queries
 =================================== */
 @media only screen and (max-width: 1474px) {

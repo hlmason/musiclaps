@@ -3,7 +3,7 @@
 	try {
 		$results = $db->query('SELECT firstname, picture, gender, city, state, country, talent FROM user');
 	} catch (Exception $e) {
-		echo 'Data could not be retrieved.';
+		echo '<h1 class="error-message">Data could not be retrieved.</h1>';
 	}
 
 	// echo '<pre>';
