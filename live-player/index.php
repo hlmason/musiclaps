@@ -148,8 +148,6 @@
 
 		</section>
 
-	</div>
-
 	<?php
 		include(ROOT_PATH . 'include/footer.php');
 	?>

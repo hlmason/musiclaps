@@ -7,9 +7,8 @@
 ?>
 
 	<div id="wrapper">
-		
-			<div class="container" id="faqs-page">
-				<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+		<div class="container" id="faqs-page">
+			<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
 					
 				<!-- Keep paragraphs to approximately 45-75 characters per line -->
 
@@ -256,7 +255,6 @@
 
 			</div>
 		</div>
-	</div>
 
 	<?php
 		include(ROOT_PATH . 'include/footer.php');

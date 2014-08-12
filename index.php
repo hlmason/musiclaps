@@ -172,6 +172,6 @@
 			</div>
 		</section>
 
-		<?php
-			include(ROOT_PATH . 'include/footer.php');
-		?>
+	<?php
+		include(ROOT_PATH . 'include/footer.php');
+	?>
