@@ -3,6 +3,7 @@
 
 	$pageTitle = 'Terms of Use';
 	$page = 'Terms';
+	
 	include(ROOT_PATH . 'include/header.php');
 ?>
 

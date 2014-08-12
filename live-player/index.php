@@ -3,6 +3,7 @@
 
 	$pageTitle = 'Live Player';
 	$page = 'Live Player';
+	
 	include(ROOT_PATH . 'include/header.php');
 ?>
 

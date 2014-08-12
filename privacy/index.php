@@ -3,6 +3,7 @@
 
 	$pageTitle = 'Privacy Policy';
 	$page = 'Privacy';
+	
 	include(ROOT_PATH . 'include/header.php');
 ?>
 
