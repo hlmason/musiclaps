@@ -622,11 +622,11 @@ h1.landing-page {
 	max-width: 100px;
 }
 
-h2.profile-page {
+h2.profile-page { // Userid
 	margin-top: 0;
 }
 
-h4.profile-page {
+h4.profile-page { // "Edit Profile"
 	margin-top: 7px;
 }
 
@@ -640,6 +640,7 @@ h4.profile-page {
 
 li.profile-page {
 	display: inline-block;
+	font-size: 12px;
 }
 
 #profile-right {
@@ -860,6 +861,16 @@ footer {
 			font-size: 28px;
 			margin-top: 0;
 		}
+	}
+	h2.profile-page, h4.profile-page {
+		margin-left: 10px;
+	}
+	h4.profile-page {
+		text-align: left;
+	}
+	#about-me {
+		border-top: none;
+		margin-top: 20px;
 	}
 }
 
