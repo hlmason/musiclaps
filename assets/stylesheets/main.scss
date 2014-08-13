@@ -193,7 +193,6 @@ nav {
 		margin-top: 28px;
 	}
 
-
 /* ===================================
     Modal
 =================================== */
@@ -751,16 +750,26 @@ footer {
 			margin-top: 0;
 			li { border: none; /* Removes border to the left of links */ } 
 		}
-		.navbar-right {
-			margin-top: 0;
-			li {
-				&:first-child, &:last-child { 
-					background-color: $musiclaps-light-gray !important; // Changes "Log in" and "Register" button color to match the rest of the links in the collapsed menu
-					border: none; // Removes "Log in" and "Register" border color to match the rest of the links in the collapsed menu
-					a:hover, a:focus { color: $musiclaps-blue !important; } // Changes "Log in" and "Register" link color to match the rest of the links in the collapsed menu
+		.navbar-right#logged-out, .navbar-right#logged-in { margin-top: 0; }
+		.navbar-right#logged-out li {
+			&:first-child, &:last-child { 
+				background-color: $musiclaps-light-gray !important; // Changes "Log in" and "Register" button color to match the rest of the links in the collapsed menu
+				border: none; // Removes "Log in" and "Register" border color to match the rest of the links in the collapsed menu
+				a:hover, a:focus { color: $musiclaps-blue !important; } // Changes "Log in" and "Register" link color to match the rest of the links in the collapsed menu
+			}
+			&:last-child { padding-bottom: 10px; }
+			&:last-child a { color: $musiclaps-dark-gray !important; } // Changes "Register" link color so that it's visible and matches the rest of the links in the collapsed menu
+		}
+		.navbar-right#logged-in {
+			#welcome-user { display: none; }
+			input { // "Log out" button
+				border: none;
+				margin-left: 15px;
+				text-transform: uppercase;
+				&:hover, &:focus {
+					background-color: $musiclaps-light-gray;
+					color: $musiclaps-blue;
 				}
-				&:last-child { padding-bottom: 10px; }
-				&:last-child a { color: $musiclaps-dark-gray !important; } // Changes "Register" link color so that it's visible and matches the rest of the links in the collapsed menu
 			}
 		}
 	}

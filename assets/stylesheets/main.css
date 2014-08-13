@@ -2615,17 +2615,26 @@ footer {
     nav .navbar-left li {
       border: none;
       /* Removes border to the left of links */ }
-  nav .navbar-right {
+  nav .navbar-right#logged-out, nav .navbar-right#logged-in {
     margin-top: 0; }
-    nav .navbar-right li:first-child, nav .navbar-right li:last-child {
-      background-color: #e7e7e7 !important;
-      border: none; }
-      nav .navbar-right li:first-child a:hover, nav .navbar-right li:first-child a:focus, nav .navbar-right li:last-child a:hover, nav .navbar-right li:last-child a:focus {
-        color: #38aaff !important; }
-    nav .navbar-right li:last-child {
-      padding-bottom: 10px; }
-    nav .navbar-right li:last-child a {
-      color: #444444 !important; }
+  nav .navbar-right#logged-out li:first-child, nav .navbar-right#logged-out li:last-child {
+    background-color: #e7e7e7 !important;
+    border: none; }
+    nav .navbar-right#logged-out li:first-child a:hover, nav .navbar-right#logged-out li:first-child a:focus, nav .navbar-right#logged-out li:last-child a:hover, nav .navbar-right#logged-out li:last-child a:focus {
+      color: #38aaff !important; }
+  nav .navbar-right#logged-out li:last-child {
+    padding-bottom: 10px; }
+  nav .navbar-right#logged-out li:last-child a {
+    color: #444444 !important; }
+  nav .navbar-right#logged-in #welcome-user {
+    display: none; }
+  nav .navbar-right#logged-in input {
+    border: none;
+    margin-left: 15px;
+    text-transform: uppercase; }
+    nav .navbar-right#logged-in input:hover, nav .navbar-right#logged-in input:focus {
+      background-color: #e7e7e7;
+      color: #38aaff; }
 
   #sn-login-modal-body {
     display: none; }
