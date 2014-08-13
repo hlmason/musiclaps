@@ -2060,8 +2060,10 @@ img {
   max-width: 100%;
   height: auto; }
 
-li {
-  list-style-type: none; }
+ul {
+  padding-left: 0; }
+  ul li {
+    list-style-type: none; }
 
 a:hover, a:focus {
   text-decoration: none; }
@@ -2184,7 +2186,6 @@ nav .navbar-collapse {
     .modal-content .modal-body span.bold {
       font-weight: bold; }
     .modal-content .modal-body ul {
-      padding-left: 0;
       display: inline-block; }
       .modal-content .modal-body ul a:hover {
         color: #444444; }
@@ -2342,8 +2343,7 @@ h1.landing-page {
         #stage #stage-inner p sup:nth-child(2), #stage #stage-inner p sup:last-child {
           display: none; }
     #stage #stage-inner ul {
-      margin-top: -37px;
-      padding-left: 0; }
+      margin-top: -37px; }
       #stage #stage-inner ul li {
         display: inline-block; }
         #stage #stage-inner ul li img {
@@ -2419,8 +2419,7 @@ h1.landing-page {
     #who-we-are a:hover, #who-we-are a:focus, #backstage a:hover, #backstage a:focus, #music-ed a:hover, #music-ed a:focus, #contests-and-auditions a:hover, #contests-and-auditions a:focus {
       color: #444444 !important; }
   #who-we-are ul, #backstage ul, #music-ed ul, #contests-and-auditions ul {
-    margin-top: 0;
-    padding-left: 0; }
+    margin-top: 0; }
     #who-we-are ul li:first-child, #backstage ul li:first-child, #music-ed ul li:first-child, #contests-and-auditions ul li:first-child {
       padding-top: 20px; }
     #who-we-are ul li:not(.first-list-item), #backstage ul li:not(.first-list-item), #music-ed ul li:not(.first-list-item), #contests-and-auditions ul li:not(.first-list-item) {
@@ -2503,6 +2502,39 @@ h1.landing-page {
     background-color: #1A9A1A; }
 
 /* ===================================
+    Profile Page
+=================================== */
+#avatar {
+  box-shadow: 10px 10px 5px #444444;
+  height: 100px;
+  max-width: 100px; }
+
+h2.profile-page {
+  margin-top: 0; }
+
+h4.profile-page {
+  margin-top: 7px; }
+
+#about-me {
+  border-top: 1px solid #cecece;
+  margin-top: -65px; }
+  #about-me h4 {
+    margin-top: 10px; }
+
+li.profile-page {
+  display: inline-block; }
+
+#profile-right {
+  background-color: #e7e7e7;
+  height: 700px;
+  width: 100%; }
+
+.db-error-message {
+  color: #38aaff;
+  font-weight: normal;
+  text-align: center; }
+
+/* ===================================
     Footer
 =================================== */
 #wrapper {
@@ -2561,23 +2593,6 @@ footer {
 #privacy-page p:not(#first-paragraph), #terms-page p, #faqs-page p {
   margin-top: 0;
   word-spacing: 1px; }
-
-/* ===================================
-    Profile Page
-=================================== */
-#avatar {
-  box-shadow: 10px 10px 5px #444444;
-  height: 100px;
-  max-width: 100px; }
-
-#profile-right {
-  background-color: #e7e7e7;
-  height: 700px;
-  width: 100; }
-
-.error-message {
-  color: red;
-  text-align: center; }
 
 /* ===================================
     Media Queries

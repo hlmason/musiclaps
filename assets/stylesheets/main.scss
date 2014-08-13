@@ -89,8 +89,11 @@ img {
 	height: auto;
 }
 
-li { 
-	list-style-type: none;
+ul {
+	padding-left: 0;
+	li { 
+		list-style-type: none;
+	}
 }
 
 a:hover, a:focus {
@@ -240,7 +243,6 @@ nav {
 			font-weight: bold;
 		}
 		ul {
-			padding-left: 0;
 			display: inline-block;
 			a:hover {
 				color: $musiclaps-dark-gray;
@@ -419,7 +421,6 @@ h1.landing-page {
 			}
 			ul {
 				margin-top: -37px;
-				padding-left: 0;
 				li {
 					display: inline-block;
 					img { // Play, pause, stop, and record buttons
@@ -500,7 +501,6 @@ h1.landing-page {
 		@include section-paragraph-and-links;
 		ul {
 			margin-top: 0;
-			padding-left: 0;
 			li:first-child {
 				padding-top: 20px;
 			}
@@ -614,6 +614,47 @@ h1.landing-page {
 }
 
 /* ===================================
+    Profile Page
+=================================== */
+#avatar {
+	box-shadow: 10px 10px 5px $musiclaps-dark-gray;
+	height: 100px;
+	max-width: 100px;
+}
+
+h2.profile-page {
+	margin-top: 0;
+}
+
+h4.profile-page {
+	margin-top: 7px;
+}
+
+#about-me {
+	border-top: $nav-border;
+	margin-top: -65px;
+	h4 {
+		margin-top: 10px;
+	}
+}
+
+li.profile-page {
+	display: inline-block;
+}
+
+#profile-right {
+	background-color: $musiclaps-light-gray;
+	height: 700px;
+	width: 100%;
+}
+
+.db-error-message {
+	color: $musiclaps-blue;
+	font-weight: normal;
+	text-align: center;
+}
+
+/* ===================================
     Footer
 =================================== */
 #wrapper {
@@ -676,26 +717,6 @@ footer {
 		margin-top: 0;
 		word-spacing: 1px;
 	}
-
-/* ===================================
-    Profile Page
-=================================== */
-#avatar {
-	box-shadow: 10px 10px 5px $musiclaps-dark-gray;
-	height: 100px;
-	max-width: 100px;
-}
-
-#profile-right {
-	background-color: $musiclaps-light-gray;
-	height: 700px;
-	width: 100;
-}
-
-.error-message {
-	color: red;
-	text-align: center;
-}
 
 /* ===================================
     Media Queries

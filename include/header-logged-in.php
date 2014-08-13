@@ -50,7 +50,7 @@
 					<li><a class="<?php if ($page == "Our Story") { echo "active"; } ?>" href="https://www.musiclaps.com/play?about=us">Our Story</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right" id="logged-in">
-					<li id="welcome-user">Welcome &nbsp;<span class="musiclaps-blue">$firstname</span></li>
+					<li id="welcome-user">Welcome &nbsp;<span class="musiclaps-blue">$firstname</span></li><!-- Hard-coded placeholder -->
 					<li>
 						<form action="<?php echo BASE_URL; ?>/logout.php" method="post">
 							<input type="submit" value="Log out">
