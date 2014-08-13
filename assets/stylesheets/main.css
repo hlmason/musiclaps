@@ -2565,6 +2565,16 @@ footer {
 /* ===================================
     Profile Page
 =================================== */
+#avatar {
+  box-shadow: 10px 10px 5px #444444;
+  height: 100px;
+  max-width: 100px; }
+
+#profile-right {
+  background-color: #e7e7e7;
+  height: 700px;
+  width: 100; }
+
 .error-message {
   color: red;
   text-align: center; }
