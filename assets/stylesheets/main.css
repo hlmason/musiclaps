@@ -2686,13 +2686,13 @@ a:hover, a:focus {
 a:hover {
   cursor: pointer; }
 
-.modal-footer input, .navbar-right input {
+#register-or-login-modal-body input, .modal-footer input, .navbar-right input {
   -moz-border-radius: 10px;
   border-radius: 10px;
   background-color: #e7e7e7;
   border: 1px solid #cecece;
   padding: 5px 10px 5px 10px; }
-  .modal-footer input:hover, .modal-footer input:focus, .navbar-right input:hover, .navbar-right input:focus {
+  #register-or-login-modal-body input:hover, #register-or-login-modal-body input:focus, .modal-footer input:hover, .modal-footer input:focus, .navbar-right input:hover, .navbar-right input:focus {
     background-color: #d9d9d9; }
 
 span.musiclaps-blue {
@@ -2845,6 +2845,14 @@ nav .navbar-collapse {
     margin-top: 0; }
   .modal-content #login-modal-body input:first-child {
     margin-top: 15px; }
+  .modal-content #register-or-login-modal-body input {
+    display: block;
+    font-weight: bold;
+    width: 100%; }
+  .modal-content #register-or-login-modal-body input:first-child {
+    margin-top: 5px; }
+  .modal-content #register-or-login-modal-body input:last-child {
+    margin-top: 20px; }
   .modal-content .modal-footer a {
     margin-right: 58px; }
     .modal-content .modal-footer a:hover, .modal-content .modal-footer a:focus {
@@ -3106,17 +3114,17 @@ h1.landing-page {
 #recording-instructions #recording-area-img {
   margin-top: 22px; }
 #recording-instructions #submit-container {
+  margin-top: 50px;
   text-align: center; }
-#recording-instructions input#save {
+#recording-instructions a.save {
   -moz-border-radius: 10px;
   border-radius: 10px;
   background-color: green;
   border: none;
   color: white;
   letter-spacing: 0.5px;
-  margin-top: 50px;
   padding: 10px 20px; }
-  #recording-instructions input#save:hover, #recording-instructions input#save:focus {
+  #recording-instructions a.save:hover, #recording-instructions a.save:focus {
     background-color: #1A9A1A; }
 
 /* ===================================

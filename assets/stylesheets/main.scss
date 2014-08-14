@@ -104,7 +104,7 @@ a:hover {
 	cursor: pointer;
 }
 
-.modal-footer, .navbar-right {
+#register-or-login-modal-body, .modal-footer, .navbar-right {
 	input { // Modal buttons and nav "Log out" button
 		@include border-radius(10px);
 		@include modal-submit(5px, 10px, 5px, 10px);
@@ -306,6 +306,19 @@ nav {
 	#login-modal-body {
 		input:first-child { // Form field
 			margin-top: 15px;
+		}
+	}
+	#register-or-login-modal-body {
+		input {
+			display: block;
+			font-weight: bold;
+			width: 100%;
+		}
+		input:first-child {
+			margin-top: 5px;
+		}
+		input:last-child {
+			margin-top: 20px;
 		}
 	}
 	.modal-footer {
@@ -601,15 +614,15 @@ h1.landing-page {
 		margin-top: 22px;
 	}
 	#submit-container {
+		margin-top: 50px;
 		text-align: center;
 	}
-	input#save {  // "Save" button
+	a.save {  // "Save" button
 		@include border-radius(10px);
 		background-color: green;
 		border: none;
 		color: white;
 		letter-spacing: 0.5px;
-		margin-top: 50px;
 		padding: 10px 20px;
 		&:hover, &:focus {
 			background-color: #1A9A1A;

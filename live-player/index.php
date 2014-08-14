@@ -144,8 +144,14 @@
 			<!-- End of Step 3 -->
 
 			<div class="container" id="submit-container">
-				<input id="save" type="submit" value="Save Recording">
+				<a class="save" id="registerOrLoginJS">Save</a>
 			</div>
+
+			<!-- Register or login modal -->
+			<?php
+				include(ROOT_PATH . 'include/register-or-login-modal.php');
+			?>
+			<!-- End of register or login modal -->
 
 		</section>
 

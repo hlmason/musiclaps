@@ -9,7 +9,16 @@ $(document).ready(function() {
 		});
 
 	$('#loginJS').on('click', function() {
-		$('#login').modal('show');
+		// if ( $('#registerOrLogin').is(':visible') ) {
+		// 	$('#registerOrLogin').modal('hide');
+		// 	$('#login').modal('show');
+		// } else {
+			$('#login').modal('show');
+		// }
+	});
+
+	$('#registerOrLoginJS').on('click', function() {
+		$('#registerOrLogin').modal('show');
 	});
 
 });
