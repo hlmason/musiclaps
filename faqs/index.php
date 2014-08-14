@@ -142,9 +142,9 @@
        					If you want to change the sound image of the song, click on the existing image or the default musiclaps image.
 				        The Change Sound Image bar will display below, and you can change the image to one of your liking.
 				        We recommend using an image size of 120x70px.
+				        <br><br>
 
-				       <span class="bold">Notes:</span>
-
+				       <span class="bold">Note</span>:
 				       <li>The Collaboration Selection is “No Collab” by default.
 				          You can change the status from No Collab to a collaboration, but once you change to Open Collab or Requesting Collab and save,
 				          you will not be able to change the status back.</li>
