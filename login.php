@@ -27,6 +27,6 @@
 		$_SESSION['login_error'] = "<p>Username and Password do not match!</p>"; 
 		
 		//redirects to the sign in page and returns error
-		header( 'Location: index.php' ) ;
+		header( 'Location: profile/index.php' ) ; // TODO: fix these validations
 	}
 ?>
