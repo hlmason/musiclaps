@@ -144,7 +144,7 @@
 			<!-- End of Step 3 -->
 
 			<div class="container" id="submit-container">
-				<a class="save" id="registerOrLoginJS">Save</a>
+				<a class="save" id="registerOrLoginJS">Save Recording</a>
 			</div>
 
 			<!-- Register or login modal -->
