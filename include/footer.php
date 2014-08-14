@@ -29,7 +29,7 @@
 	<script>
 		WebFont.load({
 		    google: {
-		      families: ['Roboto Condensed', 'Roboto:400,700', 'Allerta Stencil' ]
+		      families: ['Roboto Condensed', 'Roboto:300,400,700', 'Allerta Stencil' ]
 		    }
 		});
 	</script>

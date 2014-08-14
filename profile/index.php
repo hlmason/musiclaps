@@ -17,28 +17,28 @@
 				<div class="row col-xs-12 col-sm-8">
 
 					<div class="row">	
-						<div class="col-xs-4 col-sm-4">
+						<div class="col-xs-4 col-sm-3">
 							<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pg/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 						</div>
 						<div class="col-xs-8 col-sm-5">
-							<h2 class="profile-page">$userid</h2>
+							<h2 id="user-id">$userid</h2>
 						</div>
-						<div class="col-xs-8 col-sm-3">
-							<a><h4 class="profile-page">Edit Profile</h4></a>
+						<div class="col-xs-8 col-sm-4">
+							<a><h4 id="edit-profile"><span class="glyphicon glyphicon-pencil"></span> Edit Profile</h4></a>
 						</div>
 					</div>
 						
 					<div class="row">
-						<div class="col-sm-4"></div>
-						<div class="col-xs-12 col-sm-7" id="about-me">
+						<div class="col-sm-3"></div>
+						<div class="col-xs-12 col-sm-8" id="about-me">
 							<h4>About me:</h4>
-							<ul>
-								<li class="profile-page">Gender: $gender</li><!-- Hard-coded placeholder -->
-								<li class="profile-page pull-right">Genre: $genre</li><!-- Hard-coded placeholder -->
+							<ul class="first-ul-profile-page">
+								<li class="profile-page"><span class="glyphicon glyphicon-user"></span> &nbsp;$gender</li><!-- Hard-coded placeholder -->
+								<li class="profile-page pull-right"><span class="glyphicon glyphicon-music"></span> &nbsp;$genre</li><!-- Hard-coded placeholder -->
 							</ul>
-							<ul>
-								<li class="profile-page">Location: $city, $state, $country</li><!-- Hard-coded placeholder -->
-								<li class="profile-page pull-right">Talent: $talent</li><!-- Hard-coded placeholder -->
+							<ul class="second-ul-profile-page">
+								<li class="profile-page"><span class="glyphicon glyphicon-globe"></span> &nbsp;$city, $state, $country</li><!-- Hard-coded placeholder -->
+								<li class="profile-page pull-right"><span class="glyphicon glyphicon-star"></span> &nbsp;$talent</li><!-- Hard-coded placeholder -->
 							</ul>
 						</div>
 						<div class="col-sm-1"></div>

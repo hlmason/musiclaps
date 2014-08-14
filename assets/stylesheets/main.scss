@@ -130,6 +130,9 @@ span.musiclaps-blue {
     Nav
 =================================== */
 nav {
+	&.navbar {
+		border-radius: 0;
+	}
 	&.navbar-default {
 		background-color: $musiclaps-light-gray;
 		border-bottom: $nav-border;
@@ -238,9 +241,6 @@ nav {
 		h4 {
 			margin-bottom: 0;
 			margin-top: 12px;
-		}
-		span.bold {
-			font-weight: bold;
 		}
 		ul {
 			display: inline-block;
@@ -622,25 +622,39 @@ h1.landing-page {
 	max-width: 100px;
 }
 
-h2.profile-page { // Userid
+h2#user-id {
+	font-weight: normal;
 	margin-top: 0;
 }
 
-h4.profile-page { // "Edit Profile"
-	margin-top: 7px;
+h4#edit-profile {
+	margin-top: 8px;
+	text-align: center;
+	.glyphicon {
+		color: $musiclaps-dark-gray;
+	}
 }
 
 #about-me {
 	border-top: $nav-border;
 	margin-top: -65px;
 	h4 {
-		margin-top: 10px;
+		margin-bottom: 7px;
+		margin-top: 2px;
 	}
-}
-
-li.profile-page {
-	display: inline-block;
-	font-size: 12px;
+	ul.first-ul-profile-page {
+		margin-bottom: 2px;
+		margin-top: 4px;
+	}
+	ul.second-ul-profile-page {
+		margin-bottom: 0;
+		margin-top: 3px;
+	}
+	li.profile-page {
+		display: inline-block;
+		font-size: 14px;
+		font-weight: 300;
+	}
 }
 
 #profile-right {
@@ -723,18 +737,18 @@ footer {
     Media Queries
 =================================== */
 @media only screen and (max-width: 1474px) {
-// Breakpoint of "Click on any button to start"
+// Breakpoint of "Click on any button to start" (landing page)
 	#stage-inner { width: 80% !important; }
 }
 
 @media only screen and (max-width: 1199px) {
-// Breakpoint of slider buttons
+// Breakpoint of slider buttons (landing page)
 	.wmuSliderPrev { left: 0; }
 	.wmuSliderNext { right: 0; }
 }
 
 @media only screen and (max-width: 1117px) {
-// Breakpoint of "Click on any button to start"
+// Breakpoint of "Click on any button to start" (landing page)
 	#stage-inner {
 		sup {
 			&:first-child, &:nth-child(3) { display: none; }
@@ -743,13 +757,18 @@ footer {
 	}
 }
 
+@media only screen and (max-width: 1090px) {
+// Breakpoint of "About me" border (profile page)
+	#about-me { border: none; }
+}
+
 @media only screen and (max-width: 1016px) {
-// Breakpoint of Sound Check" and "Record a Demo"
+// Breakpoint of Sound Check" and "Record a Demo" (landing page)
 	#stage-inner { width: 100% !important; }
 }
 
 @media only screen and (max-width: 818px) {
-// Breakpoint of "Record a Demo"
+// Breakpoint of "Record a Demo" (landing page)
 	#stage-inner {
 		#soundcheck, #record-demo {
 			a { font-size: 20px !important; }
@@ -862,29 +881,31 @@ footer {
 			margin-top: 0;
 		}
 	}
-	h2.profile-page, h4.profile-page {
-		margin-left: 10px;
-	}
-	h4.profile-page {
-		text-align: left;
-	}
+	h2#user-id, h4#edit-profile { text-align: left; }
 	#about-me {
-		border-top: none;
-		margin-top: 20px;
+		margin-left: 5px;
+		margin-top: 15px;
+		li.profile-page {
+			display: block;
+			float: none !important;
+			margin-top: 8px;
+		}
 	}
 }
 
 @media only screen and (max-width: 590px) {
-// Breakpoint of "Online Music Collaboration Made Simple...Just Log in and Start Recording" 
+// Breakpoint of "Online Music Collaboration Made Simple...Just Log in and Start Recording" (landing page) 
 	h1.landing-page { font-size: 20px; }
 }
 
 @media only screen and (max-width: 580px) {
-// Breakpoint of "Select a song" modal
+// Breakpoint of "Select a song" modal (live player page)
 	#rainbow-music-notes { display: none; }
 }
 
 @media only screen and (max-width: 417px) {
-// Breakpoint of "Select a song" heading
+// Breakpoint of "Select a song" heading (live player page)
 	h3.select-song-heading { font-size: 15px; }
+	h2#user-id, h4#edit-profile { margin-left: 10px; }
+	#about-me { border-top: none; }
 }
