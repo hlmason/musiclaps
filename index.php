@@ -89,7 +89,7 @@
 		<section id="technology">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 col-md-offset-1">
+					<div class="col-md-7 col-md-offset-1">
 						<h2>Technology</h2>
 						<p><!-- Keep to approximately 45-75 characters per line -->
 							Musiclaps makes musical collaboration easy by allowing you to record or upload tracks through your PC into a web platform.  Then you can protect and share it so others can listen and collaborate by recording their tracks on top of yours.<br><br>  
@@ -106,7 +106,6 @@
 					<div class="col-md-4">
 						<img src="<?php echo BASE_URL; ?>assets/images/landing-pg/collaborate.png" alt="Silhouette of two people with music notes between them">
 					</div>
-					<div class="col-md-1"></div>
 				</div>
 			</div>
 		</section>
@@ -114,7 +113,7 @@
 		<section id="backstage">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 col-md-offset-1">					
+					<div class="col-md-7 col-md-offset-1">					
 						<h2>Backstage</h2>
 						<p><!-- Keep to approximately 45-75 characters per line -->
 							Music collaboration would not exist without people.  You will find these individuals here in our backstage section.
@@ -129,7 +128,6 @@
 					<div class="col-md-4">
 						<img src="<?php echo BASE_URL; ?>assets/images/landing-pg/backstage.png" alt="Backstage pass">
 					</div>
-					<div class="col-md-1"></div>
 				</div>
 			</div>
 		</section>
@@ -137,7 +135,7 @@
 		<section id="music-ed">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 col-md-offset-1">					
+					<div class="col-md-7 col-md-offset-1">					
 						<h2>Music Education</h2>
 						<ul>
 							<li class="first-list-item"><a>Little Kids rock song of the week!</a></li>
@@ -148,7 +146,6 @@
 					<div class="col-md-4">
 						<img src="<?php echo BASE_URL; ?>assets/images/landing-pg/music-book.png" alt="Book with music note">
 					</div>
-					<div class="col-md-1"></div>
 				</div>
 			</div>
 		</section>
@@ -156,7 +153,7 @@
 		<section id="contests-and-auditions">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 col-md-offset-1">					
+					<div class="col-md-7 col-md-offset-1">					
 						<h2>Contests and Auditions</h2>
 						<ul>
 							<li class="first-list-item"><a href="contests/musiclaps-contest.pdf" target="blank">In-House Contest</a></li>
@@ -170,7 +167,6 @@
 					<div class="col-md-4">
 						<img src="<?php echo BASE_URL; ?>assets/images/landing-pg/trophy.png" alt="Trophy">
 					</div>
-					<div class="col-sm-1"></div>
 				</div>
 			</div>
 		</section>
