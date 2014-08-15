@@ -685,15 +685,24 @@ h4#edit-profile {
 }
 
 form.profile-page {
-	input {
-		@include form-fields-input(100%);
-		margin-top: 0;
-	}
 	label:first-child {
 		margin-top: 25px;
 	}
 	label {
 		@include form-fields-label(15px);
+	}
+	#birthdate, #website_url, #website_title, #message {
+		@include form-fields-input(100%);
+		margin-top: 0;
+	}
+	textarea {
+		max-width: 100%; // Prevents user from expanding textarea horizontally
+	}
+	#genre, #skills {
+		@include form-fields-input(12px);
+		width: 300px;
+		height: 100px;
+		overflow-y: scroll;
 	}
 }
 

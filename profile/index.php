@@ -48,7 +48,7 @@
 						<form class="profile-page">
 							<div>
 								<label for="birthdate">Birth Date</label>
-								<input class="profile-page" id="birthdate" type="date" name="birthdate">
+								<input id="birthdate" type="date" name="birthdate">
 							</div>
 						</form>
 					</div>
@@ -57,7 +57,44 @@
 						<form class="profile-page">
 							<div>
 								<label for="website_url">Website URL</label>
-								<input class="profile-page" id="website_url" type="text" name="website_url">
+								<input id="website_url" type="text" name="website_url">
+							</div>
+						</form>
+					</div>
+
+					<div class="row col-xs-12">
+						<form class="profile-page">
+							<div>
+								<label for="website_title">Website Title</label>
+								<input id="website_title" type="text" name="website_title">
+							</div>
+						</form>
+					</div>
+
+					<div class="row col-xs-12">
+						<form class="profile-page">
+							<label for="genre">Genre (select one or more)</label>
+							<div id="genre">
+								<input type="checkbox" name="genre"> &nbsp;Alternative<br>
+								<input type="checkbox" name="genre"> &nbsp;Anime<br>
+							</div>
+						</form>
+					</div>
+
+					<div class="row col-xs-12">
+						<form class="profile-page">
+							<label for="skills">Skills</label>
+							<div id="skills">
+								<input id="skills" type="checkbox" name="skills">
+							</div>
+						</form>
+					</div>
+
+					<div class="row col-xs-12">
+						<form class="profile-page">
+							<div>
+								<label for="message">Message</label>
+								<textarea id="message" name="message" placeholder="Your message to other musicians"></textarea>
 							</div>
 						</form>
 					</div>
