@@ -30,6 +30,20 @@ $modal-border: 5px solid $musiclaps-light-gray;
 	line-height: 0;
 }
 
+@mixin form-fields-input($width) {
+	@include border-radius(5px);
+	border: $nav-border;
+	padding-bottom: 5px;
+	padding-left: 8px;
+	padding-top: 5px;
+	width: $width;
+}
+
+@mixin form-fields-label($margin-top) {
+	margin-bottom: 2px;
+	margin-top: $margin-top;
+}
+
 @mixin modal-submit($padding-top, $padding-right, $padding-bottom, $padding-left) {
 	background-color: $musiclaps-light-gray;
 	border: $nav-border;
@@ -285,19 +299,12 @@ nav {
 	#register-modal-body, #login-modal-body {
 		padding-top: 0;
 		input { // Form fields
-			@include border-radius(5px);
-			border: $nav-border;
-			margin-top: 20px;
-			padding-bottom: 5px;
-			padding-left: 8px;
-			padding-top: 5px;
-			width: 90%;
+			@include form-fields-input(90%);
 		}
 	}
 	#register-modal-body {
 		label {
-			margin-bottom: 2px;
-			margin-top: 10px;
+			@include form-fields-label(10px);
 		}
 		input { // Form fields
 			margin-top: 0;
@@ -306,6 +313,9 @@ nav {
 	#login-modal-body {
 		input:first-child { // Form field
 			margin-top: 15px;
+		}
+		input {
+			margin-top: 20px;
 		}
 	}
 	#register-or-login-modal-body {
@@ -671,6 +681,19 @@ h4#edit-profile {
 		display: inline-block;
 		font-size: 14px;
 		font-weight: 300;
+	}
+}
+
+form.profile-page {
+	input {
+		@include form-fields-input(100%);
+		margin-top: 0;
+	}
+	label:first-child {
+		margin-top: 25px;
+	}
+	label {
+		@include form-fields-label(15px);
 	}
 }
 

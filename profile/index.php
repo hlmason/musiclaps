@@ -44,8 +44,25 @@
 						<div class="col-sm-1"></div>
 					</div>
 
-				</div>	
-				
+					<div class="row col-xs-12">
+						<form class="profile-page">
+							<div>
+								<label for="birthdate">Birth Date</label>
+								<input class="profile-page" id="birthdate" type="date" name="birthdate">
+							</div>
+						</form>
+					</div>
+
+					<div class="row col-xs-12">
+						<form class="profile-page">
+							<div>
+								<label for="website_url">Website URL</label>
+								<input class="profile-page" id="website_url" type="text" name="website_url">
+							</div>
+						</form>
+					</div>
+
+				</div>		
 				<div class="row col-xs-12 col-sm-4">
 					<div id="profile-right"></div>
 				</div>

@@ -2833,7 +2833,6 @@ nav .navbar-collapse {
       -moz-border-radius: 5px;
       border-radius: 5px;
       border: 1px solid #cecece;
-      margin-top: 20px;
       padding-bottom: 5px;
       padding-left: 8px;
       padding-top: 5px;
@@ -2845,6 +2844,8 @@ nav .navbar-collapse {
     margin-top: 0; }
   .modal-content #login-modal-body input:first-child {
     margin-top: 15px; }
+  .modal-content #login-modal-body input {
+    margin-top: 20px; }
   .modal-content #register-or-login-modal-body input {
     display: block;
     font-weight: bold;
@@ -3161,6 +3162,21 @@ h4#edit-profile {
     display: inline-block;
     font-size: 14px;
     font-weight: 300; }
+
+form.profile-page input {
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  padding-top: 5px;
+  width: 100%;
+  margin-top: 0; }
+form.profile-page label:first-child {
+  margin-top: 25px; }
+form.profile-page label {
+  margin-bottom: 2px;
+  margin-top: 15px; }
 
 #profile-right {
   background-color: #e7e7e7;
