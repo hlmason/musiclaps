@@ -34,7 +34,7 @@
 					</div>
 					<div>
 						<label for="confirm_password"><span class="musiclaps-blue">*</span> Confirm Password</label>
-						<input id="confirm_password" type="text" name="confirm_password">
+						<input id="confirm_password" type="password" name="confirm_password">
 					</div>
 				</form>
 			</div>

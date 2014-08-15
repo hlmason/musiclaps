@@ -17,7 +17,7 @@
 			<form action="login.php" method="post">
 				<div class="modal-body" id="login-modal-body">
 					<input id="userid" type="text" name="userid" placeholder="Username">
-					<input id="password" type="text" name="password" placeholder="Password">
+					<input id="password" type="password" name="password" placeholder="Password">
 					<div class="error-message">	
 						<?= (! empty($_SESSION['login_error']) ? $_SESSION['login_error'] : '' ) ?>
 					</div>
