@@ -3163,7 +3163,12 @@ h4#edit-profile {
     font-size: 14px;
     font-weight: 300; }
 
-form.profile-page input {
+form.profile-page label:first-child {
+  margin-top: 25px; }
+form.profile-page label {
+  margin-bottom: 2px;
+  margin-top: 15px; }
+form.profile-page #birthdate, form.profile-page #website_url, form.profile-page #website_title, form.profile-page #message {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -3172,11 +3177,19 @@ form.profile-page input {
   padding-top: 5px;
   width: 100%;
   margin-top: 0; }
-form.profile-page label:first-child {
-  margin-top: 25px; }
-form.profile-page label {
-  margin-bottom: 2px;
-  margin-top: 15px; }
+form.profile-page textarea {
+  max-width: 100%; }
+form.profile-page #genre, form.profile-page #skills {
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  padding-top: 5px;
+  width: 12px;
+  width: 300px;
+  height: 100px;
+  overflow-y: scroll; }
 
 #profile-right {
   background-color: #e7e7e7;
