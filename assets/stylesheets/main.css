@@ -3168,6 +3168,8 @@ form.profile-page label:first-child {
 form.profile-page label {
   margin-bottom: 2px;
   margin-top: 15px; }
+form.profile-page textarea {
+  max-width: 100%; }
 form.profile-page #birthdate, form.profile-page #website_url, form.profile-page #website_title, form.profile-page #message {
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -3177,8 +3179,6 @@ form.profile-page #birthdate, form.profile-page #website_url, form.profile-page 
   padding-top: 5px;
   width: 100%;
   margin-top: 0; }
-form.profile-page textarea {
-  max-width: 100%; }
 form.profile-page #genre, form.profile-page #skills {
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -3187,13 +3187,33 @@ form.profile-page #genre, form.profile-page #skills {
   padding-left: 8px;
   padding-top: 5px;
   width: 12px;
-  width: 300px;
   height: 100px;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  padding-top: 2px;
+  width: 300px; }
+  form.profile-page #genre span.block, form.profile-page #skills span.block {
+    display: block; }
+form.profile-page #upload-avatar img.upload-avatar {
+  height: 120px;
+  width: 120px; }
+form.profile-page #upload-avatar li:first-child {
+  padding-bottom: 5px; }
+form.profile-page #upload-avatar li:last-child {
+  padding-top: 5px; }
+  form.profile-page #upload-avatar li:last-child input#choose_file {
+    background-color: #e7e7e7;
+    border: 1px solid #cecece;
+    padding: 3px 10px 3px 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; }
+    form.profile-page #upload-avatar li:last-child input#choose_file:hover, form.profile-page #upload-avatar li:last-child input#choose_file:focus {
+      background-color: #d9d9d9; }
+  form.profile-page #upload-avatar li:last-child span.smaller-font-size {
+    font-size: 12px; }
 
 #profile-right {
   background-color: #e7e7e7;
-  height: 700px;
+  height: 900px;
   width: 100%; }
 
 .db-error-message {

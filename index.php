@@ -29,7 +29,7 @@
 						<p>
 							<sup>...</sup><!-- Visible at viewport widths >= 1118px -->
 							<sup></sup><!-- Visible at viewport widths <= 1117px -->
-							&nbsp;&nbsp;&nbsp;Click on any button to start&nbsp;&nbsp;&nbsp;
+							Click on any button to start
 							<sup>...</sup><!-- Visible at viewport widths >= 1118px -->
 							<sup></sup><!-- Visible at viewport widths <= 1117px -->
 						</p>
