@@ -2793,7 +2793,7 @@ nav .navbar-collapse {
         color: #52C4FF; }
     .modal-content .modal-header span.normal {
       font-weight: normal; }
-  .modal-content h2.register-modal-heading, .modal-content h2.email-registration-modal-heading, .modal-content h2.login-modal-heading {
+  .modal-content h2.register-modal-heading, .modal-content h2.register-with-email-modal-heading, .modal-content h2.login-modal-heading {
     letter-spacing: 0.5px; }
   .modal-content h3.want-demo-heading, .modal-content h3.select-song-heading {
     text-transform: uppercase; }
@@ -2812,9 +2812,9 @@ nav .navbar-collapse {
       height: 179px;
       width: 270px; }
   .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm,
-  .modal-content #register-modal-body, .modal-content #login-modal-body, .modal-content .modal-footer {
+  .modal-content #register-with-email-modal-body, .modal-content #login-modal-body, .modal-content .modal-footer {
     text-align: center; }
-  .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm, .modal-content #register-modal-body {
+  .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm, .modal-content #register-with-email-modal-body {
     border-bottom: 1px solid #e7e7e7;
     border-radius: 0;
     padding-top: 0;
@@ -2827,9 +2827,9 @@ nav .navbar-collapse {
       margin-left: 10px; }
   .modal-content #sn-login-modal-body-sm {
     display: none; }
-  .modal-content #register-modal-body, .modal-content #login-modal-body {
+  .modal-content #register-with-email-modal-body, .modal-content #login-modal-body {
     padding-top: 0; }
-    .modal-content #register-modal-body input, .modal-content #login-modal-body input {
+    .modal-content #register-with-email-modal-body input, .modal-content #login-modal-body input {
       -moz-border-radius: 5px;
       border-radius: 5px;
       border: 1px solid #cecece;
@@ -2838,10 +2838,10 @@ nav .navbar-collapse {
       padding-left: 8px;
       padding-top: 5px;
       width: 90%; }
-  .modal-content #register-modal-body label {
+  .modal-content #register-with-email-modal-body label {
     margin-bottom: 2px;
     margin-top: 10px; }
-  .modal-content #register-modal-body input {
+  .modal-content #register-with-email-modal-body input {
     margin-top: 0; }
   .modal-content #login-modal-body input:first-child {
     margin-top: 15px; }
@@ -2858,7 +2858,7 @@ nav .navbar-collapse {
     .modal-content .modal-footer a:hover, .modal-content .modal-footer a:focus {
       color: #444444;
       cursor: pointer; }
-  .modal-content #register-modal-footer, .modal-content #email-registration-modal-footer {
+  .modal-content #register-modal-footer, .modal-content #register-with-email-modal-footer {
     border-top: none; }
 
 /* ===================================

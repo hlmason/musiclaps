@@ -15,7 +15,7 @@
 			?>
 			
 			<div class="modal-footer" id="register-modal-footer">
-				<input id="registerWithEmail" type="submit" value="Register with Email">
+				<input id="registerWithEmailJS" type="submit" value="Register with Email">
 		    </div>
 
 		</div>

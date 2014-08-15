@@ -233,7 +233,7 @@ nav {
 			font-weight: normal;
 		}
 	}
-	h2.register-modal-heading, h2.email-registration-modal-heading, h2.login-modal-heading {
+	h2.register-modal-heading, h2.register-with-email-modal-heading, h2.login-modal-heading {
 			letter-spacing: 0.5px;
 		}
 	h3.want-demo-heading, h3.select-song-heading {
@@ -259,10 +259,10 @@ nav {
 		}
 	}
 	#sn-login-modal-body, #sn-login-modal-body-sm, 
-	#register-modal-body, #login-modal-body, .modal-footer {
+	#register-with-email-modal-body, #login-modal-body, .modal-footer {
 		text-align: center;
 	}
-	#sn-login-modal-body, #sn-login-modal-body-sm, #register-modal-body {
+	#sn-login-modal-body, #sn-login-modal-body-sm, #register-with-email-modal-body {
 		border-bottom: 1px solid #e7e7e7;
 		border-radius: 0;
 		padding-top: 0;
@@ -282,7 +282,7 @@ nav {
 	#sn-login-modal-body-sm {
 		display: none; // Invisible at viewport widths >= 768px
 	}
-	#register-modal-body, #login-modal-body {
+	#register-with-email-modal-body, #login-modal-body {
 		padding-top: 0;
 		input { // Form fields
 			@include border-radius(5px);
@@ -294,7 +294,7 @@ nav {
 			width: 90%;
 		}
 	}
-	#register-modal-body {
+	#register-with-email-modal-body {
 		label {
 			margin-bottom: 2px;
 			margin-top: 10px;
@@ -330,7 +330,7 @@ nav {
 			}
 		}
 	}
-	#register-modal-footer, #email-registration-modal-footer {
+	#register-modal-footer, #register-with-email-modal-footer {
 		border-top: none;
 	}
 }

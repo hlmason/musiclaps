@@ -1,4 +1,4 @@
-<div class="modal fade" id="emailRegistration" tabindex="-1" role="dialog" aria-labelledby="emailRegistrationLabel" aria-hidden="true">
+<div class="modal fade" id="registerWithEmail" tabindex="-1" role="dialog" aria-labelledby="registerWithEmailLabel" aria-hidden="true">
 	<div class="modal-dialog modal-sm">
 		<div class="modal-content">
 			
@@ -7,10 +7,10 @@
 					<span aria-hidden="true">&times;</span>
 					<span class="sr-only">Close</span>
 				</button>
-				<h2 class="modal-title email-registration-modal-heading" id="emailRegistrationLabel">Email Registration</h2>
+				<h2 class="modal-title register-with-email-modal-heading" id="registerWithEmailLabel">Email Registration</h2>
 			</div>
 			
-			<div class="modal-body" id="register-modal-body">
+			<div class="modal-body" id="register-with-email-modal-body">
 				<form>
 					<div>
 						<label for="first_name"><span class="musiclaps-blue">*</span> First Name</label>
@@ -40,7 +40,7 @@
 			</div>
 			
 			<form>
-				<div class="modal-footer" id="email-registration-modal-footer">
+				<div class="modal-footer" id="register-with-email-modal-footer">
 					<input type="submit" value="Register">
 			    </div>
 			</form>

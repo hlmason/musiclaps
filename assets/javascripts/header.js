@@ -1,24 +1,35 @@
 $(document).ready(function() {
 
-	$('.registerJS').on('click', function() {
-		$('#register').modal('show');
-	});
-		$('#registerWithEmail').click(function() {
-			$('#register').modal('hide');
-			$('#emailRegistration').modal('show');
-		});
+	var registerOrLogin = $('#registerOrLogin');
+	var register = $('#register');
+	var login = $('#login');
 
-	$('#loginJS').on('click', function() {
-		// if ( $('#registerOrLogin').is(':visible') ) {
-		// 	$('#registerOrLogin').modal('hide');
-		// 	$('#login').modal('show');
-		// } else {
-			$('#login').modal('show');
-		// }
+	$('.registerJS').on('click', function() {
+		if ( registerOrLogin.is(':visible') ) {
+			registerOrLogin.modal('hide');
+			register.modal('show');
+		} else {
+			register.modal('show');
+		}
 	});
+	$('#registerWithEmailJS').click(function() {
+		register.modal('hide');
+		$('#registerWithEmail').modal('show');
+	});
+
+
+	$('.loginJS').on('click', function() {
+		if ( registerOrLogin.is(':visible') ) {
+			registerOrLogin.modal('hide');
+			login.modal('show');
+		} else {
+			login.modal('show');
+		}
+	});
+
 
 	$('#registerOrLoginJS').on('click', function() {
-		$('#registerOrLogin').modal('show');
+		registerOrLogin.modal('show');
 	});
 
 });
