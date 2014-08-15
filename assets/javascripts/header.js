@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	$('#registerJS').on('click', function() {
+	$('.registerJS').on('click', function() {
 		$('#register').modal('show');
 	});
 		$('#registerWithEmail').click(function() {

@@ -86,19 +86,21 @@
 			$('.wmuSlider').wmuSlider(options);
 		</script>
 
-		<section id="who-we-are">
+		<section id="technology">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-1">
-						<h2>Who We Are</h2>
+						<h2>Technology</h2>
 						<p><!-- Keep to approximately 45-75 characters per line -->
-							Welcome to our <span class="text-shadow">online music collaboration</span> platform. Here, more than anywhere else on Earth, you can easily and securely listen to and <span>record music while collaborating</span>! Music is not sold here, but the musical collaboration which happens here increases its potential to reach, inspire, and maybe even sell more.<br><br>
+							Musiclaps makes musical collaboration easy by allowing you to record or upload tracks through your PC into a web platform.  Then you can protect and share it so others can listen and collaborate by recording their tracks on top of yours.<br><br>  
 
-							Experience <span>more than one-way sharing</span> here. Text communication is optional - let your music and voice do the talking. Have a conversation with melody and rhythm instead of words. Connect with anyone worldwide in the powerful language of music!
+							Learn faster, create at a higher level, compete, improve and enjoy.  Why post comments?  Post your tracks instead and have a musical conversation on Musiclaps.<br><br>  
+
+							While your music is not sold here, collaborating with musicians worldwide is sure to make it sell better elsewhere!
 						</p>
 						<ul>
-							<li class="first-list-item"><a href="https://www.youtube.com/watch?v=MuCs5Z-MbA4">Tutorial</a></li>
-							<li><a href="https://www.musiclaps.com/play?faq=view">FAQs</a></li>
+							<li class="first-list-item"><a class="registerJS">Set up a profile and start recording</a></li>
+							<li><a href="<?php echo BASE_URL; ?>live-player/">Try a soundcheck</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4">

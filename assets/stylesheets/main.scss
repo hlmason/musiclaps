@@ -508,9 +508,9 @@ h1.landing-page {
 	}
 
 	/* ===============================================================
-	    Who We Are, Backstage, Music Education, Contests and Auditions
+	    Technology, Backstage, Music Education, Contests and Auditions
 	=============================================================== */
-	#who-we-are, #backstage, #music-ed, #contests-and-auditions {
+	#technology, #backstage, #music-ed, #contests-and-auditions {
 		padding-bottom: 30px;
 		h2 {
 			@include heading(26px, 15px, 30px);
@@ -530,11 +530,11 @@ h1.landing-page {
 		}
 	}
 
-	#who-we-are, #backstage, #music-ed {
+	#technology, #backstage, #music-ed {
 		border-bottom: $nav-border;
 	}
 
-	#who-we-are, #music-ed {
+	#technology, #music-ed {
 		background-color: $musiclaps-light-gray;
 	}
 
@@ -542,7 +542,7 @@ h1.landing-page {
 		background-color: white;
 	}
 
-	#who-we-are img {
+	#technology img {
 		margin-top: 120px;
 		width: 200px;
 	}
@@ -799,7 +799,7 @@ footer {
 
 @media only screen and (max-width: 991px) {
 // Breakpoint of social media icons on footer
-	#who-we-are, #backstage, #music-ed, #contests-and-auditions {
+	#technology, #backstage, #music-ed, #contests-and-auditions {
 		img { display: none; }
 	}
 	footer {
@@ -876,7 +876,7 @@ footer {
 		p { margin-top: -30px !important; }
 		ul { margin-top: -40px !important; }
 	}
-	#who-we-are, #backstage, #music-ed, #contests-and-auditions {
+	#technology, #backstage, #music-ed, #contests-and-auditions {
 		h2 { font-size: 22px; }
 		p { font-size: 16px; }
 		a { font-size: 14px; }

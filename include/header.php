@@ -51,7 +51,7 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-right" id="logged-out">
 					<li><a id="loginJS">Log in</a></li>
-					<li><a id="registerJS">Register</a></li>
+					<li><a class="registerJS">Register</a></li>
 				</ul>
 			</div>
 		</div>
