@@ -3214,8 +3214,31 @@ form.profile-page #upload-avatar li:last-child {
 
 #profile-right {
   background-color: #e7e7e7;
-  height: 900px;
+  height: 926px;
   width: 100%; }
+  #profile-right .row:first-child {
+    text-align: center; }
+  #profile-right .row:not(.last-row) {
+    border-bottom: 1px solid #999; }
+  #profile-right .row {
+    height: 115px;
+    margin-left: 15px;
+    width: 90%; }
+  #profile-right .row#map-container {
+    height: 223.6px; }
+  #profile-right h2 {
+    margin-bottom: 3px; }
+  #profile-right h4 {
+    margin-bottom: 5px; }
+  #profile-right h5 {
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    width: 100%; }
+  #profile-right #map {
+    background-color: lightblue;
+    height: 160px;
+    width: 221px; }
 
 .db-error-message {
   color: #38aaff;

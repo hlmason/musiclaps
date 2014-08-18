@@ -21,7 +21,7 @@
 							<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pg/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 						</div>
 						<div class="col-xs-8 col-sm-5">
-							<h2 id="user-id">$userid</h2>
+							<h2 id="user-id">$userid</h2><!-- Hard-coded placeholder -->
 						</div>
 						<div class="col-xs-8 col-sm-4">
 							<a><h4 id="edit-profile"><span class="glyphicon glyphicon-pencil"></span> Edit Profile</h4></a>
@@ -114,32 +114,57 @@
 
 					<div class="row col-xs-12">
 						<form class="profile-page">
-							<label for="skills">Skills</label>
+							<label for="skills">Skills (select one or more)</label>
 							<div id="skills">
-								<span class="block"><input type="checkbox" name="arrangement">&nbsp; Arrangement</span>
+								<span class="block"><input type="checkbox" name="arrangement">&nbsp; Accordion</span>
+								<span class="block"><input type="checkbox" name="accordion">&nbsp; Arrangement</span>
 								<span class="block"><input type="checkbox" name="banjo">&nbsp; Banjo</span>
 								<span class="block"><input type="checkbox" name="bass">&nbsp; Bass</span>
+								<span class="block"><input type="checkbox" name="castanets">&nbsp; Castanets</span>
 								<span class="block"><input type="checkbox" name="cello">&nbsp; Cello</span>
 								<span class="block"><input type="checkbox" name="clarinet">&nbsp; Clarinet</span>
+								<span class="block"><input type="checkbox" name="conga">&nbsp; Conga</span>
+								<span class="block"><input type="checkbox" name="contrabass">&nbsp; Contrabass</span>
 								<span class="block"><input type="checkbox" name="drums">&nbsp; Drums</span>
 								<span class="block"><input type="checkbox" name="fiddle">&nbsp; Fiddle</span>
 								<span class="block"><input type="checkbox" name="flute">&nbsp; Flute</span>
 								<span class="block"><input type="checkbox" name="acoustic_guitar">&nbsp; Acoustic Guitar</span>
+								<span class="block"><input type="checkbox" name="classical_guitar">&nbsp; Classical Guitar</span>
 								<span class="block"><input type="checkbox" name="electric_guitar">&nbsp; Electric Guitar</span>
+								<span class="block"><input type="checkbox" name="semi_acoustic_guitar">&nbsp; Semi-Acoustic Guitar</span>
 								<span class="block"><input type="checkbox" name="harmonica">&nbsp; Harmonica</span>
+								<span class="block"><input type="checkbox" name="harp">&nbsp; Harp</span>
+								<span class="block"><input type="checkbox" name="horn">&nbsp; Horn</span>
 								<span class="block"><input type="checkbox" name="keyboard">&nbsp; Keyboard</span>
 								<span class="block"><input type="checkbox" name="lyrics">&nbsp; Lyrics</span>
 								<span class="block"><input type="checkbox" name="mandolin">&nbsp; Mandolin</span>
-								<span class="block"><input type="checkbox" name="okarina">&nbsp; Okarina</span>
+								<span class="block"><input type="checkbox" name="maraca">&nbsp; Maraca</span>
+								<span class="block"><input type="checkbox" name="marimba">&nbsp; Marimba</span>
+								<span class="block"><input type="checkbox" name="metallophone">&nbsp; Metallophone</span>
+								<span class="block"><input type="checkbox" name="oboe">&nbsp; Oboe</span>
+								<span class="block"><input type="checkbox" name="ocarina">&nbsp; Ocarina</span>
+								<span class="block"><input type="checkbox" name="organ">&nbsp; Organ</span>
 								<span class="block"><input type="checkbox" name="percussion">&nbsp; Percussion</span>
 								<span class="block"><input type="checkbox" name="piano">&nbsp; Piano</span>
-								<span class="block"><input type="checkbox" name="saxophone">&nbsp; Saxophone</span>
+								<span class="block"><input type="checkbox" name="piccolo">&nbsp; Piccolo</span>
+								<span class="block"><input type="checkbox" name="recorder">&nbsp; Recorder</span>
+								<span class="block"><input type="checkbox" name="alto_saxophone">&nbsp; Alto Saxophone</span>
+								<span class="block"><input type="checkbox" name="baritone_saxophone">&nbsp; Baritone Saxophone</span>
+								<span class="block"><input type="checkbox" name="soprano_saxophone">&nbsp; Soprano Saxophone</span>
+								<span class="block"><input type="checkbox" name="tenor_saxophone">&nbsp; Tenor Saxophone</span>
+								<span class="block"><input type="checkbox" name="shakuhachi">&nbsp; Shakuhachi</span>
+								<span class="block"><input type="checkbox" name="shamisen">&nbsp; Shamisen</span>
+								<span class="block"><input type="checkbox" name="tambourine">&nbsp; Tambourine</span>
+								<span class="block"><input type="checkbox" name="timpani">&nbsp; Timpani</span>
+								<span class="block"><input type="checkbox" name="triangle">&nbsp; Triangle</span>
 								<span class="block"><input type="checkbox" name="trombone">&nbsp; Trombone</span>
 								<span class="block"><input type="checkbox" name="trumpet">&nbsp; Trumpet</span>
 								<span class="block"><input type="checkbox" name="ukulele">&nbsp; Ukulele</span>
 								<span class="block"><input type="checkbox" name="viola">&nbsp; Viola</span>
 								<span class="block"><input type="checkbox" name="violin">&nbsp; Violin</span>
 								<span class="block"><input type="checkbox" name="vocals">&nbsp; Vocals</span>
+								<span class="block"><input type="checkbox" name="wadaiko">&nbsp; Wadaiko</span>
+								<span class="block"><input type="checkbox" name="xylophone">&nbsp; Xylophone</span>
 								<span class="block"><input type="checkbox" name="other">&nbsp; Other</span>
 							</div>
 						</form>
@@ -175,7 +200,69 @@
 
 				</div>		
 				<div class="row col-xs-12 col-sm-4">
-					<div id="profile-right"></div>
+					<div id="profile-right">
+						
+						<div class="row">
+							<div class="col-xs-7 offset-xs-1">
+								<h2>$#</h2><!-- Hard-coded placeholder -->
+								<h5>listeners?</h5>
+							</div>
+							<div class="col-xs-3">
+								<h2>$#</h2><!-- Hard-coded placeholder -->
+								<h5>claps</h5>
+							</div>
+							<div class="col-xs-1"></div>
+						</div>
+
+						<div class="row" id="map-container">
+							<div class="col-xs-10 offset-xs-1">
+								<h4>Location: </h4>
+								<div id="map"></div>
+							</div>
+							<div class="col-xs-1"></div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-10 offset-xs-1">
+								<h4>Member since: </h4>
+								<h5>$date joined</h5><!-- Hard-coded placeholder -->
+							</div>
+							<div class="col-xs-1"></div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-10 offset-xs-1">
+								<h4>Genre(s): </h4>
+								<h5>$genre(s)</h5><!-- Hard-coded placeholder -->
+							</div>
+							<div class="col-xs-1"></div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-10 offset-xs-1">
+								<h4>Skill(s): </h4>
+								<h5>$skill(s)</h5><!-- Hard-coded placeholder -->
+							</div>
+							<div class="col-xs-1"></div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-10 offset-xs-1">
+								<h4>Message: </h4>
+								<h5>$message to other musicians</h5><!-- Hard-coded placeholder -->
+							</div>
+							<div class="col-xs-1"></div>
+						</div>
+
+						<div class="row last-row">
+							<div class="col-xs-10 offset-xs-1">
+								<h4>Website: </h4>
+								<h5>$url</h5><!-- Hard-coded placeholder -->
+							</div>
+							<div class="col-xs-1"></div>
+						</div>
+
+					</div>
 				</div>
 				
 			</div>
