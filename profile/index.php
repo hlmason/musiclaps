@@ -40,13 +40,25 @@
 								<li class="profile-page"><span class="glyphicon glyphicon-globe"></span>&nbsp; $city, $state, $country</li><!-- Hard-coded placeholder -->
 								<li class="profile-page pull-right"><span class="glyphicon glyphicon-star"></span>&nbsp; $talent</li><!-- Hard-coded placeholder -->
 							</ul>
+							<ul class="second-ul-profile-page">
+								<li class="profile-page pull-left"><span class="glyphicon glyphicon-home"></span>&nbsp; $website</li><!-- Hard-coded placeholder -->
+							</ul>	
 						</div>
 						<div class="col-sm-1"></div>
 					</div>
 
 					<div class="row col-xs-12">
+						<h4 id="my-profile">My Profile</h4>
+						<div class="progress">
+					  		<div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
+					  			5% Complete
+					  		</div><!-- Hard-coded placeholder -->
+						</div>
+					</div>
+
+					<div class="row col-xs-10">
 						<form class="profile-page">
-							<div>
+							<div id="birthdate-container">
 								<label for="birthdate">Birth Date</label>
 								<input id="birthdate" type="date" name="birthdate">
 							</div>

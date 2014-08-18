@@ -670,19 +670,24 @@ h4#edit-profile {
 		margin-bottom: 7px;
 		margin-top: 2px;
 	}
-	ul.first-ul-profile-page {
-		margin-bottom: 2px;
+	ul.first-ul-profile-page, ul.second-ul-profile-page, ul.third-ul-profile-page {
 		margin-top: 4px;
 	}
-	ul.second-ul-profile-page {
+	ul.first-ul-profile-page, ul.second-ul-profile-page {
+		margin-bottom: 2px;
+	}
+	ul.third-ul-profile-page {
 		margin-bottom: 0;
-		margin-top: 3px;
 	}
 	li.profile-page {
 		display: inline-block;
 		font-size: 14px;
 		font-weight: 300;
 	}
+}
+
+h4#my-profile {
+	margin-bottom: 2px;
 }
 
 form.profile-page {
@@ -697,6 +702,9 @@ form.profile-page {
 	}
 	#birthdate, #website_url, #website_title, #message {
 		@include form-fields-input(100%);
+		margin-top: 0;
+	}
+	#birthdate-container label {
 		margin-top: 0;
 	}
 	#genre, #skills {
