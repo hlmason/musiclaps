@@ -180,15 +180,15 @@
 					</div>
 
 					<div class="row col-xs-12">
-						<form class="profile-page" id="upload-avatar">
+						<form class="profile-page" id="upload-avatar-container">
 							<label for="upload_avatar">Your Image</label>
 							<div class="row col-xs-12">
 								<div class="row">
 									<div class="col-xs-5 col-sm-4">
-										<img class="upload-avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pg/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+										<img src="<?php echo BASE_URL; ?>assets/images/profile-pg/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 									</div>
 									<div class="col-xs-7 col-sm-8" id="upload-avatar">	
-										<ul><!-- TODO: Make this look better at viewport widths closer to 767px and 400px -->
+										<ul><!-- TODO: Edit markup for functional login and make this look better at viewport widths closer to 767px and 400px -->
 											<li>Upload Your Image (120 x 120 is best)</li>
 											<li><input id="choose_file" type="submit" value="Choose File">&nbsp; <span class="smaller-font-size">No file chosen</span></li><!-- Hard-coded placeholder -->
 										</ul>
@@ -198,12 +198,18 @@
 						</form>
 					</div>
 
+					<div class="row col-xs-12">
+						<form class="profile-page">
+							<input id="save_profile" type="submit" value="Save Profile">
+						</form>
+					</div>
+
 				</div>		
 				<div class="row col-xs-12 col-sm-4">
 					<div id="profile-right">
 						
 						<div class="row">
-							<div class="col-xs-7 offset-xs-1">
+							<div class="col-xs-7 col-offset-xs-1">
 								<h2>$#</h2><!-- Hard-coded placeholder -->
 								<h5>listeners?</h5>
 							</div>
@@ -214,57 +220,38 @@
 							<div class="col-xs-1"></div>
 						</div>
 
-						<div class="row" id="map-container">
-							<div class="col-xs-10 offset-xs-1">
-								<h4>Location: </h4>
-								<div id="map"></div>
-							</div>
-							<div class="col-xs-1"></div>
+						<div class="row col-xs-12" id="map-container">
+							<h4>Location: </h4>
+							<div id="map"></div><!-- Placeholder -->
 						</div>
 
-						<div class="row">
-							<div class="col-xs-10 offset-xs-1">
-								<h4>Member since: </h4>
-								<h5>$date joined</h5><!-- Hard-coded placeholder -->
-							</div>
-							<div class="col-xs-1"></div>
+						<div class="row col-xs-12">
+							<h4>Member since: </h4>
+							<h5>$date joined</h5><!-- Hard-coded placeholder -->
 						</div>
 
-						<div class="row">
-							<div class="col-xs-10 offset-xs-1">
-								<h4>Genre(s): </h4>
-								<h5>$genre(s)</h5><!-- Hard-coded placeholder -->
-							</div>
-							<div class="col-xs-1"></div>
+						<div class="row col-xs-12">
+							<h4>Genre(s): </h4>
+							<h5>$genre(s)</h5><!-- Hard-coded placeholder -->
 						</div>
 
-						<div class="row">
-							<div class="col-xs-10 offset-xs-1">
-								<h4>Skill(s): </h4>
-								<h5>$skill(s)</h5><!-- Hard-coded placeholder -->
-							</div>
-							<div class="col-xs-1"></div>
+						<div class="row col-xs-12">
+							<h4>Skill(s): </h4>
+							<h5>$skill(s)</h5><!-- Hard-coded placeholder -->
 						</div>
 
-						<div class="row">
-							<div class="col-xs-10 offset-xs-1">
-								<h4>Message: </h4>
-								<h5>$message to other musicians</h5><!-- Hard-coded placeholder -->
-							</div>
-							<div class="col-xs-1"></div>
+						<div class="row col-xs-12">
+							<h4>Message: </h4>
+							<h5>$message to other musicians</h5><!-- Hard-coded placeholder -->
 						</div>
 
-						<div class="row last-row">
-							<div class="col-xs-10 offset-xs-1">
-								<h4>Website: </h4>
-								<h5>$url</h5><!-- Hard-coded placeholder -->
-							</div>
-							<div class="col-xs-1"></div>
+						<div class="row col-xs-12 last-row">
+							<h4>Website: </h4>
+							<h5>$url</h5><!-- Hard-coded placeholder -->
 						</div>
 
 					</div>
-				</div>
-				
+				</div>	
 			</div>
 			<div class="col-lg-1"></div>	
 		</div>

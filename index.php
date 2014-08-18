@@ -52,32 +52,32 @@
 		<div class="container wmuSlider">
 		    <div class="row wmuSliderWrapper">
 		    	<article>
-		            <img src="assets/images/sample-album-covers/electric-ladyland.jpg">
-		            <img src="assets/images/sample-album-covers/in-a-sentimental-mood.jpg">
-		            <img src="assets/images/sample-album-covers/miseducation-of-lauryn-hill.jpg">
-		            <img src="assets/images/sample-album-covers/suburbs.jpg">
-		            <img src="assets/images/sample-album-covers/21.jpg">
+		            <img src="assets/images/sample-album-covers/electric-ladyland.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/in-a-sentimental-mood.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/miseducation-of-lauryn-hill.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/suburbs.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/21.jpg"><!-- Placeholder -->
 		        </article>
 		    	<article>
-		            <img src="assets/images/sample-album-covers/at-folsom-prison.jpg">
-		            <img src="assets/images/sample-album-covers/help.png">
-		            <img src="assets/images/sample-album-covers/fire-of-unknown-origin.jpg">
-		            <img src="assets/images/sample-album-covers/bodyguard.jpg">
-		            <img src="assets/images/sample-album-covers/mandatory-fun.jpg">
+		            <img src="assets/images/sample-album-covers/at-folsom-prison.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/help.png"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/fire-of-unknown-origin.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/bodyguard.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/mandatory-fun.jpg"><!-- Placeholder -->
 		        </article>
 		        <article>
-		            <img src="assets/images/sample-album-covers/dark-side-of-the-moon.jpg">
-		            <img src="assets/images/sample-album-covers/dreamboat-annie.jpg">
-		            <img src="assets/images/sample-album-covers/rumours.jpg">
-		            <img src="assets/images/sample-album-covers/damn-the-torpedoes.jpg">
-		            <img src="assets/images/sample-album-covers/nebraska.jpg">
+		            <img src="assets/images/sample-album-covers/dark-side-of-the-moon.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/dreamboat-annie.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/rumours.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/damn-the-torpedoes.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/nebraska.jpg"><!-- Placeholder -->
 		        </article>
 		        <article>
-		        	<img src="assets/images/sample-album-covers/lungs.jpg">
-		            <img src="assets/images/sample-album-covers/colour-the-small-one.jpg">
-		            <img src="assets/images/sample-album-covers/im-over-it.jpg">
-		            <img src="assets/images/sample-album-covers/holy-fire.jpg">
-		            <img src="assets/images/sample-album-covers/mobius-strips.jpg">
+		        	<img src="assets/images/sample-album-covers/lungs.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/colour-the-small-one.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/im-over-it.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/holy-fire.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/mobius-strips.jpg"><!-- Placeholder -->
 		        </article>
 		    </div>
 		</div>

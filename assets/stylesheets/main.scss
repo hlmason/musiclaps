@@ -709,24 +709,30 @@ form.profile-page {
 			display: block;
 		}
 	}
+	img { // Upload image
+		height: 120px;
+		min-width: 120px;
+	}
 	#upload-avatar {
-		img.upload-avatar {
-			height: 120px;
-			width: 120px;
-		}
+		border-bottom: $nav-border;
 		li:first-child {
 			padding-bottom: 5px;
 		}
 		li:last-child {
 			padding-top: 5px;
-			input#choose_file {
-				@include submit(3px, 10px, 3px, 10px);
-				@include border-radius(10px);
-			}
 			span.smaller-font-size {
 				font-size: 12px;
 			}
 		}
+	}
+	input#choose_file, input#save_profile {
+		@include submit(3px, 10px, 3px, 10px);
+		@include border-radius(10px);
+	}
+	input#save_profile {
+		border-top: $nav-border;
+		margin-top: -10px;
+		margin-left: 290px;
 	}
 }
 
@@ -763,7 +769,7 @@ form.profile-page {
 	#map {
 		background-color: lightblue;
 		height: 160px;
-		width: 115%;
+		width: 100%;
 		max-width: 221px;
 	}
 }
@@ -1009,9 +1015,16 @@ footer {
 	#rainbow-music-notes { display: none; }
 }
 
-@media only screen and (max-width: 417px) {
+@media only screen and (max-width: 461px) {
 // Breakpoint of "No file chosen" (Profile page)
-	#upload-avatar ul { margin-top: -3px; }
+	#upload-avatar {
+		border: none !important;
+		ul {
+			margin-left: 10px;
+			margin-top: -3px;
+		}
+	}
+	#save_profile { margin-left: 135px !important; }
 }
 
 @media only screen and (max-width: 417px) {

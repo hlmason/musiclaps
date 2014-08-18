@@ -3194,23 +3194,29 @@ form.profile-page #genre, form.profile-page #skills {
   width: 300px; }
   form.profile-page #genre span.block, form.profile-page #skills span.block {
     display: block; }
-form.profile-page #upload-avatar img.upload-avatar {
+form.profile-page img {
   height: 120px;
-  width: 120px; }
-form.profile-page #upload-avatar li:first-child {
-  padding-bottom: 5px; }
-form.profile-page #upload-avatar li:last-child {
-  padding-top: 5px; }
-  form.profile-page #upload-avatar li:last-child input#choose_file {
-    background-color: #e7e7e7;
-    border: 1px solid #cecece;
-    padding: 3px 10px 3px 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px; }
-    form.profile-page #upload-avatar li:last-child input#choose_file:hover, form.profile-page #upload-avatar li:last-child input#choose_file:focus {
-      background-color: #d9d9d9; }
-  form.profile-page #upload-avatar li:last-child span.smaller-font-size {
-    font-size: 12px; }
+  min-width: 120px; }
+form.profile-page #upload-avatar {
+  border-bottom: 1px solid #cecece; }
+  form.profile-page #upload-avatar li:first-child {
+    padding-bottom: 5px; }
+  form.profile-page #upload-avatar li:last-child {
+    padding-top: 5px; }
+    form.profile-page #upload-avatar li:last-child span.smaller-font-size {
+      font-size: 12px; }
+form.profile-page input#choose_file, form.profile-page input#save_profile {
+  background-color: #e7e7e7;
+  border: 1px solid #cecece;
+  padding: 3px 10px 3px 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; }
+  form.profile-page input#choose_file:hover, form.profile-page input#choose_file:focus, form.profile-page input#save_profile:hover, form.profile-page input#save_profile:focus {
+    background-color: #d9d9d9; }
+form.profile-page input#save_profile {
+  border-top: 1px solid #cecece;
+  margin-top: -10px;
+  margin-left: 290px; }
 
 #profile-right {
   background-color: #e7e7e7;
@@ -3238,7 +3244,7 @@ form.profile-page #upload-avatar li:last-child {
   #profile-right #map {
     background-color: lightblue;
     height: 160px;
-    width: 115%;
+    width: 100%;
     max-width: 221px; }
 
 .db-error-message {
@@ -3463,9 +3469,15 @@ footer {
 @media only screen and (max-width: 580px) {
   #rainbow-music-notes {
     display: none; } }
-@media only screen and (max-width: 417px) {
-  #upload-avatar ul {
-    margin-top: -3px; } }
+@media only screen and (max-width: 461px) {
+  #upload-avatar {
+    border: none !important; }
+    #upload-avatar ul {
+      margin-left: 10px;
+      margin-top: -3px; }
+
+  #save_profile {
+    margin-left: 135px !important; } }
 @media only screen and (max-width: 417px) {
   h3.select-song-heading {
     font-size: 15px; }
