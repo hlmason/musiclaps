@@ -66,7 +66,7 @@
 
 	<!-- Email registration modal -->
 	<?php
-		include(ROOT_PATH . 'include/email-registration-modal.php');
+		include(ROOT_PATH . 'include/register-with-email-modal.php');
 	?>
 	<!-- End of email registration modal -->
 
