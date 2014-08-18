@@ -188,7 +188,7 @@
 										<img class="upload-avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pg/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 									</div>
 									<div class="col-xs-7 col-sm-8" id="upload-avatar">	
-										<ul><!-- TODO: Make this look better at viewport widths closer to 767px  -->
+										<ul><!-- TODO: Make this look better at viewport widths closer to 767px and 400px -->
 											<li>Upload Your Image (120 x 120 is best)</li>
 											<li><input id="choose_file" type="submit" value="Choose File">&nbsp; <span class="smaller-font-size">No file chosen</span></li><!-- Hard-coded placeholder -->
 										</ul>

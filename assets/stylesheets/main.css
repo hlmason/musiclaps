@@ -3215,7 +3215,7 @@ form.profile-page #upload-avatar li:last-child {
 #profile-right {
   background-color: #e7e7e7;
   height: 926px;
-  width: 100%; }
+  width: 105%; }
   #profile-right .row:first-child {
     text-align: center; }
   #profile-right .row:not(.last-row) {
@@ -3238,7 +3238,8 @@ form.profile-page #upload-avatar li:last-child {
   #profile-right #map {
     background-color: lightblue;
     height: 160px;
-    width: 221px; }
+    width: 115%;
+    max-width: 221px; }
 
 .db-error-message {
   color: #38aaff;
@@ -3452,13 +3453,19 @@ footer {
     #about-me li.profile-page {
       display: block;
       float: none !important;
-      margin-top: 8px; } }
+      margin-top: 8px; }
+
+  #profile-right {
+    margin-top: 20px; } }
 @media only screen and (max-width: 590px) {
   h1.landing-page {
     font-size: 20px; } }
 @media only screen and (max-width: 580px) {
   #rainbow-music-notes {
     display: none; } }
+@media only screen and (max-width: 417px) {
+  #upload-avatar ul {
+    margin-top: -3px; } }
 @media only screen and (max-width: 417px) {
   h3.select-song-heading {
     font-size: 15px; }

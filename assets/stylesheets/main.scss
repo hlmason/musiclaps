@@ -733,7 +733,7 @@ form.profile-page {
 #profile-right {
 	background-color: $musiclaps-light-gray;
 	height: 926px;
-	width: 100%;
+	width: 105%;
 	.row:first-child {
 		text-align: center;
 	}
@@ -763,7 +763,8 @@ form.profile-page {
 	#map {
 		background-color: lightblue;
 		height: 160px;
-		width: 221px;;
+		width: 115%;
+		max-width: 221px;
 	}
 }
 
@@ -995,6 +996,7 @@ footer {
 			margin-top: 8px;
 		}
 	}
+	#profile-right { margin-top: 20px; }
 }
 
 @media only screen and (max-width: 590px) {
@@ -1005,6 +1007,11 @@ footer {
 @media only screen and (max-width: 580px) {
 // Breakpoint of "Select a song" modal (Live player page)
 	#rainbow-music-notes { display: none; }
+}
+
+@media only screen and (max-width: 417px) {
+// Breakpoint of "No file chosen" (Profile page)
+	#upload-avatar ul { margin-top: -3px; }
 }
 
 @media only screen and (max-width: 417px) {
