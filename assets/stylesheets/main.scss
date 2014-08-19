@@ -655,12 +655,16 @@ h2#user-id {
 	margin-top: 0;
 }
 
-h4#edit-profile {
+h4.edit-profile, h4.save-profile, h4.dont-save-profile {
 	margin-top: 8px;
 	text-align: center;
 	.glyphicon {
 		color: $musiclaps-dark-gray;
 	}
+}
+
+h4.save-profile, h4.dont-save-profile {
+	display: inline-block;
 }
 
 #about-me {
@@ -676,12 +680,15 @@ h4#edit-profile {
 	ul.first-ul-profile-page, ul.second-ul-profile-page {
 		margin-bottom: 2px;
 	}
+	ul.first-ul-profile-page li {
+		margin-right: 20px; // So it lines up better with "Edit Profile"
+	}
 	ul.third-ul-profile-page {
 		margin-bottom: 0;
 	}
 	li.profile-page {
 		display: inline-block;
-		font-size: 14px;
+		font-size: 12px;
 		font-weight: 300;
 	}
 }
@@ -746,16 +753,18 @@ form.profile-page {
 
 #profile-right {
 	background-color: $musiclaps-light-gray;
-	height: 926px;
+	height: 952px;
 	width: 105%;
-	.row:first-child {
+	.row:first-child { // listeners/claps
 		text-align: center;
+	}
+	.row:not(.first-row) { // listeners/claps
+		height: 115px;
 	}
 	.row:not(.last-row) {
 		border-bottom: 1px solid #999;
 	}
 	.row {
-		height: 115px;
 		margin-left: 15px;
 		width: 90%;
 	}
@@ -1000,7 +1009,7 @@ footer {
 			margin-top: 0;
 		}
 	}
-	h2#user-id, h4#edit-profile { text-align: left; }
+	h2#user-id, h4.edit-profile, h4.save-profile, h4.dont-save-profile { text-align: left; }
 	#about-me {
 		margin-left: 5px;
 		margin-top: 15px;
@@ -1038,6 +1047,6 @@ footer {
 @media only screen and (max-width: 417px) {
 // Breakpoint of "Select a song" heading (Live player page)
 	h3.select-song-heading { font-size: 15px; }
-	h2#user-id, h4#edit-profile { margin-left: 10px; }
+	h2#user-id, h4.edit-profile, h4.save-profile { margin-left: 10px; }
 	#about-me { border-top: none; }
 }

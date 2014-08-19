@@ -26,8 +26,8 @@
     <script src="<?php echo BASE_URL; ?>assets/javascripts/customized.bootstrap.min.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/index.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/wmuSlider.min.js"></script>
-	<script src="<?php echo BASE_URL; ?>assets/javascripts/header.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/live-player.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile.js"></script>
 </head>
 <body>
 

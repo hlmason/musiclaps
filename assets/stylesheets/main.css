@@ -3230,11 +3230,14 @@ h2#user-id {
   font-weight: normal;
   margin-top: 0; }
 
-h4#edit-profile {
+h4.edit-profile, h4.save-profile, h4.dont-save-profile {
   margin-top: 8px;
   text-align: center; }
-  h4#edit-profile .glyphicon {
+  h4.edit-profile .glyphicon, h4.save-profile .glyphicon, h4.dont-save-profile .glyphicon {
     color: #444444; }
+
+h4.save-profile, h4.dont-save-profile {
+  display: inline-block; }
 
 #about-me {
   border-top: 1px solid #cecece;
@@ -3246,11 +3249,13 @@ h4#edit-profile {
     margin-top: 4px; }
   #about-me ul.first-ul-profile-page, #about-me ul.second-ul-profile-page {
     margin-bottom: 2px; }
+  #about-me ul.first-ul-profile-page li {
+    margin-right: 20px; }
   #about-me ul.third-ul-profile-page {
     margin-bottom: 0; }
   #about-me li.profile-page {
     display: inline-block;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300; }
 
 h4#my-profile {
@@ -3314,14 +3319,15 @@ form.profile-page input#save_profile {
 
 #profile-right {
   background-color: #e7e7e7;
-  height: 926px;
+  height: 952px;
   width: 105%; }
   #profile-right .row:first-child {
     text-align: center; }
+  #profile-right .row:not(.first-row) {
+    height: 115px; }
   #profile-right .row:not(.last-row) {
     border-bottom: 1px solid #999; }
   #profile-right .row {
-    height: 115px;
     margin-left: 15px;
     width: 90%; }
   #profile-right .row#map-container {
@@ -3544,7 +3550,7 @@ footer {
     font-size: 28px;
     margin-top: 0; }
 
-  h2#user-id, h4#edit-profile {
+  h2#user-id, h4.edit-profile, h4.save-profile, h4.dont-save-profile {
     text-align: left; }
 
   #about-me {
@@ -3576,7 +3582,7 @@ footer {
   h3.select-song-heading {
     font-size: 15px; }
 
-  h2#user-id, h4#edit-profile {
+  h2#user-id, h4.edit-profile, h4.save-profile {
     margin-left: 10px; }
 
   #about-me {
