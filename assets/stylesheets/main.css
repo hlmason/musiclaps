@@ -2775,13 +2775,13 @@ a:hover, a:focus {
 a:hover {
   cursor: pointer; }
 
-#register-or-login-modal-body input, .modal-footer input, .navbar-right input {
+#register-or-login-modal-body input, .modal-footer:not(#registration-full-modal-footer) input, .navbar-right input {
   -moz-border-radius: 10px;
   border-radius: 10px;
   background-color: #e7e7e7;
   border: 1px solid #cecece;
   padding: 5px 10px 5px 10px; }
-  #register-or-login-modal-body input:hover, #register-or-login-modal-body input:focus, .modal-footer input:hover, .modal-footer input:focus, .navbar-right input:hover, .navbar-right input:focus {
+  #register-or-login-modal-body input:hover, #register-or-login-modal-body input:focus, .modal-footer:not(#registration-full-modal-footer) input:hover, .modal-footer:not(#registration-full-modal-footer) input:focus, .navbar-right input:hover, .navbar-right input:focus {
     background-color: #d9d9d9; }
 
 span.musiclaps-blue {
@@ -2838,6 +2838,7 @@ nav .navbar-right#logged-out li {
       color: black !important; }
   nav .navbar-right#logged-out li:last-child {
     background-color: #38aaff;
+    border: 1px solid #38aaff;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px; }
     nav .navbar-right#logged-out li:last-child:hover {
@@ -2881,7 +2882,7 @@ nav .navbar-collapse {
         color: #52C4FF; }
     .modal-content .modal-header span.normal {
       font-weight: normal; }
-  .modal-content h2.register-modal-heading, .modal-content h2.register-with-email-modal-heading,
+  .modal-content h2.register-modal-heading, .modal-content h2.registration-full-modal-heading,
   .modal-content h2.registration-express-modal-heading, .modal-content h2.login-modal-heading {
     letter-spacing: 0.5px; }
   .modal-content h2.registration-express-modal-heading {
@@ -2903,11 +2904,10 @@ nav .navbar-collapse {
       height: 179px;
       width: 270px; }
   .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm,
-  .modal-content #register-with-email-modal-body, .modal-content #registration-express-modal-body,
-  .modal-content #login-modal-body, .modal-content .modal-footer {
+  .modal-content #registration-express-modal-body, .modal-content #login-modal-body, .modal-content .modal-footer {
     text-align: center; }
   .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm,
-  .modal-content #register-with-email-modal-body, .modal-content #registration-express-modal-body {
+  .modal-content #registration-full-modal-body, .modal-content #registration-express-modal-body {
     border-bottom: 1px solid #e7e7e7;
     border-radius: 0;
     padding-top: 0;
@@ -2920,9 +2920,9 @@ nav .navbar-collapse {
       margin-left: 10px; }
   .modal-content #sn-login-modal-body-sm {
     display: none; }
-  .modal-content #register-with-email-modal-body, .modal-content #registration-express-modal-body, .modal-content #login-modal-body {
+  .modal-content #registration-full-modal-body, .modal-content #registration-express-modal-body, .modal-content #login-modal-body {
     padding-top: 0; }
-    .modal-content #register-with-email-modal-body input, .modal-content #registration-express-modal-body input, .modal-content #login-modal-body input {
+    .modal-content #registration-full-modal-body input, .modal-content #registration-express-modal-body input, .modal-content #login-modal-body input {
       -moz-border-radius: 5px;
       border-radius: 5px;
       border: 1px solid #cecece;
@@ -2930,10 +2930,10 @@ nav .navbar-collapse {
       padding-left: 8px;
       padding-top: 4px;
       width: 90%; }
-  .modal-content #register-with-email-modal-body label, .modal-content #registration-express-modal-body label {
+  .modal-content #registration-full-modal-body label, .modal-content #registration-express-modal-body label {
     margin-bottom: 2px;
     margin-top: 10px; }
-  .modal-content #register-with-email-modal-body input, .modal-content #registration-express-modal-body input {
+  .modal-content #registration-full-modal-body input, .modal-content #registration-express-modal-body input {
     margin-top: 0; }
   .modal-content #login-modal-body input:first-child {
     margin-top: 15px; }
@@ -2952,41 +2952,19 @@ nav .navbar-collapse {
     .modal-content .modal-footer a:hover, .modal-content .modal-footer a:focus {
       color: #444444;
       cursor: pointer; }
-  .modal-content #register-modal-footer, .modal-content #register-with-email-modal-footer, .modal-content #registration-express-modal-footer {
+  .modal-content #register-modal-footer, .modal-content #registration-full-modal-footer, .modal-content #registration-express-modal-footer {
     border-top: none; }
-
-/* ===================================
-    Registration Page
-=================================== */
-#registration-page form {
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  background-color: #e7e7e7;
-  padding: 20px;
-  width: 278px; }
-  #registration-page form input:not(#registration-full) {
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    border: 1px solid #cecece;
-    padding-bottom: 4px;
-    padding-left: 8px;
-    padding-top: 4px;
-    width: 238px; }
-  #registration-page form label {
-    margin-bottom: 2px;
-    margin-top: 10px; }
-  #registration-page form #email-label {
-    margin-top: 0; }
-  #registration-page form #registration-full-submit input {
+  .modal-content #registration-full-modal-footer input {
     -moz-border-radius: 10px;
     border-radius: 10px;
     background-color: #38aaff;
     border: 1px solid #cecece;
     padding: 5px 10px 5px 10px;
+    border: 1px solid #1F91E6;
     color: white;
-    margin-top: 20px;
-    text-transform: uppercase; }
-    #registration-page form #registration-full-submit input:hover, #registration-page form #registration-full-submit input:focus {
+    text-transform: uppercase;
+    width: 100%; }
+    .modal-content #registration-full-modal-footer input:hover, .modal-content #registration-full-modal-footer input:focus {
       background-color: #45b7ff; }
 
 /* ===================================

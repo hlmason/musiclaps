@@ -12,9 +12,9 @@ $(document).ready(function() {
 			register.modal('show');
 		}
 	});
-	$('#registerWithEmailJS').click(function() {
+	$('#registrationFullJS').click(function() {
 		register.modal('hide');
-		$('#registerWithEmail').modal('show');
+		$('#registrationFull').modal('show');
 	});
 
 
