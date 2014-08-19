@@ -1,4 +1,5 @@
-<div class="modal fade" id="registerWithEmail" tabindex="-1" role="dialog" aria-labelledby="registerWithEmailLabel" aria-hidden="true">
+<!-- Express registration per Bart's request.  Not sure where/how this is going to be integrated. -->
+<div class="modal fade" id="registrationExpress" tabindex="-1" role="dialog" aria-labelledby="registrationExpressLabel" aria-hidden="true">
 	<div class="modal-dialog modal-sm">
 		<div class="modal-content">
 			
@@ -7,10 +8,10 @@
 					<span aria-hidden="true">&times;</span>
 					<span class="sr-only">Close</span>
 				</button>
-				<h2 class="modal-title register-with-email-modal-heading" id="registerWithEmailLabel">Email Registration</h2>
+				<h2 class="modal-title registration-express-modal-heading" id="registrationExpressLabel">Express Registration</h2>
 			</div>
 			
-			<div class="modal-body" id="register-with-email-modal-body">
+			<div class="modal-body" id="registration-express-modal-body">
 				<form>
 					<div>
 						<label for="email"><span class="musiclaps-blue">*</span> Email Address</label>
@@ -31,7 +32,7 @@
 				</form>
 			</div>
 			
-			<div class="modal-footer" id="register-with-email-modal-footer">
+			<div class="modal-footer" id="registration-express-modal-footer">
 				<form>
 					<input type="submit" value="Register">
 				</form>

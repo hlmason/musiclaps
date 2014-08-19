@@ -32,4 +32,10 @@ $(document).ready(function() {
 		registerOrLogin.modal('show');
 	});
 
+
+	// Express registration per Bart's request.  Not sure where/how this is going to be integrated.
+	// $('#registrationExpressJS').on('click', function() {
+	// 	$('#registrationExpress').modal('show');
+	// });
+
 });

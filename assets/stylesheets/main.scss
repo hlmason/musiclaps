@@ -33,9 +33,9 @@ $modal-border: 5px solid $musiclaps-light-gray;
 @mixin form-fields-input($width) {
 	@include border-radius(5px);
 	border: $nav-border;
-	padding-bottom: 5px;
+	padding-bottom: 4px;
 	padding-left: 8px;
-	padding-top: 5px;
+	padding-top: 4px;
 	width: $width;
 }
 
@@ -44,12 +44,12 @@ $modal-border: 5px solid $musiclaps-light-gray;
 	margin-top: $margin-top;
 }
 
-@mixin submit($padding-top, $padding-right, $padding-bottom, $padding-left) {
-	background-color: $musiclaps-light-gray;
+@mixin submit($color, $padding-top, $padding-right, $padding-bottom, $padding-left, $hover-color) {
+	background-color: $color;
 	border: $nav-border;
 	padding: $padding-top $padding-right $padding-bottom $padding-left;
 	&:hover, &:focus {
-		background-color: #d9d9d9;
+		background-color: $hover-color;
 	}
 }
 
@@ -121,7 +121,7 @@ a:hover {
 #register-or-login-modal-body, .modal-footer, .navbar-right {
 	input { // Modal buttons and nav "Log out" button
 		@include border-radius(10px);
-		@include submit(5px, 10px, 5px, 10px);
+		@include submit($musiclaps-light-gray, 5px, 10px, 5px, 10px, #d9d9d9);
 	}
 }
 
@@ -229,7 +229,6 @@ nav {
 		border-top: $modal-border;
 		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
-		font-weight: bold;
 		button.close {
 			background-color: white;
 			border: none;
@@ -247,9 +246,13 @@ nav {
 			font-weight: normal;
 		}
 	}
-	h2.register-modal-heading, h2.register-with-email-modal-heading, h2.login-modal-heading {
-			letter-spacing: 0.5px;
+	h2.register-modal-heading, h2.register-with-email-modal-heading, 
+	h2.registration-express-modal-heading, h2.login-modal-heading {
+		letter-spacing: 0.5px;
 		}
+	h2.registration-express-modal-heading { // Not sure why this is the only heading which needs bold property specified
+		font-weight: bold !important;
+	}
 	h3.want-demo-heading, h3.select-song-heading {
 		text-transform: uppercase;
 	}
@@ -273,10 +276,12 @@ nav {
 		}
 	}
 	#sn-login-modal-body, #sn-login-modal-body-sm, 
-	#register-with-email-modal-body, #login-modal-body, .modal-footer {
+	#register-with-email-modal-body, #registration-express-modal-body, 
+	#login-modal-body, .modal-footer {
 		text-align: center;
 	}
-	#sn-login-modal-body, #sn-login-modal-body-sm, #register-with-email-modal-body {
+	#sn-login-modal-body, #sn-login-modal-body-sm, 
+	#register-with-email-modal-body, #registration-express-modal-body, {
 		border-bottom: 1px solid #e7e7e7;
 		border-radius: 0;
 		padding-top: 0;
@@ -296,13 +301,13 @@ nav {
 	#sn-login-modal-body-sm {
 		display: none; // Invisible at viewport widths >= 768px
 	}
-	#register-with-email-modal-body, #login-modal-body {
+	#register-with-email-modal-body, #registration-express-modal-body, #login-modal-body {
 		padding-top: 0;
 		input { // Form fields
 			@include form-fields-input(90%);
 		}
 	}
-	#register-with-email-modal-body {
+	#register-with-email-modal-body, #registration-express-modal-body {
 		label {
 			@include form-fields-label(10px);
 		}
@@ -340,10 +345,37 @@ nav {
 			}
 		}
 	}
-	#register-modal-footer, #register-with-email-modal-footer {
+	#register-modal-footer, #register-with-email-modal-footer, #registration-express-modal-footer {
 		border-top: none;
 	}
 }
+
+/* ===================================
+    Registration Page
+=================================== */
+#registration-page form {
+	@include border-radius(10px);
+	background-color: $musiclaps-light-gray;
+	padding: 20px;
+	width: 278px;
+	input:not(#registration-full) {
+		@include form-fields-input(238px);
+	}
+	label {
+		@include form-fields-label(10px);
+	}
+	#email-label {
+		margin-top: 0;
+	}
+	#registration-full-submit input {
+		@include border-radius(10px);
+		@include submit($musiclaps-blue, 5px, 10px, 5px, 10px, #45B7FF);
+		color: white;
+		margin-top: 20px;
+		text-transform: uppercase;
+	}
+}
+
 
 /* ===================================
     Landing Page
@@ -535,9 +567,9 @@ h1.landing-page {
 			li:not(.first-list-item) {
 				padding-top: 10px;
 			}
-			a:visited {
-				color: $musiclaps-dark-gray !important;
-			}
+			// a:visited {
+			// 	color: $musiclaps-dark-gray !important;
+			// }
 		}
 	}
 
@@ -741,7 +773,7 @@ form.profile-page {
 		}
 	}
 	input#choose_file, input#save_profile {
-		@include submit(3px, 10px, 3px, 10px);
+		@include submit($musiclaps-light-gray, 3px, 10px, 3px, 10px, #d9d9d9);
 		@include border-radius(10px);
 	}
 	input#save_profile {
@@ -753,7 +785,7 @@ form.profile-page {
 
 #profile-right {
 	background-color: $musiclaps-light-gray;
-	height: 952px;
+	height: 944px;
 	width: 105%;
 	.row:first-child { // listeners/claps
 		text-align: center;
@@ -961,7 +993,7 @@ footer {
 		li:not(.first-list-item) { margin-top: 15px; }
 		img { margin-bottom: 1px; } // Social media icons
 		input { // Social media login buttons - only visible at viewport widths <= 767
-			@include submit(3px, 6px, 3px, 6px);
+			@include submit($musiclaps-light-gray, 3px, 6px, 3px, 6px, #d9d9d9);
 			border-bottom-right-radius: 5px;
 			border-top-right-radius: 5px;
 			margin-left: 2px;

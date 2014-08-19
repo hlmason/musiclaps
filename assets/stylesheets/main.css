@@ -2867,8 +2867,7 @@ nav .navbar-collapse {
   .modal-content .modal-header {
     border-top: 5px solid #e7e7e7;
     border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    font-weight: bold; }
+    border-top-right-radius: 5px; }
     .modal-content .modal-header button.close {
       background-color: white;
       border: none;
@@ -2882,8 +2881,11 @@ nav .navbar-collapse {
         color: #52C4FF; }
     .modal-content .modal-header span.normal {
       font-weight: normal; }
-  .modal-content h2.register-modal-heading, .modal-content h2.register-with-email-modal-heading, .modal-content h2.login-modal-heading {
+  .modal-content h2.register-modal-heading, .modal-content h2.register-with-email-modal-heading,
+  .modal-content h2.registration-express-modal-heading, .modal-content h2.login-modal-heading {
     letter-spacing: 0.5px; }
+  .modal-content h2.registration-express-modal-heading {
+    font-weight: bold !important; }
   .modal-content h3.want-demo-heading, .modal-content h3.select-song-heading {
     text-transform: uppercase; }
   .modal-content .modal-body {
@@ -2901,9 +2903,11 @@ nav .navbar-collapse {
       height: 179px;
       width: 270px; }
   .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm,
-  .modal-content #register-with-email-modal-body, .modal-content #login-modal-body, .modal-content .modal-footer {
+  .modal-content #register-with-email-modal-body, .modal-content #registration-express-modal-body,
+  .modal-content #login-modal-body, .modal-content .modal-footer {
     text-align: center; }
-  .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm, .modal-content #register-with-email-modal-body {
+  .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm,
+  .modal-content #register-with-email-modal-body, .modal-content #registration-express-modal-body {
     border-bottom: 1px solid #e7e7e7;
     border-radius: 0;
     padding-top: 0;
@@ -2916,20 +2920,20 @@ nav .navbar-collapse {
       margin-left: 10px; }
   .modal-content #sn-login-modal-body-sm {
     display: none; }
-  .modal-content #register-with-email-modal-body, .modal-content #login-modal-body {
+  .modal-content #register-with-email-modal-body, .modal-content #registration-express-modal-body, .modal-content #login-modal-body {
     padding-top: 0; }
-    .modal-content #register-with-email-modal-body input, .modal-content #login-modal-body input {
+    .modal-content #register-with-email-modal-body input, .modal-content #registration-express-modal-body input, .modal-content #login-modal-body input {
       -moz-border-radius: 5px;
       border-radius: 5px;
       border: 1px solid #cecece;
-      padding-bottom: 5px;
+      padding-bottom: 4px;
       padding-left: 8px;
-      padding-top: 5px;
+      padding-top: 4px;
       width: 90%; }
-  .modal-content #register-with-email-modal-body label {
+  .modal-content #register-with-email-modal-body label, .modal-content #registration-express-modal-body label {
     margin-bottom: 2px;
     margin-top: 10px; }
-  .modal-content #register-with-email-modal-body input {
+  .modal-content #register-with-email-modal-body input, .modal-content #registration-express-modal-body input {
     margin-top: 0; }
   .modal-content #login-modal-body input:first-child {
     margin-top: 15px; }
@@ -2948,8 +2952,42 @@ nav .navbar-collapse {
     .modal-content .modal-footer a:hover, .modal-content .modal-footer a:focus {
       color: #444444;
       cursor: pointer; }
-  .modal-content #register-modal-footer, .modal-content #register-with-email-modal-footer {
+  .modal-content #register-modal-footer, .modal-content #register-with-email-modal-footer, .modal-content #registration-express-modal-footer {
     border-top: none; }
+
+/* ===================================
+    Registration Page
+=================================== */
+#registration-page form {
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #e7e7e7;
+  padding: 20px;
+  width: 278px; }
+  #registration-page form input:not(#registration-full) {
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-top: 4px;
+    width: 238px; }
+  #registration-page form label {
+    margin-bottom: 2px;
+    margin-top: 10px; }
+  #registration-page form #email-label {
+    margin-top: 0; }
+  #registration-page form #registration-full-submit input {
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #38aaff;
+    border: 1px solid #cecece;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    margin-top: 20px;
+    text-transform: uppercase; }
+    #registration-page form #registration-full-submit input:hover, #registration-page form #registration-full-submit input:focus {
+      background-color: #45b7ff; }
 
 /* ===================================
     Landing Page
@@ -3141,8 +3179,6 @@ h1.landing-page {
       padding-top: 20px; }
     #technology ul li:not(.first-list-item), #backstage ul li:not(.first-list-item), #music-ed ul li:not(.first-list-item), #contests-and-auditions ul li:not(.first-list-item) {
       padding-top: 10px; }
-    #technology ul a:visited, #backstage ul a:visited, #music-ed ul a:visited, #contests-and-auditions ul a:visited {
-      color: #444444 !important; }
 
 #technology, #backstage, #music-ed {
   border-bottom: 1px solid #cecece; }
@@ -3272,9 +3308,9 @@ form.profile-page #birthdate, form.profile-page #website_url, form.profile-page 
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
   padding-left: 8px;
-  padding-top: 5px;
+  padding-top: 4px;
   width: 100%;
   margin-top: 0; }
 form.profile-page #birthdate-container label {
@@ -3283,9 +3319,9 @@ form.profile-page #genre, form.profile-page #skills {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
   padding-left: 8px;
-  padding-top: 5px;
+  padding-top: 4px;
   width: 12px;
   height: 100px;
   overflow-y: scroll;
@@ -3319,7 +3355,7 @@ form.profile-page input#save_profile {
 
 #profile-right {
   background-color: #e7e7e7;
-  height: 952px;
+  height: 944px;
   width: 105%; }
   #profile-right .row:first-child {
     text-align: center; }
