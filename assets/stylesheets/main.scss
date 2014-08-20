@@ -151,6 +151,10 @@ span.bold {
 /* ===================================
     Nav
 =================================== */
+nav:not(#nav-registered-user) .nav li { // Not logged in nav
+	margin-top: 23px;		
+}
+
 nav {
 	&.navbar {
 		border-radius: 0;
@@ -167,7 +171,6 @@ nav {
 		}
 	}
 	.nav li {
-		margin-top: 23px;
 		a {
 			@include nav-link($musiclaps-dark-gray, 14px);
 			letter-spacing: 0.5px;
@@ -178,7 +181,7 @@ nav {
 		}
 	}
 	.navbar-left li {
-		@include nav-border($musiclaps-blue);
+		@include nav-border(#cecece);
 	}
 	.navbar-right#logged-out li {
 		border: $nav-border;
@@ -219,7 +222,19 @@ nav {
 	=================================== */
 	#welcome-user {
 		margin-right: 20px;
-		margin-top: 28px;
+		margin-top: 28px !important;
+	}
+
+	#nav-registered-user { // Nav below top nav
+		background-color: $musiclaps-light-gray;
+		padding-left: 0;
+		li {
+			padding: 10px 16px;
+			a {
+				background-color: #F4F4F4;
+				font-size: 12px;
+			}
+		}
 	}
 
 /* ===================================
@@ -270,7 +285,7 @@ nav {
 		}
 		ul {
 			display: inline-block;
-			a:hover {
+			a:hover { // Songs link on "Select a song" modal
 				color: $musiclaps-dark-gray;
 			}
 		}
@@ -684,27 +699,27 @@ h1.landing-page {
 /* ===================================
     Profile Page
 =================================== */
-#avatar {
-	box-shadow: 10px 10px 5px $musiclaps-dark-gray;
-	height: 100px;
-	max-width: 100px;
-}
-
-h2#user-id {
-	font-weight: normal;
-	margin-top: 0;
-}
-
-h4.edit-profile, h4.save-profile, h4.dont-save-profile {
-	margin-top: 8px;
-	text-align: center;
-	.glyphicon, span#not-a-link {
-		color: $musiclaps-dark-gray;
+#avatar-n-edit-profile {
+	margin-top: 15px;
+	#avatar {
+		box-shadow: 10px 10px 5px $musiclaps-dark-gray;
+		height: 100px;
+		max-width: 100px;
 	}
-}
-
-h4.save-profile, h4.dont-save-profile {
-	display: inline-block;
+	h2#user-id {
+		font-weight: normal;
+		margin-top: 0;
+	}
+	h4.edit-profile, h4.save-profile, h4.dont-save-profile {
+		margin-top: 8px;
+		text-align: center;
+		.glyphicon, span#not-a-link {
+			color: $musiclaps-dark-gray;
+		}
+	}
+	h4.save-profile, h4.dont-save-profile {
+		display: inline-block;
+	}
 }
 
 #about-me {
@@ -790,7 +805,7 @@ form.profile-page {
 #profile-right {
 	background-color: $musiclaps-light-gray;
 	height: 944px;
-	width: 105%;
+	width: 127.25%;
 	.row:first-child { // listeners/claps
 		text-align: center;
 	}
@@ -823,7 +838,6 @@ form.profile-page {
 		background-color: lightblue;
 		height: 160px;
 		width: 100%;
-		max-width: 221px;
 	}
 }
 
@@ -909,6 +923,7 @@ footer {
 // Breakpoint of slider buttons (Landing Page)
 	.wmuSliderPrev { left: 0; }
 	.wmuSliderNext { right: 0; }
+
 }
 
 @media only screen and (max-width: 1117px) {
@@ -1054,6 +1069,9 @@ footer {
 			float: none !important;
 			margin-top: 8px;
 		}
+	}
+	h4.edit-profile {
+		text-align: left !important;
 	}
 	#profile-right { margin-top: 20px; }
 }

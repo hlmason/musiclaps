@@ -9,14 +9,12 @@
 	include(ROOT_PATH . 'controllers/get-profile.php');
 
 ?>
-
-	<div id="wrapper">
-		<div class="container">			
+		
 			<div class="row col-lg-10 col-lg-offset-1">				
 					
 				<div class="row col-xs-12 col-sm-8">
 
-					<div class="row">	
+					<div class="row" id="avatar-n-edit-profile">	
 						<div class="col-xs-4 col-sm-3">
 							<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pg/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 						</div>
@@ -24,9 +22,9 @@
 							<h2 id="user-id">$userid</h2><!-- Hard-coded placeholder -->
 						</div>
 						<div class="col-xs-8 col-sm-5">
-							<a><h4 class="edit-profile" id="editProfile"><span class="glyphicon glyphicon-edit"></span> Edit Profile</h4></a>
+							<a><h4 class="edit-profile" id="editProfile"><span class="glyphicon glyphicon-edit"></span>&nbsp; Edit Profile</h4></a>
 							<a><h4 class="save-profile" id="saveProfile"><span class="glyphicon glyphicon-save"></span> Save &nbsp;&nbsp;<span id="not-a-link">|</span>&nbsp;&nbsp; </h4></a>
-							<a><h4 class="dont-save-profile" id="dontSaveProfile"> Don't Save &nbsp;<span class="glyphicon glyphicon-remove-circle"></span></h4></a>
+							<a><h4 class="dont-save-profile" id="dontSaveProfile">Don't Save &nbsp;<span class="glyphicon glyphicon-remove-circle"></span></h4></a>
 						</div>
 					</div>
 						

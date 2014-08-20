@@ -60,3 +60,19 @@
 			</div>
 		</div>
 	</nav>
+
+	<div id="wrapper">
+		<div class="container">
+			
+			<nav class="row col-lg-10 col-lg-offset-1" id="nav-registered-user">
+				<ul class="nav navbar-nav">
+					<li><a class="<?php if ($page == "Profile") { echo "active"; } ?>" href="https://www.musiclaps.com/play?m=rs&show=all&svv=new">Profile</a></li>
+					<li><a class="<?php if ($page == "New Project") { echo "active"; } ?>" href="#">New Project</a></li>
+					<li><a class="<?php if ($page == "Projects") { echo "active"; } ?>" href="https://www.musiclaps.com/play?about=us">Projects</a></li>
+					<li><a class="<?php if ($page == "Collaborations") { echo "active"; } ?>" href="https://www.musiclaps.com/play?about=us">Collaborations</a></li>
+					<li><a class="<?php if ($page == "YouTube") { echo "active"; } ?>" href="https://www.musiclaps.com/play?about=us">YouTube</a></li>
+					<li><a class="<?php if ($page == "Messages") { echo "active"; } ?>" href="https://www.musiclaps.com/play?about=us">Messages</a></li>
+					<li><a class="<?php if ($page == "Groups") { echo "active"; } ?>" href="https://www.musiclaps.com/play?about=us">Groups</a></li>
+				</ul>
+			</nav>
+			<div class="col-lg-1"></div>

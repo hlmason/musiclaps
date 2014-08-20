@@ -2805,6 +2805,9 @@ span.bold {
 /* ===================================
     Nav
 =================================== */
+nav:not(#nav-registered-user) .nav li {
+  margin-top: 23px; }
+
 nav.navbar {
   border-radius: 0; }
 nav.navbar-default {
@@ -2815,18 +2818,16 @@ nav .navbar-header {
   nav .navbar-header img {
     height: 45px;
     width: 155px; }
-nav .nav li {
-  margin-top: 23px; }
-  nav .nav li a {
-    color: #444444 !important;
-    font-size: 14px;
-    line-height: 0;
-    letter-spacing: 0.5px;
-    text-transform: uppercase; }
-    nav .nav li a:hover, nav .nav li a:focus, nav .nav li a.active {
-      color: #38aaff !important; }
+nav .nav li a {
+  color: #444444 !important;
+  font-size: 14px;
+  line-height: 0;
+  letter-spacing: 0.5px;
+  text-transform: uppercase; }
+  nav .nav li a:hover, nav .nav li a:focus, nav .nav li a.active {
+    color: #38aaff !important; }
 nav .navbar-left li {
-  border-left: 1px solid #38aaff; }
+  border-left: 1px solid #cecece; }
   nav .navbar-left li:first-child {
     border-left: none; }
 nav .navbar-right#logged-out li {
@@ -2858,7 +2859,16 @@ nav .navbar-collapse {
 =================================== */
 #welcome-user {
   margin-right: 20px;
-  margin-top: 28px; }
+  margin-top: 28px !important; }
+
+#nav-registered-user {
+  background-color: #e7e7e7;
+  padding-left: 0; }
+  #nav-registered-user li {
+    padding: 10px 16px; }
+    #nav-registered-user li a {
+      background-color: #F4F4F4;
+      font-size: 12px; }
 
 /* ===================================
     Modal
@@ -3260,23 +3270,22 @@ h1.landing-page {
 /* ===================================
     Profile Page
 =================================== */
-#avatar {
-  box-shadow: 10px 10px 5px #444444;
-  height: 100px;
-  max-width: 100px; }
-
-h2#user-id {
-  font-weight: normal;
-  margin-top: 0; }
-
-h4.edit-profile, h4.save-profile, h4.dont-save-profile {
-  margin-top: 8px;
-  text-align: center; }
-  h4.edit-profile .glyphicon, h4.edit-profile span#not-a-link, h4.save-profile .glyphicon, h4.save-profile span#not-a-link, h4.dont-save-profile .glyphicon, h4.dont-save-profile span#not-a-link {
-    color: #444444; }
-
-h4.save-profile, h4.dont-save-profile {
-  display: inline-block; }
+#avatar-n-edit-profile {
+  margin-top: 15px; }
+  #avatar-n-edit-profile #avatar {
+    box-shadow: 10px 10px 5px #444444;
+    height: 100px;
+    max-width: 100px; }
+  #avatar-n-edit-profile h2#user-id {
+    font-weight: normal;
+    margin-top: 0; }
+  #avatar-n-edit-profile h4.edit-profile, #avatar-n-edit-profile h4.save-profile, #avatar-n-edit-profile h4.dont-save-profile {
+    margin-top: 8px;
+    text-align: center; }
+    #avatar-n-edit-profile h4.edit-profile .glyphicon, #avatar-n-edit-profile h4.edit-profile span#not-a-link, #avatar-n-edit-profile h4.save-profile .glyphicon, #avatar-n-edit-profile h4.save-profile span#not-a-link, #avatar-n-edit-profile h4.dont-save-profile .glyphicon, #avatar-n-edit-profile h4.dont-save-profile span#not-a-link {
+      color: #444444; }
+  #avatar-n-edit-profile h4.save-profile, #avatar-n-edit-profile h4.dont-save-profile {
+    display: inline-block; }
 
 #about-me {
   border-top: 1px solid #cecece;
@@ -3356,7 +3365,7 @@ form.profile-page input#save_profile {
 #profile-right {
   background-color: #e7e7e7;
   height: 944px;
-  width: 105%; }
+  width: 127.25%; }
   #profile-right .row:first-child {
     text-align: center; }
   #profile-right .row:not(.first-row) {
@@ -3380,8 +3389,7 @@ form.profile-page input#save_profile {
   #profile-right #map {
     background-color: lightblue;
     height: 160px;
-    width: 100%;
-    max-width: 221px; }
+    width: 100%; }
 
 .db-error-message {
   color: #38aaff;
@@ -3596,6 +3604,9 @@ footer {
       display: block;
       float: none !important;
       margin-top: 8px; }
+
+  h4.edit-profile {
+    text-align: left !important; }
 
   #profile-right {
     margin-top: 20px; } }
