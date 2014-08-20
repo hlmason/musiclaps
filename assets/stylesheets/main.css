@@ -2784,6 +2784,9 @@ a:hover {
   #register-or-login-modal-body input:hover, #register-or-login-modal-body input:focus, .modal-footer:not(.registration-modal-footer) input:hover, .modal-footer:not(.registration-modal-footer) input:focus, .navbar-right input:hover, .navbar-right input:focus {
     background-color: #d9d9d9; }
 
+label#birth-date-label-modal, label#gender-label, label#birth-date-label-profile {
+  margin-right: 2px; }
+
 span.musiclaps-blue {
   color: #38aaff; }
 
@@ -2943,7 +2946,7 @@ nav .navbar-collapse {
     margin-top: 10px; }
   .modal-content #registration-full-modal-body input, .modal-content #registration-express-modal-body input {
     margin-top: 0; }
-  .modal-content label#email-label, .modal-content label#birthdate-label, .modal-content label#gender-label, .modal-content label#zip-label, .modal-content #captcha-img, .modal-content #checkbox {
+  .modal-content label#email-label, .modal-content label#birth-date-label-modal, .modal-content label#gender-label, .modal-content label#zip-label, .modal-content #captcha-img, .modal-content #checkbox {
     margin-bottom: 2px;
     margin-top: 15px; }
   .modal-content #captcha-img {
@@ -3299,7 +3302,7 @@ form.profile-page label {
   margin-top: 15px; }
 form.profile-page textarea {
   max-width: 100%; }
-form.profile-page #birthdate, form.profile-page #website_url, form.profile-page #website_title, form.profile-page #message {
+form.profile-page #website_url, form.profile-page #website_title, form.profile-page #message {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -3308,8 +3311,8 @@ form.profile-page #birthdate, form.profile-page #website_url, form.profile-page 
   padding-top: 4px;
   width: 100%;
   margin-top: 0; }
-form.profile-page label#birthdate-label {
-  margin-top: 0; }
+form.profile-page label#birth-date-label-profile {
+  margin-top: 5px; }
 form.profile-page #genre, form.profile-page #skills {
   -moz-border-radius: 5px;
   border-radius: 5px;

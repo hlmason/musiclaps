@@ -125,6 +125,10 @@ a:hover {
 	}
 }
 
+label#birth-date-label-modal, label#gender-label, label#birth-date-label-profile {
+	margin-right: 2px;
+}
+
 span.musiclaps-blue {
 	color: $musiclaps-blue;
 }
@@ -320,7 +324,7 @@ nav {
 			margin-top: 0;
 		}
 	}
-	label#email-label, label#birthdate-label, label#gender-label, label#zip-label, #captcha-img, #checkbox {
+	label#email-label, label#birth-date-label-modal, label#gender-label, label#zip-label, #captcha-img, #checkbox {
 		@include form-fields-label(15px);
 	}
 	#captcha-img {
@@ -736,12 +740,12 @@ form.profile-page {
 	textarea {
 		max-width: 100%; // Prevents user from expanding textarea horizontally
 	}
-	#birthdate, #website_url, #website_title, #message {
+	#website_url, #website_title, #message {
 		@include form-fields-input(100%);
 		margin-top: 0;
 	}
-	label#birthdate-label {
-		margin-top: 0;
+	label#birth-date-label-profile {
+		margin-top: 5px;
 	}
 	#genre, #skills {
 		@include form-fields-input(12px);

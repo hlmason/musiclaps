@@ -55,12 +55,15 @@
 							</div>
 						</div>
 
-						<div class="row col-xs-10">
+						<div class="row col-xs-12">
 							<form class="profile-page">
 								<div>
-									<label id="birthdate-label" for="birthdate">Birth Date</label>
-									<input id="birthdate" type="date" name="birthdate">
-								</div>
+								<label id="birth-date-label-profile" for="birthdate">Birth Date</label>
+								<!-- Birth date form -->
+								<?php
+									include(ROOT_PATH . 'include/birth-date-form.php');
+								?>
+								<!-- End of birth date form -->
 							</form>
 						</div>
 
