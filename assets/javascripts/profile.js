@@ -10,15 +10,15 @@ $(document).ready(function() {
 	dontSaveProfile.hide();
 
 	$(editProfile).on('click', function() {
-		editProfile.hide('fast');
+		editProfile.hide();
 		saveProfile.fadeIn('fast');
 		dontSaveProfile.fadeIn('fast');
 		myProfile.fadeIn('fast');
 	});
 
 	$(dontSaveProfile).on('click', function() {
-		saveProfile.hide('fast');
-		dontSaveProfile.hide('fast');
+		saveProfile.hide();
+		dontSaveProfile.hide();
 		editProfile.fadeIn('fast');
 		myProfile.fadeOut('fast');
 	});
