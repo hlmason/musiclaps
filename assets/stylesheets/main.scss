@@ -920,10 +920,13 @@ footer {
 }
 
 @media only screen and (max-width: 1199px) {
-// Breakpoint of slider buttons (Landing Page)
+// Breakpoint of slider buttons (Landing Page) and gray boxes (Profile Page)
 	.wmuSliderPrev { left: 0; }
 	.wmuSliderNext { right: 0; }
-
+	#profile-right { 
+		margin-top: -1px; 
+		width: 126.5%; 
+	}
 }
 
 @media only screen and (max-width: 1117px) {
@@ -960,10 +963,11 @@ footer {
 }
 
 @media only screen and (max-width: 991px) {
-// Breakpoint of social media icons on footer
+// Breakpoint of social media icons on footer  and gray boxes (Profile Page)
 	#technology, #backstage, #music-ed, #contests-and-auditions {
 		img { display: none; }
 	}
+	#profile-right { width: 135.75%; }
 	footer {
 		.navbar-brand { position: absolute; } 
 		.navbar-left, .navbar-right { margin-top: 50px; }
@@ -1044,6 +1048,24 @@ footer {
 		a { font-size: 14px; }
 	}
 	.wmuSlider { display: none; } /* Hides image slider below stage */
+	#privacy-page, #terms-page, #faqs-page {
+		h1 {
+			font-size: 28px;
+			margin-top: 0;
+		}
+	}
+	h2#user-id, h4.edit-profile, h4.save-profile, h4.dont-save-profile { text-align: left; }
+	h4.edit-profile { text-align: left !important; }
+	#about-me {
+		margin-left: 5px;
+		margin-top: 15px;
+		li.profile-page {
+			display: block;
+			float: none !important;
+			margin-top: 8px;
+		}
+	}
+	#profile-right { margin-top: 20px; width: 100%; }
 	footer {
 		.navbar-left {
 			margin-left: 5px;
@@ -1054,26 +1076,6 @@ footer {
 			text-align: right;
 		}
 	}
-	#privacy-page, #terms-page, #faqs-page {
-		h1 {
-			font-size: 28px;
-			margin-top: 0;
-		}
-	}
-	h2#user-id, h4.edit-profile, h4.save-profile, h4.dont-save-profile { text-align: left; }
-	#about-me {
-		margin-left: 5px;
-		margin-top: 15px;
-		li.profile-page {
-			display: block;
-			float: none !important;
-			margin-top: 8px;
-		}
-	}
-	h4.edit-profile {
-		text-align: left !important;
-	}
-	#profile-right { margin-top: 20px; }
 }
 
 @media only screen and (max-width: 590px) {

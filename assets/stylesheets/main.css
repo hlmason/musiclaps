@@ -3467,7 +3467,11 @@ footer {
     left: 0; }
 
   .wmuSliderNext {
-    right: 0; } }
+    right: 0; }
+
+  #profile-right {
+    margin-top: -1px;
+    width: 126.5%; } }
 @media only screen and (max-width: 1117px) {
   #stage-inner sup:first-child, #stage-inner sup:nth-child(3) {
     display: none; }
@@ -3490,6 +3494,9 @@ footer {
 @media only screen and (max-width: 991px) {
   #technology img, #backstage img, #music-ed img, #contests-and-auditions img {
     display: none; }
+
+  #profile-right {
+    width: 135.75%; }
 
   footer .navbar-brand {
     position: absolute; }
@@ -3581,21 +3588,15 @@ footer {
     display: none; }
 
   /* Hides image slider below stage */
-  footer .navbar-left {
-    margin-left: 5px;
-    /* Removes border to the left of links */ }
-    footer .navbar-left li {
-      border: none; }
-  footer .navbar-right {
-    float: right !important;
-    text-align: right; }
-
   #privacy-page h1, #terms-page h1, #faqs-page h1 {
     font-size: 28px;
     margin-top: 0; }
 
   h2#user-id, h4.edit-profile, h4.save-profile, h4.dont-save-profile {
     text-align: left; }
+
+  h4.edit-profile {
+    text-align: left !important; }
 
   #about-me {
     margin-left: 5px;
@@ -3605,11 +3606,18 @@ footer {
       float: none !important;
       margin-top: 8px; }
 
-  h4.edit-profile {
-    text-align: left !important; }
-
   #profile-right {
-    margin-top: 20px; } }
+    margin-top: 20px;
+    width: 100%; }
+
+  footer .navbar-left {
+    margin-left: 5px;
+    /* Removes border to the left of links */ }
+    footer .navbar-left li {
+      border: none; }
+  footer .navbar-right {
+    float: right !important;
+    text-align: right; } }
 @media only screen and (max-width: 590px) {
   h1.landing-page {
     font-size: 20px; } }
