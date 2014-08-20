@@ -2933,6 +2933,11 @@ nav .navbar-collapse {
     padding-left: 8px;
     padding-top: 4px;
     width: 100%; }
+  .modal-content #registration-full-modal-body .glyphicon-question-sign, .modal-content #registration-full-modal-body #password-req, .modal-content #registration-express-modal-body .glyphicon-question-sign, .modal-content #registration-express-modal-body #password-req {
+    color: #38aaff; }
+  .modal-content #registration-full-modal-body #password-req, .modal-content #registration-express-modal-body #password-req {
+    font-size: 12px;
+    margin-bottom: 2px; }
   .modal-content #login-modal-body input {
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -3267,7 +3272,7 @@ h2#user-id {
 h4.edit-profile, h4.save-profile, h4.dont-save-profile {
   margin-top: 8px;
   text-align: center; }
-  h4.edit-profile .glyphicon, h4.save-profile .glyphicon, h4.dont-save-profile .glyphicon {
+  h4.edit-profile .glyphicon, h4.edit-profile span#not-a-link, h4.save-profile .glyphicon, h4.save-profile span#not-a-link, h4.dont-save-profile .glyphicon, h4.dont-save-profile span#not-a-link {
     color: #444444; }
 
 h4.save-profile, h4.dont-save-profile {

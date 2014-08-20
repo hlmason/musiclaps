@@ -312,6 +312,13 @@ nav {
 		input { // Form fields
 			@include form-fields-input(100%);
 		}
+		.glyphicon-question-sign, #password-req {
+			color: $musiclaps-blue;
+		}
+		#password-req {
+			font-size: 12px;
+			margin-bottom: 2px;
+		}
 	}
 	#login-modal-body input { // Form fields
 		@include form-fields-input(90%);
@@ -691,7 +698,7 @@ h2#user-id {
 h4.edit-profile, h4.save-profile, h4.dont-save-profile {
 	margin-top: 8px;
 	text-align: center;
-	.glyphicon {
+	.glyphicon, span#not-a-link {
 		color: $musiclaps-dark-gray;
 	}
 }

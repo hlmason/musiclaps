@@ -25,8 +25,8 @@
 						</div>
 						<div class="col-xs-8 col-sm-5">
 							<a><h4 class="edit-profile" id="editProfile"><span class="glyphicon glyphicon-edit"></span> Edit Profile</h4></a>
-							<a><h4 class="save-profile" id="saveProfile"><span class="glyphicon glyphicon-save"></span> Save &nbsp;&nbsp;|&nbsp;&nbsp; </h4></a>
-							<a><h4 class="dont-save-profile" id="dontSaveProfile"> Don't Save <span class="glyphicon glyphicon-remove-circle"></span></h4></a>
+							<a><h4 class="save-profile" id="saveProfile"><span class="glyphicon glyphicon-save"></span> Save &nbsp;&nbsp;<span id="not-a-link">|</span>&nbsp;&nbsp; </h4></a>
+							<a><h4 class="dont-save-profile" id="dontSaveProfile"> Don't Save &nbsp;<span class="glyphicon glyphicon-remove-circle"></span></h4></a>
 						</div>
 					</div>
 						

@@ -1,8 +1,11 @@
 $(document).ready(function() {
 
-	var registerOrLogin = $('#registerOrLogin');
 	var register = $('#register');
+	var passwordReq = $('#password-req');
 	var login = $('#login');
+	var registerOrLogin = $('#registerOrLogin');
+
+	passwordReq.hide();
 
 	$('.registerJS').on('click', function() {
 		if ( registerOrLogin.is(':visible') ) {
@@ -12,11 +15,17 @@ $(document).ready(function() {
 			register.modal('show');
 		}
 	});
-	$('#registrationFullJS').click(function() {
-		register.modal('hide');
-		$('#registrationFull').modal('show');
-	});
-
+		$('#registrationFullJS').click(function() {
+			register.modal('hide');
+			$('#registrationFull').modal('show');
+		});
+		// Express registration per Bart's request.  Not sure where/how this is going to be integrated.
+		// $('#registrationExpressJS').on('click', function() {
+		// 	$('#registrationExpress').modal('show');
+		// });
+			$('.glyphicon-question-sign').hover(function() {
+				passwordReq.fadeIn('slow');
+			});
 
 	$('.loginJS').on('click', function() {
 		if ( registerOrLogin.is(':visible') ) {
@@ -27,15 +36,8 @@ $(document).ready(function() {
 		}
 	});
 
-
 	$('#registerOrLoginJS').on('click', function() {
 		registerOrLogin.modal('show');
 	});
-
-
-	// Express registration per Bart's request.  Not sure where/how this is going to be integrated.
-	// $('#registrationExpressJS').on('click', function() {
-	// 	$('#registrationExpress').modal('show');
-	// });
 
 });
