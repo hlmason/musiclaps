@@ -47,46 +47,34 @@
 
 					<section id="myProfile">
 						<div class="row col-xs-12">
+
 							<h4 id="my-profile">My Profile</h4>
 							<div class="progress">
 						  		<div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
 						  			5% Complete
 						  		</div><!-- Hard-coded placeholder -->
 							</div>
-						</div>
 
-						<div class="row col-xs-12">
 							<form class="profile-page">
+								
 								<div>
-								<label id="birth-date-label-profile" for="birthdate">Birth Date</label>
-								<!-- Birth date form -->
-								<?php
-									include(ROOT_PATH . 'include/birth-date-form.php');
-								?>
+									<label id="birth-date-label-profile" for="birthdate">Birth Date</label>
+									<!-- Birth date form -->
+									<?php
+										include(ROOT_PATH . 'include/birth-date-form.php');
+									?>
 								<!-- End of birth date form -->
-							</form>
-						</div>
 
-						<div class="row col-xs-12">
-							<form class="profile-page">
 								<div>
 									<label for="website_url">Website URL</label>
 									<input id="website_url" type="text" name="website_url">
 								</div>
-							</form>
-						</div>
 
-						<div class="row col-xs-12">
-							<form class="profile-page">
 								<div>
 									<label for="website_title">Website Title</label>
 									<input id="website_title" type="text" name="website_title">
 								</div>
-							</form>
-						</div>
 
-						<div class="row col-xs-12">
-							<form class="profile-page">
 								<label for="genre">Genre (select one or more)</label>
 								<div id="genre">
 									<span><input type="checkbox" name="alternative">&nbsp; Alternative</span>
@@ -123,11 +111,7 @@
 									<span><input type="checkbox" name="techno">&nbsp; Techno</span>
 									<span><input type="checkbox" name="world">&nbsp; World</span>
 								</div>
-							</form>
-						</div>
 
-						<div class="row col-xs-12">
-							<form class="profile-page">
 								<label for="skills">Skills (select one or more)</label>
 								<div id="skills">
 									<span><input type="checkbox" name="arrangement">&nbsp; Accordion</span>
@@ -181,42 +165,35 @@
 									<span><input type="checkbox" name="xylophone">&nbsp; Xylophone</span>
 									<span><input type="checkbox" name="other">&nbsp; Other</span>
 								</div>
-							</form>
-						</div>
 
-						<div class="row col-xs-12">
-							<form class="profile-page">
 								<div>
 									<label for="message">Message</label>
 									<textarea id="message" name="message" placeholder="Your message to other musicians"></textarea>
 								</div>
-							</form>
-						</div>
 
-						<div class="row col-xs-12">
-							<form class="profile-page" id="upload-avatar-container">
-								<label for="upload_avatar">Your Image</label>
-								<div class="row col-xs-12">
-									<div class="row">
-										<div class="col-xs-5 col-sm-4">
-											<img src="<?php echo BASE_URL; ?>assets/images/profile-pg/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-										</div>
-										<div class="col-xs-7 col-sm-8" id="upload-avatar">	
-											<ul><!-- TODO: Edit markup for functional login and make this look better at viewport widths closer to 767px and 400px -->
-												<li>Upload Your Image (120 x 120 is best)</li>
-												<li><input id="choose_file" type="submit" value="Choose File">&nbsp; <span>No file chosen</span></li><!-- Hard-coded placeholder -->
-											</ul>
+								<div class="profile-page" id="upload-avatar-container">
+									<label for="upload_avatar">Your Image</label>
+									<div class="row col-xs-12">
+										<div class="row">
+											<div class="col-xs-5 col-sm-4">
+												<img src="<?php echo BASE_URL; ?>assets/images/profile-pg/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+											</div>
+											<div class="col-xs-7 col-sm-8" id="upload-avatar">	
+												<ul><!-- TODO: Edit markup for functional login and make this look better at viewport widths closer to 767px and 400px -->
+													<li>Upload Your Image (120 x 120 is best)</li>
+													<li><input id="choose_file" type="submit" value="Choose File">&nbsp; <span>No file chosen</span></li><!-- Hard-coded placeholder -->
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div>
-							</form>
-						</div>
 
-						<div class="row col-xs-12">
-							<form class="profile-page">
-								<input id="save_profile" type="submit" value="Save Profile">
+								<div>
+									<input id="save_profile" type="submit" value="Save Profile">
+								</div>
 							</form>
-						</div>					
+							
+						</div>
 					</section>
 
 				</div>		

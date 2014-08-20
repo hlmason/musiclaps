@@ -125,7 +125,7 @@ a:hover {
 	}
 }
 
-label#birth-date-label-modal, label#gender-label, label#birth-date-label-profile {
+label#birth-date-label-modal, label#gender-label, label#birth-date-label-profile { // Full registration modal and Profile Page 
 	margin-right: 2px;
 }
 
@@ -731,30 +731,26 @@ h4#my-profile {
 }
 
 form.profile-page {
-	label:first-child {
-		margin-top: 25px;
+	label#birth-date-label-profile {
+		margin-top: 5px;
 	}
 	label {
-		@include form-fields-label(15px);
+		@include form-fields-label(25px);
 	}
 	textarea {
 		max-width: 100%; // Prevents user from expanding textarea horizontally
 	}
 	#website_url, #website_title, #message {
 		@include form-fields-input(100%);
-		margin-top: 0;
-	}
-	label#birth-date-label-profile {
-		margin-top: 5px;
 	}
 	#genre, #skills {
 		@include form-fields-input(12px);
-		height: 100px;
+		height: 106px;
 		overflow-y: scroll;
 		padding-top: 2px;
-		width: 300px;
+		width: 295px;
 		span {
-			display: block;
+			display: block; // Makes checkboxes stack
 		}
 	}
 	img { // Upload image
@@ -898,18 +894,18 @@ footer {
     Media Queries
 =================================== */
 @media only screen and (max-width: 1474px) {
-// Breakpoint of "Click on any button to start" (Landing page)
+// Breakpoint of "Click on any button to start" (Landing Page)
 	#stage-inner { width: 80% !important; }
 }
 
 @media only screen and (max-width: 1199px) {
-// Breakpoint of slider buttons (Landing page)
+// Breakpoint of slider buttons (Landing Page)
 	.wmuSliderPrev { left: 0; }
 	.wmuSliderNext { right: 0; }
 }
 
 @media only screen and (max-width: 1117px) {
-// Breakpoint of "Click on any button to start" (Landing page)
+// Breakpoint of "Click on any button to start" (Landing Page)
 	#stage-inner {
 		sup {
 			&:first-child, &:nth-child(3) { display: none; }
@@ -919,17 +915,17 @@ footer {
 }
 
 @media only screen and (max-width: 1090px) {
-// Breakpoint of "About me" border (Profile page)
+// Breakpoint of "About me" border (Profile Page)
 	#about-me { border: none; }
 }
 
 @media only screen and (max-width: 1016px) {
-// Breakpoint of Sound Check" and "Record a Demo" (Landing page)
+// Breakpoint of Sound Check" and "Record a Demo" (Landing Page)
 	#stage-inner { width: 100% !important; }
 }
 
 @media only screen and (max-width: 818px) {
-// Breakpoint of "Record a Demo" (Landing page)
+// Breakpoint of "Record a Demo" (Landing Page)
 	#stage-inner {
 		#soundcheck, #record-demo {
 			a { font-size: 20px !important; }
@@ -1056,17 +1052,17 @@ footer {
 }
 
 @media only screen and (max-width: 590px) {
-// Breakpoint of "Online Music Collaboration Made Simple...Just Log in and Start Recording" (landing page) 
+// Breakpoint of "Online Music Collaboration Made Simple...Just Log in and Start Recording" (Landing Page) 
 	h1.landing-page { font-size: 20px; }
 }
 
 @media only screen and (max-width: 580px) {
-// Breakpoint of "Select a song" modal (Live player page)
+// Breakpoint of "Select a song" modal (Live player Page)
 	#rainbow-music-notes { display: none; }
 }
 
 @media only screen and (max-width: 461px) {
-// Breakpoint of "No file chosen" (Profile page)
+// Breakpoint of "No file chosen" (Profile Page)
 	#upload-avatar {
 		border: none !important;
 		ul {
@@ -1078,7 +1074,7 @@ footer {
 }
 
 @media only screen and (max-width: 417px) {
-// Breakpoint of "Select a song" heading (Live player page)
+// Breakpoint of "Select a song" heading (Live player Page)
 	h3.select-song-heading { font-size: 15px; }
 	h2#user-id, h4.edit-profile, h4.save-profile { margin-left: 10px; }
 	#about-me { border-top: none; }

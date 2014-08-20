@@ -13,22 +13,27 @@
 			
 			<div class="modal-body" id="registration-express-modal-body">
 				<form>
+
 					<div>
 						<label for="email"><span class="musiclaps-blue">*</span> Email Address</label>
 						<input id="email" type="email" name="email">
 					</div>
+					
 					<div>
 						<label for="username"><span class="musiclaps-blue">*</span> Username</label>
 						<input id="username" type="username" name="username">
 					</div>
+					
 					<div>
 						<label for="password"><span class="musiclaps-blue">*</span> Password</label>
 						<input id="password" type="text" name="password">
 					</div>
+					
 					<div>
 						<label for="confirm_password"><span class="musiclaps-blue">*</span> Confirm Password</label>
 						<input id="confirm_password" type="password" name="confirm_password">
 					</div>
+					
 				</form>
 			</div>
 			

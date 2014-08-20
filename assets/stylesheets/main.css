@@ -3295,11 +3295,11 @@ h4.save-profile, h4.dont-save-profile {
 h4#my-profile {
   margin-bottom: 2px; }
 
-form.profile-page label:first-child {
-  margin-top: 25px; }
+form.profile-page label#birth-date-label-profile {
+  margin-top: 5px; }
 form.profile-page label {
   margin-bottom: 2px;
-  margin-top: 15px; }
+  margin-top: 25px; }
 form.profile-page textarea {
   max-width: 100%; }
 form.profile-page #website_url, form.profile-page #website_title, form.profile-page #message {
@@ -3309,10 +3309,7 @@ form.profile-page #website_url, form.profile-page #website_title, form.profile-p
   padding-bottom: 4px;
   padding-left: 8px;
   padding-top: 4px;
-  width: 100%;
-  margin-top: 0; }
-form.profile-page label#birth-date-label-profile {
-  margin-top: 5px; }
+  width: 100%; }
 form.profile-page #genre, form.profile-page #skills {
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -3321,10 +3318,10 @@ form.profile-page #genre, form.profile-page #skills {
   padding-left: 8px;
   padding-top: 4px;
   width: 12px;
-  height: 100px;
+  height: 106px;
   overflow-y: scroll;
   padding-top: 2px;
-  width: 300px; }
+  width: 295px; }
   form.profile-page #genre span, form.profile-page #skills span {
     display: block; }
 form.profile-page img {
