@@ -243,7 +243,7 @@ nav {
 				color: #52C4FF;	
 			}
 		}
-		span.normal {
+		span {
 			font-weight: normal;
 		}
 	}
@@ -328,6 +328,9 @@ nav {
 	}
 	#checkbox input {
 		width: 12px;
+	}
+	#checkbox {
+		font-size: 12px;
 	}
 	#login-modal-body {
 		input:first-child { // Form field
@@ -746,7 +749,7 @@ form.profile-page {
 		overflow-y: scroll;
 		padding-top: 2px;
 		width: 300px;
-		span.block {
+		span {
 			display: block;
 		}
 	}
@@ -761,7 +764,7 @@ form.profile-page {
 		}
 		li:last-child {
 			padding-top: 5px;
-			span.smaller-font-size {
+			span {
 				font-size: 12px;
 			}
 		}

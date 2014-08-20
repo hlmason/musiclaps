@@ -58,7 +58,7 @@
 						<span aria-hidden="true">&times;</span>
 						<span class="sr-only">Close</span>
 					</button>
-					<h3 class="modal-title select-song-heading" id="selectSongLabel"><span class="normal"></span>Select a song <span class="normal">from our sample music</span></h3>
+					<h3 class="modal-title select-song-heading" id="selectSongLabel">Select a song <span>from our sample music</span></h3>
 				</div>
 				<div class="modal-body">
 					<ul>

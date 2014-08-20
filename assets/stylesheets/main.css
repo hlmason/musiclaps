@@ -2880,7 +2880,7 @@ nav .navbar-collapse {
       text-shadow: 0 1px 0 #fff; }
       .modal-content .modal-header button.close:hover, .modal-content .modal-header button.close:focus {
         color: #52C4FF; }
-    .modal-content .modal-header span.normal {
+    .modal-content .modal-header span {
       font-weight: normal; }
   .modal-content h2.register-modal-heading, .modal-content h2.registration-full-modal-heading,
   .modal-content h2.registration-express-modal-heading, .modal-content h2.login-modal-heading {
@@ -2950,6 +2950,8 @@ nav .navbar-collapse {
     display: block; }
   .modal-content #checkbox input {
     width: 12px; }
+  .modal-content #checkbox {
+    font-size: 12px; }
   .modal-content #login-modal-body input:first-child {
     margin-top: 15px; }
   .modal-content #login-modal-body input {
@@ -3320,7 +3322,7 @@ form.profile-page #genre, form.profile-page #skills {
   overflow-y: scroll;
   padding-top: 2px;
   width: 300px; }
-  form.profile-page #genre span.block, form.profile-page #skills span.block {
+  form.profile-page #genre span, form.profile-page #skills span {
     display: block; }
 form.profile-page img {
   height: 120px;
@@ -3331,7 +3333,7 @@ form.profile-page #upload-avatar {
     padding-bottom: 5px; }
   form.profile-page #upload-avatar li:last-child {
     padding-top: 5px; }
-    form.profile-page #upload-avatar li:last-child span.smaller-font-size {
+    form.profile-page #upload-avatar li:last-child span {
       font-size: 12px; }
 form.profile-page input#choose_file, form.profile-page input#save_profile {
   background-color: #e7e7e7;
