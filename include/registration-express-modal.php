@@ -8,7 +8,7 @@
 					<span aria-hidden="true">&times;</span>
 					<span class="sr-only">Close</span>
 				</button>
-				<h2 class="modal-title registration-express-modal-heading" id="registrationExpressLabel">Express Registration</h2>
+				<h2 class="modal-title registration-express-modal-heading" id="registrationExpressLabel">Email Registration</h2>
 			</div>
 			
 			<div class="modal-body" id="registration-express-modal-body">
@@ -32,7 +32,7 @@
 				</form>
 			</div>
 			
-			<div class="modal-footer" id="registration-express-modal-footer">
+			<div class="modal-footer registration-modal-footer">
 				<form>
 					<input type="submit" value="Register">
 				</form>

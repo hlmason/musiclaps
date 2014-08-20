@@ -57,8 +57,8 @@
 
 						<div class="row col-xs-10">
 							<form class="profile-page">
-								<div id="birthdate-container">
-									<label for="birthdate">Birth Date</label>
+								<div>
+									<label id="birthdate-label" for="birthdate">Birth Date</label>
 									<input id="birthdate" type="date" name="birthdate">
 								</div>
 							</form>

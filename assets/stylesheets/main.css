@@ -2775,13 +2775,13 @@ a:hover, a:focus {
 a:hover {
   cursor: pointer; }
 
-#register-or-login-modal-body input, .modal-footer:not(#registration-full-modal-footer) input, .navbar-right input {
+#register-or-login-modal-body input, .modal-footer:not(.registration-modal-footer) input, .navbar-right input {
   -moz-border-radius: 10px;
   border-radius: 10px;
   background-color: #e7e7e7;
   border: 1px solid #cecece;
   padding: 5px 10px 5px 10px; }
-  #register-or-login-modal-body input:hover, #register-or-login-modal-body input:focus, .modal-footer:not(#registration-full-modal-footer) input:hover, .modal-footer:not(#registration-full-modal-footer) input:focus, .navbar-right input:hover, .navbar-right input:focus {
+  #register-or-login-modal-body input:hover, #register-or-login-modal-body input:focus, .modal-footer:not(.registration-modal-footer) input:hover, .modal-footer:not(.registration-modal-footer) input:focus, .navbar-right input:hover, .navbar-right input:focus {
     background-color: #d9d9d9; }
 
 span.musiclaps-blue {
@@ -2922,19 +2922,34 @@ nav .navbar-collapse {
     display: none; }
   .modal-content #registration-full-modal-body, .modal-content #registration-express-modal-body, .modal-content #login-modal-body {
     padding-top: 0; }
-    .modal-content #registration-full-modal-body input, .modal-content #registration-express-modal-body input, .modal-content #login-modal-body input {
-      -moz-border-radius: 5px;
-      border-radius: 5px;
-      border: 1px solid #cecece;
-      padding-bottom: 4px;
-      padding-left: 8px;
-      padding-top: 4px;
-      width: 90%; }
+  .modal-content #registration-full-modal-body input, .modal-content #registration-express-modal-body input {
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-top: 4px;
+    width: 100%; }
+  .modal-content #login-modal-body input {
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-top: 4px;
+    width: 90%; }
   .modal-content #registration-full-modal-body label, .modal-content #registration-express-modal-body label {
     margin-bottom: 2px;
     margin-top: 10px; }
   .modal-content #registration-full-modal-body input, .modal-content #registration-express-modal-body input {
     margin-top: 0; }
+  .modal-content label#email-label, .modal-content label#birthdate-label, .modal-content label#gender-label, .modal-content label#zip-label, .modal-content #captcha-img, .modal-content #checkbox {
+    margin-bottom: 2px;
+    margin-top: 15px; }
+  .modal-content #captcha-img {
+    display: block; }
+  .modal-content #checkbox input {
+    width: 12px; }
   .modal-content #login-modal-body input:first-child {
     margin-top: 15px; }
   .modal-content #login-modal-body input {
@@ -2952,9 +2967,9 @@ nav .navbar-collapse {
     .modal-content .modal-footer a:hover, .modal-content .modal-footer a:focus {
       color: #444444;
       cursor: pointer; }
-  .modal-content #register-modal-footer, .modal-content #registration-full-modal-footer, .modal-content #registration-express-modal-footer {
+  .modal-content #register-modal-footer, .modal-content .registration-modal-footer {
     border-top: none; }
-  .modal-content #registration-full-modal-footer input {
+  .modal-content .registration-modal-footer input {
     -moz-border-radius: 10px;
     border-radius: 10px;
     background-color: #38aaff;
@@ -2964,7 +2979,7 @@ nav .navbar-collapse {
     color: white;
     text-transform: uppercase;
     width: 100%; }
-    .modal-content #registration-full-modal-footer input:hover, .modal-content #registration-full-modal-footer input:focus {
+    .modal-content .registration-modal-footer input:hover, .modal-content .registration-modal-footer input:focus {
       background-color: #45b7ff; }
 
 /* ===================================
@@ -3291,7 +3306,7 @@ form.profile-page #birthdate, form.profile-page #website_url, form.profile-page 
   padding-top: 4px;
   width: 100%;
   margin-top: 0; }
-form.profile-page #birthdate-container label {
+form.profile-page label#birthdate-label {
   margin-top: 0; }
 form.profile-page #genre, form.profile-page #skills {
   -moz-border-radius: 5px;

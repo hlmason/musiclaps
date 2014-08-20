@@ -118,7 +118,7 @@ a:hover {
 	cursor: pointer;
 }
 
-#register-or-login-modal-body, .modal-footer:not(#registration-full-modal-footer), .navbar-right {
+#register-or-login-modal-body, .modal-footer:not(.registration-modal-footer), .navbar-right {
 	input { // Modal buttons and nav "Log out" button
 		@include border-radius(10px);
 		@include submit($musiclaps-light-gray, 5px, 10px, 5px, 10px, #d9d9d9);
@@ -303,9 +303,14 @@ nav {
 	}
 	#registration-full-modal-body, #registration-express-modal-body, #login-modal-body {
 		padding-top: 0;
+	}
+	#registration-full-modal-body, #registration-express-modal-body {
 		input { // Form fields
-			@include form-fields-input(90%);
+			@include form-fields-input(100%);
 		}
+	}
+	#login-modal-body input { // Form fields
+		@include form-fields-input(90%);
 	}
 	#registration-full-modal-body, #registration-express-modal-body {
 		label {
@@ -314,6 +319,15 @@ nav {
 		input { // Form fields
 			margin-top: 0;
 		}
+	}
+	label#email-label, label#birthdate-label, label#gender-label, label#zip-label, #captcha-img, #checkbox {
+		@include form-fields-label(15px);
+	}
+	#captcha-img {
+		display: block;
+	}
+	#checkbox input {
+		width: 12px;
 	}
 	#login-modal-body {
 		input:first-child { // Form field
@@ -345,10 +359,10 @@ nav {
 			}
 		}
 	}
-	#register-modal-footer, #registration-full-modal-footer, #registration-express-modal-footer {
+	#register-modal-footer, .registration-modal-footer {
 		border-top: none;
 	}
-	#registration-full-modal-footer input { // "Register" button
+	.registration-modal-footer input { // "Register" button
 		@include border-radius(10px);
 		@include submit($musiclaps-blue, 5px, 10px, 5px, 10px, #45B7FF);
 		border: 1px solid #1F91E6;
@@ -723,7 +737,7 @@ form.profile-page {
 		@include form-fields-input(100%);
 		margin-top: 0;
 	}
-	#birthdate-container label {
+	label#birthdate-label {
 		margin-top: 0;
 	}
 	#genre, #skills {

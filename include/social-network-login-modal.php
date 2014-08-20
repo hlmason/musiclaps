@@ -10,7 +10,6 @@
 					</ul>
 				</div>
 
-				<!-- TODO: Make this look better at viewport widths closer to 767px  -->
 				<!-- Visible at viewport widths <= 767px -->
 				<div class="modal-body" id="sn-login-modal-body-sm">
 					<ul>

@@ -13,7 +13,7 @@
 			<div class="modal-body" id="registration-full-modal-body">
 				<form>
 					<div>
-						<label for="email"><span class="musiclaps-blue">*</span> Email Address</label>
+						<label id="email-label" for="email"><span class="musiclaps-blue">*</span> Email Address</label>
 						<input id="email" type="email" name="email">
 					</div>
 					<div>
@@ -29,7 +29,7 @@
 						<input id="confirm_password" type="password" name="confirm_password">
 					</div>
 					<div>
-						<label for="birthdate"><span class="musiclaps-blue">*</span> Birth Date</label>
+						<label id="birthdate-label" for="birthdate"><span class="musiclaps-blue">*</span> Birth Date</label>
 						<select class="birthdate">
 							<option value=""></option>
 							<option value="jan">Jan</option>
@@ -95,7 +95,7 @@
 						</select>
 					</div>
 					<div>
-						<label for="gender"><span class="musiclaps-blue">*</span> Gender</label>
+						<label id="gender-label" for="gender"><span class="musiclaps-blue">*</span> Gender</label>
 						<select>
 							<option value=""></option>
 							<option value="male">Male</option>
@@ -104,13 +104,21 @@
 						</select>
 					</div>
 					<div>
-						<label for="zip"><span class="musiclaps-blue">*</span> Zip Code</label>
+						<label id="zip-label" for="zip"><span class="musiclaps-blue">*</span> Zip Code</label>
 						<input id="zip" type="text" name="zip">
+					</div>
+					<div>
+						<img id="captcha-img" src="<?php echo BASE_URL; ?>assets/images/captcha.png" alt="Captcha"><!-- Hard-coded placeholder -->
+						<label for="captcha"><span class="musiclaps-blue">*</span> Please type in the text</label>
+						<input id="captcha" type="text" name="captcha">
+					</div>
+					<div id="checkbox">
+						<input type="checkbox" name="agree" value="agree">&nbsp; I agree to the Musiclaps <a href="<?php echo BASE_URL; ?>terms/" target="blank">Terms of Service</a> and <a href="<?php echo BASE_URL; ?>privacy/" target="blank">Privacy Policy</a>.
 					</div>
 				</form>
 			</div>
 			
-			<div class="modal-footer" id="registration-full-modal-footer">
+			<div class="modal-footer registration-modal-footer">
 				<form>
 					<input type="submit" value="Register">
 				</form>
