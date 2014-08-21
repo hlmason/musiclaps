@@ -2787,8 +2787,8 @@ a:hover {
 label#birth-date-label-modal, label#gender-label, label#birth-date-label-profile {
   margin-right: 2px; }
 
-span.musiclaps-blue {
-  color: #38aaff; }
+.musiclaps-blue {
+  color: #38aaff !important; }
 
 span.bold {
   font-weight: bold; }
@@ -2867,8 +2867,12 @@ nav .navbar-collapse {
   #nav-registered-user li {
     padding: 10px 16px; }
     #nav-registered-user li a {
+      -moz-border-radius: 10px;
+      border-radius: 10px;
       background-color: #F4F4F4;
       font-size: 12px; }
+      #nav-registered-user li a.active {
+        background-color: #444444 !important; }
 
 /* ===================================
     Modal
@@ -3262,6 +3266,7 @@ h1.landing-page {
     background-color: green;
     border: none;
     color: white;
+    font-size: 14px;
     letter-spacing: 0.5px;
     padding: 10px 20px; }
     #recording-instructions #save-container button.save:hover, #recording-instructions #save-container button.save:focus {
@@ -3274,7 +3279,7 @@ h1.landing-page {
   margin-top: 15px; }
 
 #recording-player-buttons {
-  margin-bottom: 15px; }
+  margin-bottom: 8px; }
 
 #avatar-n-edit-profile #avatar {
   box-shadow: 10px 10px 5px #444444;
@@ -3284,12 +3289,13 @@ h1.landing-page {
   font-weight: normal;
   margin-top: 0; }
 #avatar-n-edit-profile #edit-save-profile {
-  margin-top: 8px;
   text-align: center; }
+  #avatar-n-edit-profile #edit-save-profile h4.edit-profile, #avatar-n-edit-profile #edit-save-profile h4.save-profile, #avatar-n-edit-profile #edit-save-profile h4.dont-save-profile {
+    margin-top: 8px; }
+  #avatar-n-edit-profile #edit-save-profile h4.save-profile, #avatar-n-edit-profile #edit-save-profile h4.dont-save-profile {
+    display: inline-block; }
   #avatar-n-edit-profile #edit-save-profile .glyphicon, #avatar-n-edit-profile #edit-save-profile span#not-a-link {
     color: #444444; }
-#avatar-n-edit-profile h4.save-profile, #avatar-n-edit-profile h4.dont-save-profile {
-  display: inline-block; }
 
 #about-me {
   border-top: 1px solid #cecece;
@@ -3329,19 +3335,7 @@ form.profile-page #website_url, form.profile-page #website_title, form.profile-p
   padding-top: 4px;
   width: 100%; }
 form.profile-page #genre, form.profile-page #skills {
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid #cecece;
-  padding-bottom: 4px;
-  padding-left: 8px;
-  padding-top: 4px;
-  width: 12px;
-  height: 106px;
-  overflow-y: scroll;
-  padding-top: 2px;
-  width: 295px; }
-  form.profile-page #genre span, form.profile-page #skills span {
-    display: block; }
+  height: 106px; }
 form.profile-page img {
   height: 120px;
   min-width: 120px; }
@@ -3366,16 +3360,34 @@ form.profile-page input#save_profile {
   margin-top: -10px;
   margin-left: 290px; }
 
+#genre, #skills, #instruments {
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-top: 4px;
+  width: 12px;
+  overflow-y: scroll;
+  padding-top: 2px;
+  width: 295px; }
+  #genre span, #skills span, #instruments span {
+    display: block; }
+
 button.navigate {
   -moz-border-radius: 10px;
   border-radius: 10px;
   background-color: #444444;
   border: none;
   color: white;
+  font-size: 12px;
   letter-spacing: 0.5px;
   padding: 5px 10px; }
-  button.navigate:hover, button.navigate:focus {
-    background-color: #1A9A1A; }
+  button.navigate:last-child {
+    margin-left: 5px; }
+
+.button-navigate-hover:hover, .button-navigate-hover:focus {
+  background-color: #555; }
 
 #recording-player {
   background-color: #444444;

@@ -44,8 +44,8 @@ $modal-border: 5px solid $musiclaps-light-gray;
 	margin-top: $margin-top;
 }
 
-@mixin submit($color, $padding-top, $padding-right, $padding-bottom, $padding-left, $hover-color) {
-	background-color: $color;
+@mixin submit($background-color, $padding-top, $padding-right, $padding-bottom, $padding-left, $hover-color) {
+	background-color: $background-color;
 	border: $nav-border;
 	padding: $padding-top $padding-right $padding-bottom $padding-left;
 	&:hover, &:focus {
@@ -84,6 +84,16 @@ $modal-border: 5px solid $musiclaps-light-gray;
 			color: $musiclaps-dark-gray !important;
 		}
 	}
+}
+
+@mixin button ($background-color, $font-size, $padding) {
+	@include border-radius(10px);
+	background-color: $background-color;
+	border: none;
+	color: white;
+	font-size: $font-size;
+	letter-spacing: 0.5px;
+	padding: $padding;
 }
 
 /* ===================================
@@ -129,8 +139,8 @@ label#birth-date-label-modal, label#gender-label, label#birth-date-label-profile
 	margin-right: 2px;
 }
 
-span.musiclaps-blue {
-	color: $musiclaps-blue;
+.musiclaps-blue {
+	color: $musiclaps-blue !important;
 }
 
 span.bold {
@@ -231,8 +241,12 @@ nav {
 		li {
 			padding: 10px 16px;
 			a {
+				@include border-radius(10px);
 				background-color: #F4F4F4;
 				font-size: 12px;
+				&.active {
+					background-color: $musiclaps-dark-gray !important;
+				}
 			}
 		}
 	}
@@ -683,12 +697,7 @@ h1.landing-page {
 		margin-top: 50px;
 		text-align: center;
 		button.save {  // "Save Recording" button
-			@include border-radius(10px);
-			background-color: green;
-			border: none;
-			color: white;
-			letter-spacing: 0.5px;
-			padding: 10px 20px;
+			@include button(green, 14px, 10px 20px);
 			&:hover, &:focus {
 				background-color: #1A9A1A;
 			}
@@ -704,7 +713,7 @@ h1.landing-page {
 }
 
 #recording-player-buttons {
-	margin-bottom: 15px;
+	margin-bottom: 8px;
 }
 
 #avatar-n-edit-profile {
@@ -718,14 +727,16 @@ h1.landing-page {
 		margin-top: 0;
 	}
 	#edit-save-profile {
-		margin-top: 8px;
 		text-align: center;
+		h4.edit-profile, h4.save-profile, h4.dont-save-profile {
+			margin-top: 8px;
+		}
+		h4.save-profile, h4.dont-save-profile {
+			display: inline-block;
+		}
 		.glyphicon, span#not-a-link {
 			color: $musiclaps-dark-gray;
 		}
-	}
-	h4.save-profile, h4.dont-save-profile {
-		display: inline-block;
 	}
 }
 
@@ -773,14 +784,7 @@ form.profile-page {
 		@include form-fields-input(100%);
 	}
 	#genre, #skills {
-		@include form-fields-input(12px);
 		height: 106px;
-		overflow-y: scroll;
-		padding-top: 2px;
-		width: 295px;
-		span {
-			display: block; // Makes checkboxes stack
-		}
 	}
 	img { // Upload image
 		height: 120px;
@@ -809,15 +813,26 @@ form.profile-page {
 	}
 }
 
+#genre, #skills, #instruments {
+	@include form-fields-input(12px);
+	overflow-y: scroll;
+	padding-top: 2px;
+	width: 295px;
+	span {
+		display: block; // Makes options stack
+	}
+}
+
 button.navigate {  // "Recording Player" and "Upload MP3" buttons
-	@include border-radius(10px);
-	background-color: $musiclaps-dark-gray;
-	border: none;
-	color: white;
-	letter-spacing: 0.5px;
-	padding: 5px 10px;
+	@include button($musiclaps-dark-gray, 12px, 5px 10px);
+	&:last-child {
+		margin-left: 5px;	
+	}
+}
+
+.button-navigate-hover {
 	&:hover, &:focus {
-		background-color: #1A9A1A;
+		background-color: #555;
 	}
 }
 
