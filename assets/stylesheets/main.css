@@ -3270,22 +3270,23 @@ h1.landing-page {
 /* ===================================
     Profile Page
 =================================== */
-#avatar-n-edit-profile {
+#avatar-n-edit-profile, #recording-player-buttons {
   margin-top: 15px; }
-  #avatar-n-edit-profile #avatar {
-    box-shadow: 10px 10px 5px #444444;
-    height: 100px;
-    max-width: 100px; }
-  #avatar-n-edit-profile h2#user-id {
-    font-weight: normal;
-    margin-top: 0; }
-  #avatar-n-edit-profile h4.edit-profile, #avatar-n-edit-profile h4.save-profile, #avatar-n-edit-profile h4.dont-save-profile {
-    margin-top: 8px;
-    text-align: center; }
-    #avatar-n-edit-profile h4.edit-profile .glyphicon, #avatar-n-edit-profile h4.edit-profile span#not-a-link, #avatar-n-edit-profile h4.save-profile .glyphicon, #avatar-n-edit-profile h4.save-profile span#not-a-link, #avatar-n-edit-profile h4.dont-save-profile .glyphicon, #avatar-n-edit-profile h4.dont-save-profile span#not-a-link {
-      color: #444444; }
-  #avatar-n-edit-profile h4.save-profile, #avatar-n-edit-profile h4.dont-save-profile {
-    display: inline-block; }
+
+#avatar-n-edit-profile #avatar {
+  box-shadow: 10px 10px 5px #444444;
+  height: 100px;
+  max-width: 100px; }
+#avatar-n-edit-profile h2#user-id {
+  font-weight: normal;
+  margin-top: 0; }
+#avatar-n-edit-profile h4.edit-profile, #avatar-n-edit-profile h4.save-profile, #avatar-n-edit-profile h4.dont-save-profile {
+  margin-top: 8px;
+  text-align: center; }
+  #avatar-n-edit-profile h4.edit-profile .glyphicon, #avatar-n-edit-profile h4.edit-profile span#not-a-link, #avatar-n-edit-profile h4.save-profile .glyphicon, #avatar-n-edit-profile h4.save-profile span#not-a-link, #avatar-n-edit-profile h4.dont-save-profile .glyphicon, #avatar-n-edit-profile h4.dont-save-profile span#not-a-link {
+    color: #444444; }
+#avatar-n-edit-profile h4.save-profile, #avatar-n-edit-profile h4.dont-save-profile {
+  display: inline-block; }
 
 #about-me {
   border-top: 1px solid #cecece;
@@ -3365,7 +3366,7 @@ form.profile-page input#save_profile {
 #profile-right {
   background-color: #e7e7e7;
   height: 944px;
-  width: 127.25%; }
+  width: 137.5%; }
   #profile-right .row:first-child {
     text-align: center; }
   #profile-right .row:not(.first-row) {
@@ -3390,6 +3391,11 @@ form.profile-page input#save_profile {
     background-color: lightblue;
     height: 160px;
     width: 100%; }
+
+#recording-player {
+  background-color: #444444;
+  height: 352px;
+  width: 606px; }
 
 .db-error-message {
   color: #38aaff;
@@ -3471,7 +3477,7 @@ footer {
 
   #profile-right {
     margin-top: -1px;
-    width: 126.5%; } }
+    width: 136.75%; } }
 @media only screen and (max-width: 1117px) {
   #stage-inner sup:first-child, #stage-inner sup:nth-child(3) {
     display: none; }
@@ -3496,7 +3502,7 @@ footer {
     display: none; }
 
   #profile-right {
-    width: 135.75%; }
+    width: 150%; }
 
   footer .navbar-brand {
     position: absolute; }

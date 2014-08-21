@@ -700,8 +700,11 @@ h1.landing-page {
 /* ===================================
     Profile Page
 =================================== */
-#avatar-n-edit-profile {
+#avatar-n-edit-profile, #recording-player-buttons {
 	margin-top: 15px;
+}
+
+#avatar-n-edit-profile {
 	#avatar {
 		box-shadow: 10px 10px 5px $musiclaps-dark-gray;
 		height: 100px;
@@ -806,7 +809,7 @@ form.profile-page {
 #profile-right {
 	background-color: $musiclaps-light-gray;
 	height: 944px;
-	width: 127.25%;
+	width: 137.5%;
 	.row:first-child { // listeners/claps
 		text-align: center;
 	}
@@ -840,6 +843,12 @@ form.profile-page {
 		height: 160px;
 		width: 100%;
 	}
+}
+
+#recording-player {
+	background-color: $musiclaps-dark-gray;
+	height: 352px;
+	width: 606px;
 }
 
 .db-error-message {
@@ -926,7 +935,7 @@ footer {
 	.wmuSliderNext { right: 0; }
 	#profile-right { 
 		margin-top: -1px; 
-		width: 126.5%; 
+		width: 136.75%; 
 	}
 }
 
@@ -968,7 +977,7 @@ footer {
 	#technology, #backstage, #music-ed, #contests-and-auditions {
 		img { display: none; }
 	}
-	#profile-right { width: 135.75%; }
+	#profile-right { width: 150%; }
 	footer {
 		.navbar-brand { position: absolute; } 
 		.navbar-left, .navbar-right { margin-top: 50px; }
@@ -1066,7 +1075,10 @@ footer {
 			margin-top: 8px;
 		}
 	}
-	#profile-right { margin-top: 20px; width: 100%; }
+	#profile-right { 
+		margin-top: 20px; 
+		width: 100%; 
+	}
 	footer {
 		.navbar-left {
 			margin-left: 5px;

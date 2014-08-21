@@ -12,7 +12,7 @@
 		
 			<div class="row col-lg-10 col-lg-offset-1">				
 					
-				<div class="row col-xs-12 col-sm-8">
+				<div class="row col-xs-12 col-sm-9">
 
 					<div class="row" id="avatar-n-edit-profile">	
 						<div class="col-xs-4 col-sm-3">
@@ -195,7 +195,7 @@
 					</section>
 
 				</div>		
-				<div class="row col-xs-12 col-sm-4">
+				<div class="row col-xs-12 col-sm-3">
 					<div id="profile-right">
 						
 						<div class="row first-row">
