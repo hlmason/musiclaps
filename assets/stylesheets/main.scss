@@ -683,7 +683,7 @@ h1.landing-page {
 		margin-top: 50px;
 		text-align: center;
 	}
-	a.save {  // "Save" button
+	button.save {  // "Save Recording" button
 		@include border-radius(10px);
 		background-color: green;
 		border: none;

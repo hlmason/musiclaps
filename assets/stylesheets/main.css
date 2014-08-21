@@ -3256,7 +3256,7 @@ h1.landing-page {
 #recording-instructions #submit-container {
   margin-top: 50px;
   text-align: center; }
-#recording-instructions a.save {
+#recording-instructions button.save {
   -moz-border-radius: 10px;
   border-radius: 10px;
   background-color: green;
@@ -3264,7 +3264,7 @@ h1.landing-page {
   color: white;
   letter-spacing: 0.5px;
   padding: 10px 20px; }
-  #recording-instructions a.save:hover, #recording-instructions a.save:focus {
+  #recording-instructions button.save:hover, #recording-instructions button.save:focus {
     background-color: #1A9A1A; }
 
 /* ===================================
