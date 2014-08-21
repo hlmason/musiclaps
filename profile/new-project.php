@@ -17,13 +17,14 @@
 					<div class="row" id="recording-player-buttons">	
 						<div class="col-xs-12">
 							<button class="navigate" type="button">Recording Player</button>
-							<button class="navigate" id="registerOrLoginJS" type="button">Upload MP3</button>
+							<button class="navigate" type="button">Upload MP3</button>
 						</div>
 					</div>
 						
 					<div class="row">
-						<div class="col-xs-12"></div>
-						<div id="recording-player"></div><!-- Placeholder -->
+						<div class="col-xs-12">
+							<div id="recording-player"></div><!-- Placeholder -->
+						</div>
 					</div>
 
 				</div>

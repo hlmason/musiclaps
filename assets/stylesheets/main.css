@@ -3267,11 +3267,14 @@ h1.landing-page {
     #recording-instructions #save-container button.save:hover, #recording-instructions #save-container button.save:focus {
       background-color: #1A9A1A; }
 
-/* ===================================
-    Profile Page
-=================================== */
+/* ====================================================================================
+    Profile, New Project, Projects, Collaborations, YouTube, Messages, and Groups Pages
+==================================================================================== */
 #avatar-n-edit-profile, #recording-player-buttons {
   margin-top: 15px; }
+
+#recording-player-buttons {
+  margin-bottom: 15px; }
 
 #avatar-n-edit-profile #avatar {
   box-shadow: 10px 10px 5px #444444;
@@ -3280,10 +3283,10 @@ h1.landing-page {
 #avatar-n-edit-profile h2#user-id {
   font-weight: normal;
   margin-top: 0; }
-#avatar-n-edit-profile h4.edit-profile, #avatar-n-edit-profile h4.save-profile, #avatar-n-edit-profile h4.dont-save-profile {
+#avatar-n-edit-profile #edit-save-profile {
   margin-top: 8px;
   text-align: center; }
-  #avatar-n-edit-profile h4.edit-profile .glyphicon, #avatar-n-edit-profile h4.edit-profile span#not-a-link, #avatar-n-edit-profile h4.save-profile .glyphicon, #avatar-n-edit-profile h4.save-profile span#not-a-link, #avatar-n-edit-profile h4.dont-save-profile .glyphicon, #avatar-n-edit-profile h4.dont-save-profile span#not-a-link {
+  #avatar-n-edit-profile #edit-save-profile .glyphicon, #avatar-n-edit-profile #edit-save-profile span#not-a-link {
     color: #444444; }
 #avatar-n-edit-profile h4.save-profile, #avatar-n-edit-profile h4.dont-save-profile {
   display: inline-block; }
@@ -3363,6 +3366,22 @@ form.profile-page input#save_profile {
   margin-top: -10px;
   margin-left: 290px; }
 
+button.navigate {
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #444444;
+  border: none;
+  color: white;
+  letter-spacing: 0.5px;
+  padding: 5px 10px; }
+  button.navigate:hover, button.navigate:focus {
+    background-color: #1A9A1A; }
+
+#recording-player {
+  background-color: #444444;
+  height: 352px;
+  width: 606px; }
+
 #profile-right {
   background-color: #e7e7e7;
   height: 944px;
@@ -3391,11 +3410,6 @@ form.profile-page input#save_profile {
     background-color: lightblue;
     height: 160px;
     width: 100%; }
-
-#recording-player {
-  background-color: #444444;
-  height: 352px;
-  width: 606px; }
 
 .db-error-message {
   color: #38aaff;
@@ -3598,10 +3612,7 @@ footer {
     font-size: 28px;
     margin-top: 0; }
 
-  h2#user-id, h4.edit-profile, h4.save-profile, h4.dont-save-profile {
-    text-align: left; }
-
-  h4.edit-profile {
+  h2#user-id, #edit-save-profile {
     text-align: left !important; }
 
   #about-me {

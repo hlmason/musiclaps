@@ -694,14 +694,17 @@ h1.landing-page {
 			}
 		}
 	}
-
 }
 
-/* ===================================
-    Profile Page
-=================================== */
+/* ====================================================================================
+    Profile, New Project, Projects, Collaborations, YouTube, Messages, and Groups Pages
+==================================================================================== */
 #avatar-n-edit-profile, #recording-player-buttons {
 	margin-top: 15px;
+}
+
+#recording-player-buttons {
+	margin-bottom: 15px;
 }
 
 #avatar-n-edit-profile {
@@ -714,7 +717,7 @@ h1.landing-page {
 		font-weight: normal;
 		margin-top: 0;
 	}
-	h4.edit-profile, h4.save-profile, h4.dont-save-profile {
+	#edit-save-profile {
 		margin-top: 8px;
 		text-align: center;
 		.glyphicon, span#not-a-link {
@@ -806,6 +809,24 @@ form.profile-page {
 	}
 }
 
+button.navigate {  // "Recording Player" and "Upload MP3" buttons
+	@include border-radius(10px);
+	background-color: $musiclaps-dark-gray;
+	border: none;
+	color: white;
+	letter-spacing: 0.5px;
+	padding: 5px 10px;
+	&:hover, &:focus {
+		background-color: #1A9A1A;
+	}
+}
+
+#recording-player {
+	background-color: $musiclaps-dark-gray;
+	height: 352px;
+	width: 606px;
+}
+
 #profile-right {
 	background-color: $musiclaps-light-gray;
 	height: 944px;
@@ -843,12 +864,6 @@ form.profile-page {
 		height: 160px;
 		width: 100%;
 	}
-}
-
-#recording-player {
-	background-color: $musiclaps-dark-gray;
-	height: 352px;
-	width: 606px;
 }
 
 .db-error-message {
@@ -1064,8 +1079,7 @@ footer {
 			margin-top: 0;
 		}
 	}
-	h2#user-id, h4.edit-profile, h4.save-profile, h4.dont-save-profile { text-align: left; }
-	h4.edit-profile { text-align: left !important; }
+	h2#user-id, #edit-save-profile { text-align: left !important; }
 	#about-me {
 		margin-left: 5px;
 		margin-top: 15px;

@@ -21,7 +21,7 @@
 						<div class="col-xs-8 col-sm-4">
 							<h2 id="user-id">$userid</h2><!-- Hard-coded placeholder -->
 						</div>
-						<div class="col-xs-8 col-sm-5">
+						<div class="col-xs-8 col-sm-5" id="edit-save-profile">
 							<a><h4 class="edit-profile" id="editProfile"><span class="glyphicon glyphicon-edit"></span>&nbsp; Edit Profile</h4></a>
 							<a><h4 class="save-profile" id="saveProfile"><span class="glyphicon glyphicon-save"></span> Save &nbsp;&nbsp;<span id="not-a-link">|</span>&nbsp;&nbsp; </h4></a>
 							<a><h4 class="dont-save-profile" id="dontSaveProfile">Don't Save &nbsp;<span class="glyphicon glyphicon-remove-circle"></span></h4></a>
