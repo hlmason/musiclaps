@@ -4,8 +4,9 @@ $(document).ready(function() {
 	var editProfile = $('#editProfile');
 	var saveProfile = $('#saveProfile');
 	var dontSaveProfile = $('#dontSaveProfile');
-	var uploadMP3 = $('#uploadMP3');
+	var uploadMP3Button = $('#uploadMP3Button');
 	var uploadMP3Container = $('#uploadMP3Container');
+	var recordingPlayerButton = $('#recordingPlayerButton');
 	var recordingPlayer = $('#recordingPlayer');
 
 	myProfile.hide();
@@ -27,16 +28,18 @@ $(document).ready(function() {
 		myProfile.fadeOut('fast');
 	});
 
-	$(uploadMP3).on('click', function() {
-		recordingPlayer.removeClass('musiclaps-blue').addClass('button-navigate-hover');
-		uploadMP3.removeClass('button-navigate-hover').addClass('musiclaps-blue');
+	$(uploadMP3Button).on('click', function() {
+		recordingPlayerButton.removeClass('musiclaps-blue').addClass('button-navigate-hover');
+		uploadMP3Button.removeClass('button-navigate-hover').addClass('musiclaps-blue');
+		recordingPlayer.hide();
 		uploadMP3Container.fadeIn('fast');
 	});
 
-	$(recordingPlayer).on('click', function() {
-		uploadMP3.removeClass('musiclaps-blue').addClass('button-navigate-hover');
-		recordingPlayer.removeClass('button-navigate-hover').addClass('musiclaps-blue');
+	$(recordingPlayerButton).on('click', function() {
+		uploadMP3Button.removeClass('musiclaps-blue').addClass('button-navigate-hover');
+		recordingPlayerButton.removeClass('button-navigate-hover').addClass('musiclaps-blue');
 		uploadMP3Container.hide();
+		recordingPlayer.fadeIn('fast');
 	});
 
 });

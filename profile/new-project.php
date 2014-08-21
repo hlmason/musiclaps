@@ -16,13 +16,13 @@
 
 					<div class="row" id="recording-player-buttons">	
 						<div class="col-xs-12">
-							<button class="navigate musiclaps-blue" id="recordingPlayer" type="button">Recording Player</button>
-							<button class="navigate button-navigate-hover" id="uploadMP3" type="button">Upload MP3</button>
+							<button class="navigate musiclaps-blue" id="recordingPlayerButton" type="button">Recording Player</button>
+							<button class="navigate button-navigate-hover" id="uploadMP3Button" type="button">Upload MP3</button>
 						</div>
 					</div>
 					
 					<!-- Recording Player -->
-					<div class="row">
+					<div class="row" id="recordingPlayer">
 						<div class="col-xs-12">
 							<div id="recording-player"></div><!-- Placeholder -->
 						</div>
