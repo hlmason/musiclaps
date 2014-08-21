@@ -3253,19 +3253,19 @@ h1.landing-page {
   margin-top: 45px; }
 #recording-instructions #recording-area-img {
   margin-top: 22px; }
-#recording-instructions #submit-container {
+#recording-instructions #save-container {
   margin-top: 50px;
   text-align: center; }
-#recording-instructions button.save {
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  background-color: green;
-  border: none;
-  color: white;
-  letter-spacing: 0.5px;
-  padding: 10px 20px; }
-  #recording-instructions button.save:hover, #recording-instructions button.save:focus {
-    background-color: #1A9A1A; }
+  #recording-instructions #save-container button.save {
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: green;
+    border: none;
+    color: white;
+    letter-spacing: 0.5px;
+    padding: 10px 20px; }
+    #recording-instructions #save-container button.save:hover, #recording-instructions #save-container button.save:focus {
+      background-color: #1A9A1A; }
 
 /* ===================================
     Profile Page

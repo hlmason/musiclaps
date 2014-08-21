@@ -143,7 +143,7 @@
 			</div>
 			<!-- End of Step 3 -->
 
-			<div class="container" id="submit-container">
+			<div class="container" id="save-container">
 				<button class="save" id="registerOrLoginJS" type="button">Save Recording</a>
 			</div>
 

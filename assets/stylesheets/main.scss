@@ -679,21 +679,22 @@ h1.landing-page {
 	#recording-area-img {
 		margin-top: 22px;
 	}
-	#submit-container {
+	#save-container {
 		margin-top: 50px;
 		text-align: center;
-	}
-	button.save {  // "Save Recording" button
-		@include border-radius(10px);
-		background-color: green;
-		border: none;
-		color: white;
-		letter-spacing: 0.5px;
-		padding: 10px 20px;
-		&:hover, &:focus {
-			background-color: #1A9A1A;
+		button.save {  // "Save Recording" button
+			@include border-radius(10px);
+			background-color: green;
+			border: none;
+			color: white;
+			letter-spacing: 0.5px;
+			padding: 10px 20px;
+			&:hover, &:focus {
+				background-color: #1A9A1A;
+			}
 		}
 	}
+
 }
 
 /* ===================================
