@@ -2790,8 +2790,14 @@ label#birth-date-label-modal, label#gender-label, label#birth-date-label-profile
 .musiclaps-blue {
   color: #38aaff !important; }
 
+span.block {
+  display: block; }
+
 span.bold {
   font-weight: bold; }
+
+span.normal {
+  font-weight: normal; }
 
 #facebook-icon, #google-icon {
   height: 27px;
@@ -2892,13 +2898,10 @@ nav .navbar-collapse {
       color: #38aaff;
       float: right;
       font-size: 21px;
-      font-weight: normal;
       line-height: 1;
       text-shadow: 0 1px 0 #fff; }
       .modal-content .modal-header button.close:hover, .modal-content .modal-header button.close:focus {
         color: #52C4FF; }
-    .modal-content .modal-header span {
-      font-weight: normal; }
   .modal-content h2.register-modal-heading, .modal-content h2.registration-full-modal-heading,
   .modal-content h2.registration-express-modal-heading, .modal-content h2.login-modal-heading {
     letter-spacing: 0.5px; }
@@ -2916,6 +2919,10 @@ nav .navbar-collapse {
       display: inline-block; }
       .modal-content .modal-body ul a:hover {
         color: #444444; }
+    .modal-content .modal-body#walkthrough h4 {
+      font-weight: normal;
+      margin-bottom: 10px;
+      margin-top: 0; }
     .modal-content .modal-body #rainbow-music-notes {
       margin-top: 15px;
       height: 179px;
@@ -3237,11 +3244,11 @@ h1.landing-page {
 #recording-instructions h2 {
   font-size: 18px;
   font-weight: normal; }
-  #recording-instructions h2 span {
+  #recording-instructions h2 span:not(.block) {
     font-weight: bold; }
-    #recording-instructions h2 span.red {
+    #recording-instructions h2 span:not(.block).red {
       color: red; }
-    #recording-instructions h2 span.green {
+    #recording-instructions h2 span:not(.block).green {
       color: green; }
 #recording-instructions #recording-buttons-img {
   margin-top: 15px; }
@@ -3326,7 +3333,19 @@ form.profile-page label {
   margin-top: 25px; }
 form.profile-page textarea {
   max-width: 100%; }
-form.profile-page #website_url, form.profile-page #website_title, form.profile-page #message {
+form.profile-page #birth-date-field, form.profile-page #zip, form.profile-page #website_url, form.profile-page #website_title {
+  margin-left: 5px; }
+form.profile-page #zip, form.profile-page #website_url, form.profile-page #website_title {
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-top: 4px;
+  width: 50%; }
+form.profile-page #genre, form.profile-page #skills {
+  height: 106px; }
+form.profile-page #message {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -3334,8 +3353,6 @@ form.profile-page #website_url, form.profile-page #website_title, form.profile-p
   padding-left: 8px;
   padding-top: 4px;
   width: 100%; }
-form.profile-page #genre, form.profile-page #skills {
-  height: 106px; }
 form.profile-page img {
   height: 120px;
   min-width: 120px; }
@@ -3347,18 +3364,22 @@ form.profile-page #upload-avatar {
     padding-top: 5px; }
     form.profile-page #upload-avatar li:last-child span {
       font-size: 12px; }
-form.profile-page input#choose_file, form.profile-page input#save_profile {
+form.profile-page input#save_profile {
+  border-top: 1px solid #cecece;
+  margin-top: -10px;
+  margin-left: 290px; }
+
+input#choose_file, input#save_profile,
+#choose-file-container input, #upload-project-container input {
   background-color: #e7e7e7;
   border: 1px solid #cecece;
   padding: 3px 10px 3px 10px;
   -moz-border-radius: 10px;
   border-radius: 10px; }
-  form.profile-page input#choose_file:hover, form.profile-page input#choose_file:focus, form.profile-page input#save_profile:hover, form.profile-page input#save_profile:focus {
+  input#choose_file:hover, input#choose_file:focus, input#save_profile:hover, input#save_profile:focus,
+  #choose-file-container input:hover,
+  #choose-file-container input:focus, #upload-project-container input:hover, #upload-project-container input:focus {
     background-color: #d9d9d9; }
-form.profile-page input#save_profile {
-  border-top: 1px solid #cecece;
-  margin-top: -10px;
-  margin-left: 290px; }
 
 #genre, #skills, #instruments {
   -moz-border-radius: 5px;
@@ -3386,13 +3407,51 @@ button.navigate {
   button.navigate:last-child {
     margin-left: 5px; }
 
-.button-navigate-hover:hover, .button-navigate-hover:focus {
+.button-navigate-hover-js:hover, .button-navigate-hover-js:focus {
   background-color: #555; }
 
 #recording-player {
   background-color: #444444;
   height: 352px;
   width: 606px; }
+
+section.upload-mp3-container h4, section.upload-mp3-container h5 {
+  margin-bottom: 5px;
+  margin-top: 5px; }
+section.upload-mp3-container h5, section.upload-mp3-container li {
+  font-size: 12px; }
+section.upload-mp3-container ul, section.upload-mp3-container #choose-file-container {
+  border-bottom: 1px solid #cecece;
+  padding-bottom: 10px; }
+section.upload-mp3-container ul {
+  margin-bottom: 15px; }
+  section.upload-mp3-container ul li {
+    display: inline-block; }
+    section.upload-mp3-container ul li:first-child {
+      font-weight: bold; }
+    section.upload-mp3-container ul li:not(.first-list-item) {
+      padding-left: 20px; }
+section.upload-mp3-container label#instruments-label {
+  display: block; }
+section.upload-mp3-container label#comment-label {
+  margin-top: 20px; }
+section.upload-mp3-container #comment {
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-top: 4px;
+  width: 100%;
+  margin-bottom: 20px; }
+section.upload-mp3-container #choose-file-container {
+  vertical-align: middle;
+  width: 100%; }
+  section.upload-mp3-container #choose-file-container span {
+    font-size: 12px; }
+section.upload-mp3-container #upload-project-container {
+  margin-top: 30px;
+  text-align: center; }
 
 #profile-right {
   background-color: #e7e7e7;

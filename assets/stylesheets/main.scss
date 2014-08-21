@@ -143,8 +143,16 @@ label#birth-date-label-modal, label#gender-label, label#birth-date-label-profile
 	color: $musiclaps-blue !important;
 }
 
+span.block {
+	display: block;
+}
+
 span.bold {
 	font-weight: bold;
+}
+
+span.normal {
+	font-weight: normal;
 }
 
 #facebook-icon, #google-icon {
@@ -269,15 +277,11 @@ nav {
 			color: $musiclaps-blue;
 			float: right;
 			font-size: 21px;
-			font-weight: normal;
 			line-height: 1;
 			text-shadow: 0 1px 0 #fff;
 			&:hover, &:focus {
 				color: #52C4FF;	
 			}
-		}
-		span {
-			font-weight: normal;
 		}
 	}
 	h2.register-modal-heading, h2.registration-full-modal-heading, 
@@ -301,6 +305,13 @@ nav {
 			display: inline-block;
 			a:hover { // Songs link on "Select a song" modal
 				color: $musiclaps-dark-gray;
+			}
+		}
+		&#walkthrough {
+			h4 {
+				font-weight: normal;
+				margin-bottom: 10px;
+				margin-top: 0;
 			}
 		}
 		#rainbow-music-notes {
@@ -662,7 +673,7 @@ h1.landing-page {
 	h2 {
 		font-size: 18px;
 		font-weight: normal;
-		span {
+		span:not(.block) {
 			font-weight: bold;
 			&.red {
 				color: red;
@@ -780,11 +791,17 @@ form.profile-page {
 	textarea {
 		max-width: 100%; // Prevents user from expanding textarea horizontally
 	}
-	#website_url, #website_title, #message {
-		@include form-fields-input(100%);
+	#birth-date-field, #zip, #website_url, #website_title { // Adds space btwn field and label
+		margin-left: 5px;
+	}
+	#zip, #website_url, #website_title {
+		@include form-fields-input(50%);
 	}
 	#genre, #skills {
 		height: 106px;
+	}
+	#message {
+		@include form-fields-input(100%);
 	}
 	img { // Upload image
 		height: 120px;
@@ -802,15 +819,17 @@ form.profile-page {
 			}
 		}
 	}
-	input#choose_file, input#save_profile {
-		@include submit($musiclaps-light-gray, 3px, 10px, 3px, 10px, #d9d9d9);
-		@include border-radius(10px);
-	}
 	input#save_profile {
 		border-top: $nav-border;
 		margin-top: -10px;
 		margin-left: 290px;
 	}
+}
+
+input#choose_file, input#save_profile, 
+#choose-file-container input, #upload-project-container input {
+	@include submit($musiclaps-light-gray, 3px, 10px, 3px, 10px, #d9d9d9);
+	@include border-radius(10px);
 }
 
 #genre, #skills, #instruments {
@@ -830,7 +849,7 @@ button.navigate {  // "Recording Player" and "Upload MP3" buttons
 	}
 }
 
-.button-navigate-hover {
+.button-navigate-hover-js {
 	&:hover, &:focus {
 		background-color: #555;
 	}
@@ -840,6 +859,53 @@ button.navigate {  // "Recording Player" and "Upload MP3" buttons
 	background-color: $musiclaps-dark-gray;
 	height: 352px;
 	width: 606px;
+}
+
+section.upload-mp3-container {
+	h4, h5 {
+		margin-bottom: 5px;
+		margin-top: 5px;
+	}
+	h5, li {
+		font-size: 12px;
+	}
+	ul, #choose-file-container {
+		border-bottom: $nav-border;
+		padding-bottom: 10px;
+	}
+	ul {
+		margin-bottom: 15px;
+		li {
+			display: inline-block;	
+			&:first-child {
+				font-weight: bold;
+			}
+			&:not(.first-list-item) {
+				padding-left: 20px;
+			}
+		}
+	}
+	label#instruments-label {
+		display: block;
+	}
+	label#comment-label {
+		margin-top: 20px;
+	}
+	#comment {
+		@include form-fields-input(100%);
+		margin-bottom: 20px;
+	}
+	#choose-file-container {
+		vertical-align: middle;
+		width: 100%;
+		span {
+			font-size: 12px;
+		}
+	}
+	#upload-project-container {
+		margin-top: 30px;
+		text-align: center;
+	}
 }
 
 #profile-right {

@@ -18,11 +18,11 @@
 					</button>
 					<h3 class="modal-title want-demo-heading" id="wantDemoLabel">Welcome to soundcheck !</h3>
 				</div>
-				<div class="modal-body">
-					Would you like a walkthrough?<br><br>
+				<div class="modal-body" id="walkthrough">
+					<h4>Would you like a walkthrough?<h4>
 					<form>
-						<input type="radio" name="selection" value="yes">&nbsp; <a class="yesOrNo" id="yes"><span class="bold">Yes</span> please, I'm new to this</a><br>
-						<input type="radio" name="selection" value="no">&nbsp; <a class="yesOrNo" id="no"><span class="bold">No</span> thanks, I can figure it out</a><br>
+						<span class="block"><input type="radio" name="selection" value="yes">&nbsp; <a class="yesOrNo" id="yes"><span class="bold">Yes</span> please, I'm new to this</a></span>
+						<span class="block"><input type="radio" name="selection" value="no">&nbsp; <a class="yesOrNo" id="no"><span class="bold">No</span> thanks, I can figure it out</a></span>
 					</form>
 				</div>
 			</div>
@@ -111,7 +111,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-6 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3" id="allow-flash-instructions">
-						<h2><span>2. </span><span class="green">Allow Flash</span>.<br>(so that you can record).</h2>
+						<h2><span>2. </span><span class="green">Allow Flash</span>.<span class="block">(so that you can record).</span></h2>
 					</div>
 					<div class="col-xs-6 col-sm-5 col-md-4 col-lg-3" id="allow-flash-img">
 						<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/allow-flash.png" alt="Pop-up">
@@ -147,8 +147,8 @@
 				<button class="save" id="registerOrLoginJS" type="button">Save Recording</button>
 			</div>
 
-<!-- 			<div class="container" id="submit-container">
-				<a class="save" id="registrationExpressJS">Save Recording</a>
+<!-- 			<div class="container" id="save-container">
+				<button class="save" id="registrationExpressJS" type="button">Save Recording</button>
 			</div> --> <!-- Express registration per Bart's request.  Not sure where/how this is going to be integrated. -->
 
 			<!-- Register or login modal -->

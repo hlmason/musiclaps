@@ -1,4 +1,4 @@
-	<select>
+	<select id="birth-date-field">
 		<option value=""></option>
 		<option value="jan">Jan</option>
 		<option value="feb">Feb</option>

@@ -17,7 +17,7 @@
 					<div class="row" id="recording-player-buttons">	
 						<div class="col-xs-12">
 							<button class="navigate musiclaps-blue" id="recordingPlayerButton" type="button">Recording Player</button>
-							<button class="navigate button-navigate-hover" id="uploadMP3Button" type="button">Upload MP3</button>
+							<button class="navigate button-navigate-hover-js" id="uploadMP3Button" type="button">Upload MP3</button>
 						</div>
 					</div>
 					
@@ -31,11 +31,12 @@
 
 
 					<!-- Upload MP3 -->
-					<section id="uploadMP3Container">
+					<section class="upload-mp3-container" id="uploadMP3Container">
 						<div class="row">
 							<div class="col-xs-6">
-								<h4>Upload an MP3 file only</h4>
-								<h5>Bit rate: 128 bit - 160 bit</h5>
+								<h4>Upload an MP3 file</h4>
+								<h5>128-bit to 160-bit</h5>
+								<h5>Note: <span class="normal">128-bit is recommended.<span class="block"> Uploads take longer with higher bit rates</span></span></h5>
 							</div>
 							
 							<div class="col-xs-6">
@@ -43,20 +44,16 @@
 							</div>
 						</div>
 						
-						<div class="row col-xs-12">
-							<h5>Note: 128 bit is the recommended value.  Upload takes longer with higher bit rates</h5>
-						</div>
-						
 						<ul class="row col-xs-12">
-							<li>Type of Project</li>
-							<li>New Project</li>
-							<li>Add Part</li>
-							<li>Add Part in Group</li>
+							<li class="first-list-item">Type of Project</li>
+							<li><input type="radio" name="project_type" value="new_project">&nbsp; New Project</li>
+							<li><input type="radio" name="project_type" value="add_part">&nbsp; Add Track</li>
+							<li><input type="radio" name="project_type" value="add_group_part">&nbsp; Add Track to Group Project</li>
 						</ul>
 
 						<form>
 							<div class="row col-xs-12">
-								<label for="instruments">Select Instrument</label>
+								<label id="instruments-label" for="instruments">Select Instrument</label>
 								<select id="instruments" size="6">
 									<span><option value="arrangement">&nbsp; Accordion</option></span>
 									<span><option value="banjo">&nbsp; Banjo</option></span>
@@ -111,23 +108,23 @@
 							</div>
 
 							<div class="row col-xs-12">
-								<label for="comment">Comment (max 50 characters)</label>
+								<label id="comment-label" for="comment">Comment <span class="normal">(max 50 characters)</span></label>
 								<input id="comment" type="comment" name="comment">
 							</div>
 
-							<div class="row">
+							<div class="row" id="choose-file-container">
 								<div class="col-xs-4">	
-										<h5>MP3 File</h5>
+									<h4>MP3 File</h4>
 								</div>
 								<div class="col-xs-4">
 									<input id="choose_file" type="submit" value="Choose File">&nbsp; <span>No file chosen</span>
 								</div>
 								<div class="col-xs-4">	
-										<h5>Max Size 10MB</h5>
+									<h5>Max Size 10MB</h5>
 								</div>
 							</div>
 
-							<div class="row col-xs-12">
+							<div class="row col-xs-12" id="upload-project-container">
 								<input id="upload_project" type="submit" value="Upload Project">
 							</div>
 						</form>
