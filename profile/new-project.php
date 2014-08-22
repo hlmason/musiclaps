@@ -16,7 +16,7 @@
 
 					<div class="row" id="recording-player-buttons">	
 						<div class="col-xs-12">
-							<button class="navigate musiclaps-blue" id="recordingPlayerButton" type="button">Recording Player</button>
+							<button class="navigate musiclaps-dark-gray musiclaps-blue" id="recordingPlayerButton" type="button">Recording Player</button>
 							<button class="navigate button-navigate-hover-js" id="uploadMP3Button" type="button">Upload MP3</button>
 						</div>
 					</div>

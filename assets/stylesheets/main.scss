@@ -86,11 +86,11 @@ $modal-border: 5px solid $musiclaps-light-gray;
 	}
 }
 
-@mixin button ($background-color, $font-size, $padding) {
+@mixin button ($background-color, $color, $font-size, $padding) {
 	@include border-radius(10px);
 	background-color: $background-color;
 	border: none;
-	color: white;
+	color: $color;
 	font-size: $font-size;
 	letter-spacing: 0.5px;
 	padding: $padding;
@@ -708,7 +708,7 @@ h1.landing-page {
 		margin-top: 50px;
 		text-align: center;
 		button.save {  // "Save Recording" button
-			@include button(green, 14px, 10px 20px);
+			@include button(green, white, 14px, 10px 20px);
 			&:hover, &:focus {
 				background-color: #1A9A1A;
 			}
@@ -851,15 +851,20 @@ form.profile-page {
 }
 
 button.navigate {  // "Recording Player" and "Upload MP3" buttons
-	@include button($musiclaps-dark-gray, 12px, 5px 10px);
+	@include button(#F4F4F4, $musiclaps-dark-gray, 12px, 5px 10px);
 	&:last-child {
 		margin-left: 5px;	
 	}
 }
 
+button.musiclaps-dark-gray {
+	background-color: #555;
+}
+
 .button-navigate-hover-js {
 	&:hover, &:focus {
 		background-color: #555;
+		color: $musiclaps-blue;
 	}
 }
 

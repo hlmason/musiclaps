@@ -3404,17 +3404,21 @@ form.profile-page input#save_profile {
 button.navigate {
   -moz-border-radius: 10px;
   border-radius: 10px;
-  background-color: #444444;
+  background-color: #f4f4f4;
   border: none;
-  color: white;
+  color: #444444;
   font-size: 12px;
   letter-spacing: 0.5px;
   padding: 5px 10px; }
   button.navigate:last-child {
     margin-left: 5px; }
 
-.button-navigate-hover-js:hover, .button-navigate-hover-js:focus {
+button.musiclaps-dark-gray {
   background-color: #555; }
+
+.button-navigate-hover-js:hover, .button-navigate-hover-js:focus {
+  background-color: #555;
+  color: #38aaff; }
 
 #recording-player {
   background-color: #444444;
