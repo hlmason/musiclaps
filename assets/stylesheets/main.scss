@@ -374,6 +374,11 @@ nav {
 	label#email-label, label#birth-date-label-modal, label#gender-label, label#zip-label, img#captcha-img, #checkbox {
 		@include form-fields-label(15px);
 	}
+	img#captcha-img {
+		display: block; // For viewport widths <= 767px
+		height: 50px;
+		width: 210px;
+	}
 	#checkbox { // "I agree to the Musiclaps Terms of Use and Privacy Policy"
 		font-size: 12px;
 		input {
@@ -942,7 +947,6 @@ section#projects-container {
 	width: 100%;
 	img {
 		margin-top: 2px;
-		width: 99px;
 		min-width: 99px;
 		height: 60px;
 	}

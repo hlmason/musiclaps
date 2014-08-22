@@ -2975,6 +2975,10 @@ nav .navbar-collapse {
   .modal-content label#email-label, .modal-content label#birth-date-label-modal, .modal-content label#gender-label, .modal-content label#zip-label, .modal-content img#captcha-img, .modal-content #checkbox {
     margin-bottom: 2px;
     margin-top: 15px; }
+  .modal-content img#captcha-img {
+    display: block;
+    height: 50px;
+    width: 210px; }
   .modal-content #checkbox {
     font-size: 12px; }
     .modal-content #checkbox input {
@@ -3486,7 +3490,6 @@ section#projects-container {
   width: 100%; }
   section#projects-container img {
     margin-top: 2px;
-    width: 99px;
     min-width: 99px;
     height: 60px; }
   section#projects-container h4, section#projects-container h5 {
