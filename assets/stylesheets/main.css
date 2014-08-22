@@ -3278,12 +3278,12 @@ section#recording-instructions #save-container {
 /* ====================================================================================
     Profile, New Project, Projects, Collaborations, YouTube, Messages, and Groups Pages
 ==================================================================================== */
-#avatar-n-edit-profile, #recording-player-buttons, #projects-buttons {
+#avatar-n-edit-profile, #new-project-buttons, #projects-buttons {
   margin-top: 15px; }
 
-#recording-player-buttons {
+#new-project-buttons {
   margin-bottom: 8px; }
-  #recording-player-buttons button.navigate:last-child {
+  #new-project-buttons button.navigate:last-child {
     margin-left: 5px; }
 
 #projects-buttons button.navigate:not(.first-button) {
@@ -3387,19 +3387,19 @@ form.profile-page input#save_profile {
   margin-top: -10px;
   margin-left: 290px; }
 
-#choose-avatar-container input, #save-profile-container input, section#choose-sound-image-container input,
+#choose-avatar-container input, #save-profile-container input, section#choose-project-image-container input,
 #choose-mp3-file-container input, #upload-project-container input {
   background-color: #e7e7e7;
   border: 1px solid #cecece;
   padding: 3px 10px;
   -moz-border-radius: 10px;
   border-radius: 10px; }
-  #choose-avatar-container input:hover, #choose-avatar-container input:focus, #save-profile-container input:hover, #save-profile-container input:focus, section#choose-sound-image-container input:hover, section#choose-sound-image-container input:focus,
+  #choose-avatar-container input:hover, #choose-avatar-container input:focus, #save-profile-container input:hover, #save-profile-container input:focus, section#choose-project-image-container input:hover, section#choose-project-image-container input:focus,
   #choose-mp3-file-container input:hover,
   #choose-mp3-file-container input:focus, #upload-project-container input:hover, #upload-project-container input:focus {
     background-color: #d9d9d9; }
 
-#choose-avatar-container input, section#choose-sound-image-container input, #choose-mp3-file-container input {
+#choose-avatar-container input, section#choose-project-image-container input, #choose-mp3-file-container input {
   font-size: 12px; }
 
 #genre, #skills, #instruments {
@@ -3450,7 +3450,7 @@ section.upload-mp3-container input#project-title, section.upload-mp3-container i
   padding-left: 8px;
   padding-top: 4px;
   width: 100%; }
-section.upload-mp3-container input#comment, section.upload-mp3-container section#choose-sound-image-container {
+section.upload-mp3-container input#comment, section.upload-mp3-container section#choose-project-image-container {
   margin-bottom: 20px; }
 section.upload-mp3-container input#tempo, section.upload-mp3-container #select-sound {
   margin-left: 5px; }
@@ -3469,14 +3469,34 @@ section.upload-mp3-container label#project-title-label, section.upload-mp3-conta
   margin-top: 20px; }
 section.upload-mp3-container label#instruments-label {
   display: block; }
-section.upload-mp3-container section#choose-sound-image-container, section.upload-mp3-container #choose-mp3-file-container {
+section.upload-mp3-container section#choose-project-image-container, section.upload-mp3-container #choose-mp3-file-container {
   vertical-align: middle;
   width: 100%; }
-  section.upload-mp3-container section#choose-sound-image-container span, section.upload-mp3-container #choose-mp3-file-container span {
+  section.upload-mp3-container section#choose-project-image-container span, section.upload-mp3-container #choose-mp3-file-container span {
     font-size: 12px; }
 section.upload-mp3-container #upload-project-container {
   margin-top: 30px;
   text-align: center; }
+
+section#projects-container {
+  border: 1px solid #cecece;
+  margin-top: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%; }
+  section#projects-container img {
+    margin-top: 2px;
+    width: 99px;
+    min-width: 99px;
+    height: 60px; }
+  section#projects-container h4, section#projects-container h5 {
+    margin-top: 0; }
+  section#projects-container h4 {
+    margin-bottom: 3px; }
+  section#projects-container h5 {
+    margin-bottom: 1px; }
+  section#projects-container h5:last-child {
+    font-weight: normal; }
 
 .profile-right {
   background-color: #e7e7e7;

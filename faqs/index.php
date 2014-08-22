@@ -139,8 +139,8 @@
        					You can manage and edit the title, status (choice of Public, Private, Group or Progress), whether it is a cover song, description or comment, adding or changing tags and display comments, stage image, type of collaboration, and copyrights on this editing page.
        					<br><br>
 
-       					If you want to change the sound image of the song, click on the existing image or the default musiclaps image.
-				        The Change Sound Image bar will display below, and you can change the image to one of your liking.
+       					If you want to change the image of the project, click on the existing image or the default musiclaps image.
+				        The Change Project Image bar will display below, and you can change the image to one of your liking.
 				        We recommend using an image size of 120x70px.
 				        <br><br>
 

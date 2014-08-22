@@ -14,7 +14,7 @@
 					
 				<div class="row col-xs-12 col-sm-9">
 
-					<div class="row" id="recording-player-buttons">	
+					<div class="row" id="new-project-buttons">	
 						<div class="col-xs-12">
 							<button class="navigate musiclaps-dark-gray musiclaps-blue" id="recordingPlayerButton" type="button">Recording Player</button>
 							<button class="navigate button-navigate-hover-js" id="uploadMP3Button" type="button">Upload MP3</button>
@@ -135,13 +135,13 @@
 								<input id="comment" type="comment" name="comment">
 							</div>
 
-							<section class="newProject" id="choose-sound-image-container">
+							<section class="newProject" id="choose-project-image-container">
 								<div class="row">
 									<div class="col-xs-4">	
-										<h4>Sound Image</h4>
+										<h4>Project Image</h4>
 									</div>
 									<div class="col-xs-4">
-										<input id="choose_sound_image" type="submit" value="Choose File">&nbsp; <span>No file chosen</span>
+										<input id="choose_project_image" type="submit" value="Choose File">&nbsp; <span>No file chosen</span>
 									</div>
 									<div class="col-xs-4">	
 										<h5>120(w) x 90(h) in jpg format</h5>
