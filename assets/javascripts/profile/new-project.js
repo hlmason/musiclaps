@@ -1,9 +1,5 @@
 $(document).ready(function() {
 
-	var myProfile = $('#myProfile');
-	var editProfile = $('#editProfile');
-	var saveProfile = $('#saveProfile');
-	var dontSaveProfile = $('#dontSaveProfile');
 	var uploadMP3Button = $('#uploadMP3Button');
 	var uploadMP3Container = $('#uploadMP3Container');
 	var recordingPlayerButton = $('#recordingPlayerButton');
@@ -12,27 +8,10 @@ $(document).ready(function() {
 	var addPart = $('#addPart');
 	var addPartToGroup = $('#addPartToGroup');
 
-	myProfile.hide();
-	saveProfile.hide();
-	dontSaveProfile.hide();
 	uploadMP3Container.hide();
 	newProject.hide();
 	addPart.hide();
 	addPartToGroup.hide();
-
-	$(editProfile).on('click', function() {
-		editProfile.hide();
-		saveProfile.fadeIn('fast');
-		dontSaveProfile.fadeIn('fast');
-		myProfile.fadeIn('fast');
-	});
-
-	$(dontSaveProfile).on('click', function() {
-		saveProfile.hide();
-		dontSaveProfile.hide();
-		editProfile.fadeIn('fast');
-		myProfile.fadeOut('fast');
-	});
 
 	$(uploadMP3Button).on('click', function() {
 		recordingPlayerButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
