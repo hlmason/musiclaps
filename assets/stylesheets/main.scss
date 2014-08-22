@@ -907,13 +907,15 @@ section.upload-mp3-container {
 	#comment, #choose-sound-image-container {
 		margin-bottom: 20px;
 	}
+	#tempo, #select-sound {
+		margin-left: 5px;
+	}
 	#tempo {
 		@include form-fields-input(50%);
-		margin-left: 5px;
 	}
 	.add-part-to-group-container h4 {
 		color: red;
-		margin-bottom: 0;
+		margin-bottom: 5px;
 	}
 	label#project-title-label, label#tempo-label, label#select-sound-label, .add-part-to-group-container h4, label#instruments-label, label#comment-label {
 		margin-top: 20px;
