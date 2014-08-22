@@ -72,7 +72,7 @@
 							</section>
 
 							<section class="add-part-to-group-container" id="addPartToGroup">
-								<h4 class="row col-xs-12 red">No Group List</h4><!-- Hard-coded placeholder -->	
+								<h4 class="row col-xs-12 red">You have not joined any groups.</h4><!-- Hard-coded placeholder -->	
 							</section>
 
 							<div class="row col-xs-12">

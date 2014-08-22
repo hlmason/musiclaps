@@ -252,7 +252,7 @@ nav {
 				@include border-radius(10px);
 				background-color: #F4F4F4;
 				font-size: 12px;
-				&.active {
+				&:hover, &:focus, &.active {
 					background-color: $musiclaps-dark-gray !important;
 				}
 			}
@@ -719,12 +719,34 @@ h1.landing-page {
 /* ====================================================================================
     Profile, New Project, Projects, Collaborations, YouTube, Messages, and Groups Pages
 ==================================================================================== */
-#avatar-n-edit-profile, #recording-player-buttons {
+#avatar-n-edit-profile, #recording-player-buttons, #projects-buttons {
 	margin-top: 15px;
 }
 
 #recording-player-buttons {
 	margin-bottom: 8px;
+	button.navigate:last-child {
+		margin-left: 5px;	
+	}
+}
+
+#projects-buttons button.navigate:not(.first-button) {
+	margin-left: 10px;
+}
+
+button.navigate {
+	@include button(#F4F4F4, $musiclaps-dark-gray, 12px, 5px 10px);
+}
+
+button.musiclaps-dark-gray {
+	background-color: #555;
+}
+
+.button-navigate-hover-js {
+	&:hover, &:focus {
+		background-color: #555;
+		color: $musiclaps-blue;
+	}
 }
 
 #avatar-n-edit-profile {
@@ -848,24 +870,6 @@ form.profile-page {
 
 #instruments {
 	padding-left: 0; // Overrides @mixin form-fields-input
-}
-
-button.navigate {  // "Recording Player" and "Upload MP3" buttons
-	@include button(#F4F4F4, $musiclaps-dark-gray, 12px, 5px 10px);
-	&:last-child {
-		margin-left: 5px;	
-	}
-}
-
-button.musiclaps-dark-gray {
-	background-color: #555;
-}
-
-.button-navigate-hover-js {
-	&:hover, &:focus {
-		background-color: #555;
-		color: $musiclaps-blue;
-	}
 }
 
 #recording-player {

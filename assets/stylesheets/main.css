@@ -2877,7 +2877,7 @@ nav .navbar-collapse {
       border-radius: 10px;
       background-color: #F4F4F4;
       font-size: 12px; }
-      #nav-registered-user li a.active {
+      #nav-registered-user li a:hover, #nav-registered-user li a:focus, #nav-registered-user li a.active {
         background-color: #444444 !important; }
 
 /* ===================================
@@ -3282,11 +3282,33 @@ h1.landing-page {
 /* ====================================================================================
     Profile, New Project, Projects, Collaborations, YouTube, Messages, and Groups Pages
 ==================================================================================== */
-#avatar-n-edit-profile, #recording-player-buttons {
+#avatar-n-edit-profile, #recording-player-buttons, #projects-buttons {
   margin-top: 15px; }
 
 #recording-player-buttons {
   margin-bottom: 8px; }
+  #recording-player-buttons button.navigate:last-child {
+    margin-left: 5px; }
+
+#projects-buttons button.navigate:not(.first-button) {
+  margin-left: 10px; }
+
+button.navigate {
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  border: none;
+  color: #444444;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  padding: 5px 10px; }
+
+button.musiclaps-dark-gray {
+  background-color: #555; }
+
+.button-navigate-hover-js:hover, .button-navigate-hover-js:focus {
+  background-color: #555;
+  color: #38aaff; }
 
 #avatar-n-edit-profile #avatar {
   box-shadow: 10px 10px 5px #444444;
@@ -3400,25 +3422,6 @@ form.profile-page input#save_profile {
 
 #instruments {
   padding-left: 0; }
-
-button.navigate {
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  background-color: #f4f4f4;
-  border: none;
-  color: #444444;
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  padding: 5px 10px; }
-  button.navigate:last-child {
-    margin-left: 5px; }
-
-button.musiclaps-dark-gray {
-  background-color: #555; }
-
-.button-navigate-hover-js:hover, .button-navigate-hover-js:focus {
-  background-color: #555;
-  color: #38aaff; }
 
 #recording-player {
   background-color: #444444;
