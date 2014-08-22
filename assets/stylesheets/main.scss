@@ -44,10 +44,10 @@ $modal-border: 5px solid $musiclaps-light-gray;
 	margin-top: $margin-top;
 }
 
-@mixin submit($background-color, $padding-top, $padding-right, $padding-bottom, $padding-left, $hover-color) {
+@mixin submit($background-color, $padding, $hover-color) {
 	background-color: $background-color;
 	border: $nav-border;
-	padding: $padding-top $padding-right $padding-bottom $padding-left;
+	padding: $padding;
 	&:hover, &:focus {
 		background-color: $hover-color;
 	}
@@ -131,7 +131,7 @@ a:hover {
 #register-or-login-modal-body, .modal-footer:not(.registration-modal-footer), .navbar-right {
 	input { // Modal buttons and nav "Log out" button
 		@include border-radius(10px);
-		@include submit($musiclaps-light-gray, 5px, 10px, 5px, 10px, #d9d9d9);
+		@include submit($musiclaps-light-gray, 5px 10px, #d9d9d9);
 	}
 }
 
@@ -418,7 +418,7 @@ nav {
 	}
 	.registration-modal-footer input { // "Register" button
 		@include border-radius(10px);
-		@include submit($musiclaps-blue, 5px, 10px, 5px, 10px, #45B7FF);
+		@include submit($musiclaps-blue, 5px 10px, #45B7FF);
 		border: 1px solid #1F91E6;
 		color: white;
 		text-transform: uppercase;
@@ -791,7 +791,7 @@ form.profile-page {
 	textarea {
 		max-width: 100%; // Prevents user from expanding textarea horizontally
 	}
-	#birth-date-field, #zip, #website_url, #website_title { // Adds space btwn field and label
+	#birth-date-field, #zip, #website_url, #website_title { // Adds space btwn field and label. Should remain inside "form.profile-page"; otherwise it will affect modal fields
 		margin-left: 5px;
 	}
 	#zip, #website_url, #website_title {
@@ -826,10 +826,14 @@ form.profile-page {
 	}
 }
 
-input#choose_file, input#save_profile, 
-#choose-file-container input, #upload-project-container input {
-	@include submit($musiclaps-light-gray, 3px, 10px, 3px, 10px, #d9d9d9);
+#choose-avatar-container input, #save-profile-container input, #choose-sound-image-container input, 
+#choose-mp3-file-container input, #upload-project-container input {
+	@include submit($musiclaps-light-gray, 3px 10px, #d9d9d9);
 	@include border-radius(10px);
+}
+
+#choose-avatar-container input, #choose-sound-image-container input, #choose-mp3-file-container input {
+	font-size: 12px;
 }
 
 #genre, #skills, #instruments {
@@ -840,6 +844,10 @@ input#choose_file, input#save_profile,
 	span {
 		display: block; // Makes options stack
 	}
+}
+
+#instruments {
+	padding-left: 0; // Overrides @mixin form-fields-input
 }
 
 button.navigate {  // "Recording Player" and "Upload MP3" buttons
@@ -869,33 +877,42 @@ section.upload-mp3-container {
 	h5, li {
 		font-size: 12px;
 	}
-	ul, #choose-file-container {
+	ul, #choose-mp3-file-container {
 		border-bottom: $nav-border;
 		padding-bottom: 10px;
 	}
 	ul {
-		margin-bottom: 15px;
+		margin-bottom: 0;
 		li {
 			display: inline-block;	
 			&:first-child {
 				font-weight: bold;
+			}
+			&.first-list-item {
+				font-size: 14px;
 			}
 			&:not(.first-list-item) {
 				padding-left: 20px;
 			}
 		}
 	}
+	#project-title, #comment {
+		@include form-fields-input(100%);
+	}
+	#comment, #choose-sound-image-container {
+		margin-bottom: 20px;
+	}
+	#tempo {
+		@include form-fields-input(50%);
+		margin-left: 5px;
+	}
+	label#project-title-label, label#tempo-label, label#instruments-label, label#comment-label {
+		margin-top: 20px;
+	}
 	label#instruments-label {
 		display: block;
 	}
-	label#comment-label {
-		margin-top: 20px;
-	}
-	#comment {
-		@include form-fields-input(100%);
-		margin-bottom: 20px;
-	}
-	#choose-file-container {
+	#choose-sound-image-container, #choose-mp3-file-container {
 		vertical-align: middle;
 		width: 100%;
 		span {
@@ -1122,7 +1139,7 @@ footer {
 		li:not(.first-list-item) { margin-top: 15px; }
 		img { margin-bottom: 1px; } // Social media icons
 		input { // Social media login buttons - only visible at viewport widths <= 767
-			@include submit($musiclaps-light-gray, 3px, 6px, 3px, 6px, #d9d9d9);
+			@include submit($musiclaps-light-gray, 3px 6px, #d9d9d9);
 			border-bottom-right-radius: 5px;
 			border-top-right-radius: 5px;
 			margin-left: 2px;

@@ -36,7 +36,7 @@
 							<div class="col-xs-6">
 								<h4>Upload an MP3 file</h4>
 								<h5>128-bit to 160-bit</h5>
-								<h5>Note: <span class="normal">128-bit is recommended.<span class="block"> Uploads take longer with higher bit rates</span></span></h5>
+								<h5>Note: <span class="normal">128-bit is recommended<span class="block"> Uploads take longer with higher bit rates</span></span></h5>
 							</div>
 							
 							<div class="col-xs-6">
@@ -52,6 +52,18 @@
 						</ul>
 
 						<form>
+							<section class="newProject">
+								<div class="row col-xs-12">
+									<label id="project-title-label" for="project_title">Project Title <span class="normal">(max 80 characters)</span></label>
+									<input id="project-title" type="project_title" name="project_title">
+								</div>
+
+								<div class="row col-xs-12">
+									<label id="tempo-label" for="tempo">Tempo <span class="normal">(leave blank if unsure)</span></label>
+									<input id="tempo" type="tempo" name="tempo">
+								</div>
+							</section>
+
 							<div class="row col-xs-12">
 								<label id="instruments-label" for="instruments">Select Instrument</label>
 								<select id="instruments" size="6">
@@ -112,12 +124,26 @@
 								<input id="comment" type="comment" name="comment">
 							</div>
 
-							<div class="row" id="choose-file-container">
+							<section class="newProject" id="choose-sound-image-container">
+								<div class="row">
+									<div class="col-xs-4">	
+										<h4>Sound Image</h4>
+									</div>
+									<div class="col-xs-4">
+										<input id="choose_sound_image" type="submit" value="Choose File">&nbsp; <span>No file chosen</span>
+									</div>
+									<div class="col-xs-4">	
+										<h5>120(w) x 90(h) in jpg format</h5>
+									</div>
+								</div>
+							</section>
+
+							<div class="row" id="choose-mp3-file-container">
 								<div class="col-xs-4">	
 									<h4>MP3 File</h4>
 								</div>
 								<div class="col-xs-4">
-									<input id="choose_file" type="submit" value="Choose File">&nbsp; <span>No file chosen</span>
+									<input id="choose_mp3_file" type="submit" value="Choose File">&nbsp; <span>No file chosen</span>
 								</div>
 								<div class="col-xs-4">	
 									<h5>Max Size 10MB</h5>
@@ -176,6 +202,7 @@
 				</div>	
 			</div>
 			<div class="col-lg-1"></div>	
+		
 		</div>
 
 	<?php

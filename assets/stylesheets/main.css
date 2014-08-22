@@ -2780,7 +2780,7 @@ a:hover {
   border-radius: 10px;
   background-color: #e7e7e7;
   border: 1px solid #cecece;
-  padding: 5px 10px 5px 10px; }
+  padding: 5px 10px; }
   #register-or-login-modal-body input:hover, #register-or-login-modal-body input:focus, .modal-footer:not(.registration-modal-footer) input:hover, .modal-footer:not(.registration-modal-footer) input:focus, .navbar-right input:hover, .navbar-right input:focus {
     background-color: #d9d9d9; }
 
@@ -3005,7 +3005,7 @@ nav .navbar-collapse {
     border-radius: 10px;
     background-color: #38aaff;
     border: 1px solid #cecece;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px;
     border: 1px solid #1F91E6;
     color: white;
     text-transform: uppercase;
@@ -3369,17 +3369,20 @@ form.profile-page input#save_profile {
   margin-top: -10px;
   margin-left: 290px; }
 
-input#choose_file, input#save_profile,
-#choose-file-container input, #upload-project-container input {
+#choose-avatar-container input, #save-profile-container input, #choose-sound-image-container input,
+#choose-mp3-file-container input, #upload-project-container input {
   background-color: #e7e7e7;
   border: 1px solid #cecece;
-  padding: 3px 10px 3px 10px;
+  padding: 3px 10px;
   -moz-border-radius: 10px;
   border-radius: 10px; }
-  input#choose_file:hover, input#choose_file:focus, input#save_profile:hover, input#save_profile:focus,
-  #choose-file-container input:hover,
-  #choose-file-container input:focus, #upload-project-container input:hover, #upload-project-container input:focus {
+  #choose-avatar-container input:hover, #choose-avatar-container input:focus, #save-profile-container input:hover, #save-profile-container input:focus, #choose-sound-image-container input:hover, #choose-sound-image-container input:focus,
+  #choose-mp3-file-container input:hover,
+  #choose-mp3-file-container input:focus, #upload-project-container input:hover, #upload-project-container input:focus {
     background-color: #d9d9d9; }
+
+#choose-avatar-container input, #choose-sound-image-container input, #choose-mp3-file-container input {
+  font-size: 12px; }
 
 #genre, #skills, #instruments {
   -moz-border-radius: 5px;
@@ -3394,6 +3397,9 @@ input#choose_file, input#save_profile,
   width: 295px; }
   #genre span, #skills span, #instruments span {
     display: block; }
+
+#instruments {
+  padding-left: 0; }
 
 button.navigate {
   -moz-border-radius: 10px;
@@ -3420,34 +3426,46 @@ section.upload-mp3-container h4, section.upload-mp3-container h5 {
   margin-top: 5px; }
 section.upload-mp3-container h5, section.upload-mp3-container li {
   font-size: 12px; }
-section.upload-mp3-container ul, section.upload-mp3-container #choose-file-container {
+section.upload-mp3-container ul, section.upload-mp3-container #choose-mp3-file-container {
   border-bottom: 1px solid #cecece;
   padding-bottom: 10px; }
 section.upload-mp3-container ul {
-  margin-bottom: 15px; }
+  margin-bottom: 0; }
   section.upload-mp3-container ul li {
     display: inline-block; }
     section.upload-mp3-container ul li:first-child {
       font-weight: bold; }
+    section.upload-mp3-container ul li.first-list-item {
+      font-size: 14px; }
     section.upload-mp3-container ul li:not(.first-list-item) {
       padding-left: 20px; }
-section.upload-mp3-container label#instruments-label {
-  display: block; }
-section.upload-mp3-container label#comment-label {
-  margin-top: 20px; }
-section.upload-mp3-container #comment {
+section.upload-mp3-container #project-title, section.upload-mp3-container #comment {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
   padding-bottom: 4px;
   padding-left: 8px;
   padding-top: 4px;
-  width: 100%;
+  width: 100%; }
+section.upload-mp3-container #comment, section.upload-mp3-container #choose-sound-image-container {
   margin-bottom: 20px; }
-section.upload-mp3-container #choose-file-container {
+section.upload-mp3-container #tempo {
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-top: 4px;
+  width: 50%;
+  margin-left: 5px; }
+section.upload-mp3-container label#project-title-label, section.upload-mp3-container label#tempo-label, section.upload-mp3-container label#instruments-label, section.upload-mp3-container label#comment-label {
+  margin-top: 20px; }
+section.upload-mp3-container label#instruments-label {
+  display: block; }
+section.upload-mp3-container #choose-sound-image-container, section.upload-mp3-container #choose-mp3-file-container {
   vertical-align: middle;
   width: 100%; }
-  section.upload-mp3-container #choose-file-container span {
+  section.upload-mp3-container #choose-sound-image-container span, section.upload-mp3-container #choose-mp3-file-container span {
     font-size: 12px; }
 section.upload-mp3-container #upload-project-container {
   margin-top: 30px;
@@ -3639,7 +3657,7 @@ footer {
     #sn-login-modal-body-sm input {
       background-color: #e7e7e7;
       border: 1px solid #cecece;
-      padding: 3px 6px 3px 6px;
+      padding: 3px 6px;
       border-bottom-right-radius: 5px;
       border-top-right-radius: 5px;
       margin-left: 2px; }
