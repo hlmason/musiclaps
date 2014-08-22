@@ -46,9 +46,9 @@
 						
 						<ul class="row col-xs-12">
 							<li class="first-list-item">Type of Project</li>
-							<li><input type="radio" name="project_type" value="new_project">&nbsp; New Project</li>
-							<li><input type="radio" name="project_type" value="add_part">&nbsp; Add Track</li>
-							<li><input type="radio" name="project_type" value="add_group_part">&nbsp; Add Track to Group Project</li>
+							<li><input type="radio" name="project_type" value="newProject">&nbsp; New Project</li>
+							<li><input type="radio" name="project_type" value="addPart">&nbsp; Add Part</li>
+							<li><input type="radio" name="project_type" value="addPartToGroup">&nbsp; Add Part to Group</li>
 						</ul>
 
 						<form>
@@ -62,6 +62,17 @@
 									<label id="tempo-label" for="tempo">Tempo <span class="normal">(leave blank if unsure)</span></label>
 									<input id="tempo" type="tempo" name="tempo">
 								</div>
+							</section>
+
+							<section id="addPart">
+								<label id="select-sound-label" for="select_sound">Select Your Sound</label>
+								<select>
+									<option value="test">Test</option>
+								</select>
+							</section>
+
+							<section class="add-part-to-group-container" id="addPartToGroup">
+								<h4 class="row col-xs-12 red">No Group List</h4><!-- Hard-coded placeholder -->	
 							</section>
 
 							<div class="row col-xs-12">

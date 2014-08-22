@@ -911,7 +911,11 @@ section.upload-mp3-container {
 		@include form-fields-input(50%);
 		margin-left: 5px;
 	}
-	label#project-title-label, label#tempo-label, label#instruments-label, label#comment-label {
+	.add-part-to-group-container h4 {
+		color: red;
+		margin-bottom: 0;
+	}
+	label#project-title-label, label#tempo-label, label#select-sound-label, .add-part-to-group-container h4, label#instruments-label, label#comment-label {
 		margin-top: 20px;
 	}
 	label#instruments-label {

@@ -35,7 +35,7 @@
 					</div>
 
 					<div>
-						<label id="birth-date-label-modal" for="birth-date"><span class="musiclaps-blue">*</span> Birth Date</label>
+						<label id="birth-date-label-modal" for="birth_date"><span class="musiclaps-blue">*</span> Birth Date</label>
 						<!-- Birth date form -->
 						<?php
 							include(ROOT_PATH . 'include/birth-date-form.php');
