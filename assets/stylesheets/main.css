@@ -2863,7 +2863,7 @@ nav .navbar-collapse {
 /* ===================================
     Logged in Nav
 =================================== */
-#welcome-user {
+.navbar-right #welcome-user {
   margin-right: 20px;
   margin-top: 28px !important; }
 
@@ -2923,7 +2923,7 @@ nav .navbar-collapse {
       font-weight: normal;
       margin-bottom: 10px;
       margin-top: 0; }
-    .modal-content .modal-body #rainbow-music-notes {
+    .modal-content .modal-body img#rainbow-music-notes {
       margin-top: 15px;
       height: 179px;
       width: 270px; }
@@ -2972,19 +2972,15 @@ nav .navbar-collapse {
     margin-top: 10px; }
   .modal-content #registration-full-modal-body input, .modal-content #registration-express-modal-body input {
     margin-top: 0; }
-  .modal-content label#email-label, .modal-content label#birth-date-label-modal, .modal-content label#gender-label, .modal-content label#zip-label, .modal-content #captcha-img, .modal-content #checkbox {
+  .modal-content label#email-label, .modal-content label#birth-date-label-modal, .modal-content label#gender-label, .modal-content label#zip-label, .modal-content img#captcha-img, .modal-content #checkbox {
     margin-bottom: 2px;
     margin-top: 15px; }
-  .modal-content #captcha-img {
-    display: block; }
-  .modal-content #checkbox input {
-    width: 12px; }
   .modal-content #checkbox {
     font-size: 12px; }
-  .modal-content #login-modal-body input:first-child {
-    margin-top: 15px; }
+    .modal-content #checkbox input {
+      width: 12px; }
   .modal-content #login-modal-body input {
-    margin-top: 20px; }
+    margin-top: 15px; }
   .modal-content #register-or-login-modal-body input {
     display: block;
     font-weight: bold;
@@ -3176,9 +3172,9 @@ h1.landing-page {
 /* ===============================================================
     Technology, Backstage, Music Education, Contests and Auditions
 =============================================================== */
-#technology, #backstage, #music-ed, #contests-and-auditions {
+section#technology, section#backstage, section#music-ed, section#contests-and-auditions {
   padding-bottom: 30px; }
-  #technology h2, #backstage h2, #music-ed h2, #contests-and-auditions h2 {
+  section#technology h2, section#backstage h2, section#music-ed h2, section#contests-and-auditions h2 {
     color: #444444;
     font-size: 26px;
     font-weight: normal;
@@ -3186,47 +3182,47 @@ h1.landing-page {
     margin-bottom: 15px;
     margin-top: 30px;
     text-align: center; }
-  #technology p, #backstage p, #music-ed p, #contests-and-auditions p {
+  section#technology p, section#backstage p, section#music-ed p, section#contests-and-auditions p {
     font-size: 18px;
     letter-spacing: 0.25px;
     margin-bottom: 0;
     margin-top: 0; }
-  #technology a, #backstage a, #music-ed a, #contests-and-auditions a {
+  section#technology a, section#backstage a, section#music-ed a, section#contests-and-auditions a {
     color: #1f91e6 !important;
     font-size: 16px;
     line-height: 0; }
-    #technology a:hover, #technology a:focus, #backstage a:hover, #backstage a:focus, #music-ed a:hover, #music-ed a:focus, #contests-and-auditions a:hover, #contests-and-auditions a:focus {
+    section#technology a:hover, section#technology a:focus, section#backstage a:hover, section#backstage a:focus, section#music-ed a:hover, section#music-ed a:focus, section#contests-and-auditions a:hover, section#contests-and-auditions a:focus {
       color: #444444 !important; }
-  #technology ul, #backstage ul, #music-ed ul, #contests-and-auditions ul {
+  section#technology ul, section#backstage ul, section#music-ed ul, section#contests-and-auditions ul {
     margin-top: 0; }
-    #technology ul li:first-child, #backstage ul li:first-child, #music-ed ul li:first-child, #contests-and-auditions ul li:first-child {
+    section#technology ul li:first-child, section#backstage ul li:first-child, section#music-ed ul li:first-child, section#contests-and-auditions ul li:first-child {
       padding-top: 20px; }
-    #technology ul li:not(.first-list-item), #backstage ul li:not(.first-list-item), #music-ed ul li:not(.first-list-item), #contests-and-auditions ul li:not(.first-list-item) {
+    section#technology ul li:not(.first-list-item), section#backstage ul li:not(.first-list-item), section#music-ed ul li:not(.first-list-item), section#contests-and-auditions ul li:not(.first-list-item) {
       padding-top: 10px; }
 
-#technology, #backstage, #music-ed {
+section#technology, section#backstage, section#music-ed {
   border-bottom: 1px solid #cecece; }
 
-#technology, #music-ed {
+section#technology, section#music-ed {
   background-color: #e7e7e7; }
 
-#backstage, #contests-and-auditions {
+section#backstage, section#contests-and-auditions {
   background-color: white; }
 
-#technology img {
+section#technology img {
   margin-top: 120px;
   width: 200px; }
 
-#backstage img, #music-ed img, #contests-and-auditions img {
+section#backstage img, section#music-ed img, section#contests-and-auditions img {
   width: 150px; }
 
-#backstage img {
+section#backstage img {
   margin-top: 80px; }
 
-#music-ed img {
+section#music-ed img {
   margin-top: 70px; }
 
-#contests-and-auditions img {
+section#contests-and-auditions img {
   margin-top: 100px; }
 
 /* ===================================
@@ -3236,38 +3232,38 @@ h1.landing-page {
   margin-left: 0;
   text-align: center; }
 
-#select-song-container a:hover, #recording-instructions {
+#select-song-container a:hover, section#recording-instructions {
   color: #444444; }
 
-#recording-instructions h1 {
+section#recording-instructions h1 {
   text-align: center; }
-#recording-instructions h2 {
+section#recording-instructions h2 {
   font-size: 18px;
   font-weight: normal; }
-  #recording-instructions h2 span:not(.block) {
+  section#recording-instructions h2 span:not(.block) {
     font-weight: bold; }
-    #recording-instructions h2 span:not(.block).red {
+    section#recording-instructions h2 span:not(.block).red {
       color: red; }
-    #recording-instructions h2 span:not(.block).green {
+    section#recording-instructions h2 span:not(.block).green {
       color: green; }
-#recording-instructions #recording-buttons-img {
+section#recording-instructions #recording-buttons-img {
   margin-top: 15px; }
-#recording-instructions #allow-flash-instructions {
+section#recording-instructions #allow-flash-instructions {
   margin-top: 35px; }
-#recording-instructions #allow-flash-img {
+section#recording-instructions #allow-flash-img {
   margin-top: 10px; }
-#recording-instructions #allow-flash-chrome-container {
+section#recording-instructions #allow-flash-chrome-container {
   margin-top: 15px; }
-  #recording-instructions #allow-flash-chrome-container p {
+  section#recording-instructions #allow-flash-chrome-container p {
     margin-bottom: 0; }
-#recording-instructions #record-start-instructions {
+section#recording-instructions #record-start-instructions {
   margin-top: 45px; }
-#recording-instructions #recording-area-img {
+section#recording-instructions #recording-area-img {
   margin-top: 22px; }
-#recording-instructions #save-container {
+section#recording-instructions #save-container {
   margin-top: 50px;
   text-align: center; }
-  #recording-instructions #save-container button.save {
+  section#recording-instructions #save-container button.save {
     -moz-border-radius: 10px;
     border-radius: 10px;
     background-color: green;
@@ -3276,7 +3272,7 @@ h1.landing-page {
     font-size: 14px;
     letter-spacing: 0.5px;
     padding: 10px 20px; }
-    #recording-instructions #save-container button.save:hover, #recording-instructions #save-container button.save:focus {
+    section#recording-instructions #save-container button.save:hover, section#recording-instructions #save-container button.save:focus {
       background-color: #1A9A1A; }
 
 /* ====================================================================================
@@ -3310,7 +3306,7 @@ button.musiclaps-dark-gray {
   background-color: #555;
   color: #38aaff; }
 
-#avatar-n-edit-profile #avatar {
+#avatar-n-edit-profile img#avatar {
   box-shadow: 10px 10px 5px #444444;
   height: 100px;
   max-width: 100px; }
@@ -3355,9 +3351,9 @@ form.profile-page label {
   margin-top: 25px; }
 form.profile-page textarea {
   max-width: 100%; }
-form.profile-page #birth-date-field, form.profile-page #zip, form.profile-page #website_url, form.profile-page #website_title {
+form.profile-page select#birth-date-field, form.profile-page input#zip, form.profile-page input#website_url, form.profile-page input#website_title {
   margin-left: 5px; }
-form.profile-page #zip, form.profile-page #website_url, form.profile-page #website_title {
+form.profile-page input#zip, form.profile-page input#website_url, form.profile-page input#website_title {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -3367,7 +3363,7 @@ form.profile-page #zip, form.profile-page #website_url, form.profile-page #websi
   width: 50%; }
 form.profile-page #genre, form.profile-page #skills {
   height: 106px; }
-form.profile-page #message {
+form.profile-page textarea#message {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -3391,19 +3387,19 @@ form.profile-page input#save_profile {
   margin-top: -10px;
   margin-left: 290px; }
 
-#choose-avatar-container input, #save-profile-container input, #choose-sound-image-container input,
+#choose-avatar-container input, #save-profile-container input, section#choose-sound-image-container input,
 #choose-mp3-file-container input, #upload-project-container input {
   background-color: #e7e7e7;
   border: 1px solid #cecece;
   padding: 3px 10px;
   -moz-border-radius: 10px;
   border-radius: 10px; }
-  #choose-avatar-container input:hover, #choose-avatar-container input:focus, #save-profile-container input:hover, #save-profile-container input:focus, #choose-sound-image-container input:hover, #choose-sound-image-container input:focus,
+  #choose-avatar-container input:hover, #choose-avatar-container input:focus, #save-profile-container input:hover, #save-profile-container input:focus, section#choose-sound-image-container input:hover, section#choose-sound-image-container input:focus,
   #choose-mp3-file-container input:hover,
   #choose-mp3-file-container input:focus, #upload-project-container input:hover, #upload-project-container input:focus {
     background-color: #d9d9d9; }
 
-#choose-avatar-container input, #choose-sound-image-container input, #choose-mp3-file-container input {
+#choose-avatar-container input, section#choose-sound-image-container input, #choose-mp3-file-container input {
   font-size: 12px; }
 
 #genre, #skills, #instruments {
@@ -3446,7 +3442,7 @@ section.upload-mp3-container ul {
       font-size: 14px; }
     section.upload-mp3-container ul li:not(.first-list-item) {
       padding-left: 20px; }
-section.upload-mp3-container #project-title, section.upload-mp3-container #comment {
+section.upload-mp3-container input#project-title, section.upload-mp3-container input#comment {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -3454,11 +3450,11 @@ section.upload-mp3-container #project-title, section.upload-mp3-container #comme
   padding-left: 8px;
   padding-top: 4px;
   width: 100%; }
-section.upload-mp3-container #comment, section.upload-mp3-container #choose-sound-image-container {
+section.upload-mp3-container input#comment, section.upload-mp3-container section#choose-sound-image-container {
   margin-bottom: 20px; }
-section.upload-mp3-container #tempo, section.upload-mp3-container #select-sound {
+section.upload-mp3-container input#tempo, section.upload-mp3-container #select-sound {
   margin-left: 5px; }
-section.upload-mp3-container #tempo {
+section.upload-mp3-container input#tempo {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -3466,17 +3462,17 @@ section.upload-mp3-container #tempo {
   padding-left: 8px;
   padding-top: 4px;
   width: 50%; }
-section.upload-mp3-container .add-part-to-group-container h4 {
+section.upload-mp3-container section.add-part-to-group-container h4 {
   color: red;
   margin-bottom: 5px; }
-section.upload-mp3-container label#project-title-label, section.upload-mp3-container label#tempo-label, section.upload-mp3-container label#select-sound-label, section.upload-mp3-container .add-part-to-group-container h4, section.upload-mp3-container label#instruments-label, section.upload-mp3-container label#comment-label {
+section.upload-mp3-container label#project-title-label, section.upload-mp3-container label#tempo-label, section.upload-mp3-container label#select-sound-label, section.upload-mp3-container section.add-part-to-group-container h4, section.upload-mp3-container label#instruments-label, section.upload-mp3-container label#comment-label {
   margin-top: 20px; }
 section.upload-mp3-container label#instruments-label {
   display: block; }
-section.upload-mp3-container #choose-sound-image-container, section.upload-mp3-container #choose-mp3-file-container {
+section.upload-mp3-container section#choose-sound-image-container, section.upload-mp3-container #choose-mp3-file-container {
   vertical-align: middle;
   width: 100%; }
-  section.upload-mp3-container #choose-sound-image-container span, section.upload-mp3-container #choose-mp3-file-container span {
+  section.upload-mp3-container section#choose-sound-image-container span, section.upload-mp3-container #choose-mp3-file-container span {
     font-size: 12px; }
 section.upload-mp3-container #upload-project-container {
   margin-top: 30px;
@@ -3507,7 +3503,7 @@ section.upload-mp3-container #upload-project-container {
     height: 223.6px; }
   .profile-right.profile-page h2 {
     margin-bottom: 3px; }
-  .profile-right.profile-page #map {
+  .profile-right.profile-page #map-container #map {
     background-color: lightblue;
     height: 160px;
     width: 100%; }
@@ -3523,7 +3519,7 @@ section.upload-mp3-container #upload-project-container {
   .profile-right.new-project-page h4:not(#first-h4) {
     margin-top: 40px; }
 
-.db-error-message {
+h1.db-error-message {
   color: #38aaff;
   font-weight: normal;
   text-align: center; }
@@ -3624,7 +3620,7 @@ footer {
       width: 65% !important;
       min-width: 49px !important; } }
 @media only screen and (max-width: 991px) {
-  #technology img, #backstage img, #music-ed img, #contests-and-auditions img {
+  section#technology img, section#backstage img, section#music-ed img, section#contests-and-auditions img {
     display: none; }
 
   .profile-right {
@@ -3709,11 +3705,11 @@ footer {
   #stage-inner ul {
     margin-top: -40px !important; }
 
-  #technology h2, #backstage h2, #music-ed h2, #contests-and-auditions h2 {
+  section#technology h2, section#backstage h2, section#music-ed h2, section#contests-and-auditions h2 {
     font-size: 22px; }
-  #technology p, #backstage p, #music-ed p, #contests-and-auditions p {
+  section#technology p, section#backstage p, section#music-ed p, section#contests-and-auditions p {
     font-size: 16px; }
-  #technology a, #backstage a, #music-ed a, #contests-and-auditions a {
+  section#technology a, section#backstage a, section#music-ed a, section#contests-and-auditions a {
     font-size: 14px; }
 
   .wmuSlider {
@@ -3751,7 +3747,7 @@ footer {
   h1.landing-page {
     font-size: 20px; } }
 @media only screen and (max-width: 580px) {
-  #rainbow-music-notes {
+  img#rainbow-music-notes {
     display: none; } }
 @media only screen and (max-width: 461px) {
   #upload-avatar {

@@ -238,7 +238,7 @@ nav {
 	/* ===================================
 	    Logged in Nav
 	=================================== */
-	#welcome-user {
+	.navbar-right #welcome-user {
 		margin-right: 20px;
 		margin-top: 28px !important;
 	}
@@ -314,7 +314,7 @@ nav {
 				margin-top: 0;
 			}
 		}
-		#rainbow-music-notes {
+		img#rainbow-music-notes {
 			margin-top: 15px;
 			height: 179px;
 			width: 270px;
@@ -371,24 +371,18 @@ nav {
 			margin-top: 0;
 		}
 	}
-	label#email-label, label#birth-date-label-modal, label#gender-label, label#zip-label, #captcha-img, #checkbox {
+	label#email-label, label#birth-date-label-modal, label#gender-label, label#zip-label, img#captcha-img, #checkbox {
 		@include form-fields-label(15px);
 	}
-	#captcha-img {
-		display: block;
-	}
-	#checkbox input {
-		width: 12px;
-	}
-	#checkbox {
+	#checkbox { // "I agree to the Musiclaps Terms of Use and Privacy Policy"
 		font-size: 12px;
+		input {
+			width: 12px;
+		}
 	}
 	#login-modal-body {
-		input:first-child { // Form field
+		input { // Username and Password
 			margin-top: 15px;
-		}
-		input {
-			margin-top: 20px;
 		}
 	}
 	#register-or-login-modal-body {
@@ -601,7 +595,7 @@ h1.landing-page {
 	/* ===============================================================
 	    Technology, Backstage, Music Education, Contests and Auditions
 	=============================================================== */
-	#technology, #backstage, #music-ed, #contests-and-auditions {
+	section#technology, section#backstage, section#music-ed, section#contests-and-auditions {
 		padding-bottom: 30px;
 		h2 {
 			@include heading(26px, 15px, 30px);
@@ -621,36 +615,36 @@ h1.landing-page {
 		}
 	}
 
-	#technology, #backstage, #music-ed {
+	section#technology, section#backstage, section#music-ed {
 		border-bottom: $nav-border;
 	}
 
-	#technology, #music-ed {
+	section#technology, section#music-ed {
 		background-color: $musiclaps-light-gray;
 	}
 
-	#backstage, #contests-and-auditions {
+	section#backstage, section#contests-and-auditions {
 		background-color: white;
 	}
 
-	#technology img {
+	section#technology img {
 		margin-top: 120px;
 		width: 200px;
 	}
 
-	#backstage img, #music-ed img, #contests-and-auditions img {
+	section#backstage img, section#music-ed img, section#contests-and-auditions img {
 		width: 150px;
 	}
 
-	#backstage img {
+	section#backstage img {
 		margin-top: 80px;
 	}
 
-	#music-ed img {
+	section#music-ed img {
 		margin-top: 70px;
 	}
 
-	#contests-and-auditions img {
+	section#contests-and-auditions img {
 		margin-top: 100px;
 	}
 
@@ -662,11 +656,11 @@ h1.landing-page {
 	text-align: center;
 }
 
-#select-song-container a:hover, #recording-instructions {
+#select-song-container a:hover, section#recording-instructions {
 	color: $musiclaps-dark-gray;
 }
 
-#recording-instructions {
+section#recording-instructions {
 	h1 {
 		text-align: center;
 	}
@@ -750,7 +744,7 @@ button.musiclaps-dark-gray {
 }
 
 #avatar-n-edit-profile {
-	#avatar {
+	img#avatar {
 		box-shadow: 10px 10px 5px $musiclaps-dark-gray;
 		height: 100px;
 		max-width: 100px;
@@ -813,16 +807,16 @@ form.profile-page {
 	textarea {
 		max-width: 100%; // Prevents user from expanding textarea horizontally
 	}
-	#birth-date-field, #zip, #website_url, #website_title { // Adds space btwn field and label. Should remain inside "form.profile-page"; otherwise it will affect modal fields
+	select#birth-date-field, input#zip, input#website_url, input#website_title { // Adds space btwn field and label. Should remain inside "form.profile-page"; otherwise it will affect modal fields
 		margin-left: 5px;
 	}
-	#zip, #website_url, #website_title {
+	input#zip, input#website_url, input#website_title {
 		@include form-fields-input(50%);
 	}
 	#genre, #skills {
 		height: 106px;
 	}
-	#message {
+	textarea#message {
 		@include form-fields-input(100%);
 	}
 	img { // Upload image
@@ -848,13 +842,13 @@ form.profile-page {
 	}
 }
 
-#choose-avatar-container input, #save-profile-container input, #choose-sound-image-container input, 
+#choose-avatar-container input, #save-profile-container input, section#choose-sound-image-container input, 
 #choose-mp3-file-container input, #upload-project-container input {
 	@include submit($musiclaps-light-gray, 3px 10px, #d9d9d9);
 	@include border-radius(10px);
 }
 
-#choose-avatar-container input, #choose-sound-image-container input, #choose-mp3-file-container input {
+#choose-avatar-container input, section#choose-sound-image-container input, #choose-mp3-file-container input {
 	font-size: 12px;
 }
 
@@ -905,29 +899,29 @@ section.upload-mp3-container {
 			}
 		}
 	}
-	#project-title, #comment {
+	input#project-title, input#comment {
 		@include form-fields-input(100%);
 	}
-	#comment, #choose-sound-image-container {
+	input#comment, section#choose-sound-image-container {
 		margin-bottom: 20px;
 	}
-	#tempo, #select-sound {
+	input#tempo, #select-sound {
 		margin-left: 5px;
 	}
-	#tempo {
+	input#tempo {
 		@include form-fields-input(50%);
 	}
-	.add-part-to-group-container h4 {
+	section.add-part-to-group-container h4 {
 		color: red;
 		margin-bottom: 5px;
 	}
-	label#project-title-label, label#tempo-label, label#select-sound-label, .add-part-to-group-container h4, label#instruments-label, label#comment-label {
+	label#project-title-label, label#tempo-label, label#select-sound-label, section.add-part-to-group-container h4, label#instruments-label, label#comment-label {
 		margin-top: 20px;
 	}
 	label#instruments-label {
 		display: block;
 	}
-	#choose-sound-image-container, #choose-mp3-file-container {
+	section#choose-sound-image-container, #choose-mp3-file-container {
 		vertical-align: middle;
 		width: 100%;
 		span {
@@ -974,7 +968,7 @@ section.upload-mp3-container {
 	h2 {
 		margin-bottom: 3px;
 	}
-	#map {
+	#map-container #map {
 		background-color: lightblue;
 		height: 160px;
 		width: 100%;
@@ -996,7 +990,7 @@ section.upload-mp3-container {
 	}
 }
 
-.db-error-message {
+h1.db-error-message {
 	color: $musiclaps-blue;
 	font-weight: normal;
 	text-align: center;
@@ -1119,7 +1113,7 @@ footer {
 
 @media only screen and (max-width: 991px) {
 // Breakpoint of social media icons on footer  and gray boxes (Profile Page)
-	#technology, #backstage, #music-ed, #contests-and-auditions {
+	section#technology, section#backstage, section#music-ed, section#contests-and-auditions {
 		img { display: none; }
 	}
 	.profile-right { width: 150%; }
@@ -1197,7 +1191,7 @@ footer {
 		p { margin-top: -30px !important; }
 		ul { margin-top: -40px !important; }
 	}
-	#technology, #backstage, #music-ed, #contests-and-auditions {
+	section#technology, section#backstage, section#music-ed, section#contests-and-auditions {
 		h2 { font-size: 22px; }
 		p { font-size: 16px; }
 		a { font-size: 14px; }
@@ -1242,7 +1236,7 @@ footer {
 
 @media only screen and (max-width: 580px) {
 // Breakpoint of "Select a song" modal (Live player Page)
-	#rainbow-music-notes { display: none; }
+	img#rainbow-music-notes { display: none; }
 }
 
 @media only screen and (max-width: 461px) {
