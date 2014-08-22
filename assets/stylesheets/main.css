@@ -3479,34 +3479,46 @@ section.upload-mp3-container #upload-project-container {
   margin-top: 30px;
   text-align: center; }
 
-#profile-right {
+.profile-right {
   background-color: #e7e7e7;
-  height: 944px;
   width: 137.5%; }
-  #profile-right .row:first-child {
-    text-align: center; }
-  #profile-right .row:not(.first-row) {
-    height: 115px; }
-  #profile-right .row:not(.last-row) {
-    border-bottom: 1px solid #999; }
-  #profile-right .row {
-    margin-left: 15px;
-    width: 90%; }
-  #profile-right .row#map-container {
-    height: 223.6px; }
-  #profile-right h2 {
-    margin-bottom: 3px; }
-  #profile-right h4 {
+  .profile-right h4 {
     margin-bottom: 5px; }
-  #profile-right h5 {
+  .profile-right h5 {
     font-weight: normal;
     margin-bottom: 10px;
-    margin-top: 3px;
-    width: 100%; }
-  #profile-right #map {
+    margin-top: 3px; }
+
+.profile-right.profile-page {
+  height: 944px; }
+  .profile-right.profile-page .row {
+    margin-left: 15px;
+    width: 90%; }
+  .profile-right.profile-page .row:first-child {
+    text-align: center; }
+  .profile-right.profile-page .row:not(.first-row) {
+    height: 115px; }
+  .profile-right.profile-page .row:not(.last-row) {
+    border-bottom: 1px solid #999; }
+  .profile-right.profile-page .row#map-container {
+    height: 223.6px; }
+  .profile-right.profile-page h2 {
+    margin-bottom: 3px; }
+  .profile-right.profile-page #map {
     background-color: lightblue;
     height: 160px;
     width: 100%; }
+
+.profile-right.new-project-page {
+  height: 844px; }
+  .profile-right.new-project-page .row {
+    margin-left: auto;
+    margin-right: auto; }
+  .profile-right.new-project-page h3 {
+    margin-bottom: 10px;
+    margin-top: 18px; }
+  .profile-right.new-project-page h4:not(#first-h4) {
+    margin-top: 40px; }
 
 .db-error-message {
   color: #38aaff;
@@ -3586,7 +3598,7 @@ footer {
   .wmuSliderNext {
     right: 0; }
 
-  #profile-right {
+  .profile-right {
     margin-top: -1px;
     width: 136.75%; } }
 @media only screen and (max-width: 1117px) {
@@ -3612,7 +3624,7 @@ footer {
   #technology img, #backstage img, #music-ed img, #contests-and-auditions img {
     display: none; }
 
-  #profile-right {
+  .profile-right {
     width: 150%; }
 
   footer .navbar-brand {
@@ -3720,7 +3732,7 @@ footer {
       float: none !important;
       margin-top: 8px; }
 
-  #profile-right {
+  .profile-right {
     margin-top: 20px;
     width: 100%; }
 

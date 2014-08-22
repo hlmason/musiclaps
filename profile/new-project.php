@@ -40,7 +40,7 @@
 							</div>
 							
 							<div class="col-xs-6">
-								<a href="http://solmire.com/" target="blank"><img src="<?php echo BASE_URL; ?>assets/images/profile-pg/midi-to-mp3.png" alt="Ad for MIDI to MP3 Online Converter"></a>
+								<a href="http://solmire.com/" target="blank"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/midi-to-mp3.png" alt="Ad for MIDI to MP3 Online Converter"></a>
 							</div>
 						</div>
 						
@@ -170,43 +170,27 @@
 
 				</div>
 				<div class="row col-xs-12 col-sm-3">
-					<div id="profile-right">
+					<div class="profile-right new-project-page">
 						
-						<div class="row first-row">
-							<div class="col-xs-7 col-offset-xs-1">
-								<h2>$#</h2><!-- Hard-coded placeholder -->
-								<h5>listeners?</h5>
-							</div>
-							<div class="col-xs-3">
-								<h2>$#</h2><!-- Hard-coded placeholder -->
-								<h5>claps</h5>
-							</div>
-							<div class="col-xs-1"></div>
+						<div class="row col-xs-12">
+							<h3>Recommended</h3>
 						</div>
 
-						<div class="row col-xs-12" id="map-container">
-							<h4>Location: </h4>
-							<div id="map"></div><!-- Placeholder -->
+						<div class="row col-xs-12 first-row">
+							<h4 id="first-h4">Free Guitar Amp Simulator for Mac and Windows</h4>
+							<a href="http://www.synthtopia.com/content/2010/01/22/free-guitar-amp-simulator-for-mac-windows/" target="blank"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/free-guitar-amp-simulator.jpg" alt="Free Guitar Amp Simulator"></a>
 						</div>
 
 						<div class="row col-xs-12">
-							<h4>Member since: </h4>
-							<h5>$date joined</h5><!-- Hard-coded placeholder -->
+							<h4>Free AmpLion Guitar Amp Simulator </h4>
+							<h5>ampLion Free gives you the opportunity to experience the quality of ampLion simulation. You gain free access to one of the most famous guitar amps ever made.</h5>
+							<a href="https://www.macupdate.com/app/mac/40400/amplion-free" target="blank"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/free-amplion-simulator.jpg" alt="Free AmpLion Guitar Amp Simulator"></a>
 						</div>
 
 						<div class="row col-xs-12">
-							<h4>Genre(s): </h4>
-							<h5>$genre(s)</h5><!-- Hard-coded placeholder -->
-						</div>
-
-						<div class="row col-xs-12">
-							<h4>Skill(s): </h4>
-							<h5>$skill(s)</h5><!-- Hard-coded placeholder -->
-						</div>
-
-						<div class="row col-xs-12 last-row">
-							<h4>Message: </h4>
-							<h5>$message to other musicians</h5><!-- Hard-coded placeholder -->
+							<h4>Realtek High Definition Driver</h4>
+							<h5>Realtek high definition (HD) audio drivers are now available, adding countless "driver customizations" and supporting a number of new Realtek chips.</h5>
+							<a href="http://218.210.127.131/downloads/Default.aspx?Langid=1" target="blank"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/realtek-logo.gif" alt="RealTek logo"></a>
 						</div>
 
 					</div>

@@ -16,7 +16,7 @@
 
 					<div class="row" id="avatar-n-edit-profile">	
 						<div class="col-xs-4 col-sm-3">
-							<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pg/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+							<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 						</div>
 						<div class="col-xs-8 col-sm-4">
 							<h2 id="user-id">$userid</h2><!-- Hard-coded placeholder -->
@@ -179,7 +179,7 @@
 									<div class="row col-xs-12">
 										<div class="row">
 											<div class="col-xs-5 col-sm-4">
-												<img src="<?php echo BASE_URL; ?>assets/images/profile-pg/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+												<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 											</div>
 											<div class="col-xs-7 col-sm-8" id="upload-avatar">	
 												<ul><!-- TODO: Edit markup for functional login and make this look better at viewport widths closer to 767px and 400px -->
@@ -201,7 +201,7 @@
 
 				</div>		
 				<div class="row col-xs-12 col-sm-3">
-					<div id="profile-right">
+					<div class="profile-right profile-page">
 						
 						<div class="row first-row">
 							<div class="col-xs-7 col-offset-xs-1">
