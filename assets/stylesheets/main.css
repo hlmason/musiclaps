@@ -3482,24 +3482,27 @@ section.upload-mp3-container #upload-project-container {
   margin-top: 30px;
   text-align: center; }
 
-section#projects-container {
+section.projects-container {
   border: 1px solid #cecece;
   margin-top: 25px;
   padding-bottom: 10px;
   padding-top: 10px;
   width: 100%; }
-  section#projects-container img {
+  section.projects-container img {
     margin-top: 2px;
     min-width: 99px;
     height: 60px; }
-  section#projects-container h4, section#projects-container h5 {
+  section.projects-container h4, section.projects-container h5 {
     margin-top: 0; }
-  section#projects-container h4 {
+  section.projects-container h4 {
     margin-bottom: 3px; }
-  section#projects-container h5 {
+  section.projects-container h5 {
     margin-bottom: 1px; }
-  section#projects-container h5:last-child {
+  section.projects-container h5:last-child {
     font-weight: normal; }
+  section.projects-container:hover {
+    background-color: #F4F4F4;
+    cursor: pointer; }
 
 .profile-right {
   background-color: #e7e7e7;
@@ -3531,15 +3534,16 @@ section#projects-container {
     height: 160px;
     width: 100%; }
 
-.profile-right.new-project-page {
+.profile-right.new-project-page, .profile-right.projects-page {
   height: 844px; }
-  .profile-right.new-project-page .row {
+  .profile-right.new-project-page .row, .profile-right.projects-page .row {
     margin-left: auto;
     margin-right: auto; }
-  .profile-right.new-project-page h3 {
+  .profile-right.new-project-page h3, .profile-right.projects-page h3 {
     margin-bottom: 10px;
-    margin-top: 18px; }
-  .profile-right.new-project-page h4:not(#first-h4) {
+    margin-top: 18px;
+    text-align: center; }
+  .profile-right.new-project-page h4:not(#first-h4), .profile-right.projects-page h4:not(#first-h4) {
     margin-top: 40px; }
 
 h1.db-error-message {

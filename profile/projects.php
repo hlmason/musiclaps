@@ -24,7 +24,7 @@
 						</div>
 					</div>
 
-					<section class="row" id="projects-container">
+					<section class="row projects-container" id="projectsContainer">
 						<div class="col-xs-4 col-sm-3 col-md-3">
 							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project Image"><!-- Hard-coded placeholder -->
 						</div>
@@ -42,7 +42,7 @@
 
 				</div>
 				<div class="row col-xs-12 col-sm-3">
-					<div class="profile-right new-project-page">
+					<div class="profile-right projects-page">
 						
 						<div class="row col-xs-12">
 							<h3>Recommended</h3>
