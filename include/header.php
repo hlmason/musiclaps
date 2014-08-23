@@ -26,7 +26,7 @@
     <script src="<?php echo BASE_URL; ?>assets/javascripts/customized.bootstrap.min.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/index.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/wmuSlider.min.js"></script>
-	<script src="<?php echo BASE_URL; ?>assets/javascripts/header.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/modal.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/live-player.js"></script>
 </head>
 <body>
@@ -59,20 +59,20 @@
 
 	<!-- Register modal -->
 	<?php
-		include(ROOT_PATH . 'include/register-modal.php');
+		include(ROOT_PATH . 'include/modals/register.php');
 	?>
 	<!-- End of register modal -->
 
 
 	<!-- Email registration modal -->
 	<?php
-		include(ROOT_PATH . 'include/registration-full-modal.php');
+		include(ROOT_PATH . 'include/modals/registration-full.php');
 	?>
 	<!-- End of email registration modal -->
 
 
 	<!-- Login modal -->
 	<?php
-		include(ROOT_PATH . 'include/login-modal.php');
+		include(ROOT_PATH . 'include/modals/login.php');
 	?>
 	<!-- End of login modal -->

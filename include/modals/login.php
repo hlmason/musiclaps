@@ -11,7 +11,7 @@
 			</div>
 
 			<?php
-				include(ROOT_PATH . 'include/social-network-login-modal.php');
+				include(ROOT_PATH . 'include/modals/social-network-login.php');
 			?>
 
 			<form action="login.php" method="post">

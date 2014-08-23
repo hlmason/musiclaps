@@ -153,14 +153,14 @@
 
 			<!-- Register or login modal -->
 			<?php
-				include(ROOT_PATH . 'include/register-or-login-modal.php');
+				include(ROOT_PATH . 'include/modals/register-or-login.php');
 			?>
 			<!-- End of register or login modal -->
 
 			
 			<!-- Express registration modal -->
 			<?php
-				// include(ROOT_PATH . 'include/registration-express-modal.php');
+				// include(ROOT_PATH . 'include/modals/registration-express.php');
 			?><!-- Express registration per Bart's request.  Not sure where/how this is going to be integrated. -->
 			<!-- End of express registration modal -->
 
