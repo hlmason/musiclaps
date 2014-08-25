@@ -2954,7 +2954,7 @@ nav .navbar-collapse {
     padding-left: 8px;
     padding-top: 4px;
     width: 100%; }
-  .modal-content #registration-full-modal-body .glyphicon-question-sign, .modal-content #registration-full-modal-body #password-req, .modal-content #registration-express-modal-body .glyphicon-question-sign, .modal-content #registration-express-modal-body #password-req {
+  .modal-content #registration-full-modal-body span.glyphicon-question-sign, .modal-content #registration-full-modal-body #password-req, .modal-content #registration-express-modal-body span.glyphicon-question-sign, .modal-content #registration-express-modal-body #password-req {
     color: #38aaff; }
   .modal-content #registration-full-modal-body #password-req, .modal-content #registration-express-modal-body #password-req {
     font-size: 12px;
@@ -3323,7 +3323,7 @@ button.musiclaps-dark-gray {
     margin-top: 8px; }
   #avatar-n-edit-profile #edit-save-profile h4.save-profile, #avatar-n-edit-profile #edit-save-profile h4.dont-save-profile {
     display: inline-block; }
-  #avatar-n-edit-profile #edit-save-profile .glyphicon, #avatar-n-edit-profile #edit-save-profile span#not-a-link {
+  #avatar-n-edit-profile #edit-save-profile span.glyphicon, #avatar-n-edit-profile #edit-save-profile span#not-a-link {
     color: #444444; }
 
 #about-me {
@@ -3426,6 +3426,7 @@ form.profile-page input#save_profile {
 #recording-player {
   background-color: #444444;
   height: 352px;
+  margin-top: 5px;
   width: 606px; }
 
 section.upload-mp3-container h4, section.upload-mp3-container h5 {
@@ -3484,10 +3485,16 @@ section.upload-mp3-container #upload-project-container {
 
 section.projects-container {
   border: 1px solid #cecece;
-  margin-top: 25px;
+  margin-top: 15px;
   padding-bottom: 10px;
   padding-top: 10px;
   width: 100%; }
+  section.projects-container span.glyphicon-pencil {
+    background-color: white;
+    border-radius: 100%;
+    height: 20px;
+    opacity: 0.95;
+    width: 20px; }
   section.projects-container img {
     margin-top: 2px;
     min-width: 99px;
@@ -3503,6 +3510,34 @@ section.projects-container {
   section.projects-container:hover {
     background-color: #F4F4F4;
     cursor: pointer; }
+
+.live-player-container {
+  margin-top: 15px; }
+
+section#project-form-header h3, section#project-form-header span.glyphicon-repeat, section#project-form-header span.glyphicon-lock, section#project-form-header select.project-type, section#project-form-header span.glyphicon-trash {
+  margin-right: 10px;
+  margin-top: 20px; }
+section#project-form-header h3 {
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 0; }
+
+section#project-info-bar {
+  background-color: #e7e7e7;
+  margin-top: 20px; }
+  section#project-info-bar h4, section#project-info-bar h5 {
+    display: inline-block; }
+  section#project-info-bar h4, section#project-info-bar h5 {
+    margin-top: 5px;
+    margin-bottom: 8px; }
+  section#project-info-bar h4:not(.first-h4), section#project-info-bar img#audio-mixer {
+    margin-left: 10px; }
+  section#project-info-bar h5 {
+    font-weight: normal;
+    margin-left: 20px; }
+  section#project-info-bar select.project-type, section#project-info-bar span.glyphicon-trash {
+    margin-right: 10px;
+    margin-top: 8px; }
 
 .profile-right {
   background-color: #e7e7e7;
@@ -3543,7 +3578,7 @@ section.projects-container {
     margin-bottom: 10px;
     margin-top: 18px;
     text-align: center; }
-  .profile-right.new-project-page h4:not(#first-h4), .profile-right.projects-page h4:not(#first-h4) {
+  .profile-right.new-project-page h4:not(.first-h4), .profile-right.projects-page h4:not(.first-h4) {
     margin-top: 40px; }
 
 h1.db-error-message {

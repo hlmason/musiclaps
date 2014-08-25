@@ -24,8 +24,10 @@
 						</div>
 					</div>
 
+					<!-- In Progress/Private -->
 					<section class="row projects-container" id="projectsContainer">
 						<div class="col-xs-4 col-sm-3 col-md-3">
+							<span class="glyphicon glyphicon-pencil" id="glyphiconPencil"></span>
 							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project Image"><!-- Hard-coded placeholder -->
 						</div>
 					
@@ -39,6 +41,34 @@
 							<h5>Unlisted <span class="glyphicon glyphicon-lock"></span></h5>
 						</div>
 					</section>
+					<!-- End of In Progress/Private -->
+
+					
+					<!-- Project form -->
+					<?php
+						include(ROOT_PATH . 'include/project-form.php');
+					?>
+					<!-- End of project form -->
+
+
+					<!-- Public -->
+
+					<!-- Endo of Public -->
+
+
+					<!-- Group -->
+
+					<!-- End of group -->
+
+
+					<!-- Audition -->
+
+					<!-- End of audition -->
+
+
+					<!-- Lyrics -->
+
+					<!-- Lyrics -->
 
 				</div>
 				<div class="row col-xs-12 col-sm-3">
@@ -49,7 +79,7 @@
 						</div>
 
 						<div class="row col-xs-12 first-row">
-							<h4 id="first-h4">Free Guitar Amp Simulator for Mac and Windows</h4>
+							<h4 class="first-h4">Free Guitar Amp Simulator for Mac and Windows</h4>
 							<a href="http://www.synthtopia.com/content/2010/01/22/free-guitar-amp-simulator-for-mac-windows/" target="blank"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/free-guitar-amp-simulator.jpg" alt="Free Guitar Amp Simulator"></a>
 						</div>
 

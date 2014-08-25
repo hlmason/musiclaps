@@ -177,7 +177,7 @@
 						</div>
 
 						<div class="row col-xs-12 first-row">
-							<h4 id="first-h4">Free Guitar Amp Simulator for Mac and Windows</h4>
+							<h4 class="first-h4">Free Guitar Amp Simulator for Mac and Windows</h4>
 							<a href="http://www.synthtopia.com/content/2010/01/22/free-guitar-amp-simulator-for-mac-windows/" target="blank"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/free-guitar-amp-simulator.jpg" alt="Free Guitar Amp Simulator"></a>
 						</div>
 
