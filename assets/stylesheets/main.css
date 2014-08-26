@@ -3505,18 +3505,18 @@ section.projects-container {
     margin-bottom: 3px; }
   section.projects-container h5 {
     margin-bottom: 1px; }
-  section.projects-container h5:last-child {
-    font-weight: normal; }
+    section.projects-container h5:last-child {
+      font-weight: normal; }
   section.projects-container:hover {
     background-color: #F4F4F4;
     cursor: pointer; }
 
-.live-player-container {
+.live-player-container, section#project-info-bar {
   margin-top: 15px; }
 
 section#project-form-header h3, section#project-form-header span.glyphicon-repeat, section#project-form-header span.glyphicon-lock, section#project-form-header select.project-type, section#project-form-header span.glyphicon-trash {
   margin-right: 10px;
-  margin-top: 20px; }
+  margin-top: 15px; }
 section#project-form-header h3 {
   display: inline-block;
   font-weight: normal;
@@ -3524,10 +3524,9 @@ section#project-form-header h3 {
 
 section#project-info-bar {
   background-color: #e7e7e7;
-  margin-top: 20px; }
+  border: 1px solid #cecece; }
   section#project-info-bar h4, section#project-info-bar h5 {
-    display: inline-block; }
-  section#project-info-bar h4, section#project-info-bar h5 {
+    display: inline-block;
     margin-top: 5px;
     margin-bottom: 8px; }
   section#project-info-bar h4:not(.first-h4), section#project-info-bar img#audio-mixer {
@@ -3538,6 +3537,34 @@ section#project-info-bar {
   section#project-info-bar select.project-type, section#project-info-bar span.glyphicon-trash {
     margin-right: 10px;
     margin-top: 8px; }
+
+section.volume-and-pan {
+  border-bottom: 1px solid #cecece;
+  border-left: 1px solid #cecece;
+  border-right: 1px solid #cecece;
+  height: 35px; }
+  section.volume-and-pan span.glyphicon, section.volume-and-pan h4:last-child {
+    margin-top: 9px; }
+  section.volume-and-pan span.glyphicon-volume-up {
+    margin-left: 30px; }
+  section.volume-and-pan span.glyphicon-save {
+    margin-bottom: -2px; }
+  section.volume-and-pan .slider {
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+    border: 1px solid #cecece;
+    display: inline-block;
+    height: 7px;
+    margin-bottom: 2px;
+    width: 100px; }
+  section.volume-and-pan h4 {
+    display: inline-block;
+    margin-top: 0; }
+    section.volume-and-pan h4#left-to-right {
+      margin-left: 70px; }
+    section.volume-and-pan h4:last-child {
+      margin-right: 3px; }
 
 .profile-right {
   background-color: #e7e7e7;
@@ -3554,14 +3581,14 @@ section#project-info-bar {
   .profile-right.profile-page .row {
     margin-left: 15px;
     width: 90%; }
-  .profile-right.profile-page .row:first-child {
-    text-align: center; }
-  .profile-right.profile-page .row:not(.first-row) {
-    height: 115px; }
-  .profile-right.profile-page .row:not(.last-row) {
-    border-bottom: 1px solid #999; }
-  .profile-right.profile-page .row#map-container {
-    height: 223.6px; }
+    .profile-right.profile-page .row:first-child {
+      text-align: center; }
+    .profile-right.profile-page .row:not(.first-row) {
+      height: 115px; }
+    .profile-right.profile-page .row:not(.last-row) {
+      border-bottom: 1px solid #999; }
+    .profile-right.profile-page .row#map-container {
+      height: 223.6px; }
   .profile-right.profile-page h2 {
     margin-bottom: 3px; }
   .profile-right.profile-page #map-container #map {
@@ -3818,8 +3845,8 @@ footer {
       margin-left: 10px;
       margin-top: -3px; }
 
-  #save_profile {
-    margin-left: 135px !important; } }
+  input#save_profile {
+    margin-left: 134px !important; } }
 @media only screen and (max-width: 417px) {
   h3.select-song-heading {
     font-size: 15px; }

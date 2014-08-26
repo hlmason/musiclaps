@@ -966,9 +966,9 @@ section.projects-container {
 	}
 	h5 {
 		margin-bottom: 1px;
-	}
-	h5:last-child { // "Unlisted"
-		font-weight: normal;
+		&:last-child { // "Unlisted"
+			font-weight: normal;
+		}
 	}
 	&:hover {
 		background-color: #F4F4F4;
@@ -976,14 +976,14 @@ section.projects-container {
 	}
 }
 
-.live-player-container {
+.live-player-container, section#project-info-bar {
 	margin-top: 15px;
 }
 
 section#project-form-header {
 	h3, span.glyphicon-repeat, span.glyphicon-lock, select.project-type, span.glyphicon-trash {
 		margin-right: 10px;
-		margin-top: 20px; 
+		margin-top: 15px; 
 	}
 	h3 {
 		display: inline-block;
@@ -994,11 +994,9 @@ section#project-form-header {
 
 section#project-info-bar {
 	background-color: $musiclaps-light-gray;
-	margin-top: 20px;
+	border: $nav-border;
 	h4, h5 {
 		display: inline-block;
-	}
-	h4, h5 {
 		margin-top: 5px;
 		margin-bottom: 8px;
 	}
@@ -1012,6 +1010,41 @@ section#project-info-bar {
 	select.project-type, span.glyphicon-trash {
 		margin-right: 10px;
 		margin-top: 8px;
+	}
+}
+
+section.volume-and-pan {
+	border-bottom: $nav-border;
+	border-left: $nav-border;
+	border-right: $nav-border;
+	height: 35px;
+	span.glyphicon, h4:last-child { // Glyphicons and "Save" link
+		margin-top: 9px;
+	}
+	span.glyphicon-volume-up {
+		margin-left: 30px;
+	}
+	span.glyphicon-save {
+		margin-bottom: -2px; // Aligns icon with "Save" link
+	}
+	.slider {
+		@include border-radius(10px);
+		background-color: $musiclaps-light-gray;
+		border: $nav-border;
+		display: inline-block;
+		height: 7px;
+		margin-bottom: 2px;
+		width: 100px;
+	}
+	h4 {
+		display: inline-block;
+		margin-top: 0;
+		&#left-to-right {
+			margin-left: 70px;
+		}
+		&:last-child {
+			margin-right: 3px;
+		}
 	}
 }
 
@@ -1033,19 +1066,20 @@ section#project-info-bar {
 	.row {
 		margin-left: 15px;
 		width: 90%;
+		&:first-child { // listeners/claps
+			text-align: center;
+		}
+		&:not(.first-row) { // listeners/claps
+			height: 115px;
+		}
+		&:not(.last-row) {
+			border-bottom: 1px solid #999;
+		}
+		&#map-container {
+			height: 223.6px;
+		}
 	}
-	.row:first-child { // listeners/claps
-		text-align: center;
-	}
-	.row:not(.first-row) { // listeners/claps
-		height: 115px;
-	}
-	.row:not(.last-row) {
-		border-bottom: 1px solid #999;
-	}
-	.row#map-container {
-		height: 223.6px;
-	}
+
 	h2 {
 		margin-bottom: 3px;
 	}
@@ -1056,7 +1090,7 @@ section#project-info-bar {
 	}
 }
 
-.profile-right.new-project-page, .profile-right.projects-page { // New Project Page
+.profile-right.new-project-page, .profile-right.projects-page { // New Project, Projects
 	height: 844px;
 	.row {
 		margin-left: auto;
@@ -1330,7 +1364,7 @@ footer {
 			margin-top: -3px;
 		}
 	}
-	#save_profile { margin-left: 135px !important; }
+	input#save_profile { margin-left: 134px !important; }
 }
 
 @media only screen and (max-width: 417px) {

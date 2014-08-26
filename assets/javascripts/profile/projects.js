@@ -9,6 +9,7 @@ $(document).ready(function() {
 
 	projectsContainer.click(function() {
 		projectsContainer.hide();
+		projectForm.fadeIn('fast');
 	});
 
 });

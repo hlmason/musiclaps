@@ -7,7 +7,7 @@
 	<!-- End of Recording Player -->
 
 	<section class="row col-xs-12" id="project-form-header">
-		<h3>Test</h3>
+		<h3>Project Title</h3>
 		<!-- Markup is backwards because elements are floated right -->
 		<span class="glyphicon glyphicon-trash pull-right"></span>
 		<select class="pull-right project-type">
@@ -32,9 +32,17 @@
 			<option value="private">Private</option><!-- Hard-coded placeholder -->
 		</select>
 	</section>
-	<section class="row col-xs-12" id="volume-and-pan">
+	<section class="row col-xs-12 volume-and-pan" id="volumeAndPan">
 		<span class="glyphicon glyphicon-volume-up"></span>
-		<div id="slider"></div>
+		<div class="slider"></div>
+		<h4>100</h4><!-- Hard-coded placeholder -->
+
+		<h4 id="left-to-right">L</h4>
+		<div class="slider"></div>
+		<h4>R</h4>
+
+		<span class="glyphicon glyphicon-save pull-right"></span>
+		<h4 class="pull-right">Save</h4>
 	</section>
 
 </div>
