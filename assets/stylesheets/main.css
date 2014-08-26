@@ -3034,7 +3034,7 @@ h1.landing-page {
     Musical Notes Map
 =================================== */
 #landing-page-hero {
-  margin-top: 30px;
+  margin-top: 0;
   overflow: hidden;
   position: relative;
   text-align: center; }
