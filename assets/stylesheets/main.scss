@@ -526,9 +526,6 @@ h1.landing-page {
 				text-transform: uppercase;
 				sup {		
 					letter-spacing: 4px;
-					&:nth-child(2), &:last-child {
-						display: none; // Invisible at viewport widths <= 1117px
-					}
 				}
 			}
 			ul {

@@ -25,9 +25,7 @@
 					</div>
 					<div class="col-sm-4">
 						<p>
-							<sup>......</sup>
-							Record a Demo&nbsp;
-							<sup>......</sup>
+							<sup>...... </sup> Record a Demo&nbsp;<sup> ......</sup>
 						</p>
 					</div>
 					<div class="col-sm-4" id="contests">
