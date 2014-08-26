@@ -3088,29 +3088,27 @@ h1.landing-page {
   width: 100%; }
   #stage #stage-inner {
     margin: 0 auto;
-    width: 60%; }
-    #stage #stage-inner #soundcheck, #stage #stage-inner #record-demo {
-      margin-top: 55px;
-      padding-left: 0;
-      padding-right: 0; }
-      #stage #stage-inner #soundcheck a, #stage #stage-inner #record-demo a {
-        color: white;
-        font-family: 'Allerta Stencil', sans-serif;
-        font-size: 26px; }
-        #stage #stage-inner #soundcheck a:hover, #stage #stage-inner #soundcheck a:focus, #stage #stage-inner #record-demo a:hover, #stage #stage-inner #record-demo a:focus {
+    max-width: 935px; }
+    #stage #stage-inner #education, #stage #stage-inner #contests {
+      margin-top: 52px; }
+      #stage #stage-inner #education a, #stage #stage-inner #contests a {
+        color: #e7e7e7;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 24px;
+        letter-spacing: 0.5px; }
+        #stage #stage-inner #education a:hover, #stage #stage-inner #education a:focus, #stage #stage-inner #contests a:hover, #stage #stage-inner #contests a:focus {
           color: #38aaff; }
-    #stage #stage-inner #soundcheck {
-      -webkit-transform: rotate(7deg);
-      -moz-transform: rotate(7deg);
-      -ms-transform: rotate(7deg);
-      -o-transform: rotate(7deg);
-      transform: rotate(7deg); }
-    #stage #stage-inner #record-demo {
-      -webkit-transform: rotate(-7deg);
-      -moz-transform: rotate(-7deg);
-      -ms-transform: rotate(-7deg);
-      -o-transform: rotate(-7deg);
-      transform: rotate(-7deg); }
+        #stage #stage-inner #education a span, #stage #stage-inner #contests a span {
+          -moz-border-radius: 100%;
+          border-radius: 100%;
+          background-color: #F4F4F4;
+          padding: 4px 7px; }
+          #stage #stage-inner #education a span img, #stage #stage-inner #contests a span img {
+            width: 29px; }
+            #stage #stage-inner #education a span img:first-child, #stage #stage-inner #contests a span img:first-child {
+              height: 25px; }
+            #stage #stage-inner #education a span img:first-child, #stage #stage-inner #contests a span img:first-child {
+              height: 27px; }
     #stage #stage-inner p {
       color: #38aaff;
       font-size: 12px;
@@ -3121,7 +3119,7 @@ h1.landing-page {
         #stage #stage-inner p sup:nth-child(2), #stage #stage-inner p sup:last-child {
           display: none; }
     #stage #stage-inner ul {
-      margin-top: -37px; }
+      margin-top: -73px; }
       #stage #stage-inner ul li {
         display: inline-block; }
         #stage #stage-inner ul li img {
@@ -3176,9 +3174,9 @@ h1.landing-page {
 /* ===============================================================
     Technology, Backstage, Music Education, Contests and Auditions
 =============================================================== */
-section#technology, section#backstage, section#music-ed, section#contests-and-auditions {
+section#technology, section#backstage, section.music-ed, section.contests-and-auditions {
   padding-bottom: 30px; }
-  section#technology h2, section#backstage h2, section#music-ed h2, section#contests-and-auditions h2 {
+  section#technology h2, section#backstage h2, section.music-ed h2, section.contests-and-auditions h2 {
     color: #444444;
     font-size: 26px;
     font-weight: normal;
@@ -3186,47 +3184,47 @@ section#technology, section#backstage, section#music-ed, section#contests-and-au
     margin-bottom: 15px;
     margin-top: 30px;
     text-align: center; }
-  section#technology p, section#backstage p, section#music-ed p, section#contests-and-auditions p {
+  section#technology p, section#backstage p, section.music-ed p, section.contests-and-auditions p {
     font-size: 18px;
     letter-spacing: 0.25px;
     margin-bottom: 0;
     margin-top: 0; }
-  section#technology a, section#backstage a, section#music-ed a, section#contests-and-auditions a {
+  section#technology a, section#backstage a, section.music-ed a, section.contests-and-auditions a {
     color: #1f91e6 !important;
     font-size: 16px;
     line-height: 0; }
-    section#technology a:hover, section#technology a:focus, section#backstage a:hover, section#backstage a:focus, section#music-ed a:hover, section#music-ed a:focus, section#contests-and-auditions a:hover, section#contests-and-auditions a:focus {
+    section#technology a:hover, section#technology a:focus, section#backstage a:hover, section#backstage a:focus, section.music-ed a:hover, section.music-ed a:focus, section.contests-and-auditions a:hover, section.contests-and-auditions a:focus {
       color: #444444 !important; }
-  section#technology ul, section#backstage ul, section#music-ed ul, section#contests-and-auditions ul {
+  section#technology ul, section#backstage ul, section.music-ed ul, section.contests-and-auditions ul {
     margin-top: 0; }
-    section#technology ul li:first-child, section#backstage ul li:first-child, section#music-ed ul li:first-child, section#contests-and-auditions ul li:first-child {
+    section#technology ul li:first-child, section#backstage ul li:first-child, section.music-ed ul li:first-child, section.contests-and-auditions ul li:first-child {
       padding-top: 20px; }
-    section#technology ul li:not(.first-list-item), section#backstage ul li:not(.first-list-item), section#music-ed ul li:not(.first-list-item), section#contests-and-auditions ul li:not(.first-list-item) {
+    section#technology ul li:not(.first-list-item), section#backstage ul li:not(.first-list-item), section.music-ed ul li:not(.first-list-item), section.contests-and-auditions ul li:not(.first-list-item) {
       padding-top: 10px; }
 
-section#technology, section#backstage, section#music-ed {
+section#technology, section#backstage, section.music-ed {
   border-bottom: 1px solid #cecece; }
 
-section#technology, section#music-ed {
+section#technology, section.music-ed {
   background-color: #e7e7e7; }
 
-section#backstage, section#contests-and-auditions {
+section#backstage, section.contests-and-auditions {
   background-color: white; }
 
 section#technology img {
   margin-top: 120px;
   width: 200px; }
 
-section#backstage img, section#music-ed img, section#contests-and-auditions img {
+section#backstage img, section.music-ed img, section.contests-and-auditions img {
   width: 150px; }
 
 section#backstage img {
   margin-top: 80px; }
 
-section#music-ed img {
+section.music-ed img {
   margin-top: 70px; }
 
-section#contests-and-auditions img {
+section.contests-and-auditions img {
   margin-top: 100px; }
 
 /* ===================================
@@ -3676,9 +3674,6 @@ footer {
 /* ===================================
     Media Queries
 =================================== */
-@media only screen and (max-width: 1474px) {
-  #stage-inner {
-    width: 80% !important; } }
 @media only screen and (max-width: 1199px) {
   .wmuSliderPrev {
     left: 0; }
@@ -3689,27 +3684,11 @@ footer {
   .profile-right {
     margin-top: -1px;
     width: 136.75%; } }
-@media only screen and (max-width: 1117px) {
-  #stage-inner sup:first-child, #stage-inner sup:nth-child(3) {
-    display: none; }
-  #stage-inner sup:nth-child(2), #stage-inner sup:last-child {
-    display: inline-block !important; } }
 @media only screen and (max-width: 1090px) {
   #about-me {
     border: none; } }
-@media only screen and (max-width: 1016px) {
-  #stage-inner {
-    width: 100% !important; } }
-@media only screen and (max-width: 818px) {
-  #stage-inner #soundcheck a, #stage-inner #record-demo a {
-    font-size: 20px !important; }
-  #stage-inner ul {
-    margin-top: -20px !important; }
-    #stage-inner ul img {
-      width: 65% !important;
-      min-width: 49px !important; } }
 @media only screen and (max-width: 991px) {
-  section#technology img, section#backstage img, section#music-ed img, section#contests-and-auditions img {
+  section#technology img, section#backstage img, section.music-ed img, section.contests-and-auditions img {
     display: none; }
 
   .profile-right {
@@ -3722,6 +3701,9 @@ footer {
   footer .navbar-left {
     float: left !important;
     padding-bottom: 15px; } }
+@media only screen and (max-width: 818px) {
+  #stage-inner ul {
+    margin-top: -72px; } }
 @media only screen and (max-width: 767px) {
   nav.navbar a:not(.navbar-brand) {
     margin-left: 10px; }
@@ -3787,18 +3769,18 @@ footer {
     -o-transition: all 0 ease 0;
     transition: all 0 ease 0; }
 
-  #stage-inner #soundcheck a, #stage-inner #record-demo a {
+  #stage-inner #education a, #stage-inner #contests a {
     display: none; }
   #stage-inner p {
     margin-top: -30px !important; }
   #stage-inner ul {
     margin-top: -40px !important; }
 
-  section#technology h2, section#backstage h2, section#music-ed h2, section#contests-and-auditions h2 {
+  section#technology h2, section#backstage h2, section.music-ed h2, section.contests-and-auditions h2 {
     font-size: 22px; }
-  section#technology p, section#backstage p, section#music-ed p, section#contests-and-auditions p {
+  section#technology p, section#backstage p, section.music-ed p, section.contests-and-auditions p {
     font-size: 16px; }
-  section#technology a, section#backstage a, section#music-ed a, section#contests-and-auditions a {
+  section#technology a, section#backstage a, section.music-ed a, section.contests-and-auditions a {
     font-size: 14px; }
 
   .wmuSlider {

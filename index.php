@@ -11,9 +11,6 @@
 		<h1 class="landing-page">
 			Online <a href="https://www.musiclaps.com/play?m=rs&show=all&svv=collab">Music Collaboration</a> Made Simple
 		</h1>
-		<h1 class="landing-page">
-			...Just Log in and Start Recording
-		</h1>
 		<div id="landing-page-hero">
 			<div id="musical-notes-map"></div>
 			<script>musicianSilhouetteRandomizer()</script><!-- Randomly rotates through silhouette images of musicians on landing page -->
@@ -22,20 +19,20 @@
 		<div class="container" id="stage">
 			<div id="stage-inner">
 				<div class="row">
-					<div id="soundcheck" class="col-sm-4">
-						<a href="<?php echo BASE_URL; ?>live-player/">Soundcheck</a><!-- Visible at viewport widths >= 768px -->
+					<div class="col-sm-4" id="education">
+						<a href="#music-ed"><span><img src="<?php echo BASE_URL; ?>assets/images/landing-pg/music-book.png" alt="Book with music note"></span><br>
+						Education</a><!-- Visible at viewport widths >= 768px -->
 					</div>
 					<div class="col-sm-4">
 						<p>
-							<sup>...</sup><!-- Visible at viewport widths >= 1118px -->
-							<sup></sup><!-- Visible at viewport widths <= 1117px -->
-							Click on any button to start
-							<sup>...</sup><!-- Visible at viewport widths >= 1118px -->
-							<sup></sup><!-- Visible at viewport widths <= 1117px -->
+							<sup>......</sup>
+							Record a Demo&nbsp;
+							<sup>......</sup>
 						</p>
 					</div>
-					<div id="record-demo" class="col-sm-4">
-						<a href="<?php echo BASE_URL; ?>live-player/">Record a Demo</a><!-- Visible at viewport widths >= 768px -->
+					<div class="col-sm-4" id="contests">
+						<a href="#contests-and-auditions"><span><img src="<?php echo BASE_URL; ?>assets/images/landing-pg/trophy.png" alt="Trophy"></span><br>
+						Contests</a><!-- Visible at viewport widths >= 768px -->
 					</div>
 				</div>
 				<div class="row">		
@@ -132,10 +129,10 @@
 			</div>
 		</section>
 
-		<section id="music-ed">
+		<section class="music-ed">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-7 col-md-offset-1">					
+					<a id="music-ed"><div class="col-md-7 col-md-offset-1"></a>		
 						<h2>Music Education</h2>
 						<ul>
 							<li class="first-list-item"><a>Little Kids rock song of the week!</a></li>
@@ -150,10 +147,10 @@
 			</div>
 		</section>
 
-		<section id="contests-and-auditions">
+		<section class="contests-and-auditions">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-7 col-md-offset-1">					
+					<a id="contests-and-auditions"><div class="col-md-7 col-md-offset-1"></a>					
 						<h2>Contests and Auditions</h2>
 						<ul>
 							<li class="first-list-item"><a href="contests/musiclaps-contest.pdf" target="blank">In-House Contest</a></li>

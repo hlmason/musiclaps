@@ -492,26 +492,32 @@ h1.landing-page {
 		width: 100%;
 		#stage-inner {
 			margin: 0 auto;
-			width: 60%;
-			#soundcheck, #record-demo {
-				margin-top: 55px;
-				padding-left: 0;
-				padding-right: 0;
+			max-width: 935px;
+			#education, #contests {
+				margin-top: 52px;
 				a {
-					color: white;
-					font-family: 'Allerta Stencil', sans-serif;
-					font-size: 26px;
+					color: $musiclaps-light-gray;
+					font-family: 'Roboto Condensed', sans-serif;
+					font-size: 24px;
+					letter-spacing: 0.5px;
 					&:hover, &:focus {
 						color: $musiclaps-blue;
 					}
+					span {
+						@include border-radius(100%);
+						background-color: #F4F4F4;
+						padding: 4px 7px;
+							img {
+							width: 29px;
+							&:first-child {
+								height: 25px;
+							}
+							&:first-child {
+								height: 27px;
+							}
+						}
+					}
 				}
-			}
-			#soundcheck {
-				@include transform(7deg);
-			}
-			#record-demo {
-				@include transform(-7deg);
-
 			}
 			p {
 				color: $musiclaps-blue;
@@ -526,7 +532,7 @@ h1.landing-page {
 				}
 			}
 			ul {
-				margin-top: -37px;
+				margin-top: -73px;
 				li {
 					display: inline-block;
 					img { // Play, pause, stop, and record buttons
@@ -600,7 +606,7 @@ h1.landing-page {
 	/* ===============================================================
 	    Technology, Backstage, Music Education, Contests and Auditions
 	=============================================================== */
-	section#technology, section#backstage, section#music-ed, section#contests-and-auditions {
+	section#technology, section#backstage, section.music-ed, section.contests-and-auditions {
 		padding-bottom: 30px;
 		h2 {
 			@include heading(26px, 15px, 30px);
@@ -620,15 +626,15 @@ h1.landing-page {
 		}
 	}
 
-	section#technology, section#backstage, section#music-ed {
+	section#technology, section#backstage, section.music-ed {
 		border-bottom: $nav-border;
 	}
 
-	section#technology, section#music-ed {
+	section#technology, section.music-ed {
 		background-color: $musiclaps-light-gray;
 	}
 
-	section#backstage, section#contests-and-auditions {
+	section#backstage, section.contests-and-auditions {
 		background-color: white;
 	}
 
@@ -637,7 +643,7 @@ h1.landing-page {
 		width: 200px;
 	}
 
-	section#backstage img, section#music-ed img, section#contests-and-auditions img {
+	section#backstage img, section.music-ed img, section.contests-and-auditions img {
 		width: 150px;
 	}
 
@@ -645,11 +651,11 @@ h1.landing-page {
 		margin-top: 80px;
 	}
 
-	section#music-ed img {
+	section.music-ed img {
 		margin-top: 70px;
 	}
 
-	section#contests-and-auditions img {
+	section.contests-and-auditions img {
 		margin-top: 100px;
 	}
 
@@ -1179,11 +1185,6 @@ footer {
 /* ===================================
     Media Queries
 =================================== */
-@media only screen and (max-width: 1474px) {
-// Breakpoint of "Click on any button to start" (Landing Page)
-	#stage-inner { width: 80% !important; }
-}
-
 @media only screen and (max-width: 1199px) {
 // Breakpoint of slider buttons (Landing Page) and gray boxes (Profile Page)
 	.wmuSliderPrev { left: 0; }
@@ -1194,42 +1195,14 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 1117px) {
-// Breakpoint of "Click on any button to start" (Landing Page)
-	#stage-inner {
-		sup {
-			&:first-child, &:nth-child(3) { display: none; }
-			&:nth-child(2), &:last-child { display: inline-block !important; }
-		}
-	}
-}
-
 @media only screen and (max-width: 1090px) {
 // Breakpoint of "About me" border (Profile Page)
 	#about-me { border: none; }
 }
 
-@media only screen and (max-width: 1016px) {
-// Breakpoint of Sound Check" and "Record a Demo" (Landing Page)
-	#stage-inner { width: 100% !important; }
-}
-
-@media only screen and (max-width: 818px) {
-// Breakpoint of "Record a Demo" (Landing Page)
-	#stage-inner {
-		#soundcheck, #record-demo {
-			a { font-size: 20px !important; }
-		}
-		ul {
-			margin-top: -20px !important;
-			img { width: 65% !important; min-width: 49px !important; } // Play, pause, stop, and record buttons
-		}
-	}
-}
-
 @media only screen and (max-width: 991px) {
 // Breakpoint of social media icons on footer  and gray boxes (Profile Page)
-	section#technology, section#backstage, section#music-ed, section#contests-and-auditions {
+	section#technology, section#backstage, section.music-ed, section.contests-and-auditions {
 		img { display: none; }
 	}
 	.profile-right { width: 150%; }
@@ -1241,6 +1214,11 @@ footer {
 			padding-bottom: 15px; 
 		}
 	}
+}
+
+@media only screen and (max-width: 818px) {
+// Breakpoint of "Music Education" and "Contests and Auditions" (Landing Page)
+	#stage-inner ul { margin-top: -72px; }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1301,13 +1279,13 @@ footer {
 	       	 	transition: all 0 ease 0; 
 	}
 	#stage-inner {
-		#soundcheck, #record-demo {
+		#education, #contests {
 			a { display: none; }
 		}
 		p { margin-top: -30px !important; }
 		ul { margin-top: -40px !important; }
 	}
-	section#technology, section#backstage, section#music-ed, section#contests-and-auditions {
+	section#technology, section#backstage, section.music-ed, section.contests-and-auditions {
 		h2 { font-size: 22px; }
 		p { font-size: 16px; }
 		a { font-size: 14px; }
