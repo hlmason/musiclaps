@@ -458,12 +458,13 @@ h1.landing-page {
 	    Musical Notes Map
 	=================================== */
 	#landing-page-hero {
-		margin-top: 0;
+		margin-top: 20px;
 		overflow: hidden;
 		position: relative;
 		text-align: center;
 		#musical-notes-map {
 			background-image: url('../../assets/images/landing-pg/musical-notes-map.png');
+			background-repeat: repeat-x;
 			height: 100%;
 			margin-left: -1010em;
 			position: absolute;
