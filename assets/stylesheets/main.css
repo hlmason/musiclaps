@@ -2912,6 +2912,67 @@ nav .navbar-collapse {
   .modal-content .modal-body {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px; }
+    .modal-content .modal-body#sn-login-modal-body, .modal-content .modal-body#sn-login-modal-body-sm, .modal-content .modal-body#registration-full-modal-body, .modal-content .modal-body#registration-express-modal-body {
+      border-bottom: 1px solid #e7e7e7;
+      border-radius: 0;
+      padding-top: 0;
+      width: 100%; }
+    .modal-content .modal-body#sn-login-modal-body, .modal-content .modal-body#sn-login-modal-body-sm {
+      padding-bottom: 0; }
+    .modal-content .modal-body#sn-login-modal-body li {
+      display: inline-block; }
+      .modal-content .modal-body#sn-login-modal-body li img {
+        margin-left: 10px; }
+    .modal-content .modal-body#sn-login-modal-body-sm {
+      display: none; }
+    .modal-content .modal-body#login-modal-body {
+      padding-top: 0; }
+    .modal-content .modal-body#registration-full-modal-body input, .modal-content .modal-body#registration-express-modal-body input {
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      border: 1px solid #cecece;
+      padding-bottom: 4px;
+      padding-left: 8px;
+      padding-top: 4px;
+      width: 100%; }
+    .modal-content .modal-body#registration-full-modal-body span.glyphicon-question-sign, .modal-content .modal-body#registration-full-modal-body #password-req, .modal-content .modal-body#registration-express-modal-body span.glyphicon-question-sign, .modal-content .modal-body#registration-express-modal-body #password-req {
+      color: #38aaff; }
+    .modal-content .modal-body#registration-full-modal-body #password-req, .modal-content .modal-body#registration-express-modal-body #password-req {
+      font-size: 12px;
+      margin-bottom: 2px; }
+    .modal-content .modal-body#login-modal-body input {
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      border: 1px solid #cecece;
+      padding-bottom: 4px;
+      padding-left: 8px;
+      padding-top: 4px;
+      width: 90%; }
+    .modal-content .modal-body#registration-full-modal-body label, .modal-content .modal-body#registration-express-modal-body label {
+      margin-bottom: 2px;
+      margin-top: 10px; }
+    .modal-content .modal-body label#email-label, .modal-content .modal-body label#birth-date-label-modal, .modal-content .modal-body label#gender-label, .modal-content .modal-body label#zip-label, .modal-content .modal-body img#captcha-img, .modal-content .modal-body #checkbox {
+      margin-bottom: 2px;
+      margin-top: 15px; }
+    .modal-content .modal-body img#captcha-img {
+      display: block;
+      height: 50px;
+      width: 210px; }
+    .modal-content .modal-body #checkbox {
+      font-size: 12px; }
+      .modal-content .modal-body #checkbox input {
+        margin-top: 4px;
+        width: 12px; }
+    .modal-content .modal-body#login-modal-body input {
+      margin-top: 15px; }
+    .modal-content .modal-body#register-or-login-modal-body input {
+      display: block;
+      font-weight: bold;
+      width: 100%; }
+    .modal-content .modal-body#register-or-login-modal-body input:first-child {
+      margin-top: 5px; }
+    .modal-content .modal-body#register-or-login-modal-body input:last-child {
+      margin-top: 20px; }
     .modal-content .modal-body h4 {
       margin-bottom: 0;
       margin-top: 12px; }
@@ -2919,10 +2980,12 @@ nav .navbar-collapse {
       display: inline-block; }
       .modal-content .modal-body ul a:hover {
         color: #444444; }
-    .modal-content .modal-body#walkthrough h4 {
-      font-weight: normal;
-      margin-bottom: 10px;
-      margin-top: 0; }
+    .modal-content .modal-body#walkthrough {
+      padding-bottom: 5px; }
+      .modal-content .modal-body#walkthrough h4 {
+        font-weight: normal;
+        margin-bottom: 10px;
+        margin-top: 0; }
     .modal-content .modal-body img#rainbow-music-notes {
       margin-top: 15px;
       height: 179px;
@@ -2930,77 +2993,14 @@ nav .navbar-collapse {
   .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm,
   .modal-content #registration-express-modal-body, .modal-content #login-modal-body, .modal-content .modal-footer {
     text-align: center; }
-  .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm,
-  .modal-content #registration-full-modal-body, .modal-content #registration-express-modal-body {
-    border-bottom: 1px solid #e7e7e7;
-    border-radius: 0;
-    padding-top: 0;
-    width: 100%; }
-  .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm {
-    padding-bottom: 0; }
-  .modal-content #sn-login-modal-body li {
-    display: inline-block; }
-    .modal-content #sn-login-modal-body li img {
-      margin-left: 10px; }
-  .modal-content #sn-login-modal-body-sm {
-    display: none; }
-  .modal-content #registration-full-modal-body, .modal-content #registration-express-modal-body, .modal-content #login-modal-body {
-    padding-top: 0; }
-  .modal-content #registration-full-modal-body input, .modal-content #registration-express-modal-body input {
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    border: 1px solid #cecece;
-    padding-bottom: 4px;
-    padding-left: 8px;
-    padding-top: 4px;
-    width: 100%; }
-  .modal-content #registration-full-modal-body span.glyphicon-question-sign, .modal-content #registration-full-modal-body #password-req, .modal-content #registration-express-modal-body span.glyphicon-question-sign, .modal-content #registration-express-modal-body #password-req {
-    color: #38aaff; }
-  .modal-content #registration-full-modal-body #password-req, .modal-content #registration-express-modal-body #password-req {
-    font-size: 12px;
-    margin-bottom: 2px; }
-  .modal-content #login-modal-body input {
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    border: 1px solid #cecece;
-    padding-bottom: 4px;
-    padding-left: 8px;
-    padding-top: 4px;
-    width: 90%; }
-  .modal-content #registration-full-modal-body label, .modal-content #registration-express-modal-body label {
-    margin-bottom: 2px;
-    margin-top: 10px; }
-  .modal-content #registration-full-modal-body input, .modal-content #registration-express-modal-body input {
-    margin-top: 0; }
-  .modal-content label#email-label, .modal-content label#birth-date-label-modal, .modal-content label#gender-label, .modal-content label#zip-label, .modal-content img#captcha-img, .modal-content #checkbox {
-    margin-bottom: 2px;
-    margin-top: 15px; }
-  .modal-content img#captcha-img {
-    display: block;
-    height: 50px;
-    width: 210px; }
-  .modal-content #checkbox {
-    font-size: 12px; }
-    .modal-content #checkbox input {
-      width: 12px; }
-  .modal-content #login-modal-body input {
-    margin-top: 15px; }
-  .modal-content #register-or-login-modal-body input {
-    display: block;
-    font-weight: bold;
-    width: 100%; }
-  .modal-content #register-or-login-modal-body input:first-child {
-    margin-top: 5px; }
-  .modal-content #register-or-login-modal-body input:last-child {
-    margin-top: 20px; }
   .modal-content .modal-footer a {
     margin-right: 58px; }
     .modal-content .modal-footer a:hover, .modal-content .modal-footer a:focus {
       color: #444444;
       cursor: pointer; }
-  .modal-content #register-modal-footer, .modal-content .registration-modal-footer {
+  .modal-content .modal-footer#register-modal-footer, .modal-content .modal-footer.registration-modal-footer {
     border-top: none; }
-  .modal-content .registration-modal-footer input {
+  .modal-content .modal-footer.registration-modal-footer input {
     -moz-border-radius: 10px;
     border-radius: 10px;
     background-color: #38aaff;
@@ -3010,7 +3010,7 @@ nav .navbar-collapse {
     color: white;
     text-transform: uppercase;
     width: 100%; }
-    .modal-content .registration-modal-footer input:hover, .modal-content .registration-modal-footer input:focus {
+    .modal-content .modal-footer.registration-modal-footer input:hover, .modal-content .modal-footer.registration-modal-footer input:focus {
       background-color: #45b7ff; }
 
 /* ===================================

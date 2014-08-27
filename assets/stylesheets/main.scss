@@ -287,7 +287,7 @@ nav {
 	h2.register-modal-heading, h2.registration-full-modal-heading, 
 	h2.registration-express-modal-heading, h2.login-modal-heading {
 		letter-spacing: 0.5px;
-		}
+	}
 	h2.registration-express-modal-heading { // Not sure why this is the only heading which needs bold property specified
 		font-weight: bold !important;
 	}
@@ -297,6 +297,86 @@ nav {
 	.modal-body {
 		border-bottom-left-radius: 5px;
 		border-bottom-right-radius: 5px;
+		&#sn-login-modal-body, &#sn-login-modal-body-sm, 
+		&#registration-full-modal-body, &#registration-express-modal-body, {
+			border-bottom: 1px solid #e7e7e7;
+			border-radius: 0;
+			padding-top: 0;
+			width: 100%;
+		}
+		&#sn-login-modal-body, &#sn-login-modal-body-sm {
+			padding-bottom: 0;
+		}
+		&#sn-login-modal-body { 
+			li {
+				display: inline-block;
+				img {
+					margin-left: 10px;
+				}
+			}
+		}
+		&#sn-login-modal-body-sm {
+			display: none; // Invisible at viewport widths >= 768px
+		}
+		&#login-modal-body {
+			padding-top: 0;
+		}
+		&#registration-full-modal-body, &#registration-express-modal-body {
+			input { // Form fields
+				@include form-fields-input(100%);
+			}
+			span.glyphicon-question-sign, #password-req {
+				color: $musiclaps-blue;
+			}
+			#password-req {
+				font-size: 12px;
+				margin-bottom: 2px;
+			}
+		}
+		&#login-modal-body input { // Form fields
+			@include form-fields-input(90%);
+		}
+		&#registration-full-modal-body, &#registration-express-modal-body {
+			label {
+				@include form-fields-label(10px);
+			}
+			input { // Form fields
+				// margin-top: 0;
+			}
+		}
+		label#email-label, label#birth-date-label-modal, label#gender-label, label#zip-label, img#captcha-img, #checkbox {
+			@include form-fields-label(15px);
+		}
+		img#captcha-img {
+			display: block; // For viewport widths <= 767px
+			height: 50px;
+			width: 210px;
+		}
+		#checkbox { // "I agree to the Musiclaps Terms of Use and Privacy Policy"
+			font-size: 12px;
+			input {
+				margin-top: 4px;
+				width: 12px; // Keeps text inline with checkbox
+			}
+		}
+		&#login-modal-body {
+			input { // Username and Password
+				margin-top: 15px;
+			}
+		}
+		&#register-or-login-modal-body {
+			input {
+				display: block;
+				font-weight: bold;
+				width: 100%;
+			}
+			input:first-child {
+				margin-top: 5px;
+			}
+			input:last-child {
+				margin-top: 20px;
+			}
+		}
 		h4 {
 			margin-bottom: 0;
 			margin-top: 12px;
@@ -308,6 +388,7 @@ nav {
 			}
 		}
 		&#walkthrough {
+			padding-bottom: 5px;
 			h4 {
 				font-weight: normal;
 				margin-bottom: 10px;
@@ -324,85 +405,7 @@ nav {
 	#registration-express-modal-body, #login-modal-body, .modal-footer {
 		text-align: center;
 	}
-	#sn-login-modal-body, #sn-login-modal-body-sm, 
-	#registration-full-modal-body, #registration-express-modal-body, {
-		border-bottom: 1px solid #e7e7e7;
-		border-radius: 0;
-		padding-top: 0;
-		width: 100%;
-	}
-	#sn-login-modal-body, #sn-login-modal-body-sm {
-		padding-bottom: 0;
-	} 
-	#sn-login-modal-body { 
-		li {
-			display: inline-block;
-			img {
-				margin-left: 10px;
-			}
-		}
-	}
-	#sn-login-modal-body-sm {
-		display: none; // Invisible at viewport widths >= 768px
-	}
-	#registration-full-modal-body, #registration-express-modal-body, #login-modal-body {
-		padding-top: 0;
-	}
-	#registration-full-modal-body, #registration-express-modal-body {
-		input { // Form fields
-			@include form-fields-input(100%);
-		}
-		span.glyphicon-question-sign, #password-req {
-			color: $musiclaps-blue;
-		}
-		#password-req {
-			font-size: 12px;
-			margin-bottom: 2px;
-		}
-	}
-	#login-modal-body input { // Form fields
-		@include form-fields-input(90%);
-	}
-	#registration-full-modal-body, #registration-express-modal-body {
-		label {
-			@include form-fields-label(10px);
-		}
-		input { // Form fields
-			margin-top: 0;
-		}
-	}
-	label#email-label, label#birth-date-label-modal, label#gender-label, label#zip-label, img#captcha-img, #checkbox {
-		@include form-fields-label(15px);
-	}
-	img#captcha-img {
-		display: block; // For viewport widths <= 767px
-		height: 50px;
-		width: 210px;
-	}
-	#checkbox { // "I agree to the Musiclaps Terms of Use and Privacy Policy"
-		font-size: 12px;
-		input {
-			width: 12px;
-		}
-	}
-	#login-modal-body {
-		input { // Username and Password
-			margin-top: 15px;
-		}
-	}
-	#register-or-login-modal-body {
-		input {
-			display: block;
-			font-weight: bold;
-			width: 100%;
-		}
-		input:first-child {
-			margin-top: 5px;
-		}
-		input:last-child {
-			margin-top: 20px;
-		}
-	}
+
 	.modal-footer {
 		a { // "Forgot password" link
 			margin-right: 58px;
@@ -411,17 +414,17 @@ nav {
 				cursor: pointer;
 			}
 		}
-	}
-	#register-modal-footer, .registration-modal-footer {
-		border-top: none;
-	}
-	.registration-modal-footer input { // "Register" button
-		@include border-radius(10px);
-		@include submit($musiclaps-blue, 5px 10px, #45B7FF);
-		border: 1px solid #1F91E6;
-		color: white;
-		text-transform: uppercase;
-		width: 100%;
+		&#register-modal-footer, &.registration-modal-footer {
+			border-top: none;
+		}
+		&.registration-modal-footer input { // "Register" button
+			@include border-radius(10px);
+			@include submit($musiclaps-blue, 5px 10px, #45B7FF);
+			border: 1px solid #1F91E6;
+			color: white;
+			text-transform: uppercase;
+			width: 100%;
+		}
 	}
 }
 
