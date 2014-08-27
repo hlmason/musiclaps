@@ -3,11 +3,12 @@
 /* ===================================
     Variables
 =================================== */
-$nav-border: 1px solid #cecece;
-$musiclaps-light-gray: #e7e7e7;
-$musiclaps-dark-gray: #444; // Whichever shade of gray is in the final logo - TBD
 $musiclaps-blue: #38AAFF; // Whatever shade of blue you want
+$musiclaps-light-gray: #e7e7e7;
 $modal-border: 5px solid $musiclaps-light-gray;
+$musiclaps-dark-gray: #444; // Whichever shade of gray is in the final logo - TBD
+$musiclaps-blue-border: 1px solid $musiclaps-blue;
+$nav-border: 1px solid #cecece;
 
 /* ===================================
     Mixins
@@ -44,9 +45,9 @@ $modal-border: 5px solid $musiclaps-light-gray;
 	margin-top: $margin-top;
 }
 
-@mixin submit($background-color, $padding, $hover-color) {
+@mixin submit($background-color, $border, $padding, $hover-color) {
 	background-color: $background-color;
-	border: $nav-border;
+	border: $border;
 	padding: $padding;
 	&:hover, &:focus {
 		background-color: $hover-color;
@@ -128,6 +129,13 @@ a:hover {
 	cursor: pointer;
 }
 
+@mixin input-link {
+	background: none;
+	border: none;
+	color: #428bca;
+	font-weight: bold;
+}
+
 label#birth-date-label-modal, label#gender-label, label#birth-date-label-profile { // Full registration modal and Profile Page 
 	margin-right: 2px;
 }
@@ -155,7 +163,7 @@ span.normal {
 #register-or-login-modal-body, .modal-footer:not(.registration-modal-footer), .navbar-right {
 	input { // Modal buttons and nav "Log out" button
 		@include border-radius(10px);
-		@include submit($musiclaps-light-gray, 5px 10px, #d9d9d9);
+		@include submit($musiclaps-light-gray, $nav-border, 5px 10px, #d9d9d9);
 	}
 }
 
@@ -423,7 +431,7 @@ nav {
 		}
 		&.registration-modal-footer input { // "Register" button
 			@include border-radius(10px);
-			@include submit($musiclaps-blue, 5px 10px, #45B7FF);
+			@include submit($musiclaps-blue, $nav-border, 5px 10px, #45B7FF);
 			border: 1px solid #1F91E6;
 			color: white;
 			text-transform: uppercase;
@@ -776,8 +784,11 @@ button.musiclaps-dark-gray {
 		h4.save-profile, h4.dont-save-profile {
 			display: inline-block;
 		}
-		span.glyphicon, span#not-a-link {
+		span.glyphicon {
 			color: $musiclaps-dark-gray;
+		}
+		h4.save-profile input {
+			@include input-link;
 		}
 	}
 }
@@ -825,9 +836,6 @@ form.profile-page {
 	input#zip, input#website_url, input#website_title {
 		@include form-fields-input(50%);
 	}
-	#genre, #skills {
-		height: 106px;
-	}
 	textarea {
 		@include form-fields-input(100%);
 	}
@@ -854,17 +862,30 @@ form.profile-page {
 	}
 }
 
-#choose-avatar-container input, #save-profile-container input, section#choose-project-image-container input, 
+#choose-avatar-container input, #save-profile-container input, section#choose-project-img-container input, 
 #choose-mp3-file-container input, #upload-project-container input {
-	@include submit($musiclaps-light-gray, 3px 10px, #d9d9d9);
 	@include border-radius(10px);
 }
 
-#choose-avatar-container input, section#choose-project-image-container input, #choose-mp3-file-container input {
+#choose-avatar-container input, section#choose-project-img-container input, 
+#choose-mp3-file-container input {
+	@include submit($musiclaps-light-gray, $nav-border, 3px 10px, #d9d9d9);
+}
+
+#save-profile-container input, #upload-project-container input {
+	@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+	color: white;
+}
+
+#choose-avatar-container input, section#choose-project-img-container input, #choose-mp3-file-container input {
 	font-size: 12px;
 }
 
-#genre, #skills, #instruments {
+#genre-form-profile, #skills, #genre-form-projects {
+	height: 106px;
+}
+
+#genre-form-profile, #skills, #instruments, #genre-form-projects {
 	@include form-fields-input(12px);
 	overflow-y: scroll;
 	padding-top: 2px;
@@ -915,7 +936,7 @@ section.upload-mp3-container {
 	input#project-title, input#comment {
 		@include form-fields-input(100%);
 	}
-	input#comment, section#choose-project-image-container {
+	input#comment, section#choose-project-img-container {
 		margin-bottom: 20px;
 	}
 	input#tempo, #select-sound {
@@ -934,7 +955,7 @@ section.upload-mp3-container {
 	label#instruments-label {
 		display: block;
 	}
-	section#choose-project-image-container, #choose-mp3-file-container {
+	section#choose-project-img-container, #choose-mp3-file-container {
 		vertical-align: middle;
 		width: 100%;
 		span {
@@ -1028,14 +1049,11 @@ section.volume-and-pan {
 	border-left: $nav-border;
 	border-right: $nav-border;
 	height: 35px;
-	span.glyphicon, h4:last-child { // Glyphicons and "Save" link
+	span.glyphicon {
 		margin-top: 9px;
 	}
 	span.glyphicon-volume-up {
 		margin-left: 30px;
-	}
-	span.glyphicon-save {
-		margin-bottom: -2px; // Aligns icon with "Save" link
 	}
 	.slider {
 		@include border-radius(10px);
@@ -1052,9 +1070,11 @@ section.volume-and-pan {
 		&#left-to-right {
 			margin-left: 70px;
 		}
-		&:last-child {
-			margin-right: 3px;
-		}
+	}
+	input#save-volume-and-pan {
+		@include input-link;
+		margin-top: 6px;
+		padding-right: 5px;
 	}
 }
 
@@ -1067,11 +1087,44 @@ section.volume-and-pan {
 			margin-top: 0;
 		}
 	}
-	input, textarea {
+	input#title, input#cover_song, textarea {
 		@include form-fields-input(100%);
+	}
+	input.save {
+		@include submit($musiclaps-light-gray, $nav-border, 1px 7px, #d9d9d9);
+		@include border-radius(2px);
+		font-weight: normal;
+		font-size: 12px;
+		text-transform: uppercase;
 	}
 	#description {
 		min-height: 142px;
+	}
+	#no-img-container {
+		background-color: $musiclaps-light-gray;
+		color: #777;
+		height: 80px;
+		text-align: center;
+		width: 300px;
+		h2 { // "no image"
+			margin-top: 0;
+			padding-top: 20px;
+		}
+	}
+	#upload-stage-background-img {
+		input.choose-file, span, input.save-background-img {
+			font-size: 12px;
+		}
+		span, input.choose-file {
+			margin-top: 15px;
+		}
+		input.choose-file, input.save-background-img {
+			@include submit($musiclaps-light-gray, $nav-border, 3px 10px, #d9d9d9);
+			@include border-radius(10px);
+		}
+		#save-background-img-and-trash-container {
+			margin-top: 10px;
+		}
 	}
 }
 
@@ -1280,7 +1333,7 @@ footer {
 		li:not(.first-list-item) { margin-top: 15px; }
 		img { margin-bottom: 1px; } // Social media icons
 		input { // Social media login buttons - only visible at viewport widths <= 767
-			@include submit($musiclaps-light-gray, 3px 6px, #d9d9d9);
+			@include submit($musiclaps-light-gray, $nav-border, 3px 6px, #d9d9d9);
 			border-bottom-right-radius: 5px;
 			border-top-right-radius: 5px;
 			margin-left: 2px;

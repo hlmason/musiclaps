@@ -135,13 +135,13 @@
 								<input id="comment" type="text" name="comment">
 							</div>
 
-							<section class="newProject" id="choose-project-image-container">
+							<section class="newProject" id="choose-project-img-container">
 								<div class="row">
 									<div class="col-xs-4">	
 										<h4>Project Image</h4>
 									</div>
 									<div class="col-xs-4">
-										<input id="choose_project_image" type="submit" value="Choose File">&nbsp; <span>No file chosen</span>
+										<input id="choose_project_img" type="submit" value="Choose File">&nbsp; <span>No file chosen</span>
 									</div>
 									<div class="col-xs-4">	
 										<h5>120(w) x 90(h) in jpg format</h5>
