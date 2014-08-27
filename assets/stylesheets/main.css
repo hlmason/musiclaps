@@ -3526,8 +3526,10 @@ section#project-info-bar {
     display: inline-block;
     margin-top: 5px;
     margin-bottom: 8px; }
-  section#project-info-bar h4:not(.first-h4), section#project-info-bar img#audio-mixer {
+  section#project-info-bar h4:not(.first-h4), section#project-info-bar img.audio-mixer {
     margin-left: 10px; }
+  section#project-info-bar img.audio-mixer {
+    cursor: pointer; }
   section#project-info-bar h5 {
     font-weight: normal;
     margin-left: 20px; }

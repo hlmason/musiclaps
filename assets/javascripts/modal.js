@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
-	var register = $('#register');
 	var passwordReq = $('#password-req');
-	var login = $('#login');
 	var registerOrLogin = $('#registerOrLogin');
+	var register = $('#registerJS');
+	var login = $('#loginJS');
 
 	passwordReq.hide();
 

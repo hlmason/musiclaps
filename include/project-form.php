@@ -24,7 +24,7 @@
 	
 	<section class="row col-xs-12" id="project-info-bar">
 		<h4 class="first-h4">$project #</h4><!-- Hard-coded placeholder -->
-		<img id="audio-mixer" src="<?php echo BASE_URL; ?>assets/images/profile-pages/audio-mixer.jpg" alt="Audio mixer icon">
+		<img class="audio-mixer" id="audioMixer" src="<?php echo BASE_URL; ?>assets/images/profile-pages/audio-mixer.jpg" alt="Audio mixer icon">
 		<h4>$instrument name</h4><!-- Hard-coded placeholder -->
 		<h5>$date project started</h5>
 

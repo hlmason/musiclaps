@@ -1,12 +1,12 @@
 $(document).ready(function() {
 
-	var uploadMP3Button = $('#uploadMP3Button');
 	var uploadMP3Container = $('#uploadMP3Container');
-	var recordingPlayerButton = $('#recordingPlayerButton');
-	var recordingPlayer = $('#recordingPlayer');
-	var newProject = $('.newProject');
+	var newProject = $('#newProject');
 	var addPart = $('#addPart');
 	var addPartToGroup = $('#addPartToGroup');
+	var uploadMP3Button = $('#uploadMP3Button');
+	var recordingPlayer = $('#recordingPlayer');
+	var recordingPlayerButton = $('#recordingPlayerButton');
 
 	uploadMP3Container.hide();
 	newProject.hide();

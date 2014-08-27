@@ -1007,8 +1007,11 @@ section#project-info-bar {
 		margin-top: 5px;
 		margin-bottom: 8px;
 	}
-	h4:not(.first-h4), img#audio-mixer {
+	h4:not(.first-h4), img.audio-mixer {
 		margin-left: 10px;
+	}
+	img.audio-mixer {
+		cursor: pointer;
 	}
 	h5 {
 		font-weight: normal;

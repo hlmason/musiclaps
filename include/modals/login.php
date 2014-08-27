@@ -1,4 +1,4 @@
-<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+<div class="modal fade" id="loginJS" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
 	<div class="modal-dialog modal-sm">
 		<div class="modal-content">
 
