@@ -55,12 +55,12 @@
 							<section class="newProject">
 								<div class="row col-xs-12">
 									<label id="project-title-label" for="project_title">Project Title <span class="normal">(max 80 characters)</span></label>
-									<input id="project-title" type="project_title" name="project_title">
+									<input id="project-title" type="text" name="project_title">
 								</div>
 
 								<div class="row col-xs-12">
 									<label id="tempo-label" for="tempo">Tempo <span class="normal">(leave blank if unsure)</span></label>
-									<input id="tempo" type="tempo" name="tempo">
+									<input id="tempo" type="text" name="tempo">
 								</div>
 							</section>
 
@@ -132,7 +132,7 @@
 
 							<div class="row col-xs-12">
 								<label id="comment-label" for="comment">Comment <span class="normal">(max 50 characters)</span></label>
-								<input id="comment" type="comment" name="comment">
+								<input id="comment" type="text" name="comment">
 							</div>
 
 							<section class="newProject" id="choose-project-image-container">

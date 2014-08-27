@@ -21,7 +21,7 @@
 					
 					<div>
 						<label for="username"><span class="musiclaps-blue">*</span> Username</label>
-						<input id="username" type="username" name="username">
+						<input id="username" type="text" name="username">
 					</div>
 					
 					<div>
