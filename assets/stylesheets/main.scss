@@ -128,19 +128,12 @@ a:hover {
 	cursor: pointer;
 }
 
-#register-or-login-modal-body, .modal-footer:not(.registration-modal-footer), .navbar-right {
-	input { // Modal buttons and nav "Log out" button
-		@include border-radius(10px);
-		@include submit($musiclaps-light-gray, 5px 10px, #d9d9d9);
-	}
-}
-
 label#birth-date-label-modal, label#gender-label, label#birth-date-label-profile { // Full registration modal and Profile Page 
 	margin-right: 2px;
 }
 
-.musiclaps-blue {
-	color: $musiclaps-blue !important;
+textarea {
+	max-width: 100%; // Prevents user from expanding textarea horizontally
 }
 
 span.block {
@@ -153,6 +146,17 @@ span.bold {
 
 span.normal {
 	font-weight: normal;
+}
+
+.musiclaps-blue {
+	color: $musiclaps-blue !important;
+}
+
+#register-or-login-modal-body, .modal-footer:not(.registration-modal-footer), .navbar-right {
+	input { // Modal buttons and nav "Log out" button
+		@include border-radius(10px);
+		@include submit($musiclaps-light-gray, 5px 10px, #d9d9d9);
+	}
 }
 
 #facebook-icon, #google-icon {
@@ -815,9 +819,6 @@ form.profile-page {
 	label {
 		@include form-fields-label(25px);
 	}
-	textarea {
-		max-width: 100%; // Prevents user from expanding textarea horizontally
-	}
 	select#birth-date-field, input#zip, input#website_url, input#website_title { // Adds space btwn field and label. Should remain inside "form.profile-page"; otherwise it will affect modal fields
 		margin-left: 5px;
 	}
@@ -827,7 +828,7 @@ form.profile-page {
 	#genre, #skills {
 		height: 106px;
 	}
-	textarea#message {
+	textarea {
 		@include form-fields-input(100%);
 	}
 	img { // Upload image
@@ -1051,6 +1052,23 @@ section.volume-and-pan {
 		&:last-child {
 			margin-right: 3px;
 		}
+	}
+}
+
+#in-progress-private {
+	label {
+		@include form-fields-label(25px);
+		width: 100%;
+		h4 {
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+	}
+	input, textarea {
+		@include form-fields-input(100%);
+	}
+	#description {
+		min-height: 142px;
 	}
 }
 

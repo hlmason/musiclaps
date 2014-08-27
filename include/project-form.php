@@ -6,6 +6,7 @@
 	</div>
 	<!-- End of Recording Player -->
 
+
 	<section class="row col-xs-12" id="project-form-header">
 		<h3>Project Title</h3>
 		<!-- Markup is backwards because elements are floated right -->
@@ -19,6 +20,7 @@
 		<span class="glyphicon glyphicon-lock pull-right"></span>
 		<span class="glyphicon glyphicon-repeat pull-right"></span>
 	</section>
+
 	
 	<section class="row col-xs-12" id="project-info-bar">
 		<h4 class="first-h4">$project #</h4><!-- Hard-coded placeholder -->
@@ -44,5 +46,36 @@
 		<span class="glyphicon glyphicon-save pull-right"></span>
 		<h4 class="pull-right">Save</h4>
 	</section>
+
+
+	<div id="in-progress-private">
+		<div class="row col-xs-12">
+			<label for="title">Title 		
+				<span class="glyphicon glyphicon-save pull-right"></span>
+				<h4 class="pull-right">Save</h4>
+			</label>
+			<input id="title" type="text" name="title">
+		</div>
+
+		<div class="row col-xs-12">
+			<label for="cover_song">Cover Song Composer (Please credit non-original songs.)</label>
+			<input id="cover_song" type="text" name="cover_song">
+		</div>
+
+		<div class="row col-xs-12">
+			<label for="description">Description</label>
+			<textarea id="description" name="description" placeholder="If you are requesting collaboration, you can mention which instrument(s) here."></textarea>
+		</div>
+
+		<div class="row col-xs-12">
+			<label for="search_tags">Search Tags</label>
+			<textarea id="search_tags" name="search_tags" placeholder="Examples: Song Title, Genre, etc."></textarea>
+		</div>
+
+		<div class="row col-xs-12">
+			<label for="comment_display_text">Comment Display Text?</label>
+			<textarea id="comment_display_text" name="comment_display_text"></textarea>
+		</div>
+	</div>
 
 </div>

@@ -2775,20 +2775,11 @@ a:hover, a:focus {
 a:hover {
   cursor: pointer; }
 
-#register-or-login-modal-body input, .modal-footer:not(.registration-modal-footer) input, .navbar-right input {
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  background-color: #e7e7e7;
-  border: 1px solid #cecece;
-  padding: 5px 10px; }
-  #register-or-login-modal-body input:hover, #register-or-login-modal-body input:focus, .modal-footer:not(.registration-modal-footer) input:hover, .modal-footer:not(.registration-modal-footer) input:focus, .navbar-right input:hover, .navbar-right input:focus {
-    background-color: #d9d9d9; }
-
 label#birth-date-label-modal, label#gender-label, label#birth-date-label-profile {
   margin-right: 2px; }
 
-.musiclaps-blue {
-  color: #38aaff !important; }
+textarea {
+  max-width: 100%; }
 
 span.block {
   display: block; }
@@ -2798,6 +2789,18 @@ span.bold {
 
 span.normal {
   font-weight: normal; }
+
+.musiclaps-blue {
+  color: #38aaff !important; }
+
+#register-or-login-modal-body input, .modal-footer:not(.registration-modal-footer) input, .navbar-right input {
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #e7e7e7;
+  border: 1px solid #cecece;
+  padding: 5px 10px; }
+  #register-or-login-modal-body input:hover, #register-or-login-modal-body input:focus, .modal-footer:not(.registration-modal-footer) input:hover, .modal-footer:not(.registration-modal-footer) input:focus, .navbar-right input:hover, .navbar-right input:focus {
+    background-color: #d9d9d9; }
 
 #facebook-icon, #google-icon {
   height: 27px;
@@ -3349,8 +3352,6 @@ form.profile-page label#birth-date-label-profile {
 form.profile-page label {
   margin-bottom: 2px;
   margin-top: 25px; }
-form.profile-page textarea {
-  max-width: 100%; }
 form.profile-page select#birth-date-field, form.profile-page input#zip, form.profile-page input#website_url, form.profile-page input#website_title {
   margin-left: 5px; }
 form.profile-page input#zip, form.profile-page input#website_url, form.profile-page input#website_title {
@@ -3363,7 +3364,7 @@ form.profile-page input#zip, form.profile-page input#website_url, form.profile-p
   width: 50%; }
 form.profile-page #genre, form.profile-page #skills {
   height: 106px; }
-form.profile-page textarea#message {
+form.profile-page textarea {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -3561,6 +3562,24 @@ section.volume-and-pan {
       margin-left: 70px; }
     section.volume-and-pan h4:last-child {
       margin-right: 3px; }
+
+#in-progress-private label {
+  margin-bottom: 2px;
+  margin-top: 25px;
+  width: 100%; }
+  #in-progress-private label h4 {
+    margin-bottom: 0;
+    margin-top: 0; }
+#in-progress-private input, #in-progress-private textarea {
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-top: 4px;
+  width: 100%; }
+#in-progress-private #description {
+  min-height: 142px; }
 
 .profile-right {
   background-color: #e7e7e7;
