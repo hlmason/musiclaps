@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
-	var myProfile = $('#myProfile');
-	var saveProfile = $('#saveProfile');
-	var dontSaveProfile = $('#dontSaveProfile');
-	var editProfile = $('#editProfile');
+	var myProfile = $('section#myProfile');
+	var saveProfile = $('h4#saveProfile');
+	var dontSaveProfile = $('h4#dontSaveProfile');
+	var editProfile = $('h4#editProfile');
 
 	myProfile.hide();
 	saveProfile.hide();

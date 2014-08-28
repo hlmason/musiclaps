@@ -125,9 +125,20 @@
 		</section>
 		<div class="row col-xs-12">
 			<div id="type-of-collab-container">
-				<input type="submit" value="No Collab">
-				<input type="submit" value="Open Collab">
-				<input type="submit" value="Requesting Collab">
+				<div class="row">
+					<div class="col-xs-4">
+						<span class="glyphicon glyphicon-ok glyphiconOk" id="noCollabGlyphicon"></span>
+						<button class="noCollab" type="button">No Collab</button>
+					</div>
+					<div class="col-xs-4">
+						<span class="glyphicon glyphicon-ok glyphiconOk" id="openCollabGlyphicon"></span>
+						<button class="openCollab" type="button">Open Collab</button>
+					</div>
+					<div class="col-xs-4">
+						<span class="glyphicon glyphicon-ok glyphiconOk" id="requestingCollabGlyphicon"></span>
+						<button class="requestingCollab" type="button">Requesting Collab</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</form>

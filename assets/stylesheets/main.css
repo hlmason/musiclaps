@@ -3543,6 +3543,8 @@ section#project-form-header h3 {
     display: inline-block;
     margin-top: 5px;
     margin-bottom: 8px; }
+  #project-info-bar h4.first-h4 {
+    margin-left: 10px; }
   #project-info-bar h4:not(.first-h4), #project-info-bar img.audio-mixer {
     margin-left: 10px; }
   #project-info-bar img.audio-mixer {
@@ -3577,6 +3579,8 @@ section#project-form-header h3 {
     margin-top: 0; }
     #volume-and-pan h4#left-to-right {
       margin-left: 70px; }
+  #volume-and-pan span.glyphicon-save {
+    margin-right: 9px; }
   #volume-and-pan input#save-volume-and-pan {
     background: none;
     border: none;
@@ -3652,7 +3656,7 @@ form#in-progress-private h4#type-of-collab {
   background-color: #e7e7e7;
   border: 1px solid #cecece;
   margin-bottom: 0;
-  margin-top: 25px;
+  margin-top: 35px;
   padding-left: 10px;
   padding-bottom: 5px;
   padding-top: 5px; }
@@ -3660,9 +3664,11 @@ form#in-progress-private #type-of-collab-container {
   border-bottom: 1px solid #cecece;
   border-left: 1px solid #cecece;
   border-right: 1px solid #cecece;
-  height: 35px;
+  height: 36px;
   text-align: center; }
-  form#in-progress-private #type-of-collab-container input {
+  form#in-progress-private #type-of-collab-container span.glyphicon-ok {
+    color: #DAA520; }
+  form#in-progress-private #type-of-collab-container button {
     -moz-border-radius: 10px;
     border-radius: 10px;
     background-color: #f4f4f4;
@@ -3670,7 +3676,8 @@ form#in-progress-private #type-of-collab-container {
     color: #444444;
     font-size: 12px;
     letter-spacing: 0.5px;
-    padding: 5px 10px; }
+    padding: 6px 10px;
+    margin-top: 3px; }
 
 .profile-right {
   background-color: #e7e7e7;

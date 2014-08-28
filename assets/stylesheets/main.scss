@@ -1028,6 +1028,9 @@ section#project-form-header {
 		margin-top: 5px;
 		margin-bottom: 8px;
 	}
+	h4.first-h4 {
+		margin-left: 10px;
+	}
 	h4:not(.first-h4), img.audio-mixer {
 		margin-left: 10px;
 	}
@@ -1070,6 +1073,9 @@ section#project-form-header {
 		&#left-to-right {
 			margin-left: 70px;
 		}
+	}
+	span.glyphicon-save {
+		margin-right: 9px;
 	}
 	input#save-volume-and-pan {
 		@include input-link;
@@ -1139,7 +1145,7 @@ form#in-progress-private {
 		background-color: $musiclaps-light-gray;
 		border: $nav-border;
 		margin-bottom: 0;
-		margin-top: 25px;
+		margin-top: 35px;
 		padding-left: 10px;
 		padding-bottom: 5px;
 		padding-top: 5px;
@@ -1148,10 +1154,14 @@ form#in-progress-private {
 		border-bottom: $nav-border;
 		border-left: $nav-border;
 		border-right: $nav-border;
-		height: 35px;
+		height: 36px;
 		text-align: center;
-		input {
-			@include button(#F4F4F4, $musiclaps-dark-gray, 12px, 5px 10px);
+		span.glyphicon-ok {
+			color: #DAA520;
+		}
+		button {
+			@include button(#F4F4F4, $musiclaps-dark-gray, 12px, 6px 10px);
+			margin-top: 3px;
 		}
 	}
 }
