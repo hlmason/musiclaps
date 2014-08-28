@@ -213,6 +213,23 @@ nav {
 	.navbar-left li {
 		@include nav-border(#cecece);
 	}
+	ul#flags {
+		margin-bottom: 0;
+		margin-left: -80px;
+		margin-top: 0;
+		li {
+			display: inline-block;
+			position: relative;
+			z-index: 1;
+			img {
+				height: 13px;
+				width: auto;
+			}
+			&:first-child {
+				margin-right: 5px;
+			}
+		}
+	}
 	.navbar-right#logged-out li {
 		border: $nav-border;
 		&:first-child { // "Log in" button
