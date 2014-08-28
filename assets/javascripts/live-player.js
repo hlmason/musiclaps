@@ -20,12 +20,12 @@ $(document).ready(function() {
 	});
 
 	// Text to right of radio buttons is selectable for mobile UX
-	$('.yesOrNo').on('click', function() { // Asks whether user wants demo
+	$('a.yesOrNo').on('click', function() { // Asks whether user wants demo
 		$(this).data('clicked', true);
-		if ( $('#yes').data('clicked') ) { // If yes,
+		if ( $('a#yes').data('clicked') ) { // If yes,
 			wantDemo.modal('hide'); // modal is hidden
 			demoVideo.modal('show'); // and demo video is displayed;
-		} else if ( $('#no').data('clicked') ) { // if no,
+		} else if ( $('a#no').data('clicked') ) { // if no,
 			wantDemo.modal('hide'); // modal is hidden and Live Player is revealed.
 			selectSong.modal('show');
 		}

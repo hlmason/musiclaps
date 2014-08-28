@@ -1,12 +1,12 @@
 $(document).ready(function() {
 
-	var uploadMP3Container = $('#uploadMP3Container');
-	var newProject = $('#newProject');
-	var addPart = $('#addPart');
-	var addPartToGroup = $('#addPartToGroup');
-	var uploadMP3Button = $('#uploadMP3Button');
+	var uploadMP3Container = $('section#uploadMP3Container');
+	var newProject = $('section#newProject');
+	var addPart = $('section#addPart');
+	var addPartToGroup = $('section#addPartToGroup');
+	var uploadMP3Button = $('button#uploadMP3Button');
 	var recordingPlayer = $('#recordingPlayer');
-	var recordingPlayerButton = $('#recordingPlayerButton');
+	var recordingPlayerButton = $('button#recordingPlayerButton');
 
 	uploadMP3Container.hide();
 	newProject.hide();
