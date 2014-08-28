@@ -3043,7 +3043,6 @@ h1.landing-page {
   text-align: center; }
   #landing-page-hero #musical-notes-map {
     background-image: url("../../assets/images/landing-pg/musical-notes-map.png");
-    background-repeat: repeat-x;
     height: 100%;
     margin-left: -1010em;
     position: absolute;
