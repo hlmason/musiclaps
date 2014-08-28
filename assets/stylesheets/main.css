@@ -3605,16 +3605,20 @@ form#in-progress-private input#title, form#in-progress-private input#cover_song,
   padding-top: 4px;
   width: 100%; }
 form#in-progress-private input.save {
-  background-color: #e7e7e7;
-  border: 1px solid #cecece;
+  background-color: #38aaff;
+  border: 1px solid #38aaff;
   padding: 1px 7px;
   -moz-border-radius: 2px;
   border-radius: 2px;
+  color: white;
   font-weight: normal;
   font-size: 12px;
   text-transform: uppercase; }
   form#in-progress-private input.save:hover, form#in-progress-private input.save:focus {
     background-color: #d9d9d9; }
+form#in-progress-private input.cover-song-checkbox {
+  display: inline-block;
+  margin-left: 2px; }
 form#in-progress-private #description {
   min-height: 142px; }
 form#in-progress-private #no-img-container {
@@ -3652,18 +3656,24 @@ form#in-progress-private #upload-stage-background-img-container {
       background-color: #45b7ff; }
   form#in-progress-private #upload-stage-background-img-container #save-background-img-and-trash-container {
     margin-top: 10px; }
-form#in-progress-private h4#type-of-collab {
+form#in-progress-private h4#type-of-collab, form#in-progress-private h4#copyright, form#in-progress-private h4.red {
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-top: 5px; }
+form#in-progress-private h4#type-of-collab, form#in-progress-private h4#copyright {
   background-color: #e7e7e7;
   border: 1px solid #cecece;
   margin-bottom: 0;
-  margin-top: 35px;
-  padding-left: 10px;
-  padding-bottom: 5px;
-  padding-top: 5px; }
-form#in-progress-private #type-of-collab-container {
+  margin-top: 35px; }
+form#in-progress-private h4.red {
+  color: red;
+  margin-bottom: 0;
+  margin-top: 0; }
+form#in-progress-private h4.red, form#in-progress-private #type-of-collab-container, form#in-progress-private ul#copyright-types-container {
   border-bottom: 1px solid #cecece;
   border-left: 1px solid #cecece;
-  border-right: 1px solid #cecece;
+  border-right: 1px solid #cecece; }
+form#in-progress-private #type-of-collab-container {
   height: 36px;
   text-align: center; }
   form#in-progress-private #type-of-collab-container span.glyphicon-ok {
@@ -3678,6 +3688,31 @@ form#in-progress-private #type-of-collab-container {
     letter-spacing: 0.5px;
     padding: 6px 10px;
     margin-top: 3px; }
+form#in-progress-private ul#copyright-types-container {
+  height: 377px;
+  margin-top: 0;
+  padding-left: 15px; }
+  form#in-progress-private ul#copyright-types-container li:first-child {
+    margin-top: 10px; }
+  form#in-progress-private ul#copyright-types-container li:not(.first-list-item) {
+    margin-top: 15px; }
+  form#in-progress-private ul#copyright-types-container li img {
+    margin-left: 15px; }
+    form#in-progress-private ul#copyright-types-container li img img#all-rights-reserved {
+      height: 32px;
+      width: 32px; }
+    form#in-progress-private ul#copyright-types-container li img:not(#all-rights-reserved) {
+      height: 31px;
+      width: 88px; }
+  form#in-progress-private ul#copyright-types-container li h4 {
+    display: inline-block;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 0; }
+    form#in-progress-private ul#copyright-types-container li h4.first-h4 {
+      margin-left: 70px; }
+    form#in-progress-private ul#copyright-types-container li h4:not(.first-h4) {
+      margin-left: 15px; }
 
 .profile-right {
   background-color: #e7e7e7;
@@ -3700,11 +3735,11 @@ form#in-progress-private #type-of-collab-container {
       height: 115px; }
     .profile-right.profile-page .row:not(.last-row) {
       border-bottom: 1px solid #999; }
-    .profile-right.profile-page .row#map-container {
+    .profile-right.profile-page .row#user-location-map-container {
       height: 223.6px; }
   .profile-right.profile-page h2 {
     margin-bottom: 3px; }
-  .profile-right.profile-page #map-container #map {
+  .profile-right.profile-page #user-location-map-container #user-location-map {
     background-color: lightblue;
     height: 160px;
     width: 100%; }

@@ -1097,11 +1097,16 @@ form#in-progress-private {
 		@include form-fields-input(100%);
 	}
 	input.save {
-		@include submit($musiclaps-light-gray, $nav-border, 1px 7px, #d9d9d9);
+		@include submit($musiclaps-blue, $musiclaps-blue-border, 1px 7px, #d9d9d9);
 		@include border-radius(2px);
+		color: white;
 		font-weight: normal;
 		font-size: 12px;
 		text-transform: uppercase;
+	}
+	input.cover-song-checkbox {
+		display: inline-block;
+		margin-left: 2px;
 	}
 	#description {
 		min-height: 142px;
@@ -1141,19 +1146,28 @@ form#in-progress-private {
 			margin-top: 10px;
 		}
 	}
-	h4#type-of-collab {
+	h4#type-of-collab, h4#copyright, h4.red {
+		padding-bottom: 5px;
+		padding-left: 10px;
+		padding-top: 5px;
+	}
+	h4#type-of-collab, h4#copyright {
 		background-color: $musiclaps-light-gray;
 		border: $nav-border;
 		margin-bottom: 0;
 		margin-top: 35px;
-		padding-left: 10px;
-		padding-bottom: 5px;
-		padding-top: 5px;
 	}
-	#type-of-collab-container {
+	h4.red { // "Creative Commons licenses are irrevocable.  Please think carefully before choosing a CC license."
+		color: red;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	h4.red, #type-of-collab-container, ul#copyright-types-container {
 		border-bottom: $nav-border;
 		border-left: $nav-border;
 		border-right: $nav-border;
+	}
+	#type-of-collab-container {
 		height: 36px;
 		text-align: center;
 		span.glyphicon-ok {
@@ -1162,6 +1176,42 @@ form#in-progress-private {
 		button {
 			@include button(#F4F4F4, $musiclaps-dark-gray, 12px, 6px 10px);
 			margin-top: 3px;
+		}
+	}
+	ul#copyright-types-container {
+		height: 377px;
+		margin-top: 0;
+		padding-left: 15px;
+		li {
+			&:first-child {
+				margin-top: 10px;
+			}
+			&:not(.first-list-item) {
+				margin-top: 15px;
+			}
+			img {
+				margin-left: 15px;
+				img#all-rights-reserved {
+					height: 32px;
+					width: 32px;
+				}
+				&:not(#all-rights-reserved) {
+					height: 31px;
+					width: 88px;
+				}
+			}
+			h4 {
+				display: inline-block;
+				font-weight: normal;
+				margin-bottom: 0;
+				margin-top: 0;
+				&.first-h4 {
+					margin-left: 70px;
+				}
+				&:not(.first-h4) {
+					margin-left: 15px;
+				}
+			}
 		}
 	}
 }
@@ -1193,7 +1243,7 @@ form#in-progress-private {
 		&:not(.last-row) {
 			border-bottom: 1px solid #999;
 		}
-		&#map-container {
+		&#user-location-map-container {
 			height: 223.6px;
 		}
 	}
@@ -1201,7 +1251,7 @@ form#in-progress-private {
 	h2 {
 		margin-bottom: 3px;
 	}
-	#map-container #map {
+	#user-location-map-container #user-location-map {
 		background-color: lightblue;
 		height: 160px;
 		width: 100%;
