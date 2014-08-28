@@ -18,17 +18,14 @@ $nav-border: 1px solid #cecece;
 		 border-radius: $radius;
 }
 
-@mixin nav-border($color) {
-	border-left: 1px solid $color;
-	&:first-child {
-	border-left: none;
-	}
-}
-
-@mixin nav-link($color, $font-size) {
-	color: $color !important;
+@mixin button ($background-color, $color, $font-size, $padding) {
+	@include border-radius(10px);
+	background-color: $background-color;
+	border: none;
+	color: $color;
 	font-size: $font-size;
-	line-height: 0;
+	letter-spacing: 0.5px;
+	padding: $padding;
 }
 
 @mixin form-fields-input($width) {
@@ -45,15 +42,6 @@ $nav-border: 1px solid #cecece;
 	margin-top: $margin-top;
 }
 
-@mixin submit($background-color, $border, $padding, $hover-color) {
-	background-color: $background-color;
-	border: $border;
-	padding: $padding;
-	&:hover, &:focus {
-		background-color: $hover-color;
-	}
-}
-
 @mixin heading($font-size, $margin-bottom, $margin-top) {
 	color: $musiclaps-dark-gray;
 	font-size: $font-size;
@@ -64,12 +52,17 @@ $nav-border: 1px solid #cecece;
 	text-align: center;
 }
 
-@mixin transform($degrees) {
-	-webkit-transform:rotate($degrees);
-	   -moz-transform:rotate($degrees);
-		-ms-transform:rotate($degrees);
-		 -o-transform:rotate($degrees);
-			transform:rotate($degrees);
+@mixin nav-border($color) {
+	border-left: 1px solid $color;
+	&:first-child {
+	border-left: none;
+	}
+}
+
+@mixin nav-link($color, $font-size) {
+	color: $color !important;
+	font-size: $font-size;
+	line-height: 0;
 }
 
 @mixin section-paragraph-and-links {
@@ -87,14 +80,21 @@ $nav-border: 1px solid #cecece;
 	}
 }
 
-@mixin button ($background-color, $color, $font-size, $padding) {
-	@include border-radius(10px);
+@mixin submit($background-color, $border, $padding, $hover-color) {
 	background-color: $background-color;
-	border: none;
-	color: $color;
-	font-size: $font-size;
-	letter-spacing: 0.5px;
+	border: $border;
 	padding: $padding;
+	&:hover, &:focus {
+		background-color: $hover-color;
+	}
+}
+
+@mixin transform($degrees) {
+	-webkit-transform:rotate($degrees);
+	   -moz-transform:rotate($degrees);
+		-ms-transform:rotate($degrees);
+		 -o-transform:rotate($degrees);
+			transform:rotate($degrees);
 }
 
 /* ===================================
