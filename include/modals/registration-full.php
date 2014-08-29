@@ -58,12 +58,12 @@
 					</div>
 					
 					<div>
-						<img id="captcha-img" src="<?php echo BASE_URL; ?>assets/images/captcha.png" alt="Captcha"><!-- Hard-coded placeholder -->
+						<img id="captcha-img" src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/captcha.png" alt="Captcha"><!-- Hard-coded placeholder -->
 						<label for="captcha"><span class="musiclaps-blue">*</span> Please type in the text</label>
 						<input id="captcha" type="text" name="captcha">
 					</div>
 					
-					<div id="checkbox">
+					<div id="agree-checkbox">
 						<input type="checkbox" name="agree" value="agree">&nbsp; I agree to the Musiclaps <a href="<?php echo BASE_URL; ?>terms/" target="blank">Terms of Use</a> and <a href="<?php echo BASE_URL; ?>privacy/" target="blank">Privacy Policy</a>.
 					</div>
 

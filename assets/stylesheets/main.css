@@ -2954,16 +2954,16 @@ nav .navbar-collapse {
     .modal-content .modal-body#registration-full-modal-body label, .modal-content .modal-body#registration-express-modal-body label {
       margin-bottom: 2px;
       margin-top: 10px; }
-    .modal-content .modal-body label#email-label, .modal-content .modal-body label#birth-date-label-modal, .modal-content .modal-body label#gender-label, .modal-content .modal-body label#zip-label, .modal-content .modal-body img#captcha-img, .modal-content .modal-body #checkbox {
+    .modal-content .modal-body label#email-label, .modal-content .modal-body label#birth-date-label-modal, .modal-content .modal-body label#gender-label, .modal-content .modal-body label#zip-label, .modal-content .modal-body img#captcha-img, .modal-content .modal-body #agree-checkbox {
       margin-bottom: 2px;
       margin-top: 15px; }
     .modal-content .modal-body img#captcha-img {
       display: block;
       height: 50px;
       width: 210px; }
-    .modal-content .modal-body #checkbox {
+    .modal-content .modal-body #agree-checkbox {
       font-size: 12px; }
-      .modal-content .modal-body #checkbox input {
+      .modal-content .modal-body #agree-checkbox input {
         margin-top: 4px;
         width: 12px; }
     .modal-content .modal-body#login-modal-body input {

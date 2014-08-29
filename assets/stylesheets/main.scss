@@ -356,7 +356,7 @@ nav {
 				// margin-top: 0;
 			}
 		}
-		label#email-label, label#birth-date-label-modal, label#gender-label, label#zip-label, img#captcha-img, #checkbox {
+		label#email-label, label#birth-date-label-modal, label#gender-label, label#zip-label, img#captcha-img, #agree-checkbox {
 			@include form-fields-label(15px);
 		}
 		img#captcha-img {
@@ -364,7 +364,7 @@ nav {
 			height: 50px;
 			width: 210px;
 		}
-		#checkbox { // "I agree to the Musiclaps Terms of Use and Privacy Policy"
+		#agree-checkbox { // "I agree to the Musiclaps Terms of Use and Privacy Policy"
 			font-size: 12px;
 			input {
 				margin-top: 4px;
