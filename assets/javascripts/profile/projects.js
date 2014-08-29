@@ -1,20 +1,44 @@
 $(document).ready(function() {
 
+	var publicProjectsContainer = $('section#publicProjectsContainer');
+	var groupProjectsContainer = $('section#groupProjectsContainer');
+	var auditionProjectsContainer = $('section#auditionProjectsContainer');
+	var privateProjectsContainer = $('section#privateProjectsContainer');
+
+	var publicProjectsButton = $('button#publicProjectsButton');
+	var groupProjectsButton = $('button#groupProjectsButton');
+	var auditionProjectsButton = $('button#auditionProjectsButton');
+	var privateProjectsButton = $('button#privateProjectsButton');
+	
 	var projectForm = $('#projectForm');
-	var glyphiconPencil = $('#glyphiconPencil');
-	var projectsContainer = $('section#projectsContainer');
+	var glyphiconPencil = $('.glyphiconPencil');
+	var privateProjectsContainer = $('section.projectsContainer');
 	var volumeAndPan = $('section#volumeAndPan');
 	var glyphiconOk = $('.glyphiconOk');
 	var noCollabGlyphicon = $('#noCollabGlyphicon');
 	var openCollabGlyphicon = $('#openCollabGlyphicon');
 	var requestingCollabGlyphicon = $('#requestingCollabGlyphicon');
 
+
+	publicProjectsContainer.hide();
+	groupProjectsContainer.hide();
+	auditionProjectsContainer.hide();
 	projectForm.hide();
 	glyphiconPencil.hide();
 	glyphiconOk.hide();
 
-	projectsContainer.click(function() {
-		projectsContainer.hide();
+
+	$(publicProjectsButton).on('click', function() {
+		privateProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		publicProjectsButton.removeClass('button-navigate-hover-js').addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
+		privateProjectsContainer.hide();
+		publicProjectsContainer.fadeIn('fast');
+	});
+
+
+
+	privateProjectsContainer.click(function() {
+		privateProjectsContainer.hide();
 		projectForm.fadeIn('fast');
 	});
 

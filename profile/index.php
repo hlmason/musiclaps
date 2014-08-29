@@ -90,7 +90,7 @@
 								<div id="genre-form-profile">
 									<!-- Genre form -->
 									<?php
-										include(ROOT_PATH . 'include/genre-form.php');
+										include(ROOT_PATH . 'include/profile/genre-form.php');
 									?>
 								<!-- End of genre form -->
 
