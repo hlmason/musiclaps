@@ -3,44 +3,121 @@ $(document).ready(function() {
 	var publicProjectsContainer = $('section#publicProjectsContainer');
 	var groupProjectsContainer = $('section#groupProjectsContainer');
 	var auditionProjectsContainer = $('section#auditionProjectsContainer');
+	var lyricContainer = $('section#lyricsProjectsContainer');
 	var privateProjectsContainer = $('section#privateProjectsContainer');
+
+	var projectsContainer = $('section.projectsContainer');
 
 	var publicProjectsButton = $('button#publicProjectsButton');
 	var groupProjectsButton = $('button#groupProjectsButton');
 	var auditionProjectsButton = $('button#auditionProjectsButton');
+	var lyricsProjectsButton = $('button#lyricsProjectsButton');
 	var privateProjectsButton = $('button#privateProjectsButton');
 	
 	var projectForm = $('#projectForm');
 	var glyphiconPencil = $('.glyphiconPencil');
-	var privateProjectsContainer = $('section.projectsContainer');
 	var volumeAndPan = $('section#volumeAndPan');
 	var glyphiconOk = $('.glyphiconOk');
 	var noCollabGlyphicon = $('#noCollabGlyphicon');
 	var openCollabGlyphicon = $('#openCollabGlyphicon');
 	var requestingCollabGlyphicon = $('#requestingCollabGlyphicon');
 
-
 	publicProjectsContainer.hide();
 	groupProjectsContainer.hide();
 	auditionProjectsContainer.hide();
+	// lyricsProjectsContainer.hide();
+
 	projectForm.hide();
 	glyphiconPencil.hide();
 	glyphiconOk.hide();
 
 
+	$(projectsContainer).on('click', function() {
+		projectsContainer.hide();
+		projectForm.fadeIn('fast');
+	});
+
+
 	$(publicProjectsButton).on('click', function() {
 		privateProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		publicProjectsButton.removeClass('button-navigate-hover-js').addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
+		groupProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		auditionProjectsContainer.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		lyricsProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
+		
 		privateProjectsContainer.hide();
+		groupProjectsContainer.hide();
+		auditionProjectsContainer.hide();
+		// lyricsProjectsContainer.hide();
+		projectForm.hide();
+		
 		publicProjectsContainer.fadeIn('fast');
 	});
 
-
-
-	privateProjectsContainer.click(function() {
+	$(groupProjectsButton).on('click', function() {
+		privateProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		publicProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		auditionProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		lyricsProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
+		
+		publicProjectsContainer.hide();
 		privateProjectsContainer.hide();
-		projectForm.fadeIn('fast');
+		auditionProjectsContainer.hide();
+		// lyricsProjectsContainer.hide();
+		projectForm.hide();
+		
+		groupProjectsContainer.fadeIn('fast');
 	});
+
+	$(auditionProjectsButton).on('click', function() {
+		privateProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		publicProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		groupProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		lyricsProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
+		
+		publicProjectsContainer.hide();
+		privateProjectsContainer.hide();
+		groupProjectsContainer.hide();
+		// lyricsProjectsContainer.hide();
+		projectForm.hide();
+		
+		auditionProjectsContainer.fadeIn('fast');
+	});
+
+	$(lyricsProjectsButton).on('click', function() {
+		privateProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		publicProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		groupProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		auditionProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
+		
+		publicProjectsContainer.hide();
+		auditionProjectsContainer.hide();
+		groupProjectsContainer.hide();
+		privateProjectsContainer.hide();		
+		// lyricsProjectsContainer.fadeIn('fast');
+		projectForm.hide();
+
+	});
+
+	$(privateProjectsButton).on('click', function() {
+		publicProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		groupProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		auditionProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		lyricsProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
+		
+		publicProjectsContainer.hide();
+		auditionProjectsContainer.hide();
+		groupProjectsContainer.hide();
+		// lyricsProjectsContainer.hide();
+		projectForm.hide();
+		
+		privateProjectsContainer.fadeIn('fast');
+	});
+
 
 	$('img#audioMixer').click(function() {
 		if ( volumeAndPan.is(':visible') ) {

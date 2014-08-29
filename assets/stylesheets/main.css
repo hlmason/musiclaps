@@ -3303,10 +3303,10 @@ button.navigate {
   padding: 5px 10px; }
 
 button.musiclaps-dark-gray {
-  background-color: #555; }
+  background-color: #444444; }
 
 .button-navigate-hover-js:hover, .button-navigate-hover-js:focus {
-  background-color: #555;
+  background-color: #444444;
   color: #38aaff; }
 
 #avatar-n-edit-profile img#avatar {
@@ -3523,6 +3523,7 @@ section.projects-container {
       font-weight: normal; }
   section.projects-container:hover {
     background-color: #F4F4F4;
+    color: #444444;
     cursor: pointer; }
 
 .live-player-container, #project-info-bar {

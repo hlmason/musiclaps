@@ -756,12 +756,12 @@ button.navigate {
 }
 
 button.musiclaps-dark-gray {
-	background-color: #555;
+	background-color: $musiclaps-dark-gray;
 }
 
 .button-navigate-hover-js {
 	&:hover, &:focus {
-		background-color: #555;
+		background-color: $musiclaps-dark-gray;
 		color: $musiclaps-blue;
 	}
 }
@@ -1000,6 +1000,7 @@ section.projects-container {
 	}
 	&:hover {
 		background-color: #F4F4F4;
+		color: $musiclaps-dark-gray;
 		cursor: pointer;
 	}
 }
