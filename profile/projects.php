@@ -16,58 +16,52 @@
 
 					<div class="row" id="projects-buttons">	
 						<div class="col-xs-12">
-							<button class="navigate musiclaps-dark-gray musiclaps-blue first-button" id="inProgressPrivateButton" type="button">In Progress / Private</button>
-							<button class="navigate button-navigate-hover-js" id="publicButton" type="button">Public</button>
-							<button class="navigate button-navigate-hover-js" id="groupButton" type="button">Group</button>
-							<button class="navigate button-navigate-hover-js" id="auditionButton" type="button">Audition</button>
-							<button class="navigate button-navigate-hover-js" id="lyricsButton" type="button">Lyrics</button>
+							<button class="navigate musiclaps-dark-gray musiclaps-blue first-button" id="privateProjectsButton" type="button">In Progress / Private</button>
+							<button class="navigate button-navigate-hover-js" id="publicProjectsButton" type="button">Public</button>
+							<button class="navigate button-navigate-hover-js" id="groupProjectsButton" type="button">Group</button>
+							<button class="navigate button-navigate-hover-js" id="auditionProjectsButton" type="button">Audition</button>
+							<button class="navigate button-navigate-hover-js" id="lyricsProjectsButton" type="button">Lyrics</button>
 						</div>
 					</div>
 
 					<!-- In Progress/Private -->
-					<section class="row projects-container" id="projectsContainer">
-						<div class="col-xs-4 col-sm-3 col-md-3">
-							<span class="glyphicon glyphicon-pencil" id="glyphiconPencil"></span>
-							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project Image"><!-- Hard-coded placeholder -->
-						</div>
-					
-						<div class="col-xs-6 col-sm-6 col-md-7">
-							<h4>$project title</h4><!-- Hard-coded placeholder -->
-							<h5>Upload Date: <span class="normal">$# days ago</span></h5><!-- Hard-coded placeholder -->
-							<h5>Plays: <span class="normal">$# of plays</span></h5><!-- Hard-coded placeholder -->
-						</div>
-
-						<div class="col-xs-2 col-sm-3 col-md-2">
-							<h5>Unlisted <span class="glyphicon glyphicon-lock"></span></h5>
-						</div>
-					</section>
-					<!-- End of In Progress/Private -->
-
-					
-					<!-- Project form -->
 					<?php
-						include(ROOT_PATH . 'include/project-form.php');
+						include(ROOT_PATH . 'include/profile/private-project-listings.php');
 					?>
-					<!-- End of project form -->
+					<!-- End of In Progress/Private -->
 
 
 					<!-- Public -->
-
-					<!-- Endo of Public -->
+					<?php
+						include(ROOT_PATH . 'include/profile/public-project-listings.php');
+					?>
+					<!-- End oof Public -->
 
 
 					<!-- Group -->
-
+					<?php
+						include(ROOT_PATH . 'include/profile/group-project-listings.php');
+					?>
 					<!-- End of group -->
 
 
 					<!-- Audition -->
-
+					<?php
+						include(ROOT_PATH . 'include/profile/audition-project-listings.php');
+					?>
 					<!-- End of audition -->
 
 
-					<!-- Lyrics -->
+						<!-- Project form -->
+						<?php
+							include(ROOT_PATH . 'include/profile/project-form.php');
+						?>
+						<!-- End of project form -->
 
+
+					<!-- Lyrics -->
+					<section class="row lyrics-projects-container" id="lyricsProjectsContainer">
+					</section>
 					<!-- Lyrics -->
 
 				</div>

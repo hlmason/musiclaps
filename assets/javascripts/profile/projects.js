@@ -1,24 +1,139 @@
 $(document).ready(function() {
 
+	var publicProjectsContainer = $('section#publicProjectsContainer');
+	var groupProjectsContainer = $('section#groupProjectsContainer');
+	var auditionProjectsContainer = $('section#auditionProjectsContainer');
+	var lyricContainer = $('section#lyricsProjectsContainer');
+	var privateProjectsContainer = $('section#privateProjectsContainer');
+
 	var projectForm = $('#projectForm');
-	var glyphiconPencil = $('#glyphiconPencil');
-	var projectsContainer = $('section#projectsContainer');
-	var volumeAndPan = $('section#volumeAndPan');
+	var glyphiconPencil = $('.glyphiconPencil');
 	var glyphiconOk = $('.glyphiconOk');
+
+	var projectsContainer = $('section.projectsContainer');
+
+	var projectImg = $('img.projectImg');
+
+	var publicProjectsButton = $('button#publicProjectsButton');
+	var groupProjectsButton = $('button#groupProjectsButton');
+	var auditionProjectsButton = $('button#auditionProjectsButton');
+	var lyricsProjectsButton = $('button#lyricsProjectsButton');
+	var privateProjectsButton = $('button#privateProjectsButton');
+
+	var volumeAndPan = $('section#volumeAndPan');
 	var noCollabGlyphicon = $('#noCollabGlyphicon');
 	var openCollabGlyphicon = $('#openCollabGlyphicon');
 	var requestingCollabGlyphicon = $('#requestingCollabGlyphicon');
+
+	publicProjectsContainer.hide();
+	groupProjectsContainer.hide();
+	auditionProjectsContainer.hide();
+	// lyricsProjectsContainer.hide();
 
 	projectForm.hide();
 	glyphiconPencil.hide();
 	glyphiconOk.hide();
 
-	projectsContainer.click(function() {
+
+	$(projectsContainer).on('click', function() {
 		projectsContainer.hide();
 		projectForm.fadeIn('fast');
 	});
 
-	$('img#audioMixer').click(function() {
+	$(projectImg).mouseenter(function() { // TODO: Fix flickering
+		// if ( $(glyphiconPencil).is(':hidden') ) {
+			glyphiconPencil.show();
+		// } else if ( $(glyphiconPencil).is(':visible') ) {
+		// 	glyphiconPencil.hide();	
+		// }
+	});
+	$(projectImg).mouseleave(function() {
+			glyphiconPencil.hide();
+	});	
+
+
+	$(publicProjectsButton).on('click', function() {
+		privateProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		groupProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		auditionProjectsContainer.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		lyricsProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
+		
+		privateProjectsContainer.hide();
+		groupProjectsContainer.hide();
+		auditionProjectsContainer.hide();
+		// lyricsProjectsContainer.hide();
+		projectForm.hide();
+		
+		publicProjectsContainer.fadeIn('fast');
+	});
+
+	$(groupProjectsButton).on('click', function() {
+		privateProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		publicProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		auditionProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		lyricsProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
+		
+		publicProjectsContainer.hide();
+		privateProjectsContainer.hide();
+		auditionProjectsContainer.hide();
+		// lyricsProjectsContainer.hide();
+		projectForm.hide();
+		
+		groupProjectsContainer.fadeIn('fast');
+	});
+
+	$(auditionProjectsButton).on('click', function() {
+		privateProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		publicProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		groupProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		lyricsProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
+		
+		publicProjectsContainer.hide();
+		privateProjectsContainer.hide();
+		groupProjectsContainer.hide();
+		// lyricsProjectsContainer.hide();
+		projectForm.hide();
+		
+		auditionProjectsContainer.fadeIn('fast');
+	});
+
+	$(lyricsProjectsButton).on('click', function() {
+		privateProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		publicProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		groupProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		auditionProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
+		
+		publicProjectsContainer.hide();
+		auditionProjectsContainer.hide();
+		groupProjectsContainer.hide();
+		privateProjectsContainer.hide();		
+		// lyricsProjectsContainer.fadeIn('fast');
+		projectForm.hide();
+
+	});
+
+	$(privateProjectsButton).on('click', function() {
+		publicProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		groupProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		auditionProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		lyricsProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
+		
+		publicProjectsContainer.hide();
+		auditionProjectsContainer.hide();
+		groupProjectsContainer.hide();
+		// lyricsProjectsContainer.hide();
+		projectForm.hide();
+		
+		privateProjectsContainer.fadeIn('fast');
+	});
+
+
+	$('img#audioMixer').on('click', function() {
 		if ( volumeAndPan.is(':visible') ) {
 			volumeAndPan.hide();
 		} else {
@@ -26,7 +141,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$('button.noCollab').click(function() {
+	$('button.noCollab').on('click', function() {
 		noCollabGlyphicon.show();
 		if ( openCollabGlyphicon.is(':visible') ) {
 			openCollabGlyphicon.hide();
@@ -36,7 +151,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$('button.openCollab').click(function() {
+	$('button.openCollab').on('click', function() {
 		openCollabGlyphicon.show();
 		if ( noCollabGlyphicon.is(':visible') ) {
 			noCollabGlyphicon.hide();
@@ -46,7 +161,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$('button.requestingCollab').click(function() {
+	$('button.requestingCollab').on('click', function() {
 		requestingCollabGlyphicon.show();
 		if ( openCollabGlyphicon.is(':visible') ) {
 			openCollabGlyphicon.hide();

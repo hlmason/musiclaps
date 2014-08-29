@@ -61,10 +61,11 @@
 		</div>
 
 		<div class="row col-xs-12">
-			<label for="cover_song">Cover Song Composer <span class="normal">(Please credit non-original songs.)</span>
+			<label id="cover-song-label" for="cover_song">Cover Song
+				<input class="cover-song-checkbox" type="checkbox" name="arrangement">
 				<input class="save pull-right" type="submit" value="Save">
 			</label>
-			<input id="cover_song" type="text" name="cover_song">
+			<input id="cover_song" type="text" name="cover_song" placeholder="Please credit the songwriter if it is not you.">
 		</div>
 
 		<div class="row col-xs-12">
@@ -78,7 +79,7 @@
 		<div id="genre-form-projects">
 			<!-- Genre form -->
 			<?php
-				include(ROOT_PATH . 'include/genre-form.php');
+				include(ROOT_PATH . 'include/profile/genre-form.php');
 			?>
 		<!-- End of genre form -->
 
@@ -140,6 +141,56 @@
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<section class="row col-xs-12">
+			<h4 id="copyright">Copyright <span class="normal">(original songs only)</h4>
+			<h4 class="red"><strong>Creative Commons licenses are irrevocable
+			<span class="block">Please think carefully before choosing a CC license</strong></span></h4>
+		</section>
+		<div class="row col-xs-12">
+			<ul id="copyright-types-container">
+				<li class="row col-xs-12 first-list-item">
+					<input type="radio" name="copyright_type" value="all_rights_reserved">
+					<img id="all-rights-reserved" src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/all-rights-reserved.gif" alt="Copyright symbol">
+					<h4 class="first-h4">All Rights Reserved</h4>
+				</li>
+				<li class="row col-xs-12">
+					<input type="radio" name="copyright_type" value="cc_by">
+					<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/cc-by.png" alt="Attribution symbol">
+					<h4>Attribution</h4>
+				</li>
+				<li class="row col-xs-12">
+					<input type="radio" name="copyright_type" value="cc_by_nd">
+					<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/cc-by-nd.png" alt="Attribution-NoDerivs symbol">
+					<h4>Attribution - No Derivative Works</h4>
+				</li>
+				<li class="row col-xs-12">
+					<input type="radio" name="copyright_type" value="cc_by_nc_sa">
+					<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/cc-by-nc-sa.png" alt="Attribution-NonCommercial-ShareAlike symbol">
+					<h4>Attribution - NonCommercial - Share Alike</h4>
+				</li>
+				<li class="row col-xs-12">
+					<input type="radio" name="copyright_type" value="cc_by_sa">
+					<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/cc-by-sa.png" alt="Attribution-ShareAlike symbol">
+					<h4>Attribution - Share Alike</h4>
+				</li>
+				<li class="row col-xs-12">
+					<input type="radio" name="copyright_type" value="cc_by_nc">
+					<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/cc-by-nc.png" alt="Attribution-NonCommercial symbol">
+					<h4>Attribution - NonCommercial</h4>
+				</li>
+				<li class="row col-xs-12">
+					<input type="radio" name="copyright_type" value="cc_by_nc_nd">
+					<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/cc-by-nc-nd.png" alt="Attribution-NonCommercial-NoDerivs symbol">
+					<h4>Attribution - NonCommercial - No Derivative Works</h4>
+				</li>
+				<li class="row col-xs-12">
+					<input type="radio" name="copyright_type" value="public_domain">
+					<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/public-domain.png" alt="Public Domain symbol">
+					<h4>Public Domain</h4>
+				</li>
+			</ul>
 		</div>
 	</form>
 

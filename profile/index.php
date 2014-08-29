@@ -90,14 +90,14 @@
 								<div id="genre-form-profile">
 									<!-- Genre form -->
 									<?php
-										include(ROOT_PATH . 'include/genre-form.php');
+										include(ROOT_PATH . 'include/profile/genre-form.php');
 									?>
 								<!-- End of genre form -->
 
 								<label for="skills">Skills <span class="normal">(select one or more)</span></label>
 								<div id="skills">
-									<span><input type="checkbox" name="arrangement">&nbsp; Accordion</span>
-									<span><input type="checkbox" name="accordion">&nbsp; Arrangement</span>
+									<span><input type="checkbox" name="accordion">&nbsp; Accordion</span>
+									<span><input type="checkbox" name="arrangement">&nbsp; Arrangement</span>
 									<span><input type="checkbox" name="banjo">&nbsp; Banjo</span>
 									<span><input type="checkbox" name="bass">&nbsp; Bass</span>
 									<span><input type="checkbox" name="castanets">&nbsp; Castanets</span>
@@ -195,9 +195,9 @@
 							<div class="col-xs-1"></div>
 						</div>
 
-						<div class="row col-xs-12" id="map-container">
+						<div class="row col-xs-12" id="user-location-map-container">
 							<h4>Location: </h4>
-							<div id="map"></div><!-- Placeholder -->
+							<div id="user-location-map"></div><!-- Placeholder -->
 						</div>
 
 						<div class="row col-xs-12">

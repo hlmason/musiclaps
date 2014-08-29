@@ -15,7 +15,7 @@ $(document).ready(function() {
 			register.modal('show');
 		}
 	});
-		$('#registrationFullJS').click(function() {
+		$('#registrationFullJS').on('click', function() {
 			register.modal('hide');
 			$('#registrationFull').modal('show');
 		});
