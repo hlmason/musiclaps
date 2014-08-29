@@ -3546,8 +3546,7 @@ section.projects-container {
   section.projects-container:hover {
     background-color: #F4F4F4;
     color: #444444;
-    cursor: pointer;
-    opacity: 0.75; }
+    cursor: pointer; }
 
 .live-player-container, #project-info-bar {
   margin-top: 15px; }
