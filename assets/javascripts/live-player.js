@@ -35,7 +35,7 @@ $(document).ready(function() {
 	// 	selectSong.modal('show');
 	// });
 
-	$('#selectSongJS').click(function() {
+	$('#selectSongJS').on('click', function() {
 		selectSong.modal('show');
 	});
 

@@ -119,7 +119,7 @@ $(document).ready(function() {
 	});
 
 
-	$('img#audioMixer').click(function() {
+	$('img#audioMixer').on('click', function() {
 		if ( volumeAndPan.is(':visible') ) {
 			volumeAndPan.hide();
 		} else {
@@ -127,7 +127,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$('button.noCollab').click(function() {
+	$('button.noCollab').on('click', function() {
 		noCollabGlyphicon.show();
 		if ( openCollabGlyphicon.is(':visible') ) {
 			openCollabGlyphicon.hide();
@@ -137,7 +137,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$('button.openCollab').click(function() {
+	$('button.openCollab').on('click', function() {
 		openCollabGlyphicon.show();
 		if ( noCollabGlyphicon.is(':visible') ) {
 			noCollabGlyphicon.hide();
@@ -147,7 +147,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$('button.requestingCollab').click(function() {
+	$('button.requestingCollab').on('click', function() {
 		requestingCollabGlyphicon.show();
 		if ( openCollabGlyphicon.is(':visible') ) {
 			openCollabGlyphicon.hide();
