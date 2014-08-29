@@ -6,18 +6,21 @@ $(document).ready(function() {
 	var lyricContainer = $('section#lyricsProjectsContainer');
 	var privateProjectsContainer = $('section#privateProjectsContainer');
 
+	var projectForm = $('#projectForm');
+	var glyphiconPencil = $('.glyphiconPencil');
+	var glyphiconOk = $('.glyphiconOk');
+
 	var projectsContainer = $('section.projectsContainer');
+
+	var projectImg = $('img.projectImg');
 
 	var publicProjectsButton = $('button#publicProjectsButton');
 	var groupProjectsButton = $('button#groupProjectsButton');
 	var auditionProjectsButton = $('button#auditionProjectsButton');
 	var lyricsProjectsButton = $('button#lyricsProjectsButton');
 	var privateProjectsButton = $('button#privateProjectsButton');
-	
-	var projectForm = $('#projectForm');
-	var glyphiconPencil = $('.glyphiconPencil');
+
 	var volumeAndPan = $('section#volumeAndPan');
-	var glyphiconOk = $('.glyphiconOk');
 	var noCollabGlyphicon = $('#noCollabGlyphicon');
 	var openCollabGlyphicon = $('#openCollabGlyphicon');
 	var requestingCollabGlyphicon = $('#requestingCollabGlyphicon');
@@ -36,6 +39,17 @@ $(document).ready(function() {
 		projectsContainer.hide();
 		projectForm.fadeIn('fast');
 	});
+
+	$(projectImg).mouseenter(function() { // TODO: Fix flickering
+		// if ( $(glyphiconPencil).is(':hidden') ) {
+			glyphiconPencil.show();
+		// } else if ( $(glyphiconPencil).is(':visible') ) {
+		// 	glyphiconPencil.hide();	
+		// }
+	});
+	$(projectImg).mouseleave(function() {
+			glyphiconPencil.hide();
+	});	
 
 
 	$(publicProjectsButton).on('click', function() {

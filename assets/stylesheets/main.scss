@@ -187,7 +187,7 @@ nav:not(#nav-registered-user) .nav li { // Not logged in nav
 
 nav {
 	&.navbar {
-		border-radius: 0;
+		@include border-radius(0);
 	}
 	&.navbar-default {
 		background-color: $musiclaps-light-gray;
@@ -311,8 +311,8 @@ nav {
 		border-bottom-right-radius: 5px;
 		&#sn-login-modal-body, &#sn-login-modal-body-sm, 
 		&#registration-full-modal-body, &#registration-express-modal-body, {
+			@include border-radius(0);
 			border-bottom: 1px solid #e7e7e7;
-			border-radius: 0;
 			padding-top: 0;
 			width: 100%;
 		}
@@ -974,16 +974,23 @@ section.projects-container {
 	padding-bottom: 10px;
 	padding-top: 10px;
 	width: 100%;
-	span.glyphicon-pencil {
+	span.glyphicon-pencil-container {
+		@include border-radius(100%);
 		background-color: white;
-		border-radius: 100%;
-		height: 20px;
+		left: 50px;
 		opacity: 0.95;
-		width: 20px;
+		padding: 4px 5px;
+		position: absolute;
+		top: 20px;
+		span.glyphicon-pencil {
+			height: 20px;
+			text-align: center;
+			width: 20px;
+		}
 	}
 	img {
 		margin-top: 2px;
-		min-width: 99px;
+		min-width: 100px;
 		height: 60px;
 	}
 	h4, h5 {
@@ -1002,6 +1009,7 @@ section.projects-container {
 		background-color: #F4F4F4;
 		color: $musiclaps-dark-gray;
 		cursor: pointer;
+		opacity: 0.75;
 	}
 }
 
@@ -1098,8 +1106,8 @@ form#in-progress-private {
 		@include form-fields-input(100%);
 	}
 	input.save {
-		@include submit($musiclaps-blue, $musiclaps-blue-border, 1px 7px, #d9d9d9);
 		@include border-radius(2px);
+		@include submit($musiclaps-blue, $musiclaps-blue-border, 1px 7px, #d9d9d9);
 		color: white;
 		font-weight: normal;
 		font-size: 12px;
