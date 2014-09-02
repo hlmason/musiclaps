@@ -112,8 +112,8 @@
 					<div id="upload-stage-background-img"></div>
 					<div id="upload-stage-background-img-container">
 						<input class="choose-file" id="choose_stage_background_img" type="submit" value="Choose File">&nbsp; <span>No file chosen</span>
-						<div id="save-background-img-and-trash-container">
-							<input class="save-background-img" type="submit" value="Save">
+						<div id="save-stage-background-img-and-trash-container">
+							<input class="save-stage-background-img" type="submit" value="Save">
 							<span class="glyphicon glyphicon-trash pull-right"></span>
 						</div>
 					</div>

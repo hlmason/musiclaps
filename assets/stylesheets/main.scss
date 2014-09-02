@@ -307,11 +307,16 @@ nav {
 			float: right;
 			font-size: 21px;
 			line-height: 1;
-			text-shadow: 0 1px 0 #fff;
 			&:hover, &:focus {
 				color: #52C4FF;	
 			}
 		}
+	}
+	#registration-full-header, #registration-express-header, 
+	#register-header, #login-header {
+		button.close {
+			margin-top: 3px;
+		} 
 	}
 	h2.register-modal-heading, h2.registration-full-modal-heading, 
 	h2.registration-express-modal-heading, h2.login-modal-heading {
@@ -1151,25 +1156,11 @@ form#in-progress-private {
 	#upload-stage-background-img-container {
 		border-bottom: $nav-border;
 		border-top: $nav-border;
-		input.choose-file, span, input.save-background-img {
-			font-size: 12px;
-		}
-		span, input.choose-file {
+		input.choose-file, span, #save-stage-background-img-and-trash-container {
 			margin-top: 10px;
 		}
-		input.choose-file, input.save-background-img {
-			@include border-radius(10px);
-		}
-		input.choose-file, input.save-background-img {
-			@include submit($musiclaps-light-gray, $nav-border, 3px 10px, #d9d9d9);
-		}
-		input.save-background-img {
-			@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
-			color: white;
+		input.save-stage-background-img {
 			margin-bottom: 10px;
-		}
-		#save-background-img-and-trash-container {
-			margin-top: 10px;
 		}
 	}
 	h4#type-of-collab, h4#copyright, h4.red {
@@ -1239,6 +1230,44 @@ form#in-progress-private {
 				}
 			}
 		}
+	}
+}
+
+#upload-stage-background-img-container, section.change-sound-img-container {
+	input.choose-file, span, input.save-stage-background-img, input.update-file {
+		font-size: 12px;
+	}
+	input.choose-file, input.save-stage-background-img, input.update-file {
+		@include border-radius(10px);
+	}
+	input.choose-file {
+		@include submit($musiclaps-light-gray, $nav-border, 3px 10px, #d9d9d9);
+	}
+	input.save-stage-background-img, input.update-file {
+		@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+		color: white;
+	}
+}
+
+section.change-sound-img-container {
+	.glyphicon-remove {
+		cursor: pointer;
+		&:hover {
+			color: #555;
+		}
+	}
+	h4, input.update-file {
+		display: inline-block;
+		margin-top: 10px;
+	}
+	h4 {
+		margin-left: 10px;
+	}
+	input.choose-file {
+		margin-left: 25px;
+	}
+	input.update-file {
+		float: right;
 	}
 }
 
