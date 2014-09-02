@@ -3298,7 +3298,8 @@ section#recording-instructions #save-container {
 /* ====================================================================================
     Profile, New Project, Projects, Collaborations, YouTube, Messages, and Groups Pages
 ==================================================================================== */
-#avatar-n-edit-profile, #new-project-buttons, #projects-buttons {
+#avatar-n-edit-profile, #new-project-buttons,
+#projects-buttons, #collaborations-buttons {
   margin-top: 15px; }
 
 #new-project-buttons {
@@ -3306,7 +3307,8 @@ section#recording-instructions #save-container {
   #new-project-buttons button.navigate:last-child {
     margin-left: 5px; }
 
-#projects-buttons button.navigate:not(.first-button) {
+#projects-buttons button.navigate:not(.first-button),
+#collaborations-buttons button.navigate:not(.first-button) {
   margin-left: 10px; }
 
 button.navigate {
@@ -3518,7 +3520,7 @@ section.upload-mp3-container #upload-project-container {
 
 section.projects-container {
   border: 1px solid #cecece;
-  margin-top: 15px;
+  margin-top: 13px;
   padding-bottom: 10px;
   padding-top: 10px;
   width: 100%; }

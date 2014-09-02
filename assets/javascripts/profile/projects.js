@@ -6,10 +6,10 @@ $(document).ready(function() {
 	var lyricContainer = $('section#lyricsProjectsContainer');
 	var privateProjectsContainer = $('section#privateProjectsContainer');
 
-	var glyphiconPencil = $('.glyphiconPencil');
-	var changeSoundImgContainer = $('#changeSoundImgContainer');
+	var glyphiconPencil = $('span.glyphiconPencil');
+	var changeSoundImgContainer = $('section.changeSoundImgContainer');
 	var projectForm = $('#projectForm');
-	var glyphiconOk = $('.glyphiconOk');
+	var glyphiconOk = $('span.glyphiconOk');
 
 	var projectsContainer = $('section.projectsContainer');
 
@@ -22,9 +22,9 @@ $(document).ready(function() {
 	var privateProjectsButton = $('button#privateProjectsButton');
 
 	var volumeAndPan = $('section#volumeAndPan');
-	var noCollabGlyphicon = $('#noCollabGlyphicon');
-	var openCollabGlyphicon = $('#openCollabGlyphicon');
-	var requestingCollabGlyphicon = $('#requestingCollabGlyphicon');
+	var noCollabGlyphicon = $('span#noCollabGlyphicon');
+	var openCollabGlyphicon = $('span#openCollabGlyphicon');
+	var requestingCollabGlyphicon = $('span#requestingCollabGlyphicon');
 
 	publicProjectsContainer.hide();
 	groupProjectsContainer.hide();
@@ -52,7 +52,7 @@ $(document).ready(function() {
 		changeSoundImgContainer.fadeIn('fast');
 	});
 
-	$('span#glyphiconRemove').on('click', function() {
+	$('span.glyphiconRemove').on('click', function() {
 		changeSoundImgContainer.hide();
 	});
 

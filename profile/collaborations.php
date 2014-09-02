@@ -1,8 +1,8 @@
 <?php
 	require_once('../include/config.php');
 
-	$pageTitle = 'Projects';
-	$page = 'Projects';
+	$pageTitle = 'Collaborations';
+	$page = 'Collaborations';
 	
 	include(ROOT_PATH . 'include/header-logged-in.php');
 	include(ROOT_PATH . 'include/db-connection.php');
@@ -14,42 +14,26 @@
 					
 				<div class="row col-xs-12 col-sm-9">
 
-					<div class="row" id="projects-buttons">	
+					<div class="row" id="collaborations-buttons">	
 						<div class="col-xs-12">
-							<button class="navigate musiclaps-dark-gray musiclaps-blue first-button" id="privateProjectsButton" type="button">In Progress / Private</button>
-							<button class="navigate button-navigate-hover-js" id="publicProjectsButton" type="button">Public</button>
-							<button class="navigate button-navigate-hover-js" id="groupProjectsButton" type="button">Group</button>
-							<button class="navigate button-navigate-hover-js" id="auditionProjectsButton" type="button">Audition</button>
-							<button class="navigate button-navigate-hover-js" id="lyricsProjectsButton" type="button">Lyrics</button>
+							<button class="navigate musiclaps-dark-gray musiclaps-blue first-button" id="openCollabButton" type="button">Open Collab</button>
+							<button class="navigate button-navigate-hover-js" id="requestingCollabButton" type="button">Requesting Collab</button>
+							<button class="navigate button-navigate-hover-js" id="collaboratorsButton" type="button">Collaborators</button>
 						</div>
 					</div>
 
-					<!-- In Progress/Private listings -->
+					<!-- Open Collab listings -->
 					<?php
-						include(ROOT_PATH . 'include/profile/private-project-listings.php');
+						include(ROOT_PATH . 'include/profile/open-collab-listings.php');
 					?>
-					<!-- End of In Progress/Private listings -->
+					<!-- End of Open Collab listings -->
 
 
-					<!-- Public listings -->
+					<!-- Requesting Collab listings -->
 					<?php
-						include(ROOT_PATH . 'include/profile/public-project-listings.php');
+						include(ROOT_PATH . 'include/profile/requesting-collab-listings.php');
 					?>
-					<!-- End of Public listings -->
-
-
-					<!-- Group listings -->
-					<?php
-						include(ROOT_PATH . 'include/profile/group-project-listings.php');
-					?>
-					<!-- End of group listings -->
-
-
-					<!-- Audition listings -->
-					<?php
-						include(ROOT_PATH . 'include/profile/audition-project-listings.php');
-					?>
-					<!-- End of audition listings -->
+					<!-- End of Requesting Collab listings -->
 
 
 						<!-- Project form -->
@@ -64,12 +48,6 @@
 						include(ROOT_PATH . 'include/profile/change-sound-img-form.php');
 					?>
 					<!-- Change sound image form -->
-
-
-					<!-- Lyrics -->
-					<section class="row lyrics-projects-container" id="lyricsProjectsContainer">
-					</section>
-					<!-- Lyrics -->
 
 				</div>
 				<div class="row col-xs-12 col-sm-3">
