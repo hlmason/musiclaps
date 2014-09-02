@@ -11,7 +11,7 @@
 		<h3>Project Title</h3>
 		<!-- Markup is backwards because elements are floated right -->
 		<span class="glyphicon glyphicon-trash pull-right"></span>
-		<select class="pull-right project-type">
+		<select class="project-type pull-right">
 			<option value="private">Private</option>
 			<option value="public">Public</option>
 			<option value="group">Group</option>
@@ -31,7 +31,7 @@
 
 			<!-- Markup is backwards because elements are floated right -->
 			<span class="glyphicon glyphicon-trash pull-right"></span>
-			<select class="pull-right project-type">
+			<select class="project-type pull-right">
 				<option value="private">Private</option><!-- Hard-coded placeholder -->
 			</select>
 		</div>

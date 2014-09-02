@@ -2841,13 +2841,12 @@ nav .navbar-left li {
   nav .navbar-left li:first-child {
     border-left: none; }
 nav ul#flags {
+  float: right;
   margin-bottom: 0;
   margin-left: -80px;
   margin-top: 0; }
   nav ul#flags li {
-    display: inline-block;
-    position: relative;
-    z-index: 1; }
+    display: inline-block; }
     nav ul#flags li img {
       height: 13px;
       width: auto; }
@@ -3007,8 +3006,9 @@ nav .navbar-collapse {
         margin-bottom: 10px;
         margin-top: 0; }
     .modal-content .modal-body img#rainbow-music-notes {
-      margin-top: 15px;
+      float: right;
       height: 179px;
+      margin-top: 15px;
       width: 270px; }
   .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm,
   .modal-content #registration-express-modal-body, .modal-content #login-modal-body, .modal-content .modal-footer {
@@ -3365,6 +3365,8 @@ button.musiclaps-dark-gray {
     display: inline-block;
     font-size: 12px;
     font-weight: 300; }
+  #about-me li#glyphicon-home {
+    float: right; }
 
 h4#my-profile {
   margin-bottom: 2px; }
@@ -3641,7 +3643,7 @@ form#in-progress-private input.save {
   font-size: 12px;
   text-transform: uppercase; }
   form#in-progress-private input.save:hover, form#in-progress-private input.save:focus {
-    background-color: #d9d9d9; }
+    background-color: #45b7ff; }
 form#in-progress-private input.cover-song-checkbox {
   display: inline-block;
   margin-left: 2px; }
@@ -3740,9 +3742,9 @@ form#in-progress-private ul#copyright-types-container {
   #upload-stage-background-img-container input.save-stage-background-img:hover, #upload-stage-background-img-container input.save-stage-background-img:focus, #upload-stage-background-img-container input.update-file:hover, #upload-stage-background-img-container input.update-file:focus, section.change-sound-img-container input.save-stage-background-img:hover, section.change-sound-img-container input.save-stage-background-img:focus, section.change-sound-img-container input.update-file:hover, section.change-sound-img-container input.update-file:focus {
     background-color: #45b7ff; }
 
-section.change-sound-img-container .glyphicon-remove {
+section.change-sound-img-container span.glyphicon-remove {
   cursor: pointer; }
-  section.change-sound-img-container .glyphicon-remove:hover {
+  section.change-sound-img-container span.glyphicon-remove:hover {
     color: #555; }
 section.change-sound-img-container h4, section.change-sound-img-container input.update-file {
   display: inline-block;
