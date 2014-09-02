@@ -29,8 +29,7 @@
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/live-player.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/profile.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/new-project.js"></script>
-	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/projects.js"></script>
-	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/collaborations.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/projects-and-collabs.js"></script>
 </head>
 <body>
 
