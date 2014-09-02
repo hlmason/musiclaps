@@ -49,7 +49,7 @@
 					<li><a class="<?php if ($page == "People") { echo "active"; } ?>" href="#">People</a></li>
 					<li><a class="<?php if ($page == "Our Story") { echo "active"; } ?>" href="https://www.musiclaps.com/play?about=us">Our Story</a></li>
 				</ul>
-				<ul class="pull-right" id="flags">
+				<ul id="flags">
 					<li><a><img id="usa-flag" src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/usa-flag.jpg" alt="American flag"></a></li>
 					<li><a><img src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/japan-flag.jpg" alt="Japanese flag"></a></li>
 				</ul>

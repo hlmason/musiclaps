@@ -6,8 +6,9 @@ $(document).ready(function() {
 	var lyricContainer = $('section#lyricsProjectsContainer');
 	var privateProjectsContainer = $('section#privateProjectsContainer');
 
-	var projectForm = $('#projectForm');
 	var glyphiconPencil = $('.glyphiconPencil');
+	var changeSoundImgContainer = $('#changeSoundImgContainer');
+	var projectForm = $('#projectForm');
 	var glyphiconOk = $('.glyphiconOk');
 
 	var projectsContainer = $('section.projectsContainer');
@@ -30,8 +31,9 @@ $(document).ready(function() {
 	auditionProjectsContainer.hide();
 	// lyricsProjectsContainer.hide();
 
-	projectForm.hide();
 	glyphiconPencil.hide();
+	changeSoundImgContainer.hide();
+	projectForm.hide();
 	glyphiconOk.hide();
 
 
@@ -40,16 +42,19 @@ $(document).ready(function() {
 		projectForm.fadeIn('fast');
 	});
 
-	$(projectImg).mouseenter(function() { // TODO: Fix flickering
-		// if ( $(glyphiconPencil).is(':hidden') ) {
-			glyphiconPencil.show();
-		// } else if ( $(glyphiconPencil).is(':visible') ) {
-		// 	glyphiconPencil.hide();	
-		// }
+	$(projectImg).mouseenter(function() { // TODO: Fix
+		glyphiconPencil.show();
 	});
 	$(projectImg).mouseleave(function() {
-			glyphiconPencil.hide();
-	});	
+		glyphiconPencil.hide();
+	});
+	$(glyphiconPencil).on('click', function() {
+		changeSoundImgContainer.fadeIn('fast');
+	});
+
+	$('span#glyphiconRemove').on('click', function() {
+		changeSoundImgContainer.hide();
+	});
 
 
 	$(publicProjectsButton).on('click', function() {

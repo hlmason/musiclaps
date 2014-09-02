@@ -11,7 +11,7 @@
 		<h3>Project Title</h3>
 		<!-- Markup is backwards because elements are floated right -->
 		<span class="glyphicon glyphicon-trash pull-right"></span>
-		<select class="pull-right project-type">
+		<select class="project-type pull-right">
 			<option value="private">Private</option>
 			<option value="public">Public</option>
 			<option value="group">Group</option>
@@ -31,7 +31,7 @@
 
 			<!-- Markup is backwards because elements are floated right -->
 			<span class="glyphicon glyphicon-trash pull-right"></span>
-			<select class="pull-right project-type">
+			<select class="project-type pull-right">
 				<option value="private">Private</option><!-- Hard-coded placeholder -->
 			</select>
 		</div>
@@ -112,8 +112,8 @@
 					<div id="upload-stage-background-img"></div>
 					<div id="upload-stage-background-img-container">
 						<input class="choose-file" id="choose_stage_background_img" type="submit" value="Choose File">&nbsp; <span>No file chosen</span>
-						<div id="save-background-img-and-trash-container">
-							<input class="save-background-img" type="submit" value="Save">
+						<div id="save-stage-background-img-and-trash-container">
+							<input class="save-stage-background-img" type="submit" value="Save">
 							<span class="glyphicon glyphicon-trash pull-right"></span>
 						</div>
 					</div>

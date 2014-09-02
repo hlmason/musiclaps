@@ -2841,13 +2841,12 @@ nav .navbar-left li {
   nav .navbar-left li:first-child {
     border-left: none; }
 nav ul#flags {
+  float: right;
   margin-bottom: 0;
   margin-left: -80px;
   margin-top: 0; }
   nav ul#flags li {
-    display: inline-block;
-    position: relative;
-    z-index: 1; }
+    display: inline-block; }
     nav ul#flags li img {
       height: 13px;
       width: auto; }
@@ -2915,10 +2914,12 @@ nav .navbar-collapse {
       color: #38aaff;
       float: right;
       font-size: 21px;
-      line-height: 1;
-      text-shadow: 0 1px 0 #fff; }
+      line-height: 1; }
       .modal-content .modal-header button.close:hover, .modal-content .modal-header button.close:focus {
         color: #52C4FF; }
+  .modal-content #registration-full-header button.close, .modal-content #registration-express-header button.close,
+  .modal-content #register-header button.close, .modal-content #login-header button.close {
+    margin-top: 3px; }
   .modal-content h2.register-modal-heading, .modal-content h2.registration-full-modal-heading,
   .modal-content h2.registration-express-modal-heading, .modal-content h2.login-modal-heading {
     letter-spacing: 0.5px; }
@@ -3005,8 +3006,9 @@ nav .navbar-collapse {
         margin-bottom: 10px;
         margin-top: 0; }
     .modal-content .modal-body img#rainbow-music-notes {
-      margin-top: 15px;
+      float: right;
       height: 179px;
+      margin-top: 15px;
       width: 270px; }
   .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm,
   .modal-content #registration-express-modal-body, .modal-content #login-modal-body, .modal-content .modal-footer {
@@ -3363,6 +3365,8 @@ button.musiclaps-dark-gray {
     display: inline-block;
     font-size: 12px;
     font-weight: 300; }
+  #about-me li#glyphicon-home {
+    float: right; }
 
 h4#my-profile {
   margin-bottom: 2px; }
@@ -3638,7 +3642,7 @@ form#in-progress-private input.save {
   font-size: 12px;
   text-transform: uppercase; }
   form#in-progress-private input.save:hover, form#in-progress-private input.save:focus {
-    background-color: #d9d9d9; }
+    background-color: #45b7ff; }
 form#in-progress-private input.cover-song-checkbox {
   display: inline-block;
   margin-left: 2px; }
@@ -3656,29 +3660,10 @@ form#in-progress-private #no-img-container {
 form#in-progress-private #upload-stage-background-img-container {
   border-bottom: 1px solid #cecece;
   border-top: 1px solid #cecece; }
-  form#in-progress-private #upload-stage-background-img-container input.choose-file, form#in-progress-private #upload-stage-background-img-container span, form#in-progress-private #upload-stage-background-img-container input.save-background-img {
-    font-size: 12px; }
-  form#in-progress-private #upload-stage-background-img-container span, form#in-progress-private #upload-stage-background-img-container input.choose-file {
+  form#in-progress-private #upload-stage-background-img-container input.choose-file, form#in-progress-private #upload-stage-background-img-container span, form#in-progress-private #upload-stage-background-img-container #save-stage-background-img-and-trash-container {
     margin-top: 10px; }
-  form#in-progress-private #upload-stage-background-img-container input.choose-file, form#in-progress-private #upload-stage-background-img-container input.save-background-img {
-    -moz-border-radius: 10px;
-    border-radius: 10px; }
-  form#in-progress-private #upload-stage-background-img-container input.choose-file, form#in-progress-private #upload-stage-background-img-container input.save-background-img {
-    background-color: #e7e7e7;
-    border: 1px solid #cecece;
-    padding: 3px 10px; }
-    form#in-progress-private #upload-stage-background-img-container input.choose-file:hover, form#in-progress-private #upload-stage-background-img-container input.choose-file:focus, form#in-progress-private #upload-stage-background-img-container input.save-background-img:hover, form#in-progress-private #upload-stage-background-img-container input.save-background-img:focus {
-      background-color: #d9d9d9; }
-  form#in-progress-private #upload-stage-background-img-container input.save-background-img {
-    background-color: #38aaff;
-    border: 1px solid #38aaff;
-    padding: 3px 10px;
-    color: white;
+  form#in-progress-private #upload-stage-background-img-container input.save-stage-background-img {
     margin-bottom: 10px; }
-    form#in-progress-private #upload-stage-background-img-container input.save-background-img:hover, form#in-progress-private #upload-stage-background-img-container input.save-background-img:focus {
-      background-color: #45b7ff; }
-  form#in-progress-private #upload-stage-background-img-container #save-background-img-and-trash-container {
-    margin-top: 10px; }
 form#in-progress-private h4#type-of-collab, form#in-progress-private h4#copyright, form#in-progress-private h4.red {
   padding-bottom: 5px;
   padding-left: 10px;
@@ -3736,6 +3721,39 @@ form#in-progress-private ul#copyright-types-container {
       margin-left: 70px; }
     form#in-progress-private ul#copyright-types-container li h4:not(.first-h4) {
       margin-left: 15px; }
+
+#upload-stage-background-img-container input.choose-file, #upload-stage-background-img-container span, #upload-stage-background-img-container input.save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-sound-img-container input.choose-file, section.change-sound-img-container span, section.change-sound-img-container input.save-stage-background-img, section.change-sound-img-container input.update-file {
+  font-size: 12px; }
+#upload-stage-background-img-container input.choose-file, #upload-stage-background-img-container input.save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-sound-img-container input.choose-file, section.change-sound-img-container input.save-stage-background-img, section.change-sound-img-container input.update-file {
+  -moz-border-radius: 10px;
+  border-radius: 10px; }
+#upload-stage-background-img-container input.choose-file, section.change-sound-img-container input.choose-file {
+  background-color: #e7e7e7;
+  border: 1px solid #cecece;
+  padding: 3px 10px; }
+  #upload-stage-background-img-container input.choose-file:hover, #upload-stage-background-img-container input.choose-file:focus, section.change-sound-img-container input.choose-file:hover, section.change-sound-img-container input.choose-file:focus {
+    background-color: #d9d9d9; }
+#upload-stage-background-img-container input.save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-sound-img-container input.save-stage-background-img, section.change-sound-img-container input.update-file {
+  background-color: #38aaff;
+  border: 1px solid #38aaff;
+  padding: 3px 10px;
+  color: white; }
+  #upload-stage-background-img-container input.save-stage-background-img:hover, #upload-stage-background-img-container input.save-stage-background-img:focus, #upload-stage-background-img-container input.update-file:hover, #upload-stage-background-img-container input.update-file:focus, section.change-sound-img-container input.save-stage-background-img:hover, section.change-sound-img-container input.save-stage-background-img:focus, section.change-sound-img-container input.update-file:hover, section.change-sound-img-container input.update-file:focus {
+    background-color: #45b7ff; }
+
+section.change-sound-img-container span.glyphicon-remove {
+  cursor: pointer; }
+  section.change-sound-img-container span.glyphicon-remove:hover {
+    color: #555; }
+section.change-sound-img-container h4, section.change-sound-img-container input.update-file {
+  display: inline-block;
+  margin-top: 10px; }
+section.change-sound-img-container h4 {
+  margin-left: 10px; }
+section.change-sound-img-container input.choose-file {
+  margin-left: 25px; }
+section.change-sound-img-container input.update-file {
+  float: right; }
 
 .profile-right {
   background-color: #e7e7e7;
@@ -3885,6 +3903,13 @@ footer {
     nav .navbar-left li {
       border: none;
       /* Removes border to the left of links */ }
+  nav ul#flags {
+    float: left;
+    margin: 0;
+    position: absolute;
+    top: 65px; }
+    nav ul#flags li:first-child {
+      margin-right: 0px; }
   nav .navbar-right#logged-out, nav .navbar-right#logged-in {
     margin-top: 0; }
   nav .navbar-right#logged-out li:first-child, nav .navbar-right#logged-out li:last-child {

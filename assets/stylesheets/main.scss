@@ -214,13 +214,14 @@ nav {
 		@include nav-border(#cecece);
 	}
 	ul#flags {
+		float: right;
 		margin-bottom: 0;
 		margin-left: -80px;
 		margin-top: 0;
 		li {
 			display: inline-block;
-			position: relative;
-			z-index: 1;
+			// position: relative;
+			// z-index: 1;
 			img {
 				height: 13px;
 				width: auto;
@@ -307,11 +308,16 @@ nav {
 			float: right;
 			font-size: 21px;
 			line-height: 1;
-			text-shadow: 0 1px 0 #fff;
 			&:hover, &:focus {
 				color: #52C4FF;	
 			}
 		}
+	}
+	#registration-full-header, #registration-express-header, 
+	#register-header, #login-header {
+		button.close {
+			margin-top: 3px;
+		} 
 	}
 	h2.register-modal-heading, h2.registration-full-modal-heading, 
 	h2.registration-express-modal-heading, h2.login-modal-heading {
@@ -425,8 +431,9 @@ nav {
 			}
 		}
 		img#rainbow-music-notes {
-			margin-top: 15px;
+			float: right;
 			height: 179px;
+			margin-top: 15px;
 			width: 270px;
 		}
 	}
@@ -834,6 +841,9 @@ button.musiclaps-dark-gray {
 		font-size: 12px;
 		font-weight: 300;
 	}
+	li#glyphicon-home {
+		float: right;
+	}
 }
 
 h4#my-profile {
@@ -1123,7 +1133,7 @@ form#in-progress-private {
 	}
 	input.save {
 		@include border-radius(2px);
-		@include submit($musiclaps-blue, $musiclaps-blue-border, 1px 7px, #d9d9d9);
+		@include submit($musiclaps-blue, $musiclaps-blue-border, 1px 7px, #45B7FF);
 		color: white;
 		font-weight: normal;
 		font-size: 12px;
@@ -1150,25 +1160,11 @@ form#in-progress-private {
 	#upload-stage-background-img-container {
 		border-bottom: $nav-border;
 		border-top: $nav-border;
-		input.choose-file, span, input.save-background-img {
-			font-size: 12px;
-		}
-		span, input.choose-file {
+		input.choose-file, span, #save-stage-background-img-and-trash-container {
 			margin-top: 10px;
 		}
-		input.choose-file, input.save-background-img {
-			@include border-radius(10px);
-		}
-		input.choose-file, input.save-background-img {
-			@include submit($musiclaps-light-gray, $nav-border, 3px 10px, #d9d9d9);
-		}
-		input.save-background-img {
-			@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
-			color: white;
+		input.save-stage-background-img {
 			margin-bottom: 10px;
-		}
-		#save-background-img-and-trash-container {
-			margin-top: 10px;
 		}
 	}
 	h4#type-of-collab, h4#copyright, h4.red {
@@ -1238,6 +1234,44 @@ form#in-progress-private {
 				}
 			}
 		}
+	}
+}
+
+#upload-stage-background-img-container, section.change-sound-img-container {
+	input.choose-file, span, input.save-stage-background-img, input.update-file {
+		font-size: 12px;
+	}
+	input.choose-file, input.save-stage-background-img, input.update-file {
+		@include border-radius(10px);
+	}
+	input.choose-file {
+		@include submit($musiclaps-light-gray, $nav-border, 3px 10px, #d9d9d9);
+	}
+	input.save-stage-background-img, input.update-file {
+		@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+		color: white;
+	}
+}
+
+section.change-sound-img-container {
+	span.glyphicon-remove {
+		cursor: pointer;
+		&:hover {
+			color: #555;
+		}
+	}
+	h4, input.update-file {
+		display: inline-block;
+		margin-top: 10px;
+	}
+	h4 {
+		margin-left: 10px;
+	}
+	input.choose-file {
+		margin-left: 25px;
+	}
+	input.update-file {
+		float: right;
 	}
 }
 
@@ -1416,6 +1450,13 @@ footer {
 			margin-top: 0;
 			li { border: none; /* Removes border to the left of links */ } 
 		}
+	ul#flags {
+		float: left;
+		margin: 0;
+		position: absolute;
+		top: 65px;
+		li:first-child { margin-right: 0px; }
+	}
 		.navbar-right#logged-out, .navbar-right#logged-in { margin-top: 0; }
 		.navbar-right#logged-out li {
 			&:first-child, &:last-child { 
