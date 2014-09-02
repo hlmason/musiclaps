@@ -1451,6 +1451,13 @@ footer {
 			margin-top: 0;
 			li { border: none; /* Removes border to the left of links */ } 
 		}
+	ul#flags {
+		float: left;
+		margin: 0;
+		position: absolute;
+		top: 65px;
+		li:first-child { margin-right: 0px; }
+	}
 		.navbar-right#logged-out, .navbar-right#logged-in { margin-top: 0; }
 		.navbar-right#logged-out li {
 			&:first-child, &:last-child { 

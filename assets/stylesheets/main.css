@@ -3904,6 +3904,13 @@ footer {
     nav .navbar-left li {
       border: none;
       /* Removes border to the left of links */ }
+  nav ul#flags {
+    float: left;
+    margin: 0;
+    position: absolute;
+    top: 65px; }
+    nav ul#flags li:first-child {
+      margin-right: 0px; }
   nav .navbar-right#logged-out, nav .navbar-right#logged-in {
     margin-top: 0; }
   nav .navbar-right#logged-out li:first-child, nav .navbar-right#logged-out li:last-child {
