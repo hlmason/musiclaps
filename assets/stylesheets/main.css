@@ -2880,8 +2880,13 @@ nav .navbar-collapse {
     Logged in Nav
 =================================== */
 .navbar-right #welcome-user {
-  margin-right: 20px;
+  margin-right: 10px;
   margin-top: 28px !important; }
+  .navbar-right #welcome-user a {
+    color: #1F91E6 !important;
+    text-transform: initial; }
+    .navbar-right #welcome-user a:hover, .navbar-right #welcome-user a:focus {
+      color: #444444 !important; }
 
 #nav-registered-user {
   background-color: #e7e7e7;

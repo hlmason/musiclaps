@@ -41,7 +41,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
 	            </button>
-				<a class="navbar-brand" href="<?php echo BASE_URL; ?>">
+				<a class="navbar-brand" href="<?php echo BASE_URL; ?>index-logged-in.php">
 					<img src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/musiclaps-logo.png" alt="Musiclaps logo">
 				</a>
 			</div>
@@ -51,8 +51,12 @@
 					<li><a class="<?php if ($page == "People") { echo "active"; } ?>" href="#">People</a></li>
 					<li><a class="<?php if ($page == "Our Story") { echo "active"; } ?>" href="https://www.musiclaps.com/play?about=us">Our Story</a></li>
 				</ul>
+				<ul id="flags">
+					<li><a><img id="usa-flag" src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/usa-flag.jpg" alt="American flag"></a></li>
+					<li><a><img src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/japan-flag.jpg" alt="Japanese flag"></a></li>
+				</ul>
 				<ul class="nav navbar-nav navbar-right" id="logged-in">
-					<li id="welcome-user">Welcome &nbsp;<span class="musiclaps-blue">$firstname</span></li><!-- Hard-coded placeholder -->
+					<li id="welcome-user">Welcome &nbsp;<span class="musiclaps-blue"><a href="<?php echo BASE_URL; ?>profile/index.php">$firstname</a></span></li><!-- Hard-coded placeholder -->
 					<li>
 						<form action="<?php echo BASE_URL; ?>/logout.php" method="post">
 							<input type="submit" value="Log out">
@@ -62,19 +66,3 @@
 			</div>
 		</div>
 	</nav>
-
-	<div id="wrapper">
-		<div class="container">
-			
-			<nav class="row col-lg-10 col-lg-offset-1" id="nav-registered-user">
-				<ul class="nav navbar-nav">
-					<li><a class="<?php if ($page == "Profile") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/">Profile</a></li>
-					<li><a class="<?php if ($page == "New Project") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/new-project.php">New Project</a></li>
-					<li><a class="<?php if ($page == "Projects") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/projects.php">Projects</a></li>
-					<li><a class="<?php if ($page == "Collaborations") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/collaborations.php">Collaborations</a></li>
-					<li><a class="<?php if ($page == "YouTube") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/youtube.php">YouTube</a></li>
-					<li><a class="<?php if ($page == "Messages") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/messages.php">Messages</a></li>
-					<li><a class="<?php if ($page == "Groups") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/groups.php">Groups</a></li>
-				</ul>
-			</nav>
-			<div class="col-lg-1"></div>

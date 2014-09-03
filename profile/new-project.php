@@ -7,6 +7,7 @@
 	include(ROOT_PATH . 'include/header-logged-in.php');
 	include(ROOT_PATH . 'include/db-connection.php');
 	include(ROOT_PATH . 'controllers/get-profile.php');
+	include(ROOT_PATH . 'include/nav-logged-in.php');
 
 ?>
 		
@@ -201,5 +202,5 @@
 		</div>
 
 	<?php
-		include(ROOT_PATH . 'include/footer.php');
+		include(ROOT_PATH . 'include/footer-logged-in.php');
 	?>
