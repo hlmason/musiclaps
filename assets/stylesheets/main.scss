@@ -9,6 +9,7 @@ $modal-border: 5px solid $musiclaps-light-gray;
 $musiclaps-dark-gray: #444; // Whichever shade of gray is in the final logo - TBD
 $musiclaps-blue-border: 1px solid $musiclaps-blue;
 $nav-border: 1px solid #cecece;
+$table-border: 1px solid #ddd;
 
 /* ===================================
     Mixins
@@ -136,7 +137,8 @@ a:hover {
 	font-weight: bold;
 }
 
-label#birth-date-label-modal, label#gender-label, label#birth-date-label-profile { // Full registration modal and Profile Page 
+label#birth-date-label-modal, label#gender-label, 
+label#birth-date-label-profile, label#collab-label { // Full registration modal and Profile Page 
 	margin-right: 2px;
 }
 
@@ -1284,21 +1286,54 @@ section.change-sound-img-container {
 	}
 }
 
-table#collaborators-table {
-	margin-top: 25px;
-	
-	td {
-		vertical-align: middle;
-		img {
-			height: 30px;
-			width: 30px;
+.collaborators-container {
+	label#collab-label {
+		margin-bottom: 8px;
+		margin-top: 25px;
+	}
+	table {
+		font-size: 12px;
+		thead tr {
+			text-align: left;
 		}
-	}
-	td:first-child {
-		border-left: 1px solid #ddd;
-	}
-	td:last-child {
-		border-right: 1px solid #ddd;
+		tr {
+			border-top: $table-border;
+			th:first-child {
+				border-left: $table-border;	
+			}
+			th:last-child {
+				border-right: $table-border;
+			}
+			th, td {
+				padding: 8px;
+			}
+			td {
+				vertical-align: middle;
+				img {
+					height: 30px;
+					width: 30px;
+				}
+				span.glyphicon-envelope {
+					color: $musiclaps-dark-gray;
+					font-size: 14px;
+				}
+			}
+			td:first-child {
+				border-left: $table-border;
+			}
+			td:last-child {
+				border-right: $table-border;
+			}
+		}
+		tr.thead-tr {
+			background-color: white !important;
+		}
+		tr:not(.thead-tr) {
+			border-bottom: $table-border;
+		}
+		tr:nth-child(odd) {
+			background-color: #F4F4F4;
+		}
 	}
 }
 

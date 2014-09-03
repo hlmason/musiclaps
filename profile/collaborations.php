@@ -50,78 +50,67 @@
 					?>
 					<!-- End of "Change Sound Image" form -->
 
-					<table class="row col-xs-12 table table-striped" id="collaborators-table">
-						<thead>
-							<tr>
-								<th>Owner</th>
-								<th>Joined</th>
-								<th>Project Title</th>
-								<th>Collab Type</th>
-								<th>Instrument Added</th>
-								<th></th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="first-data-cell"><!-- Hard-coded placeholder -->
-									<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
-									$username
-								</td>
-								<td>$date</td><!-- Hard-coded placeholder -->
-								<td>$project title</td><!-- Hard-coded placeholder -->
-								<td>$type of collab</td><!-- Hard-coded placeholder -->
-								<td>$instrument</td><!-- Hard-coded placeholder -->
-							</tr>
-							<tr class="table-striped">
-								<td><!-- Hard-coded placeholder -->
-									<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
-									$username
-								</td>
-								<td>$date</td><!-- Hard-coded placeholder -->
-								<td>$project title</td><!-- Hard-coded placeholder -->
-								<td>$type of collab</td><!-- Hard-coded placeholder -->
-								<td>$instrument</td><!-- Hard-coded placeholder -->
-							</tr>
-							<tr>
-								<td><!-- Hard-coded placeholder -->
-									<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
-									$username
-								</td>
-								<td>$date</td><!-- Hard-coded placeholder -->
-								<td>$project title</td><!-- Hard-coded placeholder -->
-								<td>$type of collab</td><!-- Hard-coded placeholder -->
-								<td>$instrument</td><!-- Hard-coded placeholder -->
-							</tr>
-						</tbody>
-					</table>
+					<div class="collaborators-container" id="collaboratorsContainer">
+						<label for="collab_type" id="collab-label">Sort by</label>
+						<select>
+							<option value="all_collab">All</option>
+							<option value="open_collab">Open Collab</option>
+							<option value="requesting_collab">Requesting Collab</option>
+						</select>
+
+						<table class="row col-xs-12">
+							<thead>
+								<tr class="thead-tr">
+									<th>Project Owner</th>
+									<th>Joined</th>
+									<th>Project Title</th>
+									<th>Collab</th>
+									<th>Instrument</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><!-- Hard-coded placeholder -->
+										<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
+										$username
+									</td>
+									<td>$date</td><!-- Hard-coded placeholder -->
+									<td>$project title</td><!-- Hard-coded placeholder -->
+									<td>$type of collab</td><!-- Hard-coded placeholder -->
+									<td>$instrument</td><!-- Hard-coded placeholder -->
+									<td><a href="<?php echo BASE_URL; ?>profile/messages.php"><span class="glyphicon glyphicon-envelope"></span></a></td>
+								</tr>
+								<tr>
+									<td><!-- Hard-coded placeholder -->
+										<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
+										$username
+									</td>
+									<td>$date</td><!-- Hard-coded placeholder -->
+									<td>$project title</td><!-- Hard-coded placeholder -->
+									<td>$type of collab</td><!-- Hard-coded placeholder -->
+									<td>$instrument</td><!-- Hard-coded placeholder -->
+									<td><a href="<?php echo BASE_URL; ?>profile/messages.php"><span class="glyphicon glyphicon-envelope"></span></a></td>
+								</tr>
+								<tr>
+									<td><!-- Hard-coded placeholder -->
+										<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
+										$username
+									</td>
+									<td>$date</td><!-- Hard-coded placeholder -->
+									<td>$project title</td><!-- Hard-coded placeholder -->
+									<td>$type of collab</td><!-- Hard-coded placeholder -->
+									<td>$instrument</td><!-- Hard-coded placeholder -->
+									<td><a href="<?php echo BASE_URL; ?>profile/messages.php"><span class="glyphicon glyphicon-envelope"></span></a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 
 				</div>
-				<div class="row col-xs-12 col-sm-3">
-					<div class="profile-right projects-page">
-						
-						<div class="row col-xs-12">
-							<h3>Recommended</h3>
-						</div>
-
-						<div class="row col-xs-12 first-row">
-							<h4 class="first-h4">Free Guitar Amp Simulator for Mac and Windows</h4>
-							<a href="http://www.synthtopia.com/content/2010/01/22/free-guitar-amp-simulator-for-mac-windows/" target="blank"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/free-guitar-amp-simulator.jpg" alt="Free Guitar Amp Simulator"></a>
-						</div>
-
-						<div class="row col-xs-12">
-							<h4>Free AmpLion Guitar Amp Simulator </h4>
-							<h5>ampLion Free gives you the opportunity to experience the quality of ampLion simulation. You gain free access to one of the most famous guitar amps ever made.</h5>
-							<a href="https://www.macupdate.com/app/mac/40400/amplion-free" target="blank"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/free-amplion-simulator.jpg" alt="Free AmpLion Guitar Amp Simulator"></a>
-						</div>
-
-						<div class="row col-xs-12">
-							<h4>Realtek High Definition Driver</h4>
-							<h5>Realtek high definition (HD) audio drivers are now available, adding countless "driver customizations" and supporting a number of new Realtek chips.</h5>
-							<a href="http://218.210.127.131/downloads/Default.aspx?Langid=1" target="blank"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/realtek-logo.gif" alt="RealTek logo"></a>
-						</div>
-
-					</div>
-				</div>	
+				<?php
+					include(ROOT_PATH . 'include/profile/recommended.php');
+				?>		
 			</div>
 			<div class="col-lg-1"></div>	
 		

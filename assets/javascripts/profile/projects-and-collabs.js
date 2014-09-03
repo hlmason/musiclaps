@@ -7,7 +7,7 @@ $(document).ready(function() {
 	var privateProjectsContainer = $('section#privateProjectsContainer');
 
 	var requestingCollabContainer = $('section#requestingCollabContainer');
-	var collaboratorsContainer = $('section#collaboratsContainer');
+	var collaboratorsContainer = $('#collaboratorsContainer');
 	var openCollabContainer = $('section#openCollabContainer');
 
 
@@ -46,7 +46,7 @@ $(document).ready(function() {
 	// lyricsProjectsContainer.hide();
 
 	requestingCollabContainer.hide();
-	// collaboratorsContainer.hide();
+	collaboratorsContainer.hide();
 
 
 	glyphiconPencil.hide();
@@ -162,7 +162,7 @@ $(document).ready(function() {
 		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
 		
 		openCollabContainer.hide();
-		// collaboratorsContainer.hide();
+		collaboratorsContainer.hide();
 		projectForm.hide();
 		
 		requestingCollabContainer.fadeIn('fast');

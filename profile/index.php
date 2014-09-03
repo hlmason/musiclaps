@@ -51,7 +51,7 @@
 						<div class="col-sm-1"></div>
 					</div>
 
-					<!-- My Profile -->
+					<!-- "My Profile" -->
 					<section id="myProfile">
 						<div class="row col-xs-12">
 
