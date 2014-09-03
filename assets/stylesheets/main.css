@@ -3799,46 +3799,89 @@ section.change-sound-img-container input.update-file {
   .collaborators-container table tr:nth-child(odd) {
     background-color: #F4F4F4; }
 
-.profile-right {
+section#messages-header {
+  border-bottom: 1px solid #cecece; }
+  section#messages-header a span.glyphicon-envelope {
+    color: #444444; }
+  section#messages-header a h3 {
+    display: inline-block;
+    margin-left: 2px; }
+  section#messages-header a:hover, section#messages-header a:focus {
+    color: #444444; }
+  section#messages-header h3, section#messages-header button, section#messages-header span.glyphicon-arrow-up, section#messages-header span.glyphicon-refresh {
+    margin-top: 15px; }
+  section#messages-header h3 {
+    margin-bottom: 13px; }
+  section#messages-header button, section#messages-header span.glyphicon-arrow-up, section#messages-header span.glyphicon-refresh {
+    float: right; }
+  section#messages-header button {
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    border: none;
+    color: #444444;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    padding: 5px 10px; }
+    section#messages-header button:hover, section#messages-header button:focus {
+      background-color: #444444;
+      color: #38aaff; }
+
+#friends {
+  text-align: center; }
+  #friends .username-and-img {
+    display: inline-block; }
+    #friends .username-and-img img:not(.first-img), #friends .username-and-img h5:not(.first-h5) {
+      margin-left: 39px; }
+    #friends .username-and-img img {
+      height: 65px;
+      margin-top: 38px;
+      width: 65px; }
+    #friends .username-and-img h5 {
+      margin-bottom: 0;
+      margin-top: 1px;
+      text-align: center; }
+
+section.profile-right {
   background-color: #e7e7e7;
   width: 137.5%; }
-  .profile-right h4 {
+  section.profile-right h4 {
     margin-bottom: 5px; }
-  .profile-right h5 {
+  section.profile-right h5 {
     font-weight: normal;
     margin-bottom: 10px;
     margin-top: 3px; }
 
-.profile-right.profile-page {
+section.profile-right.profile-page {
   height: 944px; }
-  .profile-right.profile-page .row {
+  section.profile-right.profile-page .row {
     margin-left: 15px;
     width: 90%; }
-    .profile-right.profile-page .row:first-child {
+    section.profile-right.profile-page .row:first-child {
       text-align: center; }
-    .profile-right.profile-page .row:not(.first-row) {
+    section.profile-right.profile-page .row:not(.first-row) {
       height: 115px; }
-    .profile-right.profile-page .row:not(.last-row) {
+    section.profile-right.profile-page .row:not(.last-row) {
       border-bottom: 1px solid #999; }
-    .profile-right.profile-page .row#user-location-map-container {
+    section.profile-right.profile-page .row#user-location-map-container {
       height: 223.6px; }
-  .profile-right.profile-page h2 {
+  section.profile-right.profile-page h2 {
     margin-bottom: 3px; }
-  .profile-right.profile-page #user-location-map-container #user-location-map {
+  section.profile-right.profile-page #user-location-map-container #user-location-map {
     background-color: lightblue;
     height: 160px;
     width: 100%; }
 
-.profile-right.new-project-page, .profile-right.projects-page {
+section.profile-right.recommended {
   height: 844px; }
-  .profile-right.new-project-page .row, .profile-right.projects-page .row {
+  section.profile-right.recommended .row {
     margin-left: auto;
     margin-right: auto; }
-  .profile-right.new-project-page h3, .profile-right.projects-page h3 {
+  section.profile-right.recommended h3 {
     margin-bottom: 10px;
     margin-top: 18px;
     text-align: center; }
-  .profile-right.new-project-page h4:not(.first-h4), .profile-right.projects-page h4:not(.first-h4) {
+  section.profile-right.recommended h4:not(.first-h4) {
     margin-top: 40px; }
 
 h1.db-error-message {
@@ -3916,7 +3959,7 @@ footer {
   .wmuSliderNext {
     right: 0; }
 
-  .profile-right {
+  section.profile-right {
     margin-top: -1px;
     width: 136.75%; } }
 @media only screen and (max-width: 1090px) {
@@ -3926,7 +3969,7 @@ footer {
   section#technology img, section#backstage img, section.music-ed img, section.contests-and-auditions img {
     display: none; }
 
-  .profile-right {
+  section.profile-right {
     width: 150%; }
 
   footer .navbar-brand {
@@ -4044,7 +4087,7 @@ footer {
       float: none !important;
       margin-top: 8px; }
 
-  .profile-right {
+  section.profile-right {
     margin-top: 20px;
     width: 100%; }
 

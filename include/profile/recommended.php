@@ -1,5 +1,5 @@
 				<div class="row col-xs-12 col-sm-3">
-					<div class="profile-right new-project-page">
+					<section class="profile-right recommended">
 						
 						<div class="row col-xs-12">
 							<h3>Recommended</h3>
@@ -22,5 +22,5 @@
 							<a href="http://218.210.127.131/downloads/Default.aspx?Langid=1" target="blank"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/realtek-logo.gif" alt="RealTek logo"></a>
 						</div>
 
-					</div>
+					</section>
 				</div>

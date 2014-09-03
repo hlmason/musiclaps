@@ -182,7 +182,7 @@
 
 				</div>		
 				<div class="row col-xs-12 col-sm-3">
-					<div class="profile-right profile-page">
+					<section class="profile-right profile-page">
 						
 						<div class="row first-row">
 							<div class="col-xs-7 col-offset-xs-1">
@@ -221,7 +221,7 @@
 							<h5>$message to other musicians</h5><!-- Hard-coded placeholder -->
 						</div>
 
-					</div>
+					</section>
 				</div>	
 			</div>
 			<div class="col-lg-1"></div>	
