@@ -2847,7 +2847,9 @@ nav ul#flags {
   margin-left: -80px;
   margin-top: 0; }
   nav ul#flags li {
-    display: inline-block; }
+    display: inline-block;
+    position: relative;
+    z-index: 1; }
     nav ul#flags li img {
       height: 13px;
       width: auto; }
