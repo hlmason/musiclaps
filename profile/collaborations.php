@@ -23,14 +23,14 @@
 						</div>
 					</div>
 
-					<!-- Open Collab listings -->
+					<!-- "Open Collab" listings -->
 					<?php
 						include(ROOT_PATH . 'include/profile/open-collab-listings.php');
 					?>
-					<!-- End of Open Collab listings -->
+					<!-- End of "Open Collab" listings -->
 
 
-					<!-- Requesting Collab listings -->
+					<!-- "Requesting Collab" listings -->
 					<?php
 						include(ROOT_PATH . 'include/profile/requesting-collab-listings.php');
 					?>
@@ -44,11 +44,56 @@
 						<!-- End of project form -->
 
 
-					<!-- Change sound image form -->
+					<!-- "Change Sound Image" form -->
 					<?php
 						include(ROOT_PATH . 'include/profile/change-sound-img-form.php');
 					?>
-					<!-- Change sound image form -->
+					<!-- End of "Change Sound Image" form -->
+
+					<table class="row col-xs-12 table table-striped" id="collaborators-table">
+						<thead>
+							<tr>
+								<th>Owner</th>
+								<th>Joined</th>
+								<th>Project Title</th>
+								<th>Collab Type</th>
+								<th>Instrument Added</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="first-data-cell"><!-- Hard-coded placeholder -->
+									<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
+									$username
+								</td>
+								<td>$date</td><!-- Hard-coded placeholder -->
+								<td>$project title</td><!-- Hard-coded placeholder -->
+								<td>$type of collab</td><!-- Hard-coded placeholder -->
+								<td>$instrument</td><!-- Hard-coded placeholder -->
+							</tr>
+							<tr class="table-striped">
+								<td><!-- Hard-coded placeholder -->
+									<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
+									$username
+								</td>
+								<td>$date</td><!-- Hard-coded placeholder -->
+								<td>$project title</td><!-- Hard-coded placeholder -->
+								<td>$type of collab</td><!-- Hard-coded placeholder -->
+								<td>$instrument</td><!-- Hard-coded placeholder -->
+							</tr>
+							<tr>
+								<td><!-- Hard-coded placeholder -->
+									<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
+									$username
+								</td>
+								<td>$date</td><!-- Hard-coded placeholder -->
+								<td>$project title</td><!-- Hard-coded placeholder -->
+								<td>$type of collab</td><!-- Hard-coded placeholder -->
+								<td>$instrument</td><!-- Hard-coded placeholder -->
+							</tr>
+						</tbody>
+					</table>
 
 				</div>
 				<div class="row col-xs-12 col-sm-3">

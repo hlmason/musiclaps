@@ -22,16 +22,16 @@
 						</div>
 					</div>
 					
-					<!-- Recording Player -->
+					<!-- "Recording Player" -->
 					<div class="row" id="recordingPlayer">
 						<div class="col-xs-12">
 							<div id="recording-player"></div><!-- Placeholder -->
 						</div>
 					</div>
-					<!-- End of Recording Player -->
+					<!-- End of "Recording Player" -->
 
 
-					<!-- Upload MP3 -->
+					<!-- "Upload MP3" form -->
 					<section class="upload-mp3-container" id="uploadMP3Container">
 						<div class="row">
 							<div class="col-xs-6">
@@ -167,7 +167,7 @@
 							</div>
 						</form>
 					</section>
-					<!-- End of Upload MP3 -->
+					<!-- End of "Upload MP3" form -->
 
 				</div>
 				<div class="row col-xs-12 col-sm-3">

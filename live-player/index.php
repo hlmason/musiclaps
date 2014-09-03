@@ -28,7 +28,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- End of welcome modal -->
+	<!-- End of "Welcome to Soundcheck" modal -->
 
 	<!-- Video modal -->
 	<div class="modal fade" id="demoVideo" tabindex="-1" role="dialog" aria-labelledby="demoVideoLabel" aria-hidden="true">
@@ -49,7 +49,7 @@
 	</div>
 	<!-- End of video modal -->
 
-	<!-- "Select a Song" modal -->
+	<!-- "Select a song" modal -->
 	<div class="modal fade" id="selectSong" tabindex="-1" role="dialog" aria-labelledby="selectSongLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -77,7 +77,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- End of select a song modal -->
+	<!-- End of "Select a song" modal -->
 
 	<div id="wrapper">
 		

@@ -25,32 +25,32 @@
 						</div>
 					</div>
 
-					<!-- In Progress/Private listings -->
+					<!-- "In Progress/Private" listings -->
 					<?php
 						include(ROOT_PATH . 'include/profile/private-project-listings.php');
 					?>
-					<!-- End of In Progress/Private listings -->
+					<!-- End of "In Progress/Private listings" -->
 
 
-					<!-- Public listings -->
+					<!-- "Public" listings -->
 					<?php
 						include(ROOT_PATH . 'include/profile/public-project-listings.php');
 					?>
-					<!-- End of Public listings -->
+					<!-- End of "Public" listings -->
 
 
-					<!-- Group listings -->
+					<!-- "Group" listings -->
 					<?php
 						include(ROOT_PATH . 'include/profile/group-project-listings.php');
 					?>
-					<!-- End of group listings -->
+					<!-- End of "Group" listings -->
 
 
-					<!-- Audition listings -->
+					<!-- "Audition" listings -->
 					<?php
 						include(ROOT_PATH . 'include/profile/audition-project-listings.php');
 					?>
-					<!-- End of audition listings -->
+					<!-- End of "Audition" listings -->
 
 
 						<!-- Project form -->
@@ -64,13 +64,13 @@
 					<?php
 						include(ROOT_PATH . 'include/profile/change-sound-img-form.php');
 					?>
-					<!-- Change sound image form -->
+					<!-- End of change sound image form -->
 
 
-					<!-- Lyrics -->
+					<!-- "Lyrics" -->
 					<section class="row lyrics-projects-container" id="lyricsProjectsContainer">
 					</section>
-					<!-- Lyrics -->
+					<!-- "Lyrics" -->
 
 				</div>
 				<div class="row col-xs-12 col-sm-3">

@@ -1284,6 +1284,24 @@ section.change-sound-img-container {
 	}
 }
 
+table#collaborators-table {
+	margin-top: 25px;
+	
+	td {
+		vertical-align: middle;
+		img {
+			height: 30px;
+			width: 30px;
+		}
+	}
+	td:first-child {
+		border-left: 1px solid #ddd;
+	}
+	td:last-child {
+		border-right: 1px solid #ddd;
+	}
+}
+
 .profile-right { // Profile and New Project Pages
 	background-color: $musiclaps-light-gray;
 	width: 137.5%;

@@ -73,7 +73,7 @@
 								<!-- End of birth date form -->
 
 								<div>
-									<label for="zip">Zip Code</label>
+									<label for="zip">Zip/Postal Code</label>
 									<input id="zip" type="text" name="zip">
 								</div>
 
