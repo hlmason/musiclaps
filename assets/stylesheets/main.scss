@@ -1065,6 +1065,9 @@ section.project-form-header {
 		display: inline-block;
 		font-weight: normal;
 	}
+	span.glyphicon-repeat {
+		color: $musiclaps-dark-gray;
+	}
 }
 
 .project-info-bar {
@@ -1075,10 +1078,7 @@ section.project-form-header {
 		margin-top: 5px;
 		margin-bottom: 8px;
 	}
-	h4.first-h4 {
-		margin-left: 10px;
-	}
-	h4:not(.first-h4), img.audio-mixer {
+	h4:not(.last-h4), img.audio-mixer { // The ":not(.last-h4)" keeps the slider number on the "Requesting Collab" page from being too far from the slider
 		margin-left: 10px;
 	}
 	img.audio-mixer {
@@ -1094,7 +1094,11 @@ section.project-form-header {
 	}
 }
 
-.volume-and-pan {
+.project-info-bar.requesting-collab-page {
+	background-color: white; // Overrides $musiclaps-light-gray
+}
+
+.volume-and-pan, .project-info-bar.requesting-collab-page {
 	border-bottom: $nav-border;
 	border-left: $nav-border;
 	border-right: $nav-border;
@@ -1114,13 +1118,6 @@ section.project-form-header {
 		margin-bottom: 2px;
 		width: 100px;
 	}
-	h4 {
-		display: inline-block;
-		margin-top: 0;
-		&.left-to-right {
-			margin-left: 70px;
-		}
-	}
 	span.glyphicon-save {
 		margin-right: 9px;
 	}
@@ -1128,6 +1125,16 @@ section.project-form-header {
 		@include input-link;
 		margin-top: 6px;
 		padding-right: 5px;
+	}
+}
+
+.volume-and-pan {
+	h4 {
+		display: inline-block;
+		margin-top: 0;
+		&.left-to-right {
+			margin-left: 70px;
+		}
 	}
 }
 

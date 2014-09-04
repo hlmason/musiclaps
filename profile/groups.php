@@ -32,6 +32,7 @@
 						<h4>Joined: <span class="normal">1 year ago</span></h4><!-- Hard-coded placeholder -->
 						<h4 class="last-h4">Member(s): <span class="normal">UsernameA, UsernameB, UsernameC</span></h4><!-- Hard-coded placeholder -->
 					</section>
+					
 
 					<div id="groupForm">
 					<!-- Recording Player -->
@@ -39,7 +40,6 @@
 							<iframe width="620" height="380" src="https://www.musiclaps.com/embed/player?songid=null" frameborder="0" scrolling="no"></iframe><!-- Placeholder -->
 						</div>
 						<!-- End of Recording Player -->
-
 
 						<section class="row col-xs-12 project-form-header">
 							<h3>Project Title</h3>

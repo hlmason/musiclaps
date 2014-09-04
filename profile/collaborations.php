@@ -37,13 +37,6 @@
 					<!-- End of Requesting Collab listings -->
 
 
-						<!-- Project form -->
-						<?php
-							include(ROOT_PATH . 'include/profile/project-form.php');
-						?>
-						<!-- End of project form -->
-
-
 					<!-- "Change Sound Image" form -->
 					<?php
 						include(ROOT_PATH . 'include/profile/change-sound-img-form.php');

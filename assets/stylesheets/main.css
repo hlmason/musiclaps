@@ -3572,6 +3572,8 @@ section.project-form-header h3, section.project-form-header h4 {
 section.project-form-header h3 {
   display: inline-block;
   font-weight: normal; }
+section.project-form-header span.glyphicon-repeat {
+  color: #444444; }
 
 .project-info-bar {
   background-color: #e7e7e7;
@@ -3580,9 +3582,7 @@ section.project-form-header h3 {
     display: inline-block;
     margin-top: 5px;
     margin-bottom: 8px; }
-  .project-info-bar h4.first-h4 {
-    margin-left: 10px; }
-  .project-info-bar h4:not(.first-h4), .project-info-bar img.audio-mixer {
+  .project-info-bar h4:not(.last-h4), .project-info-bar img.audio-mixer {
     margin-left: 10px; }
   .project-info-bar img.audio-mixer {
     cursor: pointer; }
@@ -3593,16 +3593,19 @@ section.project-form-header h3 {
     margin-right: 10px;
     margin-top: 8px; }
 
-.volume-and-pan {
+.project-info-bar.requesting-collab-page {
+  background-color: white; }
+
+.volume-and-pan, .project-info-bar.requesting-collab-page {
   border-bottom: 1px solid #cecece;
   border-left: 1px solid #cecece;
   border-right: 1px solid #cecece;
   height: 35px; }
-  .volume-and-pan span.glyphicon {
+  .volume-and-pan span.glyphicon, .project-info-bar.requesting-collab-page span.glyphicon {
     margin-top: 9px; }
-  .volume-and-pan span.glyphicon-volume-up {
+  .volume-and-pan span.glyphicon-volume-up, .project-info-bar.requesting-collab-page span.glyphicon-volume-up {
     margin-left: 30px; }
-  .volume-and-pan .slider {
+  .volume-and-pan .slider, .project-info-bar.requesting-collab-page .slider {
     -moz-border-radius: 10px;
     border-radius: 10px;
     background-color: #e7e7e7;
@@ -3611,20 +3614,21 @@ section.project-form-header h3 {
     height: 7px;
     margin-bottom: 2px;
     width: 100px; }
-  .volume-and-pan h4 {
-    display: inline-block;
-    margin-top: 0; }
-    .volume-and-pan h4.left-to-right {
-      margin-left: 70px; }
-  .volume-and-pan span.glyphicon-save {
+  .volume-and-pan span.glyphicon-save, .project-info-bar.requesting-collab-page span.glyphicon-save {
     margin-right: 9px; }
-  .volume-and-pan input.save-volume-and-pan {
+  .volume-and-pan input.save-volume-and-pan, .project-info-bar.requesting-collab-page input.save-volume-and-pan {
     background: none;
     border: none;
     color: #428bca;
     font-weight: bold;
     margin-top: 6px;
     padding-right: 5px; }
+
+.volume-and-pan h4 {
+  display: inline-block;
+  margin-top: 0; }
+  .volume-and-pan h4.left-to-right {
+    margin-left: 70px; }
 
 form#in-progress-private label {
   margin-bottom: 2px;

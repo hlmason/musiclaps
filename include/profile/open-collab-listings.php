@@ -14,3 +14,9 @@
 							<h5>Open Collab <span class="glyphicon glyphicon-lock"></span></h5>
 						</div>
 					</section>
+
+					<!-- Project form -->
+					<?php
+						include(ROOT_PATH . 'include/profile/project-form.php');
+					?>
+					<!-- End of project form -->
