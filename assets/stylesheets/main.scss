@@ -1397,9 +1397,19 @@ section#groups-container {
 	margin-top: 15px;
 	h4:first-child { // "Group Name"
 		font-size: 14px;
+		margin-top: 16px;
 		span {
 			margin-left: 3px;
 		}
+	}
+	h4:not(.first-h4) {
+		margin-top: 10px;
+	}
+	h4:not(.last-h4) {
+		margin-bottom: 10px;
+	}
+	h4:last-child {
+		margin-bottom: 16px;
 	}
 	section.projects-container-groups-page {
 		h5 {
@@ -1407,6 +1417,7 @@ section#groups-container {
 		}
 		margin-left: 0;
 		margin-right: 0;
+		margin-top: 5px;
 	}
 }
 

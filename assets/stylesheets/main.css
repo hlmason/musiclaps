@@ -3847,12 +3847,20 @@ section#groups-container {
   font-size: 12px;
   margin-top: 15px; }
   section#groups-container h4:first-child {
-    font-size: 14px; }
+    font-size: 14px;
+    margin-top: 16px; }
     section#groups-container h4:first-child span {
       margin-left: 3px; }
+  section#groups-container h4:not(.first-h4) {
+    margin-top: 10px; }
+  section#groups-container h4:not(.last-h4) {
+    margin-bottom: 10px; }
+  section#groups-container h4:last-child {
+    margin-bottom: 16px; }
   section#groups-container section.projects-container-groups-page {
     margin-left: 0;
-    margin-right: 0; }
+    margin-right: 0;
+    margin-top: 5px; }
     section#groups-container section.projects-container-groups-page h5 {
       font-size: 12px; }
 
