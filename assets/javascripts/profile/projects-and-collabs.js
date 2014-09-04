@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	var publicProjectsContainer = $('section#publicProjectsContainer');
-	var groupProjectsContainer = $('section#groupProjectsContainer');
+	var groupProjectsContainerProjectsPage = $('section#groupProjectsContainerProjectsPage');
 	var auditionProjectsContainer = $('section#auditionProjectsContainer');
 	var lyricContainer = $('section#lyricsProjectsContainer');
 	var privateProjectsContainer = $('section#privateProjectsContainer');
@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 	publicProjectsContainer.hide();
-	groupProjectsContainer.hide();
+	groupProjectsContainerProjectsPage.hide();
 	auditionProjectsContainer.hide();
 	// lyricsProjectsContainer.hide();
 
@@ -83,7 +83,7 @@ $(document).ready(function() {
 		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
 		
 		privateProjectsContainer.hide();
-		groupProjectsContainer.hide();
+		groupProjectsContainerProjectsPage.hide();
 		auditionProjectsContainer.hide();
 		// lyricsProjectsContainer.hide();
 		projectForm.hide();
@@ -104,7 +104,7 @@ $(document).ready(function() {
 		// lyricsProjectsContainer.hide();
 		projectForm.hide();
 		
-		groupProjectsContainer.fadeIn('fast');
+		groupProjectsContainerProjectsPage.fadeIn('fast');
 	});
 
 	$(auditionProjectsButton).on('click', function() {
@@ -116,7 +116,7 @@ $(document).ready(function() {
 		
 		publicProjectsContainer.hide();
 		privateProjectsContainer.hide();
-		groupProjectsContainer.hide();
+		groupProjectsContainerProjectsPage.hide();
 		// lyricsProjectsContainer.hide();
 		projectForm.hide();
 		
@@ -132,7 +132,7 @@ $(document).ready(function() {
 		
 		publicProjectsContainer.hide();
 		auditionProjectsContainer.hide();
-		groupProjectsContainer.hide();
+		groupProjectsContainerProjectsPage.hide();
 		privateProjectsContainer.hide();		
 		// lyricsProjectsContainer.fadeIn('fast');
 		projectForm.hide();
@@ -148,7 +148,7 @@ $(document).ready(function() {
 		
 		publicProjectsContainer.hide();
 		auditionProjectsContainer.hide();
-		groupProjectsContainer.hide();
+		groupProjectsContainerProjectsPage.hide();
 		// lyricsProjectsContainer.hide();
 		projectForm.hide();
 		

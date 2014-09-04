@@ -41,7 +41,7 @@
 
 					<!-- "Group" listings -->
 					<?php
-						include(ROOT_PATH . 'include/profile/group-project-listings.php');
+						include(ROOT_PATH . 'include/profile/group-project-listings-projects-pg.php');
 					?>
 					<!-- End of "Group" listings -->
 

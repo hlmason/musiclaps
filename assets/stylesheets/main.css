@@ -3800,38 +3800,61 @@ section.change-sound-img-container input.update-file {
   .collaborators-container table tr:nth-child(odd) {
     background-color: #F4F4F4; }
 
+section#messages-header h3, section#groups-header h3 {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 15px; }
+section#messages-header button, section#groups-header button {
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  border: none;
+  color: #444444;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  padding: 5px 10px; }
+  section#messages-header button:hover, section#messages-header button:focus, section#groups-header button:hover, section#groups-header button:focus {
+    background-color: #444444;
+    color: #38aaff; }
+
 section#messages-header {
   border-bottom: 1px solid #cecece; }
   section#messages-header a span.glyphicon {
     color: #444444; }
   section#messages-header a h3 {
-    display: inline-block;
+    margin-bottom: 13px;
     margin-left: 2px; }
   section#messages-header a:hover, section#messages-header a:focus {
     color: #444444; }
-  section#messages-header h3 {
-    margin-bottom: 13px;
-    margin-top: 15px; }
   section#messages-header button, section#messages-header span.glyphicon-arrow-up, section#messages-header span.glyphicon-refresh {
     float: right; }
   section#messages-header button {
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    background-color: #f4f4f4;
-    border: none;
-    color: #444444;
-    font-size: 12px;
-    letter-spacing: 0.5px;
-    padding: 5px 10px;
-    margin-top: 12px;
-    margin-right: 18px; }
-    section#messages-header button:hover, section#messages-header button:focus {
-      background-color: #444444;
-      color: #38aaff; }
+    margin-right: 18px;
+    margin-top: 12px; }
   section#messages-header span.glyphicon-refresh, section#messages-header span.glyphicon-arrow-up {
     margin-top: 17px; }
   section#messages-header span.glyphicon-arrow-up {
     margin-right: 7px; }
+
+section#groups-header button {
+  margin-left: 10px;
+  margin-top: 15px; }
+
+section#groups-container {
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  font-size: 12px;
+  margin-top: 15px; }
+  section#groups-container h4:first-child {
+    font-size: 14px; }
+    section#groups-container h4:first-child span {
+      margin-left: 3px; }
+  section#groups-container section.projects-container-groups-page {
+    margin-left: 0;
+    margin-right: 0; }
+    section#groups-container section.projects-container-groups-page h5 {
+      font-size: 12px; }
 
 .add-friend-container {
   text-align: right;

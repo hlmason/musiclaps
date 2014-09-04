@@ -1339,6 +1339,21 @@ section.change-sound-img-container {
 	}
 }
 
+section#messages-header, section#groups-header {
+	h3 { // "Groups"
+		display: inline-block;
+		margin-bottom: 0;
+		margin-top: 15px;
+	}
+	button { // "Add New Friend" and "Create New Group"
+		@include button(#F4F4F4, $musiclaps-dark-gray, 12px, 5px 10px);
+		&:hover, &:focus {
+			background-color: $musiclaps-dark-gray;
+			color: $musiclaps-blue;
+		}
+	}
+}
+
 section#messages-header {
 	border-bottom: $nav-border;
 	a {
@@ -1346,34 +1361,52 @@ section#messages-header {
 			color: $musiclaps-dark-gray;
 		}
 		h3 {
-			display: inline-block;
+			margin-bottom: 13px;
 			margin-left: 2px;
 		}
 		&:hover, &:focus {
 			color: $musiclaps-dark-gray;
 		}
 	}
-	h3 {
-		margin-bottom: 13px;
-		margin-top: 15px;
-	}
 	button, span.glyphicon-arrow-up, span.glyphicon-refresh {
 		float: right;
 	}
 	button { // "Add New Friend"
-		@include button(#F4F4F4, $musiclaps-dark-gray, 12px, 5px 10px);
-		margin-top: 12px;
-		&:hover, &:focus {
-			background-color: $musiclaps-dark-gray;
-			color: $musiclaps-blue;
-		}
 		margin-right: 18px;
+		margin-top: 12px;
 	}
 	span.glyphicon-refresh, span.glyphicon-arrow-up {
 		margin-top: 17px;
 	}
 	span.glyphicon-arrow-up {
 		margin-right: 7px;
+	}
+}
+
+section#groups-header {
+	button {
+		margin-left: 10px;
+		margin-top: 15px;
+	}
+}
+
+section#groups-container {
+	@include border-radius (5px);
+	border: $nav-border;
+	font-size: 12px;
+	margin-top: 15px;
+	h4:first-child { // "Group Name"
+		font-size: 14px;
+		span {
+			margin-left: 3px;
+		}
+	}
+	section.projects-container-groups-page {
+		h5 {
+			font-size: 12px;
+		}
+		margin-left: 0;
+		margin-right: 0;
 	}
 }
 
