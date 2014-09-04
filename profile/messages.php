@@ -20,8 +20,12 @@
 							<span class="glyphicon glyphicon-envelope"></span>
 							<h3>Messages</h3>
 						</a>
-						<a href="<?php echo BASE_URL; ?>profile/messages.php"><span class="glyphicon glyphicon-refresh"></span></a>
-						<a href="#"><span class="glyphicon glyphicon-arrow-up"></span></a>
+						<a href="<?php echo BASE_URL; ?>profile/messages.php">
+							<span class="glyphicon glyphicon-refresh"></span>
+						</a>
+						<a href="#">
+							<span class="glyphicon glyphicon-arrow-up"></span>
+						</a>
 						<button type="button" id="addFriendButton">Add New Friend</button>
 					</section>
 
@@ -103,8 +107,10 @@
 						<div class="row"> 
 							<div class="col-xs-3">
 								<h5>06/17/2013 at 4:42pm</h5><!-- Hard-coded placeholder -->
-								<a href="<?php echo BASE_URL; ?>profile/"><img id="messagesContainerAvatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"></a><!-- Hard-coded placeholder -->
-								<h5 class="first-h5">$username</h5><!-- Hard-coded placeholder -->
+								<a href="<?php echo BASE_URL; ?>profile/">
+									<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+									<h5 class="first-h5">$username</h5><!-- Hard-coded placeholder -->
+								</a>
 							</div>
 							
 							<div class="col-xs-9">

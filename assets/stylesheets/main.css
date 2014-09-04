@@ -3867,6 +3867,8 @@ section#messages-header {
       height: 65px;
       margin-top: 38px;
       width: 65px; }
+      .friends-container .username-and-img img:hover {
+        cursor: pointer; }
     .friends-container .username-and-img h5 {
       margin-bottom: 0;
       margin-top: 1px;

@@ -1404,6 +1404,9 @@ section#messages-header {
 			height: 65px;
 			margin-top: 38px;
 			width: 65px;
+			&:hover {
+				cursor: pointer;
+			}
 		}
 		h5 {
 			margin-bottom: 0;
