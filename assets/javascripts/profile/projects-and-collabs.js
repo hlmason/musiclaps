@@ -34,7 +34,7 @@ $(document).ready(function() {
 	var openCollabButton = $('button#openCollabButton');
 
 
-	var volumeAndPan = $('section#volumeAndPan');
+	var volumeAndPan = $('section.volumeAndPan');
 	var noCollabGlyphicon = $('span#noCollabGlyphicon');
 	var openCollabGlyphicon = $('span#openCollabGlyphicon');
 	var requestingCollabGlyphicon = $('span#requestingCollabGlyphicon');
@@ -193,7 +193,7 @@ $(document).ready(function() {
 	});
 
 
-	$('img#audioMixer').on('click', function() {
+	$('img.audioMixer').on('click', function() {
 		if ( volumeAndPan.is(':visible') ) {
 			volumeAndPan.hide();
 		} else {

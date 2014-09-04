@@ -3561,47 +3561,48 @@ section.projects-container {
     color: #444444;
     cursor: pointer; }
 
-.live-player-container, #project-info-bar {
+.live-player-container, .project-info-bar {
   margin-top: 15px; }
 
-section#project-form-header h3, section#project-form-header span.glyphicon-repeat, section#project-form-header span.glyphicon-lock, section#project-form-header select.project-type, section#project-form-header span.glyphicon-trash {
+section.project-form-header h3, section.project-form-header span.glyphicon-repeat, section.project-form-header span.glyphicon-lock, section.project-form-header select.project-type, section.project-form-header span.glyphicon-trash, section.project-form-header h4.project-type {
   margin-right: 10px;
   margin-top: 15px; }
-section#project-form-header h3 {
-  display: inline-block;
-  font-weight: normal;
+section.project-form-header h3, section.project-form-header h4 {
   margin-bottom: 0; }
+section.project-form-header h3 {
+  display: inline-block;
+  font-weight: normal; }
 
-#project-info-bar {
+.project-info-bar {
   background-color: #e7e7e7;
   border: 1px solid #cecece; }
-  #project-info-bar h4, #project-info-bar h5 {
+  .project-info-bar h4, .project-info-bar h5 {
     display: inline-block;
     margin-top: 5px;
     margin-bottom: 8px; }
-  #project-info-bar h4.first-h4 {
+  .project-info-bar h4.first-h4 {
     margin-left: 10px; }
-  #project-info-bar h4:not(.first-h4), #project-info-bar img.audio-mixer {
+  .project-info-bar h4:not(.first-h4), .project-info-bar img.audio-mixer {
     margin-left: 10px; }
-  #project-info-bar img.audio-mixer {
+  .project-info-bar img.audio-mixer {
     cursor: pointer; }
-  #project-info-bar h5 {
+  .project-info-bar h5 {
     font-weight: normal;
     margin-left: 20px; }
-  #project-info-bar select.project-type, #project-info-bar span.glyphicon-trash {
+  .project-info-bar select.project-type, .project-info-bar span.glyphicon-trash {
     margin-right: 10px;
     margin-top: 8px; }
 
-#volume-and-pan {
+.volume-and-pan {
   border-bottom: 1px solid #cecece;
   border-left: 1px solid #cecece;
   border-right: 1px solid #cecece;
   height: 35px; }
-  #volume-and-pan span.glyphicon {
+  .volume-and-pan span.glyphicon {
     margin-top: 9px; }
-  #volume-and-pan span.glyphicon-volume-up {
+  .volume-and-pan span.glyphicon-volume-up {
     margin-left: 30px; }
-  #volume-and-pan .slider {
+  .volume-and-pan .slider {
     -moz-border-radius: 10px;
     border-radius: 10px;
     background-color: #e7e7e7;
@@ -3610,14 +3611,14 @@ section#project-form-header h3 {
     height: 7px;
     margin-bottom: 2px;
     width: 100px; }
-  #volume-and-pan h4 {
+  .volume-and-pan h4 {
     display: inline-block;
     margin-top: 0; }
-    #volume-and-pan h4#left-to-right {
+    .volume-and-pan h4.left-to-right {
       margin-left: 70px; }
-  #volume-and-pan span.glyphicon-save {
+  .volume-and-pan span.glyphicon-save {
     margin-right: 9px; }
-  #volume-and-pan input#save-volume-and-pan {
+  .volume-and-pan input.save-volume-and-pan {
     background: none;
     border: none;
     color: #428bca;
@@ -3840,31 +3841,31 @@ section#groups-header button {
   margin-left: 10px;
   margin-top: 15px; }
 
-section#groups-container {
+section.groups-container {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
   font-size: 12px;
   margin-top: 15px; }
-  section#groups-container h4:first-child {
+  section.groups-container h4:first-child {
     font-size: 14px;
     margin-top: 16px; }
-    section#groups-container h4:first-child span {
+    section.groups-container h4:first-child span {
       margin-left: 3px; }
-  section#groups-container h4:not(.first-h4) {
+  section.groups-container h4:not(.first-h4) {
     margin-top: 10px; }
-  section#groups-container h4:not(.last-h4) {
+  section.groups-container h4:not(.last-h4) {
     margin-bottom: 10px; }
-  section#groups-container h4:last-child {
+  section.groups-container h4:last-child {
     margin-bottom: 16px; }
-  section#groups-container section.projects-container-groups-page {
+  section.groups-container section.projects-container-groups-page {
     margin-left: 0;
     margin-right: 0;
     margin-top: 5px; }
-    section#groups-container section.projects-container-groups-page h4 {
+    section.groups-container section.projects-container-groups-page h4 {
       margin-bottom: 3px;
       margin-top: 0; }
-    section#groups-container section.projects-container-groups-page h5 {
+    section.groups-container section.projects-container-groups-page h5 {
       font-size: 12px; }
 
 .add-friend-container {

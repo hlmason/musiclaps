@@ -7,7 +7,7 @@
 	<!-- End of Recording Player -->
 
 
-	<section class="row col-xs-12" id="project-form-header">
+	<section class="row col-xs-12 project-form-header">
 		<h3>Project Title</h3>
 		<!-- Markup is backwards because elements are floated right -->
 		<span class="glyphicon glyphicon-trash pull-right"></span>
@@ -23,9 +23,9 @@
 
 	
 	<section class="row col-xs-12">
-		<div id="project-info-bar">
+		<div class="project-info-bar">
 			<h4 class="first-h4">$project #</h4><!-- Hard-coded placeholder -->
-			<img class="audio-mixer" id="audioMixer" src="<?php echo BASE_URL; ?>assets/images/profile-pages/audio-mixer.jpg" alt="Audio mixer icon">
+			<img class="audio-mixer audioMixer" src="<?php echo BASE_URL; ?>assets/images/profile-pages/audio-mixer.jpg" alt="Audio mixer icon">
 			<h4>$instrument name</h4><!-- Hard-coded placeholder -->
 			<h5>$date project started</h5>
 
@@ -36,18 +36,18 @@
 			</select>
 		</div>
 	</section>
-	<section class="row col-xs-12" id="volumeAndPan">
-		<div id="volume-and-pan">
+	<section class="row col-xs-12 volumeAndPan">
+		<div class="volume-and-pan">
 			<span class="glyphicon glyphicon-volume-up"></span>
 			<div class="slider"></div>
 			<h4>100</h4><!-- Hard-coded placeholder -->
 
-			<h4 id="left-to-right">L</h4>
+			<h4 class="left-to-right">L</h4>
 			<div class="slider"></div>
 			<h4>R</h4>
 
 			<span class="glyphicon glyphicon-save pull-right"></span>
-			<input class="pull-right" id="save-volume-and-pan" type="submit" value="Save">
+			<input class="pull-right save-volume-and-pan" type="submit" value="Save">
 		</div>
 	</section>
 

@@ -1049,23 +1049,25 @@ section.projects-container {
 	}
 }
 
-.live-player-container, #project-info-bar {
+.live-player-container, .project-info-bar {
 	margin-top: 15px;
 }
 
-section#project-form-header {
-	h3, span.glyphicon-repeat, span.glyphicon-lock, select.project-type, span.glyphicon-trash {
+section.project-form-header {
+	h3, span.glyphicon-repeat, span.glyphicon-lock, select.project-type, span.glyphicon-trash, h4.project-type {
 		margin-right: 10px;
 		margin-top: 15px; 
+	}
+	h3, h4 {
+		margin-bottom: 0;
 	}
 	h3 {
 		display: inline-block;
 		font-weight: normal;
-		margin-bottom: 0;
 	}
 }
 
-#project-info-bar {
+.project-info-bar {
 	background-color: $musiclaps-light-gray;
 	border: $nav-border;
 	h4, h5 {
@@ -1092,7 +1094,7 @@ section#project-form-header {
 	}
 }
 
-#volume-and-pan {
+.volume-and-pan {
 	border-bottom: $nav-border;
 	border-left: $nav-border;
 	border-right: $nav-border;
@@ -1115,14 +1117,14 @@ section#project-form-header {
 	h4 {
 		display: inline-block;
 		margin-top: 0;
-		&#left-to-right {
+		&.left-to-right {
 			margin-left: 70px;
 		}
 	}
 	span.glyphicon-save {
 		margin-right: 9px;
 	}
-	input#save-volume-and-pan {
+	input.save-volume-and-pan {
 		@include input-link;
 		margin-top: 6px;
 		padding-right: 5px;
@@ -1390,7 +1392,7 @@ section#groups-header {
 	}
 }
 
-section#groups-container {
+section.groups-container {
 	@include border-radius (5px);
 	border: $nav-border;
 	font-size: 12px;
