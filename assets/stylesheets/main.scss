@@ -464,8 +464,7 @@ nav {
 		}
 		&.registration-modal-footer input { // "Register" button
 			@include border-radius(10px);
-			@include submit($musiclaps-blue, $musiclaps-blue-border, 5px 10px, #45B7FF);
-			border: 1px solid #1F91E6;
+			@include submit($musiclaps-blue, 1px solid #1F91E6, 5px 10px, #45B7FF);
 			color: white;
 			text-transform: uppercase;
 			width: 100%;
@@ -1309,9 +1308,12 @@ section.change-sound-img-container {
 			}
 			td {
 				vertical-align: middle;
-				img {
+				img { // Avatar
 					height: 30px;
 					width: 30px;
+				}
+				span.username {
+					margin-left: 3px;
 				}
 				span.glyphicon-envelope {
 					color: $musiclaps-dark-gray;
@@ -1391,7 +1393,7 @@ section#messages-header {
 	}
 }
 
-#friends {
+.friends-container {
 	text-align: center;
 	.username-and-img {
 		display: inline-block;
@@ -1408,6 +1410,48 @@ section#messages-header {
 			margin-top: 1px;
 			text-align: center;
 		}
+	}
+}
+
+section.messages-container {
+	img {
+		height: 40px;
+		width: 40px;
+	}
+	h5:first-child, #message-box {
+		margin-top: 25px;
+	}
+	h5:first-child { // Date/time
+		font-weight: normal;
+		margin-bottom: 3px;
+	}
+	h5:last-child { // Username
+		margin-top: 3px;
+	}
+	#existing-message {
+		@include border-radius(4px);
+		background-color: $musiclaps-light-gray;
+		height: 50px;
+		margin-top: 43px;
+		width: 90%;
+	}
+	h4 { // "message to username"
+		display: inline-block;
+		margin-bottom: 5px;
+		margin-top: 0;
+	}
+	textarea {
+		height: 113px;
+		width: 100%;
+	}
+	input.send-message {
+		@include border-radius(10px);
+		@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+		color: white;
+		float: right;
+		font-size: 12px;
+		margin-top: 3px;
+		text-transform: uppercase;
 	}
 }
 

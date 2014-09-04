@@ -1,11 +1,15 @@
 $(document).ready(function() {
 
 	var addFriendContainer = $('#addFriendContainer');
-	var addFriendButton = $('#addFriendButton');
 	var glyphiconTrash = $('span#glyphiconTrash');
+	var messagesContainer = $('section#messagesContainer');
+	var addFriendButton = $('button#addFriendButton');
+	var friendsContainer = $('#friendsContainer');
+	var friendsContainerImg = $('#friendsContainer img');
 
 	addFriendContainer.hide();
 	glyphiconTrash.hide();
+	messagesContainer.hide();
 
 	// $('h5').hover(function() {
 	// 	if ( glyphiconTrash.is(':hidden') ) {
@@ -22,6 +26,11 @@ $(document).ready(function() {
 		else if ( addFriendContainer.is(':visible') ) {
 			addFriendContainer.fadeOut('fast');
 		}
+	});
+
+	$(friendsContainerImg).on('click', function() {
+		friendsContainer.hide();
+		messagesContainer.fadeIn('fast');
 	});
 
 });

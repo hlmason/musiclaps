@@ -3032,9 +3032,8 @@ nav .navbar-collapse {
     -moz-border-radius: 10px;
     border-radius: 10px;
     background-color: #38aaff;
-    border: 1px solid #38aaff;
+    border: 1px solid #1f91e6;
     padding: 5px 10px;
-    border: 1px solid #1F91E6;
     color: white;
     text-transform: uppercase;
     width: 100%; }
@@ -3785,6 +3784,8 @@ section.change-sound-img-container input.update-file {
       .collaborators-container table tr td img {
         height: 30px;
         width: 30px; }
+      .collaborators-container table tr td span.username {
+        margin-left: 3px; }
       .collaborators-container table tr td span.glyphicon-envelope {
         color: #444444;
         font-size: 14px; }
@@ -3856,20 +3857,58 @@ section#messages-header {
     .add-friend-container input.add-friend-submit:hover, .add-friend-container input.add-friend-submit:focus {
       background-color: #45b7ff; }
 
-#friends {
+.friends-container {
   text-align: center; }
-  #friends .username-and-img {
+  .friends-container .username-and-img {
     display: inline-block; }
-    #friends .username-and-img img:not(.first-img), #friends .username-and-img h5:not(.first-h5) {
+    .friends-container .username-and-img img:not(.first-img), .friends-container .username-and-img h5:not(.first-h5) {
       margin-left: 39px; }
-    #friends .username-and-img img {
+    .friends-container .username-and-img img {
       height: 65px;
       margin-top: 38px;
       width: 65px; }
-    #friends .username-and-img h5 {
+    .friends-container .username-and-img h5 {
       margin-bottom: 0;
       margin-top: 1px;
       text-align: center; }
+
+section.messages-container img {
+  height: 40px;
+  width: 40px; }
+section.messages-container h5:first-child, section.messages-container #message-box {
+  margin-top: 25px; }
+section.messages-container h5:first-child {
+  font-weight: normal;
+  margin-bottom: 3px; }
+section.messages-container h5:last-child {
+  margin-top: 3px; }
+section.messages-container #existing-message {
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #e7e7e7;
+  height: 50px;
+  margin-top: 43px;
+  width: 90%; }
+section.messages-container h4 {
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-top: 0; }
+section.messages-container textarea {
+  height: 113px;
+  width: 100%; }
+section.messages-container input.send-message {
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #38aaff;
+  border: 1px solid #38aaff;
+  padding: 3px 10px;
+  color: white;
+  float: right;
+  font-size: 12px;
+  margin-top: 3px;
+  text-transform: uppercase; }
+  section.messages-container input.send-message:hover, section.messages-container input.send-message:focus {
+    background-color: #45b7ff; }
 
 section.profile-right {
   background-color: #e7e7e7;

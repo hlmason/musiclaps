@@ -31,35 +31,35 @@
 						<input class="add-friend-submit" type="submit" value="Add">
 					</div>
 
-					<div id="friends">
+					<div class="friends-container row col-xs-12" id="friendsContainer">
 						<div class="row col-xs-12">
 							<div class="username-and-img">
-								<img class="first-img" id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<img class="first-img" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 								<h5 class="first-h5">$username</h5><!-- Hard-coded placeholder -->
 								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
 							</div>
 							<div class="username-and-img">
-								<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 								<h5>$username</h5><!-- Hard-coded placeholder -->
 								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
 							</div>
 							<div class="username-and-img">
-								<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 								<h5>$username</h5><!-- Hard-coded placeholder -->
 								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
 							</div>
 							<div class="username-and-img">
-								<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 								<h5>$username</h5><!-- Hard-coded placeholder -->
 								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
 							</div>
 							<div class="username-and-img">
-								<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 								<h5>$username</h5><!-- Hard-coded placeholder -->
 								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
 							</div>
 							<div class="username-and-img">
-								<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 								<h5>$username</h5><!-- Hard-coded placeholder -->
 								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
 							</div>
@@ -67,37 +67,58 @@
 
 						<div class="row col-xs-12">
 							<div class="username-and-img">
-								<img class="first-img" id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<img class="first-img" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 								<h5 class="first-h5">$username</h5><!-- Hard-coded placeholder -->
 								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
 							</div>
 							<div class="username-and-img">
-								<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 								<h5>$username</h5><!-- Hard-coded placeholder -->
 								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
 							</div>
 							<div class="username-and-img">
-								<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 								<h5>$username</h5><!-- Hard-coded placeholder -->
 								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
 							</div>
 							<div class="username-and-img">
-								<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 								<h5>$username</h5><!-- Hard-coded placeholder -->
 								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
 							</div>
 							<div class="username-and-img">
-								<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 								<h5>$username</h5><!-- Hard-coded placeholder -->
 								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
 							</div>
 							<div class="username-and-img">
-								<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 								<h5>$username</h5><!-- Hard-coded placeholder -->
 								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
 							</div>
 						</div>
 					</div>
+
+					<section class="messages-container" id="messagesContainer">
+						<div class="row"> 
+							<div class="col-xs-3">
+								<h5>06/17/2013 at 4:42pm</h5><!-- Hard-coded placeholder -->
+								<a href="<?php echo BASE_URL; ?>profile/"><img id="messagesContainerAvatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"></a><!-- Hard-coded placeholder -->
+								<h5 class="first-h5">$username</h5><!-- Hard-coded placeholder -->
+							</div>
+							
+							<div class="col-xs-9">
+								<div id="existing-message"></div>
+							</div>
+						</div>
+
+						<section class="row col-xs-12">
+							<span class="glyphicon glyphicon-pencil"></span>
+							<h4>message to $username</h4><!-- Hard-coded placeholder -->
+							<textarea id="compose_message" name="compose_message"></textarea>
+							<input class="send-message" type="submit" value="Send">
+						</section>
+					</section>
 				</div>
 				<?php
 					include(ROOT_PATH . 'include/profile/recommended.php');
