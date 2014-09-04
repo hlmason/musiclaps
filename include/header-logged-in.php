@@ -30,6 +30,7 @@
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/index.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/new-project.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/projects-and-collabs.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/messages.js"></script>
 </head>
 <body>
 

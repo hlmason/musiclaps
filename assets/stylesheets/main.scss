@@ -464,7 +464,7 @@ nav {
 		}
 		&.registration-modal-footer input { // "Register" button
 			@include border-radius(10px);
-			@include submit($musiclaps-blue, $nav-border, 5px 10px, #45B7FF);
+			@include submit($musiclaps-blue, $musiclaps-blue-border, 5px 10px, #45B7FF);
 			border: 1px solid #1F91E6;
 			color: white;
 			text-transform: uppercase;
@@ -1288,7 +1288,7 @@ section.change-sound-img-container {
 
 .collaborators-container {
 	label#collab-label {
-		margin-bottom: 8px;
+		margin-bottom: 12px;
 		margin-top: 25px;
 	}
 	table {
@@ -1340,7 +1340,7 @@ section.change-sound-img-container {
 section#messages-header {
 	border-bottom: $nav-border;
 	a {
-		span.glyphicon-envelope {
+		span.glyphicon {
 			color: $musiclaps-dark-gray;
 		}
 		h3 {
@@ -1351,22 +1351,43 @@ section#messages-header {
 			color: $musiclaps-dark-gray;
 		}
 	}
-	h3, button, span.glyphicon-arrow-up, span.glyphicon-refresh {
-		margin-top: 15px;
-	}
 	h3 {
 		margin-bottom: 13px;
+		margin-top: 15px;
 	}
 	button, span.glyphicon-arrow-up, span.glyphicon-refresh {
 		float: right;
 	}
 	button { // "Add New Friend"
 		@include button(#F4F4F4, $musiclaps-dark-gray, 12px, 5px 10px);
-		// margin-bottom: 9px;
+		margin-top: 12px;
 		&:hover, &:focus {
 			background-color: $musiclaps-dark-gray;
 			color: $musiclaps-blue;
 		}
+		margin-right: 18px;
+	}
+	span.glyphicon-refresh, span.glyphicon-arrow-up {
+		margin-top: 17px;
+	}
+	span.glyphicon-arrow-up {
+		margin-right: 7px;
+	}
+}
+
+.add-friend-container {
+	text-align: right;
+	margin-top: 20px;
+	input.add-friend-field {
+		@include form-fields-input(25%);
+		margin-left: 2px;
+	}
+	input.add-friend-submit {
+		@include border-radius(10px);
+		@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+		color: white;
+		font-size: 12px;
+		font-weight: normal;
 	}
 }
 
