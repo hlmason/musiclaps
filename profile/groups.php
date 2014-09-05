@@ -19,7 +19,7 @@
 						<a href="<?php echo BASE_URL; ?>profile/groups.php">
 							<h3>Groups</h3>
 						</a>
-						<button type="button">Create New Group</button>
+						<button id="createNewGroupButton" type="button">Create New Group</button>
 					</section>
 
 					<section class="row col-xs-12 create-new-group-container" id="createNewGroupContainer">
