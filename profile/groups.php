@@ -27,19 +27,23 @@
 						<form>
 							<div>
 								<label for="group_name">Group Name</label>
-								<input id="group_name" type="text" name="group_name">
+								<input class="group-name" id="group_name" type="text" name="group_name">
 							</div>
 							
 							<div>
 								<label for="select_sound">Select Sound</label>
 								<select>
-									<option value=""></option><!-- Hard-coded placeholder -->
+									<option value="project_title">$Project Title</option><!-- Hard-coded placeholder -->
 								</select>
 							</div>
 							
 							<div>
 								<label for="add_member">Add Member (Username)</label>
 								<textarea id="add_member" name="add_member" placeholder="Example: April, James, Paul, etc."></textarea>
+							</div>
+
+							<div>
+								<input class="save pull-right" type="submit" value="Save">
 							</div>
 						</form>
 					</section>

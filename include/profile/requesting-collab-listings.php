@@ -11,7 +11,7 @@
 						</div>
 
 						<div class="col-xs-2 col-sm-3 col-md-2">
-							<h5>Requesting Collab <span class="glyphicon glyphicon-lock"></span></h5>
+							<h5 class="last-h5">Requesting Collab <span class="glyphicon glyphicon-lock"></span></h5>
 						</div>
 					</section>
 

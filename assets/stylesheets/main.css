@@ -3548,13 +3548,13 @@ section.projects-container {
     margin-top: 2px;
     min-width: 100px;
     height: 60px; }
-  section.projects-container h4, section.projects-container h5 {
-    margin-top: 0; }
   section.projects-container h4 {
-    margin-bottom: 3px; }
+    margin-bottom: 3px;
+    margin-top: 2px !important; }
   section.projects-container h5 {
-    margin-bottom: 1px; }
-    section.projects-container h5:last-child {
+    margin-bottom: 1px;
+    margin-top: 0; }
+    section.projects-container h5.last-h5 {
       font-weight: normal; }
   section.projects-container:hover {
     background-color: #F4F4F4;
@@ -3868,9 +3868,9 @@ section.create-new-group-container {
     margin-bottom: 15px; }
   section.create-new-group-container label, section.create-new-group-container textarea {
     margin-left: 15px; }
-  section.create-new-group-container input, section.create-new-group-container select {
+  section.create-new-group-container input.group-name, section.create-new-group-container select {
     margin-left: 5px; }
-  section.create-new-group-container input {
+  section.create-new-group-container input.group-name {
     -moz-border-radius: 5px;
     border-radius: 5px;
     border: 1px solid #cecece;
@@ -3886,8 +3886,22 @@ section.create-new-group-container {
     padding-bottom: 4px;
     padding-left: 8px;
     padding-top: 4px;
-    width: 90%;
-    margin-bottom: 15px; }
+    width: 90%; }
+  section.create-new-group-container input.save {
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #38aaff;
+    border: 1px solid #38aaff;
+    padding: 1px 7px;
+    color: white;
+    font-weight: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-top: 15px; }
+    section.create-new-group-container input.save:hover, section.create-new-group-container input.save:focus {
+      background-color: #45b7ff; }
 
 section.groups-container {
   -moz-border-radius: 5px;

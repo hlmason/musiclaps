@@ -89,6 +89,15 @@ $table-border: 1px solid #ddd;
 		background-color: $hover-color;
 	}
 }
+		
+@mixin submit-save-blue {
+	@include border-radius(2px);
+	@include submit($musiclaps-blue, $musiclaps-blue-border, 1px 7px, #45B7FF);
+	color: white;
+	font-weight: normal;
+	font-size: 12px;
+	text-transform: uppercase;
+}
 
 @mixin transform($degrees) {
 	-webkit-transform:rotate($degrees);
@@ -1030,15 +1039,14 @@ section.projects-container {
 		min-width: 100px;
 		height: 60px;
 	}
-	h4, h5 {
-		margin-top: 0;
-	}
 	h4 {
 		margin-bottom: 3px;
+		margin-top: 2px !important;
 	}
 	h5 {
 		margin-bottom: 1px;
-		&:last-child { // "Unlisted"
+		margin-top: 0;
+		&.last-h5 { // "Unlisted"
 			font-weight: normal;
 		}
 	}
@@ -1151,12 +1159,7 @@ form#project-form {
 		@include form-fields-input(100%);
 	}
 	input.save {
-		@include border-radius(2px);
-		@include submit($musiclaps-blue, $musiclaps-blue-border, 1px 7px, #45B7FF);
-		color: white;
-		font-weight: normal;
-		font-size: 12px;
-		text-transform: uppercase;
+		@include submit-save-blue;
 	}
 	input.cover-song-checkbox {
 		display: inline-block;
@@ -1426,16 +1429,21 @@ section.create-new-group-container {
 	label, textarea {
 		margin-left: 15px;
 	}
-	input, select {
+	input.group-name, select {
 		margin-left: 5px;
 	}
-	input {
+	input.group-name {
 		@include form-fields-input(50%);
 		margin-top: 15px;
 	}
 	textarea {
 		@include form-fields-input(90%);
+	}
+	input.save {
+		@include submit-save-blue;
 		margin-bottom: 15px;
+		margin-right: 15px;
+		margin-top: 15px;
 	}
 }
 
