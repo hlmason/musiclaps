@@ -3380,22 +3380,23 @@ button.musiclaps-dark-gray {
 h4#my-profile {
   margin-bottom: 2px; }
 
-form.profile-page label#birth-date-label-profile {
-  margin-top: 5px; }
+.progress {
+  margin-bottom: 0 !important; }
+
 form.profile-page label {
   margin-bottom: 2px;
   margin-top: 25px; }
-form.profile-page select#birth-date-field, form.profile-page input#zip, form.profile-page input#website_url, form.profile-page input#website_title {
+form.profile-page select#birth-date-field, form.profile-page input#zip {
   margin-left: 5px; }
-form.profile-page input#zip, form.profile-page input#website_url, form.profile-page input#website_title {
+form.profile-page input#zip {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
   padding-bottom: 4px;
   padding-left: 8px;
   padding-top: 4px;
-  width: 50%; }
-form.profile-page textarea {
+  width: 190px; }
+form.profile-page input#website_url, form.profile-page input#website_title, form.profile-page textarea, form.profile-page input#change_username {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -3418,18 +3419,22 @@ form.profile-page input#save_profile {
   border-top: 1px solid #cecece;
   margin-top: -10px;
   margin-left: 290px; }
+form.profile-page input.change-password {
+  float: right;
+  margin-top: 49px;
+  margin-right: 15px; }
 
-#choose-avatar-container input, #save-profile-container input, section#choose-project-img-container input,
+input.change-password, #choose-avatar-container input, #save-profile-container input, section#choose-project-img-container input,
 #choose-mp3-file-container input, #upload-project-container input {
   -moz-border-radius: 10px;
   border-radius: 10px; }
 
-#choose-avatar-container input, section#choose-project-img-container input,
+input.change-password, #choose-avatar-container input, section#choose-project-img-container input,
 #choose-mp3-file-container input {
   background-color: #e7e7e7;
   border: 1px solid #cecece;
   padding: 3px 10px; }
-  #choose-avatar-container input:hover, #choose-avatar-container input:focus, section#choose-project-img-container input:hover, section#choose-project-img-container input:focus,
+  input.change-password:hover, input.change-password:focus, #choose-avatar-container input:hover, #choose-avatar-container input:focus, section#choose-project-img-container input:hover, section#choose-project-img-container input:focus,
   #choose-mp3-file-container input:hover,
   #choose-mp3-file-container input:focus {
     background-color: #d9d9d9; }
@@ -3458,7 +3463,7 @@ form.profile-page input#save_profile {
   width: 12px;
   overflow-y: scroll;
   padding-top: 2px;
-  width: 295px; }
+  width: 300px; }
   #genre-form-profile span, #skills span, #instruments span, #genre-form-projects span {
     display: block; }
 
@@ -3489,7 +3494,7 @@ section.upload-mp3-container ul {
       font-size: 14px; }
     section.upload-mp3-container ul li:not(.first-list-item) {
       padding-left: 20px; }
-section.upload-mp3-container input#project-title, section.upload-mp3-container input#comment {
+section.upload-mp3-container input#project_title, section.upload-mp3-container input#comment {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -3710,6 +3715,9 @@ form#project-form #type-of-collab-container {
     letter-spacing: 0.5px;
     padding: 6px 10px;
     margin-top: 3px; }
+    form#project-form #type-of-collab-container button:hover {
+      background-color: #444;
+      color: #38aaff; }
 form#project-form ul#copyright-types-container {
   height: 377px;
   margin-top: 0;
@@ -3868,9 +3876,9 @@ section.create-new-group-container {
     margin-bottom: 15px; }
   section.create-new-group-container label, section.create-new-group-container textarea {
     margin-left: 15px; }
-  section.create-new-group-container input.group-name, section.create-new-group-container select {
+  section.create-new-group-container input#group_name, section.create-new-group-container select {
     margin-left: 5px; }
-  section.create-new-group-container input.group-name {
+  section.create-new-group-container input#group_name {
     -moz-border-radius: 5px;
     border-radius: 5px;
     border: 1px solid #cecece;
@@ -4024,7 +4032,7 @@ section.profile-right {
     margin-top: 3px; }
 
 section.profile-right.profile-page {
-  height: 944px; }
+  height: 1010px; }
   section.profile-right.profile-page .row {
     margin-left: 15px;
     width: 90%; }

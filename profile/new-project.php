@@ -56,7 +56,7 @@
 							<section id="newProject">
 								<div class="row col-xs-12">
 									<label id="project-title-label" for="project_title">Project Title <span class="normal">(max 80 characters)</span></label>
-									<input id="project-title" type="text" name="project_title">
+									<input id="project_title" type="text" name="project_title">
 								</div>
 
 								<div class="row col-xs-12">

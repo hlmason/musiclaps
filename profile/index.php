@@ -64,94 +64,120 @@
 
 							<form class="profile-page">
 								
-								<div>
-									<label id="birth-date-label-profile" for="birthdate">Birth Date</label>
-									<!-- Birth date form -->
-									<?php
-										include(ROOT_PATH . 'include/birth-date-form.php');
-									?>
-								<!-- End of birth date form -->
-
-								<div>
-									<label for="zip">Zip/Postal Code</label>
-									<input id="zip" type="text" name="zip">
+								<div class="row">
+									<div class="col-xs-12 col-lg-6">
+										<label id="birth-date-label-profile" for="birthdate">Birth Date</label>
+										<!-- Birth date form -->
+										<?php
+											include(ROOT_PATH . 'include/birth-date-form.php');
+										?>
+									<!-- End of birth date form -->
+									<div class="col-xs-12 col-lg-6">
+										<label for="zip">Zip/Postal Code</label>
+										<input id="zip" type="text" name="zip">
+									</div>
 								</div>
 
-								<div>
-									<label for="website_url">Website URL</label>
-									<input id="website_url" type="text" name="website_url">
+								<div class="row">
+									<div class="col-xs-12 col-lg-6">
+										<label for="website_url">Website URL</label>
+										<input id="website_url" type="text" name="website_url">
+									</div>
+									<div class="col-xs-12 col-lg-6">
+										<label for="website_title">Website Title</label>
+										<input id="website_title" type="text" name="website_title">
+									</div>
 								</div>
 
-								<div>
-									<label for="website_title">Website Title</label>
-									<input id="website_title" type="text" name="website_title">
+								<div class="row">
+									<div class="col-xs-12 col-lg-6">
+											<label for="fav_artists">Favorite Artists</label>
+											<textarea id="fav_artists" name="fav_artists"></textarea>
+									</div>
+									<div class="col-xs-12 col-lg-6">
+										<label for="fav_songs">Favorite Songs</label>
+										<textarea id="fav_songs" name="fav_songs"></textarea>
+									</div>
 								</div>
 
-								<label for="genre">Genre <span class="normal">(select one or more)</span></label>
-								<div id="genre-form-profile">
-									<!-- Genre form -->
-									<?php
-										include(ROOT_PATH . 'include/profile/genre-form.php');
-									?>
-								<!-- End of genre form -->
-
-								<label for="skills">Skills <span class="normal">(select one or more)</span></label>
-								<div id="skills">
-									<span><input type="checkbox" name="accordion">&nbsp; Accordion</span>
-									<span><input type="checkbox" name="arrangement">&nbsp; Arrangement</span>
-									<span><input type="checkbox" name="banjo">&nbsp; Banjo</span>
-									<span><input type="checkbox" name="bass">&nbsp; Bass</span>
-									<span><input type="checkbox" name="castanets">&nbsp; Castanets</span>
-									<span><input type="checkbox" name="cello">&nbsp; Cello</span>
-									<span><input type="checkbox" name="clarinet">&nbsp; Clarinet</span>
-									<span><input type="checkbox" name="conga">&nbsp; Conga</span>
-									<span><input type="checkbox" name="contrabass">&nbsp; Contrabass</span>
-									<span><input type="checkbox" name="drums">&nbsp; Drums</span>
-									<span><input type="checkbox" name="fiddle">&nbsp; Fiddle</span>
-									<span><input type="checkbox" name="flute">&nbsp; Flute</span>
-									<span><input type="checkbox" name="acoustic_guitar">&nbsp; Acoustic Guitar</span>
-									<span><input type="checkbox" name="classical_guitar">&nbsp; Classical Guitar</span>
-									<span><input type="checkbox" name="electric_guitar">&nbsp; Electric Guitar</span>
-									<span><input type="checkbox" name="semi_acoustic_guitar">&nbsp; Semi-Acoustic Guitar</span>
-									<span><input type="checkbox" name="harmonica">&nbsp; Harmonica</span>
-									<span><input type="checkbox" name="harp">&nbsp; Harp</span>
-									<span><input type="checkbox" name="horn">&nbsp; Horn</span>
-									<span><input type="checkbox" name="keyboard">&nbsp; Keyboard</span>
-									<span><input type="checkbox" name="lyrics">&nbsp; Lyrics</span>
-									<span><input type="checkbox" name="mandolin">&nbsp; Mandolin</span>
-									<span><input type="checkbox" name="maraca">&nbsp; Maraca</span>
-									<span><input type="checkbox" name="marimba">&nbsp; Marimba</span>
-									<span><input type="checkbox" name="metallophone">&nbsp; Metallophone</span>
-									<span><input type="checkbox" name="oboe">&nbsp; Oboe</span>
-									<span><input type="checkbox" name="ocarina">&nbsp; Ocarina</span>
-									<span><input type="checkbox" name="organ">&nbsp; Organ</span>
-									<span><input type="checkbox" name="percussion">&nbsp; Percussion</span>
-									<span><input type="checkbox" name="piano">&nbsp; Piano</span>
-									<span><input type="checkbox" name="piccolo">&nbsp; Piccolo</span>
-									<span><input type="checkbox" name="recorder">&nbsp; Recorder</span>
-									<span><input type="checkbox" name="alto_saxophone">&nbsp; Alto Saxophone</span>
-									<span><input type="checkbox" name="baritone_saxophone">&nbsp; Baritone Saxophone</span>
-									<span><input type="checkbox" name="soprano_saxophone">&nbsp; Soprano Saxophone</span>
-									<span><input type="checkbox" name="tenor_saxophone">&nbsp; Tenor Saxophone</span>
-									<span><input type="checkbox" name="shakuhachi">&nbsp; Shakuhachi</span>
-									<span><input type="checkbox" name="shamisen">&nbsp; Shamisen</span>
-									<span><input type="checkbox" name="tambourine">&nbsp; Tambourine</span>
-									<span><input type="checkbox" name="timpani">&nbsp; Timpani</span>
-									<span><input type="checkbox" name="triangle">&nbsp; Triangle</span>
-									<span><input type="checkbox" name="trombone">&nbsp; Trombone</span>
-									<span><input type="checkbox" name="trumpet">&nbsp; Trumpet</span>
-									<span><input type="checkbox" name="ukulele">&nbsp; Ukulele</span>
-									<span><input type="checkbox" name="viola">&nbsp; Viola</span>
-									<span><input type="checkbox" name="violin">&nbsp; Violin</span>
-									<span><input type="checkbox" name="vocals">&nbsp; Vocals</span>
-									<span><input type="checkbox" name="wadaiko">&nbsp; Wadaiko</span>
-									<span><input type="checkbox" name="xylophone">&nbsp; Xylophone</span>
-									<span><input type="checkbox" name="other">&nbsp; Other</span>
+								<div class="row">
+									<div class="col-xs-12 col-lg-6">
+										<label for="genre">Genre <span class="normal">(select one or more)</span></label>
+										<div id="genre-form-profile">
+											<!-- Genre form -->
+											<?php
+												include(ROOT_PATH . 'include/profile/genre-form.php');
+											?>
+										<!-- End of genre form -->
+									</div>
+									<div class="col-xs-12 col-lg-6">
+										<label for="skills">Skills <span class="normal">(select one or more)</span></label>
+										<div id="skills">
+											<span><input type="checkbox" name="accordion">&nbsp; Accordion</span>
+											<span><input type="checkbox" name="arrangement">&nbsp; Arrangement</span>
+											<span><input type="checkbox" name="banjo">&nbsp; Banjo</span>
+											<span><input type="checkbox" name="bass">&nbsp; Bass</span>
+											<span><input type="checkbox" name="castanets">&nbsp; Castanets</span>
+											<span><input type="checkbox" name="cello">&nbsp; Cello</span>
+											<span><input type="checkbox" name="clarinet">&nbsp; Clarinet</span>
+											<span><input type="checkbox" name="conga">&nbsp; Conga</span>
+											<span><input type="checkbox" name="contrabass">&nbsp; Contrabass</span>
+											<span><input type="checkbox" name="drums">&nbsp; Drums</span>
+											<span><input type="checkbox" name="fiddle">&nbsp; Fiddle</span>
+											<span><input type="checkbox" name="flute">&nbsp; Flute</span>
+											<span><input type="checkbox" name="acoustic_guitar">&nbsp; Acoustic Guitar</span>
+											<span><input type="checkbox" name="classical_guitar">&nbsp; Classical Guitar</span>
+											<span><input type="checkbox" name="electric_guitar">&nbsp; Electric Guitar</span>
+											<span><input type="checkbox" name="semi_acoustic_guitar">&nbsp; Semi-Acoustic Guitar</span>
+											<span><input type="checkbox" name="harmonica">&nbsp; Harmonica</span>
+											<span><input type="checkbox" name="harp">&nbsp; Harp</span>
+											<span><input type="checkbox" name="horn">&nbsp; Horn</span>
+											<span><input type="checkbox" name="keyboard">&nbsp; Keyboard</span>
+											<span><input type="checkbox" name="lyrics">&nbsp; Lyrics</span>
+											<span><input type="checkbox" name="mandolin">&nbsp; Mandolin</span>
+											<span><input type="checkbox" name="maraca">&nbsp; Maraca</span>
+											<span><input type="checkbox" name="marimba">&nbsp; Marimba</span>
+											<span><input type="checkbox" name="metallophone">&nbsp; Metallophone</span>
+											<span><input type="checkbox" name="oboe">&nbsp; Oboe</span>
+											<span><input type="checkbox" name="ocarina">&nbsp; Ocarina</span>
+											<span><input type="checkbox" name="organ">&nbsp; Organ</span>
+											<span><input type="checkbox" name="percussion">&nbsp; Percussion</span>
+											<span><input type="checkbox" name="piano">&nbsp; Piano</span>
+											<span><input type="checkbox" name="piccolo">&nbsp; Piccolo</span>
+											<span><input type="checkbox" name="recorder">&nbsp; Recorder</span>
+											<span><input type="checkbox" name="alto_saxophone">&nbsp; Alto Saxophone</span>
+											<span><input type="checkbox" name="baritone_saxophone">&nbsp; Baritone Saxophone</span>
+											<span><input type="checkbox" name="soprano_saxophone">&nbsp; Soprano Saxophone</span>
+											<span><input type="checkbox" name="tenor_saxophone">&nbsp; Tenor Saxophone</span>
+											<span><input type="checkbox" name="shakuhachi">&nbsp; Shakuhachi</span>
+											<span><input type="checkbox" name="shamisen">&nbsp; Shamisen</span>
+											<span><input type="checkbox" name="tambourine">&nbsp; Tambourine</span>
+											<span><input type="checkbox" name="timpani">&nbsp; Timpani</span>
+											<span><input type="checkbox" name="triangle">&nbsp; Triangle</span>
+											<span><input type="checkbox" name="trombone">&nbsp; Trombone</span>
+											<span><input type="checkbox" name="trumpet">&nbsp; Trumpet</span>
+											<span><input type="checkbox" name="ukulele">&nbsp; Ukulele</span>
+											<span><input type="checkbox" name="viola">&nbsp; Viola</span>
+											<span><input type="checkbox" name="violin">&nbsp; Violin</span>
+											<span><input type="checkbox" name="vocals">&nbsp; Vocals</span>
+											<span><input type="checkbox" name="wadaiko">&nbsp; Wadaiko</span>
+											<span><input type="checkbox" name="xylophone">&nbsp; Xylophone</span>
+											<span><input type="checkbox" name="other">&nbsp; Other</span>
+										</div>
+									</div>
 								</div>
 
 								<div>
 									<label for="message">Message</label>
 									<textarea id="message" name="message" placeholder="Your message to other musicians"></textarea>
+								</div>
+
+								<div class="row">
+									<div class="col-xs-12 col-lg-6">
+										<label for="change_username">Change Username</label>
+										<input id="change_username" type="text" name="change_username">
+									</div>
+									<input class="change-password" id="change_password" type="submit" value="Change Password">
 								</div>
 
 								<div class="profile-page" id="choose-avatar-container">
@@ -204,6 +230,16 @@
 						<div class="row col-xs-12">
 							<h4>Member since: </h4>
 							<h5>$date joined</h5><!-- Hard-coded placeholder -->
+						</div>
+
+						<div class="row col-xs-12">
+							<h4>Favorite Artists: </h4>
+							<h5>$artists</h5><!-- Hard-coded placeholder -->
+						</div>
+
+						<div class="row col-xs-12">
+							<h4>Favorite Songs: </h4>
+							<h5>$songs</h5><!-- Hard-coded placeholder -->
 						</div>
 
 						<div class="row col-xs-12">

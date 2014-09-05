@@ -869,20 +869,21 @@ h4#my-profile {
 	margin-bottom: 2px;
 }
 
+.progress { // Progress bar
+	margin-bottom: 0 !important;
+}
+
 form.profile-page {
-	label#birth-date-label-profile {
-		margin-top: 5px;
-	}
 	label {
 		@include form-fields-label(25px);
 	}
-	select#birth-date-field, input#zip, input#website_url, input#website_title { // Adds space btwn field and label. Should remain inside "form.profile-page"; otherwise it will affect modal fields
+	select#birth-date-field, input#zip { // Adds space btwn field and label. Should remain inside "form.profile-page"; otherwise it will affect modal fields
 		margin-left: 5px;
 	}
-	input#zip, input#website_url, input#website_title {
-		@include form-fields-input(50%);
+	input#zip {
+		@include form-fields-input(190px);
 	}
-	textarea {
+	input#website_url, input#website_title, textarea, input#change_username {
 		@include form-fields-input(100%);
 	}
 	img { // Upload image
@@ -906,14 +907,19 @@ form.profile-page {
 		margin-top: -10px;
 		margin-left: 290px;
 	}
+	input.change-password {
+		float: right;
+		margin-top: 49px;
+		margin-right: 15px;
+	}
 }
 
-#choose-avatar-container input, #save-profile-container input, section#choose-project-img-container input, 
+input.change-password, #choose-avatar-container input, #save-profile-container input, section#choose-project-img-container input, 
 #choose-mp3-file-container input, #upload-project-container input {
 	@include border-radius(10px);
 }
 
-#choose-avatar-container input, section#choose-project-img-container input, 
+input.change-password, #choose-avatar-container input, section#choose-project-img-container input, 
 #choose-mp3-file-container input {
 	@include submit($musiclaps-light-gray, $nav-border, 3px 10px, #d9d9d9);
 }
@@ -935,7 +941,7 @@ form.profile-page {
 	@include form-fields-input(12px);
 	overflow-y: scroll;
 	padding-top: 2px;
-	width: 295px;
+	width: 300px;
 	span {
 		display: block; // Makes options stack
 	}
@@ -979,7 +985,7 @@ section.upload-mp3-container {
 			}
 		}
 	}
-	input#project-title, input#comment {
+	input#project_title, input#comment {
 		@include form-fields-input(100%);
 	}
 	input#comment, section#choose-project-img-container {
@@ -1219,6 +1225,10 @@ form#project-form {
 		button {
 			@include button(#F4F4F4, $musiclaps-dark-gray, 12px, 6px 10px);
 			margin-top: 3px;
+			&:hover {
+				background-color: #444;
+				color: $musiclaps-blue;
+			}
 		}
 	}
 	ul#copyright-types-container {
@@ -1429,10 +1439,10 @@ section.create-new-group-container {
 	label, textarea {
 		margin-left: 15px;
 	}
-	input.group-name, select {
+	input#group_name, select {
 		margin-left: 5px;
 	}
-	input.group-name {
+	input#group_name {
 		@include form-fields-input(50%);
 		margin-top: 15px;
 	}
@@ -1575,7 +1585,7 @@ section.profile-right { // Profile and New Project Pages
 }
 
 section.profile-right.profile-page { // Profile Page
-	height: 944px;
+	height: 1010px;
 	.row {
 		margin-left: 15px;
 		width: 90%;

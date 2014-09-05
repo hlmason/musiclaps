@@ -27,7 +27,7 @@
 						<form>
 							<div>
 								<label for="group_name">Group Name</label>
-								<input class="group-name" id="group_name" type="text" name="group_name">
+								<input id="group_name" type="text" name="group_name">
 							</div>
 							
 							<div>
