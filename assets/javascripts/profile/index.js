@@ -4,6 +4,7 @@ $(document).ready(function() {
 	var saveProfile = $('h4#saveProfile');
 	var dontSaveProfile = $('h4#dontSaveProfile');
 	var editProfile = $('h4#editProfile');
+	var myPublicProjects = $('section#myPublicProjects');
 
 	myProfile.hide();
 	saveProfile.hide();
@@ -13,6 +14,7 @@ $(document).ready(function() {
 		editProfile.hide();
 		saveProfile.fadeIn('fast');
 		dontSaveProfile.fadeIn('fast');
+		myPublicProjects.hide();
 		myProfile.fadeIn('fast');
 	});
 
@@ -20,7 +22,8 @@ $(document).ready(function() {
 		saveProfile.hide();
 		dontSaveProfile.hide();
 		editProfile.fadeIn('fast');
-		myProfile.fadeOut('fast');
+		myProfile.hide();
+		myPublicProjects.show();
 	});
 
 });

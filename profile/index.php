@@ -51,6 +51,44 @@
 						<div class="col-sm-1"></div>
 					</div>
 
+					<!-- "My Public Projects" -->
+					<section id="myPublicProjects">
+						<div class="row col-xs-12">
+							
+							<h4 id="my-public-projects-heading">My Public Projects <span class="normal">($number)</span></h4><!-- Hard-coded placeholder -->
+
+							<div class="row col-xs-12">
+								
+								<div class="row">
+									<section class="col-xs-6" id="my-public-projects-listing">
+										<div class="row col-xs-6">
+											<img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project Image"><!-- Hard-coded placeholder -->
+										</div>
+										<div class="row col-xs-6">
+											<h4>$project title</h4><!-- Hard-coded placeholder -->
+											<h5>$# of plays</h5><!-- Hard-coded placeholder -->
+										</div>
+									</section>
+
+									<section class="col-xs-6" id="my-public-projects-listing">
+										<div class="row col-xs-6">
+											<img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project Image"><!-- Hard-coded placeholder -->
+										</div>
+										<div class="row col-xs-6">
+											<h4>$project title</h4><!-- Hard-coded placeholder -->
+											<h5>$# of plays</h5><!-- Hard-coded placeholder -->
+										</div>
+									</section>
+
+								</div>
+							
+							</div>
+
+						</div>
+					</section>
+					<!-- End of "My Public Projects" -->
+
+
 					<!-- "My Profile" -->
 					<section id="myProfile">
 						<div class="row col-xs-12">
@@ -177,7 +215,9 @@
 										<label for="change_username">Change Username</label>
 										<input id="change_username" type="text" name="change_username">
 									</div>
-									<input class="change-password" id="change_password" type="submit" value="Change Password">
+									<div class="col-xs-12 col-lg-6">
+										<input class="change-password" id="change_password" type="submit" value="Change Password">
+									</div>
 								</div>
 
 								<div class="profile-page" id="choose-avatar-container">
@@ -204,7 +244,7 @@
 							
 						</div>
 					</section>
-					<!-- End of My Profile -->
+					<!-- End of "My Profile" -->
 
 				</div>		
 				<div class="row col-xs-12 col-sm-3">

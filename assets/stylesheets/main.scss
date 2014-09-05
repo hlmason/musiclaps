@@ -865,6 +865,31 @@ button.musiclaps-dark-gray {
 	}
 }
 
+h4#my-public-projects-heading {
+	span {
+		margin-left: 2px;
+	}
+}
+
+section#my-public-projects-listing {
+	img {
+		min-width: 100px;
+		height: 60px;
+	}
+	h4, h5 {
+		display: inline-block;
+	}
+	h4 {
+		margin-bottom: 3px;
+		margin-top: 7px;
+	}
+	h5 {
+		font-weight: normal;
+		margin-bottom: 1px;
+		margin-top: 0;
+	}
+}
+
 h4#my-profile {
 	margin-bottom: 2px;
 }
@@ -908,9 +933,8 @@ form.profile-page {
 		margin-left: 290px;
 	}
 	input.change-password {
-		float: right;
 		margin-top: 49px;
-		margin-right: 15px;
+		margin-left: 65px;
 	}
 }
 
