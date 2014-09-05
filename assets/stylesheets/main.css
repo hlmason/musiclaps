@@ -3868,6 +3868,8 @@ section.create-new-group-container {
     margin-bottom: 15px; }
   section.create-new-group-container label, section.create-new-group-container textarea {
     margin-left: 15px; }
+  section.create-new-group-container input, section.create-new-group-container select {
+    margin-left: 5px; }
   section.create-new-group-container input {
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -3890,7 +3892,7 @@ section.create-new-group-container {
 section.groups-container {
   -moz-border-radius: 5px;
   border-radius: 5px;
-  margin-top: 20px; }
+  margin-top: 30px; }
   section.groups-container h4:first-child {
     font-size: 14px;
     margin-top: 15px; }

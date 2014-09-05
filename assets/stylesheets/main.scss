@@ -1426,6 +1426,9 @@ section.create-new-group-container {
 	label, textarea {
 		margin-left: 15px;
 	}
+	input, select {
+		margin-left: 5px;
+	}
 	input {
 		@include form-fields-input(50%);
 		margin-top: 15px;
@@ -1438,7 +1441,7 @@ section.create-new-group-container {
 
 section.groups-container {
 	@include border-radius (5px);
-	margin-top: 20px;
+	margin-top: 30px;
 	h4:first-child { // "Group Name"
 		font-size: 14px;
 		margin-top: 15px;
