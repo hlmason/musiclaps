@@ -22,6 +22,28 @@
 						<button type="button">Create New Group</button>
 					</section>
 
+					<section class="row col-xs-12 create-new-group-container" id="createNewGroupContainer">
+						<h4>Create a New Group</h4>
+						<form>
+							<div>
+								<label for="group_name">Group Name</label>
+								<input id="group_name" type="text" name="group_name">
+							</div>
+							
+							<div>
+								<label for="select_sound">Select Sound</label>
+								<select>
+									<option value=""></option><!-- Hard-coded placeholder -->
+								</select>
+							</div>
+							
+							<div>
+								<label for="add_member">Add Member (Username)</label>
+								<textarea id="add_member" name="add_member" placeholder="Example: April, James, Paul, etc."></textarea>
+							</div>
+						</form>
+					</section>
+
 					<section class="row col-xs-12 groups-container" id="groupsContainer">
 						<h4 class="first-h4">Group Name: <span class="normal">$Team XY</span></h4><!-- Hard-coded placeholder -->
 						<h4>Project: 

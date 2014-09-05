@@ -52,7 +52,7 @@
 	</section>
 
 
-	<form id="in-progress-private">
+	<form id="project-form">
 		<div class="row col-xs-12">
 			<label for="title">Title
 				<input class="save pull-right" type="submit" value="Save">

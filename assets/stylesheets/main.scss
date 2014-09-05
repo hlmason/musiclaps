@@ -1138,7 +1138,7 @@ section.project-form-header {
 	}
 }
 
-form#in-progress-private {
+form#project-form {
 	label {
 		@include form-fields-label(25px);
 		width: 100%;
@@ -1399,14 +1399,49 @@ section#groups-header {
 	}
 }
 
+section.create-new-group-container, section.groups-container {
+	border: $nav-border;
+}
+
+section.create-new-group-container {
+	margin-top: 15px;
+	padding-left: 0;
+	padding-right: 0;
+	h4 {
+		background-color: $musiclaps-light-gray;
+		border-bottom: $nav-border;
+		margin-bottom: 0;
+		margin-top: 0;
+		padding-bottom: 5px;
+		padding-left: 15px;
+		padding-top: 5px;
+		width: 100%;
+	}
+	label {
+		@include form-fields-label(15px);
+	}
+	label:last-child {
+		margin-bottom: 15px;
+	}
+	label, textarea {
+		margin-left: 15px;
+	}
+	input {
+		@include form-fields-input(50%);
+		margin-top: 15px;
+	}
+	textarea {
+		@include form-fields-input(90%);
+		margin-bottom: 15px;
+	}
+}
+
 section.groups-container {
 	@include border-radius (5px);
-	border: $nav-border;
-	font-size: 12px;
-	margin-top: 15px;
+	margin-top: 20px;
 	h4:first-child { // "Group Name"
 		font-size: 14px;
-		margin-top: 16px;
+		margin-top: 15px;
 		span {
 			margin-left: 3px;
 		}
@@ -1418,7 +1453,7 @@ section.groups-container {
 		margin-bottom: 10px;
 	}
 	h4:last-child {
-		margin-bottom: 16px;
+		margin-bottom: 15px;
 	}
 	section.projects-container-groups-page {
 		h4 {
@@ -1501,8 +1536,8 @@ section.messages-container {
 		margin-top: 0;
 	}
 	textarea {
+		@include form-fields-input(100%);
 		height: 113px;
-		width: 100%;
 	}
 	input.send-message {
 		@include border-radius(10px);
@@ -1546,7 +1581,6 @@ section.profile-right.profile-page { // Profile Page
 			height: 223.6px;
 		}
 	}
-
 	h2 {
 		margin-bottom: 3px;
 	}

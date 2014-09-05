@@ -3630,14 +3630,14 @@ section.project-form-header span.glyphicon-repeat {
   .volume-and-pan h4.left-to-right {
     margin-left: 70px; }
 
-form#in-progress-private label {
+form#project-form label {
   margin-bottom: 2px;
   margin-top: 25px;
   width: 100%; }
-  form#in-progress-private label h4 {
+  form#project-form label h4 {
     margin-bottom: 0;
     margin-top: 0; }
-form#in-progress-private input#title, form#in-progress-private input#cover_song, form#in-progress-private textarea {
+form#project-form input#title, form#project-form input#cover_song, form#project-form textarea {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -3645,7 +3645,7 @@ form#in-progress-private input#title, form#in-progress-private input#cover_song,
   padding-left: 8px;
   padding-top: 4px;
   width: 100%; }
-form#in-progress-private input.save {
+form#project-form input.save {
   -moz-border-radius: 2px;
   border-radius: 2px;
   background-color: #38aaff;
@@ -3655,52 +3655,52 @@ form#in-progress-private input.save {
   font-weight: normal;
   font-size: 12px;
   text-transform: uppercase; }
-  form#in-progress-private input.save:hover, form#in-progress-private input.save:focus {
+  form#project-form input.save:hover, form#project-form input.save:focus {
     background-color: #45b7ff; }
-form#in-progress-private input.cover-song-checkbox {
+form#project-form input.cover-song-checkbox {
   display: inline-block;
   margin-left: 2px; }
-form#in-progress-private #description {
+form#project-form #description {
   min-height: 142px; }
-form#in-progress-private #no-img-container {
+form#project-form #no-img-container {
   background-color: #e7e7e7;
   color: #777;
   height: 80px;
   text-align: center;
   width: 300px; }
-  form#in-progress-private #no-img-container h2 {
+  form#project-form #no-img-container h2 {
     margin-top: 0;
     padding-top: 20px; }
-form#in-progress-private #upload-stage-background-img-container {
+form#project-form #upload-stage-background-img-container {
   border-bottom: 1px solid #cecece;
   border-top: 1px solid #cecece; }
-  form#in-progress-private #upload-stage-background-img-container input.choose-file, form#in-progress-private #upload-stage-background-img-container span, form#in-progress-private #upload-stage-background-img-container #save-stage-background-img-and-trash-container {
+  form#project-form #upload-stage-background-img-container input.choose-file, form#project-form #upload-stage-background-img-container span, form#project-form #upload-stage-background-img-container #save-stage-background-img-and-trash-container {
     margin-top: 10px; }
-  form#in-progress-private #upload-stage-background-img-container input.save-stage-background-img {
+  form#project-form #upload-stage-background-img-container input.save-stage-background-img {
     margin-bottom: 10px; }
-form#in-progress-private h4#type-of-collab, form#in-progress-private h4#copyright, form#in-progress-private h4.red {
+form#project-form h4#type-of-collab, form#project-form h4#copyright, form#project-form h4.red {
   padding-bottom: 5px;
   padding-left: 10px;
   padding-top: 5px; }
-form#in-progress-private h4#type-of-collab, form#in-progress-private h4#copyright {
+form#project-form h4#type-of-collab, form#project-form h4#copyright {
   background-color: #e7e7e7;
   border: 1px solid #cecece;
   margin-bottom: 0;
   margin-top: 35px; }
-form#in-progress-private h4.red {
+form#project-form h4.red {
   color: red;
   margin-bottom: 0;
   margin-top: 0; }
-form#in-progress-private h4.red, form#in-progress-private #type-of-collab-container, form#in-progress-private ul#copyright-types-container {
+form#project-form h4.red, form#project-form #type-of-collab-container, form#project-form ul#copyright-types-container {
   border-bottom: 1px solid #cecece;
   border-left: 1px solid #cecece;
   border-right: 1px solid #cecece; }
-form#in-progress-private #type-of-collab-container {
+form#project-form #type-of-collab-container {
   height: 36px;
   text-align: center; }
-  form#in-progress-private #type-of-collab-container span.glyphicon-ok {
+  form#project-form #type-of-collab-container span.glyphicon-ok {
     color: #DAA520; }
-  form#in-progress-private #type-of-collab-container button {
+  form#project-form #type-of-collab-container button {
     -moz-border-radius: 10px;
     border-radius: 10px;
     background-color: #f4f4f4;
@@ -3710,30 +3710,30 @@ form#in-progress-private #type-of-collab-container {
     letter-spacing: 0.5px;
     padding: 6px 10px;
     margin-top: 3px; }
-form#in-progress-private ul#copyright-types-container {
+form#project-form ul#copyright-types-container {
   height: 377px;
   margin-top: 0;
   padding-left: 15px; }
-  form#in-progress-private ul#copyright-types-container li:first-child {
+  form#project-form ul#copyright-types-container li:first-child {
     margin-top: 10px; }
-  form#in-progress-private ul#copyright-types-container li:not(.first-list-item) {
+  form#project-form ul#copyright-types-container li:not(.first-list-item) {
     margin-top: 15px; }
-  form#in-progress-private ul#copyright-types-container li img {
+  form#project-form ul#copyright-types-container li img {
     margin-left: 15px; }
-    form#in-progress-private ul#copyright-types-container li img img#all-rights-reserved {
+    form#project-form ul#copyright-types-container li img img#all-rights-reserved {
       height: 32px;
       width: 32px; }
-    form#in-progress-private ul#copyright-types-container li img:not(#all-rights-reserved) {
+    form#project-form ul#copyright-types-container li img:not(#all-rights-reserved) {
       height: 31px;
       width: 88px; }
-  form#in-progress-private ul#copyright-types-container li h4 {
+  form#project-form ul#copyright-types-container li h4 {
     display: inline-block;
     font-weight: normal;
     margin-bottom: 0;
     margin-top: 0; }
-    form#in-progress-private ul#copyright-types-container li h4.first-h4 {
+    form#project-form ul#copyright-types-container li h4.first-h4 {
       margin-left: 70px; }
-    form#in-progress-private ul#copyright-types-container li h4:not(.first-h4) {
+    form#project-form ul#copyright-types-container li h4:not(.first-h4) {
       margin-left: 15px; }
 
 #upload-stage-background-img-container input.choose-file, #upload-stage-background-img-container span, #upload-stage-background-img-container input.save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-sound-img-container input.choose-file, section.change-sound-img-container span, section.change-sound-img-container input.save-stage-background-img, section.change-sound-img-container input.update-file {
@@ -3845,15 +3845,55 @@ section#groups-header button {
   margin-left: 10px;
   margin-top: 15px; }
 
+section.create-new-group-container, section.groups-container {
+  border: 1px solid #cecece; }
+
+section.create-new-group-container {
+  margin-top: 15px;
+  padding-left: 0;
+  padding-right: 0; }
+  section.create-new-group-container h4 {
+    background-color: #e7e7e7;
+    border-bottom: 1px solid #cecece;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-top: 5px;
+    width: 100%; }
+  section.create-new-group-container label {
+    margin-bottom: 2px;
+    margin-top: 15px; }
+  section.create-new-group-container label:last-child {
+    margin-bottom: 15px; }
+  section.create-new-group-container label, section.create-new-group-container textarea {
+    margin-left: 15px; }
+  section.create-new-group-container input {
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-top: 4px;
+    width: 50%;
+    margin-top: 15px; }
+  section.create-new-group-container textarea {
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-top: 4px;
+    width: 90%;
+    margin-bottom: 15px; }
+
 section.groups-container {
   -moz-border-radius: 5px;
   border-radius: 5px;
-  border: 1px solid #cecece;
-  font-size: 12px;
-  margin-top: 15px; }
+  margin-top: 20px; }
   section.groups-container h4:first-child {
     font-size: 14px;
-    margin-top: 16px; }
+    margin-top: 15px; }
     section.groups-container h4:first-child span {
       margin-left: 3px; }
   section.groups-container h4:not(.first-h4) {
@@ -3861,7 +3901,7 @@ section.groups-container {
   section.groups-container h4:not(.last-h4) {
     margin-bottom: 10px; }
   section.groups-container h4:last-child {
-    margin-bottom: 16px; }
+    margin-bottom: 15px; }
   section.groups-container section.projects-container-groups-page {
     margin-left: 0;
     margin-right: 0;
@@ -3935,8 +3975,14 @@ section.messages-container h4 {
   margin-bottom: 5px;
   margin-top: 0; }
 section.messages-container textarea {
-  height: 113px;
-  width: 100%; }
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-top: 4px;
+  width: 100%;
+  height: 113px; }
 section.messages-container input.send-message {
   -moz-border-radius: 10px;
   border-radius: 10px;
