@@ -68,7 +68,7 @@
 						<!-- End of Recording Player -->
 
 						<section class="row col-xs-12 project-form-header">
-							<h3>Project Title</h3>
+							<h3>Project Title</h3><!-- Hard-coded placeholder -->
 							<!-- Markup is backwards because elements are floated right -->
 							<h4 class="project-type pull-right">Group</h4>
 							<span class="glyphicon glyphicon-lock pull-right"></span>

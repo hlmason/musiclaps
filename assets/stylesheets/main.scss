@@ -774,9 +774,9 @@ section#recording-instructions {
 	}
 }
 
-/* ====================================================================================
-    Profile, New Project, Projects, Collaborations, YouTube, Messages, and Groups Pages
-==================================================================================== */
+/* =====================================================================================================
+    Profile, New Project, Projects, Collaborations, YouTube, Messages, Groups, and Project Profile Pages
+====================================================================================================== */
 #avatar-n-edit-profile, #new-project-buttons, 
 #projects-buttons, #collaborations-buttons {
 	margin-top: 15px;
@@ -810,7 +810,7 @@ button.musiclaps-dark-gray {
 }
 
 #avatar-n-edit-profile {
-	img#avatar {
+	img.avatar {
 		box-shadow: 10px 10px 5px $musiclaps-dark-gray;
 		height: 100px;
 		max-width: 100px;
@@ -1101,7 +1101,6 @@ section.project-form-header {
 	}
 	h3 {
 		display: inline-block;
-		font-weight: normal;
 	}
 	span.glyphicon-repeat {
 		color: $musiclaps-dark-gray;
@@ -1235,12 +1234,12 @@ form#project-form {
 		margin-bottom: 0;
 		margin-top: 0;
 	}
-	h4.red, #type-of-collab-container, ul#copyright-types-container {
+	h4.red, .type-of-collab-container, ul#copyright-types-container {
 		border-bottom: $nav-border;
 		border-left: $nav-border;
 		border-right: $nav-border;
 	}
-	#type-of-collab-container {
+	.type-of-collab-container {
 		height: 36px;
 		text-align: center;
 		span.glyphicon-ok {
@@ -1429,6 +1428,87 @@ section#messages-header {
 	}
 }
 
+.add-friend-container {
+	text-align: right;
+	margin-top: 20px;
+	input.add-friend-field {
+		@include form-fields-input(25%);
+		margin-left: 2px;
+	}
+	input.add-friend-submit {
+		@include border-radius(10px);
+		@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+		color: white;
+		font-size: 12px;
+		font-weight: normal;
+	}
+}
+
+.friends-container {
+	text-align: center;
+	.username-and-img {
+		display: inline-block;
+		img:not(.first-img), h5:not(.first-h5) {
+			margin-left: 39px;
+		}
+		img {
+			height: 65px;
+			margin-top: 38px;
+			width: 65px;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		h5 {
+			margin-bottom: 0;
+			margin-top: 1px;
+			text-align: center;
+		}
+	}
+}
+
+section.messages-container {
+	img {
+		height: 40px;
+		width: 40px;
+	}
+	h5:first-child, #message-box {
+		margin-top: 25px;
+	}
+	h5:first-child { // Date/time
+		font-weight: normal;
+		margin-bottom: 3px;
+	}
+	h5:last-child { // Username
+		margin-top: 3px;
+	}
+	#existing-message {
+		@include border-radius(4px);
+		background-color: $musiclaps-light-gray;
+		height: 50px;
+		margin-top: 43px;
+		width: 90%;
+	}
+	h4 { // "message to username"
+		display: inline-block;
+		margin-bottom: 5px;
+		margin-top: 0;
+	}
+	textarea {
+		@include form-fields-input(100%);
+		height: 113px;
+	}
+	input.send-message {
+		@include border-radius(10px);
+		@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+		color: white;
+		float: right;
+		font-size: 12px;
+		margin-top: 3px;
+		text-transform: uppercase;
+	}
+}
+
 section#groups-header {
 	button {
 		margin-left: 10px;
@@ -1514,84 +1594,49 @@ section.groups-container {
 	}
 }
 
-.add-friend-container {
-	text-align: right;
-	margin-top: 20px;
-	input.add-friend-field {
-		@include form-fields-input(25%);
-		margin-left: 2px;
-	}
-	input.add-friend-submit {
-		@include border-radius(10px);
-		@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
-		color: white;
-		font-size: 12px;
-		font-weight: normal;
-	}
+section#project-profile-header h3 {
+	display: inline-block;
 }
 
-.friends-container {
-	text-align: center;
-	.username-and-img {
-		display: inline-block;
-		img:not(.first-img), h5:not(.first-h5) {
-			margin-left: 39px;
-		}
-		img {
-			height: 65px;
-			margin-top: 38px;
-			width: 65px;
-			&:hover {
-				cursor: pointer;
-			}
+section#project-profile-info {
+	img.avatar {
+		height: 65px;
+		position: absolute;
+		width: 65px;
+	}
+	section#username-and-number-of-songs {
+		h4, h5 {
+			display: inline-block;
+			margin-bottom: 10px;
+			margin-top: 5px;
 		}
 		h5 {
-			margin-bottom: 0;
-			margin-top: 1px;
-			text-align: center;
+			margin-left: 5px; 
 		}
 	}
-}
-
-section.messages-container {
-	img {
-		height: 40px;
-		width: 40px;
+	h4, #youtube-links {
+		margin-left: 70px;
 	}
-	h5:first-child, #message-box {
-		margin-top: 25px;
+	#youtube-links a:not(#first-link) {
+		padding-left: 10px;
 	}
-	h5:first-child { // Date/time
-		font-weight: normal;
-		margin-bottom: 3px;
-	}
-	h5:last-child { // Username
-		margin-top: 3px;
-	}
-	#existing-message {
-		@include border-radius(4px);
-		background-color: $musiclaps-light-gray;
-		height: 50px;
-		margin-top: 43px;
-		width: 90%;
-	}
-	h4 { // "message to username"
-		display: inline-block;
-		margin-bottom: 5px;
-		margin-top: 0;
-	}
-	textarea {
-		@include form-fields-input(100%);
-		height: 113px;
-	}
-	input.send-message {
-		@include border-radius(10px);
-		@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
-		color: white;
+	section#number-of-listens, section.type-of-collab-container {
 		float: right;
-		font-size: 12px;
-		margin-top: 3px;
-		text-transform: uppercase;
+		h4, h5 {
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+		h5 {
+			float: right;
+		}
+	}
+	section.type-of-collab-container {
+		h5 {
+			display: inline-block;
+		}
+		h5:not(.first-h5) {
+			margin-right: 10px;
+		}
 	}
 }
 

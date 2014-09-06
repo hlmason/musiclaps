@@ -36,9 +36,9 @@ $(document).ready(function() {
 
 
 	var volumeAndPan = $('section.volumeAndPan');
-	var noCollabGlyphicon = $('span#noCollabGlyphicon');
-	var openCollabGlyphicon = $('span#openCollabGlyphicon');
-	var requestingCollabGlyphicon = $('span#requestingCollabGlyphicon');
+	var noCollabGlyphicon = $('span.noCollabGlyphicon');
+	var openCollabGlyphicon = $('span.openCollabGlyphicon');
+	var requestingCollabGlyphicon = $('span.requestingCollabGlyphicon');
 
 
 	publicProjectsContainer.hide();

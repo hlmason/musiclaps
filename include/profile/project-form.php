@@ -8,7 +8,7 @@
 
 
 	<section class="row col-xs-12 project-form-header">
-		<h3>Project Title</h3>
+		<h3>Project Title</h3><!-- Hard-coded placeholder -->
 		<!-- Markup is backwards because elements are floated right -->
 		<span class="glyphicon glyphicon-trash pull-right"></span>
 		<select class="project-type pull-right">
@@ -125,18 +125,18 @@
 			<h4 id="type-of-collab">Type of Collaboration</h4>
 		</section>
 		<div class="row col-xs-12">
-			<div id="type-of-collab-container">
+			<div class="type-of-collab-container">
 				<div class="row">
 					<div class="col-xs-4">
-						<span class="glyphicon glyphicon-ok glyphiconOk" id="noCollabGlyphicon"></span>
+						<span class="glyphicon glyphicon-ok glyphiconOk noCollabGlyphicon"></span>
 						<button class="noCollab" type="button">No Collab</button>
 					</div>
 					<div class="col-xs-4">
-						<span class="glyphicon glyphicon-ok glyphiconOk" id="openCollabGlyphicon"></span>
+						<span class="glyphicon glyphicon-ok glyphiconOk openCollabGlyphicon"></span>
 						<button class="openCollab" type="button">Open Collab</button>
 					</div>
 					<div class="col-xs-4">
-						<span class="glyphicon glyphicon-ok glyphiconOk" id="requestingCollabGlyphicon"></span>
+						<span class="glyphicon glyphicon-ok glyphiconOk requestingCollabGlyphicon"></span>
 						<button class="requestingCollab" type="button">Requesting Collab</button>
 					</div>
 				</div>

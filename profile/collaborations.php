@@ -76,7 +76,7 @@
 								</tr>
 								<tr>
 									<td><!-- Hard-coded placeholder -->
-										<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
+										<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
 										<span class="username">$username</span>
 									</td>
 									<td>$date</td><!-- Hard-coded placeholder -->
