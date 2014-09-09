@@ -13,7 +13,7 @@
 	<div id="wrapper">
 		<div class="container">
 
-			<div class="row col-lg-10 col-lg-offset-1">				
+			<div class="row col-lg-10 col-lg-offset-2">				
 					
 				<div class="row col-xs-12 col-sm-9">
 
@@ -161,7 +161,7 @@
 					</div>
 				</div>		
 			</div>
-			<div class="col-lg-1"></div>	
+			<!-- <div class="col-lg-1"></div>	 -->
 		
 		</div>
 

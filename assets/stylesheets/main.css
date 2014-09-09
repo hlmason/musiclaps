@@ -3592,6 +3592,7 @@ section.projects-container.favorites-page:hover {
 section.projects-container.favorites-page h4, section.projects-container.favorites-page h5 {
   margin-left: 5px; }
 section.projects-container.favorites-page .glyphicon-trash {
+  cursor: pointer;
   float: right;
   margin-top: 4px; }
 
