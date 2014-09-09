@@ -50,6 +50,7 @@ $(document).ready(function() {
 	requestingCollabForm.hide();
 	collaboratorsContainer.hide();
 
+	$('.noListings').hide();
 
 	glyphiconPencil.hide();
 	changeSoundImgContainer.hide();

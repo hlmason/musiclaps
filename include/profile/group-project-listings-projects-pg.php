@@ -14,3 +14,8 @@
 							<h5 class="last-h5">Group <span class="glyphicon glyphicon-lock"></span></h5>
 						</div>
 					</section>
+
+
+					<section class="noListings">
+						<h4>You currently have no projects in this category</h4>
+					</section>

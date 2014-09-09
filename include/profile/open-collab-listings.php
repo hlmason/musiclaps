@@ -20,3 +20,8 @@
 						include(ROOT_PATH . 'include/profile/project-form.php');
 					?>
 					<!-- End of project form -->
+
+
+					<section class="noListings">
+						<h4>You currently have no projects in this category</h4>
+					</section>

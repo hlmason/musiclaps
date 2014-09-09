@@ -44,3 +44,8 @@
 							</div>
 						</section>
 					</div>
+
+
+					<section class="noListings">
+						<h4>You currently have no projects in this category</h4>
+					</section>
