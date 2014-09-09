@@ -104,6 +104,7 @@
 							<input type="text" value="https://www.musiclaps.com//play?songid=8a022c7833672178"><!-- Hard-coded placeholder -->
 						</div>
 
+						<!-- Hidden upon page load -->
 						<div class="embed-container" id="embedContainer">
 							<textarea>
 								<iframe width="620" height="380" src="https://www.musiclaps.com//embed/player?songid=8a022c7833672178" frameborder="0" scrolling="no"></iframe><!-- Hard-coded placeholder -->
