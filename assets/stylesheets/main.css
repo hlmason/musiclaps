@@ -2791,7 +2791,7 @@ span.bold {
 span.normal {
   font-weight: normal; }
 
-span.glyphicon-ok {
+.glyphicon-ok {
   color: #DAA520; }
 
 .musiclaps-blue {
@@ -2966,7 +2966,7 @@ nav .navbar-collapse {
       padding-left: 8px;
       padding-top: 4px;
       width: 100%; }
-    .modal-content .modal-body#registration-full-modal-body span.glyphicon-question-sign, .modal-content .modal-body#registration-full-modal-body #password-req, .modal-content .modal-body#registration-express-modal-body span.glyphicon-question-sign, .modal-content .modal-body#registration-express-modal-body #password-req {
+    .modal-content .modal-body#registration-full-modal-body .glyphicon-question-sign, .modal-content .modal-body#registration-full-modal-body #password-req, .modal-content .modal-body#registration-express-modal-body .glyphicon-question-sign, .modal-content .modal-body#registration-express-modal-body #password-req {
       color: #38aaff; }
     .modal-content .modal-body#registration-full-modal-body #password-req, .modal-content .modal-body#registration-express-modal-body #password-req {
       font-size: 12px;
@@ -3352,7 +3352,7 @@ button.musiclaps-dark-gray {
     margin-top: 8px; }
   #avatar-n-edit-profile #edit-save-profile h4.save-profile, #avatar-n-edit-profile #edit-save-profile h4.dont-save-profile {
     display: inline-block; }
-  #avatar-n-edit-profile #edit-save-profile span.glyphicon {
+  #avatar-n-edit-profile #edit-save-profile .glyphicon {
     color: #444444; }
   #avatar-n-edit-profile #edit-save-profile h4.save-profile input {
     background: none;
@@ -3555,7 +3555,7 @@ section.projects-container {
   padding-bottom: 10px;
   padding-top: 10px;
   width: 100%; }
-  section.projects-container span.glyphicon-pencil-container {
+  section.projects-container .glyphicon-pencil-container {
     -moz-border-radius: 100%;
     border-radius: 100%;
     background-color: white;
@@ -3564,7 +3564,7 @@ section.projects-container {
     padding: 4px 5px;
     position: absolute;
     top: 20px; }
-    section.projects-container span.glyphicon-pencil-container span.glyphicon-pencil {
+    section.projects-container .glyphicon-pencil-container .glyphicon-pencil {
       height: 20px;
       text-align: center;
       width: 20px; }
@@ -3588,14 +3588,14 @@ section.projects-container {
 .live-player-container, .project-info-bar {
   margin-top: 15px; }
 
-section.project-form-header h3, section.project-form-header span.glyphicon-repeat, section.project-form-header span.glyphicon-lock, section.project-form-header select.project-type, section.project-form-header span.glyphicon-trash, section.project-form-header h4.project-type {
+section.project-form-header h3, section.project-form-header .glyphicon-repeat, section.project-form-header .glyphicon-lock, section.project-form-header select.project-type, section.project-form-header .glyphicon-trash, section.project-form-header h4.project-type {
   margin-right: 10px;
   margin-top: 15px; }
 section.project-form-header h3, section.project-form-header h4 {
   margin-bottom: 0; }
 section.project-form-header h3 {
   display: inline-block; }
-section.project-form-header span.glyphicon-repeat {
+section.project-form-header .glyphicon-repeat {
   color: #444444; }
 
 .project-info-bar {
@@ -3612,7 +3612,7 @@ section.project-form-header span.glyphicon-repeat {
   .project-info-bar h5 {
     font-weight: normal;
     margin-left: 20px; }
-  .project-info-bar select.project-type, .project-info-bar span.glyphicon-trash {
+  .project-info-bar select.project-type, .project-info-bar .glyphicon-trash {
     margin-right: 10px;
     margin-top: 8px; }
 
@@ -3624,9 +3624,9 @@ section.project-form-header span.glyphicon-repeat {
   border-left: 1px solid #cecece;
   border-right: 1px solid #cecece;
   height: 35px; }
-  .volume-and-pan span.glyphicon, .project-info-bar.requesting-collab-page span.glyphicon {
+  .volume-and-pan .glyphicon, .project-info-bar.requesting-collab-page .glyphicon {
     margin-top: 9px; }
-  .volume-and-pan span.glyphicon-volume-up, .project-info-bar.requesting-collab-page span.glyphicon-volume-up {
+  .volume-and-pan .glyphicon-volume-up, .project-info-bar.requesting-collab-page .glyphicon-volume-up {
     margin-left: 30px; }
   .volume-and-pan .slider, .project-info-bar.requesting-collab-page .slider {
     -moz-border-radius: 10px;
@@ -3637,7 +3637,7 @@ section.project-form-header span.glyphicon-repeat {
     height: 7px;
     margin-bottom: 2px;
     width: 100px; }
-  .volume-and-pan span.glyphicon-save, .project-info-bar.requesting-collab-page span.glyphicon-save {
+  .volume-and-pan .glyphicon-save, .project-info-bar.requesting-collab-page .glyphicon-save {
     margin-right: 9px; }
   .volume-and-pan input.save-volume-and-pan, .project-info-bar.requesting-collab-page input.save-volume-and-pan {
     background: none;
@@ -3779,9 +3779,9 @@ form#project-form ul#copyright-types-container {
   #upload-stage-background-img-container input.save-stage-background-img:hover, #upload-stage-background-img-container input.save-stage-background-img:focus, #upload-stage-background-img-container input.update-file:hover, #upload-stage-background-img-container input.update-file:focus, section.change-sound-img-container input.save-stage-background-img:hover, section.change-sound-img-container input.save-stage-background-img:focus, section.change-sound-img-container input.update-file:hover, section.change-sound-img-container input.update-file:focus {
     background-color: #45b7ff; }
 
-section.change-sound-img-container span.glyphicon-remove {
+section.change-sound-img-container .glyphicon-remove {
   cursor: pointer; }
-  section.change-sound-img-container span.glyphicon-remove:hover {
+  section.change-sound-img-container .glyphicon-remove:hover {
     color: #555; }
 section.change-sound-img-container h4, section.change-sound-img-container input.update-file {
   display: inline-block;
@@ -3815,7 +3815,7 @@ section.change-sound-img-container input.update-file {
         width: 30px; }
       .collaborators-container table tr td span.username {
         margin-left: 3px; }
-      .collaborators-container table tr td span.glyphicon-envelope {
+      .collaborators-container table tr td .glyphicon-envelope {
         color: #444444;
         font-size: 14px; }
     .collaborators-container table tr td:first-child {
@@ -3848,21 +3848,21 @@ section#messages-header button, section#groups-header button {
 
 section#messages-header {
   border-bottom: 1px solid #cecece; }
-  section#messages-header a span.glyphicon {
+  section#messages-header a .glyphicon {
     color: #444444; }
   section#messages-header a h3 {
     margin-bottom: 13px;
     margin-left: 2px; }
   section#messages-header a:hover, section#messages-header a:focus {
     color: #444444; }
-  section#messages-header button, section#messages-header span.glyphicon-arrow-up, section#messages-header span.glyphicon-refresh {
+  section#messages-header button, section#messages-header .glyphicon-arrow-up, section#messages-header .glyphicon-refresh {
     float: right; }
   section#messages-header button {
     margin-right: 18px;
     margin-top: 12px; }
-  section#messages-header span.glyphicon-refresh, section#messages-header span.glyphicon-arrow-up {
+  section#messages-header .glyphicon-refresh, section#messages-header .glyphicon-arrow-up {
     margin-top: 17px; }
-  section#messages-header span.glyphicon-arrow-up {
+  section#messages-header .glyphicon-arrow-up {
     margin-right: 7px; }
 
 .add-friend-container {
@@ -4070,7 +4070,7 @@ section#public-project-header h5 {
   .public-project-info.type-of-collab-container h5 {
     display: inline-block;
     margin-top: 25px; }
-  .public-project-info.type-of-collab-container span.glyphicon:not(.first-glyphicon) {
+  .public-project-info.type-of-collab-container .glyphicon:not(.first-glyphicon) {
     margin-left: 23px; }
   .public-project-info.type-of-collab-container img#cover-song {
     float: right;
@@ -4080,13 +4080,13 @@ section#public-project-header h5 {
 .public-project-info img#clapping-hands {
   height: 25px;
   width: 25px; }
-.public-project-info img#clapping-hands, .public-project-info span.glyphicon-heart {
+.public-project-info img#clapping-hands, .public-project-info .glyphicon-heart {
   cursor: pointer; }
 .public-project-info h4#number-of-claps, .public-project-info h4#favorites {
   display: inline-block;
   margin-bottom: 0;
   margin-top: 15px; }
-.public-project-info span.glyphicon-heart {
+.public-project-info .glyphicon-heart {
   color: #444444;
   font-size: 1.25em;
   margin-left: 30px; }

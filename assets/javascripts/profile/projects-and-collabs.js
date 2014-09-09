@@ -12,10 +12,10 @@ $(document).ready(function() {
 	var openCollabContainer = $('section#openCollabContainer');
 
 
-	var glyphiconPencil = $('span.glyphiconPencil');
+	var glyphiconPencil = $('.glyphiconPencil');
 	var changeSoundImgContainer = $('section.changeSoundImgContainer');
 	var projectForm = $('#projectForm');
-	var glyphiconOk = $('span.glyphiconOk');
+	var glyphiconOk = $('.glyphiconOk');
 
 
 	var projectsContainer = $('section.projectsContainer');
@@ -82,7 +82,7 @@ $(document).ready(function() {
 		changeSoundImgContainer.fadeIn('fast');
 	});
 
-	$('span.glyphiconRemove').on('click', function() {
+	$('.glyphiconRemove').on('click', function() {
 		changeSoundImgContainer.hide();
 	});
 

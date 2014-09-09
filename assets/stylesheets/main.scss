@@ -167,7 +167,7 @@ span.normal {
 	font-weight: normal;
 }
 
-span.glyphicon-ok {
+.glyphicon-ok {
 	color: #DAA520;
 }
 
@@ -383,7 +383,7 @@ nav {
 			input { // Form fields
 				@include form-fields-input(100%);
 			}
-			span.glyphicon-question-sign, #password-req {
+			.glyphicon-question-sign, #password-req {
 				color: $musiclaps-blue;
 			}
 			#password-req {
@@ -832,7 +832,7 @@ button.musiclaps-dark-gray {
 		h4.save-profile, h4.dont-save-profile {
 			display: inline-block;
 		}
-		span.glyphicon {
+		.glyphicon {
 			color: $musiclaps-dark-gray;
 		}
 		h4.save-profile input {
@@ -1055,7 +1055,7 @@ section.projects-container {
 	padding-bottom: 10px;
 	padding-top: 10px;
 	width: 100%;
-	span.glyphicon-pencil-container {
+	.glyphicon-pencil-container {
 		@include border-radius(100%);
 		background-color: white;
 		left: 50px;
@@ -1063,7 +1063,7 @@ section.projects-container {
 		padding: 4px 5px;
 		position: absolute;
 		top: 20px;
-		span.glyphicon-pencil {
+		.glyphicon-pencil {
 			height: 20px;
 			text-align: center;
 			width: 20px;
@@ -1097,7 +1097,7 @@ section.projects-container {
 }
 
 section.project-form-header {
-	h3, span.glyphicon-repeat, span.glyphicon-lock, select.project-type, span.glyphicon-trash, h4.project-type {
+	h3, .glyphicon-repeat, .glyphicon-lock, select.project-type, .glyphicon-trash, h4.project-type {
 		margin-right: 10px;
 		margin-top: 15px; 
 	}
@@ -1107,7 +1107,7 @@ section.project-form-header {
 	h3 {
 		display: inline-block;
 	}
-	span.glyphicon-repeat {
+	.glyphicon-repeat {
 		color: $musiclaps-dark-gray;
 	}
 }
@@ -1130,7 +1130,7 @@ section.project-form-header {
 		font-weight: normal;
 		margin-left: 20px;
 	}
-	select.project-type, span.glyphicon-trash {
+	select.project-type, .glyphicon-trash {
 		margin-right: 10px;
 		margin-top: 8px;
 	}
@@ -1145,10 +1145,10 @@ section.project-form-header {
 	border-left: $nav-border;
 	border-right: $nav-border;
 	height: 35px;
-	span.glyphicon {
+	.glyphicon {
 		margin-top: 9px;
 	}
-	span.glyphicon-volume-up {
+	.glyphicon-volume-up {
 		margin-left: 30px;
 	}
 	.slider {
@@ -1160,7 +1160,7 @@ section.project-form-header {
 		margin-bottom: 2px;
 		width: 100px;
 	}
-	span.glyphicon-save {
+	.glyphicon-save {
 		margin-right: 9px;
 	}
 	input.save-volume-and-pan {
@@ -1311,7 +1311,7 @@ form#project-form {
 }
 
 section.change-sound-img-container {
-	span.glyphicon-remove {
+	.glyphicon-remove {
 		cursor: pointer;
 		&:hover {
 			color: #555;
@@ -1362,7 +1362,7 @@ section.change-sound-img-container {
 				span.username {
 					margin-left: 3px;
 				}
-				span.glyphicon-envelope {
+				.glyphicon-envelope {
 					color: $musiclaps-dark-gray;
 					font-size: 14px;
 				}
@@ -1404,7 +1404,7 @@ section#messages-header, section#groups-header {
 section#messages-header {
 	border-bottom: $nav-border;
 	a {
-		span.glyphicon {
+		.glyphicon {
 			color: $musiclaps-dark-gray;
 		}
 		h3 {
@@ -1415,17 +1415,17 @@ section#messages-header {
 			color: $musiclaps-dark-gray;
 		}
 	}
-	button, span.glyphicon-arrow-up, span.glyphicon-refresh {
+	button, .glyphicon-arrow-up, .glyphicon-refresh {
 		float: right;
 	}
 	button { // "Add New Friend"
 		margin-right: 18px;
 		margin-top: 12px;
 	}
-	span.glyphicon-refresh, span.glyphicon-arrow-up {
+	.glyphicon-refresh, .glyphicon-arrow-up {
 		margin-top: 17px;
 	}
-	span.glyphicon-arrow-up {
+	.glyphicon-arrow-up {
 		margin-right: 7px;
 	}
 }
@@ -1646,7 +1646,7 @@ section#public-project-header {
 			display: inline-block;
 			margin-top: 25px;
 		}
-		span.glyphicon:not(.first-glyphicon) {
+		.glyphicon:not(.first-glyphicon) {
 			margin-left: 23px;
 		}
 		img#cover-song {
@@ -1660,7 +1660,7 @@ section#public-project-header {
 		height: 25px;
 		width: 25px;
 	}
-	img#clapping-hands, span.glyphicon-heart {
+	img#clapping-hands, .glyphicon-heart {
 		cursor: pointer;
 	}
 	h4#number-of-claps, h4#favorites {
@@ -1668,7 +1668,7 @@ section#public-project-header {
 		margin-bottom: 0;
 		margin-top: 15px;
 	}
-	span.glyphicon-heart {
+	.glyphicon-heart {
 		color: $musiclaps-dark-gray;
 		font-size: 1.25em;
 		margin-left: 30px;
