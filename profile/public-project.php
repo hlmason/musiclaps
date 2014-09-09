@@ -127,8 +127,8 @@
 							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
 						</div>
 						<section class="row col-xs-12">
-							<h4>$Project Name</h4><!-- Hard-coded placeholder -->
-							<h5>User: <span class="normal">$username</span></h5><!-- Hard-coded placeholder -->
+							<a href="<?php echo BASE_URL; ?>profile/public-project.php"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
+							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
 							<h5># Plays</h5><!-- Hard-coded placeholder -->
 						</section>
 
@@ -136,8 +136,8 @@
 							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
 						</div>
 						<section class="row col-xs-12">
-							<h4>$Project Name</h4><!-- Hard-coded placeholder -->
-							<h5>User: <span class="normal">$username</span></h5><!-- Hard-coded placeholder -->
+							<a href="<?php echo BASE_URL; ?>profile/public-project.php"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
+							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
 							<h5># Plays</h5><!-- Hard-coded placeholder -->
 						</section>
 
@@ -145,8 +145,8 @@
 							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
 						</div>
 						<section class="row col-xs-12">
-							<h4>$Project Name</h4><!-- Hard-coded placeholder -->
-							<h5>User: <span class="normal">$username</span></h5><!-- Hard-coded placeholder -->
+							<a href="<?php echo BASE_URL; ?>profile/public-project.php"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
+							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
 							<h5># Plays</h5><!-- Hard-coded placeholder -->
 						</section>
 
@@ -154,8 +154,8 @@
 							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
 						</div>
 						<section class="row col-xs-12">
-							<h4>$Project Name</h4><!-- Hard-coded placeholder -->
-							<h5>User: <span class="normal">$username</span></h5><!-- Hard-coded placeholder -->
+							<a href="<?php echo BASE_URL; ?>profile/public-project.php"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
+							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
 							<h5># Plays</h5><!-- Hard-coded placeholder -->
 						</section>
 					</div>
