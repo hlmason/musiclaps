@@ -3150,7 +3150,8 @@ h1.landing-page {
       #stage #stage-inner p sup {
         letter-spacing: 4px; }
     #stage #stage-inner ul {
-      margin-top: -73px; }
+      position: relative;
+      top: -87px; }
       #stage #stage-inner ul li {
         display: inline-block; }
         #stage #stage-inner ul li img {
@@ -4334,7 +4335,7 @@ footer {
     padding-bottom: 15px; } }
 @media only screen and (max-width: 818px) {
   #stage-inner ul {
-    margin-top: -72px; } }
+    top: -42px; } }
 @media only screen and (max-width: 767px) {
   nav.navbar a:not(.navbar-brand) {
     margin-left: 10px; }
@@ -4412,7 +4413,7 @@ footer {
   #stage-inner p {
     margin-top: -30px !important; }
   #stage-inner ul {
-    margin-top: -40px !important; }
+    top: -55px !important; }
 
   section#technology h2, section#backstage h2, section.music-ed h2, section.contests-and-auditions h2 {
     font-size: 22px; }

@@ -593,7 +593,8 @@ h1.landing-page {
 				}
 			}
 			ul {
-				margin-top: -73px;
+				position: relative;
+				top: -87px;
 				li {
 					display: inline-block;
 					img { // Play, pause, stop, and record buttons
@@ -1952,7 +1953,7 @@ footer {
 
 @media only screen and (max-width: 818px) {
 // Breakpoint of "Music Education" and "Contests and Auditions" (Landing Page)
-	#stage-inner ul { margin-top: -72px; }
+	#stage-inner ul { top: -42px; }
 }
 
 @media only screen and (max-width: 767px) {
@@ -2024,7 +2025,7 @@ footer {
 			a { display: none; }
 		}
 		p { margin-top: -30px !important; }
-		ul { margin-top: -40px !important; }
+		ul { top: -55px !important; }
 	}
 	section#technology, section#backstage, section.music-ed, section.contests-and-auditions {
 		h2 { font-size: 22px; }
