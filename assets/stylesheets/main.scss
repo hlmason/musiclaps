@@ -284,7 +284,7 @@ nav {
 	/* ===================================
 	    Logged in Nav
 	=================================== */
-	.navbar-right #welcome-user {
+	ul.navbar-right #welcome-user {
 		margin-right: 10px;
 		margin-top: 28px !important;
 		a {
@@ -296,7 +296,7 @@ nav {
 		}
 	}
 
-	#nav-registered-user { // Nav below top nav
+	nav#nav-registered-user { // Nav below top nav
 		background-color: $musiclaps-light-gray;
 		padding-left: 0;
 		li {
@@ -806,6 +806,13 @@ button.navigate {
 	@include button(#F4F4F4, $musiclaps-dark-gray, 12px, 5px 10px);
 }
 
+#navigate-buttons-public-profile button {
+	text-transform: uppercase;
+	&:not(.first-button) {
+		margin-left: 16px;
+	}
+}
+
 button.musiclaps-dark-gray {
 	background-color: $musiclaps-dark-gray;
 }
@@ -873,29 +880,43 @@ button.musiclaps-dark-gray {
 	}
 }
 
-h4#my-public-projects-heading {
+h4.my-public-projects-heading {
 	span {
 		margin-left: 2px;
 	}
 }
 
-section#my-public-projects-listing {
+h4.my-public-projects-heading.public-profile-page {
+	margin-bottom: 0;
+}
+
+section.my-public-projects-listing {
 	img {
 		min-width: 100px;
 		height: 60px;
 	}
 	h4, h5 {
 		display: inline-block;
+		margin-top: 7px;
 	}
+	h5 {
+		font-weight: normal;
+	}
+}
+
+section.my-public-projects-listing, section.projects-container.public-profile-page {
 	h4 {
 		margin-bottom: 3px;
-		margin-top: 7px;
 	}
 	h5 {
 		font-weight: normal;
 		margin-bottom: 1px;
 		margin-top: 0;
 	}
+}
+
+section.projects-container.public-profile-page h4 {
+	margin-top: 10px;
 }
 
 h4#my-profile {
@@ -1079,7 +1100,7 @@ section.projects-container {
 	}
 	h4 {
 		margin-bottom: 3px;
-		margin-top: 2px !important;
+		margin-top: 2px;
 	}
 	h5 {
 		margin-bottom: 1px;

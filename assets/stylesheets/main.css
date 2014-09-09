@@ -2886,28 +2886,28 @@ nav .navbar-collapse {
 /* ===================================
     Logged in Nav
 =================================== */
-.navbar-right #welcome-user {
+ul.navbar-right #welcome-user {
   margin-right: 10px;
   margin-top: 28px !important; }
-  .navbar-right #welcome-user a {
+  ul.navbar-right #welcome-user a {
     color: #1F91E6 !important;
     text-transform: initial; }
-    .navbar-right #welcome-user a:hover, .navbar-right #welcome-user a:focus {
+    ul.navbar-right #welcome-user a:hover, ul.navbar-right #welcome-user a:focus {
       color: #444444 !important; }
 
-#nav-registered-user {
+nav#nav-registered-user {
   background-color: #e7e7e7;
   padding-left: 0; }
-  #nav-registered-user li {
+  nav#nav-registered-user li {
     padding: 10px 8px; }
-    #nav-registered-user li:first-child {
+    nav#nav-registered-user li:first-child {
       padding-left: 23px; }
-    #nav-registered-user li a {
+    nav#nav-registered-user li a {
       -moz-border-radius: 10px;
       border-radius: 10px;
       background-color: #F4F4F4;
       font-size: 12px; }
-      #nav-registered-user li a:hover, #nav-registered-user li a:focus, #nav-registered-user li a.active {
+      nav#nav-registered-user li a:hover, nav#nav-registered-user li a:focus, nav#nav-registered-user li a.active {
         background-color: #444444 !important; }
 
 /* ===================================
@@ -3334,6 +3334,11 @@ button.navigate {
   letter-spacing: 0.5px;
   padding: 5px 10px; }
 
+#navigate-buttons-public-profile button {
+  text-transform: uppercase; }
+  #navigate-buttons-public-profile button:not(.first-button) {
+    margin-left: 16px; }
+
 button.musiclaps-dark-gray {
   background-color: #444444; }
 
@@ -3383,21 +3388,30 @@ button.musiclaps-dark-gray {
   #about-me li#glyphicon-home {
     float: right; }
 
-h4#my-public-projects-heading span {
+h4.my-public-projects-heading span {
   margin-left: 2px; }
 
-section#my-public-projects-listing img {
+h4.my-public-projects-heading.public-profile-page {
+  margin-bottom: 0; }
+
+section.my-public-projects-listing img {
   min-width: 100px;
   height: 60px; }
-section#my-public-projects-listing h4, section#my-public-projects-listing h5 {
-  display: inline-block; }
-section#my-public-projects-listing h4 {
-  margin-bottom: 3px;
+section.my-public-projects-listing h4, section.my-public-projects-listing h5 {
+  display: inline-block;
   margin-top: 7px; }
-section#my-public-projects-listing h5 {
+section.my-public-projects-listing h5 {
+  font-weight: normal; }
+
+section.my-public-projects-listing h4, section.projects-container.public-profile-page h4 {
+  margin-bottom: 3px; }
+section.my-public-projects-listing h5, section.projects-container.public-profile-page h5 {
   font-weight: normal;
   margin-bottom: 1px;
   margin-top: 0; }
+
+section.projects-container.public-profile-page h4 {
+  margin-top: 10px; }
 
 h4#my-profile {
   margin-bottom: 2px; }
@@ -3576,7 +3590,7 @@ section.projects-container {
     height: 60px; }
   section.projects-container h4 {
     margin-bottom: 3px;
-    margin-top: 2px !important; }
+    margin-top: 2px; }
   section.projects-container h5 {
     margin-bottom: 1px;
     margin-top: 0; }

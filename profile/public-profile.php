@@ -1,15 +1,23 @@
 <?php
 	require_once('../include/config.php');
 
-	$pageTitle = 'My Profile';
-	$page = 'Profile';
+	$pageTitle = 'User Profile';
 	
 	include(ROOT_PATH . 'include/header-logged-in.php');
 	include(ROOT_PATH . 'include/db-connection.php');
 	include(ROOT_PATH . 'controllers/get-profile.php');
-	include(ROOT_PATH . 'include/nav-logged-in.php');
 
 ?>
+
+	<div id="wrapper">
+		<div class="container">
+			
+			<div class="row col-xs-12 col-lg-10 col-lg-offset-1" id="navigate-buttons-public-profile">
+				<button class="navigate musiclaps-dark-gray musiclaps-blue first-button" id="privateProjectsButton" type="button">Profile</button>
+				<button class="navigate button-navigate-hover-js" id="publicProjectsButton" type="button">Collaborations</button>
+				<button class="navigate button-navigate-hover-js" id="groupProjectsButton" type="button">Friends</button>
+			</div>
+			<div class="col-lg-1"></div>
 		
 			<div class="row col-lg-10 col-lg-offset-1">				
 					
@@ -21,18 +29,6 @@
 						</div>
 						<div class="col-xs-8 col-sm-4">
 							<h2 id="user-id">$userid</h2><!-- Hard-coded placeholder -->
-						</div>
-						<div class="col-xs-8 col-sm-5" id="edit-save-profile">
-							<a>
-								<h4 class="edit-profile" id="editProfile"><span class="glyphicon glyphicon-edit"></span>&nbsp; Edit Profile</h4>
-							</a>
-							<h4 class="save-profile" id="saveProfile">
-								<span class="glyphicon glyphicon-save"></span>
-								<input type="submit" value="Save"> | &nbsp;
-							</h4>
-							<a>
-								<h4 class="dont-save-profile" id="dontSaveProfile">Don't Save &nbsp;<span class="glyphicon glyphicon-remove-circle"></span></h4>
-							</a>
 						</div>
 					</div>
 						
@@ -46,50 +42,48 @@
 							</ul>
 							<ul class="second-ul-profile-page">
 								<li class="profile-page"><span class="glyphicon glyphicon-globe"></span>&nbsp; $city, $state, $country</li><!-- Hard-coded placeholder -->
-							</ul>	
+							</ul>
 						</div>
 						<div class="col-sm-1"></div>
 					</div>
 
 					<!-- "My Public Projects" -->
 					<section id="myPublicProjects">
-						<div class="row col-xs-12">
 							
-							<h4 class="my-public-projects-heading">My Public Projects <span class="normal">($number)</span></h4><!-- Hard-coded placeholder -->
-
-							<div class="row col-xs-12">
+						<h4 class="row col-xs-12 my-public-projects-heading public-profile-page">My Public Projects <span class="normal">($number)</span></h4><!-- Hard-coded placeholder -->
 								
-								<div class="row">
-									<section class="col-xs-6 my-public-projects-listing">
-										<div class="row col-xs-6">
-											<a href="<?php echo BASE_URL; ?>profile/public-project.php"><img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"></a><!-- Hard-coded placeholder -->
-										</div>
-										<div class="row col-xs-6">
-											<a href="<?php echo BASE_URL; ?>profile/public-project.php"><h4>$project title</h4></a><!-- Hard-coded placeholder -->
-											<h5>$#### Plays</h5><!-- Hard-coded placeholder -->
-										</div>
-									</section>
-
-									<section class="col-xs-6 my-public-projects-listing">
-										<div class="row col-xs-6">
-											<a href="<?php echo BASE_URL; ?>profile/public-project.php"><img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"></a><!-- Hard-coded placeholder -->
-										</div>
-										<div class="row col-xs-6">
-											<a href="<?php echo BASE_URL; ?>profile/public-project.php"><h4>$project title</h4></a><!-- Hard-coded placeholder -->
-											<h5>$#### Plays</h5><!-- Hard-coded placeholder -->
-										</div>
-									</section>
-
-								</div>
-							
+						<div class="row">
+							<div class="col-sm-12 col-md-6">
+								<section class="row projects-container public-profile-page">
+									<div class="col-xs-4 col-sm-3 col-md-4">
+										<a href="<?php echo BASE_URL; ?>profile/public-project.php"><img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"></a><!-- Hard-coded placeholder -->
+									</div>
+								
+									<div class="col-xs-6 col-sm-6 col-md-6">
+										<a href="<?php echo BASE_URL; ?>profile/public-project.php"><h4>$project title</h4></a><!-- Hard-coded placeholder -->
+										<h5>$#### Plays</h5><!-- Hard-coded placeholder -->
+									</div>
+								</section>
 							</div>
-
+							<div class="col-sm-12 col-md-6">
+								<section class="row projects-container public-profile-page">
+									<div class="col-xs-4 col-sm-3 col-md-4">
+										<a href="<?php echo BASE_URL; ?>profile/public-project.php"><img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"></a><!-- Hard-coded placeholder -->
+									</div>
+								
+									<div class="col-xs-6 col-sm-6 col-md-6">
+										<a href="<?php echo BASE_URL; ?>profile/public-project.php"><h4>$project title</h4></a><!-- Hard-coded placeholder -->
+										<h5>$#### Plays</h5><!-- Hard-coded placeholder -->
+									</div>
+								</section>
+							</div>
 						</div>
+
 					</section>
 					<!-- End of "My Public Projects" -->
 
 
-					<!-- "My Profile" -->
+					<!-- "My Profile" - hidden upon page load -->
 					<section id="myProfile">
 						<div class="row col-xs-12">
 

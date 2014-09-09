@@ -31,10 +31,10 @@
 					
 					<section class="row col-xs-12 public-project-info">	
 						<div class="row col-xs-6">
-							<img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
+							<a href="<?php echo BASE_URL; ?>profile/public-profile.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"></a>
 							
 							<section id="username-and-number-of-songs">
-								<a href="<?php echo BASE_URL; ?>profile/"><h4>$username</h4></a><!-- Hard-coded placeholder -->
+								<a href="<?php echo BASE_URL; ?>profile/public-profile.php"><h4>$username</h4></a><!-- Hard-coded placeholder -->
 								<h5>$# Songs</h5><!-- Hard-coded placeholder -->
 							</section>
 							
