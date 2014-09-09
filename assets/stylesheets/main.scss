@@ -593,7 +593,7 @@ h1.landing-page {
 				}
 			}
 			ul {
-				position: relative;
+				position: relative; // It must be this way for Firefox
 				top: -87px;
 				li {
 					display: inline-block;
