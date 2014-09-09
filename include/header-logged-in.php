@@ -32,6 +32,7 @@
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/projects-and-collabs.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/messages.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/groups.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/public-project.js"></script>
 </head>
 <body>
 

@@ -2791,6 +2791,9 @@ span.bold {
 span.normal {
   font-weight: normal; }
 
+span.glyphicon-ok {
+  color: #DAA520; }
+
 .musiclaps-blue {
   color: #38aaff !important; }
 
@@ -2803,12 +2806,13 @@ span.normal {
   #register-or-login-modal-body input:hover, #register-or-login-modal-body input:focus, .modal-footer:not(.registration-modal-footer) input:hover, .modal-footer:not(.registration-modal-footer) input:focus, .navbar-right input:hover, .navbar-right input:focus {
     background-color: #d9d9d9; }
 
-#facebook-icon, #google-icon {
+img.facebook-icon, img.google-icon, img#reddit-icon, img#tumblr-icon, img#stumbleupon-icon,
+img#pinterest-icon {
   height: 27px;
   width: 27px; }
 
-#twitter-icon,
-#microsoft-icon {
+img.twitter-icon,
+img#microsoft-icon {
   height: 29px;
   width: 29px; }
 
@@ -3509,7 +3513,7 @@ section.upload-mp3-container ul {
       font-size: 14px; }
     section.upload-mp3-container ul li:not(.first-list-item) {
       padding-left: 20px; }
-section.upload-mp3-container input#project_title, section.upload-mp3-container input#comment {
+section.upload-mp3-container input#project_title, section.upload-mp3-container input#comment-new-project-page {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -3517,7 +3521,7 @@ section.upload-mp3-container input#project_title, section.upload-mp3-container i
   padding-left: 8px;
   padding-top: 4px;
   width: 100%; }
-section.upload-mp3-container input#comment, section.upload-mp3-container section#choose-project-img-container {
+section.upload-mp3-container input#comment-new-project-page, section.upload-mp3-container section#choose-project-img-container {
   margin-bottom: 20px; }
 section.upload-mp3-container input#tempo, section.upload-mp3-container #select-sound {
   margin-left: 5px; }
@@ -3532,7 +3536,7 @@ section.upload-mp3-container input#tempo {
 section.upload-mp3-container section.add-part-to-group-container h4 {
   color: red;
   margin-bottom: 5px; }
-section.upload-mp3-container label#project-title-label, section.upload-mp3-container label#tempo-label, section.upload-mp3-container label#select-sound-label, section.upload-mp3-container section.add-part-to-group-container h4, section.upload-mp3-container label#instruments-label, section.upload-mp3-container label#comment-label {
+section.upload-mp3-container label#project-title-label, section.upload-mp3-container label#tempo-label, section.upload-mp3-container label#select-sound-label, section.upload-mp3-container section.add-part-to-group-container h4, section.upload-mp3-container label#instruments-label, section.upload-mp3-container label#comment-new-project-page-label {
   margin-top: 20px; }
 section.upload-mp3-container label#instruments-label {
   display: block; }
@@ -3717,8 +3721,6 @@ form#project-form h4.red, form#project-form .type-of-collab-container, form#proj
 form#project-form .type-of-collab-container {
   height: 36px;
   text-align: center; }
-  form#project-form .type-of-collab-container span.glyphicon-ok {
-    color: #DAA520; }
   form#project-form .type-of-collab-container button {
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -3942,9 +3944,7 @@ section.messages-container input.send-message {
   padding: 3px 10px;
   color: white;
   float: right;
-  font-size: 12px;
-  margin-top: 3px;
-  text-transform: uppercase; }
+  margin-top: 3px; }
   section.messages-container input.send-message:hover, section.messages-container input.send-message:focus {
     background-color: #45b7ff; }
 
@@ -4035,34 +4035,130 @@ section.groups-container {
     section.groups-container section.projects-container-groups-page h5 {
       font-size: 12px; }
 
-section#project-profile-header h3 {
-  display: inline-block; }
+section#public-project-header h3, section#public-project-header h5 {
+  display: inline-block;
+  margin-right: 5px; }
+section#public-project-header h5 {
+  float: right; }
 
-section#project-profile-info img.avatar {
+.public-project-info img.avatar {
   height: 65px;
   position: absolute;
   width: 65px; }
-section#project-profile-info section#username-and-number-of-songs h4, section#project-profile-info section#username-and-number-of-songs h5 {
+.public-project-info section#username-and-number-of-songs h4, .public-project-info section#username-and-number-of-songs h5 {
   display: inline-block;
   margin-bottom: 10px;
   margin-top: 5px; }
-section#project-profile-info section#username-and-number-of-songs h5 {
+.public-project-info section#username-and-number-of-songs h5 {
   margin-left: 5px; }
-section#project-profile-info h4, section#project-profile-info #youtube-links {
+.public-project-info h5 {
+  font-weight: normal; }
+.public-project-info h4:first-child, .public-project-info #youtube-links {
   margin-left: 70px; }
-section#project-profile-info #youtube-links a:not(#first-link) {
+.public-project-info #youtube-links a:not(#first-link) {
   padding-left: 10px; }
-section#project-profile-info section#number-of-listens, section#project-profile-info section.type-of-collab-container {
+.public-project-info section#number-of-listens {
   float: right; }
-  section#project-profile-info section#number-of-listens h4, section#project-profile-info section#number-of-listens h5, section#project-profile-info section.type-of-collab-container h4, section#project-profile-info section.type-of-collab-container h5 {
+  .public-project-info section#number-of-listens h2, .public-project-info section#number-of-listens h5 {
     margin-bottom: 0;
     margin-top: 0; }
-  section#project-profile-info section#number-of-listens h5, section#project-profile-info section.type-of-collab-container h5 {
-    float: right; }
-section#project-profile-info section.type-of-collab-container h5 {
-  display: inline-block; }
-section#project-profile-info section.type-of-collab-container h5:not(.first-h5) {
-  margin-right: 10px; }
+.public-project-info.type-of-collab-container h5, .public-project-info img#clapping-hands {
+  margin-bottom: 12px; }
+.public-project-info.type-of-collab-container {
+  border-bottom: 1px solid #cecece;
+  padding-bottom: 5px; }
+  .public-project-info.type-of-collab-container h5 {
+    display: inline-block;
+    margin-top: 25px; }
+  .public-project-info.type-of-collab-container span.glyphicon:not(.first-glyphicon) {
+    margin-left: 23px; }
+  .public-project-info.type-of-collab-container img#cover-song {
+    float: right;
+    height: 46px;
+    margin-right: 5px;
+    width: 88px; }
+.public-project-info img#clapping-hands {
+  height: 25px;
+  width: 25px; }
+.public-project-info img#clapping-hands, .public-project-info span.glyphicon-heart {
+  cursor: pointer; }
+.public-project-info h4#number-of-claps, .public-project-info h4#favorites {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 15px; }
+.public-project-info span.glyphicon-heart {
+  color: #444444;
+  font-size: 1.25em;
+  margin-left: 30px; }
+.public-project-info img#facebook-like-button {
+  cursor: pointer;
+  height: 20px;
+  margin-bottom: 15px;
+  width: 47px; }
+
+#share-or-embed-buttons {
+  border-top: 1px solid #cecece; }
+  #share-or-embed-buttons button {
+    margin-top: 15px; }
+  #share-or-embed-buttons button:last-child {
+    margin-left: 5px; }
+
+.share-to-social-networks-container input, .embed-container textarea {
+  margin-top: 10px; }
+
+.share-to-social-networks-container {
+  margin-top: 10px; }
+  .share-to-social-networks-container img {
+    cursor: pointer; }
+    .share-to-social-networks-container img:not(.first-img) {
+      margin-left: 13.5px; }
+  .share-to-social-networks-container input {
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-top: 4px;
+    width: 100%; }
+
+.embed-container textarea {
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-top: 4px;
+  width: 50%; }
+
+section#comment-container label {
+  margin-bottom: 2px;
+  margin-top: 25px; }
+section#comment-container textarea {
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-top: 4px;
+  width: 100%; }
+section#comment-container h4 {
+  display: inline-block;
+  float: right;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-right: 5px;
+  margin-top: 7px; }
+section#comment-container input {
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #38aaff;
+  border: 1px solid #38aaff;
+  padding: 3px 10px;
+  color: white;
+  float: right;
+  margin-top: 3px; }
+  section#comment-container input:hover, section#comment-container input:focus {
+    background-color: #45b7ff; }
 
 section.profile-right {
   background-color: #e7e7e7;

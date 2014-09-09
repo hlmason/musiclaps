@@ -167,6 +167,10 @@ span.normal {
 	font-weight: normal;
 }
 
+span.glyphicon-ok {
+	color: #DAA520;
+}
+
 .musiclaps-blue {
 	color: $musiclaps-blue !important;
 }
@@ -178,13 +182,14 @@ span.normal {
 	}
 }
 
-#facebook-icon, #google-icon {
+img.facebook-icon, img.google-icon, img#reddit-icon, img#tumblr-icon, img#stumbleupon-icon, 
+img#pinterest-icon { // http://business.pinterest.com/en/brand-guidelines: "Maintain empty space equal to at least half the height of the logo on all sides"
 	height: 27px;
 	width: 27px;
 }
 
-#twitter-icon, /* https://about.twitter.com/press/brand-assets: "When using the bird with other logos and graphic elements, maintain a safety space that equals 200% the size of the square around the bird. */
-#microsoft-icon {
+img.twitter-icon, // https://about.twitter.com/press/brand-assets: "When using the bird with other logos and graphic elements, maintain a safety space that equals 200% the size of the square around the bird.
+img#microsoft-icon {
 	height: 29px;
 	width: 29px;
 }
@@ -1009,10 +1014,10 @@ section.upload-mp3-container {
 			}
 		}
 	}
-	input#project_title, input#comment {
+	input#project_title, input#comment-new-project-page {
 		@include form-fields-input(100%);
 	}
-	input#comment, section#choose-project-img-container {
+	input#comment-new-project-page, section#choose-project-img-container {
 		margin-bottom: 20px;
 	}
 	input#tempo, #select-sound {
@@ -1025,7 +1030,7 @@ section.upload-mp3-container {
 		color: red;
 		margin-bottom: 5px;
 	}
-	label#project-title-label, label#tempo-label, label#select-sound-label, section.add-part-to-group-container h4, label#instruments-label, label#comment-label {
+	label#project-title-label, label#tempo-label, label#select-sound-label, section.add-part-to-group-container h4, label#instruments-label, label#comment-new-project-page-label {
 		margin-top: 20px;
 	}
 	label#instruments-label {
@@ -1242,9 +1247,6 @@ form#project-form {
 	.type-of-collab-container {
 		height: 36px;
 		text-align: center;
-		span.glyphicon-ok {
-			color: #DAA520;
-		}
 		button {
 			@include button(#F4F4F4, $musiclaps-dark-gray, 12px, 6px 10px);
 			margin-top: 3px;
@@ -1503,9 +1505,7 @@ section.messages-container {
 		@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
 		color: white;
 		float: right;
-		font-size: 12px;
 		margin-top: 3px;
-		text-transform: uppercase;
 	}
 }
 
@@ -1594,11 +1594,17 @@ section.groups-container {
 	}
 }
 
-section#project-profile-header h3 {
-	display: inline-block;
+section#public-project-header {
+	h3, h5 {
+		display: inline-block;
+		margin-right: 5px;
+	}
+	h5 {
+		float: right;
+	}
 }
 
-section#project-profile-info {
+.public-project-info {
 	img.avatar {
 		height: 65px;
 		position: absolute;
@@ -1611,32 +1617,122 @@ section#project-profile-info {
 			margin-top: 5px;
 		}
 		h5 {
-			margin-left: 5px; 
+			margin-left: 5px;
 		}
 	}
-	h4, #youtube-links {
+	h5 {
+		font-weight: normal;
+	}
+	h4:first-child, #youtube-links { // Username
 		margin-left: 70px;
 	}
 	#youtube-links a:not(#first-link) {
 		padding-left: 10px;
 	}
-	section#number-of-listens, section.type-of-collab-container {
+	section#number-of-listens {
 		float: right;
-		h4, h5 {
+		h2, h5 {
 			margin-bottom: 0;
 			margin-top: 0;
 		}
-		h5 {
-			float: right;
-		}
 	}
-	section.type-of-collab-container {
+	&.type-of-collab-container h5, img#clapping-hands {
+		margin-bottom: 12px;
+	}
+	&.type-of-collab-container {
+		border-bottom: $nav-border;
+		padding-bottom: 5px;
 		h5 {
 			display: inline-block;
+			margin-top: 25px;
 		}
-		h5:not(.first-h5) {
-			margin-right: 10px;
+		span.glyphicon:not(.first-glyphicon) {
+			margin-left: 23px;
 		}
+		img#cover-song {
+			float: right;
+			height: 46px;
+			margin-right: 5px;
+			width: 88px;
+		}
+	}
+	img#clapping-hands {
+		height: 25px;
+		width: 25px;
+	}
+	img#clapping-hands, span.glyphicon-heart {
+		cursor: pointer;
+	}
+	h4#number-of-claps, h4#favorites {
+		display: inline-block;
+		margin-bottom: 0;
+		margin-top: 15px;
+	}
+	span.glyphicon-heart {
+		color: $musiclaps-dark-gray;
+		font-size: 1.25em;
+		margin-left: 30px;
+	}
+	img#facebook-like-button {
+		cursor: pointer;
+		height: 20px;
+		margin-bottom: 15px;
+		width: 47px;
+	}
+}
+
+#share-or-embed-buttons {
+	border-top: $nav-border;
+	button {
+		margin-top: 15px;
+	}
+	button:last-child {
+		margin-left: 5px;
+	}
+}
+
+.share-to-social-networks-container input, .embed-container textarea {
+	margin-top: 10px;
+}
+
+.share-to-social-networks-container {
+	margin-top: 10px;
+	img {
+		cursor: pointer;
+		&:not(.first-img) {
+			margin-left: 13.5px;
+		}
+	}
+	input {
+		@include form-fields-input(100%);
+	}
+}
+
+.embed-container textarea {
+	@include form-fields-input(50%);
+}
+
+section#comment-container {
+	label {
+		@include form-fields-label(25px);
+	}
+	textarea {
+		@include form-fields-input(100%);
+	}
+	h4 {
+		display: inline-block;
+		float: right;
+		font-weight: normal;
+		margin-bottom: 0;
+		margin-right: 5px;
+		margin-top: 7px;
+	}
+	input {
+		@include border-radius(10px);
+		@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+		color: white;
+		float: right;
+		margin-top: 3px;
 	}
 }
 

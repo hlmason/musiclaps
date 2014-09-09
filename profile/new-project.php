@@ -132,8 +132,8 @@
 							</div>
 
 							<div class="row col-xs-12">
-								<label id="comment-label" for="comment">Comment <span class="normal">(max 50 characters)</span></label>
-								<input id="comment" type="text" name="comment">
+								<label id="comment-new-project-page-label" for="comment-new-project-page">Comment <span class="normal">(max 50 characters)</span></label>
+								<input id="comment-new-project-page" type="text" name="comment-new-project-page">
 							</div>
 
 							<section class="newProject" id="choose-project-img-container">
