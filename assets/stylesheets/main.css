@@ -2899,7 +2899,7 @@ nav#nav-registered-user {
   background-color: #e7e7e7;
   padding-left: 0; }
   nav#nav-registered-user li {
-    padding: 10px 8px; }
+    padding: 10px 7px; }
     nav#nav-registered-user li:first-child {
       padding-left: 23px; }
     nav#nav-registered-user li a {
@@ -3600,12 +3600,12 @@ section.projects-container {
     background-color: #F4F4F4;
     cursor: pointer; }
 
-section.projects-container.favorites-page:hover {
+section.projects-container.favorites-page:hover, section.projects-container.public-profile-page:hover {
   background-color: white;
   cursor: initial; }
-section.projects-container.favorites-page h4, section.projects-container.favorites-page h5 {
+section.projects-container.favorites-page h4, section.projects-container.favorites-page h5, section.projects-container.public-profile-page h4, section.projects-container.public-profile-page h5 {
   margin-left: 5px; }
-section.projects-container.favorites-page .glyphicon-trash {
+section.projects-container.favorites-page .glyphicon-trash, section.projects-container.public-profile-page .glyphicon-trash {
   cursor: pointer;
   float: right;
   margin-top: 4px; }
@@ -3919,7 +3919,7 @@ section#messages-header {
   .friends-container .username-and-img {
     display: inline-block; }
     .friends-container .username-and-img img:not(.first-img), .friends-container .username-and-img h5:not(.first-h5) {
-      margin-left: 39px; }
+      margin-left: 38px; }
     .friends-container .username-and-img img {
       height: 65px;
       margin-top: 38px;

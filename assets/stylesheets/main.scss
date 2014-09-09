@@ -300,7 +300,7 @@ nav {
 		background-color: $musiclaps-light-gray;
 		padding-left: 0;
 		li {
-			padding: 10px 8px;
+			padding: 10px 7px;
 			&:first-child { // "Profile"
 				padding-left: 23px;
 			}
@@ -1115,7 +1115,7 @@ section.projects-container {
 	}
 }
 
-section.projects-container.favorites-page {
+section.projects-container.favorites-page, section.projects-container.public-profile-page {
 	&:hover {
 		background-color: white;
 		cursor: initial;
@@ -1489,7 +1489,7 @@ section#messages-header {
 	.username-and-img {
 		display: inline-block;
 		img:not(.first-img), h5:not(.first-h5) {
-			margin-left: 39px;
+			margin-left: 38px;
 		}
 		img {
 			height: 65px;
