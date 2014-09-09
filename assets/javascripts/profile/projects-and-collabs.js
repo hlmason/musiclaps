@@ -54,7 +54,10 @@ $(document).ready(function() {
 	glyphiconPencil.hide();
 	changeSoundImgContainer.hide();
 	projectForm.hide();
-	glyphiconOk.hide();
+
+	noCollabGlyphicon.hide();
+	openCollabGlyphicon.hide();
+	requestingCollabGlyphicon.hide();
 
 
 	$(projectsContainer).on('click', function() {

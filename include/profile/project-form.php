@@ -128,15 +128,15 @@
 			<div class="type-of-collab-container">
 				<div class="row">
 					<div class="col-xs-4">
-						<span class="glyphicon glyphicon-ok glyphiconOk noCollabGlyphicon"></span>
+						<span class="glyphicon glyphicon-ok noCollabGlyphicon"></span>
 						<button class="noCollab" type="button">No Collab</button>
 					</div>
 					<div class="col-xs-4">
-						<span class="glyphicon glyphicon-ok glyphiconOk openCollabGlyphicon"></span>
+						<span class="glyphicon glyphicon-ok openCollabGlyphicon"></span>
 						<button class="openCollab" type="button">Open Collab</button>
 					</div>
 					<div class="col-xs-4">
-						<span class="glyphicon glyphicon-ok glyphiconOk requestingCollabGlyphicon"></span>
+						<span class="glyphicon glyphicon-ok requestingCollabGlyphicon"></span>
 						<button class="requestingCollab" type="button">Requesting Collab</button>
 					</div>
 				</div>
