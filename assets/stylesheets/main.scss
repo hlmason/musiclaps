@@ -1793,6 +1793,21 @@ section.profile-right.recommended {
 	}
 }
 
+.profile-right#public-project-page {
+	img {
+		height: 75px;
+		margin-top: 15px;
+		width: 120px;
+	}
+	h4 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	h4:last-child { // # Plays
+		font-weight: normal;
+	}
+}
+
 h1.db-error-message {
 	color: $musiclaps-blue;
 	font-weight: normal;

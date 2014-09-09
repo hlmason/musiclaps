@@ -120,9 +120,45 @@
 					</section>
 
 				</div>
-				<?php
-					include(ROOT_PATH . 'include/profile/recommended.php');
-				?>		
+				<div class="row col-xs-12 col-sm-3">
+					<div class="profile-right" id="public-project-page">
+						<div class="row col-xs-12">
+							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
+						</div>
+						<section class="row col-xs-12">
+							<h4>$Project Name</h4><!-- Hard-coded placeholder -->
+							<h4>User: <span class="normal">$username</span></h4><!-- Hard-coded placeholder -->
+							<h4># Plays</h4><!-- Hard-coded placeholder -->
+						</section>
+
+						<div class="row col-xs-12">
+							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
+						</div>
+						<section class="row col-xs-12">
+							<h4>$Project Name</h4><!-- Hard-coded placeholder -->
+							<h4>User: <span class="normal">$username</span></h4><!-- Hard-coded placeholder -->
+							<h4># Plays</h4><!-- Hard-coded placeholder -->
+						</section>
+
+						<div class="row col-xs-12">
+							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
+						</div>
+						<section class="row col-xs-12">
+							<h4>$Project Name</h4><!-- Hard-coded placeholder -->
+							<h4>User: <span class="normal">$username</span></h4><!-- Hard-coded placeholder -->
+							<h4># Plays</h4><!-- Hard-coded placeholder -->
+						</section>
+
+						<div class="row col-xs-12">
+							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
+						</div>
+						<section class="row col-xs-12">
+							<h4>$Project Name</h4><!-- Hard-coded placeholder -->
+							<h4>User: <span class="normal">$username</span></h4><!-- Hard-coded placeholder -->
+							<h4># Plays</h4><!-- Hard-coded placeholder -->
+						</section>
+					</div>
+				</div>		
 			</div>
 			<div class="col-lg-1"></div>	
 		

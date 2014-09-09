@@ -47,32 +47,32 @@
 		<div class="container wmuSlider">
 		    <div class="row wmuSliderWrapper">
 		    	<article>
-		            <img src="assets/images/sample-album-covers/electric-ladyland.jpg"><!-- Placeholder -->
-		            <img src="assets/images/sample-album-covers/in-a-sentimental-mood.jpg"><!-- Placeholder -->
-		            <img src="assets/images/sample-album-covers/miseducation-of-lauryn-hill.jpg"><!-- Placeholder -->
-		            <img src="assets/images/sample-album-covers/suburbs.jpg"><!-- Placeholder -->
-		            <img src="assets/images/sample-album-covers/21.jpg"><!-- Placeholder -->
+		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/electric-ladyland.jpg" alt="Project image"><!-- Placeholder -->
+		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/in-a-sentimental-mood.jpg" alt="Project image"><!-- Placeholder -->
+		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/miseducation-of-lauryn-hill.jpg" alt="Project image"><!-- Placeholder -->
+		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/suburbs.jpg" alt="Project image"><!-- Placeholder -->
+		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/21.jpg" alt="Project image"><!-- Placeholder -->
 		        </article>
 		    	<article>
-		            <img src="assets/images/sample-album-covers/at-folsom-prison.jpg"><!-- Placeholder -->
-		            <img src="assets/images/sample-album-covers/help.png"><!-- Placeholder -->
-		            <img src="assets/images/sample-album-covers/fire-of-unknown-origin.jpg"><!-- Placeholder -->
-		            <img src="assets/images/sample-album-covers/bodyguard.jpg"><!-- Placeholder -->
-		            <img src="assets/images/sample-album-covers/mandatory-fun.jpg"><!-- Placeholder -->
+		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/at-folsom-prison.jpg" alt="Project image"><!-- Placeholder -->
+		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/help.png"><!-- Placeholder -->
+		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/fire-of-unknown-origin.jpg" alt="Project image"><!-- Placeholder -->
+		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/bodyguard.jpg" alt="Project image"><!-- Placeholder -->
+		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/mandatory-fun.jpg" alt="Project image"><!-- Placeholder -->
 		        </article>
 		        <article>
-		            <img src="assets/images/sample-album-covers/dark-side-of-the-moon.jpg"><!-- Placeholder -->
-		            <img src="assets/images/sample-album-covers/dreamboat-annie.jpg"><!-- Placeholder -->
-		            <img src="assets/images/sample-album-covers/rumours.jpg"><!-- Placeholder -->
-		            <img src="assets/images/sample-album-covers/damn-the-torpedoes.jpg"><!-- Placeholder -->
-		            <img src="assets/images/sample-album-covers/nebraska.jpg"><!-- Placeholder -->
+		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/dark-side-of-the-moon.jpg" alt="Project image"><!-- Placeholder -->
+		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/dreamboat-annie.jpg" alt="Project image"><!-- Placeholder -->
+		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/rumours.jpg" alt="Project image"><!-- Placeholder -->
+		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/damn-the-torpedoes.jpg" alt="Project image"><!-- Placeholder -->
+		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/nebraska.jpg" alt="Project image"><!-- Placeholder -->
 		        </article>
 		        <article>
-		        	<img src="assets/images/sample-album-covers/lungs.jpg"><!-- Placeholder -->
-		            <img src="assets/images/sample-album-covers/colour-the-small-one.jpg"><!-- Placeholder -->
-		            <img src="assets/images/sample-album-covers/im-over-it.jpg"><!-- Placeholder -->
-		            <img src="assets/images/sample-album-covers/holy-fire.jpg"><!-- Placeholder -->
-		            <img src="assets/images/sample-album-covers/mobius-strips.jpg"><!-- Placeholder -->
+		        	<img src="<?php echo BASE_URL; ?>ssets/images/sample-album-covers/lungs.jpg" alt="Project image"><!-- Placeholder -->
+		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/colour-the-small-one.jpg" alt="Project image"><!-- Placeholder -->
+		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/im-over-it.jpg" alt="Project image"><!-- Placeholder -->
+		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/holy-fire.jpg" alt="Project image"><!-- Placeholder -->
+		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/mobius-strips.jpg" alt="Project image"><!-- Placeholder -->
 		        </article>
 		    </div>
 		</div>

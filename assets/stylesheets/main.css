@@ -4202,6 +4202,16 @@ section.profile-right.recommended {
   section.profile-right.recommended h4:not(.first-h4) {
     margin-top: 40px; }
 
+.profile-right#public-project-page img {
+  height: 75px;
+  margin-top: 15px;
+  width: 120px; }
+.profile-right#public-project-page h4 {
+  margin-top: 0;
+  margin-bottom: 0; }
+.profile-right#public-project-page h4:last-child {
+  font-weight: normal; }
+
 h1.db-error-message {
   color: #38aaff;
   font-weight: normal;
