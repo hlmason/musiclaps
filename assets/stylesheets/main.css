@@ -2899,7 +2899,9 @@ nav .navbar-collapse {
   background-color: #e7e7e7;
   padding-left: 0; }
   #nav-registered-user li {
-    padding: 10px 16px; }
+    padding: 10px 8px; }
+    #nav-registered-user li:first-child {
+      padding-left: 23px; }
     #nav-registered-user li a {
       -moz-border-radius: 10px;
       border-radius: 10px;
@@ -3582,8 +3584,16 @@ section.projects-container {
       font-weight: normal; }
   section.projects-container:hover {
     background-color: #F4F4F4;
-    color: #444444;
     cursor: pointer; }
+
+section.projects-container.favorites-page:hover {
+  background-color: white;
+  cursor: initial; }
+section.projects-container.favorites-page h4, section.projects-container.favorites-page h5 {
+  margin-left: 5px; }
+section.projects-container.favorites-page .glyphicon-trash {
+  float: right;
+  margin-top: 4px; }
 
 .live-player-container, .project-info-bar {
   margin-top: 15px; }

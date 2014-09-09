@@ -300,7 +300,10 @@ nav {
 		background-color: $musiclaps-light-gray;
 		padding-left: 0;
 		li {
-			padding: 10px 16px;
+			padding: 10px 8px;
+			&:first-child { // "Profile"
+				padding-left: 23px;
+			}
 			a {
 				@include border-radius(10px);
 				background-color: #F4F4F4;
@@ -1087,8 +1090,21 @@ section.projects-container {
 	}
 	&:hover {
 		background-color: #F4F4F4;
-		color: $musiclaps-dark-gray;
 		cursor: pointer;
+	}
+}
+
+section.projects-container.favorites-page {
+	&:hover {
+		background-color: white;
+		cursor: initial;
+	}
+	h4, h5 {
+		margin-left: 5px;
+	}
+	.glyphicon-trash {
+		float: right;
+		margin-top: 4px;
 	}
 }
 
