@@ -4206,10 +4206,10 @@ section.profile-right.recommended {
   height: 75px;
   margin-top: 15px;
   width: 120px; }
-.profile-right#public-project-page h4 {
+.profile-right#public-project-page h4, .profile-right#public-project-page h5 {
   margin-top: 0;
   margin-bottom: 0; }
-.profile-right#public-project-page h4:last-child {
+.profile-right#public-project-page h5:last-child {
   font-weight: normal; }
 
 h1.db-error-message {

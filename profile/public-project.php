@@ -127,8 +127,8 @@
 						</div>
 						<section class="row col-xs-12">
 							<h4>$Project Name</h4><!-- Hard-coded placeholder -->
-							<h4>User: <span class="normal">$username</span></h4><!-- Hard-coded placeholder -->
-							<h4># Plays</h4><!-- Hard-coded placeholder -->
+							<h5>User: <span class="normal">$username</span></h5><!-- Hard-coded placeholder -->
+							<h5># Plays</h5><!-- Hard-coded placeholder -->
 						</section>
 
 						<div class="row col-xs-12">
@@ -136,8 +136,8 @@
 						</div>
 						<section class="row col-xs-12">
 							<h4>$Project Name</h4><!-- Hard-coded placeholder -->
-							<h4>User: <span class="normal">$username</span></h4><!-- Hard-coded placeholder -->
-							<h4># Plays</h4><!-- Hard-coded placeholder -->
+							<h5>User: <span class="normal">$username</span></h5><!-- Hard-coded placeholder -->
+							<h5># Plays</h5><!-- Hard-coded placeholder -->
 						</section>
 
 						<div class="row col-xs-12">
@@ -145,8 +145,8 @@
 						</div>
 						<section class="row col-xs-12">
 							<h4>$Project Name</h4><!-- Hard-coded placeholder -->
-							<h4>User: <span class="normal">$username</span></h4><!-- Hard-coded placeholder -->
-							<h4># Plays</h4><!-- Hard-coded placeholder -->
+							<h5>User: <span class="normal">$username</span></h5><!-- Hard-coded placeholder -->
+							<h5># Plays</h5><!-- Hard-coded placeholder -->
 						</section>
 
 						<div class="row col-xs-12">
@@ -154,8 +154,8 @@
 						</div>
 						<section class="row col-xs-12">
 							<h4>$Project Name</h4><!-- Hard-coded placeholder -->
-							<h4>User: <span class="normal">$username</span></h4><!-- Hard-coded placeholder -->
-							<h4># Plays</h4><!-- Hard-coded placeholder -->
+							<h5>User: <span class="normal">$username</span></h5><!-- Hard-coded placeholder -->
+							<h5># Plays</h5><!-- Hard-coded placeholder -->
 						</section>
 					</div>
 				</div>		

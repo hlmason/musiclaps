@@ -1799,11 +1799,11 @@ section.profile-right.recommended {
 		margin-top: 15px;
 		width: 120px;
 	}
-	h4 {
+	h4, h5 {
 		margin-top: 0;
 		margin-bottom: 0;
 	}
-	h4:last-child { // # Plays
+	h5:last-child { // # Plays
 		font-weight: normal;
 	}
 }
