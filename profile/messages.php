@@ -110,8 +110,8 @@
 							<div class="col-xs-3">
 								<h5>06/17/2013 at 4:42pm</h5><!-- Hard-coded placeholder -->
 								<a href="<?php echo BASE_URL; ?>profile/">
-									<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-									<h5 class="first-h5">$username</h5><!-- Hard-coded placeholder -->
+									<a href="<?php echo BASE_URL; ?>profile/public-profile.php"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+									<h5 class="first-h5">$username</h5></a><!-- Hard-coded placeholder -->
 								</a>
 							</div>
 							

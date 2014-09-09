@@ -67,8 +67,8 @@
 							<tbody>
 								<tr>
 									<td><!-- Hard-coded placeholder -->
-										<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
-										<span class="username">$username</span>
+										<a href="<?php echo BASE_URL; ?>profile/public-profile.php"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
+										<span class="username">$username</span></a>
 									</td>
 									<td>$date</td><!-- Hard-coded placeholder -->
 									<td>$project title</td><!-- Hard-coded placeholder -->
@@ -78,8 +78,8 @@
 								</tr>
 								<tr>
 									<td><!-- Hard-coded placeholder -->
-										<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
-										<span class="username">$username</span>
+										<a href="<?php echo BASE_URL; ?>profile/public-profile.php"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
+										<span class="username">$username</span></a>
 									</td>
 									<td>$date</td><!-- Hard-coded placeholder -->
 									<td>$project title</td><!-- Hard-coded placeholder -->
@@ -89,8 +89,8 @@
 								</tr>
 								<tr>
 									<td><!-- Hard-coded placeholder -->
-										<img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
-										<span class="username">$username</span>
+										<a href="<?php echo BASE_URL; ?>profile/public-profile.php"><img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
+										<span class="username">$username</span></a>
 									</td>
 									<td>$date</td><!-- Hard-coded placeholder -->
 									<td>$project title</td><!-- Hard-coded placeholder -->
