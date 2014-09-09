@@ -29,6 +29,7 @@
 						<button type="button" id="addFriendButton">Add New Friend</button>
 					</section>
 
+					<!-- Hidden upon page load -->
 					<div class="add-friend-container row col-xs-12" id="addFriendContainer">
 						<label id="add-friend-label" for="add_friend">Member's Username</label>
 						<input class="add-friend-field" id="add_friend" type="text" name="add_friend">
@@ -103,6 +104,7 @@
 						</div>
 					</div>
 
+					<!-- Hidden upon page load -->
 					<section class="messages-container" id="messagesContainer">
 						<div class="row"> 
 							<div class="col-xs-3">

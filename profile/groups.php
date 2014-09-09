@@ -22,6 +22,7 @@
 						<button id="createNewGroupButton" type="button">Create New Group</button>
 					</section>
 
+					<!-- Hidden upon page load -->
 					<section class="row col-xs-12 create-new-group-container" id="createNewGroupContainer">
 						<h4>Create a New Group</h4>
 						<form>

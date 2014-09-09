@@ -43,6 +43,8 @@
 					?>
 					<!-- End of "Change Sound Image" form -->
 
+
+					<!-- Hidden upon page load -->
 					<div class="collaborators-container" id="collaboratorsContainer">
 						<label for="collab_type" id="collab-label">Sort by</label>
 						<select>

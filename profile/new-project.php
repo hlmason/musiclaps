@@ -31,7 +31,7 @@
 					<!-- End of "Recording Player" -->
 
 
-					<!-- "Upload MP3" form -->
+					<!-- "Upload MP3" form - hidden upon page load -->
 					<section class="upload-mp3-container" id="uploadMP3Container">
 						<div class="row">
 							<div class="col-xs-6">
