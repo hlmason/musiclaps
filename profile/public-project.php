@@ -86,7 +86,7 @@
 
 					<div class="row col-xs-12">
 						<div id="share-or-embed-buttons">
-							<button class="navigate musiclaps-dark-gray musiclaps-blue" id="share" type="button">Share this Music</button>
+							<button class="navigate musiclaps-dark-gray musiclaps-blue" id="share" type="button">Share</button>
 							<button class="navigate button-navigate-hover-js" id="embed" type="button">Embed</button>
 						</div>
 					</div>
