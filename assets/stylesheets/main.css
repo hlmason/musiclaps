@@ -1,12 +1,12 @@
-/* Includes: Grid system, Forms, Glyphicons, Navs, Navbar, Progress bars, Component animations, and Modals */
+/* Includes: Grid system, Forms, Glyphicons, Navs, Navbar, Progress bars, Component animations, Dropdowns, and Modals */
 /*!
  * Bootstrap v3.2.0 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=53c9bf5a7636251b68c3)
- * Config saved to config.json and https://gist.github.com/53c9bf5a7636251b68c3
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=ff7043c381c79953afae)
+ * Config saved to config.json and https://gist.github.com/ff7043c381c79953afae
  */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
@@ -1905,6 +1905,135 @@ tbody.collapse.in {
   -o-transition: height .35s ease;
   transition: height .35s ease; }
 
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent; }
+
+.dropdown {
+  position: relative; }
+
+.dropdown-toggle:focus {
+  outline: 0; }
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box; }
+
+.dropdown-menu.pull-right {
+  right: 0;
+  left: auto; }
+
+.dropdown-menu .divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5; }
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap; }
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: #262626;
+  background-color: #f5f5f5; }
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  background-color: #428bca; }
+
+.dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
+  color: #777; }
+
+.dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  cursor: not-allowed; }
+
+.open > .dropdown-menu {
+  display: block; }
+
+.open > a {
+  outline: 0; }
+
+.dropdown-menu-right {
+  left: auto;
+  right: 0; }
+
+.dropdown-menu-left {
+  left: 0;
+  right: auto; }
+
+.dropdown-header {
+  display: block;
+  padding: 3px 20px;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #777;
+  white-space: nowrap; }
+
+.dropdown-backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 990; }
+
+.pull-right > .dropdown-menu {
+  right: 0;
+  left: auto; }
+
+.dropup .caret, .navbar-fixed-bottom .dropdown .caret {
+  border-top: 0;
+  border-bottom: 4px solid;
+  content: ""; }
+
+.dropup .dropdown-menu, .navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 1px; }
+
+@media (min-width: 768px) {
+  .navbar-right .dropdown-menu {
+    left: auto;
+    right: 0; }
+
+  .navbar-right .dropdown-menu-left {
+    left: 0;
+    right: auto; } }
 .nav {
   margin-bottom: 0;
   padding-left: 0;
@@ -2833,17 +2962,20 @@ nav .navbar-header {
   nav .navbar-header img {
     height: 45px;
     width: 155px; }
-nav .nav li a {
+nav ul.nav {
+  margin-top: 6px; }
+nav ul.nav li a {
   color: #444444 !important;
   font-size: 14px;
   line-height: 0;
   letter-spacing: 0.5px;
+  padding: 15px;
   text-transform: uppercase; }
-  nav .nav li a:hover, nav .nav li a:focus, nav .nav li a.active {
+  nav ul.nav li a:hover, nav ul.nav li a:focus, nav ul.nav li a.active {
     color: #38aaff !important; }
-nav .navbar-left li {
+nav ul.navbar-left li {
   border-left: 1px solid #cecece; }
-  nav .navbar-left li:first-child {
+  nav ul.navbar-left li:first-child {
     border-left: none; }
 nav ul#flags {
   float: right;

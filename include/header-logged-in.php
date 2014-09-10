@@ -50,9 +50,40 @@
 			</div>
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-left">
-					<li><a class="<?php if ($page == "Music") { echo "active"; } ?>" href="https://www.musiclaps.com/play?m=rs&show=all&svv=new">Music</a></li>
-					<li><a class="<?php if ($page == "People") { echo "active"; } ?>" href="#">People</a></li>
-					<li><a class="<?php if ($page == "Our Story") { echo "active"; } ?>" href="https://www.musiclaps.com/play?about=us">Our Story</a></li>
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle <?php if ($page == "Music") { echo "active"; } ?>" id="musicDropdownMenu" data-toggle="dropdown">Music</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="musicDropdownMenu">
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">New Arrivals</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Recommended</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Staff Picks</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Collaborations</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">All Music</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+					<div class="dropdown">
+						<div class="dropdown">
+							<a class="dropdown-toggle <?php if ($page == "People") { echo "active"; } ?>" id="peopleDropdownMenu" data-toggle="dropdown">People</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="peopleDropdownMenu">
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Player/Band Wanted</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Player/Band Available</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Collab Cafe</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle <?php if ($page == "Our Story") { echo "active"; } ?>" id="ourStoryDropdownMenu" data-toggle="dropdown">Our Story</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="ourStoryDropdownMenu">
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Technology</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">FAQs (Forum)</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Company</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Contact</a></li>
+							</ul>
+						</div>
+					</li>
 				</ul>
 				<ul id="flags">
 					<li><a><img id="usa-flag" src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/usa-flag.jpg" alt="American flag"></a></li>

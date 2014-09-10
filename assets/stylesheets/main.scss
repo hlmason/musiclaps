@@ -216,34 +216,40 @@ nav {
 			width: 155px;
 		}
 	}
-	.nav li {
-		a {
-			@include nav-link($musiclaps-dark-gray, 14px);
-			letter-spacing: 0.5px;
-			text-transform: uppercase;
-			&:hover, &:focus, &.active {
-				color: $musiclaps-blue !important;
+	ul {
+		&.nav {
+			margin-top: 6px; // Required for Bootstrap dropdown menus
+		}
+		&.nav li {
+			a {
+				@include nav-link($musiclaps-dark-gray, 14px);
+				letter-spacing: 0.5px;
+				padding: 15px;  // Required for Bootstrap dropdown menus
+				text-transform: uppercase;
+				&:hover, &:focus, &.active {
+					color: $musiclaps-blue !important;
+				}
 			}
 		}
-	}
-	.navbar-left li {
-		@include nav-border(#cecece);
-	}
-	ul#flags {
-		float: right;
-		margin-bottom: 0;
-		margin-left: -80px;
-		margin-top: 0;
-		li {
-			display: inline-block;
-			position: relative; // Makes flags clickable
-			z-index: 1; // Makes flags clickable
-			img {
-				height: 13px;
-				width: auto;
-			}
-			&:first-child {
-				margin-right: 5px;
+		&.navbar-left li {
+			@include nav-border(#cecece);
+		}
+		&#flags {
+			float: right;
+			margin-bottom: 0;
+			margin-left: -80px;
+			margin-top: 0;
+			li {
+				display: inline-block;
+				position: relative; // Makes flags clickable
+				z-index: 1; // Makes flags clickable
+				img {
+					height: 13px;
+					width: auto;
+				}
+				&:first-child {
+					margin-right: 5px;
+				}
 			}
 		}
 	}
