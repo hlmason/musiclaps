@@ -91,6 +91,9 @@
 						</div>
 					</li>
 				</ul>
+
+				<input id="search" type="text" name="search" placeholder="Search"><span class="glyphicon glyphicon-search"></span>
+				
 				<ul id="flags">
 					<li><a><img id="usa-flag" src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/usa-flag.jpg" alt="American flag"></a></li>
 					<li><a><img src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/japan-flag.jpg" alt="Japanese flag"></a></li>

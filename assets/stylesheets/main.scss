@@ -32,9 +32,9 @@ $table-border: 1px solid #ddd;
 @mixin form-fields-input($width) {
 	@include border-radius(5px);
 	border: $nav-border;
-	padding-bottom: 4px;
+	padding-bottom: 3px;
 	padding-left: 8px;
-	padding-top: 4px;
+	padding-top: 3px;
 	width: $width;
 }
 
@@ -253,6 +253,15 @@ nav {
 				}
 			}
 		}
+	}
+	input#search {
+		@include form-fields-input(181px);
+		margin-left: 20px;
+		margin-top: 23px;
+	}
+	.glyphicon-search {
+		cursor: pointer;
+		margin-left: 3px;
 	}
 	ul#flags {
 		float: right;
@@ -1963,35 +1972,14 @@ footer {
 }
 
 @media only screen and (max-width: 991px) {
-// Breakpoint of social media icons on footer and gray boxes (Profile Page)
-	section#technology, section#backstage, section.music-ed, section.contests-and-auditions {
-		img { display: none; }
-	}
-	section.profile-right { width: 150%; }
-	footer {
-		.navbar-brand { position: absolute; } 
-		.navbar-left, .navbar-right { margin-top: 50px; }
-		.navbar-left { 
-			float: left !important; 
-			padding-bottom: 15px; 
-		}
-	}
-}
-
-@media only screen and (max-width: 818px) {
-// Breakpoint of "Music Education" and "Contests and Auditions" (Landing Page)
-	#stage-inner ul { top: -42px; }
-}
-
-@media only screen and (max-width: 767px) {
-// Breakpoint of Bootstrap's collapsed menu
+// Point at which Bootstrap's navbar becomes uncollapsed, social media icons on footer, and gray boxes (Profile Page)
 	nav {
 		&.navbar a:not(.navbar-brand) { margin-left: 10px; }
 		ul {
 			&.nav a { padding: 10px !important; }
 			&.navbar-left { 
 				margin-top: 0;
-			 // li { border: none; /* Removes border to the left of links
+			 li { border: none; } // Removes border to the left of links
 			 }
 			.dropdown {
 				a .caret { display: inline-block !important; }
@@ -2000,6 +1988,20 @@ footer {
 					a:last-child { margin-bottom: 0; }
 				} 
 			}
+		}
+		// input#search, .glyphicon-search, ul#flags {
+		// 	position: absolute;
+		// }
+		input#search {
+			display: none;
+			// left: 85px;
+			// top: 40px;
+		}
+		.glyphicon-search {
+			display: none;
+			// color: $musiclaps-dark-gray;
+			// left: 259px;
+			// top: 70px;
 		}
 		ul#flags {
 			float: left;
@@ -2035,6 +2037,33 @@ footer {
 			}
 		}
 	}
+	section#technology, section#backstage, section.music-ed, section.contests-and-auditions {
+		img { display: none; }
+	}
+	section.profile-right { width: 150%; }
+	footer {
+		.navbar-brand { position: absolute; } 
+		.navbar-left, .navbar-right { margin-top: 50px; }
+		.navbar-left { 
+			float: left !important;
+			margin-left: 5px;
+			padding-bottom: 15px;
+			li { border: none; } // Removes border to the left of links
+		}
+		.navbar-right {
+			float: right !important;
+			text-align: right;
+		}
+	}
+}
+
+@media only screen and (max-width: 818px) {
+// Breakpoint of "Music Education" and "Contests and Auditions" (Landing Page)
+	#stage-inner ul { top: -42px; }
+}
+
+@media only screen and (max-width: 767px) {
+// Breakpoint of Bootstrap's 'xs' viewport width
 	#sn-login-modal-body { display: none; }
 	#sn-login-modal-body-sm {
 		display: inline-block !important;
@@ -2093,16 +2122,6 @@ footer {
 	section.profile-right { 
 		margin-top: 20px; 
 		width: 100%; 
-	}
-	footer {
-		.navbar-left {
-			margin-left: 5px;
-			li { border: none; } // Removes border to the left of links
-		}
-		.navbar-right {
-			float: right !important;
-			text-align: right;
-		}
 	}
 }
 
