@@ -1914,7 +1914,7 @@ footer {
 		}
 	}
 	.navbar-left li {
-		@include nav-border($musiclaps-dark-gray);
+		@include nav-border(#cecece);
 		margin-top: 13px;
 		a {
 			@include nav-link($musiclaps-dark-gray, 12px);

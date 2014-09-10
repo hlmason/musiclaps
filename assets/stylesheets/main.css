@@ -4416,7 +4416,7 @@ footer {
     footer .navbar-brand img {
       width: 50%; }
   footer .navbar-left li {
-    border-left: 1px solid #444444;
+    border-left: 1px solid #cecece;
     margin-top: 13px; }
     footer .navbar-left li:first-child {
       border-left: none; }
