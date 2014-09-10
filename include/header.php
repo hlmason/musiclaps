@@ -48,22 +48,26 @@
 				<ul class="nav navbar-nav navbar-left">
 					<li>
 						<div class="dropdown">
-							<a class="dropdown-toggle <?php if ($page == "Music") { echo "active"; } ?>" id="musicDropdownMenu" data-toggle="dropdown">Music</a>
+							<a class="dropdown-toggle" id="musicDropdownMenu" data-toggle="dropdown">Music
+								<span class="caret"></span>
+							</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="musicDropdownMenu">
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">New Arrivals</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Recommended</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Staff Picks</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Collaborations</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">All Music</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?m=rs&show=all&svv=new">New Arrivals</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?m=rs&show=all&svv=recommend">Recommended</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?m=rs&show=all&svv=pic">Staff Picks</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?m=rs&show=all&svv=collab">Collaborations</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?search=snd">All Music</a></li>
 							</ul>
 						</div>
 					</li>
 					<li>
 					<div class="dropdown">
 						<div class="dropdown">
-							<a class="dropdown-toggle <?php if ($page == "People") { echo "active"; } ?>" id="peopleDropdownMenu" data-toggle="dropdown">People</a>
+							<a class="dropdown-toggle" id="peopleDropdownMenu" data-toggle="dropdown">People
+								<span class="caret"></span>
+							</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="peopleDropdownMenu">
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Player/Band Wanted</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?thread=wt&cg=1">Player/Band Wanted</a></li>
 								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Player/Band Available</a></li>
 								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Collab Cafe</a></li>
 							</ul>
@@ -71,10 +75,12 @@
 					</li>
 					<li>
 						<div class="dropdown">
-							<a class="dropdown-toggle <?php if ($page == "Our Story") { echo "active"; } ?>" id="ourStoryDropdownMenu" data-toggle="dropdown">Our Story</a>
+							<a class="dropdown-toggle" id="ourStoryDropdownMenu" data-toggle="dropdown">Our Story
+								<span class="caret"></span>
+							</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="ourStoryDropdownMenu">
 								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Technology</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">FAQs (Forum)</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?forum=view">FAQs (Forum)</a></li>
 								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Company</a></li>
 								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Contact</a></li>
 							</ul>

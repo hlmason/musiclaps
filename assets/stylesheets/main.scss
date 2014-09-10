@@ -197,10 +197,6 @@ img#microsoft-icon {
 /* ===================================
     Nav
 =================================== */
-nav:not(#nav-registered-user) .nav li { // Not logged in nav
-	margin-top: 23px;		
-}
-
 nav {
 	&.navbar {
 		@include border-radius(0);
@@ -211,6 +207,9 @@ nav {
 	}
 	.navbar-header {
 		height: 78px;
+		button.navbar-toggle {
+			margin-top: 23px;
+		}
 		img { // Musiclaps logo
 			height: 45px;
 			width: 155px;
@@ -219,41 +218,61 @@ nav {
 	ul {
 		&.nav {
 			margin-top: 6px; // Required for Bootstrap dropdown menus
-		}
-		&.nav li {
+			.open > a { // When "Music", "People", or "Our Story" is active
+				background-color: $musiclaps-light-gray !important;
+			}
 			a {
 				@include nav-link($musiclaps-dark-gray, 14px);
 				letter-spacing: 0.5px;
-				padding: 15px;  // Required for Bootstrap dropdown menus
 				text-transform: uppercase;
 				&:hover, &:focus, &.active {
 					color: $musiclaps-blue !important;
 				}
 			}
+			a:not(#welcome-user-link) {
+				padding: 15px;
+			}
 		}
-		&.navbar-left li {
+		&.navbar-left > li { // "Music", "People", and "Our Story" only
 			@include nav-border(#cecece);
 		}
-		&#flags {
-			float: right;
-			margin-bottom: 0;
-			margin-left: -80px;
-			margin-top: 0;
-			li {
-				display: inline-block;
-				position: relative; // Makes flags clickable
-				z-index: 1; // Makes flags clickable
-				img {
-					height: 13px;
-					width: auto;
+		.dropdown {
+			a .caret {
+				display: none;
+			}
+			ul.dropdown-menu {
+				border: $modal-border;
+				a {
+					text-transform: capitalize; // Overrides "text-transform: uppercase"
 				}
-				&:first-child {
-					margin-right: 5px;
+				a:first-child {
+					margin-top: -15px;
+				}
+				a:last-child {
+					margin-bottom: 8px;
 				}
 			}
 		}
 	}
-	.navbar-right#logged-out li {
+	ul#flags {
+		float: right;
+		margin-bottom: 0;
+		margin-left: -80px;
+		margin-top: 3px;
+		li {
+			display: inline-block;
+			position: relative; // Makes flags clickable
+			z-index: 1; // Makes flags clickable
+			img {
+				height: 13px;
+				width: auto;
+			}
+			&:first-child {
+				margin-right: 5px;
+			}
+		}
+	}
+	ul.navbar-right#logged-out li {
 		border: $nav-border;
 		&:first-child { // "Log in" button
 			background-color: lightgray;
@@ -279,12 +298,14 @@ nav {
 			}
 		}
 	}
-	.navbar-toggle {
-		margin-top: 23px;
-	}
-	.navbar-collapse {
-		border-top: none;
-	}
+	// .navbar-collapse {
+	// 	border-top: none;
+	// }
+}
+
+
+nav:not(#nav-registered-user) .nav li { // Not logged in nav
+	margin-top: 23px;		
 }
 
 	/* ===================================
@@ -331,8 +352,8 @@ nav {
 	border-right: $modal-border;
 	.modal-header {
 		border-top: $modal-border;
-		border-top-left-radius: 5px;
-		border-top-right-radius: 5px;
+		// border-top-left-radius: 5px;
+		// border-top-right-radius: 5px;
 		button.close {
 			background-color: white;
 			border: none;
@@ -362,8 +383,8 @@ nav {
 		text-transform: uppercase;
 	}
 	.modal-body {
-		border-bottom-left-radius: 5px;
-		border-bottom-right-radius: 5px;
+		// border-bottom-left-radius: 5px;
+		// border-bottom-right-radius: 5px;
 		&#sn-login-modal-body, &#sn-login-modal-body-sm, 
 		&#registration-full-modal-body, &#registration-express-modal-body, {
 			@include border-radius(0);
@@ -1966,32 +1987,46 @@ footer {
 // Breakpoint of Bootstrap's collapsed menu
 	nav {
 		&.navbar a:not(.navbar-brand) { margin-left: 10px; }
-	 	.navbar-left { 
-			margin-top: 0;
-			li { border: none; /* Removes border to the left of links */ } 
+		ul {
+			&.nav a { padding: 10px !important; }
+			&.navbar-left { 
+				margin-top: 0;
+			 // li { border: none; /* Removes border to the left of links
+			 }
+			.dropdown {
+				a .caret { display: inline-block !important; }
+				ul.dropdown-menu li { 
+					margin-left: 20px !important; // Indents subcategories of "Music", "People", and "Our Story"
+					a:last-child { margin-bottom: 0; }
+				} 
+			}
 		}
-	ul#flags {
-		float: left;
-		margin: 0;
-		position: absolute;
-		top: 65px;
-		li:first-child { margin-right: 0px; }
-	}
-		.navbar-right#logged-out, .navbar-right#logged-in { margin-top: 0; }
-		.navbar-right#logged-out li {
+		ul#flags {
+			float: left;
+			margin: 0;
+			position: absolute;
+			top: 65px;
+			li:first-child { margin-right: 0px; }
+		}
+		ul.navbar-right#logged-out, ul.navbar-right#logged-in { margin-top: 0; }
+		ul.navbar-right#logged-out li {
 			&:first-child, &:last-child { 
 				background-color: $musiclaps-light-gray !important; // Changes "Log in" and "Register" button color to match the rest of the links in the collapsed menu
 				border: none; // Removes "Log in" and "Register" border color to match the rest of the links in the collapsed menu
 				a:hover, a:focus { color: $musiclaps-blue !important; } // Changes "Log in" and "Register" link color to match the rest of the links in the collapsed menu
 			}
-			&:last-child { padding-bottom: 10px; }
+			&:first-child { margin-top: 15px; }
+			&:last-child { 
+				padding-bottom: 10px; 
+			}
 			&:last-child a { color: $musiclaps-dark-gray !important; } // Changes "Register" link color so that it's visible and matches the rest of the links in the collapsed menu
 		}
-		.navbar-right#logged-in {
-			#welcome-user { display: none; }
+		ul.navbar-right#logged-in {
+			li#welcome-user { display: none; }
 			input { // "Log out" button
 				border: none;
-				margin-left: 15px;
+				margin-left: 12px;
+				padding-top: 0;
 				text-transform: uppercase;
 				&:hover, &:focus {
 					background-color: $musiclaps-light-gray;
@@ -2062,7 +2097,7 @@ footer {
 	footer {
 		.navbar-left {
 			margin-left: 5px;
-			li { border: none; } /* Removes border to the left of links */
+			li { border: none; } // Removes border to the left of links
 		}
 		.navbar-right {
 			float: right !important;
