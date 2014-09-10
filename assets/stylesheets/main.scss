@@ -1954,6 +1954,20 @@ footer {
 	}
 
 /* ===================================
+    Under Construction Page
+=================================== */
+#construction-page {
+	color: $musiclaps-dark-gray;
+	text-align: center;
+	.glyphicon-home {
+		font-size: 3em;
+	}
+	#space-above-construction-stage {
+		height: 200px;
+	}
+}
+
+/* ===================================
     Media Queries
 =================================== */
 @media only screen and (max-width: 1199px) {

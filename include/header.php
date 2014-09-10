@@ -68,8 +68,8 @@
 							</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="peopleDropdownMenu">
 								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?thread=wt&cg=1">Player/Band Wanted</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Player/Band Available</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Collab Cafe</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Player/Band Available</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-contruction.php">Collab Cafe</a></li>
 							</ul>
 						</div>
 					</li>
@@ -79,10 +79,10 @@
 								<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="ourStoryDropdownMenu">
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Technology</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Technology</a></li>
 								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?forum=view">FAQs (Forum)</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Company</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Contact</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Company</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Contact</a></li>
 							</ul>
 						</div>
 					</li>

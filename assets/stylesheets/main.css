@@ -4456,6 +4456,17 @@ footer {
   word-spacing: 1px; }
 
 /* ===================================
+    Under Construction Page
+=================================== */
+#construction-page {
+  color: #444444;
+  text-align: center; }
+  #construction-page .glyphicon-home {
+    font-size: 3em; }
+  #construction-page #space-above-construction-stage {
+    height: 200px; }
+
+/* ===================================
     Media Queries
 =================================== */
 @media only screen and (max-width: 1199px) {
