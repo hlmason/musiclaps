@@ -25,7 +25,7 @@
 
 						<section class="row col-xs-12 project-form-header">
 							<h3>Project Title by <a href="<?php echo BASE_URL; ?>profile/">$username</a></h3><!-- Hard-coded placeholder -->
-							<a href="<?php echo BASE_URL; ?>profile/collaborations.php"><span class="glyphicon glyphicon-repeat pull-right"></span></a>
+							<a href="<?php echo BASE_URL; ?>profile/collaborations.php"><span class="glyphicon glyphicon-repeat"></span></a>
 						</section>
 						
 						<section class="row col-xs-12">
@@ -38,9 +38,9 @@
 								<h4 class="last-h4">100</h4><!-- Hard-coded placeholder -->
 
 								<!-- Markup is backwards because elements are floated right -->
-								<span class="glyphicon glyphicon-trash pull-right"></span>
-								<span class="glyphicon glyphicon-save pull-right"></span>
-								<input class="pull-right save-volume-and-pan" type="submit" value="Save">
+								<span class="glyphicon glyphicon-trash"></span>
+								<span class="glyphicon glyphicon-save"></span>
+								<input class="save-volume-and-pan" type="submit" value="Save">
 							</div>
 						</section>
 					</div>

@@ -3766,6 +3766,9 @@ section.projects-container.favorites-page .glyphicon-trash, section.projects-con
 .live-player-container, .project-info-bar {
   margin-top: 15px; }
 
+section.project-form-header .glyphicon:not(.glyphicon-volume-up), section.project-form-header select.project-type, section.project-form-header input.save-volume-and-pan, section.project-form-header input.save, .project-info-bar .glyphicon:not(.glyphicon-volume-up), .project-info-bar select.project-type, .project-info-bar input.save-volume-and-pan, .project-info-bar input.save, .volume-and-pan .glyphicon:not(.glyphicon-volume-up), .volume-and-pan select.project-type, .volume-and-pan input.save-volume-and-pan, .volume-and-pan input.save, form#project-form .glyphicon:not(.glyphicon-volume-up), form#project-form select.project-type, form#project-form input.save-volume-and-pan, form#project-form input.save, section.create-new-group-container .glyphicon:not(.glyphicon-volume-up), section.create-new-group-container select.project-type, section.create-new-group-container input.save-volume-and-pan, section.create-new-group-container input.save {
+  float: right; }
+
 section.project-form-header h3, section.project-form-header .glyphicon-repeat, section.project-form-header .glyphicon-lock, section.project-form-header select.project-type, section.project-form-header .glyphicon-trash, section.project-form-header h4.project-type {
   margin-right: 10px;
   margin-top: 15px; }
@@ -3773,6 +3776,8 @@ section.project-form-header h3, section.project-form-header h4 {
   margin-bottom: 0; }
 section.project-form-header h3 {
   display: inline-block; }
+section.project-form-header h4 {
+  float: right; }
 section.project-form-header .glyphicon-repeat {
   color: #444444; }
 

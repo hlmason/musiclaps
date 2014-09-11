@@ -44,7 +44,7 @@
 							</div>
 
 							<div>
-								<input class="save pull-right" type="submit" value="Save">
+								<input class="save" type="submit" value="Save">
 							</div>
 						</form>
 					</section>
@@ -71,9 +71,9 @@
 						<section class="row col-xs-12 project-form-header">
 							<h3>Project Title</h3><!-- Hard-coded placeholder -->
 							<!-- Markup is backwards because elements are floated right -->
-							<h4 class="project-type pull-right">Group</h4>
-							<span class="glyphicon glyphicon-lock pull-right"></span>
-							<span class="glyphicon glyphicon-repeat pull-right"></span>
+							<h4 class="project-type">Group</h4>
+							<span class="glyphicon glyphicon-lock"></span>
+							<span class="glyphicon glyphicon-repeat"></span>
 						</section>
 
 						<section class="row col-xs-12" id="youtube-link">
@@ -88,8 +88,8 @@
 								<h5>$date project started</h5>
 
 								<!-- Markup is backwards because elements are floated right -->
-								<span class="glyphicon glyphicon-trash pull-right"></span>
-								<select class="project-type pull-right">
+								<span class="glyphicon glyphicon-trash"></span>
+								<select class="project-type">
 									<option value="group">Group</option><!-- Hard-coded placeholder -->
 									<option value="unlisted">Unlisted</option><!-- Hard-coded placeholder -->
 								</select>
@@ -105,8 +105,8 @@
 								<div class="slider"></div>
 								<h4>R</h4>
 
-								<span class="glyphicon glyphicon-save pull-right"></span>
-								<input class="pull-right save-volume-and-pan" type="submit" value="Save">
+								<span class="glyphicon glyphicon-save"></span>
+								<input class="save-volume-and-pan" type="submit" value="Save">
 							</div>
 						</section>
 					</div>

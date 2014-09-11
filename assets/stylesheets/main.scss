@@ -1171,6 +1171,12 @@ section.projects-container.favorites-page, section.projects-container.public-pro
 	margin-top: 15px;
 }
 
+section.project-form-header, .project-info-bar, .volume-and-pan, form#project-form, section.create-new-group-container {
+	.glyphicon:not(.glyphicon-volume-up), select.project-type, input.save-volume-and-pan, input.save {
+		float: right;
+	}
+}
+
 section.project-form-header {
 	h3, .glyphicon-repeat, .glyphicon-lock, select.project-type, .glyphicon-trash, h4.project-type {
 		margin-right: 10px;
@@ -1181,6 +1187,9 @@ section.project-form-header {
 	}
 	h3 {
 		display: inline-block;
+	}
+	h4 {
+		float: right;
 	}
 	.glyphicon-repeat {
 		color: $musiclaps-dark-gray;

@@ -10,15 +10,15 @@
 	<section class="row col-xs-12 project-form-header">
 		<h3>Project Title</h3><!-- Hard-coded placeholder -->
 		<!-- Markup is backwards because elements are floated right -->
-		<span class="glyphicon glyphicon-trash pull-right"></span>
-		<select class="project-type pull-right">
+		<span class="glyphicon glyphicon-trash"></span>
+		<select class="project-type">
 			<option value="private">Private</option>
 			<option value="public">Public</option>
 			<option value="group">Group</option>
 			<option value="audition">Audition</option>
 		</select>
-		<span class="glyphicon glyphicon-lock pull-right"></span>
-		<span class="glyphicon glyphicon-repeat pull-right"></span>
+		<span class="glyphicon glyphicon-lock"></span>
+		<span class="glyphicon glyphicon-repeat"></span>
 	</section>
 
 	
@@ -30,8 +30,8 @@
 			<h5>$date project started</h5>
 
 			<!-- Markup is backwards because elements are floated right -->
-			<span class="glyphicon glyphicon-trash pull-right"></span>
-			<select class="project-type pull-right">
+			<span class="glyphicon glyphicon-trash"></span>
+			<select class="project-type">
 				<option value="private">Private</option><!-- Hard-coded placeholder -->
 			</select>
 		</div>
@@ -46,8 +46,8 @@
 			<div class="slider"></div>
 			<h4>R</h4>
 
-			<span class="glyphicon glyphicon-save pull-right"></span>
-			<input class="pull-right save-volume-and-pan" type="submit" value="Save">
+			<span class="glyphicon glyphicon-save"></span>
+			<input class="save-volume-and-pan" type="submit" value="Save">
 		</div>
 	</section>
 
@@ -55,7 +55,7 @@
 	<form id="project-form">
 		<div class="row col-xs-12">
 			<label for="title">Title
-				<input class="save pull-right" type="submit" value="Save">
+				<input class="save" type="submit" value="Save">
 			</label>
 			<input id="title" type="text" name="title">
 		</div>
@@ -63,14 +63,14 @@
 		<div class="row col-xs-12">
 			<label id="cover-song-label" for="cover_song">Cover Song
 				<input class="cover-song-checkbox" type="checkbox" name="arrangement">
-				<input class="save pull-right" type="submit" value="Save">
+				<input class="save" type="submit" value="Save">
 			</label>
 			<input id="cover_song" type="text" name="cover_song" placeholder="Please credit the songwriter if it is not you.">
 		</div>
 
 		<div class="row col-xs-12">
 			<label for="description">Description
-				<input class="save pull-right" type="submit" value="Save">
+				<input class="save" type="submit" value="Save">
 			</label>
 			<textarea id="description" name="description" placeholder="If you are requesting collaboration, you can mention which instrument(s) here."></textarea>
 		</div>
@@ -85,14 +85,14 @@
 
 		<div class="row col-xs-12">
 			<label for="search_tags">Search Tags
-				<input class="save pull-right" type="submit" value="Save">
+				<input class="save" type="submit" value="Save">
 			</label>
 			<textarea id="search_tags" name="search_tags" placeholder="Examples: Song Title, Genre, etc."></textarea>
 		</div>
 
 		<div class="row col-xs-12">
 			<label for="scrolling_comment">Scrolling Comment
-				<input class="save pull-right" type="submit" value="Save">
+				<input class="save" type="submit" value="Save">
 			</label>
 			<textarea id="scrolling_comment" name="scrolling_comment"></textarea>
 		</div>
@@ -114,7 +114,7 @@
 						<input class="choose-file" id="choose_stage_background_img" type="submit" value="Choose File">&nbsp; <span>No file chosen</span>
 						<div id="save-stage-background-img-and-trash-container">
 							<input class="save-stage-background-img" type="submit" value="Save">
-							<span class="glyphicon glyphicon-trash pull-right"></span>
+							<span class="glyphicon glyphicon-trash"></span>
 						</div>
 					</div>
 				</div>
