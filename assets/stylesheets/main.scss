@@ -19,6 +19,26 @@ $table-border: 1px solid #ddd;
 		 border-radius: $radius;
 }
 
+@mixin border-bottom-left-radius($radius) {
+	-moz-border-bottom-left-radius: $radius;
+		 border-bottom-left-radius: $radius;
+}
+
+@mixin border-bottom-right-radius($radius) {
+	-moz-border-bottom-right-radius: $radius;
+		 border-bottom-right-radius: $radius;
+}
+
+@mixin border-top-left-radius($radius) {
+	-moz-border-top-left-radius: $radius;
+		 border-top-left-radius: $radius;
+}
+
+@mixin border-top-right-radius($radius) {
+	-moz-border-top-right-radius: $radius;
+		 border-top-right-radius: $radius;
+}
+
 @mixin button ($background-color, $color, $font-size, $padding) {
 	@include border-radius(10px);
 	background-color: $background-color;
@@ -288,8 +308,8 @@ nav {
 		border: $nav-border;
 		&:first-child { // "Log in" button
 			background-color: lightgray;
-			border-bottom-left-radius: 10px;
-			border-top-left-radius: 10px;
+			@include border-bottom-left-radius(10px);
+			@include border-top-left-radius(10px);
 			&:hover {
 				background-color: #d9d9d9;
 			}
@@ -300,8 +320,8 @@ nav {
 		&:last-child { // "Register" button
 			background-color: $musiclaps-blue;
 			border: 1px solid $musiclaps-blue;
-			border-bottom-right-radius: 10px;
-			border-top-right-radius: 10px;
+			@include border-bottom-right-radius(10px);
+			@include border-top-right-radius(10px);
 			&:hover {
 				background-color: #45B7FF;
 			}
@@ -346,8 +366,8 @@ nav:not(#nav-registered-user) .nav li { // Not logged in nav
 			border-left: $nav-border;
 			border-right: $nav-border;
 			border-top: $nav-border;
-			border-top-left-radius: 5px;
-			border-top-right-radius: 5px;
+			@include border-top-left-radius(5px);
+			@include border-top-right-radius(5px);
 			text-transform: capitalize;
 			&.active {
 				color: #428bca !important;
@@ -2118,8 +2138,8 @@ footer {
 		img { margin-bottom: 1px; } // Social media icons
 		input { // Social media login buttons - only visible at viewport widths <= 767
 			@include submit($musiclaps-light-gray, $nav-border, 3px 6px, #d9d9d9);
-			border-bottom-right-radius: 5px;
-			border-top-right-radius: 5px;
+			@include border-bottom-right-radius(5px);
+			@include border-top-right-radius(5px);
 			margin-left: 2px;
 		}
 	}

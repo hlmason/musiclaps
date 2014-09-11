@@ -3021,7 +3021,9 @@ nav ul.navbar-right#logged-out li {
   border: 1px solid #cecece; }
   nav ul.navbar-right#logged-out li:first-child {
     background-color: lightgray;
+    -moz-border-bottom-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    -moz-border-top-left-radius: 10px;
     border-top-left-radius: 10px; }
     nav ul.navbar-right#logged-out li:first-child:hover {
       background-color: #d9d9d9; }
@@ -3030,7 +3032,9 @@ nav ul.navbar-right#logged-out li {
   nav ul.navbar-right#logged-out li:last-child {
     background-color: #38aaff;
     border: 1px solid #38aaff;
+    -moz-border-bottom-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    -moz-border-top-right-radius: 10px;
     border-top-right-radius: 10px; }
     nav ul.navbar-right#logged-out li:last-child:hover {
       background-color: #45B7FF; }
@@ -3060,7 +3064,9 @@ ul#nav-registered-user a {
   border-left: 1px solid #cecece;
   border-right: 1px solid #cecece;
   border-top: 1px solid #cecece;
+  -moz-border-top-left-radius: 5px;
   border-top-left-radius: 5px;
+  -moz-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
   text-transform: capitalize; }
   ul#nav-registered-user a.active {
@@ -4590,7 +4596,9 @@ footer {
       background-color: #e7e7e7;
       border: 1px solid #cecece;
       padding: 3px 6px;
+      -moz-border-bottom-right-radius: 5px;
       border-bottom-right-radius: 5px;
+      -moz-border-top-right-radius: 5px;
       border-top-right-radius: 5px;
       margin-left: 2px; }
       #sn-login-modal-body-sm input:hover, #sn-login-modal-body-sm input:focus {
