@@ -144,6 +144,9 @@ a:hover {
 	border: none;
 	color: #428bca;
 	font-weight: bold;
+	&:hover, &:focus {
+		color: #2a6496;
+	}
 }
 
 label#birth-date-label-modal, label#gender-label, 
@@ -228,9 +231,9 @@ nav {
 				&:hover, &:focus, &.active {
 					color: $musiclaps-blue !important;
 				}
-			}
-			a:not(#welcome-user-link) {
-				padding: 15px;
+				&:not(#welcome-user-link) {
+					padding: 15px;	
+				}
 			}
 		}
 		&.navbar-left > li { // "Music", "People", and "Our Story" only
@@ -244,12 +247,12 @@ nav {
 				border: $modal-border;
 				a {
 					text-transform: capitalize; // Overrides "text-transform: uppercase"
-				}
-				a:first-child {
-					margin-top: -15px;
-				}
-				a:last-child {
-					margin-bottom: 8px;
+					&:first-child {
+						margin-top: -15px;
+					}
+					&:last-child {
+						margin-bottom: 8px;	
+					}
 				}
 			}
 		}
@@ -332,20 +335,32 @@ nav:not(#nav-registered-user) .nav li { // Not logged in nav
 		}
 	}
 
-	nav#nav-registered-user { // Nav below top nav
-		background-color: $musiclaps-light-gray;
-		padding-left: 0;
+	ul#nav-registered-user { // Nav below top nav
 		li {
-			padding: 10px 7px;
-			&:first-child { // "Profile"
-				padding-left: 23px;
+			border-bottom: $nav-border;
+		}
+		li:not(.first-list-item) { // "Profile"
+			padding-left: 2px;
+		}
+		a {
+			border-left: $nav-border;
+			border-right: $nav-border;
+			border-top: $nav-border;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			text-transform: capitalize;
+			&.active {
+				color: #428bca !important;
 			}
-			a {
-				@include border-radius(10px);
-				background-color: #F4F4F4;
-				font-size: 12px;
-				&:hover, &:focus, &.active {
-					background-color: $musiclaps-dark-gray !important;
+			&:hover, &:focus {
+				background-color: $musiclaps-light-gray; // A little darker than inactive tabs
+				color: #2a6496 !important;
+			}
+			&:not(.active) {
+				background-color: #f4f4f4;
+				&:hover, &:focus {
+					background-color: white; // Same as active
+					color: #428bca !important; // Same as active
 				}
 			}
 		}
@@ -1828,7 +1843,8 @@ section#comment-container {
 }
 
 section.profile-right { // Profile and New Project Pages
-	background-color: $musiclaps-light-gray;
+	// background-color: $musiclaps-light-gray;
+	border: $nav-border;
 	width: 137.5%;
 	h4 {
 		margin-bottom: 5px;

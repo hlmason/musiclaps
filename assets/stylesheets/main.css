@@ -2974,8 +2974,8 @@ nav ul.nav {
     text-transform: uppercase; }
     nav ul.nav a:hover, nav ul.nav a:focus, nav ul.nav a.active {
       color: #38aaff !important; }
-  nav ul.nav a:not(#welcome-user-link) {
-    padding: 15px; }
+    nav ul.nav a:not(#welcome-user-link) {
+      padding: 15px; }
 nav ul.navbar-left > li {
   border-left: 1px solid #cecece; }
   nav ul.navbar-left > li:first-child {
@@ -2986,10 +2986,10 @@ nav ul .dropdown ul.dropdown-menu {
   border: 5px solid #e7e7e7; }
   nav ul .dropdown ul.dropdown-menu a {
     text-transform: capitalize; }
-  nav ul .dropdown ul.dropdown-menu a:first-child {
-    margin-top: -15px; }
-  nav ul .dropdown ul.dropdown-menu a:last-child {
-    margin-bottom: 8px; }
+    nav ul .dropdown ul.dropdown-menu a:first-child {
+      margin-top: -15px; }
+    nav ul .dropdown ul.dropdown-menu a:last-child {
+      margin-bottom: 8px; }
 nav input#search {
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -3052,20 +3052,27 @@ ul.navbar-right #welcome-user {
     ul.navbar-right #welcome-user a:hover, ul.navbar-right #welcome-user a:focus {
       color: #444444 !important; }
 
-nav#nav-registered-user {
-  background-color: #e7e7e7;
-  padding-left: 0; }
-  nav#nav-registered-user li {
-    padding: 10px 7px; }
-    nav#nav-registered-user li:first-child {
-      padding-left: 23px; }
-    nav#nav-registered-user li a {
-      -moz-border-radius: 10px;
-      border-radius: 10px;
-      background-color: #F4F4F4;
-      font-size: 12px; }
-      nav#nav-registered-user li a:hover, nav#nav-registered-user li a:focus, nav#nav-registered-user li a.active {
-        background-color: #444444 !important; }
+ul#nav-registered-user li {
+  border-bottom: 1px solid #cecece; }
+ul#nav-registered-user li:not(.first-list-item) {
+  padding-left: 2px; }
+ul#nav-registered-user a {
+  border-left: 1px solid #cecece;
+  border-right: 1px solid #cecece;
+  border-top: 1px solid #cecece;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-transform: capitalize; }
+  ul#nav-registered-user a.active {
+    color: #428bca !important; }
+  ul#nav-registered-user a:hover, ul#nav-registered-user a:focus {
+    background-color: #e7e7e7;
+    color: #2a6496 !important; }
+  ul#nav-registered-user a:not(.active) {
+    background-color: #f4f4f4; }
+    ul#nav-registered-user a:not(.active):hover, ul#nav-registered-user a:not(.active):focus {
+      background-color: white;
+      color: #428bca !important; }
 
 /* ===================================
     Modal
@@ -3519,6 +3526,8 @@ button.musiclaps-dark-gray {
     border: none;
     color: #428bca;
     font-weight: bold; }
+    #avatar-n-edit-profile #edit-save-profile h4.save-profile input:hover, #avatar-n-edit-profile #edit-save-profile h4.save-profile input:focus {
+      color: #2a6496; }
 
 #about-me {
   border-top: 1px solid #cecece;
@@ -3830,6 +3839,8 @@ section.project-form-header .glyphicon-repeat {
     font-weight: bold;
     margin-top: 6px;
     padding-right: 5px; }
+    .volume-and-pan input.save-volume-and-pan:hover, .volume-and-pan input.save-volume-and-pan:focus, .project-info-bar.requesting-collab-page input.save-volume-and-pan:hover, .project-info-bar.requesting-collab-page input.save-volume-and-pan:focus {
+      color: #2a6496; }
 
 .volume-and-pan h4 {
   display: inline-block;
@@ -4348,7 +4359,7 @@ section#comment-container input {
     background-color: #45b7ff; }
 
 section.profile-right {
-  background-color: #e7e7e7;
+  border: 1px solid #cecece;
   width: 137.5%; }
   section.profile-right h4 {
     margin-bottom: 5px; }
