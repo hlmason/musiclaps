@@ -3,7 +3,7 @@ $(document).ready(function() {
 	var publicProjectsContainer = $('section#publicProjectsContainer');
 	var groupProjectsContainerProjectsPage = $('section#groupProjectsContainerProjectsPage');
 	var auditionProjectsContainer = $('section#auditionProjectsContainer');
-	var lyricContainer = $('section#lyricsProjectsContainer');
+	var lyricsProjectContainer = $('#lyricsProjectContainer');
 	var privateProjectsContainer = $('section#privateProjectsContainer');
 
 	var requestingCollabContainer = $('section#requestingCollabContainer');
@@ -18,17 +18,18 @@ $(document).ready(function() {
 	var glyphiconOk = $('.glyphiconOk');
 
 
-	var projectsContainer = $('section.projectsContainer');
+	var projectsContainer = $('section.projectsContainer'); // Note that this is different from the variable below
+	var projectsContainers = $('#projectsContainers'); // Note that this is different from the variable above
 
 
 	var projectImg = $('img.projectImg');
 
 
-	var publicProjectsButton = $('button#publicProjectsButton');
-	var groupProjectsButton = $('button#groupProjectsButton');
-	var auditionProjectsButton = $('button#auditionProjectsButton');
-	var lyricsProjectsButton = $('button#lyricsProjectsButton');
-	var privateProjectsButton = $('button#privateProjectsButton');
+	var publicProjectsButton = $('button.publicProjectsButton');
+	var groupProjectsButton = $('button.groupProjectsButton');
+	var auditionProjectsButton = $('button.auditionProjectsButton');
+	var lyricsProjectButton = $('button.lyricsProjectButton');
+	var privateProjectsButton = $('button.privateProjectsButton');
 
 	var requestingCollabButton = $('button#requestingCollabButton');
 	var collaboratorsButton = $('button#collaboratorsButton');
@@ -44,7 +45,7 @@ $(document).ready(function() {
 	publicProjectsContainer.hide();
 	groupProjectsContainerProjectsPage.hide();
 	auditionProjectsContainer.hide();
-	// lyricsProjectsContainer.hide();
+	lyricsProjectContainer.hide();
 
 	requestingCollabContainer.hide();
 	requestingCollabForm.hide();
@@ -91,15 +92,16 @@ $(document).ready(function() {
 		privateProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
 		groupProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
 		auditionProjectsContainer.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		lyricsProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		lyricsProjectButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
 		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
 		
 		privateProjectsContainer.hide();
 		groupProjectsContainerProjectsPage.hide();
 		auditionProjectsContainer.hide();
-		// lyricsProjectsContainer.hide();
+		lyricsProjectContainer.hide();
 		projectForm.hide();
 		
+		projectsContainers.fadeIn('fast');
 		publicProjectsContainer.fadeIn('fast');
 	});
 
@@ -107,15 +109,16 @@ $(document).ready(function() {
 		privateProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
 		publicProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
 		auditionProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		lyricsProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		lyricsProjectButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
 		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
 		
 		publicProjectsContainer.hide();
 		privateProjectsContainer.hide();
 		auditionProjectsContainer.hide();
-		// lyricsProjectsContainer.hide();
+		lyricsProjectContainer.hide();
 		projectForm.hide();
 		
+		projectsContainers.fadeIn('fast');
 		groupProjectsContainerProjectsPage.fadeIn('fast');
 	});
 
@@ -123,31 +126,28 @@ $(document).ready(function() {
 		privateProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
 		publicProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
 		groupProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		lyricsProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		lyricsProjectButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
 		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
 		
 		publicProjectsContainer.hide();
 		privateProjectsContainer.hide();
 		groupProjectsContainerProjectsPage.hide();
-		// lyricsProjectsContainer.hide();
+		lyricsProjectContainer.hide();
 		projectForm.hide();
 		
+		projectsContainers.fadeIn('fast');
 		auditionProjectsContainer.fadeIn('fast');
 	});
 
-	$(lyricsProjectsButton).on('click', function() {
+	$(lyricsProjectButton).on('click', function() {
 		privateProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
 		publicProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
 		groupProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
 		auditionProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
 		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
 		
-		publicProjectsContainer.hide();
-		auditionProjectsContainer.hide();
-		groupProjectsContainerProjectsPage.hide();
-		privateProjectsContainer.hide();		
-		// lyricsProjectsContainer.fadeIn('fast');
-		projectForm.hide();
+		projectsContainers.hide();		
+		lyricsProjectContainer.fadeIn('fast');
 
 	});
 
@@ -155,15 +155,16 @@ $(document).ready(function() {
 		publicProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
 		groupProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
 		auditionProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		lyricsProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		lyricsProjectButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
 		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
 		
 		publicProjectsContainer.hide();
 		auditionProjectsContainer.hide();
 		groupProjectsContainerProjectsPage.hide();
-		// lyricsProjectsContainer.hide();
+		lyricsProjectContainer.hide();
 		projectForm.hide();
 		
+		projectsContainers.fadeIn('fast');
 		privateProjectsContainer.fadeIn('fast');
 	});
 

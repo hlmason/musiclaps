@@ -823,7 +823,7 @@ section#recording-instructions {
     Profile, New Project, Projects, Collaborations, YouTube, Messages, Groups, and Project Profile Pages
 ====================================================================================================== */
 #avatar-n-edit-profile, #new-project-buttons, 
-#projects-buttons, #collaborations-buttons {
+.projects-nav, #collaborations-buttons {
 	margin-top: 15px;
 }
 
@@ -834,7 +834,7 @@ section#recording-instructions {
 	}
 }
 
-#projects-buttons button.navigate:not(.first-button), 
+.projects-nav button.navigate:not(.first-button), 
 #collaborations-buttons button.navigate:not(.first-button) {
 	margin-left: 10px;
 }
@@ -1148,6 +1148,7 @@ section.projects-container {
 	}
 	&:hover {
 		background-color: #F4F4F4;
+		color: $musiclaps-dark-gray;
 		cursor: pointer;
 	}
 }
@@ -1413,6 +1414,12 @@ section.change-sound-img-container {
 	}
 	input.update-file {
 		float: right;
+	}
+}
+
+.lyrics-container {
+	select {
+		margin-top: 20px;
 	}
 }
 
