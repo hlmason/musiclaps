@@ -3702,10 +3702,9 @@ section.upload-mp3-container ul {
   margin-bottom: 0; }
   section.upload-mp3-container ul li {
     display: inline-block; }
-    section.upload-mp3-container ul li:first-child {
-      font-weight: bold; }
     section.upload-mp3-container ul li.first-list-item {
-      font-size: 14px; }
+      font-size: 14px;
+      font-weight: bold; }
     section.upload-mp3-container ul li:not(.first-list-item) {
       padding-left: 20px; }
 section.upload-mp3-container input#project_title, section.upload-mp3-container input#comment-new-project-page {

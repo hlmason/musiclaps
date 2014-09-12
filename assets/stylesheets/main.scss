@@ -1109,11 +1109,9 @@ section.upload-mp3-container {
 		margin-bottom: 0;
 		li {
 			display: inline-block;	
-			&:first-child {
-				font-weight: bold;
-			}
 			&.first-list-item {
 				font-size: 14px;
+				font-weight: bold;
 			}
 			&:not(.first-list-item) {
 				padding-left: 20px;
