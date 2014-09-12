@@ -21,9 +21,11 @@ $(document).ready(function() {
 
 	$(addFriendButton).on('click', function() {
 		if ( addFriendContainer.is(':hidden') ) {
+			$(this).addClass('white');
 			addFriendContainer.fadeIn('fast');
 		}
 		else if ( addFriendContainer.is(':visible') ) {
+			$(this).removeClass('white');
 			addFriendContainer.fadeOut('fast');
 		}
 	});

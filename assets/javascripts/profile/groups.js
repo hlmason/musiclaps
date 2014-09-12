@@ -13,10 +13,12 @@ $(document).ready(function() {
 
 	$('button#createNewGroupButton').on('click', function() {
 		if ( createNewGroupContainer.is(':hidden') ) {
-		createNewGroupContainer.fadeIn('fast');
+			$(this).addClass('white');
+			createNewGroupContainer.fadeIn('fast');
 		}
 		else if ( createNewGroupContainer.is(':visible') ) {
-		createNewGroupContainer.fadeOut('fast');
+			createNewGroupContainer.fadeOut('fast');
+			$(this).removeClass('white');
 		}
 	});
 

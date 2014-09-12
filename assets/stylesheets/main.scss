@@ -874,10 +874,11 @@ section#recording-instructions {
 
 .projects-nav button.navigate:not(.first-button), 
 #collaborations-buttons button.navigate:not(.first-button) {
-	margin-left: 10px;
+	margin-left: 5px;
 }
 
-button.navigate {
+button.navigate, 
+section#messages-header button, section#groups-header button { // "Add New Friend" and "Create New Group"
 	@include button(#F4F4F4, $musiclaps-dark-gray, 12px, 5px 10px);
 	border: $nav-border;
 }
@@ -889,8 +890,8 @@ button.navigate {
 	}
 }
 
-button.white, .button-navigate-hover-js:hover, .button-navigate-hover-js:focus {
-	background-color: white;
+button.white, .white-button-navigate-hover-js:hover, .white-button-navigate-hover-js:focus {
+	background-color: white !important; // Important tag is necessary for "Add New Friend"
 	color: #428bca !important;
 }
 
@@ -1477,6 +1478,8 @@ section.change-sound-img-container {
 	}
 	table {
 		font-size: 12px;
+		margin-left: 0;
+		width: 98%;
 		thead tr {
 			text-align: left;
 		}
@@ -1530,17 +1533,13 @@ section#messages-header, section#groups-header {
 		margin-bottom: 0;
 		margin-top: 15px;
 	}
-	button { // "Add New Friend" and "Create New Group"
-		@include button(#F4F4F4, $musiclaps-dark-gray, 12px, 5px 10px);
-		&:hover, &:focus {
-			background-color: $musiclaps-dark-gray;
-			color: $musiclaps-blue;
-		}
-	}
 }
 
 section#messages-header {
 	border-bottom: $nav-border;
+	margin-left: 0;
+	padding-left: 5px;
+	width: 98%;
 	a {
 		.glyphicon {
 			color: $musiclaps-dark-gray;
@@ -1549,16 +1548,13 @@ section#messages-header {
 			margin-bottom: 13px;
 			margin-left: 2px;
 		}
-		&:hover, &:focus {
-			color: $musiclaps-dark-gray;
-		}
 	}
 	button, .glyphicon-arrow-up, .glyphicon-refresh {
 		float: right;
 	}
 	button { // "Add New Friend"
 		margin-right: 18px;
-		margin-top: 12px;
+		margin-top: 11px;
 	}
 	.glyphicon-refresh, .glyphicon-arrow-up {
 		margin-top: 17px;
@@ -1593,7 +1589,7 @@ section#messages-header {
 		}
 		img {
 			height: 65px;
-			margin-top: 38px;
+			margin-top: 30px;
 			width: 65px;
 			&:hover {
 				cursor: pointer;
@@ -1822,11 +1818,19 @@ section#public-project-header {
 #share-or-embed-buttons {
 	border-top: $nav-border;
 	button {
+		@include button($musiclaps-light-gray, $musiclaps-dark-gray, 12px, 5px 10px);
+		border: $nav-border;
 		margin-top: 15px;
 	}
 	button:last-child {
 		margin-left: 5px;
 	}
+}
+
+button.musiclaps-dark-gray, .dark-button-navigate-hover-js:hover, .dark-button-navigate-hover-js:focus {
+	background-color: $musiclaps-dark-gray !important; // Important tag is necessary for "Add New Friend"
+	border: 1px solid $musiclaps-dark-gray;
+	color: $musiclaps-blue !important;
 }
 
 .share-to-social-networks-container input, .embed-container textarea {

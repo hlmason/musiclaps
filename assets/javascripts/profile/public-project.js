@@ -8,15 +8,15 @@ $(document).ready(function() {
 	embedContainer.hide();
 
 	$(embedButton).on('click', function() {
-		shareButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		embedButton.addClass('white').addClass('musiclaps-blue');
+		shareButton.removeClass('musiclaps-dark-gray').addClass('dark-button-navigate-hover-js');
+		embedButton.addClass('musiclaps-dark-gray');
 		shareToSocialNetworksContainer.hide();
 		embedContainer.fadeIn('fast');
 	});
 
 	$(shareButton).on('click', function() {
-		embedButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		shareButton.addClass('white').addClass('musiclaps-blue');
+		embedButton.removeClass('musiclaps-dark-gray').addClass('dark-button-navigate-hover-js');
+		shareButton.addClass('musiclaps-dark-gray');
 		embedContainer.hide();
 		shareToSocialNetworksContainer.fadeIn('fast');
 	});

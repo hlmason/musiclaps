@@ -19,7 +19,7 @@
 						<a href="<?php echo BASE_URL; ?>profile/groups.php">
 							<h3>Groups</h3>
 						</a>
-						<button id="createNewGroupButton" type="button">Create New Group</button>
+						<button class="white-button-navigate-hover-js" id="createNewGroupButton" type="button">Create New Group</button>
 					</section>
 
 					<!-- Hidden upon page load -->

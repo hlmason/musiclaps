@@ -3490,9 +3490,10 @@ section#recording-instructions #save-container {
 
 .projects-nav button.navigate:not(.first-button),
 #collaborations-buttons button.navigate:not(.first-button) {
-  margin-left: 10px; }
+  margin-left: 5px; }
 
-button.navigate {
+button.navigate,
+section#messages-header button, section#groups-header button {
   -moz-border-radius: 10px;
   border-radius: 10px;
   background-color: #f4f4f4;
@@ -3508,8 +3509,8 @@ button.navigate {
   #navigate-buttons-public-profile button:not(.first-button) {
     margin-left: 16px; }
 
-button.white, .button-navigate-hover-js:hover, .button-navigate-hover-js:focus {
-  background-color: white;
+button.white, .white-button-navigate-hover-js:hover, .white-button-navigate-hover-js:focus {
+  background-color: white !important;
   color: #428bca !important; }
 
 #avatar-n-edit-profile img.avatar {
@@ -4015,7 +4016,9 @@ section.change-sound-img-container input.update-file {
   margin-bottom: 12px;
   margin-top: 25px; }
 .collaborators-container table {
-  font-size: 12px; }
+  font-size: 12px;
+  margin-left: 0;
+  width: 98%; }
   .collaborators-container table thead tr {
     text-align: left; }
   .collaborators-container table tr {
@@ -4051,33 +4054,22 @@ section#messages-header h3, section#groups-header h3 {
   display: inline-block;
   margin-bottom: 0;
   margin-top: 15px; }
-section#messages-header button, section#groups-header button {
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  background-color: #f4f4f4;
-  border: none;
-  color: #444444;
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  padding: 5px 10px; }
-  section#messages-header button:hover, section#messages-header button:focus, section#groups-header button:hover, section#groups-header button:focus {
-    background-color: #444444;
-    color: #38aaff; }
 
 section#messages-header {
-  border-bottom: 1px solid #cecece; }
+  border-bottom: 1px solid #cecece;
+  margin-left: 0;
+  padding-left: 5px;
+  width: 98%; }
   section#messages-header a .glyphicon {
     color: #444444; }
   section#messages-header a h3 {
     margin-bottom: 13px;
     margin-left: 2px; }
-  section#messages-header a:hover, section#messages-header a:focus {
-    color: #444444; }
   section#messages-header button, section#messages-header .glyphicon-arrow-up, section#messages-header .glyphicon-refresh {
     float: right; }
   section#messages-header button {
     margin-right: 18px;
-    margin-top: 12px; }
+    margin-top: 11px; }
   section#messages-header .glyphicon-refresh, section#messages-header .glyphicon-arrow-up {
     margin-top: 17px; }
   section#messages-header .glyphicon-arrow-up {
@@ -4115,7 +4107,7 @@ section#messages-header {
       margin-left: 38px; }
     .friends-container .username-and-img img {
       height: 65px;
-      margin-top: 38px;
+      margin-top: 30px;
       width: 65px; }
       .friends-container .username-and-img img:hover {
         cursor: pointer; }
@@ -4317,9 +4309,23 @@ section#public-project-header h5 {
 #share-or-embed-buttons {
   border-top: 1px solid #cecece; }
   #share-or-embed-buttons button {
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+    border: none;
+    color: #444444;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    padding: 5px 10px;
+    border: 1px solid #cecece;
     margin-top: 15px; }
   #share-or-embed-buttons button:last-child {
     margin-left: 5px; }
+
+button.musiclaps-dark-gray, .dark-button-navigate-hover-js:hover, .dark-button-navigate-hover-js:focus {
+  background-color: #444444 !important;
+  border: 1px solid #444444;
+  color: #38aaff !important; }
 
 .share-to-social-networks-container input, .embed-container textarea {
   margin-top: 10px; }

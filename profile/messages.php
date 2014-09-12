@@ -26,7 +26,7 @@
 						<a href="#">
 							<span class="glyphicon glyphicon-arrow-up"></span>
 						</a>
-						<button type="button" id="addFriendButton">Add New Friend</button>
+						<button class="white-button-navigate-hover-js" type="button" id="addFriendButton">Add New Friend</button>
 					</section>
 
 					<!-- Hidden upon page load -->

@@ -14,15 +14,15 @@ $(document).ready(function() {
 	addPartToGroup.hide();
 
 	$(uploadMP3Button).on('click', function() {
-		recordingPlayerButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		uploadMP3Button.addClass('white').addClass('musiclaps-blue');
+		recordingPlayerButton.removeClass('white').addClass('white-button-navigate-hover-js');
+		uploadMP3Button.addClass('white');
 		recordingPlayer.hide();
 		uploadMP3Container.fadeIn('fast');
 	});
 
 	$(recordingPlayerButton).on('click', function() {
-		uploadMP3Button.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		recordingPlayerButton.addClass('white').addClass('musiclaps-blue');
+		uploadMP3Button.removeClass('white').addClass('white-button-navigate-hover-js');
+		recordingPlayerButton.addClass('white');
 		uploadMP3Container.hide();
 		recordingPlayer.fadeIn('fast');
 	});
