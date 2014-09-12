@@ -2,10 +2,10 @@
 		<div class="container">
 			
 			<nav class="row col-lg-10 col-lg-offset-1">
-				<ul class="nav navbar-nav" id="nav-registered-user">
-					<li class="first-list-item"><a class="<?php if ($page == "Profile") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/">Profile</a></li>
+				<ul class="nav navbar-nav" id="nav-logged-in">
+					<li class="first-list-item"><a class="<?php if ($page == "My Profile") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/">My Profile</a></li>
 					<li><a class="<?php if ($page == "New Project") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/new-project.php">New Project</a></li>
-					<li><a class="<?php if ($page == "Projects") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/projects.php">Projects</a></li>
+					<li><a class="<?php if ($page == "My Projects") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/projects.php">My Projects</a></li>
 					<li><a class="<?php if ($page == "Collaborations") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/collaborations.php">Collaborations</a></li>
 					<li><a class="<?php if ($page == "YouTube") { echo "active"; } ?>" href="#">YouTube</a></li>
 					<li><a class="<?php if ($page == "Messages") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/messages.php">Messages</a></li>

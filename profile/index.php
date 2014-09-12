@@ -2,7 +2,7 @@
 	require_once('../include/config.php');
 
 	$pageTitle = 'My Profile';
-	$page = 'Profile';
+	$page = 'My Profile';
 	
 	include(ROOT_PATH . 'include/header-logged-in.php');
 	include(ROOT_PATH . 'include/db-connection.php');
@@ -13,7 +13,7 @@
 		
 			<div class="row col-lg-10 col-lg-offset-1">				
 					
-				<div class="row col-xs-12 col-sm-9">
+				<div class="row col-xs-12 col-sm-8">
 
 					<div class="row" id="avatar-n-edit-profile">	
 						<div class="col-xs-4 col-sm-3">
@@ -46,7 +46,7 @@
 							</ul>
 							<ul class="second-ul-profile-page">
 								<li class="profile-page"><span class="glyphicon glyphicon-globe"></span>&nbsp; $city, $state, $country</li><!-- Hard-coded placeholder -->
-							</ul>	
+							</ul>
 						</div>
 						<div class="col-sm-1"></div>
 					</div>
@@ -247,7 +247,7 @@
 					<!-- End of "My Profile" -->
 
 				</div>		
-				<div class="row col-xs-12 col-sm-3">
+				<div class="row col-xs-12 col-sm-4">
 					<section class="profile-right profile-page">
 						
 						<div class="row first-row">

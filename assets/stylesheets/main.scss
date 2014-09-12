@@ -336,7 +336,7 @@ nav {
 }
 
 
-nav:not(#nav-registered-user) .nav li { // Not logged in nav
+nav:not(#nav-logged-in) .nav li { // Not logged in nav
 	margin-top: 23px;		
 }
 
@@ -355,12 +355,12 @@ nav:not(#nav-registered-user) .nav li { // Not logged in nav
 		}
 	}
 
-	ul#nav-registered-user { // Nav below top nav
+	ul#nav-logged-in { // Nav below top nav
 		li {
 			border-bottom: $nav-border;
 		}
 		li:not(.first-list-item) { // "Profile"
-			padding-left: 2px;
+			padding-left: 5px;
 		}
 		a {
 			border-left: $nav-border;
@@ -969,6 +969,7 @@ section.my-public-projects-listing {
 	}
 	h4, h5 {
 		display: inline-block;
+		margin-left: 10px;
 		margin-top: 7px;
 	}
 	h5 {
@@ -1007,7 +1008,7 @@ form.profile-page {
 		margin-left: 5px;
 	}
 	input#zip {
-		@include form-fields-input(190px);
+		@include form-fields-input(151px);
 	}
 	input#website_url, input#website_title, textarea, input#change_username {
 		@include form-fields-input(100%);
@@ -1066,7 +1067,7 @@ input.change-password, #choose-avatar-container input, section#choose-project-im
 	@include form-fields-input(12px);
 	overflow-y: scroll;
 	padding-top: 2px;
-	width: 300px;
+	width: 261px;
 	span {
 		display: block; // Makes options stack
 	}
@@ -1863,9 +1864,8 @@ section#comment-container {
 }
 
 section.profile-right { // Profile and New Project Pages
-	// background-color: $musiclaps-light-gray;
 	border: $nav-border;
-	width: 137.5%;
+	margin-top: 20px !important; // Need important tag for Firefox
 	h4 {
 		margin-bottom: 5px;
 	}
@@ -1877,7 +1877,7 @@ section.profile-right { // Profile and New Project Pages
 }
 
 section.profile-right.profile-page { // Profile Page
-	height: 1010px;
+	height: 1027px;
 	.row {
 		margin-left: 15px;
 		width: 90%;
@@ -2024,11 +2024,21 @@ footer {
 =================================== */
 @media only screen and (max-width: 1199px) {
 // Breakpoint of slider buttons (Landing Page) and gray boxes (Profile Page)
+	ul#nav-logged-in { // Nav below top nav
+		li:not(.first-list-item) { // "Profile"
+			padding-left: 8px;
+		}
+	}
 	.wmuSliderPrev { left: 0; }
 	.wmuSliderNext { right: 0; }
-	section.profile-right { 
-		margin-top: -1px; 
-		width: 136.75%; 
+	form.profile-page {
+		input.change-password {
+			margin-top: 30px;
+			margin-left: 0;
+		}
+	}
+	section.profile-right.profile-page { // Profile Page
+		height: 1460px;
 	}
 }
 
@@ -2106,7 +2116,6 @@ footer {
 	section#technology, section#backstage, section.music-ed, section.contests-and-auditions {
 		img { display: none; }
 	}
-	section.profile-right { width: 150%; }
 	footer {
 		.navbar-brand { position: absolute; } 
 		.navbar-left, .navbar-right { margin-top: 50px; }
@@ -2184,10 +2193,6 @@ footer {
 			float: none !important;
 			margin-top: 8px;
 		}
-	}
-	section.profile-right { 
-		margin-top: 20px; 
-		width: 100%; 
 	}
 }
 

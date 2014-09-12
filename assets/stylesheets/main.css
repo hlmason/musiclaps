@@ -3041,7 +3041,7 @@ nav ul.navbar-right#logged-out li {
     nav ul.navbar-right#logged-out li:last-child a {
       color: white !important; }
 
-nav:not(#nav-registered-user) .nav li {
+nav:not(#nav-logged-in) .nav li {
   margin-top: 23px; }
 
 /* ===================================
@@ -3056,11 +3056,11 @@ ul.navbar-right #welcome-user {
     ul.navbar-right #welcome-user a:hover, ul.navbar-right #welcome-user a:focus {
       color: #444444 !important; }
 
-ul#nav-registered-user li {
+ul#nav-logged-in li {
   border-bottom: 1px solid #cecece; }
-ul#nav-registered-user li:not(.first-list-item) {
-  padding-left: 2px; }
-ul#nav-registered-user a {
+ul#nav-logged-in li:not(.first-list-item) {
+  padding-left: 5px; }
+ul#nav-logged-in a {
   border-left: 1px solid #cecece;
   border-right: 1px solid #cecece;
   border-top: 1px solid #cecece;
@@ -3069,14 +3069,14 @@ ul#nav-registered-user a {
   -moz-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
   text-transform: capitalize; }
-  ul#nav-registered-user a.active {
+  ul#nav-logged-in a.active {
     color: #428bca !important; }
-  ul#nav-registered-user a:hover, ul#nav-registered-user a:focus {
+  ul#nav-logged-in a:hover, ul#nav-logged-in a:focus {
     background-color: #e7e7e7;
     color: #2a6496 !important; }
-  ul#nav-registered-user a:not(.active) {
+  ul#nav-logged-in a:not(.active) {
     background-color: #f4f4f4; }
-    ul#nav-registered-user a:not(.active):hover, ul#nav-registered-user a:not(.active):focus {
+    ul#nav-logged-in a:not(.active):hover, ul#nav-logged-in a:not(.active):focus {
       background-color: white;
       color: #428bca !important; }
 
@@ -3567,6 +3567,7 @@ section.my-public-projects-listing img {
   height: 60px; }
 section.my-public-projects-listing h4, section.my-public-projects-listing h5 {
   display: inline-block;
+  margin-left: 10px;
   margin-top: 7px; }
 section.my-public-projects-listing h5 {
   font-weight: normal; }
@@ -3599,7 +3600,7 @@ form.profile-page input#zip {
   padding-bottom: 3px;
   padding-left: 8px;
   padding-top: 3px;
-  width: 190px; }
+  width: 151px; }
 form.profile-page input#website_url, form.profile-page input#website_title, form.profile-page textarea, form.profile-page input#change_username {
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -3666,7 +3667,7 @@ input.change-password, #choose-avatar-container input, section#choose-project-im
   width: 12px;
   overflow-y: scroll;
   padding-top: 2px;
-  width: 300px; }
+  width: 261px; }
   #genre-form-profile span, #skills span, #instruments span, #genre-form-projects span {
     display: block; }
 
@@ -4366,7 +4367,7 @@ section#comment-container input {
 
 section.profile-right {
   border: 1px solid #cecece;
-  width: 137.5%; }
+  margin-top: 20px !important; }
   section.profile-right h4 {
     margin-bottom: 5px; }
   section.profile-right h5 {
@@ -4375,7 +4376,7 @@ section.profile-right {
     margin-top: 3px; }
 
 section.profile-right.profile-page {
-  height: 1010px; }
+  height: 1027px; }
   section.profile-right.profile-page .row {
     margin-left: 15px;
     width: 90%; }
@@ -4496,15 +4497,21 @@ footer {
     Media Queries
 =================================== */
 @media only screen and (max-width: 1199px) {
+  ul#nav-logged-in li:not(.first-list-item) {
+    padding-left: 8px; }
+
   .wmuSliderPrev {
     left: 0; }
 
   .wmuSliderNext {
     right: 0; }
 
-  section.profile-right {
-    margin-top: -1px;
-    width: 136.75%; } }
+  form.profile-page input.change-password {
+    margin-top: 30px;
+    margin-left: 0; }
+
+  section.profile-right.profile-page {
+    height: 1460px; } }
 @media only screen and (max-width: 1090px) {
   #about-me {
     border: none; } }
@@ -4560,9 +4567,6 @@ footer {
 
   section#technology img, section#backstage img, section.music-ed img, section.contests-and-auditions img {
     display: none; }
-
-  section.profile-right {
-    width: 150%; }
 
   footer .navbar-brand {
     position: absolute; }
@@ -4650,11 +4654,7 @@ footer {
     #about-me li.profile-page {
       display: block;
       float: none !important;
-      margin-top: 8px; }
-
-  section.profile-right {
-    margin-top: 20px;
-    width: 100%; } }
+      margin-top: 8px; } }
 @media only screen and (max-width: 590px) {
   h1.landing-page {
     font-size: 20px; } }
