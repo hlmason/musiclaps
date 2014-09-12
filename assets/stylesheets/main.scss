@@ -1104,11 +1104,14 @@ section.upload-mp3-container {
 	ul, #choose-mp3-file-container {
 		border-bottom: $nav-border;
 		padding-bottom: 10px;
+		padding-left: 0;
 	}
 	ul {
 		margin-bottom: 0;
+		margin-left: 0;
+		width: 98%;
 		li {
-			display: inline-block;	
+			display: inline-block;
 			&.first-list-item {
 				font-size: 14px;
 				font-weight: bold;
@@ -1155,10 +1158,11 @@ section.upload-mp3-container {
 
 section.projects-container {
 	border: $nav-border;
+	margin-left: 0;
 	margin-top: 13px;
 	padding-bottom: 10px;
 	padding-top: 10px;
-	width: 100%;
+	width: 98%;
 	.glyphicon-pencil-container {
 		@include border-radius(100%);
 		background-color: white;

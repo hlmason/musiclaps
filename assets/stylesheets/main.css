@@ -3697,9 +3697,12 @@ section.upload-mp3-container h5, section.upload-mp3-container li {
   font-size: 12px; }
 section.upload-mp3-container ul, section.upload-mp3-container #choose-mp3-file-container {
   border-bottom: 1px solid #cecece;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  padding-left: 0; }
 section.upload-mp3-container ul {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-left: 0;
+  width: 98%; }
   section.upload-mp3-container ul li {
     display: inline-block; }
     section.upload-mp3-container ul li.first-list-item {
@@ -3745,10 +3748,11 @@ section.upload-mp3-container #upload-project-container {
 
 section.projects-container {
   border: 1px solid #cecece;
+  margin-left: 0;
   margin-top: 13px;
   padding-bottom: 10px;
   padding-top: 10px;
-  width: 100%; }
+  width: 98%; }
   section.projects-container .glyphicon-pencil-container {
     -moz-border-radius: 100%;
     border-radius: 100%;

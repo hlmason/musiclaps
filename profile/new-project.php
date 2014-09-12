@@ -136,7 +136,7 @@
 								<input id="comment-new-project-page" type="text" name="comment-new-project-page">
 							</div>
 
-							<section class="newProject" id="choose-project-img-container">
+							<section class="row col-xs-12 newProject" id="choose-project-img-container">
 								<div class="row">
 									<div class="col-xs-4">	
 										<h4>Project Image</h4>
@@ -150,7 +150,7 @@
 								</div>
 							</section>
 
-							<div class="row" id="choose-mp3-file-container">
+							<div class="row col-xs-12" id="choose-mp3-file-container">
 								<div class="col-xs-4">	
 									<h4>MP3 File</h4>
 								</div>
