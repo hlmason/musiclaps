@@ -15,12 +15,12 @@
 					
 				<div class="row col-xs-12 col-sm-9">
 
-<!-- 					<div class="row" id="new-project-buttons">	
+					<div class="row" id="new-project-buttons">	
 						<div class="col-xs-12">
 							<button class="navigate musiclaps-dark-gray musiclaps-blue" id="recordingPlayerButton" type="button">Recording Player</button>
 							<button class="navigate button-navigate-hover-js" id="uploadMP3Button" type="button">Upload MP3</button>
 						</div>
-					</div> -->
+					</div>
 					
 					<!-- "Recording Player" -->
 					<div class="row" id="recordingPlayer">

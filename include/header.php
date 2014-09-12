@@ -61,7 +61,6 @@
 						</div>
 					</li>
 					<li>
-					<div class="dropdown">
 						<div class="dropdown">
 							<a class="dropdown-toggle" id="peopleDropdownMenu" data-toggle="dropdown">People
 								<span class="caret"></span>
