@@ -241,6 +241,9 @@ nav {
 	ul {
 		&.nav {
 			margin-top: 6px; // Required for Bootstrap dropdown menus
+			li { // Also controls nav below top nav
+				margin-top: 23px;		
+			}
 			.open > a { // When "Music", "People", or "Our Story" is active
 				background-color: $musiclaps-light-gray !important;
 			}
@@ -335,13 +338,8 @@ nav {
 	// }
 }
 
-
-nav:not(#nav-logged-in) .nav li { // Not logged in nav
-	margin-top: 23px;		
-}
-
 	/* ===================================
-	    Logged in Nav
+	    Secondary Nav
 	=================================== */
 	ul.navbar-right #welcome-user {
 		margin-right: 10px;
@@ -355,15 +353,12 @@ nav:not(#nav-logged-in) .nav li { // Not logged in nav
 		}
 	}
 
-	ul#nav-logged-in { // Nav below top nav
+	ul#nav-logged-in, ul#nav-logged-out { // Nav below top nav
 		li {
 			border-bottom: $nav-border;
 		}
 		li:not(.first-list-item) { // "Profile"
 			padding-left: 5px;
-		}
-		li#second-list-item, li#last-list-item {
-			padding-left: 4px;
 		}
 		a {
 			border-left: $nav-border;
@@ -386,6 +381,12 @@ nav:not(#nav-logged-in) .nav li { // Not logged in nav
 					color: #428bca !important; // Same as active
 				}
 			}
+		}
+	}
+
+	ul#nav-logged-in li {
+		&#second-list-item, &#last-list-item {
+			padding-left: 4px;
 		}
 	}
 
@@ -883,13 +884,6 @@ section#messages-header button, section#groups-header button { // "Add New Frien
 	border: $nav-border;
 }
 
-#navigate-buttons-public-profile button {
-	text-transform: uppercase;
-	&:not(.first-button) {
-		margin-left: 16px;
-	}
-}
-
 button.white, .white-button-navigate-hover-js:hover, .white-button-navigate-hover-js:focus {
 	background-color: white !important; // Important tag is necessary for "Add New Friend"
 	color: #428bca !important;
@@ -951,6 +945,33 @@ button.white, .white-button-navigate-hover-js:hover, .white-button-navigate-hove
 	}
 }
 
+#my-public-projects-container {
+	padding-right: 0;
+	section.my-public-projects-listing {
+		border: $nav-border;
+		margin-left: 15px;
+		padding-right: 0;
+		width: 47%;
+		img {
+			min-width: 100px;
+			min-height: 60px;
+			padding-bottom: 15px;
+			padding-top: 15px;
+		}
+		h4, h5 {
+			display: inline-block;
+			margin-left: 11px;
+		}
+		h4 {
+			margin-bottom: 0;
+			margin-top: 17px;
+		}
+		h5 {
+			margin-top: 7px;
+		}
+	}
+}
+
 h4.my-public-projects-heading {
 	margin-bottom: 9px;
 	span {
@@ -960,30 +981,6 @@ h4.my-public-projects-heading {
 
 h4.my-public-projects-heading.public-profile-page {
 	margin-bottom: 0;
-}
-
-section.my-public-projects-listing {
-	border: $nav-border;
-	margin-left: 15px;
-	padding-right: 0;
-	width: 47%;
-	img {
-		min-width: 100px;
-		min-height: 60px;
-		padding-bottom: 15px;
-		padding-top: 15px;
-	}
-	h4, h5 {
-		display: inline-block;
-		margin-left: 11px;
-	}
-	h4 {
-		margin-bottom: 0;
-		margin-top: 17px;
-	}
-	h5 {
-		margin-top: 7px;
-	}
 }
 
 section.my-public-projects-listing, section.projects-container.public-profile-page {
@@ -1589,6 +1586,7 @@ section#messages-header {
 		}
 		img {
 			height: 65px;
+			padding-left: 0;
 			margin-top: 30px;
 			width: 65px;
 			&:hover {
@@ -1652,6 +1650,8 @@ section#groups-header {
 
 section.create-new-group-container, section.groups-container {
 	border: $nav-border;
+	margin-left: 0;
+	width: 98%;
 }
 
 section.create-new-group-container {
@@ -1697,7 +1697,7 @@ section.create-new-group-container {
 
 section.groups-container {
 	@include border-radius (5px);
-	margin-top: 30px;
+	margin-top: 15px;
 	h4:first-child { // "Group Name"
 		font-size: 14px;
 		margin-top: 15px;
@@ -1715,6 +1715,7 @@ section.groups-container {
 		margin-bottom: 15px;
 	}
 	section.projects-container-groups-page {
+		margin-top: 5px;
 		h4 {
 			margin-bottom: 3px;
 			margin-top: 0;
@@ -1722,9 +1723,6 @@ section.groups-container {
 		h5 {
 			font-size: 12px;
 		}
-		margin-left: 0;
-		margin-right: 0;
-		margin-top: 5px;
 	}
 }
 
@@ -1878,9 +1876,8 @@ section#comment-container {
 	}
 }
 
-section.profile-right { // Profile and New Project Pages
+section.profile-right {
 	border: $nav-border;
-	margin-top: 20px !important; // Need important tag for Firefox
 	h4 {
 		margin-bottom: 5px;
 	}
@@ -1891,7 +1888,11 @@ section.profile-right { // Profile and New Project Pages
 	}
 }
 
-section.profile-right.profile-page { // Profile Page
+section.profile-right:not(.public-profile-page) {
+	margin-top: 15px !important; // Need important tag for Firefox
+}
+
+section.profile-right.profile-page { // Profile Page only
 	height: 1010px;
 	.row {
 		margin-left: 15px;
@@ -1917,6 +1918,10 @@ section.profile-right.profile-page { // Profile Page
 		height: 160px;
 		width: 100%;
 	}
+}
+
+section.profile-right.profile-page.public-profile-page {
+	margin-top: -28px;
 }
 
 section.profile-right.recommended {
@@ -2056,7 +2061,7 @@ footer {
 		}
 	}
 	section.profile-right.profile-page { // Profile Page
-		height: 1340px;
+		height: 1346px;
 	}
 }
 

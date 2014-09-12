@@ -2964,6 +2964,8 @@ nav .navbar-header {
     width: 155px; }
 nav ul.nav {
   margin-top: 6px; }
+  nav ul.nav li {
+    margin-top: 23px; }
   nav ul.nav .open > a {
     background-color: #e7e7e7 !important; }
   nav ul.nav a {
@@ -3041,11 +3043,8 @@ nav ul.navbar-right#logged-out li {
     nav ul.navbar-right#logged-out li:last-child a {
       color: white !important; }
 
-nav:not(#nav-logged-in) .nav li {
-  margin-top: 23px; }
-
 /* ===================================
-    Logged in Nav
+    Secondary Nav
 =================================== */
 ul.navbar-right #welcome-user {
   margin-right: 10px;
@@ -3056,13 +3055,11 @@ ul.navbar-right #welcome-user {
     ul.navbar-right #welcome-user a:hover, ul.navbar-right #welcome-user a:focus {
       color: #444444 !important; }
 
-ul#nav-logged-in li {
+ul#nav-logged-in li, ul#nav-logged-out li {
   border-bottom: 1px solid #cecece; }
-ul#nav-logged-in li:not(.first-list-item) {
+ul#nav-logged-in li:not(.first-list-item), ul#nav-logged-out li:not(.first-list-item) {
   padding-left: 5px; }
-ul#nav-logged-in li#second-list-item, ul#nav-logged-in li#last-list-item {
-  padding-left: 4px; }
-ul#nav-logged-in a {
+ul#nav-logged-in a, ul#nav-logged-out a {
   border-left: 1px solid #cecece;
   border-right: 1px solid #cecece;
   border-top: 1px solid #cecece;
@@ -3071,16 +3068,19 @@ ul#nav-logged-in a {
   -moz-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
   text-transform: capitalize; }
-  ul#nav-logged-in a.active {
+  ul#nav-logged-in a.active, ul#nav-logged-out a.active {
     color: #428bca !important; }
-  ul#nav-logged-in a:hover, ul#nav-logged-in a:focus {
+  ul#nav-logged-in a:hover, ul#nav-logged-in a:focus, ul#nav-logged-out a:hover, ul#nav-logged-out a:focus {
     background-color: #e7e7e7;
     color: #2a6496 !important; }
-  ul#nav-logged-in a:not(.active) {
+  ul#nav-logged-in a:not(.active), ul#nav-logged-out a:not(.active) {
     background-color: #f4f4f4; }
-    ul#nav-logged-in a:not(.active):hover, ul#nav-logged-in a:not(.active):focus {
+    ul#nav-logged-in a:not(.active):hover, ul#nav-logged-in a:not(.active):focus, ul#nav-logged-out a:not(.active):hover, ul#nav-logged-out a:not(.active):focus {
       background-color: white;
       color: #428bca !important; }
+
+ul#nav-logged-in li#second-list-item, ul#nav-logged-in li#last-list-item {
+  padding-left: 4px; }
 
 /* ===================================
     Modal
@@ -3504,11 +3504,6 @@ section#messages-header button, section#groups-header button {
   padding: 5px 10px;
   border: 1px solid #cecece; }
 
-#navigate-buttons-public-profile button {
-  text-transform: uppercase; }
-  #navigate-buttons-public-profile button:not(.first-button) {
-    margin-left: 16px; }
-
 button.white, .white-button-navigate-hover-js:hover, .white-button-navigate-hover-js:focus {
   background-color: white !important;
   color: #428bca !important; }
@@ -3557,6 +3552,27 @@ button.white, .white-button-navigate-hover-js:hover, .white-button-navigate-hove
   #about-me li#glyphicon-home {
     float: right; }
 
+#my-public-projects-container {
+  padding-right: 0; }
+  #my-public-projects-container section.my-public-projects-listing {
+    border: 1px solid #cecece;
+    margin-left: 15px;
+    padding-right: 0;
+    width: 47%; }
+    #my-public-projects-container section.my-public-projects-listing img {
+      min-width: 100px;
+      min-height: 60px;
+      padding-bottom: 15px;
+      padding-top: 15px; }
+    #my-public-projects-container section.my-public-projects-listing h4, #my-public-projects-container section.my-public-projects-listing h5 {
+      display: inline-block;
+      margin-left: 11px; }
+    #my-public-projects-container section.my-public-projects-listing h4 {
+      margin-bottom: 0;
+      margin-top: 17px; }
+    #my-public-projects-container section.my-public-projects-listing h5 {
+      margin-top: 7px; }
+
 h4.my-public-projects-heading {
   margin-bottom: 9px; }
   h4.my-public-projects-heading span {
@@ -3564,25 +3580,6 @@ h4.my-public-projects-heading {
 
 h4.my-public-projects-heading.public-profile-page {
   margin-bottom: 0; }
-
-section.my-public-projects-listing {
-  border: 1px solid #cecece;
-  margin-left: 15px;
-  padding-right: 0;
-  width: 47%; }
-  section.my-public-projects-listing img {
-    min-width: 100px;
-    min-height: 60px;
-    padding-bottom: 15px;
-    padding-top: 15px; }
-  section.my-public-projects-listing h4, section.my-public-projects-listing h5 {
-    display: inline-block;
-    margin-left: 11px; }
-  section.my-public-projects-listing h4 {
-    margin-bottom: 0;
-    margin-top: 17px; }
-  section.my-public-projects-listing h5 {
-    margin-top: 7px; }
 
 section.my-public-projects-listing h5, section.projects-container.public-profile-page h5 {
   font-weight: normal; }
@@ -4107,6 +4104,7 @@ section#messages-header {
       margin-left: 38px; }
     .friends-container .username-and-img img {
       height: 65px;
+      padding-left: 0;
       margin-top: 30px;
       width: 65px; }
       .friends-container .username-and-img img:hover {
@@ -4163,7 +4161,9 @@ section#groups-header button {
   margin-top: 15px; }
 
 section.create-new-group-container, section.groups-container {
-  border: 1px solid #cecece; }
+  border: 1px solid #cecece;
+  margin-left: 0;
+  width: 98%; }
 
 section.create-new-group-container {
   margin-top: 15px;
@@ -4223,7 +4223,7 @@ section.create-new-group-container {
 section.groups-container {
   -moz-border-radius: 5px;
   border-radius: 5px;
-  margin-top: 30px; }
+  margin-top: 15px; }
   section.groups-container h4:first-child {
     font-size: 14px;
     margin-top: 15px; }
@@ -4236,8 +4236,6 @@ section.groups-container {
   section.groups-container h4:last-child {
     margin-bottom: 15px; }
   section.groups-container section.projects-container-groups-page {
-    margin-left: 0;
-    margin-right: 0;
     margin-top: 5px; }
     section.groups-container section.projects-container-groups-page h4 {
       margin-bottom: 3px;
@@ -4385,14 +4383,16 @@ section#comment-container input {
     background-color: #45b7ff; }
 
 section.profile-right {
-  border: 1px solid #cecece;
-  margin-top: 20px !important; }
+  border: 1px solid #cecece; }
   section.profile-right h4 {
     margin-bottom: 5px; }
   section.profile-right h5 {
     font-weight: normal;
     margin-bottom: 10px;
     margin-top: 3px; }
+
+section.profile-right:not(.public-profile-page) {
+  margin-top: 15px !important; }
 
 section.profile-right.profile-page {
   height: 1010px; }
@@ -4413,6 +4413,9 @@ section.profile-right.profile-page {
     background-color: lightblue;
     height: 160px;
     width: 100%; }
+
+section.profile-right.profile-page.public-profile-page {
+  margin-top: -28px; }
 
 section.profile-right.recommended {
   height: 844px; }
@@ -4532,7 +4535,7 @@ footer {
     margin-left: 0; }
 
   section.profile-right.profile-page {
-    height: 1340px; } }
+    height: 1346px; } }
 @media only screen and (max-width: 1090px) {
   #about-me {
     border: none; } }

@@ -22,7 +22,7 @@
 						<div class="col-xs-8 col-sm-4">
 							<h2 id="user-id">$userid</h2><!-- Hard-coded placeholder -->
 						</div>
-						<div class="col-xs-8 col-sm-5" id="edit-save-profile">
+						<div class="col-xs-8 col-sm-5" id="edit-save-profile"><!-- profile/public-profile.php does not contain this part because it does not contain the form -->
 							<a>
 								<h4 class="edit-profile" id="editProfile"><span class="glyphicon glyphicon-edit"></span>&nbsp; Edit Profile</h4>
 							</a>
@@ -51,45 +51,11 @@
 						<div class="col-sm-1"></div>
 					</div>
 
-					<!-- "My Public Projects" -->
-					<section id="myPublicProjects">
-						<div class="row col-xs-12">
-							
-							<h4 class="my-public-projects-heading">My Public Projects <span class="normal">($number)</span></h4><!-- Hard-coded placeholder -->
+					<?php
+						include(ROOT_PATH . 'include/profile/my-public-projects.php');
+					?>
 
-							<div class="row col-xs-12">
-								
-								<div class="row">
-									<section class="col-xs-12 col-sm-6 my-public-projects-listing">
-										<div class="row col-xs-6">
-											<a href="<?php echo BASE_URL; ?>profile/public-project.php"><img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"></a><!-- Hard-coded placeholder -->
-										</div>
-										<div class="row col-xs-6">
-											<a href="<?php echo BASE_URL; ?>profile/public-project.php"><h4>$project title</h4></a><!-- Hard-coded placeholder -->
-											<h5>$#### Plays</h5><!-- Hard-coded placeholder -->
-										</div>
-									</section>
-
-									<section class="col-xs-12 col-sm-6 my-public-projects-listing">
-										<div class="row col-xs-6">
-											<a href="<?php echo BASE_URL; ?>profile/public-project.php"><img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"></a><!-- Hard-coded placeholder -->
-										</div>
-										<div class="row col-xs-6">
-											<a href="<?php echo BASE_URL; ?>profile/public-project.php"><h4>$project title</h4></a><!-- Hard-coded placeholder -->
-											<h5>$#### Plays</h5><!-- Hard-coded placeholder -->
-										</div>
-									</section>
-
-								</div>
-							
-							</div>
-
-						</div>
-					</section>
-					<!-- End of "My Public Projects" -->
-
-
-					<!-- "My Profile" -->
+					<!-- "My Profile" --> <!-- profile/public-profile.php does not contain this section -->
 					<section id="myProfile">
 						<div class="row col-xs-12">
 
