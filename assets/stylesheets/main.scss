@@ -951,6 +951,7 @@ button.white, .button-navigate-hover-js:hover, .button-navigate-hover-js:focus {
 }
 
 h4.my-public-projects-heading {
+	margin-bottom: 9px;
 	span {
 		margin-left: 2px;
 	}
@@ -961,33 +962,43 @@ h4.my-public-projects-heading.public-profile-page {
 }
 
 section.my-public-projects-listing {
+	border: $nav-border;
+	margin-left: 15px;
+	padding-right: 0;
+	width: 47%;
 	img {
 		min-width: 100px;
-		height: 60px;
+		min-height: 60px;
+		padding-bottom: 15px;
+		padding-top: 15px;
 	}
 	h4, h5 {
 		display: inline-block;
-		margin-left: 10px;
-		margin-top: 7px;
+		margin-left: 11px;
+	}
+	h4 {
+		margin-bottom: 0;
+		margin-top: 17px;
 	}
 	h5 {
-		font-weight: normal;
+		margin-top: 7px;
 	}
 }
 
 section.my-public-projects-listing, section.projects-container.public-profile-page {
-	h4 {
-		margin-bottom: 3px;
-	}
 	h5 {
 		font-weight: normal;
-		margin-bottom: 1px;
-		margin-top: 0;
 	}
 }
 
-section.projects-container.public-profile-page h4 {
-	margin-top: 10px;
+section.projects-container.public-profile-page { 
+	h4 {
+		margin-bottom: 3px;
+		margin-top: 10px;
+	}
+	h5 {
+		margin-bottom: 1px;
+	}
 }
 
 h4#my-profile {

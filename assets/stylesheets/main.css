@@ -3556,31 +3556,41 @@ button.white, .button-navigate-hover-js:hover, .button-navigate-hover-js:focus {
   #about-me li#glyphicon-home {
     float: right; }
 
-h4.my-public-projects-heading span {
-  margin-left: 2px; }
+h4.my-public-projects-heading {
+  margin-bottom: 9px; }
+  h4.my-public-projects-heading span {
+    margin-left: 2px; }
 
 h4.my-public-projects-heading.public-profile-page {
   margin-bottom: 0; }
 
-section.my-public-projects-listing img {
-  min-width: 100px;
-  height: 60px; }
-section.my-public-projects-listing h4, section.my-public-projects-listing h5 {
-  display: inline-block;
-  margin-left: 10px;
-  margin-top: 7px; }
-section.my-public-projects-listing h5 {
+section.my-public-projects-listing {
+  border: 1px solid #cecece;
+  margin-left: 15px;
+  padding-right: 0;
+  width: 47%; }
+  section.my-public-projects-listing img {
+    min-width: 100px;
+    min-height: 60px;
+    padding-bottom: 15px;
+    padding-top: 15px; }
+  section.my-public-projects-listing h4, section.my-public-projects-listing h5 {
+    display: inline-block;
+    margin-left: 11px; }
+  section.my-public-projects-listing h4 {
+    margin-bottom: 0;
+    margin-top: 17px; }
+  section.my-public-projects-listing h5 {
+    margin-top: 7px; }
+
+section.my-public-projects-listing h5, section.projects-container.public-profile-page h5 {
   font-weight: normal; }
 
-section.my-public-projects-listing h4, section.projects-container.public-profile-page h4 {
-  margin-bottom: 3px; }
-section.my-public-projects-listing h5, section.projects-container.public-profile-page h5 {
-  font-weight: normal;
-  margin-bottom: 1px;
-  margin-top: 0; }
-
 section.projects-container.public-profile-page h4 {
+  margin-bottom: 3px;
   margin-top: 10px; }
+section.projects-container.public-profile-page h5 {
+  margin-bottom: 1px; }
 
 h4#my-profile {
   margin-bottom: 2px; }
