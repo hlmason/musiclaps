@@ -362,6 +362,9 @@ nav:not(#nav-logged-in) .nav li { // Not logged in nav
 		li:not(.first-list-item) { // "Profile"
 			padding-left: 5px;
 		}
+		li#last-list-item, li#middle-list-item {
+			padding-left: 4px;
+		}
 		a {
 			border-left: $nav-border;
 			border-right: $nav-border;
@@ -1877,7 +1880,7 @@ section.profile-right { // Profile and New Project Pages
 }
 
 section.profile-right.profile-page { // Profile Page
-	height: 1027px;
+	height: 1010px;
 	.row {
 		margin-left: 15px;
 		width: 90%;
@@ -2038,7 +2041,7 @@ footer {
 		}
 	}
 	section.profile-right.profile-page { // Profile Page
-		height: 1460px;
+		height: 1340px;
 	}
 }
 
