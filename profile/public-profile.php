@@ -13,7 +13,7 @@
 		<div class="container">
 			
 			<div class="row col-xs-12 col-lg-10 col-lg-offset-1" id="navigate-buttons-public-profile">
-				<button class="navigate musiclaps-dark-gray musiclaps-blue first-button" id="privateProjectsButton" type="button">Profile</button>
+				<button class="navigate white musiclaps-blue first-button" id="privateProjectsButton" type="button">Profile</button>
 				<button class="navigate button-navigate-hover-js" id="publicProjectsButton" type="button">Collaborations</button>
 				<button class="navigate button-navigate-hover-js" id="groupProjectsButton" type="button">Friends</button>
 			</div>

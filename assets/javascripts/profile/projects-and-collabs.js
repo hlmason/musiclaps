@@ -89,11 +89,11 @@ $(document).ready(function() {
 
 
 	$(publicProjectsButton).on('click', function() {
-		privateProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		groupProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		auditionProjectsContainer.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		lyricsProjectButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
+		privateProjectsButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		groupProjectsButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		auditionProjectsContainer.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		lyricsProjectButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		$(this).addClass('white').addClass('musiclaps-blue');
 		
 		privateProjectsContainer.hide();
 		groupProjectsContainerProjectsPage.hide();
@@ -106,11 +106,11 @@ $(document).ready(function() {
 	});
 
 	$(groupProjectsButton).on('click', function() {
-		privateProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		publicProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		auditionProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		lyricsProjectButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
+		privateProjectsButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		publicProjectsButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		auditionProjectsButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		lyricsProjectButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		$(this).addClass('white').addClass('musiclaps-blue');
 		
 		publicProjectsContainer.hide();
 		privateProjectsContainer.hide();
@@ -123,11 +123,11 @@ $(document).ready(function() {
 	});
 
 	$(auditionProjectsButton).on('click', function() {
-		privateProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		publicProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		groupProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		lyricsProjectButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
+		privateProjectsButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		publicProjectsButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		groupProjectsButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		lyricsProjectButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		$(this).addClass('white').addClass('musiclaps-blue');
 		
 		publicProjectsContainer.hide();
 		privateProjectsContainer.hide();
@@ -140,11 +140,11 @@ $(document).ready(function() {
 	});
 
 	$(lyricsProjectButton).on('click', function() {
-		privateProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		publicProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		groupProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		auditionProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
+		privateProjectsButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		publicProjectsButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		groupProjectsButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		auditionProjectsButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		$(this).addClass('white').addClass('musiclaps-blue');
 		
 		projectsContainers.hide();		
 		lyricsProjectContainer.fadeIn('fast');
@@ -152,11 +152,11 @@ $(document).ready(function() {
 	});
 
 	$(privateProjectsButton).on('click', function() {
-		publicProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		groupProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		auditionProjectsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		lyricsProjectButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
+		publicProjectsButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		groupProjectsButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		auditionProjectsButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		lyricsProjectButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		$(this).addClass('white').addClass('musiclaps-blue');
 		
 		publicProjectsContainer.hide();
 		auditionProjectsContainer.hide();
@@ -170,9 +170,9 @@ $(document).ready(function() {
 
 
 	$(requestingCollabButton).on('click', function() {
-		openCollabButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		collaboratorsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
+		openCollabButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		collaboratorsButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		$(this).addClass('white').addClass('musiclaps-blue');
 		
 		openCollabContainer.hide();
 		collaboratorsContainer.hide();
@@ -182,9 +182,9 @@ $(document).ready(function() {
 	});
 
 	$(collaboratorsButton).on('click', function() {
-		requestingCollabButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		openCollabButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
+		requestingCollabButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		openCollabButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		$(this).addClass('white').addClass('musiclaps-blue');
 		
 		requestingCollabContainer.hide();
 		requestingCollabForm.hide();
@@ -195,9 +195,9 @@ $(document).ready(function() {
 	});
 
 	$(openCollabButton).on('click', function() {
-		collaboratorsButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		requestingCollabButton.removeClass('musiclaps-dark-gray').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
-		$(this).addClass('musiclaps-dark-gray').addClass('musiclaps-blue');
+		collaboratorsButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		requestingCollabButton.removeClass('white').removeClass('musiclaps-blue').addClass('button-navigate-hover-js');
+		$(this).addClass('white').addClass('musiclaps-blue');
 		
 		collaboratorsContainer.hide();
 		requestingCollabContainer.hide();

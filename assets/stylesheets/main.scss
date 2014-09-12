@@ -8,7 +8,7 @@ $musiclaps-light-gray: #e7e7e7;
 $modal-border: 5px solid $musiclaps-light-gray;
 $musiclaps-dark-gray: #444; // Whichever shade of gray is in the final logo - TBD
 $musiclaps-blue-border: 1px solid $musiclaps-blue;
-$nav-border: 1px solid #cecece;
+$nav-border: 1px solid #cecece;  // Note that there is a mixin with the same name
 $table-border: 1px solid #ddd;
 
 /* ===================================
@@ -73,7 +73,7 @@ $table-border: 1px solid #ddd;
 	text-align: center;
 }
 
-@mixin nav-border($color) {
+@mixin nav-border($color) { // Note that there is a variables with the same name
 	border-left: 1px solid $color;
 	&:first-child {
 	border-left: none;
@@ -362,7 +362,7 @@ nav:not(#nav-logged-in) .nav li { // Not logged in nav
 		li:not(.first-list-item) { // "Profile"
 			padding-left: 5px;
 		}
-		li#last-list-item, li#middle-list-item {
+		li#second-list-item, li#last-list-item {
 			padding-left: 4px;
 		}
 		a {
@@ -879,6 +879,7 @@ section#recording-instructions {
 
 button.navigate {
 	@include button(#F4F4F4, $musiclaps-dark-gray, 12px, 5px 10px);
+	border: $nav-border;
 }
 
 #navigate-buttons-public-profile button {
@@ -888,15 +889,9 @@ button.navigate {
 	}
 }
 
-button.musiclaps-dark-gray {
-	background-color: $musiclaps-dark-gray;
-}
-
-.button-navigate-hover-js {
-	&:hover, &:focus {
-		background-color: $musiclaps-dark-gray;
-		color: $musiclaps-blue;
-	}
+button.white, .button-navigate-hover-js:hover, .button-navigate-hover-js:focus {
+	background-color: white;
+	color: #428bca !important;
 }
 
 #avatar-n-edit-profile {
@@ -1187,7 +1182,7 @@ section.projects-container {
 	}
 	&:hover {
 		background-color: #F4F4F4;
-		color: $musiclaps-dark-gray;
+		color: $musiclaps-dark-gray !important; // Necessary for "Audition" listings
 		cursor: pointer;
 	}
 }
@@ -2030,6 +2025,9 @@ footer {
 	ul#nav-logged-in { // Nav below top nav
 		li:not(.first-list-item) { // "Profile"
 			padding-left: 8px;
+		}
+		li#second-list-item {
+			padding-left: 9px;
 		}
 	}
 	.wmuSliderPrev { left: 0; }

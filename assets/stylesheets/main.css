@@ -3060,7 +3060,7 @@ ul#nav-logged-in li {
   border-bottom: 1px solid #cecece; }
 ul#nav-logged-in li:not(.first-list-item) {
   padding-left: 5px; }
-ul#nav-logged-in li#last-list-item, ul#nav-logged-in li#middle-list-item {
+ul#nav-logged-in li#second-list-item, ul#nav-logged-in li#last-list-item {
   padding-left: 4px; }
 ul#nav-logged-in a {
   border-left: 1px solid #cecece;
@@ -3500,19 +3500,17 @@ button.navigate {
   color: #444444;
   font-size: 12px;
   letter-spacing: 0.5px;
-  padding: 5px 10px; }
+  padding: 5px 10px;
+  border: 1px solid #cecece; }
 
 #navigate-buttons-public-profile button {
   text-transform: uppercase; }
   #navigate-buttons-public-profile button:not(.first-button) {
     margin-left: 16px; }
 
-button.musiclaps-dark-gray {
-  background-color: #444444; }
-
-.button-navigate-hover-js:hover, .button-navigate-hover-js:focus {
-  background-color: #444444;
-  color: #38aaff; }
+button.white, .button-navigate-hover-js:hover, .button-navigate-hover-js:focus {
+  background-color: white;
+  color: #428bca !important; }
 
 #avatar-n-edit-profile img.avatar {
   box-shadow: 10px 10px 5px #444444;
@@ -3769,7 +3767,7 @@ section.projects-container {
       font-weight: normal; }
   section.projects-container:hover {
     background-color: #F4F4F4;
-    color: #444444;
+    color: #444444 !important;
     cursor: pointer; }
 
 section.projects-container.favorites-page:hover, section.projects-container.public-profile-page:hover {
@@ -4501,6 +4499,8 @@ footer {
 @media only screen and (max-width: 1199px) {
   ul#nav-logged-in li:not(.first-list-item) {
     padding-left: 8px; }
+  ul#nav-logged-in li#second-list-item {
+    padding-left: 9px; }
 
   .wmuSliderPrev {
     left: 0; }

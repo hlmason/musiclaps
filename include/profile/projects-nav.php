@@ -1,6 +1,6 @@
 						<div class="row projects-nav">	
 							<div class="col-xs-12">
-								<button class="navigate musiclaps-dark-gray musiclaps-blue first-button privateProjectsButton" type="button">In Progress / Private</button>
+								<button class="navigate white musiclaps-blue first-button privateProjectsButton" type="button">In Progress / Private</button>
 								<button class="navigate button-navigate-hover-js publicProjectsButton" type="button">Public</button>
 								<button class="navigate button-navigate-hover-js groupProjectsButton" type="button">Group</button>
 								<button class="navigate button-navigate-hover-js auditionProjectsButton" type="button">Audition</button>

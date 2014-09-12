@@ -17,7 +17,7 @@
 
 					<div class="row" id="collaborations-buttons">	
 						<div class="col-xs-12">
-							<button class="navigate musiclaps-dark-gray musiclaps-blue first-button" id="openCollabButton" type="button">Open Collab</button>
+							<button class="navigate white musiclaps-blue first-button" id="openCollabButton" type="button">Open Collab</button>
 							<button class="navigate button-navigate-hover-js" id="requestingCollabButton" type="button">Requesting Collab</button>
 							<button class="navigate button-navigate-hover-js" id="collaboratorsButton" type="button">Collaborators</button>
 						</div>
