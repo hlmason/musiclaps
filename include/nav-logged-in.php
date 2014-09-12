@@ -14,7 +14,7 @@
 					</li>
 					
 					<li>
-						<a class="<?php if ($page == "My Projects") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/projects.php">My Projects
+						<a class="<?php if ($page == "My Projects") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/my-projects.php">My Projects
 						</a>
 					</li>
 					
