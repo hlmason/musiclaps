@@ -16,7 +16,7 @@
 				<div class="row col-xs-12 col-sm-9">
 
 					<div class="row">
-						<div class="col-sm-12 col-md-6">
+						<div class="col-sm-12 col-md-6 favorites-page">
 							<section class="row projects-container favorites-page">
 								<div class="col-xs-4 col-sm-3 col-md-4">
 									<a href="<?php echo BASE_URL; ?>profile/public-project.php"><img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"></a><!-- Hard-coded placeholder -->
@@ -33,7 +33,7 @@
 								</div>
 							</section>
 						</div>
-						<div class="col-sm-12 col-md-6">
+						<div class="col-sm-12 col-md-6 favorites-page">
 							<section class="row projects-container favorites-page">
 								<div class="col-xs-4 col-sm-3 col-md-4">
 									<a href="<?php echo BASE_URL; ?>profile/public-project.php"><img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"></a><!-- Hard-coded placeholder -->

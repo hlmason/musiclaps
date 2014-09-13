@@ -51,9 +51,12 @@
 						<div class="col-sm-1"></div>
 					</div>
 
+					<!-- Public project listings -->
 					<?php
 						include(ROOT_PATH . 'include/profile/my-public-projects.php');
 					?>
+					<!-- End of public project listings -->
+
 
 					<!-- "My Profile" --> <!-- profile/public-profile.php does not contain this section -->
 					<section id="myProfile">

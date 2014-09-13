@@ -953,18 +953,16 @@ button.white, .white-button-navigate-hover-js:hover, .white-button-navigate-hove
 		padding-right: 0;
 		width: 47%;
 		img {
-			min-width: 100px;
-			min-height: 60px;
-			padding-bottom: 15px;
-			padding-top: 15px;
+			padding-bottom: 10px;
+			padding-top: 10px;
 		}
 		h4, h5 {
 			display: inline-block;
-			margin-left: 11px;
+			margin-left: 7px;
 		}
 		h4 {
 			margin-bottom: 0;
-			margin-top: 17px;
+			margin-top: 10px;
 		}
 		h5 {
 			margin-top: 7px;
@@ -1198,19 +1196,31 @@ section.projects-container {
 	}
 }
 
+.col-sm-12.col-md-6.favorites-page:first-child {
+	padding-right: 0;
+}
+
+.col-sm-12.col-md-6.favorites-page:last-child {
+	padding-left: 0;
+}
+
 section.projects-container.favorites-page, section.projects-container.public-profile-page {
 	&:hover {
 		background-color: white;
 		cursor: initial;
 	}
 	h4, h5 {
-		margin-left: 5px;
+		margin-left: 3px;
 	}
 	.glyphicon-trash {
 		cursor: pointer;
 		float: right;
 		margin-top: 4px;
 	}
+}
+
+section.projects-container.favorites-page {
+	margin-top: 15px;
 }
 
 .live-player-container, .project-info-bar {
