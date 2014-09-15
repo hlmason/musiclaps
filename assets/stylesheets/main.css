@@ -3208,8 +3208,8 @@ ul#nav-logged-in li#second-list-item, ul#nav-logged-in li#last-list-item {
     border: 1px solid #1f91e6;
     padding: 5px 10px;
     color: white;
-    text-transform: uppercase;
-    width: 100%; }
+    width: 100%;
+    text-transform: uppercase; }
     .modal-content .modal-footer.registration-modal-footer input:hover, .modal-content .modal-footer.registration-modal-footer input:focus {
       background-color: #45b7ff; }
 
@@ -3706,7 +3706,7 @@ section.upload-mp3-container ul {
       font-weight: bold; }
     section.upload-mp3-container ul li:not(.first-list-item) {
       padding-left: 20px; }
-section.upload-mp3-container input#project_title, section.upload-mp3-container input#comment-new-project-page {
+section.upload-mp3-container input#project_title_new_project, section.upload-mp3-container input#comment-new-project-page {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -3880,7 +3880,7 @@ form#project-form label {
   form#project-form label h4 {
     margin-bottom: 0;
     margin-top: 0; }
-form#project-form input#title, form#project-form input#cover_song, form#project-form textarea {
+form#project-form input#project_title_project_form, form#project-form input#cover_song, form#project-form textarea {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -4013,8 +4013,89 @@ section.change-sound-img-container input.choose-file {
 section.change-sound-img-container input.update-file {
   float: right; }
 
-.lyrics-container select {
+section#lyrics-settings {
+  border: 1px solid #cecece;
+  margin-left: 0;
+  margin-top: 5px;
+  width: 95%; }
+  section#lyrics-settings h4 {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 10px; }
+  section#lyrics-settings input.save {
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #38aaff;
+    border: 1px solid #38aaff;
+    padding: 1px 7px;
+    color: white;
+    font-weight: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    float: right;
+    margin-top: 10px; }
+    section#lyrics-settings input.save:hover, section#lyrics-settings input.save:focus {
+      background-color: #45b7ff; }
+  section#lyrics-settings p {
+    margin-top: 0; }
+    section#lyrics-settings p input.pause {
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      border: 1px solid #cecece;
+      padding-bottom: 3px;
+      padding-left: 8px;
+      padding-top: 3px;
+      width: 55px; }
+    section#lyrics-settings p input.speed {
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      border: 1px solid #cecece;
+      padding-bottom: 3px;
+      padding-left: 8px;
+      padding-top: 3px;
+      width: 25px; }
+    section#lyrics-settings p:nth-child(odd) {
+      float: left; }
+    section#lyrics-settings p:nth-child(even) {
+      float: right; }
+
+section#lyrics-container-header, #lyrics-container-form {
+  padding: 5px; }
+  section#lyrics-container-header label, #lyrics-container-form label {
+    margin-bottom: 2px;
+    margin-top: 5px; }
+  section#lyrics-container-header select, section#lyrics-container-header input#title, section#lyrics-container-header input#songwriter_or_composer, section#lyrics-container-header textarea, #lyrics-container-form select, #lyrics-container-form input#title, #lyrics-container-form input#songwriter_or_composer, #lyrics-container-form textarea {
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    padding-top: 3px;
+    width: 100%; }
+
+section#lyrics-container-header {
+  border: 1px solid #cecece;
   margin-top: 20px; }
+  section#lyrics-container-header h4 {
+    margin-bottom: 3px;
+    margin-top: 0; }
+  section#lyrics-container-header select {
+    margin-bottom: 3px; }
+
+#lyrics-container-form {
+  border-bottom: 1px solid #cecece;
+  border-left: 1px solid #cecece;
+  border-right: 1px solid #cecece; }
+  #lyrics-container-form input#save_lyrics {
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #38aaff;
+    border: 1px solid #1f91e6;
+    padding: 5px 10px;
+    color: white;
+    width: 100%; }
+    #lyrics-container-form input#save_lyrics:hover, #lyrics-container-form input#save_lyrics:focus {
+      background-color: #45b7ff; }
 
 .collaborators-container label#collab-label {
   margin-bottom: 12px;

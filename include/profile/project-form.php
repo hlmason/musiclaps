@@ -54,10 +54,10 @@
 
 	<form id="project-form">
 		<div class="row col-xs-12">
-			<label for="title">Title
+			<label for="project_title_project_form">Project Title
 				<input class="save" type="submit" value="Save">
 			</label>
-			<input id="title" type="text" name="title">
+			<input id="project_title_project_form" type="text" name="project_title_project_form">
 		</div>
 
 		<div class="row col-xs-12">

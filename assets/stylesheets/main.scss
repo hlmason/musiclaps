@@ -49,6 +49,13 @@ $table-border: 1px solid #ddd;
 	padding: $padding;
 }
 
+@mixin button-blue-wide ($border-radius) {
+	@include border-radius($border-radius);
+	@include submit($musiclaps-blue, 1px solid #1F91E6, 5px 10px, #45B7FF);
+	color: white;
+	width: 100%;
+}
+
 @mixin form-fields-input($width) {
 	@include border-radius(5px);
 	border: $nav-border;
@@ -555,11 +562,8 @@ nav {
 			border-top: none;
 		}
 		&.registration-modal-footer input { // "Register" button
-			@include border-radius(10px);
-			@include submit($musiclaps-blue, 1px solid #1F91E6, 5px 10px, #45B7FF);
-			color: white;
+			@include button-blue-wide(10px);
 			text-transform: uppercase;
-			width: 100%;
 		}
 	}
 }
@@ -1117,7 +1121,7 @@ section.upload-mp3-container {
 			}
 		}
 	}
-	input#project_title, input#comment-new-project-page {
+	input#project_title_new_project, input#comment-new-project-page {
 		@include form-fields-input(100%);
 	}
 	input#comment-new-project-page, section#choose-project-img-container {
@@ -1329,7 +1333,7 @@ form#project-form {
 			margin-top: 0;
 		}
 	}
-	input#title, input#cover_song, textarea {
+	input#project_title_project_form, input#cover_song, textarea {
 		@include form-fields-input(100%);
 	}
 	input.save {
@@ -1472,9 +1476,66 @@ section.change-sound-img-container {
 	}
 }
 
-.lyrics-container {
+section#lyrics-settings {
+	border: $nav-border;
+	margin-left: 0;
+	margin-top: 5px;
+	width: 95%;
+	h4 {
+		display: inline-block;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	input.save {
+		@include submit-save-blue;
+		float: right;
+		margin-top: 10px;
+	}
+	p {
+		margin-top: 0;
+		input.pause {
+			@include form-fields-input(55px)
+		}
+		input.speed {
+			@include form-fields-input(25px)
+		}
+		&:nth-child(odd) {
+			float: left;
+		}
+		&:nth-child(even) {
+			float: right;
+		}
+	}
+}
+
+section#lyrics-container-header, #lyrics-container-form {
+	padding: 5px;
+	label {
+		@include form-fields-label(5px);
+	}
+	select, input#title, input#songwriter_or_composer, textarea {
+		@include form-fields-input(100%);
+	}
+}
+
+section#lyrics-container-header { // "Display Lyrics" and "Select Sound"
+	border: $nav-border;
+	margin-top: 20px;
+	h4 {
+		margin-bottom: 3px;
+		margin-top: 0;
+	}
 	select {
-		margin-top: 20px;
+		margin-bottom: 3px;
+	}
+}
+
+#lyrics-container-form {
+	border-bottom: $nav-border;
+	border-left: $nav-border;
+	border-right: $nav-border;
+	input#save_lyrics {
+		@include button-blue-wide(2px);
 	}
 }
 
@@ -1535,7 +1596,7 @@ section.change-sound-img-container {
 }
 
 section#messages-header, section#groups-header {
-	h3 { // "Groups"
+	h3 { // "Messages" and "Groups"
 		display: inline-block;
 		margin-bottom: 0;
 		margin-top: 15px;
@@ -1651,7 +1712,7 @@ section.messages-container {
 	}
 }
 
-section#groups-header {
+section#groups-header { // "Create New Group"
 	button {
 		margin-left: 10px;
 		margin-top: 15px;

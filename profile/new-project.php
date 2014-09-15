@@ -55,8 +55,8 @@
 						<form>
 							<section id="newProject">
 								<div class="row col-xs-12">
-									<label id="project-title-label" for="project_title">Project Title <span class="normal">(max 80 characters)</span></label>
-									<input id="project_title" type="text" name="project_title">
+									<label id="project-title-label" for="project_title_new_project">Project Title <span class="normal">(max 80 characters)</span></label>
+									<input id="project_title_new_project" type="text" name="project_title_new_project">
 								</div>
 
 								<div class="row col-xs-12">
