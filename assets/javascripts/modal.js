@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	var passwordReq = $('#password-req');
+	var passwordReq = $('#passwordReq');
 	var registerOrLogin = $('#registerOrLogin');
 	var register = $('#registerJS');
 	var login = $('#loginJS');

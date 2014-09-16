@@ -24,7 +24,7 @@
 					</li>
 					
 					<li>
-						<a class="<?php if ($page == "YouTube") { echo "active"; } ?>" href="#">YouTube
+						<a class="<?php if ($page == "YouTube") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/youtube.php">YouTube
 						</a>
 					</li>
 					

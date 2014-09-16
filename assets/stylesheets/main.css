@@ -2927,6 +2927,12 @@ span.normal {
 .musiclaps-blue {
   color: #38aaff !important; }
 
+#registration-full-modal-body .glyphicon-question-sign, #registration-full-modal-body .password-req, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .glyphicon-question-sign, #registration-express-modal-body .password-req, #registration-express-modal-body .youtube-id-req, #youtube-settings .glyphicon-question-sign, #youtube-settings .password-req, #youtube-settings .youtube-id-req {
+  color: #38aaff !important; }
+#registration-full-modal-body .password-req, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .password-req, #registration-express-modal-body .youtube-id-req, #youtube-settings .password-req, #youtube-settings .youtube-id-req {
+  font-size: 12px;
+  margin-bottom: 2px; }
+
 #register-or-login-modal-body input, .modal-footer:not(.registration-modal-footer) input, .navbar-right input {
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -3135,11 +3141,6 @@ ul#nav-logged-in li#second-list-item, ul#nav-logged-in li#last-list-item {
     padding-left: 8px;
     padding-top: 3px;
     width: 100%; }
-  .modal-content .modal-body#registration-full-modal-body .glyphicon-question-sign, .modal-content .modal-body#registration-full-modal-body #password-req, .modal-content .modal-body#registration-express-modal-body .glyphicon-question-sign, .modal-content .modal-body#registration-express-modal-body #password-req {
-    color: #38aaff; }
-  .modal-content .modal-body#registration-full-modal-body #password-req, .modal-content .modal-body#registration-express-modal-body #password-req {
-    font-size: 12px;
-    margin-bottom: 2px; }
   .modal-content .modal-body#login-modal-body input {
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -4135,6 +4136,73 @@ section#lyrics-container-header {
   .collaborators-container table tr:nth-child(odd) {
     background-color: #F4F4F4; }
 
+#youtube-player {
+  background-color: #444444;
+  height: 247px;
+  margin-top: 15px;
+  width: 403px; }
+
+#youtube-settings img, section.profile-right#youtube-vids img {
+  height: 80px;
+  width: 120px; }
+
+#youtube-settings {
+  border: 1px solid #cecece;
+  margin-left: 3px;
+  padding: 7px 15px;
+  text-align: center;
+  width: 90%; }
+  #youtube-settings div:first-child {
+    border-bottom: 1px solid #cecece;
+    padding-bottom: 5px; }
+  #youtube-settings input#youtube_new, #youtube-settings input#youtube_edit {
+    margin-top: 0; }
+  #youtube-settings input#youtube_edit {
+    margin-left: 10px; }
+  #youtube-settings span.radio-label {
+    font-size: 12px; }
+  #youtube-settings .first-radio-label {
+    margin-right: 10px; }
+  #youtube-settings label {
+    margin-bottom: 2px;
+    margin-top: 10px; }
+  #youtube-settings input#youtube_link {
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    padding-top: 3px;
+    width: 100%;
+    margin-bottom: 5px; }
+  #youtube-settings input.submit {
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #e7e7e7;
+    border: 1px solid #cecece;
+    padding: 3px 10px;
+    font-size: 12px;
+    width: 100%; }
+    #youtube-settings input.submit:hover, #youtube-settings input.submit:focus {
+      background-color: #d9d9d9; }
+  #youtube-settings img {
+    margin-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px; }
+
+section.profile-right#youtube-vids {
+  height: 1024px;
+  padding: 15px;
+  text-align: center; }
+  section.profile-right#youtube-vids h4 {
+    margin-bottom: 0;
+    margin-top: 0; }
+  section.profile-right#youtube-vids img {
+    cursor: pointer;
+    padding: 10px; }
+
 section#messages-header h3, section#groups-header h3 {
   display: inline-block;
   margin-bottom: 0;
@@ -4479,8 +4547,8 @@ section.profile-right {
     margin-bottom: 10px;
     margin-top: 3px; }
 
-section.profile-right:not(.public-profile-page) {
-  margin-top: 15px !important; }
+#youtube-settings, section.profile-right:not(.public-profile-page) {
+  margin-top: 15px; }
 
 section.profile-right.profile-page {
   height: 1010px; }

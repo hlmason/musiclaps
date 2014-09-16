@@ -205,6 +205,16 @@ span.normal {
 	color: $musiclaps-blue !important;
 }
 
+#registration-full-modal-body, #registration-express-modal-body, #youtube-settings {
+	.glyphicon-question-sign, .password-req, .youtube-id-req {
+		color: $musiclaps-blue !important;
+	}
+	.password-req, .youtube-id-req {
+		font-size: 12px;
+		margin-bottom: 2px;
+	}
+}
+
 #register-or-login-modal-body, .modal-footer:not(.registration-modal-footer), .navbar-right {
 	input { // Modal buttons and nav "Log out" button
 		@include border-radius(10px);
@@ -467,13 +477,6 @@ nav {
 		&#registration-full-modal-body, &#registration-express-modal-body {
 			input { // Form fields
 				@include form-fields-input(100%);
-			}
-			.glyphicon-question-sign, #password-req {
-				color: $musiclaps-blue;
-			}
-			#password-req {
-				font-size: 12px;
-				margin-bottom: 2px;
 			}
 		}
 		&#login-modal-body input { // Form fields
@@ -1595,6 +1598,78 @@ section#lyrics-container-header { // "Display Lyrics" and "Select Sound"
 	}
 }
 
+#youtube-player {
+	background-color: $musiclaps-dark-gray;
+	height: 247px;
+	margin-top: 15px;
+	width: 403px;
+}
+
+#youtube-settings, section.profile-right#youtube-vids {
+	img {
+		height: 80px;
+		width: 120px;
+	}
+}
+
+#youtube-settings {
+	border: $nav-border;
+	margin-left: 3px;
+	padding: 7px 15px;
+	text-align: center;
+	width: 90%;
+	div:first-child {
+		border-bottom: $nav-border;
+		padding-bottom: 5px;
+	}
+	input#youtube_new, input#youtube_edit {
+		margin-top: 0;
+	}
+	input#youtube_edit {
+		margin-left: 10px;
+	}
+	span.radio-label {
+		font-size: 12px;
+	}
+	.first-radio-label {
+		margin-right: 10px;
+	}
+	label {
+		@include form-fields-label(10px)
+	}
+	input#youtube_link {
+		@include form-fields-input(100%);
+		margin-bottom: 5px;
+	}
+	input.submit {
+		@include border-radius(5px);
+		@include submit($musiclaps-light-gray, $nav-border, 3px 10px, #d9d9d9);
+		font-size: 12px;
+		width: 100%;
+	}
+	img {
+		margin-top: 10px;
+		padding-bottom: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 10px;
+	}
+}
+
+section.profile-right#youtube-vids {
+	height: 1024px;
+	padding: 15px;
+	text-align: center;
+	h4 {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	img {
+		cursor: pointer;
+		padding: 10px;
+	}
+}
+
 section#messages-header, section#groups-header {
 	h3 { // "Messages" and "Groups"
 		display: inline-block;
@@ -1959,8 +2034,8 @@ section.profile-right {
 	}
 }
 
-section.profile-right:not(.public-profile-page) {
-	margin-top: 15px !important; // Need important tag for Firefox
+#youtube-settings, section.profile-right:not(.public-profile-page) {
+	margin-top: 15px;
 }
 
 section.profile-right.profile-page { // Profile Page only
