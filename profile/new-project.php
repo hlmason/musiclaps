@@ -67,7 +67,7 @@
 
 							<section id="addPart">
 								<label id="select-sound-label" for="select_sound">Select Your Sound</label>
-								<select id="select-sound">
+								<select id="select_sound">
 									<option value="test">Test</option>
 								</select>
 							</section>

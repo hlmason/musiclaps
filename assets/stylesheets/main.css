@@ -2952,6 +2952,10 @@ img#microsoft-icon {
   height: 29px;
   width: 29px; }
 
+#youtube-links img, #info-below-youtube-player img {
+  height: 18px;
+  width: 57px; }
+
 /* ===================================
     Nav
 =================================== */
@@ -3717,8 +3721,16 @@ section.upload-mp3-container input#project_title_new_project, section.upload-mp3
   width: 100%; }
 section.upload-mp3-container input#comment-new-project-page, section.upload-mp3-container section#choose-project-img-container {
   margin-bottom: 20px; }
-section.upload-mp3-container input#tempo, section.upload-mp3-container #select-sound {
+section.upload-mp3-container input#tempo, section.upload-mp3-container select#select_sound {
   margin-left: 5px; }
+section.upload-mp3-container select#select_sound {
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  padding-top: 3px;
+  width: 25%; }
 section.upload-mp3-container input#tempo {
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -4146,6 +4158,12 @@ section#lyrics-container-header {
   height: 80px;
   width: 120px; }
 
+#info-below-youtube-player h4 {
+  display: inline-block;
+  font-weight: normal;
+  margin-left: 20px;
+  margin-top: 10px; }
+
 #youtube-settings {
   border: 1px solid #cecece;
   margin-left: 3px;
@@ -4153,20 +4171,18 @@ section#lyrics-container-header {
   text-align: center;
   width: 90%; }
   #youtube-settings div:first-child {
-    border-bottom: 1px solid #cecece;
-    padding-bottom: 5px; }
-  #youtube-settings input#youtube_new, #youtube-settings input#youtube_edit {
-    margin-top: 0; }
-  #youtube-settings input#youtube_edit {
-    margin-left: 10px; }
-  #youtube-settings span.radio-label {
-    font-size: 12px; }
-  #youtube-settings .first-radio-label {
-    margin-right: 10px; }
-  #youtube-settings label {
+    border-bottom: 1px solid #cecece; }
+    #youtube-settings div:first-child label {
+      font-weight: normal;
+      margin-left: 2px; }
+    #youtube-settings div:first-child label#new-youtube-connection-label {
+      margin-right: 10px; }
+    #youtube-settings div:first-child input#edit_youtube_connection {
+      margin-left: 10px; }
+  #youtube-settings label#youtube-id-label {
     margin-bottom: 2px;
     margin-top: 10px; }
-  #youtube-settings input#youtube_link {
+  #youtube-settings input#youtube_id {
     -moz-border-radius: 5px;
     border-radius: 5px;
     border: 1px solid #cecece;
@@ -4175,22 +4191,52 @@ section#lyrics-container-header {
     padding-top: 3px;
     width: 100%;
     margin-bottom: 5px; }
-  #youtube-settings input.submit {
+  #youtube-settings input#view_youtube_vid, #youtube-settings input#link_to_project {
     -moz-border-radius: 5px;
     border-radius: 5px;
-    background-color: #e7e7e7;
-    border: 1px solid #cecece;
-    padding: 3px 10px;
     font-size: 12px;
     width: 100%; }
-    #youtube-settings input.submit:hover, #youtube-settings input.submit:focus {
+  #youtube-settings input#view_youtube_vid {
+    background-color: #e7e7e7;
+    border: 1px solid #cecece;
+    padding: 3px 10px; }
+    #youtube-settings input#view_youtube_vid:hover, #youtube-settings input#view_youtube_vid:focus {
       background-color: #d9d9d9; }
+  #youtube-settings input#link_to_project {
+    background-color: #38aaff;
+    border: 1px solid #38aaff;
+    padding: 3px 10px;
+    color: white; }
+    #youtube-settings input#link_to_project:hover, #youtube-settings input#link_to_project:focus {
+      background-color: #45b7ff; }
   #youtube-settings img {
     margin-top: 10px;
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px; }
+
+.youtube-page-form select, .youtube-page-form input#name {
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  padding-top: 3px;
+  width: 25%;
+  margin-left: 1px; }
+.youtube-page-form label#name-label {
+  margin-left: 25px; }
+.youtube-page-form input#save_name, .youtube-page-form input#edit_name {
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #38aaff;
+  border: 1px solid #38aaff;
+  padding: 3px 10px;
+  color: white;
+  font-size: 12px; }
+  .youtube-page-form input#save_name:hover, .youtube-page-form input#save_name:focus, .youtube-page-form input#edit_name:hover, .youtube-page-form input#edit_name:focus {
+    background-color: #45b7ff; }
 
 section.profile-right#youtube-vids {
   height: 1024px;
@@ -4352,6 +4398,15 @@ section.create-new-group-container {
     padding-top: 3px;
     width: 50%;
     margin-top: 15px; }
+  section.create-new-group-container select {
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    padding-top: 3px;
+    width: 25%;
+    margin-left: 5px; }
   section.create-new-group-container textarea {
     -moz-border-radius: 5px;
     border-radius: 5px;
