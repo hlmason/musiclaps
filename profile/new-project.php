@@ -47,9 +47,18 @@
 						
 						<ul class="row col-xs-12">
 							<li class="first-list-item">Type of Project</li>
-							<li><input type="radio" name="project_type" value="newProject">&nbsp; New Project</li>
-							<li><input type="radio" name="project_type" value="addPart">&nbsp; Add Part</li>
-							<li><input type="radio" name="project_type" value="addPartToGroup">&nbsp; Add Part to Group</li>
+							<li>
+								<input id="new_project" type="radio" name="project_type" value="newProject">
+								<label for="new_project">&nbsp;New Project</label>
+							</li>
+							<li>
+								<input id="add_part" type="radio" name="project_type" value="addPart">
+								<label for="add_part">&nbsp;Add Part</label>
+							</li>
+							<li>
+								<input id="add_part_to_group" type="radio" name="project_type" value="addPartToGroup"> 
+								<label for="add_part_to_group">&nbsp;Add Part to Group</label>
+							</li>
 						</ul>
 
 						<form>

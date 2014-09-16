@@ -1129,6 +1129,9 @@ section.upload-mp3-container {
 			&:not(.first-list-item) {
 				padding-left: 20px;
 			}
+			label {
+				font-weight: normal;
+			}
 		}
 	}
 	input#project_title_new_project, input#comment-new-project-page {
@@ -1401,7 +1404,7 @@ form#project-form {
 		border-left: $nav-border;
 		border-right: $nav-border;
 	}
-	.type-of-collab-container {
+	.type-of-collab-container { // TODO: Fix positioning of '.glyphicon-ok'
 		height: 36px;
 		text-align: center;
 		button {

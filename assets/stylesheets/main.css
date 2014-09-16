@@ -3711,6 +3711,8 @@ section.upload-mp3-container ul {
       font-weight: bold; }
     section.upload-mp3-container ul li:not(.first-list-item) {
       padding-left: 20px; }
+    section.upload-mp3-container ul li label {
+      font-weight: normal; }
 section.upload-mp3-container input#project_title_new_project, section.upload-mp3-container input#comment-new-project-page {
   -moz-border-radius: 5px;
   border-radius: 5px;
