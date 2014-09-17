@@ -3476,8 +3476,12 @@ section#recording-instructions #save-container {
 /* =============================================================================
     New Arrivals, Recommended, Staff Picks, and Collaborations Pages
 ============================================================================= */
+#new-arrivals-page h1, #recommended-page h1, #staff-picks-page h1, #collaborations-page h1 {
+  margin-bottom: 0; }
 #new-arrivals-page .public-project-listing, #recommended-page .public-project-listing, #staff-picks-page .public-project-listing, #collaborations-page .public-project-listing {
-  color: #444444; }
+  border: 1px solid #cecece;
+  color: #444444;
+  margin-top: 10px; }
   #new-arrivals-page .public-project-listing:hover, #recommended-page .public-project-listing:hover, #staff-picks-page .public-project-listing:hover, #collaborations-page .public-project-listing:hover {
     background-color: #e7e7e7;
     cursor: pointer; }
@@ -3505,6 +3509,17 @@ section#recording-instructions #save-container {
   #new-arrivals-page .ads-container img:not(.first-img), #recommended-page .ads-container img:not(.first-img), #staff-picks-page .ads-container img:not(.first-img), #collaborations-page .ads-container img:not(.first-img) {
     float: right;
     margin-top: 35px; }
+
+/* ===================================
+    All Music Page
+=================================== */
+#all-music-page h1 {
+  margin-bottom: 0;
+  text-align: center; }
+#all-music-page .projects-container {
+  color: #444444; }
+#all-music-page .ads-container img.first-img {
+  float: right; }
 
 /* =====================================================================================================
     Profile, New Project, Projects, Collaborations, YouTube, Messages, Groups, and Project Profile Pages

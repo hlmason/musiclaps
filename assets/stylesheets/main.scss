@@ -868,8 +868,13 @@ section#recording-instructions {
     New Arrivals, Recommended, Staff Picks, and Collaborations Pages
 ============================================================================= */
 #new-arrivals-page, #recommended-page, #staff-picks-page, #collaborations-page {
+	h1 {
+		margin-bottom: 0;
+	}
 	.public-project-listing {
+		border: $nav-border;
 		color: $musiclaps-dark-gray; // Overrides link color
+		margin-top: 10px;
 		&:hover {
 			background-color: $musiclaps-light-gray;
 			cursor: pointer;
@@ -905,6 +910,24 @@ section#recording-instructions {
 		img:not(.first-img) {
 			float: right;
 			margin-top: 35px;
+		}
+	}
+}
+
+/* ===================================
+    All Music Page
+=================================== */
+#all-music-page {
+	h1 {
+		margin-bottom: 0;
+		text-align: center;
+	}
+	.projects-container {
+		color: $musiclaps-dark-gray; // Overrides link color
+	}
+	.ads-container {
+		img.first-img {
+			float: right;
 		}
 	}
 }
