@@ -4,7 +4,7 @@
 	$pageTitle = 'Project Name';
 	$page = 'Project Name';
 	
-	include(ROOT_PATH . 'include/header.php');
+	include(ROOT_PATH . 'include/header-logged-in.php');
 	include(ROOT_PATH . 'include/db-connection.php');
 	include(ROOT_PATH . 'controllers/get-profile.php');
 
@@ -31,10 +31,10 @@
 					
 					<section class="row col-xs-12 public-project-info">	
 						<div class="row col-xs-6">
-							<a href="<?php echo BASE_URL; ?>profile/public-profile.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"></a>
+							<a href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"></a>
 							
 							<section id="username-and-number-of-songs">
-								<a href="<?php echo BASE_URL; ?>profile/public-profile.php"><h4>$username</h4></a><!-- Hard-coded placeholder -->
+								<a href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php"><h4>$username</h4></a><!-- Hard-coded placeholder -->
 								<h5>$# Songs</h5><!-- Hard-coded placeholder -->
 							</section>
 							
@@ -128,7 +128,7 @@
 						</div>
 						<section class="row col-xs-12">
 							<a href="<?php echo BASE_URL; ?>profile/public-project.php"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
-							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
+							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
 							<h5># Plays</h5><!-- Hard-coded placeholder -->
 						</section>
 
@@ -137,7 +137,7 @@
 						</div>
 						<section class="row col-xs-12">
 							<a href="<?php echo BASE_URL; ?>profile/public-project.php"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
-							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
+							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
 							<h5># Plays</h5><!-- Hard-coded placeholder -->
 						</section>
 
@@ -146,7 +146,7 @@
 						</div>
 						<section class="row col-xs-12">
 							<a href="<?php echo BASE_URL; ?>profile/public-project.php"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
-							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
+							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
 							<h5># Plays</h5><!-- Hard-coded placeholder -->
 						</section>
 
@@ -155,7 +155,7 @@
 						</div>
 						<section class="row col-xs-12">
 							<a href="<?php echo BASE_URL; ?>profile/public-project.php"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
-							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
+							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
 							<h5># Plays</h5><!-- Hard-coded placeholder -->
 						</section>
 					</div>

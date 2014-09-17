@@ -3473,28 +3473,34 @@ section#recording-instructions #save-container {
     section#recording-instructions #save-container button.save:hover, section#recording-instructions #save-container button.save:focus {
       background-color: #1A9A1A; }
 
-/* ===================================
-    New Arrivals Page
-=================================== */
-#new-arrivals-page #public-project-listings:hover {
-  background-color: #e7e7e7;
-  cursor: pointer; }
-#new-arrivals-page #public-project-listings img {
-  height: 85px;
-  padding-top: 10px;
-  min-width: 135px; }
-#new-arrivals-page #public-project-listings h3, #new-arrivals-page #public-project-listings h4 {
-  margin-left: 5px; }
-#new-arrivals-page #public-project-listings h4 {
-  font-weight: normal; }
-#new-arrivals-page #public-project-listings h4.last-h4 {
-  display: inline-block; }
+/* =================================================================
+    New Arrivals, Recommended, Staff Picks, and Collaborations Pages
+================================================================= */
+#new-arrivals-page .public-project-listing {
+  color: #444444; }
+  #new-arrivals-page .public-project-listing:hover {
+    background-color: #e7e7e7;
+    cursor: pointer; }
+  #new-arrivals-page .public-project-listing img {
+    min-height: 85px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    min-width: 135px; }
+  #new-arrivals-page .public-project-listing h3, #new-arrivals-page .public-project-listing h4:not(.last-h4) {
+    margin-bottom: 0;
+    margin-left: 5px; }
+  #new-arrivals-page .public-project-listing h4 {
+    font-weight: normal; }
+    #new-arrivals-page .public-project-listing h4:not(.last-h4) {
+      margin-top: 0; }
+    #new-arrivals-page .public-project-listing h4.last-h4 {
+      display: inline-block; }
 #new-arrivals-page .ads-container {
   float: right; }
   #new-arrivals-page .ads-container img {
     float: right;
     height: 225px;
-    width: 225px; }
+    min-width: 225px; }
   #new-arrivals-page .ads-container img:not(.first-img) {
     float: right;
     margin-top: 35px; }

@@ -864,28 +864,34 @@ section#recording-instructions {
 	}
 }
 
-/* ===================================
-    New Arrivals Page
-=================================== */
+/* =================================================================
+    New Arrivals, Recommended, Staff Picks, and Collaborations Pages
+================================================================= */
 #new-arrivals-page {
-	#public-project-listings {
+	.public-project-listing {
+		color: $musiclaps-dark-gray; // Overrides link color
 		&:hover {
 			background-color: $musiclaps-light-gray;
 			cursor: pointer;
 		}
 		img {
-			height: 85px;
+			min-height: 85px;
+			padding-bottom: 10px;
 			padding-top: 10px;
 			min-width: 135px;
 		}
-		h3, h4 {
+		h3, h4:not(.last-h4) {
+			margin-bottom: 0;
 			margin-left: 5px;
 		}
 		h4 {
 			font-weight: normal;
-		}
-		h4.last-h4 {
-			display: inline-block;
+			&:not(.last-h4) {
+				margin-top: 0;
+			}
+			&.last-h4 {
+				display: inline-block;
+			}
 		}
 	}
 	.ads-container {
@@ -893,7 +899,7 @@ section#recording-instructions {
 		img {
 			float: right;
 			height: 225px;
-			width: 225px;
+			min-width: 225px;
 		}
 		img:not(.first-img) {
 			float: right;
