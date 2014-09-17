@@ -864,10 +864,10 @@ section#recording-instructions {
 	}
 }
 
-/* =================================================================
+/* =============================================================================
     New Arrivals, Recommended, Staff Picks, and Collaborations Pages
-================================================================= */
-#new-arrivals-page {
+============================================================================= */
+#new-arrivals-page, #recommended-page, #staff-picks-page, #collaborations-page {
 	.public-project-listing {
 		color: $musiclaps-dark-gray; // Overrides link color
 		&:hover {
@@ -877,6 +877,7 @@ section#recording-instructions {
 		img {
 			min-height: 85px;
 			padding-bottom: 10px;
+			padding-left: 10px;
 			padding-top: 10px;
 			min-width: 135px;
 		}

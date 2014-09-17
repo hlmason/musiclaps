@@ -3473,35 +3473,36 @@ section#recording-instructions #save-container {
     section#recording-instructions #save-container button.save:hover, section#recording-instructions #save-container button.save:focus {
       background-color: #1A9A1A; }
 
-/* =================================================================
+/* =============================================================================
     New Arrivals, Recommended, Staff Picks, and Collaborations Pages
-================================================================= */
-#new-arrivals-page .public-project-listing {
+============================================================================= */
+#new-arrivals-page .public-project-listing, #recommended-page .public-project-listing, #staff-picks-page .public-project-listing, #collaborations-page .public-project-listing {
   color: #444444; }
-  #new-arrivals-page .public-project-listing:hover {
+  #new-arrivals-page .public-project-listing:hover, #recommended-page .public-project-listing:hover, #staff-picks-page .public-project-listing:hover, #collaborations-page .public-project-listing:hover {
     background-color: #e7e7e7;
     cursor: pointer; }
-  #new-arrivals-page .public-project-listing img {
+  #new-arrivals-page .public-project-listing img, #recommended-page .public-project-listing img, #staff-picks-page .public-project-listing img, #collaborations-page .public-project-listing img {
     min-height: 85px;
     padding-bottom: 10px;
+    padding-left: 10px;
     padding-top: 10px;
     min-width: 135px; }
-  #new-arrivals-page .public-project-listing h3, #new-arrivals-page .public-project-listing h4:not(.last-h4) {
+  #new-arrivals-page .public-project-listing h3, #new-arrivals-page .public-project-listing h4:not(.last-h4), #recommended-page .public-project-listing h3, #recommended-page .public-project-listing h4:not(.last-h4), #staff-picks-page .public-project-listing h3, #staff-picks-page .public-project-listing h4:not(.last-h4), #collaborations-page .public-project-listing h3, #collaborations-page .public-project-listing h4:not(.last-h4) {
     margin-bottom: 0;
     margin-left: 5px; }
-  #new-arrivals-page .public-project-listing h4 {
+  #new-arrivals-page .public-project-listing h4, #recommended-page .public-project-listing h4, #staff-picks-page .public-project-listing h4, #collaborations-page .public-project-listing h4 {
     font-weight: normal; }
-    #new-arrivals-page .public-project-listing h4:not(.last-h4) {
+    #new-arrivals-page .public-project-listing h4:not(.last-h4), #recommended-page .public-project-listing h4:not(.last-h4), #staff-picks-page .public-project-listing h4:not(.last-h4), #collaborations-page .public-project-listing h4:not(.last-h4) {
       margin-top: 0; }
-    #new-arrivals-page .public-project-listing h4.last-h4 {
+    #new-arrivals-page .public-project-listing h4.last-h4, #recommended-page .public-project-listing h4.last-h4, #staff-picks-page .public-project-listing h4.last-h4, #collaborations-page .public-project-listing h4.last-h4 {
       display: inline-block; }
-#new-arrivals-page .ads-container {
+#new-arrivals-page .ads-container, #recommended-page .ads-container, #staff-picks-page .ads-container, #collaborations-page .ads-container {
   float: right; }
-  #new-arrivals-page .ads-container img {
+  #new-arrivals-page .ads-container img, #recommended-page .ads-container img, #staff-picks-page .ads-container img, #collaborations-page .ads-container img {
     float: right;
     height: 225px;
     min-width: 225px; }
-  #new-arrivals-page .ads-container img:not(.first-img) {
+  #new-arrivals-page .ads-container img:not(.first-img), #recommended-page .ads-container img:not(.first-img), #staff-picks-page .ads-container img:not(.first-img), #collaborations-page .ads-container img:not(.first-img) {
     float: right;
     margin-top: 35px; }
 
