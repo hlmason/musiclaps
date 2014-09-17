@@ -80,7 +80,17 @@ $table-border: 1px solid #ddd;
 	text-align: center;
 }
 
-@mixin nav-border($color) { // Note that there is a variables with the same name
+@mixin input-link {
+	background: none;
+	border: none;
+	color: #428bca;
+	font-weight: bold;
+	&:hover, &:focus {
+		color: #2a6496;
+	}
+}
+
+@mixin nav-border($color) { // Note that there is a variable with the same name
 	border-left: 1px solid $color;
 	&:first-child {
 	border-left: none;
@@ -142,6 +152,7 @@ html, body {
 }
 
 body {
+	color: $musiclaps-dark-gray;
 	font-family: 'Roboto', sans-serif;
 	// padding-top: 120px; // For fixed Bootstrap nav bar
 }
@@ -164,16 +175,6 @@ a:hover, a:focus {
 
 a:hover {
 	cursor: pointer;
-}
-
-@mixin input-link {
-	background: none;
-	border: none;
-	color: #428bca;
-	font-weight: bold;
-	&:hover, &:focus {
-		color: #2a6496;
-	}
 }
 
 label#birth-date-label-modal, label#gender-label, 
@@ -268,7 +269,7 @@ nav {
 			li { // Also controls nav below top nav
 				margin-top: 23px;		
 			}
-			.open > a { // When "Music", "People", or "Our Story" is active
+			.open > a { // When "Music", "People", or "Our Story" is clicked on
 				background-color: $musiclaps-light-gray !important;
 			}
 			a {
@@ -396,7 +397,7 @@ nav {
 			}
 			&:hover, &:focus {
 				background-color: $musiclaps-light-gray; // A little darker than inactive tabs
-				color: #2a6496 !important;
+				color: $musiclaps-dark-gray !important;
 			}
 			&:not(.active) {
 				background-color: #f4f4f4;
@@ -418,7 +419,6 @@ nav {
     Modal
 =================================== */
 .modal-content {
-	color: $musiclaps-dark-gray;
 	border-bottom: $modal-border;
 	border-left: $modal-border;
 	border-right: $modal-border;
@@ -536,9 +536,6 @@ nav {
 		}
 		ul {
 			display: inline-block;
-			a:hover { // Songs link on "Select a song" modal
-				color: $musiclaps-dark-gray;
-			}
 		}
 		&#walkthrough {
 			padding-bottom: 5px;
@@ -564,7 +561,6 @@ nav {
 		a { // "Forgot password" link
 			margin-right: 58px;
 			&:hover, &:focus {
-				color: $musiclaps-dark-gray;
 				cursor: pointer;
 			}
 		}
@@ -587,7 +583,7 @@ h1.landing-page {
 	a {
 		color: $musiclaps-blue;
 		&:hover, &:focus {
-			color: $musiclaps-dark-gray !important;
+			// color: $musiclaps-dark-gray !important;
 		}
 	}
 }
@@ -818,10 +814,6 @@ h1.landing-page {
 	text-align: center;
 }
 
-#select-song-container a:hover, section#recording-instructions {
-	color: $musiclaps-dark-gray;
-}
-
 section#recording-instructions {
 	h1 {
 		text-align: center;
@@ -868,6 +860,44 @@ section#recording-instructions {
 			&:hover, &:focus {
 				background-color: #1A9A1A;
 			}
+		}
+	}
+}
+
+/* ===================================
+    New Arrivals Page
+=================================== */
+#new-arrivals-page {
+	#public-project-listings {
+		&:hover {
+			background-color: $musiclaps-light-gray;
+			cursor: pointer;
+		}
+		img {
+			height: 85px;
+			padding-top: 10px;
+			min-width: 135px;
+		}
+		h3, h4 {
+			margin-left: 5px;
+		}
+		h4 {
+			font-weight: normal;
+		}
+		h4.last-h4 {
+			display: inline-block;
+		}
+	}
+	.ads-container {
+		float: right;
+		img {
+			float: right;
+			height: 225px;
+			width: 225px;
+		}
+		img:not(.first-img) {
+			float: right;
+			margin-top: 35px;
 		}
 	}
 }
@@ -1211,7 +1241,7 @@ section.projects-container {
 	}
 	&:hover {
 		background-color: #F4F4F4;
-		color: $musiclaps-dark-gray !important; // Necessary for "Audition" listings
+		// color: $musiclaps-dark-gray !important; // Necessary for "Audition" listings
 		cursor: pointer;
 	}
 }
@@ -1266,9 +1296,6 @@ section.project-form-header {
 	}
 	h4 {
 		float: right;
-	}
-	.glyphicon-repeat {
-		color: $musiclaps-dark-gray;
 	}
 }
 
@@ -1990,7 +2017,6 @@ section#public-project-header {
 		margin-top: 15px;
 	}
 	.glyphicon-heart {
-		color: $musiclaps-dark-gray;
 		font-size: 1.25em;
 		margin-left: 30px;
 	}
@@ -2218,7 +2244,6 @@ footer {
     Under Construction Page
 =================================== */
 #construction-page {
-	color: $musiclaps-dark-gray;
 	text-align: center;
 	.glyphicon-home {
 		font-size: 3em;

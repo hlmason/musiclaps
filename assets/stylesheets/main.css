@@ -2888,6 +2888,7 @@ html, body {
   height: 100%; }
 
 body {
+  color: #444444;
   font-family: 'Roboto', sans-serif; }
 
 img {
@@ -3082,7 +3083,7 @@ ul#nav-logged-in a, ul#nav-logged-out a {
     color: #428bca !important; }
   ul#nav-logged-in a:hover, ul#nav-logged-in a:focus, ul#nav-logged-out a:hover, ul#nav-logged-out a:focus {
     background-color: #e7e7e7;
-    color: #2a6496 !important; }
+    color: #444444 !important; }
   ul#nav-logged-in a:not(.active), ul#nav-logged-out a:not(.active) {
     background-color: #f4f4f4; }
     ul#nav-logged-in a:not(.active):hover, ul#nav-logged-in a:not(.active):focus, ul#nav-logged-out a:not(.active):hover, ul#nav-logged-out a:not(.active):focus {
@@ -3096,7 +3097,6 @@ ul#nav-logged-in li#second-list-item, ul#nav-logged-in li#last-list-item {
     Modal
 =================================== */
 .modal-content {
-  color: #444444;
   border-bottom: 5px solid #e7e7e7;
   border-left: 5px solid #e7e7e7;
   border-right: 5px solid #e7e7e7; }
@@ -3183,8 +3183,6 @@ ul#nav-logged-in li#second-list-item, ul#nav-logged-in li#last-list-item {
     margin-top: 12px; }
   .modal-content .modal-body ul {
     display: inline-block; }
-    .modal-content .modal-body ul a:hover {
-      color: #444444; }
   .modal-content .modal-body#walkthrough {
     padding-bottom: 5px; }
     .modal-content .modal-body#walkthrough h4 {
@@ -3202,7 +3200,6 @@ ul#nav-logged-in li#second-list-item, ul#nav-logged-in li#last-list-item {
   .modal-content .modal-footer a {
     margin-right: 58px; }
     .modal-content .modal-footer a:hover, .modal-content .modal-footer a:focus {
-      color: #444444;
       cursor: pointer; }
   .modal-content .modal-footer#register-modal-footer, .modal-content .modal-footer.registration-modal-footer {
     border-top: none; }
@@ -3232,8 +3229,6 @@ h1.landing-page {
   font-family: 'Roboto Condensed', sans-serif; }
   h1.landing-page a {
     color: #38aaff; }
-    h1.landing-page a:hover, h1.landing-page a:focus {
-      color: #444444 !important; }
 
 /* ===================================
     Musical Notes Map
@@ -3438,9 +3433,6 @@ section.contests-and-auditions img {
   margin-left: 0;
   text-align: center; }
 
-#select-song-container a:hover, section#recording-instructions {
-  color: #444444; }
-
 section#recording-instructions h1 {
   text-align: center; }
 section#recording-instructions h2 {
@@ -3480,6 +3472,32 @@ section#recording-instructions #save-container {
     padding: 10px 20px; }
     section#recording-instructions #save-container button.save:hover, section#recording-instructions #save-container button.save:focus {
       background-color: #1A9A1A; }
+
+/* ===================================
+    New Arrivals Page
+=================================== */
+#new-arrivals-page #public-project-listings:hover {
+  background-color: #e7e7e7;
+  cursor: pointer; }
+#new-arrivals-page #public-project-listings img {
+  height: 85px;
+  padding-top: 10px;
+  min-width: 135px; }
+#new-arrivals-page #public-project-listings h3, #new-arrivals-page #public-project-listings h4 {
+  margin-left: 5px; }
+#new-arrivals-page #public-project-listings h4 {
+  font-weight: normal; }
+#new-arrivals-page #public-project-listings h4.last-h4 {
+  display: inline-block; }
+#new-arrivals-page .ads-container {
+  float: right; }
+  #new-arrivals-page .ads-container img {
+    float: right;
+    height: 225px;
+    width: 225px; }
+  #new-arrivals-page .ads-container img:not(.first-img) {
+    float: right;
+    margin-top: 35px; }
 
 /* =====================================================================================================
     Profile, New Project, Projects, Collaborations, YouTube, Messages, Groups, and Project Profile Pages
@@ -3791,7 +3809,6 @@ section.projects-container {
       font-weight: normal; }
   section.projects-container:hover {
     background-color: #F4F4F4;
-    color: #444444 !important;
     cursor: pointer; }
 
 .col-sm-12.col-md-6.favorites-page:first-child {
@@ -3828,8 +3845,6 @@ section.project-form-header h3 {
   display: inline-block; }
 section.project-form-header h4 {
   float: right; }
-section.project-form-header .glyphicon-repeat {
-  color: #444444; }
 
 .project-info-bar {
   background-color: #e7e7e7;
@@ -4508,7 +4523,6 @@ section#public-project-header h5 {
   margin-bottom: 0;
   margin-top: 15px; }
 .public-project-info .glyphicon-heart {
-  color: #444444;
   font-size: 1.25em;
   margin-left: 30px; }
 .public-project-info img#facebook-like-button {
@@ -4721,7 +4735,6 @@ footer {
     Under Construction Page
 =================================== */
 #construction-page {
-  color: #444444;
   text-align: center; }
   #construction-page .glyphicon-home {
     font-size: 3em; }

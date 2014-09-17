@@ -52,11 +52,11 @@
 								<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="musicDropdownMenu">
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?m=rs&show=all&svv=new">New Arrivals</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?m=rs&show=all&svv=recommend">Recommended</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?m=rs&show=all&svv=pic">Staff Picks</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?m=rs&show=all&svv=collab">Collaborations</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?search=snd">All Music</a></li>
+								<li role="presentation"><a class="<?php if ($page == "New Arrivals") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>new-arrivals/">New Arrivals</a></li>
+								<li role="presentation"><a class="<?php if ($page == "Recommended") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>recommended/">Recommended</a></li>
+								<li role="presentation"><a class="<?php if ($page == "Staff Picks") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>staff-picks/">Staff Picks</a></li>
+								<li role="presentation"><a class="<?php if ($page == "Collaborations") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>collaborations/">Collaborations</a></li>
+								<li role="presentation"><a class="<?php if ($page == "All Music") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>all-music/">All Music</a></li>
 							</ul>
 						</div>
 					</li>
@@ -66,9 +66,9 @@
 								<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="peopleDropdownMenu">
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?thread=wt&cg=1">Player/Band Wanted</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Player/Band Available</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Collab Cafe</a></li>
+								<li role="presentation"><a class="<?php if ($page == "Player/Band Wanted") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>player-or-band-wanted/">Player/Band Wanted</a></li>
+								<li role="presentation"><a class="<?php if ($page == "Player/Band Available") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Player/Band Available</a></li>
+								<li role="presentation"><a class="<?php if ($page == "Collab Cafe") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Collab Cafe</a></li>
 							</ul>
 						</div>
 					</li>
@@ -78,10 +78,10 @@
 								<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="ourStoryDropdownMenu">
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Technology</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?forum=view">FAQs (Forum)</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Company</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Contact</a></li>
+								<li role="presentation"><a class="<?php if ($page == "Technology") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Technology</a></li>
+								<!-- <li role="presentation"><a class="<?php if ($page == "FAQs (Forum)") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>forum">FAQs (Forum)</a></li> -->
+								<li role="presentation"><a class="<?php if ($page == "Company") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Company</a></li>
+								<li role="presentation"><a class="<?php if ($page == "Contact") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Contact</a></li>
 							</ul>
 						</div>
 					</li>
