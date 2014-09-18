@@ -243,6 +243,47 @@ img#microsoft-icon {
 	}
 }
 
+table {
+	font-size: 12px;
+	thead tr {
+		text-align: left;
+	}
+	tr {
+		border-top: $table-border;
+		th:first-child {
+			border-left: $table-border;	
+		}
+		th:last-child {
+			border-right: $table-border;
+		}
+		th, td {
+			padding: 8px;
+		}
+		td {
+			vertical-align: middle;
+			img { // Avatar
+				height: 30px;
+				width: 30px;
+			}
+		}
+		td:first-child {
+			border-left: $table-border;
+		}
+		td:last-child {
+			border-right: $table-border;
+		}
+	}
+	tr.thead-tr {
+		background-color: white !important;
+	}
+	tr:not(.thead-tr) {
+		border-bottom: $table-border;
+	}
+	tr:nth-child(odd) {
+		background-color: #F4F4F4;
+	}
+}
+
 /* ===================================
     Nav
 =================================== */
@@ -938,7 +979,7 @@ section#recording-instructions {
 /* ===================================
     Players Wanted Page
 =================================== */
-#players-wanted-container {
+#players-wanted-page-container {
 	@include border-radius (5px);
 	box-shadow: $box-shadow;
 	border: $nav-border;
@@ -970,6 +1011,14 @@ section#recording-instructions {
 				min-width: 116px;
 				padding-left: 15px;
 				padding-right: 15px;
+			}
+		}
+	}
+	.players-wanted-container {
+		table {
+			width: 100%;
+			span.username {
+				margin-left: 5px;
 			}
 		}
 	}
@@ -1729,52 +1778,16 @@ section#lyrics-container-header { // "Display Lyrics" and "Select Sound"
 		margin-top: 25px;
 	}
 	table {
-		font-size: 12px;
 		margin-left: 0;
 		width: 98%;
-		thead tr {
-			text-align: left;
-		}
-		tr {
-			border-top: $table-border;
-			th:first-child {
-				border-left: $table-border;	
+		td {
+			span.username {
+				margin-left: 3px;
 			}
-			th:last-child {
-				border-right: $table-border;
+			.glyphicon-envelope {
+				color: $musiclaps-dark-gray;
+				font-size: 14px;
 			}
-			th, td {
-				padding: 8px;
-			}
-			td {
-				vertical-align: middle;
-				img { // Avatar
-					height: 30px;
-					width: 30px;
-				}
-				span.username {
-					margin-left: 3px;
-				}
-				.glyphicon-envelope {
-					color: $musiclaps-dark-gray;
-					font-size: 14px;
-				}
-			}
-			td:first-child {
-				border-left: $table-border;
-			}
-			td:last-child {
-				border-right: $table-border;
-			}
-		}
-		tr.thead-tr {
-			background-color: white !important;
-		}
-		tr:not(.thead-tr) {
-			border-bottom: $table-border;
-		}
-		tr:nth-child(odd) {
-			background-color: #F4F4F4;
 		}
 	}
 }

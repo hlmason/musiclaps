@@ -4,7 +4,7 @@
 	$pageTitle = 'Profile';
 	$page = 'Profile';
 	
-	include(ROOT_PATH . 'include/header.php');
+	include(ROOT_PATH . 'include/header-logged-in.php');
 	include(ROOT_PATH . 'include/db-connection.php');
 	include(ROOT_PATH . 'controllers/get-profile.php');
 
@@ -16,7 +16,7 @@
 			<nav class="row col-lg-10 col-lg-offset-1">
 				<ul class="nav navbar-nav" id="nav-logged-out">
 					<li class="first-list-item">
-						<a class="<?php if ($page == "Profile") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/public-profile.php">Profile
+						<a class="<?php if ($page == "Profile") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php">Profile
 						</a>
 					</li>
 					

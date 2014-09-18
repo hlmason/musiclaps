@@ -67,36 +67,42 @@
 							<tbody>
 								<tr>
 									<td><!-- Hard-coded placeholder -->
-										<a href="<?php echo BASE_URL; ?>profile/public-profile.php"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
+										<a href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
 										<span class="username">$username</span></a>
 									</td>
 									<td>$date</td><!-- Hard-coded placeholder -->
 									<td>$project title</td><!-- Hard-coded placeholder -->
 									<td>$type of collab</td><!-- Hard-coded placeholder -->
 									<td>$instrument</td><!-- Hard-coded placeholder -->
-									<td><a href="<?php echo BASE_URL; ?>profile/messages.php"><span class="glyphicon glyphicon-envelope"></span></a></td>
+									<td>
+										<a href="<?php echo BASE_URL; ?>profile/messages.php"><span class="glyphicon glyphicon-envelope"></span></a>
+									</td>
 								</tr>
 								<tr>
 									<td><!-- Hard-coded placeholder -->
-										<a href="<?php echo BASE_URL; ?>profile/public-profile.php"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
+										<a href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
 										<span class="username">$username</span></a>
 									</td>
 									<td>$date</td><!-- Hard-coded placeholder -->
 									<td>$project title</td><!-- Hard-coded placeholder -->
 									<td>$type of collab</td><!-- Hard-coded placeholder -->
 									<td>$instrument</td><!-- Hard-coded placeholder -->
-									<td><a href="<?php echo BASE_URL; ?>profile/messages.php"><span class="glyphicon glyphicon-envelope"></span></a></td>
+									<td>
+										<a href="<?php echo BASE_URL; ?>profile/messages.php"><span class="glyphicon glyphicon-envelope"></span></a>
+									</td>
 								</tr>
 								<tr>
 									<td><!-- Hard-coded placeholder -->
-										<a href="<?php echo BASE_URL; ?>profile/public-profile.php"><img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
+										<a href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php"><img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
 										<span class="username">$username</span></a>
 									</td>
 									<td>$date</td><!-- Hard-coded placeholder -->
 									<td>$project title</td><!-- Hard-coded placeholder -->
 									<td>$type of collab</td><!-- Hard-coded placeholder -->
 									<td>$instrument</td><!-- Hard-coded placeholder -->
-									<td><a href="<?php echo BASE_URL; ?>profile/messages.php"><span class="glyphicon glyphicon-envelope"></span></a></td>
+									<td>
+										<a href="<?php echo BASE_URL; ?>profile/messages.php"><span class="glyphicon glyphicon-envelope"></span></a>
+									</td>
 								</tr>
 							</tbody>
 						</table>

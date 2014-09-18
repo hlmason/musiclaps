@@ -24,7 +24,7 @@
 							
 								<div class="col-xs-6 col-sm-6 col-md-6">
 									<a href="<?php echo BASE_URL; ?>profile/public-project-logged-in.php"><h4>$project title</h4></a><!-- Hard-coded placeholder -->
-									<h5>By: <a href="<?php echo BASE_URL; ?>profile/public-profile.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
+									<h5>By: <a href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
 									<h5>Plays: <span class="normal">$# of plays</span></h5><!-- Hard-coded placeholder -->
 								</div>
 
@@ -42,7 +42,7 @@
 							
 								<div class="col-xs-6 col-sm-6 col-md-6">
 									<a href="<?php echo BASE_URL; ?>profile/public-project-logged-in.php"><h4>$project title</h4></a><!-- Hard-coded placeholder -->
-									<h5>By: <a href="<?php echo BASE_URL; ?>profile/public-profile.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
+									<h5>By: <a href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
 									<h5>Plays: <span class="normal">$# of plays</span></h5><!-- Hard-coded placeholder -->
 								</div>
 
