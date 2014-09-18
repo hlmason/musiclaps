@@ -584,7 +584,7 @@ h1.landing-page {
 	a {
 		color: $musiclaps-blue;
 		&:hover, &:focus {
-			// color: $musiclaps-dark-gray !important;
+			color: $musiclaps-dark-gray ; // For "Music Collaboration"
 		}
 	}
 }
@@ -941,9 +941,11 @@ section#recording-instructions {
 #player-or-band-wanted-page {
 	#player-or-band-wanted-container {
 		@include border-radius (5px);
+		box-shadow: $box-shadow;
 		border: $nav-border;
-		height: 400px;
+		min-height: 590px;
 		margin: 25px;
+		padding-bottom: 15px;
 		section#categories-container {
 			border: $nav-border;
 			margin-top: 15px;
@@ -977,7 +979,7 @@ section#recording-instructions {
 			margin-bottom: 15px;
 			margin-top: 15px;
 		}
-		h4#karaoke {
+		h4#karaoke, h4#new-request {
 			display: inline-block;
 		}
 		button {
@@ -989,9 +991,49 @@ section#recording-instructions {
 			}
 		}
 		h4.no-listings {
+			font-weight: normal;
+			margin-top: 0;
 			text-align: center;
 		}
-
+		h4#new-request {
+			margin-bottom: 5px;
+			margin-left: 2px;
+			margin-top: 0;
+		}
+		#glyphicon-and-h4-title {
+			background-color: $musiclaps-light-gray;
+			border-left: $nav-border;
+			border-right: $nav-border;
+			border-top: $nav-border;
+			padding-left: 10px;
+			padding-top: 5px;
+		}
+		.new-request-container {
+			border: $nav-border;
+			min-height: 260px;
+			padding: 10px;
+			label {
+				&:not(#request-title-label) {
+					@include form-fields-label(10px);
+				}
+				&#request-title-label {
+					margin-bottom: 2px !important;
+				}
+			}
+			input#request_title, textarea {
+				@include form-fields-input(100%);
+			}
+			textarea {
+				height: 113px;
+			}
+			input.post-request {
+				@include border-radius(10px);
+				@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+				color: white;
+				float: right;
+				margin-top: 10px;
+			}
+		}
 	}
 }
 
@@ -1652,6 +1694,9 @@ section#lyrics-container-header, #lyrics-container-form {
 	select, input#title, input#songwriter_or_composer, textarea {
 		@include form-fields-input(100%);
 	}
+	textarea {
+		height: 308px;
+	}
 }
 
 section#lyrics-container-header { // "Display Lyrics" and "Select Sound"
@@ -1921,16 +1966,20 @@ section.messages-container {
 	h5:last-child { // Username
 		margin-top: 3px;
 	}
-	#existing-message {
-		@include border-radius(4px);
-		background-color: $musiclaps-light-gray;
-		height: 50px;
-		margin-top: 43px;
-		width: 90%;
+	.col-xs-9.messages-container {
+		padding-right: 0; // Extends gray message box to the right
+		#existing-message {
+			@include border-radius(4px);
+			background-color: $musiclaps-light-gray;
+			height: 50px;
+			margin-top: 43px;
+			width: 90%;
+		}
 	}
-	h4 { // "message to username"
+	h4 { // "Message to username"
 		display: inline-block;
 		margin-bottom: 5px;
+		margin-left: 2px;
 		margin-top: 0;
 	}
 	textarea {

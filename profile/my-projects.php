@@ -120,7 +120,7 @@
 							</div>
 							<div>
 								<label for="lyrics">Lyrics</label>
-								<textarea id="lyrics" rows="15"></textarea>
+								<textarea id="lyrics"></textarea>
 							</div>
 							<input id="save_lyrics" type="submit" value="Save">
 						</div>

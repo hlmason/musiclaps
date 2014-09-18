@@ -115,14 +115,14 @@
 								</a>
 							</div>
 							
-							<div class="col-xs-9">
-								<div id="existing-message"></div>
+							<div class="col-xs-9 messages-container">
+								<div id="existing-message"></div><!-- Hard-coded placeholder -->
 							</div>
 						</div>
 
 						<section class="row col-xs-12">
 							<span class="glyphicon glyphicon-pencil"></span>
-							<h4>message to $username</h4><!-- Hard-coded placeholder -->
+							<h4>Message to $username</h4><!-- Hard-coded placeholder -->
 							<textarea id="compose_message" name="compose_message"></textarea>
 							<input class="send-message" type="submit" value="Send">
 						</section>

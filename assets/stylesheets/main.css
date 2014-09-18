@@ -3227,6 +3227,8 @@ h1.landing-page {
   font-family: 'Roboto Condensed', sans-serif; }
   h1.landing-page a {
     color: #38aaff; }
+    h1.landing-page a:hover, h1.landing-page a:focus {
+      color: #444444; }
 
 /* ===================================
     Musical Notes Map
@@ -3527,9 +3529,11 @@ section#recording-instructions #save-container {
 #player-or-band-wanted-page #player-or-band-wanted-container {
   -moz-border-radius: 5px;
   border-radius: 5px;
+  box-shadow: 10px 10px 5px #444444;
   border: 1px solid #cecece;
-  height: 400px;
-  margin: 25px; }
+  min-height: 590px;
+  margin: 25px;
+  padding-bottom: 15px; }
   #player-or-band-wanted-page #player-or-band-wanted-container section#categories-container {
     border: 1px solid #cecece;
     margin-top: 15px;
@@ -3555,7 +3559,7 @@ section#recording-instructions #save-container {
   #player-or-band-wanted-page #player-or-band-wanted-container h4#karaoke, #player-or-band-wanted-page #player-or-band-wanted-container button {
     margin-bottom: 15px;
     margin-top: 15px; }
-  #player-or-band-wanted-page #player-or-band-wanted-container h4#karaoke {
+  #player-or-band-wanted-page #player-or-band-wanted-container h4#karaoke, #player-or-band-wanted-page #player-or-band-wanted-container h4#new-request {
     display: inline-block; }
   #player-or-band-wanted-page #player-or-band-wanted-container button {
     -moz-border-radius: 10px;
@@ -3571,7 +3575,50 @@ section#recording-instructions #save-container {
     #player-or-band-wanted-page #player-or-band-wanted-container button:hover {
       background-color: #d9d9d9; }
   #player-or-band-wanted-page #player-or-band-wanted-container h4.no-listings {
+    font-weight: normal;
+    margin-top: 0;
     text-align: center; }
+  #player-or-band-wanted-page #player-or-band-wanted-container h4#new-request {
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-top: 0; }
+  #player-or-band-wanted-page #player-or-band-wanted-container #glyphicon-and-h4-title {
+    background-color: #e7e7e7;
+    border-left: 1px solid #cecece;
+    border-right: 1px solid #cecece;
+    border-top: 1px solid #cecece;
+    padding-left: 10px;
+    padding-top: 5px; }
+  #player-or-band-wanted-page #player-or-band-wanted-container .new-request-container {
+    border: 1px solid #cecece;
+    min-height: 260px;
+    padding: 10px; }
+    #player-or-band-wanted-page #player-or-band-wanted-container .new-request-container label:not(#request-title-label) {
+      margin-bottom: 2px;
+      margin-top: 10px; }
+    #player-or-band-wanted-page #player-or-band-wanted-container .new-request-container label#request-title-label {
+      margin-bottom: 2px !important; }
+    #player-or-band-wanted-page #player-or-band-wanted-container .new-request-container input#request_title, #player-or-band-wanted-page #player-or-band-wanted-container .new-request-container textarea {
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      border: 1px solid #cecece;
+      padding-bottom: 3px;
+      padding-left: 8px;
+      padding-top: 3px;
+      width: 100%; }
+    #player-or-band-wanted-page #player-or-band-wanted-container .new-request-container textarea {
+      height: 113px; }
+    #player-or-band-wanted-page #player-or-band-wanted-container .new-request-container input.post-request {
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      background-color: #38aaff;
+      border: 1px solid #38aaff;
+      padding: 3px 10px;
+      color: white;
+      float: right;
+      margin-top: 10px; }
+      #player-or-band-wanted-page #player-or-band-wanted-container .new-request-container input.post-request:hover, #player-or-band-wanted-page #player-or-band-wanted-container .new-request-container input.post-request:focus {
+        background-color: #45b7ff; }
 
 /* =====================================================================================================
     Profile, New Project, Projects, Collaborations, YouTube, Messages, Groups, and Project Profile Pages
@@ -4176,6 +4223,8 @@ section#lyrics-container-header, #lyrics-container-form {
     padding-left: 8px;
     padding-top: 3px;
     width: 100%; }
+  section#lyrics-container-header textarea, #lyrics-container-form textarea {
+    height: 308px; }
 
 section#lyrics-container-header {
   border: 1px solid #cecece;
@@ -4417,16 +4466,19 @@ section.messages-container h5:first-child {
   margin-bottom: 3px; }
 section.messages-container h5:last-child {
   margin-top: 3px; }
-section.messages-container #existing-message {
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  background-color: #e7e7e7;
-  height: 50px;
-  margin-top: 43px;
-  width: 90%; }
+section.messages-container .col-xs-9.messages-container {
+  padding-right: 0; }
+  section.messages-container .col-xs-9.messages-container #existing-message {
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #e7e7e7;
+    height: 50px;
+    margin-top: 43px;
+    width: 90%; }
 section.messages-container h4 {
   display: inline-block;
   margin-bottom: 5px;
+  margin-left: 2px;
   margin-top: 0; }
 section.messages-container textarea {
   -moz-border-radius: 5px;
