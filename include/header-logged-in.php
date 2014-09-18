@@ -58,11 +58,11 @@
 								<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="musicDropdownMenu">
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?m=rs&show=all&svv=new">New Arrivals</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?m=rs&show=all&svv=recommend">Recommended</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?m=rs&show=all&svv=pic">Staff Picks</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?m=rs&show=all&svv=collab">Collaborations</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?search=snd">All Music</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>new-arrivals/index-logged-in.php">New Arrivals</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>recommended/index-logged-in.php">Recommended</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>staff-picks/index-logged-in.php">Staff Picks</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>collaborations/index-logged-in.php">Collaborations</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>all-music/index-logged-in.php">All Music</a></li>
 							</ul>
 						</div>
 					</li>
@@ -72,7 +72,7 @@
 								<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="peopleDropdownMenu">
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?thread=wt&cg=1">Player/Band Wanted</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>player-or-band-wanted/index-logged-in.php">Player/Band Wanted</a></li>
 								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction-logged-in.php">Player/Band Available</a></li>
 								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction-logged-in.php">Collab Cafe</a></li>
 							</ul>
@@ -85,7 +85,7 @@
 							</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="ourStoryDropdownMenu">
 								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction-logged-in.php">Technology</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.musiclaps.com/play?forum=view">FAQs (Forum)</a></li>
+								<!-- <li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>forum/index-logged-in.php">FAQs (Forum)</a></li> -->
 								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction-logged-in.php">Company</a></li>
 								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction-logged-in.php">Contact</a></li>
 							</ul>

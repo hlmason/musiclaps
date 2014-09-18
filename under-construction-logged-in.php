@@ -26,5 +26,5 @@
 		</div>
 
 	<?php
-		include(ROOT_PATH . 'include/footer.php');
+		include(ROOT_PATH . 'include/footer-logged-in.php');
 	?>

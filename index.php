@@ -9,7 +9,7 @@
 	<div id="wrapper">
 
 		<h1 class="landing-page">
-			Online <a href="https://www.musiclaps.com/play?m=rs&show=all&svv=collab">Music Collaboration</a> Made Simple
+			Online <a href="<?php echo BASE_URL; ?>collaborations/">Music Collaboration</a> Made Simple
 		</h1>
 		<div id="landing-page-hero">
 			<div id="musical-notes-map"></div>
