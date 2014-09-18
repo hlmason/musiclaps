@@ -3015,7 +3015,7 @@ nav input#search {
   margin-top: 24px; }
 nav .glyphicon-search {
   cursor: pointer;
-  margin-left: 3px; }
+  margin-left: 5px; }
 nav ul#flags {
   float: right;
   margin-bottom: 0;
@@ -3199,8 +3199,6 @@ ul#nav-logged-in li#second-list-item, ul#nav-logged-in li#last-list-item {
     text-align: center; }
   .modal-content .modal-footer a {
     margin-right: 58px; }
-    .modal-content .modal-footer a:hover, .modal-content .modal-footer a:focus {
-      cursor: pointer; }
   .modal-content .modal-footer#register-modal-footer, .modal-content .modal-footer.registration-modal-footer {
     border-top: none; }
   .modal-content .modal-footer.registration-modal-footer input {
@@ -3480,8 +3478,9 @@ section#recording-instructions #save-container {
   margin-bottom: 0; }
 #new-arrivals-page .public-project-listing, #recommended-page .public-project-listing, #staff-picks-page .public-project-listing, #collaborations-page .public-project-listing {
   border: 1px solid #cecece;
+  box-shadow: 10px 10px 5px #444444;
   color: #444444;
-  margin-top: 10px; }
+  margin-top: 25px; }
   #new-arrivals-page .public-project-listing:hover, #recommended-page .public-project-listing:hover, #staff-picks-page .public-project-listing:hover, #collaborations-page .public-project-listing:hover {
     background-color: #e7e7e7;
     cursor: pointer; }
@@ -3517,9 +3516,62 @@ section#recording-instructions #save-container {
   margin-bottom: 0;
   text-align: center; }
 #all-music-page .projects-container {
+  box-shadow: 10px 10px 5px #444444;
   color: #444444; }
 #all-music-page .ads-container img.first-img {
   float: right; }
+
+/* ===================================
+    Player/Band Wanted Page
+=================================== */
+#player-or-band-wanted-page #player-or-band-wanted-container {
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  height: 400px;
+  margin: 25px; }
+  #player-or-band-wanted-page #player-or-band-wanted-container section#categories-container {
+    border: 1px solid #cecece;
+    margin-top: 15px;
+    text-align: center; }
+    #player-or-band-wanted-page #player-or-band-wanted-container section#categories-container .categories {
+      display: inline-block;
+      padding-bottom: 10px; }
+      #player-or-band-wanted-page #player-or-band-wanted-container section#categories-container .categories h4:not(.last-h4) {
+        margin-bottom: 3px;
+        margin-top: 10px; }
+      #player-or-band-wanted-page #player-or-band-wanted-container section#categories-container .categories h4:not(.first-h4) {
+        margin-left: 15px; }
+      #player-or-band-wanted-page #player-or-band-wanted-container section#categories-container .categories h4.last-h4 {
+        background-color: #e7e7e7;
+        font-weight: normal;
+        margin-bottom: 0;
+        margin-top: 0; }
+      #player-or-band-wanted-page #player-or-band-wanted-container section#categories-container .categories img {
+        height: 75px;
+        min-width: 116px; }
+        #player-or-band-wanted-page #player-or-band-wanted-container section#categories-container .categories img:not(.first-img) {
+          padding-left: 15px; }
+  #player-or-band-wanted-page #player-or-band-wanted-container h4#karaoke, #player-or-band-wanted-page #player-or-band-wanted-container button {
+    margin-bottom: 15px;
+    margin-top: 15px; }
+  #player-or-band-wanted-page #player-or-band-wanted-container h4#karaoke {
+    display: inline-block; }
+  #player-or-band-wanted-page #player-or-band-wanted-container button {
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+    border: none;
+    color: #444444;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    padding: 5px 10px;
+    border: 1px solid #cecece;
+    float: right; }
+    #player-or-band-wanted-page #player-or-band-wanted-container button:hover {
+      background-color: #d9d9d9; }
+  #player-or-band-wanted-page #player-or-band-wanted-container h4.no-listings {
+    text-align: center; }
 
 /* =====================================================================================================
     Profile, New Project, Projects, Collaborations, YouTube, Messages, Groups, and Project Profile Pages
@@ -4200,7 +4252,7 @@ section#lyrics-container-header {
 #info-below-youtube-player h4 {
   display: inline-block;
   font-weight: normal;
-  margin-left: 20px;
+  margin-left: 15px;
   margin-top: 10px; }
 
 #youtube-settings {

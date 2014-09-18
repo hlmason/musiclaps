@@ -10,6 +10,7 @@ $musiclaps-dark-gray: #444; // Whichever shade of gray is in the final logo - TB
 $musiclaps-blue-border: 1px solid $musiclaps-blue;
 $nav-border: 1px solid #cecece;  // Note that there is a mixin with the same name
 $table-border: 1px solid #ddd;
+$box-shadow: 10px 10px 5px $musiclaps-dark-gray;
 
 /* ===================================
     Mixins
@@ -93,7 +94,7 @@ $table-border: 1px solid #ddd;
 @mixin nav-border($color) { // Note that there is a variable with the same name
 	border-left: 1px solid $color;
 	&:first-child {
-	border-left: none;
+		border-left: none;
 	}
 }
 
@@ -312,7 +313,7 @@ nav {
 	}
 	.glyphicon-search {
 		cursor: pointer;
-		margin-left: 3px;
+		margin-left: 5px;
 	}
 	ul#flags {
 		float: right;
@@ -560,9 +561,9 @@ nav {
 	.modal-footer {
 		a { // "Forgot password" link
 			margin-right: 58px;
-			&:hover, &:focus {
-				cursor: pointer;
-			}
+			// &:hover {
+			// 	cursor: pointer;
+			// }
 		}
 		&#register-modal-footer, &.registration-modal-footer {
 			border-top: none;
@@ -873,8 +874,9 @@ section#recording-instructions {
 	}
 	.public-project-listing {
 		border: $nav-border;
+		box-shadow: $box-shadow;
 		color: $musiclaps-dark-gray; // Overrides link color
-		margin-top: 10px;
+		margin-top: 25px;
 		&:hover {
 			background-color: $musiclaps-light-gray;
 			cursor: pointer;
@@ -923,12 +925,73 @@ section#recording-instructions {
 		text-align: center;
 	}
 	.projects-container {
+		box-shadow: $box-shadow;
 		color: $musiclaps-dark-gray; // Overrides link color
 	}
 	.ads-container {
 		img.first-img {
 			float: right;
 		}
+	}
+}
+
+/* ===================================
+    Player/Band Wanted Page
+=================================== */
+#player-or-band-wanted-page {
+	#player-or-band-wanted-container {
+		@include border-radius (5px);
+		border: $nav-border;
+		height: 400px;
+		margin: 25px;
+		section#categories-container {
+			border: $nav-border;
+			margin-top: 15px;
+			text-align: center;
+			.categories {
+				display: inline-block;
+				padding-bottom: 10px;
+				h4:not(.last-h4) {
+					margin-bottom: 3px;
+					margin-top: 10px;
+				}
+				h4:not(.first-h4) {
+					margin-left: 15px; // Keeps h4 in line with the image below it
+				}
+				h4.last-h4 {
+					background-color: $musiclaps-light-gray;
+					font-weight: normal;
+					margin-bottom: 0;
+					margin-top: 0;
+				}
+				img {
+					height: 75px;
+					min-width: 116px;
+					&:not(.first-img) {
+						padding-left: 15px;
+					}
+				}
+			}
+		}
+		h4#karaoke, button {
+			margin-bottom: 15px;
+			margin-top: 15px;
+		}
+		h4#karaoke {
+			display: inline-block;
+		}
+		button {
+			@include button($musiclaps-light-gray, $musiclaps-dark-gray, 12px, 5px 10px);
+			border: $nav-border;
+			float: right;
+			&:hover {
+				background-color: #d9d9d9;
+			}
+		}
+		h4.no-listings {
+			text-align: center;
+		}
+
 	}
 }
 
@@ -965,7 +1028,7 @@ button.white, .white-button-navigate-hover-js:hover, .white-button-navigate-hove
 
 #avatar-n-edit-profile {
 	img.avatar {
-		box-shadow: 10px 10px 5px $musiclaps-dark-gray;
+		box-shadow: $box-shadow;
 		height: 100px;
 		max-width: 100px;
 	}
@@ -1685,7 +1748,7 @@ section#lyrics-container-header { // "Display Lyrics" and "Select Sound"
 #info-below-youtube-player h4 {
 	display: inline-block;
 	font-weight: normal;
-	margin-left: 20px;
+	margin-left: 15px;
 	margin-top: 10px;
 }
 
