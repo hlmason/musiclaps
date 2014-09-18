@@ -936,103 +936,106 @@ section#recording-instructions {
 }
 
 /* ===================================
-    Player/Band Wanted Page
+    Players Wanted Page
 =================================== */
-#player-or-band-wanted-page {
-	#player-or-band-wanted-container {
-		@include border-radius (5px);
-		box-shadow: $box-shadow;
+#players-wanted-container {
+	@include border-radius (5px);
+	box-shadow: $box-shadow;
+	border: $nav-border;
+	min-height: 590px;
+	margin: 25px;
+	padding-bottom: 15px;
+	section#categories-container {
 		border: $nav-border;
-		min-height: 590px;
-		margin: 25px;
-		padding-bottom: 15px;
-		section#categories-container {
-			border: $nav-border;
-			margin-top: 15px;
-			text-align: center;
-			.categories {
-				display: inline-block;
-				padding-bottom: 10px;
-				h4:not(.last-h4) {
-					margin-bottom: 3px;
-					margin-top: 10px;
-				}
-				h4:not(.first-h4) {
-					margin-left: 15px; // Keeps h4 in line with the image below it
-				}
-				h4.last-h4 {
-					background-color: $musiclaps-light-gray;
-					font-weight: normal;
-					margin-bottom: 0;
-					margin-top: 0;
-				}
-				img {
-					height: 75px;
-					min-width: 116px;
-					&:not(.first-img) {
-						padding-left: 15px;
-					}
-				}
-			}
-		}
-		h4#karaoke, button {
-			margin-bottom: 15px;
-			margin-top: 15px;
-		}
-		h4#karaoke, h4#new-request {
+		margin-top: 15px;
+		text-align: center;
+		.categories {
+			cursor: pointer;
 			display: inline-block;
-		}
-		button {
-			@include button($musiclaps-light-gray, $musiclaps-dark-gray, 12px, 5px 10px);
-			border: $nav-border;
-			float: right;
+			padding-bottom: 10px;
 			&:hover {
-				background-color: #d9d9d9;
+				background-color: $musiclaps-light-gray;
 			}
-		}
-		h4.no-listings {
-			font-weight: normal;
-			margin-top: 0;
-			text-align: center;
-		}
-		h4#new-request {
-			margin-bottom: 5px;
-			margin-left: 2px;
-			margin-top: 0;
-		}
-		#glyphicon-and-h4-title {
-			background-color: $musiclaps-light-gray;
-			border-left: $nav-border;
-			border-right: $nav-border;
-			border-top: $nav-border;
-			padding-left: 10px;
-			padding-top: 5px;
-		}
-		.new-request-container {
-			border: $nav-border;
-			min-height: 260px;
-			padding: 10px;
-			label {
-				&:not(#request-title-label) {
-					@include form-fields-label(10px);
-				}
-				&#request-title-label {
-					margin-bottom: 2px !important;
-				}
-			}
-			input#request_title, textarea {
-				@include form-fields-input(100%);
-			}
-			textarea {
-				height: 113px;
-			}
-			input.post-request {
-				@include border-radius(10px);
-				@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
-				color: white;
-				float: right;
+			h4:not(.last-h4) {
+				margin-bottom: 3px;
 				margin-top: 10px;
 			}
+			h4.last-h4 {
+				background-color: $musiclaps-light-gray;
+				font-weight: normal;
+				margin: 0 15px;
+			}
+			img {
+				height: 75px;
+				min-width: 116px;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+	}
+	h3.wanted, button {
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+	button {
+		margin-right: 60px;
+	}
+	h3.wanted, h4#new-request {
+		display: inline-block;
+	}
+	h3.wanted {
+		margin-left: 75px;
+	}
+	button {
+		@include button($musiclaps-light-gray, $musiclaps-dark-gray, 12px, 5px 10px);
+		border: $nav-border;
+		float: right;
+		&:hover {
+			background-color: #d9d9d9;
+		}
+	}
+	h4.no-listings {
+		font-weight: normal;
+		margin-top: 0;
+		text-align: center;
+	}
+	h4#new-request {
+		margin-bottom: 5px;
+		margin-left: 2px;
+		margin-top: 0;
+	}
+	#glyphicon-and-h4-title {
+		background-color: $musiclaps-light-gray;
+		border-left: $nav-border;
+		border-right: $nav-border;
+		border-top: $nav-border;
+		padding-left: 10px;
+		padding-top: 5px;
+	}
+	.new-request-container {
+		border: $nav-border;
+		min-height: 260px;
+		padding: 10px;
+		label {
+			&:not(#request-title-label) {
+				@include form-fields-label(10px);
+			}
+			&#request-title-label {
+				margin-bottom: 2px !important;
+			}
+		}
+		input#request_title, textarea {
+			@include form-fields-input(100%);
+		}
+		textarea {
+			height: 113px;
+		}
+		input.post-request {
+			@include border-radius(10px);
+			@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+			color: white;
+			float: right;
+			margin-top: 10px;
 		}
 	}
 }

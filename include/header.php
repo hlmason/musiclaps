@@ -28,7 +28,7 @@
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/wmuSlider.min.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/modal.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/live-player.js"></script>
-	<script src="<?php echo BASE_URL; ?>assets/javascripts/player-or-band-wanted.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/players-wanted.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/public-project.js"></script>
 </head>
 <body>
@@ -67,8 +67,8 @@
 								<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="peopleDropdownMenu">
-								<li role="presentation"><a class="<?php if ($page == "Player/Band Wanted") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>player-or-band-wanted/">Player/Band Wanted</a></li>
-								<li role="presentation"><a class="<?php if ($page == "Player/Band Available") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Player/Band Available</a></li>
+								<li role="presentation"><a class="<?php if ($page == "Players Wanted") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>players-wanted/">Players Wanted</a></li>
+								<li role="presentation"><a class="<?php if ($page == "Players Available") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Players Available</a></li>
 								<li role="presentation"><a class="<?php if ($page == "Collab Cafe") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Collab Cafe</a></li>
 							</ul>
 						</div>

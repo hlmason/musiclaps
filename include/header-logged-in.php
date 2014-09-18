@@ -27,7 +27,7 @@
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/index.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/wmuSlider.min.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/live-player.js"></script>
-	<script src="<?php echo BASE_URL; ?>assets/javascripts/player-or-band-wanted.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/players-wanted.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/index.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/new-project.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/projects-and-collabs.js"></script>
@@ -72,8 +72,8 @@
 								<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="peopleDropdownMenu">
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>player-or-band-wanted/index-logged-in.php">Player/Band Wanted</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction-logged-in.php">Player/Band Available</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>players-wanted/index-logged-in.php">Players Wanted</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction-logged-in.php">Players Available</a></li>
 								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction-logged-in.php">Collab Cafe</a></li>
 							</ul>
 						</div>
