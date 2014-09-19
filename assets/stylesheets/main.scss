@@ -6,7 +6,7 @@
 $musiclaps-blue: #38AAFF; // Whatever shade of blue you want
 $musiclaps-light-gray: #e7e7e7;
 $modal-border: 5px solid $musiclaps-light-gray;
-$musiclaps-dark-gray: #444; // Whichever shade of gray is in the final logo - TBD
+$musiclaps-dark-gray: #444; // Whatever shade of gray you want
 $musiclaps-blue-border: 1px solid $musiclaps-blue;
 $nav-border: 1px solid #cecece;  // Note that there is a mixin with the same name
 $table-border: 1px solid #ddd;
@@ -155,7 +155,6 @@ html, body {
 body {
 	color: $musiclaps-dark-gray;
 	font-family: 'Roboto', sans-serif;
-	// padding-top: 120px; // For fixed Bootstrap nav bar
 }
 
 img {
@@ -400,9 +399,6 @@ nav {
 			}
 		}
 	}
-	// .navbar-collapse {
-	// 	border-top: none;
-	// }
 }
 
 	/* ===================================
@@ -466,8 +462,6 @@ nav {
 	border-right: $modal-border;
 	.modal-header {
 		border-top: $modal-border;
-		// border-top-left-radius: 5px;
-		// border-top-right-radius: 5px;
 		button.close {
 			background-color: white;
 			border: none;
@@ -497,8 +491,6 @@ nav {
 		text-transform: uppercase;
 	}
 	.modal-body {
-		// border-bottom-left-radius: 5px;
-		// border-bottom-right-radius: 5px;
 		&#sn-login-modal-body, &#sn-login-modal-body-sm, 
 		&#registration-full-modal-body, &#registration-express-modal-body, {
 			@include border-radius(0);
@@ -518,13 +510,13 @@ nav {
 			}
 		}
 		&#sn-login-modal-body-sm {
-			display: none; // Invisible at viewport widths >= 768px
+			display: none; // Invisible at viewport widths >= 767px
 		}
 		&#login-modal-body {
 			padding-top: 0;
 		}
 		&#registration-full-modal-body, &#registration-express-modal-body {
-			input { // Form fields
+			input {
 				@include form-fields-input(100%);
 			}
 		}
@@ -534,9 +526,6 @@ nav {
 		&#registration-full-modal-body, &#registration-express-modal-body {
 			label {
 				@include form-fields-label(10px);
-			}
-			input { // Form fields
-				// margin-top: 0;
 			}
 		}
 		label#email-label, label#birth-date-label-modal, label#gender-label, label#zip-label, img#captcha-img, #agree-checkbox {
@@ -600,11 +589,8 @@ nav {
 	}
 
 	.modal-footer {
-		a { // "Forgot password" link
+		a { // "Forgot password"
 			margin-right: 58px;
-			// &:hover {
-			// 	cursor: pointer;
-			// }
 		}
 		&#register-modal-footer, &.registration-modal-footer {
 			border-top: none;
@@ -720,7 +706,7 @@ h1.landing-page {
 				}
 			}
 			ul {
-				position: relative; // It must be this way for Firefox
+				position: relative; // For Firefox
 				top: -87px;
 				li {
 					display: inline-block;
@@ -759,7 +745,6 @@ h1.landing-page {
 		    // position: relative;
 		    text-align: center;
 		    img { // Album covers
-		    	// max-width: 100%;
 			    opacity: 0.9;
 			    // width: auto;
 			    height: 161px;
@@ -780,11 +765,10 @@ h1.landing-page {
 	    background: url('../../assets/images/landing-pg/sprites.png') no-repeat 0 0;
 	    top: 50%;
 	    margin-top: -40px;
-	    // z-index: 2;
 	}
 
 	.wmuSliderPrev {
-	    background-position: 100% 0; /* Controls direction of left slider button */
+	    background-position: 100% 0; // Controls direction of left slider button
 	    left: 100px;
 	}
 
@@ -1116,7 +1100,7 @@ section#messages-header button, section#groups-header button { // "Add New Frien
 }
 
 .white, .white-button-navigate-hover-js:hover, .white-button-navigate-hover-js:focus {
-	background-color: white !important; // Important tag is necessary for "Add New Friend"
+	background-color: white !important; // Important tag is necessary for "Add New Friend" button
 	color: #428bca !important;
 }
 
@@ -1249,7 +1233,7 @@ form.profile-page {
 	input#website_url, input#website_title, textarea, input#change_username {
 		@include form-fields-input(100%);
 	}
-	img { // Upload image
+	img { // "Your image"
 		height: 120px;
 		min-width: 120px;
 	}
@@ -1428,7 +1412,6 @@ section.projects-container {
 	}
 	&:hover {
 		background-color: #F4F4F4;
-		// color: $musiclaps-dark-gray !important; // Necessary for "Audition" listings
 		cursor: pointer;
 	}
 }
@@ -1618,7 +1601,7 @@ form#project-form {
 		border-left: $nav-border;
 		border-right: $nav-border;
 	}
-	.type-of-collab-container { // TODO: Fix positioning of '.glyphicon-ok'
+	.type-of-collab-container { // TODO: Fix positioning of ".glyphicon-ok"; not sure what happened here as it was perfectly positioned before
 		height: 36px;
 		text-align: center;
 		button {

@@ -3392,7 +3392,6 @@ h1.landing-page {
 
 .wmuSliderPrev {
   background-position: 100% 0;
-  /* Controls direction of left slider button */
   left: 100px; }
 
 .wmuSliderNext {
