@@ -1,37 +1,39 @@
-@charset "utf-8";
-/* CSS Document */
-html {
+#CaptivateContent { 
+	text-align: center;
+}
+
+/*html {
   position: relative;
   height: 100%;
   min-height: 100%;
-}
+}*/
 
-body {
+/*body {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 13px;
     width: 100%;
 	height: 100%;
     margin: 0 0 0 0;
-}
+}*/
 
-h1 {
+/*h1 {
 		color: #5093FF;
 		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 		font-size: 3em;
 		text-align: center;
 		
-	}
-p {
+	}*/
+/*p {
 	font-family: Arial;
 	font-size: 18px;
 	color:#676767;
 
-}
+}*/
 
-form {
+/*form {
 	align-content:center; 
 	align-items:center;
-}
+}*/
 
 #error_msg {
 	width: 200px; 
@@ -40,35 +42,35 @@ form {
 	font-weight: bold;
 }
 
-p {
+/*p {
     padding: 10px;
 	color: #444444;
 	text-align:center;
-}
+}*/
 #contentwrap form span #error_msg {
 	width: 200px; 
 	height: 20px;
 	color:#F4090D; 
 }
-ol {
+/*ol {
 	color: #444444;
-}
-ul {
+}*/
+/*ul {
 	list-style-type: none;
-}
-li {
+}*/
+/*li {
 	color: #444444;
-}
+}*/
 .red {
 	color: #E91518;
 }
-#wrapper {
+/*#wrapper {
     margin: 0 auto;
 	width: 100%;
     max-width: 772px;
 	height: 800px;
 	align: center;
-}
+}*/
 
 #headerwrap {
     width: 1000px;
@@ -121,13 +123,13 @@ li {
 	margin: 0 auto;
 }
 
-form {
+/*form {
 	width: 320px;
 	margin: 0 auto;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	color: #444444;
     font-size: 16px;
-}
+}*/
 .form-submit-button {
 	background: #229FD9;
 	width: 100px;
@@ -266,13 +268,13 @@ form {
 	
 }
 
-.container {
+/*.container {
   width: 60%;
  
   padding: 5px;
   margin: 0 auto;
   z-index: 0;
-}
+}*/
 
 .song-list {
 	z-index: 2;

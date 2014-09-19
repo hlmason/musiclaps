@@ -18,6 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="48x48" href="<?php echo BASE_URL; ?>favicon-48.png">
 	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/stylesheets/main.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>walkthrough/assets/css/tutorial.css"><!-- Julie's Captivate -->
 	<title>Musiclaps | <?php echo $pageTitle; ?></title>
 	<!-- [if lt IE 9]> -->
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -31,6 +32,7 @@
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/players-wanted.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/public-project.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/public-profile.js"></script>
+	<script src="<?php echo BASE_URL; ?>walkthrough/assets/js/standard.js"></script><!-- Julie's Captivate -->
 </head>
 <body>
 

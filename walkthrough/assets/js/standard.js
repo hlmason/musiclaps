@@ -353,3 +353,12 @@ CPAPIInterfaceClass.prototype =
 		return this.m_eventEmitter;
 	}	
 };
+
+
+function validateForm() {
+	var answer = document.forms["myForm"]["answer"].value;
+	if (answer == null || answer == "") {
+		document.getElementById("error_msg").innerHTML = "Please select an answer";
+		return false;
+	}
+}

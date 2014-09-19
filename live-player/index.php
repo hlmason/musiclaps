@@ -22,7 +22,7 @@
 					<h4>Would you like a walkthrough?<h4>
 					<form>
 						<span class="block"><input type="radio" name="selection" value="yes">&nbsp; <a class="yesOrNo" id="yes"><span class="bold">Yes</span> please, I'm new to this</a></span>
-						<span class="block"><input type="radio" name="selection" value="no">&nbsp; <a class="yesOrNo" id="no"><span class="bold">No</span> thanks, I can figure it out</a></span>
+						<span class="block"><input type="radio" name="selection" value="no">&nbsp; <a class="yesOrNo" id="no"><span class="bold">No</span> thank you</a></span>
 					</form>
 				</div>
 			</div>
