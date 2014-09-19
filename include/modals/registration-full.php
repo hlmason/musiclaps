@@ -2,7 +2,7 @@
 	<div class="modal-dialog modal-sm">
 		<div class="modal-content">
 			
-			<div class="modal-header">
+			<div class="modal-header" id="registration-full-header">
 				<button type="button" class="close" data-dismiss="modal">
 					<span aria-hidden="true">&times;</span>
 					<span class="sr-only">Close</span>
@@ -25,7 +25,7 @@
 					
 					<div>
 						<label for="password"><span class="musiclaps-blue">*</span> Password <span class="glyphicon glyphicon-question-sign"></span></label>
-						<div id="password-req">&nbsp; At least 1 letter and number</div>
+						<div class="password-req" id="passwordReq">Must be between 6 and 20 characters and contain at least 1 letter and 1 number</div>
 						<input id="password" type="text" name="password">
 					</div>
 					
@@ -53,7 +53,7 @@
 					</div>
 					
 					<div>
-						<label id="zip-label" for="zip"><span class="musiclaps-blue">*</span> Zip Code</label>
+						<label id="zip-label" for="zip"><span class="musiclaps-blue">*</span> Zip/Postal Code</label>
 						<input id="zip" type="text" name="zip">
 					</div>
 					

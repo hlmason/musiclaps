@@ -28,7 +28,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- End of welcome modal -->
+	<!-- End of "Welcome to Soundcheck" modal -->
 
 	<!-- Video modal -->
 	<div class="modal fade" id="demoVideo" tabindex="-1" role="dialog" aria-labelledby="demoVideoLabel" aria-hidden="true">
@@ -49,7 +49,7 @@
 	</div>
 	<!-- End of video modal -->
 
-	<!-- "Select a Song" modal -->
+	<!-- "Select a song" modal -->
 	<div class="modal fade" id="selectSong" tabindex="-1" role="dialog" aria-labelledby="selectSongLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -72,12 +72,12 @@
 						<li><a>Let It Be</a> (The Beatles)</li>
 						<li><a>Yesterday</a> (The Beatles)</li>
 					</ul>
-					<img class="pull-right" id="rainbow-music-notes" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Music notes of different colors">
+					<img id="rainbow-music-notes" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Music notes of different colors">
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- End of select a song modal -->
+	<!-- End of "Select a song" modal -->
 
 	<div id="wrapper">
 		

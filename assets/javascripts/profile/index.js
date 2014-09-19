@@ -20,7 +20,7 @@ $(document).ready(function() {
 		saveProfile.hide();
 		dontSaveProfile.hide();
 		editProfile.fadeIn('fast');
-		myProfile.fadeOut('fast');
+		myProfile.hide();
 	});
 
 });

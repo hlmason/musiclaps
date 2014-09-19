@@ -27,9 +27,15 @@
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/index.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/wmuSlider.min.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/live-player.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/players-wanted.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/index.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/new-project.js"></script>
-	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/projects.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/projects-and-collabs.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/messages.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/groups.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/public-project.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/youtube.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/public-profile.js"></script>
 </head>
 <body>
 
@@ -41,18 +47,61 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
 	            </button>
-				<a class="navbar-brand" href="<?php echo BASE_URL; ?>">
+				<a class="navbar-brand" href="<?php echo BASE_URL; ?>index-logged-in.php">
 					<img src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/musiclaps-logo.png" alt="Musiclaps logo">
 				</a>
 			</div>
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-left">
-					<li><a class="<?php if ($page == "Music") { echo "active"; } ?>" href="https://www.musiclaps.com/play?m=rs&show=all&svv=new">Music</a></li>
-					<li><a class="<?php if ($page == "People") { echo "active"; } ?>" href="#">People</a></li>
-					<li><a class="<?php if ($page == "Our Story") { echo "active"; } ?>" href="https://www.musiclaps.com/play?about=us">Our Story</a></li>
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="musicDropdownMenu" data-toggle="dropdown">Music
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="musicDropdownMenu">
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>new-arrivals/index-logged-in.php">New Arrivals</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>recommended/index-logged-in.php">Recommended</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>staff-picks/index-logged-in.php">Staff Picks</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>collaborations/index-logged-in.php">Collaborations</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>all-music/index-logged-in.php">All Music</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="peopleDropdownMenu" data-toggle="dropdown">People
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="peopleDropdownMenu">
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>players-wanted/index-logged-in.php">Players Wanted</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction-logged-in.php">Players Available</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction-logged-in.php">Collab Cafe</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="ourStoryDropdownMenu" data-toggle="dropdown">Our Story
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="ourStoryDropdownMenu">
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction-logged-in.php">Technology</a></li>
+								<!-- <li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>forum/index-logged-in.php">FAQs (Forum)</a></li> -->
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction-logged-in.php">Company</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction-logged-in.php">Contact</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+
+				<input id="search" type="text" name="search" placeholder="Search"><span class="glyphicon glyphicon-search"></span>
+				
+				<ul id="flags">
+					<li><a><img id="usa-flag" src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/usa-flag.jpg" alt="American flag"></a></li>
+					<li><a><img src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/japan-flag.jpg" alt="Japanese flag"></a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right" id="logged-in">
-					<li id="welcome-user">Welcome &nbsp;<span class="musiclaps-blue">$firstname</span></li><!-- Hard-coded placeholder -->
+					<li id="welcome-user">Welcome &nbsp;<span class="musiclaps-blue"><a id="welcome-user-link" href="<?php echo BASE_URL; ?>profile/index.php">$firstname</a></span></li><!-- Hard-coded placeholder -->
 					<li>
 						<form action="<?php echo BASE_URL; ?>/logout.php" method="post">
 							<input type="submit" value="Log out">
@@ -62,19 +111,3 @@
 			</div>
 		</div>
 	</nav>
-
-	<div id="wrapper">
-		<div class="container">
-			
-			<nav class="row col-lg-10 col-lg-offset-1" id="nav-registered-user">
-				<ul class="nav navbar-nav">
-					<li><a class="<?php if ($page == "Profile") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/">Profile</a></li>
-					<li><a class="<?php if ($page == "New Project") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/new-project.php">New Project</a></li>
-					<li><a class="<?php if ($page == "Projects") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/projects.php">Projects</a></li>
-					<li><a class="<?php if ($page == "Collaborations") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/collaborations.php">Collaborations</a></li>
-					<li><a class="<?php if ($page == "YouTube") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/youtube.php">YouTube</a></li>
-					<li><a class="<?php if ($page == "Messages") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/messages.php">Messages</a></li>
-					<li><a class="<?php if ($page == "Groups") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/groups.php">Groups</a></li>
-				</ul>
-			</nav>
-			<div class="col-lg-1"></div>

@@ -28,6 +28,9 @@
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/wmuSlider.min.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/modal.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/live-player.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/players-wanted.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/public-project.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/public-profile.js"></script>
 </head>
 <body>
 
@@ -45,11 +48,50 @@
 			</div>
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-left">
-					<li><a class="<?php if ($page == "Music") { echo "active"; } ?>" href="https://www.musiclaps.com/play?m=rs&show=all&svv=new">Music</a></li>
-					<li><a class="<?php if ($page == "People") { echo "active"; } ?>" href="#">People</a></li>
-					<li><a class="<?php if ($page == "Our Story") { echo "active"; } ?>" href="https://www.musiclaps.com/play?about=us">Our Story</a></li>
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="musicDropdownMenu" data-toggle="dropdown">Music
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="musicDropdownMenu">
+								<li role="presentation"><a class="<?php if ($page == "New Arrivals") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>new-arrivals/">New Arrivals</a></li>
+								<li role="presentation"><a class="<?php if ($page == "Recommended") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>recommended/">Recommended</a></li>
+								<li role="presentation"><a class="<?php if ($page == "Staff Picks") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>staff-picks/">Staff Picks</a></li>
+								<li role="presentation"><a class="<?php if ($page == "Collaborations") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>collaborations/">Collaborations</a></li>
+								<li role="presentation"><a class="<?php if ($page == "All Music") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>all-music/">All Music</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="peopleDropdownMenu" data-toggle="dropdown">People
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="peopleDropdownMenu">
+								<li role="presentation"><a class="<?php if ($page == "Players Wanted") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>players-wanted/">Players Wanted</a></li>
+								<li role="presentation"><a class="<?php if ($page == "Players Available") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Players Available</a></li>
+								<li role="presentation"><a class="<?php if ($page == "Collab Cafe") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Collab Cafe</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="ourStoryDropdownMenu" data-toggle="dropdown">Our Story
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="ourStoryDropdownMenu">
+								<li role="presentation"><a class="<?php if ($page == "Technology") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Technology</a></li>
+								<!-- <li role="presentation"><a class="<?php if ($page == "FAQs (Forum)") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>forum">FAQs (Forum)</a></li> -->
+								<li role="presentation"><a class="<?php if ($page == "Company") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Company</a></li>
+								<li role="presentation"><a class="<?php if ($page == "Contact") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Contact</a></li>
+							</ul>
+						</div>
+					</li>
 				</ul>
-				<ul class="pull-right" id="flags">
+
+				<input id="search" type="text" name="search" placeholder="Search"><span class="glyphicon glyphicon-search"></span>
+				
+				<ul id="flags">
 					<li><a><img id="usa-flag" src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/usa-flag.jpg" alt="American flag"></a></li>
 					<li><a><img src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/japan-flag.jpg" alt="Japanese flag"></a></li>
 				</ul>

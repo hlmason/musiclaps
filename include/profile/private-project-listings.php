@@ -1,7 +1,7 @@
 					<section class="row projects-container projectsContainer" id="privateProjectsContainer">
 						<div class="col-xs-4 col-sm-3 col-md-3">
 							<span class="glyphicon-pencil-container"><span class="glyphicon glyphicon-pencil glyphiconPencil"></span></span>
-							<img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project Image"><!-- Hard-coded placeholder -->
+							<img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
 						</div>
 					
 						<div class="col-xs-6 col-sm-6 col-md-7">
@@ -11,6 +11,11 @@
 						</div>
 
 						<div class="col-xs-2 col-sm-3 col-md-2">
-							<h5>Private <span class="glyphicon glyphicon-lock"></span></h5>
+							<h5 class="last-h5">Private <span class="glyphicon glyphicon-lock"></span></h5>
 						</div>
+					</section>
+					
+
+					<section class="noListings">
+						<h4>You currently have no projects in this category</h4>
 					</section>

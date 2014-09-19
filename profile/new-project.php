@@ -7,6 +7,7 @@
 	include(ROOT_PATH . 'include/header-logged-in.php');
 	include(ROOT_PATH . 'include/db-connection.php');
 	include(ROOT_PATH . 'controllers/get-profile.php');
+	include(ROOT_PATH . 'include/nav-logged-in.php');
 
 ?>
 		
@@ -16,21 +17,21 @@
 
 					<div class="row" id="new-project-buttons">	
 						<div class="col-xs-12">
-							<button class="navigate musiclaps-dark-gray musiclaps-blue" id="recordingPlayerButton" type="button">Recording Player</button>
-							<button class="navigate button-navigate-hover-js" id="uploadMP3Button" type="button">Upload MP3</button>
+							<button class="navigate white" id="recordingPlayerButton" type="button">Recording Player</button>
+							<button class="navigate white-button-navigate-hover-js" id="uploadMP3Button" type="button">Upload MP3</button>
 						</div>
 					</div>
 					
-					<!-- Recording Player -->
+					<!-- "Recording Player" -->
 					<div class="row" id="recordingPlayer">
 						<div class="col-xs-12">
 							<div id="recording-player"></div><!-- Placeholder -->
 						</div>
 					</div>
-					<!-- End of Recording Player -->
+					<!-- End of "Recording Player" -->
 
 
-					<!-- Upload MP3 -->
+					<!-- "Upload MP3" form - hidden upon page load -->
 					<section class="upload-mp3-container" id="uploadMP3Container">
 						<div class="row">
 							<div class="col-xs-6">
@@ -46,16 +47,25 @@
 						
 						<ul class="row col-xs-12">
 							<li class="first-list-item">Type of Project</li>
-							<li><input type="radio" name="project_type" value="newProject">&nbsp; New Project</li>
-							<li><input type="radio" name="project_type" value="addPart">&nbsp; Add Part</li>
-							<li><input type="radio" name="project_type" value="addPartToGroup">&nbsp; Add Part to Group</li>
+							<li>
+								<input id="new_project" type="radio" name="project_type" value="newProject">
+								<label for="new_project">&nbsp;New Project</label>
+							</li>
+							<li>
+								<input id="add_part" type="radio" name="project_type" value="addPart">
+								<label for="add_part">&nbsp;Add Part</label>
+							</li>
+							<li>
+								<input id="add_part_to_group" type="radio" name="project_type" value="addPartToGroup"> 
+								<label for="add_part_to_group">&nbsp;Add Part to Group</label>
+							</li>
 						</ul>
 
 						<form>
 							<section id="newProject">
 								<div class="row col-xs-12">
-									<label id="project-title-label" for="project_title">Project Title <span class="normal">(max 80 characters)</span></label>
-									<input id="project-title" type="text" name="project_title">
+									<label id="project-title-label" for="project_title_new_project">Project Title <span class="normal">(max 80 characters)</span></label>
+									<input id="project_title_new_project" type="text" name="project_title_new_project">
 								</div>
 
 								<div class="row col-xs-12">
@@ -66,7 +76,7 @@
 
 							<section id="addPart">
 								<label id="select-sound-label" for="select_sound">Select Your Sound</label>
-								<select id="select-sound">
+								<select id="select_sound">
 									<option value="test">Test</option>
 								</select>
 							</section>
@@ -131,11 +141,11 @@
 							</div>
 
 							<div class="row col-xs-12">
-								<label id="comment-label" for="comment">Comment <span class="normal">(max 50 characters)</span></label>
-								<input id="comment" type="text" name="comment">
+								<label id="comment-new-project-page-label" for="comment-new-project-page">Comment <span class="normal">(max 50 characters)</span></label>
+								<input id="comment-new-project-page" type="text" name="comment-new-project-page">
 							</div>
 
-							<section class="newProject" id="choose-project-img-container">
+							<section class="row col-xs-12 newProject" id="choose-project-img-container">
 								<div class="row">
 									<div class="col-xs-4">	
 										<h4>Project Image</h4>
@@ -149,7 +159,7 @@
 								</div>
 							</section>
 
-							<div class="row" id="choose-mp3-file-container">
+							<div class="row col-xs-12" id="choose-mp3-file-container">
 								<div class="col-xs-4">	
 									<h4>MP3 File</h4>
 								</div>
@@ -166,40 +176,17 @@
 							</div>
 						</form>
 					</section>
-					<!-- End of Upload MP3 -->
+					<!-- End of "Upload MP3" form -->
 
 				</div>
-				<div class="row col-xs-12 col-sm-3">
-					<div class="profile-right new-project-page">
-						
-						<div class="row col-xs-12">
-							<h3>Recommended</h3>
-						</div>
-
-						<div class="row col-xs-12 first-row">
-							<h4 class="first-h4">Free Guitar Amp Simulator for Mac and Windows</h4>
-							<a href="http://www.synthtopia.com/content/2010/01/22/free-guitar-amp-simulator-for-mac-windows/" target="blank"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/free-guitar-amp-simulator.jpg" alt="Free Guitar Amp Simulator"></a>
-						</div>
-
-						<div class="row col-xs-12">
-							<h4>Free AmpLion Guitar Amp Simulator </h4>
-							<h5>ampLion Free gives you the opportunity to experience the quality of ampLion simulation. You gain free access to one of the most famous guitar amps ever made.</h5>
-							<a href="https://www.macupdate.com/app/mac/40400/amplion-free" target="blank"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/free-amplion-simulator.jpg" alt="Free AmpLion Guitar Amp Simulator"></a>
-						</div>
-
-						<div class="row col-xs-12">
-							<h4>Realtek High Definition Driver</h4>
-							<h5>Realtek high definition (HD) audio drivers are now available, adding countless "driver customizations" and supporting a number of new Realtek chips.</h5>
-							<a href="http://218.210.127.131/downloads/Default.aspx?Langid=1" target="blank"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/realtek-logo.gif" alt="RealTek logo"></a>
-						</div>
-
-					</div>
-				</div>	
+				<?php
+					include(ROOT_PATH . 'include/profile/recommended.php');
+				?>	
 			</div>
 			<div class="col-lg-1"></div>	
 		
 		</div>
 
 	<?php
-		include(ROOT_PATH . 'include/footer.php');
+		include(ROOT_PATH . 'include/footer-logged-in.php');
 	?>

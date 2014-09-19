@@ -7,70 +7,70 @@
 	<!-- End of Recording Player -->
 
 
-	<section class="row col-xs-12" id="project-form-header">
-		<h3>Project Title</h3>
+	<section class="row col-xs-12 project-form-header">
+		<h3>Project Title</h3><!-- Hard-coded placeholder -->
 		<!-- Markup is backwards because elements are floated right -->
-		<span class="glyphicon glyphicon-trash pull-right"></span>
-		<select class="pull-right project-type">
+		<span class="glyphicon glyphicon-trash"></span>
+		<select class="project-type">
 			<option value="private">Private</option>
 			<option value="public">Public</option>
 			<option value="group">Group</option>
 			<option value="audition">Audition</option>
 		</select>
-		<span class="glyphicon glyphicon-lock pull-right"></span>
-		<span class="glyphicon glyphicon-repeat pull-right"></span>
+		<span class="glyphicon glyphicon-lock"></span>
+		<span class="glyphicon glyphicon-repeat"></span>
 	</section>
 
 	
 	<section class="row col-xs-12">
-		<div id="project-info-bar">
+		<div class="project-info-bar">
 			<h4 class="first-h4">$project #</h4><!-- Hard-coded placeholder -->
-			<img class="audio-mixer" id="audioMixer" src="<?php echo BASE_URL; ?>assets/images/profile-pages/audio-mixer.jpg" alt="Audio mixer icon">
+			<img class="audio-mixer audioMixer" src="<?php echo BASE_URL; ?>assets/images/profile-pages/audio-mixer.jpg" alt="Audio mixer icon">
 			<h4>$instrument name</h4><!-- Hard-coded placeholder -->
 			<h5>$date project started</h5>
 
 			<!-- Markup is backwards because elements are floated right -->
-			<span class="glyphicon glyphicon-trash pull-right"></span>
-			<select class="pull-right project-type">
+			<span class="glyphicon glyphicon-trash"></span>
+			<select class="project-type">
 				<option value="private">Private</option><!-- Hard-coded placeholder -->
 			</select>
 		</div>
 	</section>
-	<section class="row col-xs-12" id="volumeAndPan">
-		<div id="volume-and-pan">
+	<section class="row col-xs-12 volumeAndPan">
+		<div class="volume-and-pan">
 			<span class="glyphicon glyphicon-volume-up"></span>
 			<div class="slider"></div>
 			<h4>100</h4><!-- Hard-coded placeholder -->
 
-			<h4 id="left-to-right">L</h4>
+			<h4 class="left-to-right">L</h4>
 			<div class="slider"></div>
 			<h4>R</h4>
 
-			<span class="glyphicon glyphicon-save pull-right"></span>
-			<input class="pull-right" id="save-volume-and-pan" type="submit" value="Save">
+			<span class="glyphicon glyphicon-save"></span>
+			<input class="save-volume-and-pan" type="submit" value="Save">
 		</div>
 	</section>
 
 
-	<form id="in-progress-private">
+	<form id="project-form">
 		<div class="row col-xs-12">
-			<label for="title">Title
-				<input class="save pull-right" type="submit" value="Save">
+			<label for="project_title_project_form">Project Title
+				<input class="save" type="submit" value="Save">
 			</label>
-			<input id="title" type="text" name="title">
+			<input id="project_title_project_form" type="text" name="project_title_project_form">
 		</div>
 
 		<div class="row col-xs-12">
 			<label id="cover-song-label" for="cover_song">Cover Song
 				<input class="cover-song-checkbox" type="checkbox" name="arrangement">
-				<input class="save pull-right" type="submit" value="Save">
+				<input class="save" type="submit" value="Save">
 			</label>
 			<input id="cover_song" type="text" name="cover_song" placeholder="Please credit the songwriter if it is not you.">
 		</div>
 
 		<div class="row col-xs-12">
 			<label for="description">Description
-				<input class="save pull-right" type="submit" value="Save">
+				<input class="save" type="submit" value="Save">
 			</label>
 			<textarea id="description" name="description" placeholder="If you are requesting collaboration, you can mention which instrument(s) here."></textarea>
 		</div>
@@ -85,14 +85,14 @@
 
 		<div class="row col-xs-12">
 			<label for="search_tags">Search Tags
-				<input class="save pull-right" type="submit" value="Save">
+				<input class="save" type="submit" value="Save">
 			</label>
 			<textarea id="search_tags" name="search_tags" placeholder="Examples: Song Title, Genre, etc."></textarea>
 		</div>
 
 		<div class="row col-xs-12">
 			<label for="scrolling_comment">Scrolling Comment
-				<input class="save pull-right" type="submit" value="Save">
+				<input class="save" type="submit" value="Save">
 			</label>
 			<textarea id="scrolling_comment" name="scrolling_comment"></textarea>
 		</div>
@@ -112,9 +112,9 @@
 					<div id="upload-stage-background-img"></div>
 					<div id="upload-stage-background-img-container">
 						<input class="choose-file" id="choose_stage_background_img" type="submit" value="Choose File">&nbsp; <span>No file chosen</span>
-						<div id="save-background-img-and-trash-container">
-							<input class="save-background-img" type="submit" value="Save">
-							<span class="glyphicon glyphicon-trash pull-right"></span>
+						<div id="save-stage-background-img-and-trash-container">
+							<input class="save-stage-background-img" type="submit" value="Save">
+							<span class="glyphicon glyphicon-trash"></span>
 						</div>
 					</div>
 				</div>
@@ -125,18 +125,18 @@
 			<h4 id="type-of-collab">Type of Collaboration</h4>
 		</section>
 		<div class="row col-xs-12">
-			<div id="type-of-collab-container">
+			<div class="type-of-collab-container">
 				<div class="row">
 					<div class="col-xs-4">
-						<span class="glyphicon glyphicon-ok glyphiconOk" id="noCollabGlyphicon"></span>
+						<span class="glyphicon glyphicon-ok noCollabGlyphicon"></span>
 						<button class="noCollab" type="button">No Collab</button>
 					</div>
 					<div class="col-xs-4">
-						<span class="glyphicon glyphicon-ok glyphiconOk" id="openCollabGlyphicon"></span>
+						<span class="glyphicon glyphicon-ok openCollabGlyphicon"></span>
 						<button class="openCollab" type="button">Open Collab</button>
 					</div>
 					<div class="col-xs-4">
-						<span class="glyphicon glyphicon-ok glyphiconOk" id="requestingCollabGlyphicon"></span>
+						<span class="glyphicon glyphicon-ok requestingCollabGlyphicon"></span>
 						<button class="requestingCollab" type="button">Requesting Collab</button>
 					</div>
 				</div>
