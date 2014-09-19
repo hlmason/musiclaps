@@ -68,7 +68,7 @@
 		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/nebraska.jpg" alt="Project image"><!-- Placeholder -->
 		        </article>
 		        <article>
-		        	<img src="<?php echo BASE_URL; ?>ssets/images/sample-album-covers/lungs.jpg" alt="Project image"><!-- Placeholder -->
+		        	<img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/lungs.jpg" alt="Project image"><!-- Placeholder -->
 		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/colour-the-small-one.jpg" alt="Project image"><!-- Placeholder -->
 		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/im-over-it.jpg" alt="Project image"><!-- Placeholder -->
 		            <img src="<?php echo BASE_URL; ?>assets/images/sample-album-covers/holy-fire.jpg" alt="Project image"><!-- Placeholder -->

@@ -33,5 +33,6 @@
 		    }
 		});
 	</script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/players-wanted.js"></script>
 </body>
 </html>

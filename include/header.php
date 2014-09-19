@@ -25,10 +25,9 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="<?php echo BASE_URL; ?>assets/javascripts/customized.bootstrap.min.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/index.js"></script>
-	<script src="<?php echo BASE_URL; ?>assets/javascripts/wmuSlider.min.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/modal.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/wmuSlider.min.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/live-player.js"></script>
-	<script src="<?php echo BASE_URL; ?>assets/javascripts/players-wanted.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/public-project.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/public-profile.js"></script>
 </head>
