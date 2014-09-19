@@ -30,6 +30,7 @@
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/live-player.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/players-wanted.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/public-project.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/public-profile.js"></script>
 </head>
 <body>
 

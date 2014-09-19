@@ -420,7 +420,7 @@ nav {
 		}
 	}
 
-	ul#nav-logged-in, ul#nav-logged-out { // Nav below top nav
+	ul#nav-logged-in, ul.nav-logged-out { // Nav below top nav
 		li {
 			border-bottom: $nav-border;
 		}
@@ -1115,7 +1115,7 @@ section#messages-header button, section#groups-header button { // "Add New Frien
 	border: $nav-border;
 }
 
-button.white, .white-button-navigate-hover-js:hover, .white-button-navigate-hover-js:focus {
+.white, .white-button-navigate-hover-js:hover, .white-button-navigate-hover-js:focus {
 	background-color: white !important; // Important tag is necessary for "Add New Friend"
 	color: #428bca !important;
 }
@@ -1176,9 +1176,9 @@ button.white, .white-button-navigate-hover-js:hover, .white-button-navigate-hove
 	}
 }
 
-#my-public-projects-container {
+.public-projects-and-collaborations-container {
 	padding-right: 0;
-	section.my-public-projects-listing {
+	section.public-projects-and-collaborations {
 		border: $nav-border;
 		margin-left: 15px;
 		padding-right: 0;
@@ -1212,7 +1212,7 @@ h4.my-public-projects-heading.public-profile-page {
 	margin-bottom: 0;
 }
 
-section.my-public-projects-listing, section.projects-container.public-profile-page {
+section.public-projects-and-collaborations, section.projects-container.public-profile-page {
 	h5 {
 		font-weight: normal;
 	}

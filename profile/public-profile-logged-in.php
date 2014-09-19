@@ -2,7 +2,6 @@
 	require_once('../include/config.php');
 
 	$pageTitle = 'Profile';
-	$page = 'Profile';
 	
 	include(ROOT_PATH . 'include/header-logged-in.php');
 	include(ROOT_PATH . 'include/db-connection.php');
@@ -14,20 +13,15 @@
 		<div class="container">
 			
 			<nav class="row col-lg-10 col-lg-offset-1">
-				<ul class="nav navbar-nav" id="nav-logged-out">
-					<li class="first-list-item">
-						<a class="<?php if ($page == "Profile") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php">Profile
-						</a>
+				<ul class="nav navbar-nav nav-logged-out">
+					<li class="first-list-item" id="profileLink">
+						<a class="white" href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php">Profile</a>
 					</li>
-					
 					<li>
-						<a class="<?php if ($page == "Collaborations") { echo "active"; } ?>" href="#">Collaborations
-						</a>
+						<a class="white-button-navigate-hover-js" id="collaborationsLink" href="#">Collaborations</a>
 					</li>
-					
 					<li>
-						<a class="<?php if ($page == "Friends") { echo "active"; } ?>" href="#">Friends
-						</a>
+						<a class="white-button-navigate-hover-js" id="friendsLink" href="#">Friends</a>
 					</li>
 				</ul>
 			</nav>
@@ -61,9 +55,23 @@
 						<div class="col-sm-1"></div>
 					</div>
 
-					<?php
-						include(ROOT_PATH . 'include/profile/my-public-projects.php');
-					?>
+					<section id="publicProjects">
+						<div class="row col-xs-12 public-projects-and-collaborations-container">
+							
+							<h4 class="my-public-projects-heading">My Public Projects <span class="normal">($number)</span></h4><!-- Hard-coded placeholder -->
+						
+							<?php
+								include(ROOT_PATH . 'include/profile/public-projects-and-collaborations.php');
+							?>
+
+					<section id="collaborationsJS">
+						<div class="row col-xs-12 public-projects-and-collaborations-container">
+							
+							<h4 class="my-public-projects-heading">My Collaborations <span class="normal">($number)</span></h4><!-- Hard-coded placeholder -->
+						
+							<?php
+								include(ROOT_PATH . 'include/profile/public-projects-and-collaborations.php');
+							?>
 
 				</div>		
 				<div class="row col-xs-12 col-sm-4">

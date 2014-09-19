@@ -35,6 +35,7 @@
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/groups.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/public-project.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/youtube.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/public-profile.js"></script>
 </head>
 <body>
 
