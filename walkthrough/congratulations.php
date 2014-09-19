@@ -20,7 +20,7 @@
 						  echo "sign up page.";
 						//re-direct to signup page
 						 echo "<script language='javascript'>
-						 	$('#registrationFull').modal('show');
+						 	$('#registerJS').modal('show');
 						 </script>";
 
 					  	  } else {
