@@ -3085,13 +3085,13 @@ nav ul.navbar-right#logged-out li {
 /* ===================================
     Secondary Nav
 =================================== */
-ul.navbar-right #welcome-user {
+ul.navbar-right li#welcome-user {
   margin-right: 10px;
   margin-top: 28px !important; }
-  ul.navbar-right #welcome-user a {
+  ul.navbar-right li#welcome-user a {
     color: #1F91E6 !important;
     text-transform: initial; }
-    ul.navbar-right #welcome-user a:hover, ul.navbar-right #welcome-user a:focus {
+    ul.navbar-right li#welcome-user a:hover, ul.navbar-right li#welcome-user a:focus {
       color: #444444 !important; }
 
 ul#nav-logged-in li, ul.nav-logged-out li {
