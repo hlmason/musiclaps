@@ -1,4 +1,4 @@
-				<a href="<?php echo BASE_URL; ?>profile/public-project.php">
+				<a href="<?php echo BASE_URL; ?>profile/public-project-logged-in.php">
 					<div class="public-project-listing">
 						<div class="row">
 							<div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
@@ -17,7 +17,7 @@
 					</div>
 				</a>
 
-				<a href="<?php echo BASE_URL; ?>profile/public-project.php">
+				<a href="<?php echo BASE_URL; ?>profile/public-project-logged-in.php">
 					<div class="public-project-listing">
 						<div class="row">
 							<div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">

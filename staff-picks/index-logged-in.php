@@ -14,7 +14,7 @@
 
 			<div class="row col-xs-9">
 				<?php
-					include(ROOT_PATH . 'include/public-project-listings.php');
+					include(ROOT_PATH . 'include/public-project-listings-logged-in.php');
 				?>
 			</div>
 

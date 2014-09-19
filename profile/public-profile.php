@@ -15,7 +15,7 @@
 			<nav class="row col-lg-10 col-lg-offset-1">
 				<ul class="nav navbar-nav nav-logged-out">
 					<li class="first-list-item" id="profileLink">
-						<a class="white" href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php">Profile</a>
+						<a class="white" id="publicProfileLink" href="#">Profile</a>
 					</li>
 					<li>
 						<a class="white-button-navigate-hover-js" id="collaborationsLink" href="#">Collaborations</a>
@@ -67,7 +67,7 @@
 					<section id="collaborationsJS">
 						<div class="row col-xs-12 public-projects-and-collaborations-container">
 							
-							<h4 class="my-public-projects-heading">Collaborations <span class="normal">($number)</span></h4><!-- Hard-coded placeholder / Note that this says "My Collaborations" on public-profile-logged-in.php -->-->
+							<h4 class="my-public-projects-heading">Collaborations <span class="normal">($number)</span></h4><!-- Hard-coded placeholder / Note that this says "My Collaborations" on public-profile-logged-in.php -->
 						
 							<?php
 								include(ROOT_PATH . 'include/profile/public-projects-and-collaborations.php');

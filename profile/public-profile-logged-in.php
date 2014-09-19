@@ -13,9 +13,9 @@
 		<div class="container">
 			
 			<nav class="row col-lg-10 col-lg-offset-1">
-				<ul class="nav navbar-nav nav-logged-out">
+				<ul class="nav navbar-nav" id="nav-logged-in">
 					<li class="first-list-item" id="profileLink">
-						<a class="white" href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php">Profile</a>
+						<a class="white" id="publicProfileLink" href="#">Profile</a>
 					</li>
 					<li>
 						<a class="white-button-navigate-hover-js" id="collaborationsLink" href="#">Collaborations</a>
