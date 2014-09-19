@@ -61,7 +61,7 @@
 							<h4 class="my-public-projects-heading">My Public Projects <span class="normal">($number)</span></h4><!-- Hard-coded placeholder -->
 						
 							<?php
-								include(ROOT_PATH . 'include/profile/public-projects-and-collaborations.php');
+								include(ROOT_PATH . 'include/profile/public-projects-and-collaborations-logged-in.php');
 							?>
 
 					<section id="collaborationsJS">
@@ -70,7 +70,7 @@
 							<h4 class="my-public-projects-heading">My Collaborations <span class="normal">($number)</span></h4><!-- Hard-coded placeholder -->
 						
 							<?php
-								include(ROOT_PATH . 'include/profile/public-projects-and-collaborations.php');
+								include(ROOT_PATH . 'include/profile/public-projects-and-collaborations-logged-in.php');
 							?>
 
 				</div>		

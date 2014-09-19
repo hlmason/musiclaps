@@ -4001,6 +4001,8 @@ section.project-form-header h3 {
   display: inline-block; }
 section.project-form-header h4 {
   float: right; }
+section.project-form-header .glyphicon-repeat {
+  color: #444444; }
 
 .project-info-bar {
   background-color: #e7e7e7;
