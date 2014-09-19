@@ -698,7 +698,7 @@ h1.landing-page {
 			}
 			p {
 				color: $musiclaps-blue;
-				font-size: 12px;
+				font-size: 14px;
 				margin-top: 25px;
 				text-transform: uppercase;
 				sup {		
@@ -716,7 +716,7 @@ h1.landing-page {
 							 -o-transition: 0s linear;
 								transition: 0s linear;
 						width: 75%;
-						min-width: 57px;
+						// min-width: 57px;
 						&:hover {
 							-webkit-transform: scale(1.1);
 							   -moz-transform: scale(1.1);
@@ -2341,6 +2341,7 @@ footer {
 		color: $musiclaps-dark-gray !important;
 		font-size: 12px;
 		img { // Musiclaps logo
+			height: auto;
 			width: 50%;
 		}
 	}
@@ -2442,7 +2443,10 @@ footer {
 				a .caret { display: inline-block !important; }
 				ul.dropdown-menu li { 
 					margin-left: 20px !important; // Indents subcategories of "Music", "People", and "Our Story"
-					a:last-child { margin-bottom: 0; }
+					a {
+						padding-bottom: 0 !important;
+						&:last-child { margin-bottom: 0; }
+					}
 				} 
 			}
 		}
@@ -2533,8 +2537,7 @@ footer {
 			margin-left: 2px;
 		}
 	}
-	h1.landing-page { font-size: 24px; }
-	#musical-notes-map { // Makes map static on smaller devices
+	#musical-notes-map { // Makes map static on smaller devices - currently only working in Opera
 		margin-left: 0;
 		width: auto;
 	    -webkit-animation: none 0 ease 0 1 normal none running;
@@ -2558,7 +2561,7 @@ footer {
 		p { font-size: 16px; }
 		a { font-size: 14px; }
 	}
-	.wmuSlider { display: none; } /* Hides image slider below stage */
+	.wmuSlider { display: none; } // Hides image slider below stage 
 	#privacy-page, #terms-page, #faqs-page {
 		h1 {
 			font-size: 28px;
@@ -2577,18 +2580,15 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 590px) {
-// Breakpoint of "Online Music Collaboration Made Simple...Just Log in and Start Recording" (Landing Page) 
-	h1.landing-page { font-size: 20px; }
-}
-
 @media only screen and (max-width: 580px) {
 // Breakpoint of "Select a song" modal (Live player Page)
+	h1.landing-page { font-size: 24px; } // "Online Music Collaboration Made Simple"
 	img#rainbow-music-notes { display: none; }
 }
 
 @media only screen and (max-width: 461px) {
 // Breakpoint of "No file chosen" (Profile Page)
+	// h1.landing-page { font-size: 21px; } // "Online Music Collaboration Made Simple"
 	#upload-avatar {
 		border: none !important;
 		ul {
@@ -2601,6 +2601,7 @@ footer {
 
 @media only screen and (max-width: 417px) {
 // Breakpoint of "Select a song" heading (Live player Page)
+	// h1.landing-page { font-size: 18px; } // "Online Music Collaboration Made Simple"
 	h3.select-song-heading { font-size: 15px; }
 	h2#user-id, h4.edit-profile, h4.save-profile { margin-left: 10px; }
 	#about-me { border-top: none; }

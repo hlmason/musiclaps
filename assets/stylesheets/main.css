@@ -3339,7 +3339,7 @@ h1.landing-page {
               height: 27px; }
     #stage #stage-inner p {
       color: #38aaff;
-      font-size: 12px;
+      font-size: 14px;
       margin-top: 25px;
       text-transform: uppercase; }
       #stage #stage-inner p sup {
@@ -3354,8 +3354,7 @@ h1.landing-page {
           -moz-transition: 0s linear;
           -o-transition: 0s linear;
           transition: 0s linear;
-          width: 75%;
-          min-width: 57px; }
+          width: 75%; }
           #stage #stage-inner ul li img:hover {
             -webkit-transform: scale(1.1);
             -moz-transform: scale(1.1);
@@ -4827,6 +4826,7 @@ footer {
     color: #444444 !important;
     font-size: 12px; }
     footer .navbar-brand img {
+      height: auto;
       width: 50%; }
   footer .navbar-left li {
     border-left: 1px solid #cecece;
@@ -4915,8 +4915,10 @@ footer {
     display: inline-block !important; }
   nav ul .dropdown ul.dropdown-menu li {
     margin-left: 20px !important; }
-    nav ul .dropdown ul.dropdown-menu li a:last-child {
-      margin-bottom: 0; }
+    nav ul .dropdown ul.dropdown-menu li a {
+      padding-bottom: 0 !important; }
+      nav ul .dropdown ul.dropdown-menu li a:last-child {
+        margin-bottom: 0; }
   nav input#search {
     display: none; }
   nav .glyphicon-search {
@@ -4995,9 +4997,6 @@ footer {
       #sn-login-modal-body-sm input:hover, #sn-login-modal-body-sm input:focus {
         background-color: #d9d9d9; }
 
-  h1.landing-page {
-    font-size: 24px; }
-
   #musical-notes-map {
     margin-left: 0;
     width: auto;
@@ -5027,7 +5026,6 @@ footer {
   .wmuSlider {
     display: none; }
 
-  /* Hides image slider below stage */
   #privacy-page h1, #terms-page h1, #faqs-page h1 {
     font-size: 28px;
     margin-top: 0; }
@@ -5042,10 +5040,10 @@ footer {
       display: block;
       float: none !important;
       margin-top: 8px; } }
-@media only screen and (max-width: 590px) {
-  h1.landing-page {
-    font-size: 20px; } }
 @media only screen and (max-width: 580px) {
+  h1.landing-page {
+    font-size: 24px; }
+
   img#rainbow-music-notes {
     display: none; } }
 @media only screen and (max-width: 461px) {
