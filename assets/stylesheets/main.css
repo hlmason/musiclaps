@@ -3506,7 +3506,8 @@ section#recording-instructions #save-container {
     New Arrivals, Recommended, Staff Picks, and Collaborations Pages
 ============================================================================= */
 #new-arrivals-page h1, #recommended-page h1, #staff-picks-page h1, #collaborations-page h1 {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-top: 15px; }
 #new-arrivals-page .public-project-listing, #recommended-page .public-project-listing, #staff-picks-page .public-project-listing, #collaborations-page .public-project-listing {
   border: 1px solid #cecece;
   box-shadow: 10px 10px 5px #444444;
@@ -3517,10 +3518,12 @@ section#recording-instructions #save-container {
     cursor: pointer; }
   #new-arrivals-page .public-project-listing img, #recommended-page .public-project-listing img, #staff-picks-page .public-project-listing img, #collaborations-page .public-project-listing img {
     min-height: 85px;
+    min-width: 135px;
+    max-height: auto;
+    max-width: 135px;
     padding-bottom: 10px;
     padding-left: 10px;
-    padding-top: 10px;
-    min-width: 135px; }
+    padding-top: 10px; }
   #new-arrivals-page .public-project-listing h3, #new-arrivals-page .public-project-listing h4:not(.last-h4), #recommended-page .public-project-listing h3, #recommended-page .public-project-listing h4:not(.last-h4), #staff-picks-page .public-project-listing h3, #staff-picks-page .public-project-listing h4:not(.last-h4), #collaborations-page .public-project-listing h3, #collaborations-page .public-project-listing h4:not(.last-h4) {
     margin-bottom: 0;
     margin-left: 5px; }
@@ -3534,8 +3537,7 @@ section#recording-instructions #save-container {
   float: right; }
   #new-arrivals-page .ads-container img, #recommended-page .ads-container img, #staff-picks-page .ads-container img, #collaborations-page .ads-container img {
     float: right;
-    height: 225px;
-    min-width: 225px; }
+    margin-top: 25px; }
   #new-arrivals-page .ads-container img:not(.first-img), #recommended-page .ads-container img:not(.first-img), #staff-picks-page .ads-container img:not(.first-img), #collaborations-page .ads-container img:not(.first-img) {
     float: right;
     margin-top: 35px; }
@@ -4896,6 +4898,9 @@ footer {
   .wmuSliderNext {
     right: 0; }
 
+  .public-project-listing h3, .public-project-listing h4:not(.last-h4) {
+    margin-left: 0 !important; }
+
   form.profile-page input.change-password {
     margin-top: 30px;
     margin-left: 0; }
@@ -4959,6 +4964,14 @@ footer {
 
   section#technology img, section#backstage img, section.music-ed img, section.contests-and-auditions img {
     display: none; }
+
+  .public-project-listing h3, .public-project-listing h4:not(.last-h4) {
+    margin-left: 10px !important; }
+  .public-project-listing h3 {
+    font-size: 14px;
+    margin-top: 10px; }
+  .public-project-listing h4 {
+    font-size: 12px; }
 
   footer .navbar-brand {
     position: absolute; }
@@ -5029,9 +5042,14 @@ footer {
   .wmuSlider {
     display: none; }
 
-  #privacy-page h1, #terms-page h1, #faqs-page h1 {
-    font-size: 28px;
+  #new-arrivals-page.container, #recommended-page.container, #staff-picks-page.container, #collaborations-page.container {
+    padding-right: 0; }
+  #new-arrivals-page h1, #new-arrivals-page h3, #new-arrivals-page h4.last-h4, #recommended-page h1, #recommended-page h3, #recommended-page h4.last-h4, #staff-picks-page h1, #staff-picks-page h3, #staff-picks-page h4.last-h4, #collaborations-page h1, #collaborations-page h3, #collaborations-page h4.last-h4 {
     margin-top: 0; }
+  #new-arrivals-page .glyphicon-ok, #recommended-page .glyphicon-ok, #staff-picks-page .glyphicon-ok, #collaborations-page .glyphicon-ok {
+    margin-left: 10px; }
+  #new-arrivals-page .ads-container img, #recommended-page .ads-container img, #staff-picks-page .ads-container img, #collaborations-page .ads-container img {
+    display: none; }
 
   h2#user-id, #edit-save-profile {
     text-align: left !important; }
@@ -5042,7 +5060,11 @@ footer {
     #about-me li.profile-page {
       display: block;
       float: none !important;
-      margin-top: 8px; } }
+      margin-top: 8px; }
+
+  #privacy-page h1, #terms-page h1, #faqs-page h1 {
+    font-size: 28px;
+    margin-top: 0; } }
 @media only screen and (max-width: 580px) {
   h1.landing-page {
     font-size: 24px; }

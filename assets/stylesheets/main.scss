@@ -900,6 +900,7 @@ section#recording-instructions {
 #new-arrivals-page, #recommended-page, #staff-picks-page, #collaborations-page {
 	h1 {
 		margin-bottom: 0;
+		margin-top: 15px;
 	}
 	.public-project-listing {
 		border: $nav-border;
@@ -912,10 +913,12 @@ section#recording-instructions {
 		}
 		img {
 			min-height: 85px;
+			min-width: 135px;
+			max-height: auto;
+			max-width: 135px;
 			padding-bottom: 10px;
 			padding-left: 10px;
 			padding-top: 10px;
-			min-width: 135px;
 		}
 		h3, h4:not(.last-h4) {
 			margin-bottom: 0;
@@ -933,10 +936,9 @@ section#recording-instructions {
 	}
 	.ads-container {
 		float: right;
-		img {
+		img { // No height/width specified because it changes depending upon viewport width
 			float: right;
-			height: 225px;
-			min-width: 225px;
+			margin-top: 25px; // Aligns ad with project listing
 		}
 		img:not(.first-img) {
 			float: right;
@@ -2417,6 +2419,9 @@ footer {
 	}
 	.wmuSliderPrev { left: 0; }
 	.wmuSliderNext { right: 0; }
+	.public-project-listing {
+		h3, h4:not(.last-h4) { margin-left: 0 !important; }
+	}
 	form.profile-page {
 		input.change-password {
 			margin-top: 30px;
@@ -2505,6 +2510,16 @@ footer {
 	section#technology, section#backstage, section.music-ed, section.contests-and-auditions {
 		img { display: none; }
 	}
+	.public-project-listing {
+		h3, h4:not(.last-h4) {
+			margin-left: 10px !important; 
+		}
+		h3 {
+			font-size: 14px;
+			margin-top: 10px; 
+		}
+		h4 { font-size: 12px; }
+	}
 	footer {
 		.navbar-brand { position: absolute; } 
 		.navbar-left, .navbar-right { margin-top: 50px; }
@@ -2565,12 +2580,12 @@ footer {
 		p { font-size: 16px; }
 		a { font-size: 14px; }
 	}
-	.wmuSlider { display: none; } // Hides image slider below stage 
-	#privacy-page, #terms-page, #faqs-page {
-		h1 {
-			font-size: 28px;
-			margin-top: 0;
-		}
+	.wmuSlider { display: none; } // Hides image slider below stage
+	#new-arrivals-page, #recommended-page, #staff-picks-page, #collaborations-page {
+		&.container { padding-right: 0; } 
+		h1, h3, h4.last-h4 { margin-top: 0; }
+		.glyphicon-ok { margin-left: 10px; }
+		.ads-container img { display: none; }
 	}
 	h2#user-id, #edit-save-profile { text-align: left !important; }
 	#about-me {
@@ -2580,6 +2595,12 @@ footer {
 			display: block;
 			float: none !important;
 			margin-top: 8px;
+		}
+	}
+	#privacy-page, #terms-page, #faqs-page {
+		h1 {
+			font-size: 28px;
+			margin-top: 0;
 		}
 	}
 }
