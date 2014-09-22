@@ -4901,6 +4901,11 @@ footer {
   .public-project-listing h3, .public-project-listing h4:not(.last-h4) {
     margin-left: 0 !important; }
 
+  #all-music-page section.projects-container {
+    margin-top: 25px; }
+    #all-music-page section.projects-container h4, #all-music-page section.projects-container h5 {
+      margin-left: 12px; }
+
   form.profile-page input.change-password {
     margin-top: 30px;
     margin-left: 0; }
@@ -4973,6 +4978,11 @@ footer {
   .public-project-listing h4 {
     font-size: 12px; }
 
+  #all-music-page .col-xs-12.col-md-4 {
+    padding-right: 0; }
+    #all-music-page .col-xs-12.col-md-4 h4, #all-music-page .col-xs-12.col-md-4 h5 {
+      margin: 0; }
+
   footer .navbar-brand {
     position: absolute; }
   footer .navbar-left, footer .navbar-right {
@@ -5044,12 +5054,23 @@ footer {
 
   #new-arrivals-page.container, #recommended-page.container, #staff-picks-page.container, #collaborations-page.container {
     padding-right: 0; }
-  #new-arrivals-page h1, #new-arrivals-page h3, #new-arrivals-page h4.last-h4, #recommended-page h1, #recommended-page h3, #recommended-page h4.last-h4, #staff-picks-page h1, #staff-picks-page h3, #staff-picks-page h4.last-h4, #collaborations-page h1, #collaborations-page h3, #collaborations-page h4.last-h4 {
-    margin-top: 0; }
-  #new-arrivals-page .glyphicon-ok, #recommended-page .glyphicon-ok, #staff-picks-page .glyphicon-ok, #collaborations-page .glyphicon-ok {
-    margin-left: 10px; }
-  #new-arrivals-page .ads-container img, #recommended-page .ads-container img, #staff-picks-page .ads-container img, #collaborations-page .ads-container img {
+    #new-arrivals-page.container h1, #new-arrivals-page.container h3, #new-arrivals-page.container h4.last-h4, #recommended-page.container h1, #recommended-page.container h3, #recommended-page.container h4.last-h4, #staff-picks-page.container h1, #staff-picks-page.container h3, #staff-picks-page.container h4.last-h4, #collaborations-page.container h1, #collaborations-page.container h3, #collaborations-page.container h4.last-h4 {
+      margin-top: 0; }
+    #new-arrivals-page.container .public-project-listing.first, #recommended-page.container .public-project-listing.first, #staff-picks-page.container .public-project-listing.first, #collaborations-page.container .public-project-listing.first {
+      margin-top: 10px; }
+    #new-arrivals-page.container .public-project-listing .glyphicon-ok, #recommended-page.container .public-project-listing .glyphicon-ok, #staff-picks-page.container .public-project-listing .glyphicon-ok, #collaborations-page.container .public-project-listing .glyphicon-ok {
+      margin-left: 10px; }
+    #new-arrivals-page.container .ads-container img, #recommended-page.container .ads-container img, #staff-picks-page.container .ads-container img, #collaborations-page.container .ads-container img {
+      display: none; }
+
+  #all-music-page .ads-container img {
     display: none; }
+  #all-music-page h1 {
+    margin-top: 0; }
+  #all-music-page .col-xs-12.col-md-4 {
+    padding-right: 15px; }
+    #all-music-page .col-xs-12.col-md-4 section.projects-container.first {
+      margin-top: 10px; }
 
   h2#user-id, #edit-save-profile {
     text-align: left !important; }

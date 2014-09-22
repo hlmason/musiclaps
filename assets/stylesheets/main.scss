@@ -2408,7 +2408,7 @@ footer {
     Media Queries
 =================================== */
 @media only screen and (max-width: 1199px) {
-// Breakpoint of slider buttons (Landing Page) and gray boxes (Profile Page)
+// Breakpoint of slider buttons (Landing Page), tiles on All Music and Search Results pages, and gray boxes (Profile Page)
 	ul#nav-logged-in { // Nav below top nav
 		li:not(.first-list-item) { // "Profile"
 			padding-left: 8px;
@@ -2421,6 +2421,14 @@ footer {
 	.wmuSliderNext { right: 0; }
 	.public-project-listing {
 		h3, h4:not(.last-h4) { margin-left: 0 !important; }
+	}
+	#all-music-page {
+		section.projects-container {
+			margin-top: 25px;
+			h4, h5 { 
+				margin-left: 12px; 
+			}
+		}
 	}
 	form.profile-page {
 		input.change-password {
@@ -2511,14 +2519,18 @@ footer {
 		img { display: none; }
 	}
 	.public-project-listing {
-		h3, h4:not(.last-h4) {
-			margin-left: 10px !important; 
-		}
+		h3, h4:not(.last-h4) { margin-left: 10px !important; }
 		h3 {
 			font-size: 14px;
 			margin-top: 10px; 
 		}
 		h4 { font-size: 12px; }
+	}
+	#all-music-page {
+		.col-xs-12.col-md-4 { 
+			padding-right: 0; 
+			h4, h5 { margin: 0; }
+		}
 	}
 	footer {
 		.navbar-brand { position: absolute; } 
@@ -2582,10 +2594,26 @@ footer {
 	}
 	.wmuSlider { display: none; } // Hides image slider below stage
 	#new-arrivals-page, #recommended-page, #staff-picks-page, #collaborations-page {
-		&.container { padding-right: 0; } 
-		h1, h3, h4.last-h4 { margin-top: 0; }
-		.glyphicon-ok { margin-left: 10px; }
-		.ads-container img { display: none; }
+		&.container { 
+			padding-right: 0; 
+			h1, h3, h4.last-h4 { margin-top: 0; }
+			.public-project-listing { 
+				&.first { margin-top: 10px; }
+				.glyphicon-ok { margin-left: 10px; }
+			}
+			.ads-container img { display: none; }
+		} 
+
+	}
+	#all-music-page {
+		.ads-container {
+			img { display: none; }
+		}
+		h1 { margin-top: 0; }
+		.col-xs-12.col-md-4 { 
+			padding-right: 15px; 
+			section.projects-container.first { margin-top: 10px; }
+		}
 	}
 	h2#user-id, #edit-save-profile { text-align: left !important; }
 	#about-me {

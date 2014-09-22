@@ -1,5 +1,5 @@
 				<a href="<?php echo BASE_URL; ?>profile/public-project.php">
-					<div class="public-project-listing">
+					<div class="public-project-listing first">
 						<div class="row">
 							<div class="col-xs-12 col-sm-3 col-lg-2">
 								<img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
