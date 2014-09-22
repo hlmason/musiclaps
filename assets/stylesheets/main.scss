@@ -417,7 +417,7 @@ nav {
 		margin-right: 10px;
 		margin-top: 28px !important;
 		a {
-			color: #1F91E6 !important;
+			color: #1F91E6 !important; // Otherwise username is gray
 			text-transform: initial; // Otherwise username is capitalized
 			&:hover, &:focus {
 				color: $musiclaps-dark-gray !important;
@@ -459,18 +459,12 @@ nav {
 			@include border-top-left-radius(5px);
 			@include border-top-right-radius(5px);
 			text-transform: capitalize !important;
-			&.active {
-				color: #428bca !important;
-			}
-			&:hover, &:focus {
-				background-color: $musiclaps-light-gray; // A little darker than inactive tabs
-				color: $musiclaps-dark-gray !important;
+			&:not(.active), &:hover, &:focus {
+				background-color: #f4f4f4;
 			}
 			&:not(.active) {
-				background-color: #f4f4f4;
 				&:hover, &:focus {
 					background-color: white; // Same as active
-					color: #428bca; // Same as active
 				}
 			}
 		}
@@ -1136,7 +1130,7 @@ section#messages-header button, section#groups-header button { // "Add New Frien
 
 .white, .white-button-navigate-hover-js:hover, .white-button-navigate-hover-js:focus {
 	background-color: white !important; // Important tag is necessary for "Add New Friend" button
-	color: #428bca !important;
+	color: #1F91E6 !important;
 }
 
 #avatar-n-edit-profile {

@@ -3131,16 +3131,10 @@ ul.nav-logged-in a, ul.nav-logged-out a {
   -moz-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
   text-transform: capitalize !important; }
-  ul.nav-logged-in a.active, ul.nav-logged-out a.active {
-    color: #428bca !important; }
-  ul.nav-logged-in a:hover, ul.nav-logged-in a:focus, ul.nav-logged-out a:hover, ul.nav-logged-out a:focus {
-    background-color: #e7e7e7;
-    color: #444444 !important; }
-  ul.nav-logged-in a:not(.active), ul.nav-logged-out a:not(.active) {
+  ul.nav-logged-in a:not(.active), ul.nav-logged-in a:hover, ul.nav-logged-in a:focus, ul.nav-logged-out a:not(.active), ul.nav-logged-out a:hover, ul.nav-logged-out a:focus {
     background-color: #f4f4f4; }
-    ul.nav-logged-in a:not(.active):hover, ul.nav-logged-in a:not(.active):focus, ul.nav-logged-out a:not(.active):hover, ul.nav-logged-out a:not(.active):focus {
-      background-color: white;
-      color: #428bca; }
+  ul.nav-logged-in a:not(.active):hover, ul.nav-logged-in a:not(.active):focus, ul.nav-logged-out a:not(.active):hover, ul.nav-logged-out a:not(.active):focus {
+    background-color: white; }
 
 ul.nav-logged-in li#second-list-item, ul.nav-logged-in li#last-list-item {
   padding-left: 4px; }
@@ -3713,7 +3707,7 @@ section#messages-header button, section#groups-header button {
 
 .white, .white-button-navigate-hover-js:hover, .white-button-navigate-hover-js:focus {
   background-color: white !important;
-  color: #428bca !important; }
+  color: #1F91E6 !important; }
 
 #avatar-n-edit-profile img.avatar {
   box-shadow: 10px 10px 5px #444444;
