@@ -51,11 +51,16 @@
 						<div class="col-sm-1"></div>
 					</div>
 
-					<!-- Public project listings -->
-					<?php
-						include(ROOT_PATH . 'include/profile/my-public-projects.php');
-					?>
-					<!-- End of public project listings -->
+					<!-- "My Public Projects" -->
+					<section id="myPublicProjects">
+						<div class="row col-xs-12 public-projects-and-collaborations-container">
+							
+							<h4 class="my-public-projects-heading">My Public Projects <span class="normal">($number)</span></h4>
+
+							<?php
+								include(ROOT_PATH . 'include/profile/public-projects-and-collaborations-logged-in.php');
+							?>
+					<!-- End of "My Public Projects" -->
 
 
 					<!-- "My Profile" --> <!-- profile/public-profile.php does not contain this section -->

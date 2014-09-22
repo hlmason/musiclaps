@@ -13,7 +13,7 @@
 		<div class="container">
 			
 			<nav class="row col-lg-10 col-lg-offset-1">
-				<ul class="nav navbar-nav" id="nav-logged-in">
+				<ul class="nav navbar-nav nav-logged-in">
 					<li class="first-list-item" id="profileLink">
 						<a class="white" id="publicProfileLink" href="#">Profile</a>
 					</li>
