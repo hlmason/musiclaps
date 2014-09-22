@@ -2996,20 +2996,22 @@ nav.navbar-default {
   border-bottom: 1px solid #cecece; }
 nav .navbar-header {
   height: 78px; }
-  nav .navbar-header h4 {
-    cursor: pointer;
-    display: none;
-    float: right;
-    font-weight: normal;
-    letter-spacing: 0.5px;
-    margin-right: 10px;
-    margin-top: 30px;
-    text-transform: uppercase; }
   nav .navbar-header button.navbar-toggle {
     margin-top: 23px; }
+  nav .navbar-header h4 {
+    float: right;
+    margin-right: 10px;
+    margin-top: 30px; }
   nav .navbar-header img {
     height: 45px;
     width: 155px; }
+nav h4, nav .glyphicon-user {
+  cursor: pointer;
+  display: none; }
+nav h4 {
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  text-transform: uppercase; }
 nav ul.nav {
   margin-top: 6px; }
   nav ul.nav li {
@@ -3102,11 +3104,25 @@ nav ul.navbar-right li#welcome-user {
 /* ===================================
     Secondary Nav
 =================================== */
-ul#nav-logged-in li, ul.nav-logged-out li {
+nav .glyphicon-user {
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #888;
+  border: 1px solid #ddd;
+  padding: 10px; }
+  nav .glyphicon-user:hover {
+    background-color: #ddd; }
+
+h4.nav-logged-in {
+  margin-bottom: 0;
+  margin-left: 5px;
+  margin-top: 10px; }
+
+ul.nav-logged-in li, ul.nav-logged-out li {
   border-bottom: 1px solid #cecece; }
-ul#nav-logged-in li:not(.first-list-item), ul.nav-logged-out li:not(.first-list-item) {
+ul.nav-logged-in li:not(.first-list-item), ul.nav-logged-out li:not(.first-list-item) {
   padding-left: 5px; }
-ul#nav-logged-in a, ul.nav-logged-out a {
+ul.nav-logged-in a, ul.nav-logged-out a {
   border-left: 1px solid #cecece;
   border-right: 1px solid #cecece;
   border-top: 1px solid #cecece;
@@ -3114,19 +3130,19 @@ ul#nav-logged-in a, ul.nav-logged-out a {
   border-top-left-radius: 5px;
   -moz-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
-  text-transform: capitalize; }
-  ul#nav-logged-in a.active, ul.nav-logged-out a.active {
+  text-transform: capitalize !important; }
+  ul.nav-logged-in a.active, ul.nav-logged-out a.active {
     color: #428bca !important; }
-  ul#nav-logged-in a:hover, ul#nav-logged-in a:focus, ul.nav-logged-out a:hover, ul.nav-logged-out a:focus {
+  ul.nav-logged-in a:hover, ul.nav-logged-in a:focus, ul.nav-logged-out a:hover, ul.nav-logged-out a:focus {
     background-color: #e7e7e7;
     color: #444444 !important; }
-  ul#nav-logged-in a:not(.active), ul.nav-logged-out a:not(.active) {
+  ul.nav-logged-in a:not(.active), ul.nav-logged-out a:not(.active) {
     background-color: #f4f4f4; }
-    ul#nav-logged-in a:not(.active):hover, ul#nav-logged-in a:not(.active):focus, ul.nav-logged-out a:not(.active):hover, ul.nav-logged-out a:not(.active):focus {
+    ul.nav-logged-in a:not(.active):hover, ul.nav-logged-in a:not(.active):focus, ul.nav-logged-out a:not(.active):hover, ul.nav-logged-out a:not(.active):focus {
       background-color: white;
-      color: #428bca !important; }
+      color: #428bca; }
 
-ul#nav-logged-in li#second-list-item, ul#nav-logged-in li#last-list-item {
+ul.nav-logged-in li#second-list-item, ul.nav-logged-in li#last-list-item {
   padding-left: 4px; }
 
 /* ===================================
@@ -4895,9 +4911,9 @@ footer {
     Media Queries
 =================================== */
 @media only screen and (max-width: 1199px) {
-  ul#nav-logged-in li:not(.first-list-item) {
+  ul.nav-logged-in li:not(.first-list-item) {
     padding-left: 8px; }
-  ul#nav-logged-in li#second-list-item {
+  ul.nav-logged-in li#second-list-item {
     padding-left: 9px; }
 
   .wmuSliderPrev {
@@ -4926,8 +4942,6 @@ footer {
 @media only screen and (max-width: 991px) {
   nav.navbar a:not(.navbar-brand) {
     margin-left: 10px; }
-  nav h4 {
-    display: inline-block !important; }
   nav ul.nav a {
     padding: 10px !important; }
   nav ul.navbar-left {
@@ -4976,6 +4990,26 @@ footer {
     nav ul.navbar-right#logged-in input:hover, nav ul.navbar-right#logged-in input:focus {
       background-color: #e7e7e7;
       color: #38aaff; }
+  nav .glyphicon-user, nav h4 {
+    display: inline-block !important; }
+
+  ul.nav-logged-in li, ul.nav-logged-out li {
+    border: none;
+    padding: 0 !important; }
+  ul.nav-logged-in a, ul.nav-logged-out a {
+    border: none; }
+    ul.nav-logged-in a:hover, ul.nav-logged-in a:focus, ul.nav-logged-out a:hover, ul.nav-logged-out a:focus {
+      background-color: white; }
+    ul.nav-logged-in a:not(.active), ul.nav-logged-out a:not(.active) {
+      background-color: white; }
+
+  ul.nav-logged-in {
+    margin-top: 0 !important; }
+    ul.nav-logged-in a {
+      margin-left: 10px; }
+
+  ul.navLoggedIn {
+    display: none; }
 
   section#technology img, section#backstage img, section.music-ed img, section.contests-and-auditions img {
     display: none; }

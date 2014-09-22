@@ -296,23 +296,27 @@ nav {
 	}
 	.navbar-header {
 		height: 78px;
-		h4 {
-			cursor: pointer;
-			display: none;
-			float: right;
-			font-weight: normal;
-			letter-spacing: 0.5px;
-			margin-right: 10px;
-			margin-top: 30px;
-			text-transform: uppercase;
-		}
 		button.navbar-toggle {
 			margin-top: 23px;
+		}
+		h4 { // "Main Menu"
+			float: right;
+			margin-right: 10px;
+			margin-top: 30px; 
 		}
 		img { // Musiclaps logo
 			height: 45px;
 			width: 155px;
 		}
+	}
+	h4, .glyphicon-user {
+		cursor: pointer;
+		display: none;
+	}
+	h4 { // "Main Menu" and "Profile Menu"
+		font-weight: normal;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
 	}
 	ul {
 		&.nav {
@@ -425,7 +429,23 @@ nav {
 	/* ===================================
 	    Secondary Nav
 	=================================== */
-	ul#nav-logged-in, ul.nav-logged-out { // Nav below top nav
+	nav .glyphicon-user {
+		@include border-radius(4px);
+		color: #888;
+		border: 1px solid #ddd;
+		padding: 10px;
+		&:hover {
+			background-color: #ddd;
+		}
+	}
+
+	h4.nav-logged-in {
+		margin-bottom: 0;
+		margin-left: 5px;
+		margin-top: 10px;
+	}
+
+	ul.nav-logged-in, ul.nav-logged-out { // Nav below top nav
 		li {
 			border-bottom: $nav-border;
 		}
@@ -438,7 +458,7 @@ nav {
 			border-top: $nav-border;
 			@include border-top-left-radius(5px);
 			@include border-top-right-radius(5px);
-			text-transform: capitalize;
+			text-transform: capitalize !important;
 			&.active {
 				color: #428bca !important;
 			}
@@ -450,13 +470,13 @@ nav {
 				background-color: #f4f4f4;
 				&:hover, &:focus {
 					background-color: white; // Same as active
-					color: #428bca !important; // Same as active
+					color: #428bca; // Same as active
 				}
 			}
 		}
 	}
 
-	ul#nav-logged-in li {
+	ul.nav-logged-in li {
 		&#second-list-item, &#last-list-item {
 			padding-left: 4px;
 		}
@@ -2418,7 +2438,7 @@ footer {
 =================================== */
 @media only screen and (max-width: 1199px) {
 // Breakpoint of slider buttons (Landing Page), tiles on All Music and Search Results pages, and gray boxes (Profile Page)
-	ul#nav-logged-in { // Nav below top nav
+	ul.nav-logged-in { // Nav below top nav
 		li:not(.first-list-item) { // "Profile"
 			padding-left: 8px;
 		}
@@ -2459,7 +2479,6 @@ footer {
 // Point at which Bootstrap's navbar becomes uncollapsed; and breakpoint of Secondary Nav (logged in pages), social media icons on footer, and gray boxes (Profile Page)
 	nav {
 		&.navbar a:not(.navbar-brand) { margin-left: 10px; }
-		h4 { display: inline-block !important; }
 		ul {
 			&.nav a { padding: 10px !important; }
 			&.navbar-left { 
@@ -2524,7 +2543,28 @@ footer {
 				}
 			}
 		}
+		.glyphicon-user, h4 { display: inline-block !important; }
 	}
+	ul.nav-logged-in, ul.nav-logged-out { // Nav below top nav
+		li {
+			border: none;
+			padding: 0 !important;
+		}
+		a {
+			border: none;
+			&:hover, &:focus {
+				background-color: white;
+			}
+			&:not(.active) {
+				background-color: white;
+			}
+		}
+	}
+	ul.nav-logged-in { 
+		margin-top: 0 !important;
+		a { margin-left: 10px; } 
+	}
+	ul.navLoggedIn { display: none; } // See profile/nav.js
 	section#technology, section#backstage, section.music-ed, section.contests-and-auditions {
 		img { display: none; }
 	}
