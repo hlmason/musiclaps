@@ -296,6 +296,16 @@ nav {
 	}
 	.navbar-header {
 		height: 78px;
+		h4 {
+			cursor: pointer;
+			display: none;
+			float: right;
+			font-weight: normal;
+			letter-spacing: 0.5px;
+			margin-right: 10px;
+			margin-top: 30px;
+			text-transform: uppercase;
+		}
 		button.navbar-toggle {
 			margin-top: 23px;
 		}
@@ -399,11 +409,6 @@ nav {
 			}
 		}
 	}
-}
-
-	/* ===================================
-	    Secondary Nav
-	=================================== */
 	ul.navbar-right li#welcome-user {
 		margin-right: 10px;
 		margin-top: 28px !important;
@@ -415,7 +420,11 @@ nav {
 			}
 		}
 	}
+}
 
+	/* ===================================
+	    Secondary Nav
+	=================================== */
 	ul#nav-logged-in, ul.nav-logged-out { // Nav below top nav
 		li {
 			border-bottom: $nav-border;
@@ -2447,9 +2456,10 @@ footer {
 }
 
 @media only screen and (max-width: 991px) {
-// Point at which Bootstrap's navbar becomes uncollapsed, social media icons on footer, and gray boxes (Profile Page)
+// Point at which Bootstrap's navbar becomes uncollapsed; and breakpoint of Secondary Nav (logged in pages), social media icons on footer, and gray boxes (Profile Page)
 	nav {
 		&.navbar a:not(.navbar-brand) { margin-left: 10px; }
+		h4 { display: inline-block !important; }
 		ul {
 			&.nav a { padding: 10px !important; }
 			&.navbar-left { 

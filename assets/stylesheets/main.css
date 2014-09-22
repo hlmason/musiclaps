@@ -2996,6 +2996,15 @@ nav.navbar-default {
   border-bottom: 1px solid #cecece; }
 nav .navbar-header {
   height: 78px; }
+  nav .navbar-header h4 {
+    cursor: pointer;
+    display: none;
+    float: right;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    margin-right: 10px;
+    margin-top: 30px;
+    text-transform: uppercase; }
   nav .navbar-header button.navbar-toggle {
     margin-top: 23px; }
   nav .navbar-header img {
@@ -3081,19 +3090,18 @@ nav ul.navbar-right#logged-out li {
       background-color: #45B7FF; }
     nav ul.navbar-right#logged-out li:last-child a {
       color: white !important; }
+nav ul.navbar-right li#welcome-user {
+  margin-right: 10px;
+  margin-top: 28px !important; }
+  nav ul.navbar-right li#welcome-user a {
+    color: #1F91E6 !important;
+    text-transform: initial; }
+    nav ul.navbar-right li#welcome-user a:hover, nav ul.navbar-right li#welcome-user a:focus {
+      color: #444444 !important; }
 
 /* ===================================
     Secondary Nav
 =================================== */
-ul.navbar-right li#welcome-user {
-  margin-right: 10px;
-  margin-top: 28px !important; }
-  ul.navbar-right li#welcome-user a {
-    color: #1F91E6 !important;
-    text-transform: initial; }
-    ul.navbar-right li#welcome-user a:hover, ul.navbar-right li#welcome-user a:focus {
-      color: #444444 !important; }
-
 ul#nav-logged-in li, ul.nav-logged-out li {
   border-bottom: 1px solid #cecece; }
 ul#nav-logged-in li:not(.first-list-item), ul.nav-logged-out li:not(.first-list-item) {
@@ -4918,6 +4926,8 @@ footer {
 @media only screen and (max-width: 991px) {
   nav.navbar a:not(.navbar-brand) {
     margin-left: 10px; }
+  nav h4 {
+    display: inline-block !important; }
   nav ul.nav a {
     padding: 10px !important; }
   nav ul.navbar-left {

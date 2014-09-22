@@ -45,6 +45,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
 	            </button>
+	            <h4 data-toggle="collapse" data-target=".navbar-collapse">Main Menu</h4>
 				<a class="navbar-brand" href="<?php echo BASE_URL; ?>index-logged-in.php">
 					<img src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/musiclaps-logo.png" alt="Musiclaps logo">
 				</a>
