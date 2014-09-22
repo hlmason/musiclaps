@@ -25,12 +25,12 @@
 			<div class="row">
 				<div class="col-xs-12 col-md-4">
 					<a href="<?php echo BASE_URL; ?>profile/public-project-logged-in.php">
-						<section class="row projects-container">
-							<div class="col-xs-4 col-sm-3 col-md-4">
+						<section class="row projects-container first">
+							<div class="col-xs-4 col-sm-2 col-md-4">
 								<img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
 							</div>
 						
-							<div class="col-xs-6 col-sm-6 col-md-6">
+							<div class="col-xs-6 col-sm-7 col-md-6">
 								<h4>$project title</h4><!-- Hard-coded placeholder -->
 								<h5>By: <span class="normal">$username</span></h5><!-- Hard-coded placeholder -->
 								<h5>Plays: <span class="normal">$# of plays</span></h5><!-- Hard-coded placeholder -->
@@ -44,11 +44,11 @@
 				<div class="col-xs-12 col-md-4">
 					<a href="<?php echo BASE_URL; ?>profile/public-project-logged-in.php">
 						<section class="row projects-container">
-							<div class="col-xs-4 col-sm-3 col-md-4">
+							<div class="col-xs-4 col-sm-2 col-md-4">
 								<img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
 							</div>
 						
-							<div class="col-xs-6 col-sm-6 col-md-6">
+							<div class="col-xs-6 col-sm-7 col-md-6">
 								<h4>$project title</h4><!-- Hard-coded placeholder -->
 								<h5>By: <span class="normal">$username</span></h5><!-- Hard-coded placeholder -->
 								<h5>Plays: <span class="normal">$# of plays</span></h5><!-- Hard-coded placeholder -->
@@ -62,11 +62,11 @@
 				<div class="col-xs-12 col-md-4">
 					<a href="<?php echo BASE_URL; ?>profile/public-project-logged-in.php">
 						<section class="row projects-container">
-							<div class="col-xs-4 col-sm-3 col-md-4">
+							<div class="col-xs-4 col-sm-2 col-md-4">
 								<img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
 							</div>
 						
-							<div class="col-xs-6 col-sm-6 col-md-6">
+							<div class="col-xs-6 col-sm-7 col-md-6">
 								<h4>$project title</h4><!-- Hard-coded placeholder -->
 								<h5>By: <span class="normal">$username</span></h5><!-- Hard-coded placeholder -->
 								<h5>Plays: <span class="normal">$# of plays</span></h5><!-- Hard-coded placeholder -->
