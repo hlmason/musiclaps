@@ -61,14 +61,14 @@
 				<div class="row">
 					<div class="col-xs-1"></div>
 				 
-				 	<div class="players-wanted-container" id="karaokeSongsWantedContainer">
+				 	<div id="karaokeSongsWantedContainer">
 						<section class="col-xs-10">
 							<h3 class="wanted">Karaoke Songs Wanted</h3>
 							<button class="postNewRequest" type="button">Post New Request</button>
 						</section>
 					</div>
 
-					<div class="players-wanted-container" id="bandMembersWantedContainer">
+					<div id="bandMembersWantedContainer">
 						<section class="col-xs-10">
 							<h3 class="wanted">Band Members Wanted</h3>
 							<button class="postNewRequest" type="button">Post New Request</button>
@@ -96,28 +96,28 @@
 						</section>
 					</div>
 
-					<div class="players-wanted-container" id="arrangersWantedContainer">
+					<div id="arrangersWantedContainer">
 						<section class="col-xs-10">
 							<h3 class="wanted">Arrangers Wanted</h3>
 							<button class="postNewRequest" type="button">Post New Request</button>
 						</section>
 					</div>
 
-					<div class="players-wanted-container" id="lyricWritersWantedContainer">
+					<div id="lyricWritersWantedContainer">
 						<section class="col-xs-10">
 							<h3 class="wanted">Lyric Writers Wanted</h3>
 							<button class="postNewRequest" type="button">Post New Request</button>
 						</section>
 					</div>
 
-					<div class="players-wanted-container" id="composersWantedContainer">
+					<div id="composersWantedContainer">
 						<section class="col-xs-10">
 							<h3 class="wanted">Composers Wanted</h3>
 							<button class="postNewRequest" type="button">Post New Request</button>
 						</section>
 					</div>
 
-					<div class="players-wanted-container" id="othersWantedContainer">
+					<div id="othersWantedContainer">
 						<section class="col-xs-10">
 							<h3 class="wanted">Others Wanted</h3>
 							<button class="postNewRequest" type="button">Post New Request</button>
@@ -145,7 +145,7 @@
 						</section>
 					</div>
 
-					<div class="players-wanted-container" id="noListingsContainer">
+					<div id="noListingsContainer">
 						<section class="row col-xs-12">
 							<h4 class="no-listings" id="noListings">Currently there are no listings</h4>
 						</section>

@@ -321,7 +321,7 @@ nav {
 	ul {
 		&.nav {
 			margin-top: 6px; // Required for Bootstrap dropdown menus
-			li { // Also controls nav below top nav / collapsed "User Menu"
+			li:not(#log-out) { // Also controls nav below top nav / collapsed "User Menu"
 				margin-top: 23px;		
 			}
 			.open > a { // When "Music", "People", or "Our Story" is clicked on
@@ -359,6 +359,9 @@ nav {
 				}
 			}
 		}
+	}
+	li#log-out {
+		margin-top: 15px; // Gives "Log Out" approximately the same top spacing as other nav links
 	}
 	input#search {
 		@include form-fields-input(181px);
@@ -1027,31 +1030,27 @@ section#recording-instructions {
 			}
 		}
 	}
-	.players-wanted-container {
-		table {
-			width: 100%;
-			span.username {
-				margin-left: 5px;
-			}
+	table {
+		width: 100%;
+		span.username {
+			margin-left: 5px;
 		}
 	}
 	h3.wanted, button {
 		margin-bottom: 15px;
 		margin-top: 15px;
 	}
-	button {
-		margin-right: 60px;
-	}
 	h3.wanted, h4#new-request {
 		display: inline-block;
 	}
 	h3.wanted {
-		margin-left: 75px;
+		margin-left: 60px;
 	}
 	button {
 		@include button($musiclaps-light-gray, $musiclaps-dark-gray, 12px, 5px 10px);
 		border: $nav-border;
 		float: right;
+		margin-right: 60px;
 		&:hover {
 			background-color: #d9d9d9;
 		}
@@ -2459,7 +2458,7 @@ footer {
 			margin-left: 0;
 		}
 	}
-	section.profile-right.profile-page { // Profile Page
+	section.profile-right.profile-page { // "Profile" Page
 		height: 1346px;
 	}
 }
@@ -2698,14 +2697,40 @@ footer {
 	}
 }
 
+@media only screen and (max-width: 662px) {
+// Breakpoint of "Post New Request" button ("Players Wanted" Page)
+	#players-wanted-page-container { 
+		h3.wanted { margin-left: 0; }
+		button { margin-right: 0; }
+	}
+}
+
 @media only screen and (max-width: 580px) {
 // Breakpoint of "Select a song" modal (Live Player Page)
 	h1.landing-page { font-size: 24px; } // "Online Music Collaboration Made Simple"
 	img#rainbow-music-notes { display: none; }
 }
 
+@media only screen and (max-width: 496px) {
+// Breakpoint of "Post New Request" button ("Players Wanted" Page)
+	#players-wanted-page-container { 
+		h3.wanted { display: block; }
+		button { 
+			float: left; 
+			margin-top: 0; 
+		}
+		section.col-xs-10 { 
+			padding-left: 0; 
+			table { 
+				width: 90%;
+				span.username { margin-left: 0; }
+			}
+		}
+	}
+}
+
 @media only screen and (max-width: 461px) {
-// Breakpoint of "No file chosen" (Profile Page)
+// Breakpoint of "No file chosen" ("Profile" Page)
 	// h1.landing-page { font-size: 21px; } // "Online Music Collaboration Made Simple"
 	#upload-avatar {
 		border: none !important;

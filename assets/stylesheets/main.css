@@ -3014,7 +3014,7 @@ nav h4 {
   text-transform: uppercase; }
 nav ul.nav {
   margin-top: 6px; }
-  nav ul.nav li {
+  nav ul.nav li:not(#log-out) {
     margin-top: 23px; }
   nav ul.nav .open > a {
     background-color: #e7e7e7 !important; }
@@ -3042,6 +3042,8 @@ nav ul .dropdown ul.dropdown-menu {
       margin-top: -15px; }
     nav ul .dropdown ul.dropdown-menu a:last-child {
       margin-bottom: 8px; }
+nav li#log-out {
+  margin-top: 15px; }
 nav input#search {
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -3605,19 +3607,17 @@ section#recording-instructions #save-container {
         min-width: 116px;
         padding-left: 15px;
         padding-right: 15px; }
-  #players-wanted-page-container .players-wanted-container table {
+  #players-wanted-page-container table {
     width: 100%; }
-    #players-wanted-page-container .players-wanted-container table span.username {
+    #players-wanted-page-container table span.username {
       margin-left: 5px; }
   #players-wanted-page-container h3.wanted, #players-wanted-page-container button {
     margin-bottom: 15px;
     margin-top: 15px; }
-  #players-wanted-page-container button {
-    margin-right: 60px; }
   #players-wanted-page-container h3.wanted, #players-wanted-page-container h4#new-request {
     display: inline-block; }
   #players-wanted-page-container h3.wanted {
-    margin-left: 75px; }
+    margin-left: 60px; }
   #players-wanted-page-container button {
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -3628,7 +3628,8 @@ section#recording-instructions #save-container {
     letter-spacing: 0.5px;
     padding: 5px 10px;
     border: 1px solid #cecece;
-    float: right; }
+    float: right;
+    margin-right: 60px; }
     #players-wanted-page-container button:hover {
       background-color: #d9d9d9; }
   #players-wanted-page-container h4.no-listings {
@@ -5166,12 +5167,29 @@ footer {
   #privacy-page h1, #terms-page h1, #faqs-page h1 {
     font-size: 28px;
     margin-top: 0; } }
+@media only screen and (max-width: 662px) {
+  #players-wanted-page-container h3.wanted {
+    margin-left: 0; }
+  #players-wanted-page-container button {
+    margin-right: 0; } }
 @media only screen and (max-width: 580px) {
   h1.landing-page {
     font-size: 24px; }
 
   img#rainbow-music-notes {
     display: none; } }
+@media only screen and (max-width: 496px) {
+  #players-wanted-page-container h3.wanted {
+    display: block; }
+  #players-wanted-page-container button {
+    float: left;
+    margin-top: 0; }
+  #players-wanted-page-container section.col-xs-10 {
+    padding-left: 0; }
+    #players-wanted-page-container section.col-xs-10 table {
+      width: 90%; }
+      #players-wanted-page-container section.col-xs-10 table span.username {
+        margin-left: 0; } }
 @media only screen and (max-width: 461px) {
   #upload-avatar {
     border: none !important; }
