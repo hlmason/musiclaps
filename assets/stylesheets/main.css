@@ -4971,12 +4971,14 @@ footer {
   nav ul.navbar-right#logged-out li:first-child {
     margin-top: 15px; }
   nav ul.navbar-right#logged-out li:last-child {
+    margin-bottom: 7px;
     padding-bottom: 10px; }
   nav ul.navbar-right#logged-out li:last-child a {
     color: #444444 !important; }
   nav ul.navbar-right#logged-in li#welcome-user {
     display: none; }
   nav ul.navbar-right#logged-in li#log-out {
+    margin-bottom: 12px;
     margin-top: 15px; }
     nav ul.navbar-right#logged-in li#log-out input {
       border: none;
@@ -5167,11 +5169,11 @@ footer {
   section.profile-right.profile-page.public-profile-page {
     margin-top: 15px; }
 
-  .row.col-xs-12.col-md-9.new-project-page {
+  #new-project-page.row.col-xs-12.col-md-9 {
     margin-left: 0; }
-    .row.col-xs-12.col-md-9.new-project-page li {
+    #new-project-page.row.col-xs-12.col-md-9 li {
       display: block; }
-      .row.col-xs-12.col-md-9.new-project-page li:not(.first-list-item) {
+      #new-project-page.row.col-xs-12.col-md-9 li:not(.first-list-item) {
         padding-left: 5px; }
 
   #privacy-page h1, #terms-page h1, #faqs-page h1 {

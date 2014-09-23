@@ -194,7 +194,7 @@
 									</div>
 								</div>
 
-								<div class="profile-page" id="choose-avatar-container">
+								<div id="choose-avatar-container">
 									<label for="upload_avatar">Your Image</label>
 									<div class="row col-xs-12">
 										<div class="row">

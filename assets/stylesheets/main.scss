@@ -2510,12 +2510,16 @@ footer {
 				a:hover, a:focus { color: $musiclaps-blue !important; } // Changes "Log in" and "Register" link color to match the rest of the links in the collapsed menu
 			}
 			&:first-child { margin-top: 15px; }
-			&:last-child { padding-bottom: 10px; }
+			&:last-child { 
+				margin-bottom: 7px; 
+				padding-bottom: 10px; 
+			}
 			&:last-child a { color: $musiclaps-dark-gray !important; } // Changes "Register" link color so that it's visible and matches the rest of the links in the collapsed menu
 		}
 		ul.navbar-right#logged-in {
 			li#welcome-user { display: none; }
 			li#log-out {
+				margin-bottom: 12px;
 				margin-top: 15px; // Gives "Log Out" link on collapsed menu approximately the same top spacing as other nav links
 				input { // "Log out" link
 					border: none;
@@ -2692,7 +2696,7 @@ footer {
 	section.profile-right.profile-page.public-profile-page {
 		margin-top: 15px;
 	}
-	.row.col-xs-12.col-md-9.new-project-page { 
+	#new-project-page.row.col-xs-12.col-md-9 { 
 		margin-left: 0; // Aligns with ".glyphicon-user"
 		li { 
 			display: block; 
