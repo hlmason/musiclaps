@@ -3720,6 +3720,8 @@ section#messages-header button, section#groups-header button {
   text-align: center; }
   #avatar-n-edit-profile #edit-save-profile h4.edit-profile, #avatar-n-edit-profile #edit-save-profile h4.save-profile, #avatar-n-edit-profile #edit-save-profile h4.dont-save-profile {
     margin-top: 8px; }
+  #avatar-n-edit-profile #edit-save-profile h4.edit-profile {
+    margin-bottom: 0; }
   #avatar-n-edit-profile #edit-save-profile h4.save-profile, #avatar-n-edit-profile #edit-save-profile h4.dont-save-profile {
     display: inline-block; }
   #avatar-n-edit-profile #edit-save-profile .glyphicon {
@@ -5157,6 +5159,9 @@ footer {
   .profile-right-container {
     margin-left: 0;
     padding-right: 15px; }
+
+  section.profile-right.profile-page.public-profile-page {
+    margin-top: 15px; }
 
   #privacy-page h1, #terms-page h1, #faqs-page h1 {
     font-size: 28px;
