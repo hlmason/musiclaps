@@ -3575,7 +3575,7 @@ section#recording-instructions #save-container {
 /* ===================================
     Players Wanted Page
 =================================== */
-#players-wanted-page-container {
+#players-wanted-page {
   -moz-border-radius: 5px;
   border-radius: 5px;
   box-shadow: 10px 10px 5px #444444;
@@ -3583,40 +3583,40 @@ section#recording-instructions #save-container {
   min-height: 590px;
   margin: 25px;
   padding-bottom: 15px; }
-  #players-wanted-page-container section#categories-container {
+  #players-wanted-page section#categories-container {
     border: 1px solid #cecece;
     margin-top: 15px;
     text-align: center; }
-    #players-wanted-page-container section#categories-container .categories {
+    #players-wanted-page section#categories-container .categories {
       cursor: pointer;
       display: inline-block;
       padding-bottom: 10px; }
-      #players-wanted-page-container section#categories-container .categories:hover {
+      #players-wanted-page section#categories-container .categories:hover {
         background-color: #e7e7e7; }
-      #players-wanted-page-container section#categories-container .categories h4:not(.last-h4) {
+      #players-wanted-page section#categories-container .categories h4:not(.last-h4) {
         margin-bottom: 3px;
         margin-top: 10px; }
-      #players-wanted-page-container section#categories-container .categories h4.last-h4 {
+      #players-wanted-page section#categories-container .categories h4.last-h4 {
         background-color: #e7e7e7;
         font-weight: normal;
         margin: 0 15px; }
-      #players-wanted-page-container section#categories-container .categories img {
+      #players-wanted-page section#categories-container .categories img {
         height: 75px;
         min-width: 116px;
         padding-left: 15px;
         padding-right: 15px; }
-  #players-wanted-page-container table {
+  #players-wanted-page table {
     width: 100%; }
-    #players-wanted-page-container table span.username {
+    #players-wanted-page table span.username {
       margin-left: 5px; }
-  #players-wanted-page-container h3.wanted, #players-wanted-page-container button {
+  #players-wanted-page h3.wanted, #players-wanted-page button {
     margin-bottom: 15px;
     margin-top: 15px; }
-  #players-wanted-page-container h3.wanted, #players-wanted-page-container h4#new-request {
+  #players-wanted-page h3.wanted, #players-wanted-page h4#new-request {
     display: inline-block; }
-  #players-wanted-page-container h3.wanted {
+  #players-wanted-page h3.wanted {
     margin-left: 60px; }
-  #players-wanted-page-container button {
+  #players-wanted-page button {
     -moz-border-radius: 10px;
     border-radius: 10px;
     background-color: #e7e7e7;
@@ -3628,33 +3628,33 @@ section#recording-instructions #save-container {
     border: 1px solid #cecece;
     float: right;
     margin-right: 60px; }
-    #players-wanted-page-container button:hover {
+    #players-wanted-page button:hover {
       background-color: #d9d9d9; }
-  #players-wanted-page-container h4.no-listings {
+  #players-wanted-page h4.no-listings {
     font-weight: normal;
     margin-top: 0;
     text-align: center; }
-  #players-wanted-page-container h4#new-request {
+  #players-wanted-page h4#new-request {
     margin-bottom: 5px;
     margin-left: 2px;
     margin-top: 0; }
-  #players-wanted-page-container #glyphicon-and-h4-title {
+  #players-wanted-page #glyphicon-and-h4-title {
     background-color: #e7e7e7;
     border-left: 1px solid #cecece;
     border-right: 1px solid #cecece;
     border-top: 1px solid #cecece;
     padding-left: 10px;
     padding-top: 5px; }
-  #players-wanted-page-container .new-request-container {
+  #players-wanted-page .new-request-container {
     border: 1px solid #cecece;
     min-height: 260px;
     padding: 10px; }
-    #players-wanted-page-container .new-request-container label:not(#request-title-label) {
+    #players-wanted-page .new-request-container label:not(#request-title-label) {
       margin-bottom: 2px;
       margin-top: 10px; }
-    #players-wanted-page-container .new-request-container label#request-title-label {
+    #players-wanted-page .new-request-container label#request-title-label {
       margin-bottom: 2px !important; }
-    #players-wanted-page-container .new-request-container input#request_title, #players-wanted-page-container .new-request-container textarea {
+    #players-wanted-page .new-request-container input#request_title, #players-wanted-page .new-request-container textarea {
       -moz-border-radius: 5px;
       border-radius: 5px;
       border: 1px solid #cecece;
@@ -3662,9 +3662,9 @@ section#recording-instructions #save-container {
       padding-left: 8px;
       padding-top: 3px;
       width: 100%; }
-    #players-wanted-page-container .new-request-container textarea {
+    #players-wanted-page .new-request-container textarea {
       height: 113px; }
-    #players-wanted-page-container .new-request-container input.post-request {
+    #players-wanted-page .new-request-container input.post-request {
       -moz-border-radius: 10px;
       border-radius: 10px;
       background-color: #38aaff;
@@ -3673,7 +3673,7 @@ section#recording-instructions #save-container {
       color: white;
       float: right;
       margin-top: 10px; }
-      #players-wanted-page-container .new-request-container input.post-request:hover, #players-wanted-page-container .new-request-container input.post-request:focus {
+      #players-wanted-page .new-request-container input.post-request:hover, #players-wanted-page .new-request-container input.post-request:focus {
         background-color: #45b7ff; }
 
 /* =====================================================================================================
@@ -5048,6 +5048,9 @@ footer {
     margin-left: 25px;
     padding-right: 0; }
 
+  .row.col-xs-12.col-md-3.recommended {
+    display: none; }
+
   footer .navbar-brand {
     position: absolute; }
   footer .navbar-left, footer .navbar-right {
@@ -5164,13 +5167,20 @@ footer {
   section.profile-right.profile-page.public-profile-page {
     margin-top: 15px; }
 
+  .row.col-xs-12.col-md-9.new-project-page {
+    margin-left: 0; }
+    .row.col-xs-12.col-md-9.new-project-page li {
+      display: block; }
+      .row.col-xs-12.col-md-9.new-project-page li:not(.first-list-item) {
+        padding-left: 5px; }
+
   #privacy-page h1, #terms-page h1, #faqs-page h1 {
     font-size: 28px;
     margin-top: 0; } }
 @media only screen and (max-width: 662px) {
-  #players-wanted-page-container h3.wanted {
+  #players-wanted-page h3.wanted {
     margin-left: 0; }
-  #players-wanted-page-container button {
+  #players-wanted-page button {
     margin-right: 0; } }
 @media only screen and (max-width: 580px) {
   h1.landing-page {
@@ -5179,16 +5189,16 @@ footer {
   img#rainbow-music-notes {
     display: none; } }
 @media only screen and (max-width: 496px) {
-  #players-wanted-page-container h3.wanted {
+  #players-wanted-page h3.wanted {
     display: block; }
-  #players-wanted-page-container button {
+  #players-wanted-page button {
     float: left;
     margin-top: 0; }
-  #players-wanted-page-container section.col-xs-10 {
+  #players-wanted-page section.col-xs-10 {
     padding-left: 0; }
-    #players-wanted-page-container section.col-xs-10 table {
+    #players-wanted-page section.col-xs-10 table {
       width: 90%; }
-      #players-wanted-page-container section.col-xs-10 table span.username {
+      #players-wanted-page section.col-xs-10 table span.username {
         margin-left: 0; } }
 @media only screen and (max-width: 461px) {
   #upload-avatar {

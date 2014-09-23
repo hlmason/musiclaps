@@ -10,7 +10,7 @@
 	<div id="wrapper">
 		<div class="container">
 
-			<div id="players-wanted-page-container">
+			<div id="players-wanted-page">
 
 				<div class="row">
 					<div class="col-xs-1"></div>

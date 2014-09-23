@@ -992,7 +992,7 @@ section#recording-instructions {
 /* ===================================
     Players Wanted Page
 =================================== */
-#players-wanted-page-container {
+#players-wanted-page {
 	@include border-radius (5px);
 	box-shadow: $box-shadow;
 	border: $nav-border;
@@ -2581,6 +2581,9 @@ footer {
 		margin-left: 25px;
 		padding-right: 0;
 	}
+	.row.col-xs-12.col-md-3.recommended { // "Recommended"
+		display: none;
+	}
 	footer {
 		.navbar-brand { position: absolute; }
 		.navbar-left, .navbar-right { margin-top: 50px; }
@@ -2689,6 +2692,13 @@ footer {
 	section.profile-right.profile-page.public-profile-page {
 		margin-top: 15px;
 	}
+	.row.col-xs-12.col-md-9.new-project-page { 
+		margin-left: 0; // Aligns with ".glyphicon-user"
+		li { 
+			display: block; 
+			&:not(.first-list-item) { padding-left: 5px; }
+		}
+	}
 	#privacy-page, #terms-page, #faqs-page {
 		h1 {
 			font-size: 28px;
@@ -2699,7 +2709,7 @@ footer {
 
 @media only screen and (max-width: 662px) {
 // Breakpoint of "Post New Request" button ("Players Wanted" Page)
-	#players-wanted-page-container { 
+	#players-wanted-page { 
 		h3.wanted { margin-left: 0; }
 		button { margin-right: 0; }
 	}
@@ -2713,7 +2723,7 @@ footer {
 
 @media only screen and (max-width: 496px) {
 // Breakpoint of "Post New Request" button ("Players Wanted" Page)
-	#players-wanted-page-container { 
+	#players-wanted-page { 
 		h3.wanted { display: block; }
 		button { 
 			float: left; 

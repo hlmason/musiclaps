@@ -13,7 +13,7 @@
 		
 			<div class="row col-lg-10 col-lg-offset-1">				
 					
-				<div class="row col-xs-12 col-sm-9">
+				<div class="row col-xs-12 col-md-9 new-project-page">
 
 					<div class="row" id="new-project-buttons">	
 						<div class="col-xs-12">

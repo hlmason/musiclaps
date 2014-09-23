@@ -1,4 +1,4 @@
-				<div class="row col-xs-12 col-sm-3">
+				<div class="row col-xs-12 col-md-3 recommended">
 					<section class="profile-right recommended">
 						
 						<div class="row col-xs-12">
