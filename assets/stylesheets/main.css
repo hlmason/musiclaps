@@ -3014,7 +3014,7 @@ nav h4 {
   text-transform: uppercase; }
 nav ul.nav {
   margin-top: 6px; }
-  nav ul.nav li:not(#log-out) {
+  nav ul.nav li {
     margin-top: 23px; }
   nav ul.nav .open > a {
     background-color: #e7e7e7 !important; }
@@ -3042,8 +3042,6 @@ nav ul .dropdown ul.dropdown-menu {
       margin-top: -15px; }
     nav ul .dropdown ul.dropdown-menu a:last-child {
       margin-bottom: 8px; }
-nav li#log-out {
-  margin-top: 15px; }
 nav input#search {
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -4978,14 +4976,16 @@ footer {
     color: #444444 !important; }
   nav ul.navbar-right#logged-in li#welcome-user {
     display: none; }
-  nav ul.navbar-right#logged-in input {
-    border: none;
-    margin-left: 12px;
-    padding-top: 0;
-    text-transform: uppercase; }
-    nav ul.navbar-right#logged-in input:hover, nav ul.navbar-right#logged-in input:focus {
-      background-color: #e7e7e7;
-      color: #38aaff; }
+  nav ul.navbar-right#logged-in li#log-out {
+    margin-top: 15px; }
+    nav ul.navbar-right#logged-in li#log-out input {
+      border: none;
+      margin-left: 12px;
+      padding-top: 0;
+      text-transform: uppercase; }
+      nav ul.navbar-right#logged-in li#log-out input:hover, nav ul.navbar-right#logged-in li#log-out input:focus {
+        background-color: #e7e7e7;
+        color: #38aaff; }
   nav .glyphicon-user, nav h4 {
     display: inline-block !important; }
 

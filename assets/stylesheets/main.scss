@@ -321,7 +321,7 @@ nav {
 	ul {
 		&.nav {
 			margin-top: 6px; // Required for Bootstrap dropdown menus
-			li:not(#log-out) { // Also controls nav below top nav / collapsed "User Menu"
+			li { // Also controls nav below top nav / collapsed "User Menu"
 				margin-top: 23px;		
 			}
 			.open > a { // When "Music", "People", or "Our Story" is clicked on
@@ -359,9 +359,6 @@ nav {
 				}
 			}
 		}
-	}
-	li#log-out {
-		margin-top: 15px; // Gives "Log Out" approximately the same top spacing as other nav links
 	}
 	input#search {
 		@include form-fields-input(181px);
@@ -2518,14 +2515,17 @@ footer {
 		}
 		ul.navbar-right#logged-in {
 			li#welcome-user { display: none; }
-			input { // "Log out" button
-				border: none;
-				margin-left: 12px;
-				padding-top: 0;
-				text-transform: uppercase;
-				&:hover, &:focus {
-					background-color: $musiclaps-light-gray;
-					color: $musiclaps-blue;
+			li#log-out {
+				margin-top: 15px; // Gives "Log Out" link on collapsed menu approximately the same top spacing as other nav links
+				input { // "Log out" link
+					border: none;
+					margin-left: 12px;
+					padding-top: 0;
+					text-transform: uppercase;
+					&:hover, &:focus {
+						background-color: $musiclaps-light-gray;
+						color: $musiclaps-blue;
+					}
 				}
 			}
 		}
