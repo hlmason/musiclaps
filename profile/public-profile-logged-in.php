@@ -29,7 +29,7 @@
 		
 			<div class="row col-lg-10 col-lg-offset-1">				
 					
-				<div class="row col-xs-12 col-sm-8">
+				<div class="row col-xs-12 col-sm-8 profile-page">
 
 					<div class="row" id="avatar-n-edit-profile">	
 						<div class="col-xs-4 col-sm-3">
@@ -55,26 +55,31 @@
 						<div class="col-sm-1"></div>
 					</div>
 
+					<!-- "Projects" -->
 					<section id="publicProjects">
 						<div class="row col-xs-12 public-projects-and-collaborations-container">
 							
-							<h4 class="my-public-projects-heading">My Public Projects <span class="normal">($number)</span></h4><!-- Hard-coded placeholder -->
+							<h4 class="my-public-projects-heading">My Public Projects <span class="normal">($number)</span></h4><!-- Hard-coded placeholder / Note that this says "Projects" on public-profile.php -->
 						
 							<?php
 								include(ROOT_PATH . 'include/profile/public-projects-and-collaborations-logged-in.php');
 							?>
+					<!-- End of "Projects" -->
 
+					
+					<!-- "Collaborations" -->
 					<section id="collaborationsJS">
 						<div class="row col-xs-12 public-projects-and-collaborations-container">
 							
-							<h4 class="my-public-projects-heading">My Collaborations <span class="normal">($number)</span></h4><!-- Hard-coded placeholder -->
+							<h4 class="my-public-projects-heading">My Collaborations <span class="normal">($number)</span></h4><!-- Hard-coded placeholder / Note that this says "Collaborations" on public-profile.php -->
 						
 							<?php
 								include(ROOT_PATH . 'include/profile/public-projects-and-collaborations-logged-in.php');
 							?>
+					<!-- End of "Collaborations" --
 
 				</div>		
-				<div class="row col-xs-12 col-sm-4">
+				<div class="row col-xs-12 col-sm-4 profile-right-container">
 					<section class="profile-right profile-page public-profile-page"><!-- profile/index.php does not contain the class name "public-profile-page" -->
 						
 						<div class="row first-row">

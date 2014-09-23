@@ -3761,8 +3761,10 @@ section#messages-header button, section#groups-header button {
     padding-right: 0;
     width: 47%; }
     .public-projects-and-collaborations-container section.public-projects-and-collaborations img {
+      height: 85px;
       padding-bottom: 10px;
-      padding-top: 10px; }
+      padding-top: 10px;
+      width: 98px; }
     .public-projects-and-collaborations-container section.public-projects-and-collaborations h4, .public-projects-and-collaborations-container section.public-projects-and-collaborations h5 {
       display: inline-block;
       margin-left: 7px; }
@@ -4781,7 +4783,7 @@ section.profile-right {
   margin-top: 15px; }
 
 section.profile-right.profile-page {
-  height: 1010px; }
+  height: 1011px; }
   section.profile-right.profile-page .row {
     margin-left: 15px;
     width: 90%; }
@@ -4792,13 +4794,13 @@ section.profile-right.profile-page {
     section.profile-right.profile-page .row:not(.last-row) {
       border-bottom: 1px solid #999; }
     section.profile-right.profile-page .row#user-location-map-container {
-      height: 223.6px; }
+      height: 230px; }
+      section.profile-right.profile-page .row#user-location-map-container #user-location-map {
+        background-color: lightblue;
+        height: 160px;
+        width: 100%; }
   section.profile-right.profile-page h2 {
     margin-bottom: 3px; }
-  section.profile-right.profile-page #user-location-map-container #user-location-map {
-    background-color: lightblue;
-    height: 160px;
-    width: 100%; }
 
 section.profile-right.profile-page.public-profile-page {
   margin-top: -28px; }
@@ -5021,6 +5023,28 @@ footer {
     #all-music-page .col-xs-12.col-md-4 h4, #all-music-page .col-xs-12.col-md-4 h5 {
       margin: 0; }
 
+  h4.my-public-projects-heading {
+    margin-bottom: 0; }
+
+  section.public-projects-and-collaborations {
+    margin-top: 10px;
+    width: 100% !important; }
+    section.public-projects-and-collaborations h4, section.public-projects-and-collaborations h5 {
+      display: block !important;
+      margin-left: 0 !important; }
+    section.public-projects-and-collaborations h4 {
+      margin-top: 17px; }
+
+  #upload-avatar li {
+    font-size: 12px; }
+
+  input#save_profile {
+    margin-left: 135px !important; }
+
+  .profile-right-container {
+    margin-left: 25px;
+    padding-right: 0; }
+
   footer .navbar-brand {
     position: absolute; }
   footer .navbar-left, footer .navbar-right {
@@ -5113,6 +5137,9 @@ footer {
   h2#user-id, #edit-save-profile {
     text-align: left !important; }
 
+  h2#user-id {
+    margin-top: 10px !important; }
+
   #about-me {
     margin-left: 5px;
     margin-top: 15px; }
@@ -5120,6 +5147,16 @@ footer {
       display: block;
       float: none !important;
       margin-top: 8px; }
+
+  nav .glyphicon-user {
+    margin-left: 15px; }
+
+  .row.col-xs-12.col-sm-8.profile-page {
+    margin-left: 0; }
+
+  .profile-right-container {
+    margin-left: 0;
+    padding-right: 15px; }
 
   #privacy-page h1, #terms-page h1, #faqs-page h1 {
     font-size: 28px;

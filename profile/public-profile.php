@@ -29,7 +29,7 @@
 		
 			<div class="row col-lg-10 col-lg-offset-1">				
 					
-				<div class="row col-xs-12 col-sm-8">
+				<div class="row col-xs-12 col-sm-8 profile-page">
 
 					<div class="row" id="avatar-n-edit-profile">	
 						<div class="col-xs-4 col-sm-3">
@@ -55,6 +55,7 @@
 						<div class="col-sm-1"></div>
 					</div>
 
+					<!-- "Projects" -->
 					<section id="publicProjects">
 						<div class="row col-xs-12 public-projects-and-collaborations-container">
 							
@@ -63,7 +64,10 @@
 							<?php
 								include(ROOT_PATH . 'include/profile/public-projects-and-collaborations.php');
 							?>
+					<!-- End of "Projects" -->
 
+
+					<!-- "Collaborations" -->
 					<section id="collaborationsJS">
 						<div class="row col-xs-12 public-projects-and-collaborations-container">
 							
@@ -72,9 +76,10 @@
 							<?php
 								include(ROOT_PATH . 'include/profile/public-projects-and-collaborations.php');
 							?>
+					<!-- End of "Collaborations" -->
 
 				</div>		
-				<div class="row col-xs-12 col-sm-4">
+				<div class="row col-xs-12 col-sm-4 profile-right-container">
 					<section class="profile-right profile-page public-profile-page"><!-- profile/index.php does not contain the class name "public-profile-page" -->
 						
 						<div class="row first-row">

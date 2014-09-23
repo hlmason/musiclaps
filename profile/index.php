@@ -13,7 +13,7 @@
 		
 			<div class="row col-lg-10 col-lg-offset-1">				
 					
-				<div class="row col-xs-12 col-sm-8">
+				<div class="row col-xs-12 col-sm-8 profile-page">
 
 					<div class="row" id="avatar-n-edit-profile">	
 						<div class="col-xs-4 col-sm-3">
@@ -221,7 +221,7 @@
 					<!-- End of "My Profile" -->
 
 				</div>		
-				<div class="row col-xs-12 col-sm-4">
+				<div class="row col-xs-12 col-sm-4 profile-right-container">
 					<section class="profile-right profile-page">
 						
 						<div class="row first-row">

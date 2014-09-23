@@ -299,7 +299,7 @@ nav {
 		button.navbar-toggle {
 			margin-top: 23px;
 		}
-		h4 { // "Main Menu"
+		h4 { // Main menu
 			float: right;
 			margin-right: 10px;
 			margin-top: 30px; 
@@ -313,7 +313,7 @@ nav {
 		cursor: pointer;
 		display: none;
 	}
-	h4 { // "Main Menu" and "Profile Menu"
+	h4 { // Main menu and "User Menu"
 		font-weight: normal;
 		letter-spacing: 0.5px;
 		text-transform: uppercase;
@@ -1197,8 +1197,10 @@ section#messages-header button, section#groups-header button { // "Add New Frien
 		padding-right: 0;
 		width: 47%;
 		img {
+			height: 85px;
 			padding-bottom: 10px;
 			padding-top: 10px;
+			width: 98px;
 		}
 		h4, h5 {
 			display: inline-block;
@@ -2281,7 +2283,7 @@ section.profile-right {
 }
 
 section.profile-right.profile-page { // Profile Page only
-	height: 1010px;
+	height: 1011px;
 	.row {
 		margin-left: 15px;
 		width: 90%;
@@ -2295,16 +2297,16 @@ section.profile-right.profile-page { // Profile Page only
 			border-bottom: 1px solid #999;
 		}
 		&#user-location-map-container {
-			height: 223.6px;
+			height: 230px;
+			#user-location-map {
+				background-color: lightblue;
+				height: 160px;
+				width: 100%;
+			}
 		}
 	}
 	h2 {
 		margin-bottom: 3px;
-	}
-	#user-location-map-container #user-location-map {
-		background-color: lightblue;
-		height: 160px;
-		width: 100%;
 	}
 }
 
@@ -2436,9 +2438,7 @@ footer {
 		li:not(.first-list-item) { // "Profile"
 			padding-left: 8px;
 		}
-		li#second-list-item {
-			padding-left: 9px;
-		}
+		li#second-list-item { padding-left: 9px; }
 	}
 	.wmuSliderPrev { left: 0; }
 	.wmuSliderNext { right: 0; }
@@ -2448,9 +2448,7 @@ footer {
 	#all-music-page {
 		section.projects-container {
 			margin-top: 25px;
-			h4, h5 { 
-				margin-left: 12px; 
-			}
+			h4, h5 { margin-left: 12px; }
 		}
 	}
 	form.profile-page {
@@ -2519,9 +2517,7 @@ footer {
 				a:hover, a:focus { color: $musiclaps-blue !important; } // Changes "Log in" and "Register" link color to match the rest of the links in the collapsed menu
 			}
 			&:first-child { margin-top: 15px; }
-			&:last-child { 
-				padding-bottom: 10px; 
-			}
+			&:last-child { padding-bottom: 10px; }
 			&:last-child a { color: $musiclaps-dark-gray !important; } // Changes "Register" link color so that it's visible and matches the rest of the links in the collapsed menu
 		}
 		ul.navbar-right#logged-in {
@@ -2546,12 +2542,8 @@ footer {
 		}
 		a {
 			border: none;
-			&:hover, &:focus {
-				background-color: white;
-			}
-			&:not(.active) {
-				background-color: white;
-			}
+			&:hover, &:focus { background-color: white; }
+			&:not(.active) { background-color: white; }
 		}
 	}
 	ul.nav-logged-in { 
@@ -2576,8 +2568,24 @@ footer {
 			h4, h5 { margin: 0; }
 		}
 	}
+	h4.my-public-projects-heading { margin-bottom: 0; }
+	section.public-projects-and-collaborations { 
+		margin-top: 10px;
+		width: 100% !important;
+		h4, h5 { 
+			display: block !important;
+			margin-left: 0 !important;
+		}
+		h4 { margin-top: 17px; }
+	}
+	#upload-avatar li { font-size: 12px; }
+	input#save_profile { margin-left: 135px !important; }
+	.profile-right-container {
+		margin-left: 25px;
+		padding-right: 0;
+	}
 	footer {
-		.navbar-brand { position: absolute; } 
+		.navbar-brand { position: absolute; }
 		.navbar-left, .navbar-right { margin-top: 50px; }
 		.navbar-left { 
 			float: left !important;
@@ -2660,6 +2668,7 @@ footer {
 		}
 	}
 	h2#user-id, #edit-save-profile { text-align: left !important; }
+	h2#user-id { margin-top: 10px !important; }
 	#about-me {
 		margin-left: 5px;
 		margin-top: 15px;
@@ -2668,6 +2677,12 @@ footer {
 			float: none !important;
 			margin-top: 8px;
 		}
+	}
+	nav .glyphicon-user { margin-left: 15px; } // Aligns with ".profile-right-container"
+	.row.col-xs-12.col-sm-8.profile-page { margin-left: 0; } // Aligns with ".profile-right-container"
+	.profile-right-container {
+		margin-left: 0;
+		padding-right: 15px;
 	}
 	#privacy-page, #terms-page, #faqs-page {
 		h1 {
