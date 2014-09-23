@@ -26,7 +26,7 @@
     <script src="<?php echo BASE_URL; ?>assets/javascripts/customized.bootstrap.min.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/index.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/wmuSlider.min.js"></script>
-	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/nav.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/user-menu.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/index.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/new-project.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/projects-and-collabs.js"></script>

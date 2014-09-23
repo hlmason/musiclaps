@@ -13,7 +13,9 @@
 		<div class="container">
 			
 			<nav class="row col-lg-10 col-lg-offset-1">
-				<ul class="nav navbar-nav nav-logged-out">
+				<span class="glyphicon glyphicon-user glyphiconUser"></span>
+				<h4 class="user-menu userMenu">User Menu</h4>
+				<ul class="nav navbar-nav user-menu userMenu">
 					<li class="first-list-item" id="profileLink">
 						<a class="white" id="publicProfileLink" href="#">Profile</a>
 					</li>

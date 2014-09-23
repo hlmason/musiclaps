@@ -2,9 +2,9 @@
 		<div class="container">
 			
 			<nav class="row col-lg-10 col-lg-offset-1">
-				<span class="glyphicon glyphicon-user" id="glyphiconUser"></span>
-	            <h4 class="nav-logged-in navLoggedIn">User Menu</h4>
-				<ul class="nav navbar-nav nav-logged-in navLoggedIn">
+				<span class="glyphicon glyphicon-user glyphiconUser"></span>
+	            <h4 class="user-menu userMenu">User Menu</h4>
+				<ul class="nav navbar-nav user-menu userMenu">
 					<li class="first-list-item">
 						<a class="<?php if ($page == "My Profile") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/">My Profile</a>
 					</li>

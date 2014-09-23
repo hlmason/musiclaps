@@ -299,7 +299,7 @@ nav {
 		button.navbar-toggle {
 			margin-top: 23px;
 		}
-		h4 { // Main menu
+		h4 { // Collapsed main menu
 			float: right;
 			margin-right: 10px;
 			margin-top: 30px; 
@@ -313,7 +313,7 @@ nav {
 		cursor: pointer;
 		display: none;
 	}
-	h4 { // Main menu and "User Menu"
+	h4 { // Collapsed main menu and collapsed "User Menu"
 		font-weight: normal;
 		letter-spacing: 0.5px;
 		text-transform: uppercase;
@@ -321,7 +321,7 @@ nav {
 	ul {
 		&.nav {
 			margin-top: 6px; // Required for Bootstrap dropdown menus
-			li { // Also controls nav below top nav
+			li { // Also controls nav below top nav / collapsed "User Menu"
 				margin-top: 23px;		
 			}
 			.open > a { // When "Music", "People", or "Our Story" is clicked on
@@ -426,9 +426,9 @@ nav {
 	}
 }
 
-	/* ===================================
-	    Secondary Nav
-	=================================== */
+	/* ==========================================
+	    Nav below top nav / collapsed "User Menu"
+	========================================== */
 	nav .glyphicon-user {
 		@include border-radius(4px);
 		color: #888;
@@ -439,13 +439,13 @@ nav {
 		}
 	}
 
-	h4.nav-logged-in {
+	h4.user-menu {
 		margin-bottom: 0;
 		margin-left: 5px;
 		margin-top: 10px;
 	}
 
-	ul.nav-logged-in, ul.nav-logged-out { // Nav below top nav
+	ul.user-menu {
 		li {
 			border-bottom: $nav-border;
 		}
@@ -470,7 +470,7 @@ nav {
 		}
 	}
 
-	ul.nav-logged-in li {
+	ul.user-menu li {
 		&#second-list-item, &#last-list-item {
 			padding-left: 4px;
 		}
@@ -2433,15 +2433,14 @@ footer {
     Media Queries
 =================================== */
 @media only screen and (max-width: 1199px) {
-// Breakpoint of slider buttons (Landing Page), tiles on All Music and Search Results pages, and gray boxes (Profile Page)
-	ul.nav-logged-in { // Nav below top nav
+	ul.user-menu { // Nav below top nav
 		li:not(.first-list-item) { // "Profile"
 			padding-left: 8px;
 		}
 		li#second-list-item { padding-left: 9px; }
 	}
-	.wmuSliderPrev { left: 0; }
-	.wmuSliderNext { right: 0; }
+	.wmuSliderPrev { left: 0; } // Slider button
+	.wmuSliderNext { right: 0; } // Slider button
 	.public-project-listing {
 		h3, h4:not(.last-h4) { margin-left: 0 !important; }
 	}
@@ -2462,13 +2461,8 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 1090px) {
-// Breakpoint of "About me" border (Profile Page)
-	#about-me { border: none; }
-}
-
 @media only screen and (max-width: 991px) {
-// Point at which Bootstrap's navbar becomes uncollapsed; and breakpoint of Secondary Nav (logged in pages), social media icons on footer, and gray boxes (Profile Page)
+// Point at which Bootstrap's nav becomes uncollapsed (this is customized), point at which nav below top nav collapses into "User Menu", and breakpoint of social media icons on footer
 	nav {
 		&.navbar a:not(.navbar-brand) { margin-left: 10px; }
 		ul {
@@ -2535,7 +2529,7 @@ footer {
 		}
 		.glyphicon-user, h4 { display: inline-block !important; }
 	}
-	ul.nav-logged-in, ul.nav-logged-out { // Nav below top nav
+	ul.user-menu { // Collapsed "User Menu"
 		li {
 			border: none;
 			padding: 0 !important;
@@ -2546,11 +2540,11 @@ footer {
 			&:not(.active) { background-color: white; }
 		}
 	}
-	ul.nav-logged-in { 
+	ul.user-menu { 
 		margin-top: 0 !important;
-		a { margin-left: 10px; } 
+		a { margin-left: 10px; } // Aligns links with ".glyphicon-user"
 	}
-	ul.navLoggedIn { display: none; } // See profile/nav.js
+	ul.userMenu { display: none; } // See profile/nav.js
 	section#technology, section#backstage, section.music-ed, section.contests-and-auditions {
 		img { display: none; }
 	}
@@ -2568,6 +2562,7 @@ footer {
 			h4, h5 { margin: 0; }
 		}
 	}
+	#about-me { border-top: none; }
 	h4.my-public-projects-heading { margin-bottom: 0; }
 	section.public-projects-and-collaborations { 
 		margin-top: 10px;
@@ -2606,7 +2601,7 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
-// Breakpoint of Bootstrap's 'xs' viewport width
+// Bootstrap's "xs" viewport width
 	#sn-login-modal-body { display: none; }
 	#sn-login-modal-body-sm {
 		display: inline-block !important;
@@ -2667,8 +2662,15 @@ footer {
 			section.projects-container.first { margin-top: 10px; }
 		}
 	}
-	h2#user-id, #edit-save-profile { text-align: left !important; }
-	h2#user-id { margin-top: 10px !important; }
+	nav {
+		.glyphicon-user { margin-left: 15px; } // Aligns with ".profile-right-container"
+		ul.user-menu a { margin-left: 25px; } // Aligns links with ".glyphicon-user"
+	}
+	.row.col-xs-12.col-sm-8.profile-page { 
+		margin-left: 0; // Aligns with ".profile-right-container"
+		#edit-save-profile { text-align: left !important; }
+		h2#user-id { margin-top: 10px !important; }
+	}
 	#about-me {
 		margin-left: 5px;
 		margin-top: 15px;
@@ -2678,8 +2680,6 @@ footer {
 			margin-top: 8px;
 		}
 	}
-	nav .glyphicon-user { margin-left: 15px; } // Aligns with ".profile-right-container"
-	.row.col-xs-12.col-sm-8.profile-page { margin-left: 0; } // Aligns with ".profile-right-container"
 	.profile-right-container {
 		margin-left: 0;
 		padding-right: 15px;
@@ -2693,7 +2693,7 @@ footer {
 }
 
 @media only screen and (max-width: 580px) {
-// Breakpoint of "Select a song" modal (Live player Page)
+// Breakpoint of "Select a song" modal (Live Player Page)
 	h1.landing-page { font-size: 24px; } // "Online Music Collaboration Made Simple"
 	img#rainbow-music-notes { display: none; }
 }
@@ -2705,16 +2705,14 @@ footer {
 		border: none !important;
 		ul {
 			margin-left: 10px;
-			margin-top: -3px;
 		}
 	}
 	input#save_profile { margin-left: 134px !important; }
 }
 
 @media only screen and (max-width: 417px) {
-// Breakpoint of "Select a song" heading (Live player Page)
+// Breakpoint of "Select a song" heading (Live Player Page)
 	// h1.landing-page { font-size: 18px; } // "Online Music Collaboration Made Simple"
 	h3.select-song-heading { font-size: 15px; }
 	h2#user-id, h4.edit-profile, h4.save-profile { margin-left: 10px; }
-	#about-me { border-top: none; }
 }

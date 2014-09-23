@@ -28,6 +28,7 @@
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/index.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/modal.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/wmuSlider.min.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/user-menu.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/live-player.js"></script>
 	<script src="<?php echo BASE_URL; ?>walkthrough/assets/js/standard.js"></script><!-- Julie's Captivate -->
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/public-project.js"></script>
