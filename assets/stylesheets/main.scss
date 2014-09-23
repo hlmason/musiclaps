@@ -2461,14 +2461,14 @@ footer {
 }
 
 @media only screen and (max-width: 991px) {
-// Point at which Bootstrap's nav becomes uncollapsed (this is customized), point at which nav below top nav collapses into "User Menu", and breakpoint of social media icons on footer
+// Point at which Bootstrap's nav becomes uncollapsed (this is by default 767px but has been customized), point at which nav below top nav collapses into "User Menu", and breakpoint of social media icons on footer
 	nav {
 		&.navbar a:not(.navbar-brand) { margin-left: 10px; }
 		ul {
 			&.nav a { padding: 10px !important; }
 			&.navbar-left { 
 				margin-top: 0;
-			 li { border: none; } // Removes border to the left of links
+			 li { border-left: none; } // Removes border to the left of links
 			 }
 			.dropdown {
 				a .caret { display: inline-block !important; }
@@ -2533,11 +2533,11 @@ footer {
 	}
 	ul.user-menu { // Collapsed "User Menu"
 		li {
-			border: none;
+			border-bottom: none;
 			padding: 0 !important;
 		}
 		a {
-			border: none;
+			border: none; // "border-left", "border-right", and "border-top"
 			&:hover, &:focus { background-color: white; }
 			&:not(.active) { background-color: white; }
 		}
@@ -2591,7 +2591,7 @@ footer {
 			float: left !important;
 			margin-left: 5px;
 			padding-bottom: 15px;
-			li { border: none; } // Removes border to the left of links
+			li { border-left: none; } // Removes border to the left of links
 		}
 		.navbar-right {
 			float: right !important;
@@ -2743,7 +2743,7 @@ footer {
 // Breakpoint of "No file chosen" ("Profile" Page)
 	// h1.landing-page { font-size: 21px; } // "Online Music Collaboration Made Simple"
 	#upload-avatar {
-		border: none !important;
+		border-bottom: none !important;
 		ul {
 			margin-left: 10px;
 		}

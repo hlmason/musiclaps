@@ -4941,7 +4941,7 @@ footer {
   nav ul.navbar-left {
     margin-top: 0; }
     nav ul.navbar-left li {
-      border: none; }
+      border-left: none; }
   nav ul .dropdown a .caret {
     display: inline-block !important; }
   nav ul .dropdown ul.dropdown-menu li {
@@ -4990,7 +4990,7 @@ footer {
     display: inline-block !important; }
 
   ul.user-menu li {
-    border: none;
+    border-bottom: none;
     padding: 0 !important; }
   ul.user-menu a {
     border: none; }
@@ -5060,7 +5060,7 @@ footer {
     margin-left: 5px;
     padding-bottom: 15px; }
     footer .navbar-left li {
-      border: none; }
+      border-left: none; }
   footer .navbar-right {
     float: right !important;
     text-align: right; } }
@@ -5202,7 +5202,7 @@ footer {
         margin-left: 0; } }
 @media only screen and (max-width: 461px) {
   #upload-avatar {
-    border: none !important; }
+    border-bottom: none !important; }
     #upload-avatar ul {
       margin-left: 10px; }
 
