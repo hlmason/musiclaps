@@ -1,13 +1,13 @@
 <?php
 	require_once('../include/config.php');
 
-	$pageTitle = 'New Project';
-	$page = 'New Project';
+	$pageTitle = 'Upload MP3';
+	$page = 'Upload MP3';
 	
 	include(ROOT_PATH . 'include/header-logged-in.php');
 	include(ROOT_PATH . 'include/db-connection.php');
 	include(ROOT_PATH . 'controllers/get-profile.php');
-	include(ROOT_PATH . 'include/nav-logged-in.php');
+	include(ROOT_PATH . 'include/user-menu.php');
 
 ?>
 		
@@ -15,24 +15,7 @@
 					
 				<div class="row col-xs-12 col-md-9" id="new-project-page">
 
-					<div class="row" id="new-project-buttons">	
-						<div class="col-xs-12">
-							<button class="navigate white" id="recordingPlayerButton" type="button">Recording Player</button>
-							<button class="navigate white-button-navigate-hover-js" id="uploadMP3Button" type="button">Upload MP3</button>
-						</div>
-					</div>
-					
-					<!-- "Recording Player" -->
-					<div class="row" id="recordingPlayer">
-						<div class="col-xs-12">
-							<div id="recording-player"></div><!-- Placeholder -->
-						</div>
-					</div>
-					<!-- End of "Recording Player" -->
-
-
-					<!-- "Upload MP3" form - hidden upon page load -->
-					<section class="upload-mp3-container" id="uploadMP3Container">
+					<section class="upload-mp3-container">
 						<div class="row">
 							<div class="col-xs-6">
 								<h4>Upload an MP3 file</h4>
@@ -176,7 +159,6 @@
 							</div>
 						</form>
 					</section>
-					<!-- End of "Upload MP3" form -->
 
 				</div>
 				<?php

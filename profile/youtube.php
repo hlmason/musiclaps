@@ -7,7 +7,7 @@
 	include(ROOT_PATH . 'include/header-logged-in.php');
 	include(ROOT_PATH . 'include/db-connection.php');
 	include(ROOT_PATH . 'controllers/get-profile.php');
-	include(ROOT_PATH . 'include/nav-logged-in.php');
+	include(ROOT_PATH . 'include/user-menu.php');
 
 ?>
 			<div class="row col-lg-10 col-lg-offset-1">				

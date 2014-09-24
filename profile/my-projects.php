@@ -7,14 +7,14 @@
 	include(ROOT_PATH . 'include/header-logged-in.php');
 	include(ROOT_PATH . 'include/db-connection.php');
 	include(ROOT_PATH . 'controllers/get-profile.php');
-	include(ROOT_PATH . 'include/nav-logged-in.php');
+	include(ROOT_PATH . 'include/user-menu.php');
 
 ?>
 		
 			<div class="row col-lg-10 col-lg-offset-1">				
 					
 				<div id="projectsContainers">
-					<div class="row col-xs-12 col-sm-9">
+					<div class="row col-xs-12 col-md-9">
 
 						<!-- Projects nav buttons -->
 						<?php

@@ -448,9 +448,14 @@ nav {
 	ul.user-menu {
 		li {
 			border-bottom: $nav-border;
+			&#new-project, &#my-projects, &#collaborations {
+				a { 
+					padding: 14px 11px 12px 12px; // Asymmetrical so bar lines up with "Recommended" box / Overwrites general padding of 15px for links
+				}
+			}
 		}
-		li:not(.first-list-item) { // "Profile"
-			padding-left: 5px;
+		li:not(.first-list-item) { // Not "Profile" / "My Profile" tabs
+			padding-left: 2px;
 		}
 		a {
 			border-left: $nav-border;
@@ -467,12 +472,6 @@ nav {
 					background-color: white; // Same as active
 				}
 			}
-		}
-	}
-
-	ul.user-menu li {
-		&#second-list-item, &#last-list-item {
-			padding-left: 4px;
 		}
 	}
 
@@ -2319,7 +2318,7 @@ section.profile-right.recommended {
 		margin-left: auto;
 		margin-right: auto;
 	}
-	h3 { // "Recommended"
+	h3 { // "Recommended" box
 		margin-bottom: 10px;
 		margin-top: 18px;
 		text-align: center;
@@ -2433,10 +2432,9 @@ footer {
 =================================== */
 @media only screen and (max-width: 1199px) {
 	ul.user-menu { // Nav below top nav
-		li:not(.first-list-item) { // "Profile"
-			padding-left: 8px;
+		li:not(.first-list-item) { // Not "Profile" / "My Profile" tabs
+			padding-left: 5px;
 		}
-		li#second-list-item { padding-left: 9px; }
 	}
 	.wmuSliderPrev { left: 0; } // Slider button
 	.wmuSliderNext { right: 0; } // Slider button
@@ -2585,7 +2583,7 @@ footer {
 		margin-left: 25px;
 		padding-right: 0;
 	}
-	.row.col-xs-12.col-md-3.recommended { // "Recommended"
+	.row.col-xs-12.col-md-3.recommended { // "Recommended" box
 		display: none;
 	}
 	footer {

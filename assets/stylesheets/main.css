@@ -3120,8 +3120,10 @@ h4.user-menu {
 
 ul.user-menu li {
   border-bottom: 1px solid #cecece; }
+  ul.user-menu li#new-project a, ul.user-menu li#my-projects a, ul.user-menu li#collaborations a {
+    padding: 14px 11px 12px 12px; }
 ul.user-menu li:not(.first-list-item) {
-  padding-left: 5px; }
+  padding-left: 2px; }
 ul.user-menu a {
   border-left: 1px solid #cecece;
   border-right: 1px solid #cecece;
@@ -3135,9 +3137,6 @@ ul.user-menu a {
     background-color: #f4f4f4; }
   ul.user-menu a:not(.active):hover, ul.user-menu a:not(.active):focus {
     background-color: white; }
-
-ul.user-menu li#second-list-item, ul.user-menu li#last-list-item {
-  padding-left: 4px; }
 
 /* ===================================
     Modal
@@ -4909,9 +4908,7 @@ footer {
 =================================== */
 @media only screen and (max-width: 1199px) {
   ul.user-menu li:not(.first-list-item) {
-    padding-left: 8px; }
-  ul.user-menu li#second-list-item {
-    padding-left: 9px; }
+    padding-left: 5px; }
 
   .wmuSliderPrev {
     left: 0; }
