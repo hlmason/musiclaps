@@ -3960,7 +3960,7 @@ section.upload-mp3-container #upload-project-container {
 section.projects-container {
   border: 1px solid #cecece;
   margin-left: 0;
-  margin-top: 13px;
+  margin-top: 15px;
   padding-bottom: 10px;
   padding-top: 10px;
   width: 98%; }
@@ -4291,7 +4291,7 @@ section#lyrics-container-header, #lyrics-container-form {
 
 section#lyrics-container-header {
   border: 1px solid #cecece;
-  margin-top: 20px; }
+  margin-top: 15px; }
   section#lyrics-container-header h4 {
     margin-bottom: 3px;
     margin-top: 0; }
@@ -4911,6 +4911,8 @@ footer {
 @media only screen and (max-width: 1199px) {
   ul.user-menu li:not(.first-list-item) {
     padding-left: 5px; }
+  ul.user-menu li#last-list-item {
+    padding-left: 4px; }
   ul.user-menu li.dropdown-menu-list-item {
     padding-left: 0; }
 
@@ -4993,6 +4995,7 @@ footer {
     display: inline-block !important; }
 
   ul.user-menu {
+    display: none;
     margin-top: 0 !important; }
     ul.user-menu li {
       border-bottom: none !important;
@@ -5013,9 +5016,6 @@ footer {
         margin-bottom: 0 !important;
         margin-left: 45px;
         padding-top: 20px !important; }
-
-  ul.userMenu {
-    display: none; }
 
   section#technology img, section#backstage img, section.music-ed img, section.contests-and-auditions img {
     display: none; }

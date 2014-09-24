@@ -1,8 +1,8 @@
 <?php
 	require_once('../include/config.php');
 
-	$pageTitle = 'Collaborations';
-	$page = 'Collaborations';
+	$pageTitle = 'Collaborators';
+	$page = 'Collaborators';
 	
 	include(ROOT_PATH . 'include/header-logged-in.php');
 	include(ROOT_PATH . 'include/db-connection.php');
@@ -13,39 +13,9 @@
 		
 			<div class="row col-lg-10 col-lg-offset-1">				
 					
-				<div class="row col-xs-12 col-sm-9">
+				<div class="row col-xs-12 col-md-9">
 
-					<div class="row" id="collaborations-buttons">	
-						<div class="col-xs-12">
-							<button class="navigate white first-button" id="openCollabButton" type="button">Open Collab</button>
-							<button class="navigate white-button-navigate-hover-js" id="requestingCollabButton" type="button">Requesting Collab</button>
-							<button class="navigate white-button-navigate-hover-js" id="collaboratorsButton" type="button">Collaborators</button>
-						</div>
-					</div>
-
-					<!-- "Open Collab" listings -->
-					<?php
-						include(ROOT_PATH . 'include/profile/open-collab-listings.php');
-					?>
-					<!-- End of "Open Collab" listings -->
-
-
-					<!-- "Requesting Collab" listings -->
-					<?php
-						include(ROOT_PATH . 'include/profile/requesting-collab-listings.php');
-					?>
-					<!-- End of Requesting Collab listings -->
-
-
-					<!-- "Change Sound Image" form -->
-					<?php
-						include(ROOT_PATH . 'include/profile/change-sound-img-form.php');
-					?>
-					<!-- End of "Change Sound Image" form -->
-
-
-					<!-- Hidden upon page load -->
-					<div class="collaborators-container" id="collaboratorsContainer">
+					<div class="collaborators-container">
 						<label for="collab_type" id="collab-label">Sort by</label>
 						<select>
 							<option value="all_collab">All</option>
@@ -112,6 +82,7 @@
 				<?php
 					include(ROOT_PATH . 'include/profile/recommended.php');
 				?>		
+			
 			</div>
 			<div class="col-lg-1"></div>	
 		

@@ -1408,7 +1408,7 @@ section.upload-mp3-container {
 section.projects-container {
 	border: $nav-border;
 	margin-left: 0;
-	margin-top: 13px;
+	margin-top: 15px;
 	padding-bottom: 10px;
 	padding-top: 10px;
 	width: 98%;
@@ -1771,7 +1771,7 @@ section#lyrics-container-header, #lyrics-container-form {
 
 section#lyrics-container-header { // "Display Lyrics" and "Select Sound"
 	border: $nav-border;
-	margin-top: 20px;
+	margin-top: 15px;
 	h4 {
 		margin-bottom: 3px;
 		margin-top: 0;
@@ -2438,7 +2438,8 @@ footer {
 		li:not(.first-list-item) { // Not "Profile" / "My Profile" tabs
 			padding-left: 5px;
 		}
-		li.dropdown-menu-list-item { padding-left: 0; } // Overwrites the above
+		li#last-list-item { padding-left: 4px; } // Overrides the above ("li:not(.first-list-item)")
+		li.dropdown-menu-list-item { padding-left: 0; } // Overrides the above ("li:not(.first-list-item)")
 	}
 	.wmuSliderPrev { left: 0; } // Slider button
 	.wmuSliderNext { right: 0; } // Slider button
@@ -2538,6 +2539,7 @@ footer {
 		.glyphicon-user, h4 { display: inline-block !important; }
 	}
 	ul.user-menu { // Collapsed "User Menu"
+		display: none; // Serves to make menu appear collapsed
 		margin-top: 0 !important;
 		li {
 			border-bottom: none !important;
@@ -2561,7 +2563,6 @@ footer {
 			}
 		}
 	}
-	ul.userMenu { display: none; } // See profile/nav.js
 	section#technology, section#backstage, section.music-ed, section.contests-and-auditions {
 		img { display: none; }
 	}

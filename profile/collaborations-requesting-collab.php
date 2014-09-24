@@ -1,3 +1,20 @@
+<?php
+	require_once('../include/config.php');
+
+	$pageTitle = 'Requesting Collab Projects';
+	$page = 'Requesting Collab Projects';
+	
+	include(ROOT_PATH . 'include/header-logged-in.php');
+	include(ROOT_PATH . 'include/db-connection.php');
+	include(ROOT_PATH . 'controllers/get-profile.php');
+	include(ROOT_PATH . 'include/user-menu.php');
+
+?>
+		
+			<div class="row col-lg-10 col-lg-offset-1">				
+					
+				<div class="row col-xs-12 col-md-9">
+
 					<section class="row projects-container" id="requestingCollabContainer">
 						<div class="col-xs-4 col-sm-3 col-md-3">
 							<span class="glyphicon-pencil-container"><span class="glyphicon glyphicon-pencil glyphiconPencil"></span></span>
@@ -14,7 +31,6 @@
 							<h5 class="last-h5">Requesting Collab <span class="glyphicon glyphicon-lock"></span></h5>
 						</div>
 					</section>
-
 
 					<div id="requestingCollabForm">
 						<!-- Recording Player -->
@@ -45,7 +61,26 @@
 						</section>
 					</div>
 
-
 					<section class="noListings">
 						<h4>You currently have no projects in this category</h4>
 					</section>
+
+					<!-- "Change Sound Image" form -->
+					<?php
+						include(ROOT_PATH . 'include/profile/change-sound-img-form.php');
+					?>
+					<!-- End of "Change Sound Image" form -->
+
+				</div>
+				<?php
+					include(ROOT_PATH . 'include/profile/recommended.php');
+				?>	
+
+			</div>
+			<div class="col-lg-1"></div>	
+		
+		</div>
+
+	<?php
+		include(ROOT_PATH . 'include/footer-logged-in.php');
+	?>

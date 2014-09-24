@@ -1,8 +1,8 @@
 <?php
 	require_once('../include/config.php');
 
-	$pageTitle = 'My Projects';
-	$page = 'My Projects';
+	$pageTitle = 'Lyrics';
+	$page = 'Lyrics';
 	
 	include(ROOT_PATH . 'include/header-logged-in.php');
 	include(ROOT_PATH . 'include/db-connection.php');
@@ -12,72 +12,9 @@
 ?>
 		
 			<div class="row col-lg-10 col-lg-offset-1">				
-					
-				<div id="projectsContainers">
-					<div class="row col-xs-12 col-md-9">
-
-						<!-- Projects nav buttons -->
-						<?php
-							include(ROOT_PATH . 'include/profile/projects-nav.php');
-						?>
-						<!-- End of projects nav buttons -->
-
-
-						<!-- "In Progress/Private" listings -->
-						<?php
-							include(ROOT_PATH . 'include/profile/private-project-listings.php');
-						?>
-						<!-- End of "In Progress/Private listings" -->
-
-
-						<!-- "Public" listings -->
-						<?php
-							include(ROOT_PATH . 'include/profile/public-project-listings.php');
-						?>
-						<!-- End of "Public" listings -->
-
-
-						<!-- "Group" listings -->
-						<?php
-							include(ROOT_PATH . 'include/profile/group-project-listings-projects-pg.php');
-						?>
-						<!-- End of "Group" listings -->
-
-
-						<!-- "Audition" listings -->
-						<?php
-							include(ROOT_PATH . 'include/profile/audition-project-listings.php');
-						?>
-						<!-- End of "Audition" listings -->
-
-
-							<!-- Project form -->
-							<?php
-								include(ROOT_PATH . 'include/profile/project-form.php');
-							?>
-							<!-- End of project form -->
-
-
-						<!-- Change sound image form -->
-						<?php
-							include(ROOT_PATH . 'include/profile/change-sound-img-form.php');
-						?>
-						<!-- End of change sound image form -->
-
-					</div>
-					<?php
-						include(ROOT_PATH . 'include/profile/recommended.php');
-					?>
-				</div>
-
 
 				<div id="lyricsProjectContainer">
 					<div class="row col-xs-12 col-sm-9">
-						<!-- Projects nav buttons -->
-						<?php
-							include(ROOT_PATH . 'include/profile/projects-nav.php');
-						?>
-						<!-- End of projects nav buttons -->
 
 						<!-- Recording Player -->
 						<div class="row col-xs-12 live-player-container">
