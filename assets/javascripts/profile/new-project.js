@@ -19,10 +19,10 @@ $(document).ready(function() {
 	});
 	
 	$(recordingPlayerLink).on('click', function() {
-		window.location.href = 'recording-player.php';
+		window.location.href = 'new-project-recording-player.php';
 	});
 	$(uploadMP3Link).on('click', function() {
-		window.location.href = 'upload-mp3.php';
+		window.location.href = 'new-project-upload-mp3.php';
 	});
 
 

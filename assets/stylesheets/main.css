@@ -3034,13 +3034,13 @@ nav ul.navbar-left > li {
     border-left: none; }
 nav ul .dropdown a .caret {
   display: none; }
-nav ul .dropdown ul.dropdown-menu {
+nav ul ul.dropdown-menu {
   border: 5px solid #e7e7e7; }
-  nav ul .dropdown ul.dropdown-menu a {
+  nav ul ul.dropdown-menu a {
     text-transform: capitalize; }
-    nav ul .dropdown ul.dropdown-menu a:first-child {
+    nav ul ul.dropdown-menu a:first-child {
       margin-top: -15px; }
-    nav ul .dropdown ul.dropdown-menu a:last-child {
+    nav ul ul.dropdown-menu a:last-child {
       margin-bottom: 8px; }
 nav input#search {
   -moz-border-radius: 5px;
@@ -3118,25 +3118,25 @@ h4.user-menu {
   margin-left: 5px;
   margin-top: 10px; }
 
-ul.user-menu li {
-  border-bottom: 1px solid #cecece; }
-  ul.user-menu li#new-project a, ul.user-menu li#my-projects a, ul.user-menu li#collaborations a {
-    padding: 14px 11px 12px 12px; }
 ul.user-menu li:not(.first-list-item) {
   padding-left: 2px; }
-ul.user-menu a {
-  border-left: 1px solid #cecece;
-  border-right: 1px solid #cecece;
-  border-top: 1px solid #cecece;
-  -moz-border-top-left-radius: 5px;
-  border-top-left-radius: 5px;
-  -moz-border-top-right-radius: 5px;
-  border-top-right-radius: 5px;
-  text-transform: capitalize !important; }
-  ul.user-menu a:not(.active), ul.user-menu a:hover, ul.user-menu a:focus {
-    background-color: #f4f4f4; }
-  ul.user-menu a:not(.active):hover, ul.user-menu a:not(.active):focus {
-    background-color: white; }
+ul.user-menu li:not(.dropdown-menu-list-item) {
+  border-bottom: 1px solid #cecece; }
+  ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link) {
+    border-left: 1px solid #cecece;
+    border-right: 1px solid #cecece;
+    border-top: 1px solid #cecece;
+    -moz-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    text-transform: capitalize !important; }
+    ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):not(.active), ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):hover, ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):focus {
+      background-color: #f4f4f4; }
+    ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):not(.active):hover, ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):not(.active):focus {
+      background-color: white; }
+  ul.user-menu li:not(.dropdown-menu-list-item)#new-project a:not(.dropdown-menu-link), ul.user-menu li:not(.dropdown-menu-list-item)#my-projects a:not(.dropdown-menu-link), ul.user-menu li:not(.dropdown-menu-list-item)#collaborations a:not(.dropdown-menu-link) {
+    padding: 14px 11px 12px 12px; }
 
 /* ===================================
     Modal
@@ -3883,10 +3883,12 @@ input.change-password, #choose-avatar-container input, section#choose-project-im
 #instruments {
   padding-left: 0; }
 
+#recording-player, section.upload-mp3-container {
+  margin-top: 15px; }
+
 #recording-player {
   background-color: #444444;
   height: 352px;
-  margin-top: 5px;
   width: 606px; }
 
 section.upload-mp3-container h4, section.upload-mp3-container h5 {
@@ -4909,6 +4911,8 @@ footer {
 @media only screen and (max-width: 1199px) {
   ul.user-menu li:not(.first-list-item) {
     padding-left: 5px; }
+  ul.user-menu li.dropdown-menu-list-item {
+    padding-left: 0; }
 
   .wmuSliderPrev {
     left: 0; }
@@ -4988,20 +4992,27 @@ footer {
   nav .glyphicon-user, nav h4 {
     display: inline-block !important; }
 
-  ul.user-menu li {
-    border-bottom: none;
-    padding: 0 !important; }
-  ul.user-menu a {
-    border: none; }
-    ul.user-menu a:hover, ul.user-menu a:focus {
-      background-color: white; }
-    ul.user-menu a:not(.active) {
-      background-color: white; }
-
   ul.user-menu {
     margin-top: 0 !important; }
+    ul.user-menu li {
+      border-bottom: none !important;
+      padding: 0 !important; }
     ul.user-menu a {
+      border: none !important;
       margin-left: 10px; }
+      ul.user-menu a:hover, ul.user-menu a:focus {
+        background-color: white !important; }
+      ul.user-menu a:not(.active) {
+        background-color: white !important; }
+    ul.user-menu .dropdown-menu {
+      border: none;
+      box-shadow: none;
+      float: none;
+      position: static; }
+      ul.user-menu .dropdown-menu a {
+        margin-bottom: 0 !important;
+        margin-left: 45px;
+        padding-top: 20px !important; }
 
   ul.userMenu {
     display: none; }

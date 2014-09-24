@@ -9,12 +9,12 @@
 						<a class="<?php if ($page == "My Profile") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/">My Profile</a>
 					</li>
 					<li id="new-project">
-						<a class="<?php if ($page == "New Project") { echo "active"; } ?>" id="newProjectLink">New Project
+						<a class="<?php if ($page == "Recording Player" ) { echo "active"; } ?> <?php if ($page == "Upload MP3") { echo "active"; } ?>" id="newProjectLink">New Project
 							<span class="caret"></span>
 						</a>
-						<ul class="dropdown-menu" id="newProjectDropdownMenu" role="menu" aria-labelledby="newProjectDropdownMenu">
-							<li><a id="recordingPlayerLink">Recording Player</a></li>
-							<li><a id="uploadMP3Link">Upload MP3</a></li>
+						<ul class="dropdown-menu" id="newProjectDropdownMenu" aria-labelledby="newProjectDropdownMenu">
+							<li class="dropdown-menu-list-item"><a class="dropdown-menu-link <?php if ($page == "Recording Player") { echo "active"; } ?>" id="recordingPlayerLink">Recording Player</a></li>
+							<li class="dropdown-menu-list-item"><a class="dropdown-menu-link <?php if ($page == "Upload MP3") { echo "active"; } ?>" id="uploadMP3Link">Upload MP3</a></li>
 						</ul>
 					</li>
 					<li id="my-projects">

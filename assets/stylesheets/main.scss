@@ -346,16 +346,16 @@ nav {
 			a .caret {
 				display: none;
 			}
-			ul.dropdown-menu {
-				border: $modal-border;
-				a {
-					text-transform: capitalize; // Overrides "text-transform: uppercase"
-					&:first-child {
-						margin-top: -15px;
-					}
-					&:last-child {
-						margin-bottom: 8px;	
-					}
+		}
+		ul.dropdown-menu { // Left unnested so that .caret displays on nav below nav but the ".dropdown-menu" stylings apply
+			border: $modal-border;
+			a {
+				text-transform: capitalize; // Overrides "text-transform: uppercase"
+				&:first-child {
+					margin-top: -15px;
+				}
+				&:last-child {
+					margin-bottom: 8px;	
 				}
 			}
 		}
@@ -446,30 +446,30 @@ nav {
 	}
 
 	ul.user-menu {
-		li {
-			border-bottom: $nav-border;
-			&#new-project, &#my-projects, &#collaborations {
-				a { 
-					padding: 14px 11px 12px 12px; // Asymmetrical so bar lines up with "Recommended" box / Overwrites general padding of 15px for links
-				}
-			}
-		}
 		li:not(.first-list-item) { // Not "Profile" / "My Profile" tabs
 			padding-left: 2px;
 		}
-		a {
-			border-left: $nav-border;
-			border-right: $nav-border;
-			border-top: $nav-border;
-			@include border-top-left-radius(5px);
-			@include border-top-right-radius(5px);
-			text-transform: capitalize !important;
-			&:not(.active), &:hover, &:focus {
-				background-color: #f4f4f4;
+		li:not(.dropdown-menu-list-item) {
+			border-bottom: $nav-border;
+			a:not(.dropdown-menu-link) {
+				border-left: $nav-border;
+				border-right: $nav-border;
+				border-top: $nav-border;
+				@include border-top-left-radius(5px);
+				@include border-top-right-radius(5px);
+				text-transform: capitalize !important;
+				&:not(.active), &:hover, &:focus {
+					background-color: #f4f4f4;
+				}
+				&:not(.active) {
+					&:hover, &:focus {
+						background-color: white; // Same as active
+					}
+				}
 			}
-			&:not(.active) {
-				&:hover, &:focus {
-					background-color: white; // Same as active
+			&#new-project, &#my-projects, &#collaborations {
+				a:not(.dropdown-menu-link) { 
+					padding: 14px 11px 12px 12px; // Asymmetrical so bar lines up with "Recommended" box / Overwrites general padding of 15px for links
 				}
 			}
 		}
@@ -1326,10 +1326,13 @@ input.change-password, #choose-avatar-container input, section#choose-project-im
 	padding-left: 0; // Overrides @mixin form-fields-input
 }
 
+#recording-player, section.upload-mp3-container {
+	margin-top: 15px;
+}
+
 #recording-player {
 	background-color: $musiclaps-dark-gray;
 	height: 352px;
-	margin-top: 5px;
 	width: 606px;
 }
 
@@ -2435,6 +2438,7 @@ footer {
 		li:not(.first-list-item) { // Not "Profile" / "My Profile" tabs
 			padding-left: 5px;
 		}
+		li.dropdown-menu-list-item { padding-left: 0; } // Overwrites the above
 	}
 	.wmuSliderPrev { left: 0; } // Slider button
 	.wmuSliderNext { right: 0; } // Slider button
@@ -2534,19 +2538,28 @@ footer {
 		.glyphicon-user, h4 { display: inline-block !important; }
 	}
 	ul.user-menu { // Collapsed "User Menu"
+		margin-top: 0 !important;
 		li {
-			border-bottom: none;
+			border-bottom: none !important;
 			padding: 0 !important;
 		}
 		a {
-			border: none; // "border-left", "border-right", and "border-top"
-			&:hover, &:focus { background-color: white; }
-			&:not(.active) { background-color: white; }
+			border: none !important; // "border-left", "border-right", and "border-top"
+			margin-left: 10px; // Aligns links with ".glyphicon-user"
+			&:hover, &:focus { background-color: white !important; }
+			&:not(.active) { background-color: white !important; }
 		}
-	}
-	ul.user-menu { 
-		margin-top: 0 !important;
-		a { margin-left: 10px; } // Aligns links with ".glyphicon-user"
+		.dropdown-menu {
+			border: none;
+			box-shadow: none;
+			float: none;
+			position: static;
+			a {
+				margin-bottom: 0 !important;
+				margin-left: 45px;
+				padding-top: 20px !important;
+			}
+		}
 	}
 	ul.userMenu { display: none; } // See profile/nav.js
 	section#technology, section#backstage, section.music-ed, section.contests-and-auditions {
