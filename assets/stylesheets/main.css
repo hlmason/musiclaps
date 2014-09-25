@@ -3051,7 +3051,7 @@ nav ul ul.dropdown-menu {
       margin-top: -15px; }
     nav ul ul.dropdown-menu a:last-child {
       margin-bottom: 8px; }
-nav input#search {
+nav input.search {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -3059,11 +3059,13 @@ nav input#search {
   padding-left: 8px;
   padding-top: 3px;
   width: 181px;
-  margin-left: 20px;
-  margin-top: 24px; }
+  margin-left: 8px; }
 nav .glyphicon-search {
   cursor: pointer;
-  margin-left: 5px; }
+  margin-left: 15px;
+  margin-top: 30px; }
+  nav .glyphicon-search:hover {
+    color: #38aaff; }
 nav ul#flags {
   float: right;
   margin-bottom: 0;
@@ -4960,7 +4962,7 @@ footer {
       padding-bottom: 0 !important; }
       nav ul .dropdown ul.dropdown-menu li a:last-child {
         margin-bottom: 0; }
-  nav input#search {
+  nav input.search {
     display: none; }
   nav .glyphicon-search {
     display: none; }

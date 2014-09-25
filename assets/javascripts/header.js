@@ -1,8 +1,21 @@
 $(document).ready(function() {
 
+	var search = $('input#searchJS');
+
 	var musicDropdownMenu = $('ul#musicDropdownMenu');
 	var peopleDropdownMenu = $('ul#peopleDropdownMenu');
 	var ourStoryDropdownMenu = $('ul#ourStoryDropdownMenu');
+
+
+	search.hide();
+
+	$('#glyphiconSearch').on('click', function() {
+		if ( search.is(':hidden') ) {
+			search.fadeIn('fast');
+		} else {
+			search.fadeOut('fast');
+		}		
+	});
 
 
 	$('a#musicDropdownLink').on('click', function() {
