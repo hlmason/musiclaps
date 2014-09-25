@@ -13,7 +13,7 @@
 		
 			<div class="row col-lg-10 col-lg-offset-1">				
 					
-				<div class="row col-xs-12 col-md-9">
+				<div class="row col-xs-12 col-md-9 projects-container">
 
 					<!-- Project listings -->
 					<?php

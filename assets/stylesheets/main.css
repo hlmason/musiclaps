@@ -3998,16 +3998,18 @@ section.projects-container {
   section.projects-container h5 {
     margin-bottom: 1px;
     margin-top: 0; }
-    section.projects-container h5.last-h5 {
+    section.projects-container h5.last-h5.first, section.projects-container h5.last-h5.second {
       font-weight: normal; }
+    section.projects-container h5.last-h5.first {
+      display: none; }
   section.projects-container:hover {
     background-color: #F4F4F4;
     cursor: pointer; }
 
-.col-sm-12.col-md-6.favorites-page:first-child {
+.favorites-page:first-child.col-sm-12.col-md-6 {
   padding-right: 0; }
 
-.col-sm-12.col-md-6.favorites-page:last-child {
+.favorites-page:last-child.col-sm-12.col-md-6 {
   padding-left: 0; }
 
 section.projects-container.favorites-page:hover, section.projects-container.public-profile-page:hover {
@@ -4514,9 +4516,9 @@ section.messages-container h5:first-child {
   margin-bottom: 3px; }
 section.messages-container h5:last-child {
   margin-top: 3px; }
-section.messages-container .col-xs-9.messages-container {
+section.messages-container .messages-container.col-xs-9 {
   padding-right: 0; }
-  section.messages-container .col-xs-9.messages-container #existing-message {
+  section.messages-container .messages-container.col-xs-9 #existing-message {
     -moz-border-radius: 4px;
     border-radius: 4px;
     background-color: #e7e7e7;
@@ -5067,7 +5069,7 @@ footer {
     margin-left: 25px;
     padding-right: 0; }
 
-  .row.col-xs-12.col-md-3.public-project-page, .row.col-xs-12.col-md-3.recommended {
+  .public-project-page.row.col-xs-12.col-md-3, .recommended.row.col-xs-12.col-md-3 {
     display: none; }
 
   footer .navbar-brand {
@@ -5164,11 +5166,11 @@ footer {
   nav ul.user-menu a {
     margin-left: 25px; }
 
-  .row.col-xs-12.col-sm-8.profile-page {
+  .profile-page.row.col-xs-12.col-sm-8 {
     margin-left: 0; }
-    .row.col-xs-12.col-sm-8.profile-page #edit-save-profile {
+    .profile-page.row.col-xs-12.col-sm-8 #edit-save-profile {
       text-align: left !important; }
-    .row.col-xs-12.col-sm-8.profile-page h2#user-id {
+    .profile-page.row.col-xs-12.col-sm-8 h2#user-id {
       margin-top: 10px !important; }
 
   #about-me {
@@ -5191,6 +5193,15 @@ footer {
       display: block; }
       #new-project-page.row.col-xs-12.col-md-9 li:not(.first-list-item) {
         padding-left: 5px; }
+
+  .projects-container.row.col-xs-12.col-md-9 {
+    margin-left: 0; }
+    .projects-container.row.col-xs-12.col-md-9 section.projects-container h4, .projects-container.row.col-xs-12.col-md-9 section.projects-container h5 {
+      margin-bottom: 0; }
+    .projects-container.row.col-xs-12.col-md-9 section.projects-container h5.last-h5.first {
+      display: block; }
+    .projects-container.row.col-xs-12.col-md-9 section.projects-container h5.last-h5.second {
+      display: none; }
 
   #privacy-page h1, #terms-page h1, #faqs-page h1 {
     font-size: 28px;
