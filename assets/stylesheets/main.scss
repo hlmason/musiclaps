@@ -2130,11 +2130,17 @@ section.groups-container {
 section#public-project-header {
 	h3, h5 {
 		display: inline-block;
+		margin-bottom: 10px;
 		margin-right: 5px;
+		margin-top: 15px;
 	}
 	h5 {
 		float: right;
 	}
+}
+
+section#public-project-header h5, img#cover-song {
+	margin-right: 10px !important; // Aligns elements with Live Player
 }
 
 .public-project-info {
@@ -2156,17 +2162,14 @@ section#public-project-header {
 	h5 {
 		font-weight: normal;
 	}
-	h4:first-child, #youtube-links { // Username
-		margin-left: 70px;
-	}
 	#youtube-links a:not(#first-link) {
 		padding-left: 10px;
 	}
 	section#number-of-listens {
-		float: right;
 		h2, h5 {
 			margin-bottom: 0;
 			margin-top: 0;
+			text-align: right;
 		}
 	}
 	&.type-of-collab-container h5, img#clapping-hands {
@@ -2185,7 +2188,7 @@ section#public-project-header {
 		img#cover-song {
 			float: right;
 			height: 46px;
-			margin-right: 5px;
+			margin-right: 25px;
 			width: 88px;
 		}
 	}
@@ -2235,6 +2238,10 @@ button.musiclaps-dark-gray, .dark-button-navigate-hover-js:hover, .dark-button-n
 	margin-top: 10px;
 }
 
+.share-to-social-networks-container input, .embed-container textarea {
+	@include form-fields-input(100%);
+}
+
 .share-to-social-networks-container {
 	margin-top: 10px;
 	img {
@@ -2243,13 +2250,6 @@ button.musiclaps-dark-gray, .dark-button-navigate-hover-js:hover, .dark-button-n
 			margin-left: 13.5px;
 		}
 	}
-	input {
-		@include form-fields-input(100%);
-	}
-}
-
-.embed-container textarea {
-	@include form-fields-input(50%);
 }
 
 section#comment-container {
@@ -2340,7 +2340,7 @@ section.profile-right.recommended {
 	}
 }
 
-.profile-right#public-project-page {
+.profile-right.public-project-page {
 	img {
 		height: 75px;
 		margin-top: 15px;
@@ -2459,6 +2459,9 @@ footer {
 			margin-top: 25px;
 			h4, h5 { margin-left: 12px; }
 		}
+	}
+	section#public-project-header h5, img#cover-song {
+		margin-right: 24px !important;  // Aligns elements with Live Player
 	}
 	form.profile-page {
 		input.change-password {
@@ -2588,6 +2591,9 @@ footer {
 			h4, h5 { margin: 0; }
 		}
 	}
+	section#public-project-header h5, img#cover-song {
+		margin-right: 38px !important; // Aligns elements with Live Player
+	}
 	#about-me { border-top: none; }
 	h4.my-public-projects-heading { margin-bottom: 0; }
 	section.public-projects-and-collaborations { 
@@ -2605,7 +2611,7 @@ footer {
 		margin-left: 25px;
 		padding-right: 0;
 	}
-	.row.col-xs-12.col-md-3.recommended { // "Recommended" box
+	.row.col-xs-12.col-md-3.public-project-page, .row.col-xs-12.col-md-3.recommended { // Project listings and "Recommended" box
 		display: none;
 	}
 	footer {
@@ -2712,9 +2718,9 @@ footer {
 	.profile-right-container {
 		margin-left: 0;
 		padding-right: 15px;
-	}
-	section.profile-right.profile-page.public-profile-page {
-		margin-top: 15px;
+		section.profile-right.profile-page.public-profile-page {
+			margin-top: 15px;
+		}
 	}
 	#new-project-page.row.col-xs-12.col-md-9 { 
 		margin-left: 0; // Aligns with ".glyphicon-user"
@@ -2743,6 +2749,13 @@ footer {
 // Breakpoint of "Select a song" modal (Live Player Page)
 	h1.landing-page { font-size: 24px; } // "Online Music Collaboration Made Simple"
 	img#rainbow-music-notes { display: none; }
+	.public-project-info.type-of-collab-container {
+		padding-bottom: 15px;
+		img#cover-song {
+			display: block;
+			float: none !important;
+		}
+	}
 }
 
 @media only screen and (max-width: 496px) {
@@ -2761,6 +2774,9 @@ footer {
 			}
 		}
 	}
+	#youtube-links a:not(#first-link) {
+		padding-left: 0 !important;
+	}
 }
 
 @media only screen and (max-width: 461px) {
@@ -2773,6 +2789,7 @@ footer {
 		}
 	}
 	input#save_profile { margin-left: 134px !important; }
+	.public-project-info.type-of-collab-container h5 { margin-top: 15px; }
 }
 
 @media only screen and (max-width: 417px) {

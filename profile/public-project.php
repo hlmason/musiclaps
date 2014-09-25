@@ -15,7 +15,7 @@
 
 			<div class="row col-lg-10 col-lg-offset-2">				
 					
-				<div class="row col-xs-12 col-sm-9">
+				<div class="row col-xs-12 col-md-9">
 
 				<!-- Recording Player -->
 					<div class="row col-xs-12 live-player-container">
@@ -30,9 +30,11 @@
 					</section>
 					
 					<section class="row col-xs-12 public-project-info">	
-						<div class="row col-xs-6">
+						<div class="row col-xs-4 col-sm-2">
 							<a href="<?php echo BASE_URL; ?>profile/public-profile.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"></a>
-							
+						</div>	
+
+						<div class="row col-xs-7 col-sm-6">
 							<section id="username-and-number-of-songs">
 								<a href="<?php echo BASE_URL; ?>profile/public-profile.php"><h4>$username</h4></a><!-- Hard-coded placeholder -->
 								<h5>$# Songs</h5><!-- Hard-coded placeholder -->
@@ -45,7 +47,7 @@
 							</div>
 						</div>
 
-						<div class="row col-xs-6">
+						<div class="row col-xs-1 col-sm-4">
 							<section id="number-of-listens">
 								<h2>#</h2>
 								<h5 id="listens">listens</h5>
@@ -121,8 +123,8 @@
 					</section>
 
 				</div>
-				<div class="row col-xs-12 col-sm-3">
-					<div class="profile-right" id="public-project-page">
+				<div class="row col-xs-12 col-md-3 public-project-page">
+					<div class="profile-right public-project-page">
 						<div class="row col-xs-12">
 							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
 						</div>
