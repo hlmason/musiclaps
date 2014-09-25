@@ -20,7 +20,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$(window).resize(function() { // Makes menu appear when window is made larger than 991px after ul.menu has been slidden up 
+	$(window).resize(function() { // Makes menu appear when window is made larger than 991px after ul.menu has been slided up 
 	  	if ($(window).width() > 991) {
 	     	userMenu.show();
 	  	}

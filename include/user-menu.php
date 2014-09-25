@@ -11,7 +11,7 @@
 					
 					<li id="new-project">
 						<a class="<?php if ($page == "Recording Player" ) { echo "active"; } else if ($page == "Upload MP3") { echo "active"; } ?>" id="newProjectLink">New Project
-							<span class="caret"></span>
+							<span class="caret" id="newProjectCaret"></span>
 						</a>
 						<ul class="dropdown-menu" id="newProjectDropdownMenu" aria-labelledby="newProjectDropdownMenu">
 							<li class="dropdown-menu-list-item"><a class="dropdown-menu-link <?php if ($page == "Recording Player") { echo "active"; } ?>" id="recordingPlayerLink">Recording Player</a></li>
@@ -21,7 +21,7 @@
 					
 					<li id="my-projects">
 						<a class="<?php if ($page == "In Progress/Private Projects") { echo "active"; } else if ($page == "Public Projects") { echo "active"; } else if ($page == "Group Projects") { echo "active"; } else if ($page == "Audition Projects") { echo "active"; } else if ($page == "Lyrics") { echo "active"; } ?>" id="myProjectsLink">My Projects
-							<span class="caret"></span>
+							<span class="caret" id="myProjectsCaret"></span>
 						</a>
 						<ul class="dropdown-menu" id="myProjectsDropdownMenu" aria-labelledby="myProjectsDropdownMenu">
 							<li class="dropdown-menu-list-item"><a class="dropdown-menu-link <?php if ($page == "In Progress/Private Projects") { echo "active"; } ?>" id="inProgressPrivateLink">In Progress / Private</a></li>
@@ -34,7 +34,7 @@
 					
 					<li id="collaborations">
 						<a class="<?php if ($page == "Open Collab Projects") { echo "active"; } else if ($page == "Requesting Collab Projects") { echo "active"; } else if ($page == "Collaborators") { echo "active"; } ?>" id="collaborationsLink">Collaborations
-							<span class="caret"></span>
+							<span class="caret" id="collaborationsCaret"></span>
 						</a>
 						<ul class="dropdown-menu" id="collaborationsDropdownMenu" aria-labelledby="collaborationsDropdownMenu">
 							<li class="dropdown-menu-list-item"><a class="dropdown-menu-link <?php if ($page == "Open Collab Projects") { echo "active"; } ?>" id="openCollabLink">Open Collab</a></li>
@@ -55,7 +55,7 @@
 						<a class="<?php if ($page == "Groups") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/groups.php">Groups</a>
 					</li>
 					
-					<li id="last-list-item">
+					<li>
 						<a class="<?php if ($page == "Favorites") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>profile/favorites.php">Favorites</a>
 					</li>
 				</ul>

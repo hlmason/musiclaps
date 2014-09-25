@@ -138,11 +138,11 @@ $box-shadow: 10px 10px 5px $musiclaps-dark-gray;
 }
 
 @mixin transform($degrees) {
-	-webkit-transform:rotate($degrees);
-	   -moz-transform:rotate($degrees);
-		-ms-transform:rotate($degrees);
-		 -o-transform:rotate($degrees);
-			transform:rotate($degrees);
+	-webkit-transform: rotate($degrees);
+	   -moz-transform: rotate($degrees);
+		-ms-transform: rotate($degrees);
+		 -o-transform: rotate($degrees);
+			transform: rotate($degrees);
 }
 
 /* ===================================
@@ -175,6 +175,12 @@ a:hover, a:focus {
 
 a:hover {
 	cursor: pointer;
+}
+
+.upside-down {
+	@include transform(-180deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); // IE6/7
+	ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"; // IE8
 }
 
 label#birth-date-label-modal, label#gender-label, 
@@ -2438,7 +2444,6 @@ footer {
 		li:not(.first-list-item) { // Not "Profile" / "My Profile" tabs
 			padding-left: 5px;
 		}
-		li#last-list-item { padding-left: 4px; } // Overrides the above ("li:not(.first-list-item)")
 		li.dropdown-menu-list-item { padding-left: 0; } // Overrides the above ("li:not(.first-list-item)")
 	}
 	.wmuSliderPrev { left: 0; } // Slider button

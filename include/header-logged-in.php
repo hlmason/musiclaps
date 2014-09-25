@@ -26,6 +26,7 @@
     <script src="<?php echo BASE_URL; ?>assets/javascripts/customized.bootstrap.min.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/index.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/wmuSlider.min.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/header.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/user-menu.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/index.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/new-project.js"></script>
@@ -55,10 +56,10 @@
 				<ul class="nav navbar-nav navbar-left">
 					<li>
 						<div class="dropdown">
-							<a class="dropdown-toggle" id="musicDropdownMenu" data-toggle="dropdown">Music
+							<a class="dropdown-toggle" id="musicDropdownLink" data-toggle="dropdown">Music
 								<span class="caret"></span>
 							</a>
-							<ul class="dropdown-menu" role="menu" aria-labelledby="musicDropdownMenu">
+							<ul class="dropdown-menu" id="musicDropdownMenu" role="menu" aria-labelledby="musicDropdownLink">
 								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>new-arrivals/index-logged-in.php">New Arrivals</a></li>
 								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>recommended/index-logged-in.php">Recommended</a></li>
 								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>staff-picks/index-logged-in.php">Staff Picks</a></li>
@@ -69,10 +70,10 @@
 					</li>
 					<li>
 						<div class="dropdown">
-							<a class="dropdown-toggle" id="peopleDropdownMenu" data-toggle="dropdown">People
+							<a class="dropdown-toggle" id="peopleDropdownLink" data-toggle="dropdown">People
 								<span class="caret"></span>
 							</a>
-							<ul class="dropdown-menu" role="menu" aria-labelledby="peopleDropdownMenu">
+							<ul class="dropdown-menu" id="peopleDropdownMenu" role="menu" aria-labelledby="peopleDropdownLink">
 								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>players-wanted/index-logged-in.php">Players Wanted</a></li>
 								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction-logged-in.php">Players Available</a></li>
 								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction-logged-in.php">Collab Cafe</a></li>
@@ -81,10 +82,10 @@
 					</li>
 					<li>
 						<div class="dropdown">
-							<a class="dropdown-toggle" id="ourStoryDropdownMenu" data-toggle="dropdown">Our Story
+							<a class="dropdown-toggle" id="ourStoryDropdownLink" data-toggle="dropdown">Our Story
 								<span class="caret"></span>
 							</a>
-							<ul class="dropdown-menu" role="menu" aria-labelledby="ourStoryDropdownMenu">
+							<ul class="dropdown-menu" id="ourStoryDropdownMenu" role="menu" aria-labelledby="ourStoryDropdownLink">
 								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction-logged-in.php">Technology</a></li>
 								<!-- <li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>forum/index-logged-in.php">FAQs (Forum)</a></li> -->
 								<li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction-logged-in.php">Company</a></li>

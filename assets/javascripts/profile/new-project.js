@@ -1,27 +1,37 @@
 $(document).ready(function() {
 
-	var newProjectLink = $('a#newProjectLink');
 	var newProjectDropdownMenu = $('ul#newProjectDropdownMenu');
-	var recordingPlayerLink = $('a#recordingPlayerLink');
-	var uploadMP3Link = $('a#uploadMP3Link');
+	var newProjectCaret = $('#newProjectCaret');
 
 	var newProject = $('section#newProject');
 	var addPart = $('section#addPart');
 	var addPartToGroup = $('section#addPartToGroup');
 
 
-	$(newProjectLink).on('click', function() {
+	// $('a#newProjectLink').mouseenter (function() {
+	// 	newProjectCaret.addClass('upside-down');
+	// 	newProjectDropdownMenu.show();
+	// });
+
+	$('a#newProjectLink').on('click', function() {
 		if ( newProjectDropdownMenu.is(':hidden') ) {
+			newProjectCaret.addClass('upside-down');
 			newProjectDropdownMenu.show();
 		} else {
+			newProjectCaret.removeClass('upside-down');
 			newProjectDropdownMenu.hide();
 		}		
 	});
+
+	newProjectDropdownMenu.mouseleave (function() { // Makes dropdown menu go away without having to click
+		newProjectCaret.removeClass('upside-down');
+		newProjectDropdownMenu.hide();		
+	});
 	
-	$(recordingPlayerLink).on('click', function() {
+	$('a#recordingPlayerLink').on('click', function() {
 		window.location.href = 'new-project-recording-player.php';
 	});
-	$(uploadMP3Link).on('click', function() {
+	$('a#uploadMP3Link').on('click', function() {
 		window.location.href = 'new-project-upload-mp3.php';
 	});
 

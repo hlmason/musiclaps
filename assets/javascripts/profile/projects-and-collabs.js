@@ -3,64 +3,69 @@ $(document).ready(function() {
 	/* ===================================
     	My Projects
 	=================================== */
-	var myProjectsLink = $('a#myProjectsLink');
 	var myProjectsDropdownMenu = $('ul#myProjectsDropdownMenu');
-	var inProgressPrivateLink = $('a#inProgressPrivateLink');
-	var publicLink = $('a#publicLink');
-	var groupLink = $('a#groupLink');
-	var auditionLink = $('a#auditionLink');
-	var lyricsLink = $('a#lyricsLink');
+	var myProjectsCaret = $('#myProjectsCaret');
 
-
-	$(myProjectsLink).on('click', function() {
+	$('a#myProjectsLink').on('click', function() {
 		if ( myProjectsDropdownMenu.is(':hidden') ) {
+			myProjectsCaret.addClass('upside-down');
 			myProjectsDropdownMenu.show();
 		} else {
+			myProjectsCaret.removeClass('upside-down');
 			myProjectsDropdownMenu.hide();
 		}		
 	});
+
+	myProjectsDropdownMenu.mouseleave (function() { // Makes dropdown menu go away without having to click
+		myProjectsCaret.removeClass('upside-down');
+		myProjectsDropdownMenu.hide();		
+	});
 	
-	$(inProgressPrivateLink).on('click', function() {
+	$('a#inProgressPrivateLink').on('click', function() {
 		window.location.href = 'my-projects-in-progress-private.php';
 	});
-	$(publicLink).on('click', function() {
+	$('a#publicLink').on('click', function() {
 		window.location.href = 'my-projects-public.php';
 	});
-	$(groupLink).on('click', function() {
+	$('a#groupLink').on('click', function() {
 		window.location.href = 'my-projects-group.php';
 	});
-	$(auditionLink).on('click', function() {
+	$('a#auditionLink').on('click', function() {
 		window.location.href = 'my-projects-audition.php';
 	});
-	$(lyricsLink).on('click', function() {
+	$('a#lyricsLink').on('click', function() {
 		window.location.href = 'my-projects-lyrics.php';
 	});
 
 	/* ===================================
 	    Collaborations
 	=================================== */
-	var collaborationsLink = $('a#collaborationsLink');
 	var collaborationsDropdownMenu = $('ul#collaborationsDropdownMenu');
-	var openCollabLink = $('a#openCollabLink');
-	var requestingCollabLink = $('a#requestingCollabLink');
-	var collaboratorsLink = $('a#collaboratorsLink');
+	var collaborationsCaret = $('#collaborationsCaret');
 
 	
-	$(collaborationsLink).on('click', function() {
+	$('a#collaborationsLink').on('click', function() {
 		if ( collaborationsDropdownMenu.is(':hidden') ) {
+			collaborationsCaret.addClass('upside-down');
 			collaborationsDropdownMenu.show();
 		} else {
+			collaborationsCaret.removeClass('upside-down');
 			collaborationsDropdownMenu.hide();
 		}		
 	});
+
+	collaborationsDropdownMenu.mouseleave (function() { // Makes dropdown menu go away without having to click
+		collaborationsCaret.removeClass('upside-down');
+		collaborationsDropdownMenu.hide();		
+	});
 	
-	$(openCollabLink).on('click', function() {
+	$('a#openCollabLink').on('click', function() {
 		window.location.href = 'collaborations-open-collab.php';
 	});
-	$(requestingCollabLink).on('click', function() {
+	$('a#requestingCollabLink').on('click', function() {
 		window.location.href = 'collaborations-requesting-collab.php';
 	});
-	$(collaboratorsLink).on('click', function() {
+	$('a#collaboratorsLink').on('click', function() {
 		window.location.href = 'collaborations-collaborators.php';
 	});
 
