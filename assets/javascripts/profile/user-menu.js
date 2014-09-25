@@ -5,8 +5,7 @@ $(document).ready(function() {
 	$('.glyphiconUser').on('click', function() { // Does the same thing as function below
 		if ( userMenu.is(':hidden') ) {
 			userMenu.slideDown('fast');
-		}
-		else if ( userMenu.is(':visible') ) {
+		} else {
 			userMenu.slideUp('fast');
 		}
 	});
@@ -14,8 +13,7 @@ $(document).ready(function() {
 	$('h4.userMenu').on('click', function() { // Does the same thing as function above
 		if ( userMenu.is(':hidden') ) {
 			userMenu.slideDown('fast');
-		}
-		else if ( userMenu.is(':visible') ) {
+		} else {
 			userMenu.slideUp('fast');
 		}
 	});

@@ -14,7 +14,7 @@ $(document).ready(function() {
 	// $('h5').hover(function() {
 	// 	if ( glyphiconTrash.is(':hidden') ) {
 	// 		glyphiconTrash.fadeIn('fast');
-	// 	} else if ( glyphiconTrash.is(':visible') ) {
+	// 	} else {
 	// 		glyphiconTrash.fadeOut('fast');
 	// 	}
 	// });
@@ -23,8 +23,7 @@ $(document).ready(function() {
 		if ( addFriendContainer.is(':hidden') ) {
 			$(this).addClass('white');
 			addFriendContainer.fadeIn('fast');
-		}
-		else if ( addFriendContainer.is(':visible') ) {
+		} else {
 			$(this).removeClass('white');
 			addFriendContainer.fadeOut('fast');
 		}

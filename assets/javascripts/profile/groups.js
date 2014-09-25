@@ -15,8 +15,7 @@ $(document).ready(function() {
 		if ( createNewGroupContainer.is(':hidden') ) {
 			$(this).addClass('white');
 			createNewGroupContainer.fadeIn('fast');
-		}
-		else if ( createNewGroupContainer.is(':visible') ) {
+		} else {
 			createNewGroupContainer.fadeOut('fast');
 			$(this).removeClass('white');
 		}
