@@ -2,6 +2,7 @@
 	require_once('../include/config.php');
 
 	$pageTitle = 'Profile';
+	$page = 'Profile';
 	
 	include(ROOT_PATH . 'include/header-logged-in.php');
 	include(ROOT_PATH . 'include/db-connection.php');
@@ -20,10 +21,10 @@
 						<a class="white" id="publicProfileLink" href="#">Profile</a>
 					</li>
 					<li>
-						<a class="white-button-navigate-hover-js" id="collaborationsLink" href="#">Collaborations</a>
+						<a id="collaborationsLink" href="#">Collaborations</a>
 					</li>
 					<li>
-						<a class="white-button-navigate-hover-js" id="friendsLink" href="#">Friends</a>
+						<a id="friendsLink" href="#">Friends</a>
 					</li>
 				</ul>
 			</nav>
