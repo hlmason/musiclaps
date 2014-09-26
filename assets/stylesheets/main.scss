@@ -2471,9 +2471,7 @@ footer {
 =================================== */
 @media only screen and (max-width: 1199px) {
 	ul.user-menu { // Nav below top nav
-		li:not(.first-list-item) { // Not "Profile" / "My Profile" tabs
-			padding-left: 5px;
-		}
+		li:not(.first-list-item) { padding-left: 5px; } // Not "Profile" / "My Profile" tabs
 		li.dropdown-menu-list-item { padding-left: 0; } // Overrides the above ("li:not(.first-list-item)")
 	}
 	.wmuSliderPrev { left: 0; } // Slider button
@@ -2496,9 +2494,7 @@ footer {
 			margin-left: 0;
 		}
 	}
-	section.profile-right.profile-page { // "Profile" Page
-		height: 1346px;
-	}
+	section.profile-right.profile-page { height: 1346px; } // "Profile" Page
 }
 
 @media only screen and (max-width: 991px) {
@@ -2509,8 +2505,8 @@ footer {
 			&.nav a { padding: 10px !important; }
 			&.navbar-left { 
 				margin-top: 0;
-			 li { border-left: none; } // Removes border to the left of links
-			 }
+			 	li { border-left: none; } // Removes border to the left of links
+			}
 			.dropdown {
 				a .caret { display: inline-block !important; }
 				ul.dropdown-menu li { 
@@ -2618,9 +2614,7 @@ footer {
 			h4, h5 { margin: 0; }
 		}
 	}
-	section#public-project-header h5, img#cover-song {
-		margin-right: 38px !important; // Aligns elements with Live Player
-	}
+	section#public-project-header h5, img#cover-song { margin-right: 38px !important; } // Aligns elements with Live Player
 	#about-me { border-top: none; }
 	h4.my-public-projects-heading { margin-bottom: 0; }
 	section.public-projects-and-collaborations { 
@@ -2638,9 +2632,7 @@ footer {
 		margin-left: 25px;
 		padding-right: 0;
 	}
-	.public-project-page.row.col-xs-12.col-md-3, .recommended.row.col-xs-12.col-md-3 { // Project listings and "Recommended" box
-		display: none;
-	}
+	.public-project-page.row.col-xs-12.col-md-3, .recommended.row.col-xs-12.col-md-3 { display: none; } // Project listings and "Recommended" box
 	footer {
 		.navbar-brand { position: absolute; }
 		.navbar-left, .navbar-right { margin-top: 50px; }
@@ -2769,9 +2761,7 @@ footer {
 	.lyrics-project-container { 
 		.row.col-xs-12.col-md-9, .row.col-xs-12.col-md-3 { margin-left: 0; }
 	}
-	#upload-stage-background-img-container {
-		margin-top: 15px;
-	}
+	#upload-stage-background-img-container { margin-top: 15px; }
 
 	#privacy-page, #terms-page, #faqs-page {
 		h1 {
@@ -2783,12 +2773,8 @@ footer {
 
 @media only screen and (max-width: 688px) {
 // Breakpoint of "Pause and scrolling speed" box
-	section#lyrics-settings-sm { 
-		display: none; 
-	}
-	section#lyrics-settings-xs { 
-		display: block; 
-	}
+	section#lyrics-settings-sm { display: none; }
+	section#lyrics-settings-xs { display: block; }
 }
 
 @media only screen and (max-width: 662px) {
@@ -2807,6 +2793,11 @@ footer {
 			margin-left: 10px;
 			margin-top: 0;
 		}
+	}
+	ul#copyright-types-container { 
+		height: 493px !important;
+		img, h5 { margin-left: 5px !important; }
+		h4 { font-size: 12px; }
 	}
 }
 

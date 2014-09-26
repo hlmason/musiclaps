@@ -5243,7 +5243,14 @@ footer {
     float: none;
     margin-bottom: 8px;
     margin-left: 10px;
-    margin-top: 0; } }
+    margin-top: 0; }
+
+  ul#copyright-types-container {
+    height: 493px !important; }
+    ul#copyright-types-container img, ul#copyright-types-container h5 {
+      margin-left: 5px !important; }
+    ul#copyright-types-container h4 {
+      font-size: 12px; } }
 @media only screen and (max-width: 580px) {
   h1.landing-page {
     font-size: 24px; }
