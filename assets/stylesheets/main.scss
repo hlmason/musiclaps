@@ -721,7 +721,8 @@ h1.landing-page {
 						background-color: #F4F4F4;
 						padding: 4px 7px;
 							img {
-							width: 29px;
+								height: 27px;
+								width: 29px;
 							&:first-child {
 								height: 25px;
 							}
@@ -849,6 +850,7 @@ h1.landing-page {
 
 	section#technology img {
 		margin-top: 120px;
+		height: 133px;
 		width: 200px;
 	}
 
@@ -915,7 +917,7 @@ section#recording-instructions {
 	#record-start-instructions {
 		margin-top: 45px;
 	}
-	#recording-area-img {
+	#recording-area-img img {
 		margin-top: 22px;
 	}
 	#save-container {
@@ -1334,6 +1336,11 @@ input.change-password, #choose-avatar-container input, section#choose-project-im
 	span {
 		display: block; // Makes options stack
 	}
+}
+
+#choose-avatar-container img {
+	height: 120px; 
+	width: 120px;
 }
 
 #instruments {
@@ -2735,7 +2742,8 @@ footer {
 	}
 	.profile-right-container, #new-project-page.row.col-xs-12.col-md-9, .projects-container.row.col-xs-12.col-md-9, 
 	.lyrics-project-container .row.col-xs-12.col-md-9, .lyrics-project-container .row.col-xs-12.col-md-3,
-	.youtube-page.row.col-xs-12.col-md-9, #groups-page.row.col-xs-12.col-md-9, .favorites-page.row.col-xs-12.col-md-9 { margin-left: 0; } // Aligns with ".glyphicon-user"
+	.youtube-page.row.col-xs-12.col-md-9, #groups-page.row.col-xs-12.col-md-9, .favorites-page.row.col-xs-12.col-md-9, 
+	#messages-page.row.col-xs-12.col-md-9 { margin-left: 0; } // Aligns with ".glyphicon-user"
 	.profile-right-container {
 		padding-right: 15px;
 		section.profile-right.profile-page.public-profile-page {

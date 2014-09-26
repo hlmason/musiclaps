@@ -3364,6 +3364,7 @@ h1.landing-page {
           background-color: #F4F4F4;
           padding: 4px 7px; }
           #stage #stage-inner #education a span img, #stage #stage-inner #contests a span img {
+            height: 27px;
             width: 29px; }
             #stage #stage-inner #education a span img:first-child, #stage #stage-inner #contests a span img:first-child {
               height: 25px; }
@@ -3470,6 +3471,7 @@ section#backstage, section.contests-and-auditions {
 
 section#technology img {
   margin-top: 120px;
+  height: 133px;
   width: 200px; }
 
 section#backstage img, section.music-ed img, section.contests-and-auditions img {
@@ -3517,7 +3519,7 @@ section#recording-instructions #allow-flash-chrome-container {
     margin-bottom: 0; }
 section#recording-instructions #record-start-instructions {
   margin-top: 45px; }
-section#recording-instructions #recording-area-img {
+section#recording-instructions #recording-area-img img {
   margin-top: 22px; }
 section#recording-instructions #save-container {
   margin-top: 50px;
@@ -3894,6 +3896,10 @@ input.change-password, #choose-avatar-container input, section#choose-project-im
   width: 261px; }
   #genre-form-profile span, #skills span, #instruments span, #genre-form-projects span {
     display: block; }
+
+#choose-avatar-container img {
+  height: 120px;
+  width: 120px; }
 
 #instruments {
   padding-left: 0; }
@@ -5201,7 +5207,8 @@ footer {
 
   .profile-right-container, #new-project-page.row.col-xs-12.col-md-9, .projects-container.row.col-xs-12.col-md-9,
   .lyrics-project-container .row.col-xs-12.col-md-9, .lyrics-project-container .row.col-xs-12.col-md-3,
-  .youtube-page.row.col-xs-12.col-md-9, #groups-page.row.col-xs-12.col-md-9, .favorites-page.row.col-xs-12.col-md-9 {
+  .youtube-page.row.col-xs-12.col-md-9, #groups-page.row.col-xs-12.col-md-9, .favorites-page.row.col-xs-12.col-md-9,
+  #messages-page.row.col-xs-12.col-md-9 {
     margin-left: 0; }
 
   .profile-right-container {
