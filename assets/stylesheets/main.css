@@ -5198,7 +5198,7 @@ footer {
 
   .profile-right-container, #new-project-page.row.col-xs-12.col-md-9, .projects-container.row.col-xs-12.col-md-9,
   .lyrics-project-container .row.col-xs-12.col-md-9, .lyrics-project-container .row.col-xs-12.col-md-3,
-  .youtube-page.row.col-xs-12.col-md-9 {
+  .youtube-page.row.col-xs-12.col-md-9, #groups-page.row.col-xs-12.col-md-9 {
     margin-left: 0; }
 
   .profile-right-container {

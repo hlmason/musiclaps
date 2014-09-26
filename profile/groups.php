@@ -13,7 +13,7 @@
 
 			<div class="row col-lg-10 col-lg-offset-1">				
 					
-				<div class="row col-xs-12 col-md-9">
+				<div class="row col-xs-12 col-md-9" id="groups-page">
 
 					<section class="row col-xs-12" id="groups-header">
 						<a href="<?php echo BASE_URL; ?>profile/groups.php">
