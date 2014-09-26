@@ -4253,16 +4253,16 @@ section.change-sound-img-container input.choose-file {
 section.change-sound-img-container input.update-file {
   float: right; }
 
-section#lyrics-settings {
+section#lyrics-settings-sm, section#lyrics-settings-xs {
   border: 1px solid #cecece;
   margin-left: 0;
   margin-top: 5px;
   width: 95%; }
-  section#lyrics-settings h4 {
+  section#lyrics-settings-sm h4, section#lyrics-settings-xs h4 {
     display: inline-block;
     margin-bottom: 10px;
     margin-top: 10px; }
-  section#lyrics-settings input.save {
+  section#lyrics-settings-sm input.save, section#lyrics-settings-xs input.save {
     -moz-border-radius: 2px;
     border-radius: 2px;
     background-color: #38aaff;
@@ -4274,11 +4274,11 @@ section#lyrics-settings {
     text-transform: uppercase;
     float: right;
     margin-top: 10px; }
-    section#lyrics-settings input.save:hover, section#lyrics-settings input.save:focus {
+    section#lyrics-settings-sm input.save:hover, section#lyrics-settings-sm input.save:focus, section#lyrics-settings-xs input.save:hover, section#lyrics-settings-xs input.save:focus {
       background-color: #45b7ff; }
-  section#lyrics-settings p {
+  section#lyrics-settings-sm p, section#lyrics-settings-xs p {
     margin-top: 0; }
-    section#lyrics-settings p input.pause {
+    section#lyrics-settings-sm p input.pause, section#lyrics-settings-xs p input.pause {
       -moz-border-radius: 5px;
       border-radius: 5px;
       border: 1px solid #cecece;
@@ -4286,7 +4286,7 @@ section#lyrics-settings {
       padding-left: 8px;
       padding-top: 3px;
       width: 55px; }
-    section#lyrics-settings p input.speed {
+    section#lyrics-settings-sm p input.speed, section#lyrics-settings-xs p input.speed {
       -moz-border-radius: 5px;
       border-radius: 5px;
       border: 1px solid #cecece;
@@ -4294,10 +4294,12 @@ section#lyrics-settings {
       padding-left: 8px;
       padding-top: 3px;
       width: 25px; }
-    section#lyrics-settings p:nth-child(odd) {
-      float: left; }
-    section#lyrics-settings p:nth-child(even) {
-      float: right; }
+
+section#lyrics-settings-sm p:nth-child(even) {
+  float: right; }
+
+section#lyrics-settings-xs {
+  display: none; }
 
 section#lyrics-container-header, #lyrics-container-form {
   padding: 5px; }
@@ -5216,12 +5218,21 @@ footer {
     .projects-container.row.col-xs-12.col-md-9 section.projects-container h5.last-h5.sm {
       display: none; }
 
+  .lyrics-project-container .row.col-xs-12.col-md-9, .lyrics-project-container .row.col-xs-12.col-md-3 {
+    margin-left: 0; }
+
   #upload-stage-background-img-container {
     margin-top: 15px; }
 
   #privacy-page h1, #terms-page h1, #faqs-page h1 {
     font-size: 28px;
     margin-top: 0; } }
+@media only screen and (max-width: 688px) {
+  section#lyrics-settings-sm {
+    display: none; }
+
+  section#lyrics-settings-xs {
+    display: block; } }
 @media only screen and (max-width: 662px) {
   #players-wanted-page h3.wanted {
     margin-left: 0; }

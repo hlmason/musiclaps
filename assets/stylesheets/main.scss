@@ -1758,7 +1758,7 @@ section.change-sound-img-container {
 	}
 }
 
-section#lyrics-settings {
+section#lyrics-settings-sm, section#lyrics-settings-xs {
 	border: $nav-border;
 	margin-left: 0;
 	margin-top: 5px;
@@ -1781,13 +1781,15 @@ section#lyrics-settings {
 		input.speed {
 			@include form-fields-input(25px)
 		}
-		&:nth-child(odd) {
-			float: left;
-		}
-		&:nth-child(even) {
-			float: right;
-		}
 	}
+}
+
+section#lyrics-settings-sm p:nth-child(even) { // Only visible at viewport widths > 688px
+	float: right;
+}
+
+section#lyrics-settings-xs { // Only visible at viewport widths <= 688px
+	display: none;
 }
 
 section#lyrics-container-header, #lyrics-container-form {
@@ -2764,14 +2766,28 @@ footer {
 			}
 		}
 	}
+	.lyrics-project-container { 
+		.row.col-xs-12.col-md-9, .row.col-xs-12.col-md-3 { margin-left: 0; }
+	}
 	#upload-stage-background-img-container {
 		margin-top: 15px;
 	}
+
 	#privacy-page, #terms-page, #faqs-page {
 		h1 {
 			font-size: 28px;
 			margin-top: 0;
 		}
+	}
+}
+
+@media only screen and (max-width: 688px) {
+// Breakpoint of "Pause and scrolling speed" box
+	section#lyrics-settings-sm { 
+		display: none; 
+	}
+	section#lyrics-settings-xs { 
+		display: block; 
 	}
 }
 

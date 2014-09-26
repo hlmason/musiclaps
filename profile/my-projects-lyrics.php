@@ -13,8 +13,8 @@
 		
 			<div class="row col-lg-10 col-lg-offset-1">				
 
-				<div id="lyricsProjectContainer">
-					<div class="row col-xs-12 col-sm-9">
+				<div class="lyrics-project-container" id="lyricsProjectContainer">
+					<div class="row col-xs-12 col-md-9">
 
 						<!-- Recording Player -->
 						<div class="row col-xs-12 live-player-container">
@@ -22,7 +22,7 @@
 						</div>
 						<!-- End of Recording Player -->
 
-						<section class="row col-xs-12" id="lyrics-settings">
+						<section class="row col-xs-12" id="lyrics-settings-sm"><!-- Only visible at viewport widths > 688px -->
 							<div>
 								<h4>Pause and scrolling speed</h4>
 								<input class="save" type="submit" value="Save">
@@ -37,9 +37,25 @@
 
 							<p>2nd pause <input class="pause" type="text" placeholder="00.00"> to <input class="pause" type="text" placeholder="00.00"> speed <input class="speed" type="text" placeholder="1"></p>
 						</section>
+
+						<section class="row col-xs-12" id="lyrics-settings-xs"><!-- Only visible at viewport widths <= 688px -->
+							<div>
+								<h4>Pause and scrolling speed</h4>
+								<input class="save" type="submit" value="Save">
+							</div>
+
+							<!-- Markup is not backwards because elements are not floated right -->
+							<p>1st pause <input class="pause" type="text" placeholder="00.00"> to <input class="pause" type="text" placeholder="00.00"> speed <input class="speed" type="text" placeholder="1"></p>
+
+							<p>2nd pause <input class="pause" type="text" placeholder="00.00"> to <input class="pause" type="text" placeholder="00.00"> speed <input class="speed" type="text" placeholder="1"></p>
+
+							<p>3rd pause <input class="pause" type="text" placeholder="00.00"> to <input class="pause" type="text" placeholder="00.00"> speed <input class="speed" type="text" placeholder="1"></p>
+
+							<p>4th pause <input class="pause" type="text" placeholder="00.00"> to <input class="pause" type="text" placeholder="00.00"> speed <input class="speed" type="text" placeholder="1"></p>
+						</section>
 					</div>
 
-					<div class="row col-xs-12 col-sm-3">
+					<div class="row col-xs-12 col-md-3">
 						<section id="lyrics-container-header">
 							<h4>Display Lyrics</h4>
 							<select>
