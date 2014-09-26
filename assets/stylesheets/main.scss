@@ -2627,7 +2627,8 @@ footer {
 		margin-left: 25px;
 		padding-right: 0;
 	}
-	.public-project-page.row.col-xs-12.col-md-3, .recommended.row.col-xs-12.col-md-3 { display: none; } // Project listings and "Recommended" box
+	.public-project-page.row.col-xs-12.col-md-3, .recommended.row.col-md-3, .youtube-page.row.col-md-3 { display: none; } // Project listings and "Recommended" box
+	#youtube-settings { margin-left: 0; }
 	footer {
 		.navbar-brand { position: absolute; }
 		.navbar-left, .navbar-right { margin-top: 50px; }
@@ -2729,35 +2730,29 @@ footer {
 			margin-top: 8px;
 		}
 	}
+	.profile-right-container, #new-project-page.row.col-xs-12.col-md-9, .projects-container.row.col-xs-12.col-md-9, 
+	.lyrics-project-container .row.col-xs-12.col-md-9, .lyrics-project-container .row.col-xs-12.col-md-3,
+	.youtube-page.row.col-xs-12.col-md-9 { margin-left: 0; } // Aligns with ".glyphicon-user"
 	.profile-right-container {
-		margin-left: 0;
 		padding-right: 15px;
 		section.profile-right.profile-page.public-profile-page {
 			margin-top: 15px;
 		}
 	}
 	#new-project-page.row.col-xs-12.col-md-9 { 
-		margin-left: 0; // Aligns with ".glyphicon-user"
 		li { 
 			display: block; 
 			&:not(.first-list-item) { padding-left: 5px; }
 		}
 	}
-	.projects-container.row.col-xs-12.col-md-9 {
-		margin-left: 0;
-		section.projects-container {
-			h4, h5 { margin-bottom: 0; }
-			h5 {
-				&.last-h5.sm { display: none; }
-				&.last-h5.xs { display: block; }
-			}
+	section.projects-container {
+		h4, h5 { margin-bottom: 0; }
+		h5 {
+			&.last-h5.sm { display: none; }
+			&.last-h5.xs { display: block; }
 		}
 	}
-	.lyrics-project-container { 
-		.row.col-xs-12.col-md-9, .row.col-xs-12.col-md-3 { margin-left: 0; }
-	}
 	#upload-stage-background-img-container { margin-top: 15px; }
-
 	#privacy-page, #terms-page, #faqs-page {
 		h1 {
 			font-size: 28px;
@@ -2856,6 +2851,9 @@ footer {
 		}
 	}
 	#youtube-links a:not(#first-link) { padding-left: 0 !important; }
+	#info-below-youtube-player {
+		h4 { font-size: 12px; }
+	}
 }
 
 @media only screen and (max-width: 461px) {
@@ -2867,6 +2865,13 @@ footer {
 	}
 	input#save_profile { margin-left: 134px !important; }
 	.public-project-info.type-of-collab-container h5 { margin-top: 15px; }
+}
+
+@media only screen and (max-width: 447px) {
+// Breakpoint of "You can add up to 3 YouTube videos per project" (YouTube Page)
+	#info-below-youtube-player {
+		img { margin-top: 10px; }
+	}
 }
 
 @media only screen and (max-width: 417px) {

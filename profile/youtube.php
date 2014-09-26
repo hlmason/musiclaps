@@ -13,16 +13,16 @@
 			<div class="row col-lg-10 col-lg-offset-1">				
 					
 				<div>
-					<div class="row col-xs-12 col-sm-9">
+					<div class="row col-xs-12 col-md-9 youtube-page">
 
 						<div class="row">
 							<!-- "YouTube Player" -->
-							<section class="col-xs-12 col-sm-7" id="youtube-player-etc">
+							<section class="col-xs-12 col-md-7" id="youtube-player-etc">
 								<div id="youtube-player"></div><!-- Placeholder -->
 							<!-- End of "YouTube Player" -->
 							</section>
 
-							<div class="col-xs-12 col-sm-5">
+							<div class="col-xs-12 col-md-5">
 								<div id="youtube-settings">
 									<div>
 										<input id="new_youtube_connection" type="radio" name="youtube_connection" value="new">
@@ -76,7 +76,7 @@
 					</div>
 
 
-					<div class="row col-xs-12 col-sm-3">
+					<div class="row col-md-3 youtube-page">
 						<section class="profile-right" id="youtube-vids">
 							<h4>Other YouTube Videos</h4>
 							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="YouTube video image"><!-- Hard-coded placeholder -->
