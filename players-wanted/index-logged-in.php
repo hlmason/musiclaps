@@ -73,26 +73,28 @@
 							<h3 class="wanted">Band Members Wanted</h3>
 							<button class="postNewRequest" type="button">Post New Request</button>
 
-							<table><!-- Hard-coded placeholder -->
-								<thead>
-									<tr class="thead-tr">
-										<th></th>
-										<th>Requester</th>
-										<th></th>
-										<th>Posted</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>#</td><!-- Hard-coded placeholder -->
-										<td>
-											<a href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><span class="username">$username</span></a>
-										</td><!-- Hard-coded placeholder -->
-										<td>$Request Title</td><!-- Hard-coded placeholder -->
-										<td>$days/months ago</td><!-- Hard-coded placeholder -->
-									</tr>
-								</tbody>
-							</table>
+							<div class="table-scroll-x-axis">
+								<table><!-- Hard-coded placeholder -->
+									<thead>
+										<tr class="thead-tr">
+											<th></th>
+											<th>Requester</th>
+											<th></th>
+											<th>Posted</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>#</td><!-- Hard-coded placeholder -->
+											<td>
+												<a href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><span class="username">$username</span></a>
+											</td><!-- Hard-coded placeholder -->
+											<td>$Request Title</td><!-- Hard-coded placeholder -->
+											<td>$days/months ago</td><!-- Hard-coded placeholder -->
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</section>
 					</div>
 
@@ -122,26 +124,28 @@
 							<h3 class="wanted">Others Wanted</h3>
 							<button class="postNewRequest" type="button">Post New Request</button>
 
-							<table><!-- Hard-coded placeholder -->
-								<thead>
-									<tr class="thead-tr">
-										<th></th>
-										<th>Requester</th>
-										<th></th>
-										<th>Posted</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>#</td><!-- Hard-coded placeholder -->
-										<td>
-											<a href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><span class="username">$username</span></a>
-										</td><!-- Hard-coded placeholder -->
-										<td>$Request Title</td><!-- Hard-coded placeholder -->
-										<td>$days/months ago</td><!-- Hard-coded placeholder -->
-									</tr>
-								</tbody>
-							</table>
+							<div class="table-scroll-x-axis">
+								<table><!-- Hard-coded placeholder -->
+									<thead>
+										<tr class="thead-tr">
+											<th></th>
+											<th>Requester</th>
+											<th></th>
+											<th>Posted</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>#</td><!-- Hard-coded placeholder -->
+											<td>
+												<a href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><span class="username">$username</span></a>
+											</td><!-- Hard-coded placeholder -->
+											<td>$Request Title</td><!-- Hard-coded placeholder -->
+											<td>$days/months ago</td><!-- Hard-coded placeholder -->
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</section>
 					</div>
 

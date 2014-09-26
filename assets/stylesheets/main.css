@@ -2966,6 +2966,10 @@ img#microsoft-icon {
   height: 18px;
   width: 57px; }
 
+.table-scroll-x-axis {
+  overflow-x: auto;
+  width: 100%; }
+
 table {
   font-size: 12px; }
   table thead tr {
@@ -4886,7 +4890,6 @@ footer {
     padding-left: 0;
     padding-right: 14.5px; }
   footer #youtube-icon {
-    /* http://www.youtube.com/yt/brand/using-logo.html: "Apply half of the icon's height as a base for clear space" */
     height: 29px;
     width: 69px; }
 

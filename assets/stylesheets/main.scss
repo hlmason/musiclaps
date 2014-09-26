@@ -248,6 +248,11 @@ img#microsoft-icon {
 	}
 }
 
+.table-scroll-x-axis {
+	overflow-x: auto;
+	width: 100%;
+}
+
 table {
 	font-size: 12px;
 	thead tr {
@@ -353,7 +358,7 @@ nav {
 				display: none;
 			}
 		}
-		ul.dropdown-menu { // Left unnested so that .caret displays on nav below nav but the ".dropdown-menu" stylings apply
+		ul.dropdown-menu { // Left unnested so that ".caret" displays on nav below nav but ".dropdown-menu" stylings apply
 			border: $modal-border;
 			a {
 				text-transform: capitalize; // Overrides "text-transform: uppercase"
@@ -2417,7 +2422,7 @@ footer {
 		padding-left: 0;
 		padding-right: 14.5px; 
 	}
-	#youtube-icon { /* http://www.youtube.com/yt/brand/using-logo.html: "Apply half of the icon's height as a base for clear space" */
+	#youtube-icon { // http://www.youtube.com/yt/brand/using-logo.html: "Apply half of the icon's height as a base for clear space"
 		height: 29px;
 		width: 69px;
 	}
