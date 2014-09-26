@@ -28,6 +28,6 @@
 			<div>
 				<span class="glyphicon glyphicon-save"></span>
 				<input class="save-volume-and-pan" type="submit" value="Save">
-				</div>
+			</div>
 		</div>
 	</section>

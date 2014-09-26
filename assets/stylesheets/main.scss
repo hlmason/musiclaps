@@ -1447,7 +1447,7 @@ section.projects-container {
 	h5 {
 		margin-bottom: 1px;
 		margin-top: 0;
-		&.last-h5.xs, &.last-h5.sm { // Type of project
+		&.last-h5.sm, &.last-h5.xs { // Type of project
 			font-weight: normal;
 		}
 		&.last-h5.xs {
@@ -1492,7 +1492,7 @@ section.projects-container.favorites-page {
 }
 
 section.project-form-header, .project-info-bar, .volume-and-pan, form#project-form, section.create-new-group-container {
-	.glyphicon:not(.glyphicon-volume-up), select.project-type, input.save-volume-and-pan, input.save {
+	.glyphicon:not(.glyphicon-volume-up), select.project-type, input.save-volume-and-pan, input.save, input.save-volume {
 		float: right;
 	}
 }
@@ -1548,6 +1548,9 @@ section.project-form-header {
 
 .project-info-bar.requesting-collab-page {
 	background-color: white; // Overrides $musiclaps-light-gray
+	&.xs {
+		display: none;
+	}
 }
 
 .volume-and-pan, .project-info-bar.requesting-collab-page {
@@ -1573,7 +1576,7 @@ section.project-form-header {
 	.glyphicon-save {
 		margin-right: 9px;
 	}
-	input.save-volume-and-pan {
+	input.save-volume-and-pan, input.save-volume {
 		@include input-link;
 		margin-top: 6px;
 		padding-right: 5px;
@@ -1583,19 +1586,6 @@ section.project-form-header {
 .volume-and-pan {
 	&.xs { 
 		display: none;
-		height: 103px;
-		h4 {
-			&.left-to-right, &.right {
-				margin-bottom: 0;
-			}
-			&.left-to-right {
-				margin-left: 32px;
-			}
-		}
-		input.save-volume-and-pan {
-			float: none;
-			margin-left: 26px;
-		}
 	}
 	h4 {
 		display: inline-block;
@@ -2662,7 +2652,7 @@ footer {
 		ul { text-align: left; }
 		li:not(.first-list-item) { margin-top: 15px; }
 		img { margin-bottom: 1px; } // Social media icons
-		input { // Social media login buttons - only visible at viewport widths <= 767px
+		input { // Social media login buttons
 			@include submit($musiclaps-light-gray, $nav-border, 3px 6px, #d9d9d9);
 			@include border-bottom-right-radius(5px);
 			@include border-top-right-radius(5px);
@@ -2753,8 +2743,8 @@ footer {
 		section.projects-container {
 			h4, h5 { margin-bottom: 0; }
 			h5 {
-				&.last-h5.xs { display: block; }
 				&.last-h5.sm { display: none; }
+				&.last-h5.xs { display: block; }
 			}
 		}
 	}
@@ -2767,6 +2757,23 @@ footer {
 		h1 {
 			font-size: 28px;
 			margin-top: 0;
+		}
+	}
+}
+
+@media only screen and (max-width: 731px) {
+	.project-info-bar {
+		&.requesting-collab-page {
+			&.sm { display: none; }
+			&.xs {
+				display: block;
+				h4:not(.last-h4), .glyphicon-volume-up { margin-left: 5px; }
+				h4:not(.last-h4) { // Not "100"
+					font-size: 12px;
+					margin-left: 5px;
+				}
+				h5 { margin-left: 10px; }
+			}
 		}
 	}
 }
@@ -2813,7 +2820,18 @@ footer {
 		}
 	}
 	.volume-and-pan.sm { display: none; }
-	.volume-and-pan.xs { display: block; }
+	.volume-and-pan.xs {
+		display: block;  
+		height: 103px;
+		h4 {
+			&.left-to-right, &.right { margin-bottom: 0; }
+			&.left-to-right { margin-left: 32px; }
+		}
+		input.save-volume-and-pan {
+			float: none;
+			margin-left: 26px;
+		}
+	}
 }
 
 @media only screen and (max-width: 496px) {
