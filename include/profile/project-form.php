@@ -36,21 +36,11 @@
 			</select>
 		</div>
 	</section>
-	<section class="row col-xs-12 volumeAndPan">
-		<div class="volume-and-pan">
-			<span class="glyphicon glyphicon-volume-up"></span>
-			<div class="slider"></div>
-			<h4>100</h4><!-- Hard-coded placeholder -->
-
-			<h4 class="left-to-right">L</h4>
-			<div class="slider"></div>
-			<h4>R</h4>
-
-			<span class="glyphicon glyphicon-save"></span>
-			<input class="save-volume-and-pan" type="submit" value="Save">
-		</div>
-	</section>
-
+	<!-- Volume and pan -->
+	<?php
+		include(ROOT_PATH . 'include/profile/volume-and-pan.php');
+	?>
+	<!-- End of volume and pan -->
 
 	<form id="project-form">
 		<div class="row col-xs-12">
@@ -103,13 +93,12 @@
 		</div>
 		<div class="row col-xs-12">
 			<div class="row">
-				<div class="col-xs-6">
+				<div class="col-xs-12 col-sm-6">
 					<div id="no-img-container">
 						<h2>no image</h2>
 					</div>
 				</div>
-				<div class="col-xs-6">
-					<div id="upload-stage-background-img"></div>
+				<div class="col-xs-12 col-sm-6">
 					<div id="upload-stage-background-img-container">
 						<input class="choose-file" id="choose_stage_background_img" type="submit" value="Choose File">&nbsp; <span>No file chosen</span>
 						<div id="save-stage-background-img-and-trash-container">

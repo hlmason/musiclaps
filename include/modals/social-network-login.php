@@ -1,5 +1,5 @@
 				<!-- Visible at viewport widths >= 768px -->
-				<div class="modal-body" id="sn-login-modal-body">
+				<div class="modal-body" id="sn-login-modal-body-sm">
 					<h4>Login using:</h4>
 					<ul>
 						<!-- TODO: Edit markup for functional login -->
@@ -11,7 +11,7 @@
 				</div>
 
 				<!-- Visible at viewport widths <= 767px -->
-				<div class="modal-body" id="sn-login-modal-body-sm">
+				<div class="modal-body" id="sn-login-modal-body-xs">
 					<ul>
 						<!-- TODO: Edit markup for functional login -->
 						<li class="first-list-item"><form><img class="facebook-icon" src="<?php echo BASE_URL; ?>assets/images/global/facebook-icon.png" alt="Facebook icon"><input type="submit" value="Log in with Facebook"></form></li>

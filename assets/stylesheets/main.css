@@ -3177,19 +3177,19 @@ ul.user-menu li:not(.dropdown-menu-list-item) {
     font-weight: bold !important; }
   .modal-content h3.want-demo-heading, .modal-content h3.select-song-heading {
     text-transform: uppercase; }
-  .modal-content .modal-body#sn-login-modal-body, .modal-content .modal-body#sn-login-modal-body-sm, .modal-content .modal-body#registration-full-modal-body, .modal-content .modal-body#registration-express-modal-body {
+  .modal-content .modal-body#sn-login-modal-body-sm, .modal-content .modal-body#sn-login-modal-body-xs, .modal-content .modal-body#registration-full-modal-body, .modal-content .modal-body#registration-express-modal-body {
     -moz-border-radius: 0;
     border-radius: 0;
     border-bottom: 1px solid #e7e7e7;
     padding-top: 0;
     width: 100%; }
-  .modal-content .modal-body#sn-login-modal-body, .modal-content .modal-body#sn-login-modal-body-sm {
+  .modal-content .modal-body#sn-login-modal-body-sm, .modal-content .modal-body#sn-login-modal-body-xs {
     padding-bottom: 0; }
-  .modal-content .modal-body#sn-login-modal-body li {
+  .modal-content .modal-body#sn-login-modal-body-sm li {
     display: inline-block; }
-    .modal-content .modal-body#sn-login-modal-body li img {
+    .modal-content .modal-body#sn-login-modal-body-sm li img {
       margin-left: 10px; }
-  .modal-content .modal-body#sn-login-modal-body-sm {
+  .modal-content .modal-body#sn-login-modal-body-xs {
     display: none; }
   .modal-content .modal-body#login-modal-body {
     padding-top: 0; }
@@ -3250,7 +3250,7 @@ ul.user-menu li:not(.dropdown-menu-list-item) {
     height: 179px;
     margin-top: 15px;
     width: 270px; }
-  .modal-content #sn-login-modal-body, .modal-content #sn-login-modal-body-sm,
+  .modal-content #sn-login-modal-body-sm, .modal-content #sn-login-modal-body-xs,
   .modal-content #registration-express-modal-body, .modal-content #login-modal-body, .modal-content .modal-footer {
     text-align: center; }
   .modal-content .modal-footer a {
@@ -3998,9 +3998,9 @@ section.projects-container {
   section.projects-container h5 {
     margin-bottom: 1px;
     margin-top: 0; }
-    section.projects-container h5.last-h5.first, section.projects-container h5.last-h5.second {
+    section.projects-container h5.last-h5.xs, section.projects-container h5.last-h5.sm {
       font-weight: normal; }
-    section.projects-container h5.last-h5.first {
+    section.projects-container h5.last-h5.xs {
       display: none; }
   section.projects-container:hover {
     background-color: #F4F4F4;
@@ -4030,6 +4030,9 @@ section.projects-container.favorites-page {
 
 section.project-form-header .glyphicon:not(.glyphicon-volume-up), section.project-form-header select.project-type, section.project-form-header input.save-volume-and-pan, section.project-form-header input.save, .project-info-bar .glyphicon:not(.glyphicon-volume-up), .project-info-bar select.project-type, .project-info-bar input.save-volume-and-pan, .project-info-bar input.save, .volume-and-pan .glyphicon:not(.glyphicon-volume-up), .volume-and-pan select.project-type, .volume-and-pan input.save-volume-and-pan, .volume-and-pan input.save, form#project-form .glyphicon:not(.glyphicon-volume-up), form#project-form select.project-type, form#project-form input.save-volume-and-pan, form#project-form input.save, section.create-new-group-container .glyphicon:not(.glyphicon-volume-up), section.create-new-group-container select.project-type, section.create-new-group-container input.save-volume-and-pan, section.create-new-group-container input.save {
   float: right; }
+
+section.project-form-header .glyphicon, .project-info-bar .glyphicon, .volume-and-pan .glyphicon, #save-stage-background-img-and-trash-container .glyphicon {
+  cursor: pointer; }
 
 section.project-form-header h3, section.project-form-header .glyphicon-repeat, section.project-form-header .glyphicon-lock, section.project-form-header select.project-type, section.project-form-header .glyphicon-trash, section.project-form-header h4.project-type {
   margin-right: 10px;
@@ -4094,6 +4097,16 @@ section.project-form-header .glyphicon-repeat {
     .volume-and-pan input.save-volume-and-pan:hover, .volume-and-pan input.save-volume-and-pan:focus, .project-info-bar.requesting-collab-page input.save-volume-and-pan:hover, .project-info-bar.requesting-collab-page input.save-volume-and-pan:focus {
       color: #2a6496; }
 
+.volume-and-pan.xs {
+  display: none;
+  height: 103px; }
+  .volume-and-pan.xs h4.left-to-right, .volume-and-pan.xs h4.right {
+    margin-bottom: 0; }
+  .volume-and-pan.xs h4.left-to-right {
+    margin-left: 32px; }
+  .volume-and-pan.xs input.save-volume-and-pan {
+    float: none;
+    margin-left: 26px; }
 .volume-and-pan h4 {
   display: inline-block;
   margin-top: 0; }
@@ -4137,7 +4150,7 @@ form#project-form #no-img-container {
   color: #777;
   height: 80px;
   text-align: center;
-  width: 300px; }
+  width: 310px; }
   form#project-form #no-img-container h2 {
     margin-top: 0;
     padding-top: 20px; }
@@ -5089,18 +5102,18 @@ footer {
   #stage-inner ul {
     top: -42px; } }
 @media only screen and (max-width: 767px) {
-  #sn-login-modal-body {
+  #sn-login-modal-body-sm {
     display: none; }
 
-  #sn-login-modal-body-sm {
+  #sn-login-modal-body-xs {
     display: inline-block !important; }
-    #sn-login-modal-body-sm ul {
+    #sn-login-modal-body-xs ul {
       text-align: left; }
-    #sn-login-modal-body-sm li:not(.first-list-item) {
+    #sn-login-modal-body-xs li:not(.first-list-item) {
       margin-top: 15px; }
-    #sn-login-modal-body-sm img {
+    #sn-login-modal-body-xs img {
       margin-bottom: 1px; }
-    #sn-login-modal-body-sm input {
+    #sn-login-modal-body-xs input {
       background-color: #e7e7e7;
       border: 1px solid #cecece;
       padding: 3px 6px;
@@ -5109,7 +5122,7 @@ footer {
       -moz-border-top-right-radius: 5px;
       border-top-right-radius: 5px;
       margin-left: 2px; }
-      #sn-login-modal-body-sm input:hover, #sn-login-modal-body-sm input:focus {
+      #sn-login-modal-body-xs input:hover, #sn-login-modal-body-xs input:focus {
         background-color: #d9d9d9; }
 
   #musical-notes-map {
@@ -5198,10 +5211,13 @@ footer {
     margin-left: 0; }
     .projects-container.row.col-xs-12.col-md-9 section.projects-container h4, .projects-container.row.col-xs-12.col-md-9 section.projects-container h5 {
       margin-bottom: 0; }
-    .projects-container.row.col-xs-12.col-md-9 section.projects-container h5.last-h5.first {
+    .projects-container.row.col-xs-12.col-md-9 section.projects-container h5.last-h5.xs {
       display: block; }
-    .projects-container.row.col-xs-12.col-md-9 section.projects-container h5.last-h5.second {
+    .projects-container.row.col-xs-12.col-md-9 section.projects-container h5.last-h5.sm {
       display: none; }
+
+  #upload-stage-background-img-container {
+    margin-top: 15px; }
 
   #privacy-page h1, #terms-page h1, #faqs-page h1 {
     font-size: 28px;
@@ -5211,6 +5227,12 @@ footer {
     margin-left: 0; }
   #players-wanted-page button {
     margin-right: 0; } }
+@media only screen and (max-width: 606px) {
+  .project-info-bar select.project-type {
+    float: none;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    margin-top: 0; } }
 @media only screen and (max-width: 580px) {
   h1.landing-page {
     font-size: 24px; }
@@ -5222,7 +5244,13 @@ footer {
     padding-bottom: 15px; }
     .public-project-info.type-of-collab-container img#cover-song {
       display: block;
-      float: none !important; } }
+      float: none !important; }
+
+  .volume-and-pan.sm {
+    display: none; }
+
+  .volume-and-pan.xs {
+    display: block; } }
 @media only screen and (max-width: 496px) {
   #players-wanted-page h3.wanted {
     display: block; }

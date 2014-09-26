@@ -13,7 +13,7 @@
 
 			<div class="row col-lg-10 col-lg-offset-1">				
 					
-				<div class="row col-xs-12 col-sm-9">
+				<div class="row col-xs-12 col-md-9">
 
 					<section class="row col-xs-12" id="groups-header">
 						<a href="<?php echo BASE_URL; ?>profile/groups.php">
@@ -95,20 +95,11 @@
 								</select>
 							</div>
 						</section>
-						<section class="row col-xs-12 volumeAndPan">
-							<div class="volume-and-pan">
-								<span class="glyphicon glyphicon-volume-up"></span>
-								<div class="slider"></div>
-								<h4>100</h4><!-- Hard-coded placeholder -->
-
-								<h4 class="left-to-right">L</h4>
-								<div class="slider"></div>
-								<h4>R</h4>
-
-								<span class="glyphicon glyphicon-save"></span>
-								<input class="save-volume-and-pan" type="submit" value="Save">
-							</div>
-						</section>
+						<!-- Volume and pan -->
+						<?php
+							include(ROOT_PATH . 'include/profile/volume-and-pan.php');
+						?>
+						<!-- End of volume and pan -->
 					</div>
 
 				</div>

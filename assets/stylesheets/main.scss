@@ -522,17 +522,17 @@ nav {
 		text-transform: uppercase;
 	}
 	.modal-body {
-		&#sn-login-modal-body, &#sn-login-modal-body-sm, 
+		&#sn-login-modal-body-sm, &#sn-login-modal-body-xs, 
 		&#registration-full-modal-body, &#registration-express-modal-body, {
 			@include border-radius(0);
 			border-bottom: 1px solid #e7e7e7;
 			padding-top: 0;
 			width: 100%;
 		}
-		&#sn-login-modal-body, &#sn-login-modal-body-sm {
+		&#sn-login-modal-body-sm, &#sn-login-modal-body-xs {
 			padding-bottom: 0;
 		}
-		&#sn-login-modal-body { 
+		&#sn-login-modal-body-sm { 
 			li {
 				display: inline-block;
 				img {
@@ -540,7 +540,7 @@ nav {
 				}
 			}
 		}
-		&#sn-login-modal-body-sm {
+		&#sn-login-modal-body-xs {
 			display: none; // Invisible at viewport widths >= 767px
 		}
 		&#login-modal-body {
@@ -614,7 +614,7 @@ nav {
 			width: 270px;
 		}
 	}
-	#sn-login-modal-body, #sn-login-modal-body-sm, 
+	#sn-login-modal-body-sm, #sn-login-modal-body-xs, 
 	#registration-express-modal-body, #login-modal-body, .modal-footer {
 		text-align: center;
 	}
@@ -1447,10 +1447,10 @@ section.projects-container {
 	h5 {
 		margin-bottom: 1px;
 		margin-top: 0;
-		&.last-h5.first, &.last-h5.second { // Type of project
+		&.last-h5.xs, &.last-h5.sm { // Type of project
 			font-weight: normal;
 		}
-		&.last-h5.first {
+		&.last-h5.xs {
 			display: none; // Only visible at viewport widths <= 767px
 		}
 	}
@@ -1494,6 +1494,12 @@ section.projects-container.favorites-page {
 section.project-form-header, .project-info-bar, .volume-and-pan, form#project-form, section.create-new-group-container {
 	.glyphicon:not(.glyphicon-volume-up), select.project-type, input.save-volume-and-pan, input.save {
 		float: right;
+	}
+}
+
+section.project-form-header, .project-info-bar, .volume-and-pan, #save-stage-background-img-and-trash-container {
+	.glyphicon {
+		cursor: pointer;
 	}
 }
 
@@ -1575,6 +1581,22 @@ section.project-form-header {
 }
 
 .volume-and-pan {
+	&.xs { 
+		display: none;
+		height: 103px;
+		h4 {
+			&.left-to-right, &.right {
+				margin-bottom: 0;
+			}
+			&.left-to-right {
+				margin-left: 32px;
+			}
+		}
+		input.save-volume-and-pan {
+			float: none;
+			margin-left: 26px;
+		}
+	}
 	h4 {
 		display: inline-block;
 		margin-top: 0;
@@ -1609,9 +1631,9 @@ form#project-form {
 	#no-img-container {
 		background-color: $musiclaps-light-gray;
 		color: #777;
-		height: 80px;
+		height: 80px; // Half the size of recommended height (190)
 		text-align: center;
-		width: 300px;
+		width: 310px; // Half the size of recommended width (620)
 		h2 { // "no image"
 			margin-top: 0;
 			padding-top: 20px;
@@ -2640,8 +2662,8 @@ footer {
 
 @media only screen and (max-width: 767px) {
 // Bootstrap's "xs" viewport width
-	#sn-login-modal-body { display: none; }
-	#sn-login-modal-body-sm {
+	#sn-login-modal-body-sm { display: none; }
+	#sn-login-modal-body-xs {
 		display: inline-block !important;
 		ul { text-align: left; }
 		li:not(.first-list-item) { margin-top: 15px; }
@@ -2737,10 +2759,13 @@ footer {
 		section.projects-container {
 			h4, h5 { margin-bottom: 0; }
 			h5 {
-				&.last-h5.first { display: block; }
-				&.last-h5.second { display: none; }
+				&.last-h5.xs { display: block; }
+				&.last-h5.sm { display: none; }
 			}
 		}
+	}
+	#upload-stage-background-img-container {
+		margin-top: 15px;
 	}
 	#privacy-page, #terms-page, #faqs-page {
 		h1 {
@@ -2758,6 +2783,17 @@ footer {
 	}
 }
 
+@media only screen and (max-width: 606px) {
+	.project-info-bar {
+		select.project-type {
+			float: none;
+			margin-bottom: 8px;
+			margin-left: 10px;
+			margin-top: 0;
+		}
+	}
+}
+
 @media only screen and (max-width: 580px) {
 // Breakpoint of "Select a song" modal (Live Player Page)
 	h1.landing-page { font-size: 24px; } // "Online Music Collaboration Made Simple"
@@ -2769,6 +2805,8 @@ footer {
 			float: none !important;
 		}
 	}
+	.volume-and-pan.sm { display: none; }
+	.volume-and-pan.xs { display: block; }
 }
 
 @media only screen and (max-width: 496px) {
@@ -2787,9 +2825,7 @@ footer {
 			}
 		}
 	}
-	#youtube-links a:not(#first-link) {
-		padding-left: 0 !important;
-	}
+	#youtube-links a:not(#first-link) { padding-left: 0 !important; }
 }
 
 @media only screen and (max-width: 461px) {
@@ -2797,9 +2833,7 @@ footer {
 	// h1.landing-page { font-size: 21px; } // "Online Music Collaboration Made Simple"
 	#upload-avatar {
 		border-bottom: none !important;
-		ul {
-			margin-left: 10px;
-		}
+		ul { margin-left: 10px; }
 	}
 	input#save_profile { margin-left: 134px !important; }
 	.public-project-info.type-of-collab-container h5 { margin-top: 15px; }
