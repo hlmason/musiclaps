@@ -13,11 +13,11 @@
 		
 			<div class="row col-lg-10 col-lg-offset-1">				
 					
-				<div class="row col-xs-12 col-sm-9">
+				<div class="row col-xs-12 col-md-9 favorites-page">
 
 					<div class="row">
 						<div class="col-sm-12 col-md-6 favorites-page">
-							<section class="row projects-container favorites-page">
+							<section class="row projects-container favorites-page first-listing">
 								<div class="col-xs-4 col-sm-3 col-md-4">
 									<a href="<?php echo BASE_URL; ?>profile/public-project-logged-in.php"><img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"></a><!-- Hard-coded placeholder -->
 								</div>

@@ -2629,6 +2629,9 @@ footer {
 	}
 	.public-project-page.row.col-xs-12.col-md-3, .recommended.row.col-md-3, .youtube-page.row.col-md-3 { display: none; } // Project listings and "Recommended" box
 	#youtube-settings { margin-left: 0; }
+	section.projects-container.favorites-page:not(.first-listing) {
+		margin-left: 15px;
+	}
 	footer {
 		.navbar-brand { position: absolute; }
 		.navbar-left, .navbar-right { margin-top: 50px; }
@@ -2732,7 +2735,7 @@ footer {
 	}
 	.profile-right-container, #new-project-page.row.col-xs-12.col-md-9, .projects-container.row.col-xs-12.col-md-9, 
 	.lyrics-project-container .row.col-xs-12.col-md-9, .lyrics-project-container .row.col-xs-12.col-md-3,
-	.youtube-page.row.col-xs-12.col-md-9, #groups-page.row.col-xs-12.col-md-9 { margin-left: 0; } // Aligns with ".glyphicon-user"
+	.youtube-page.row.col-xs-12.col-md-9, #groups-page.row.col-xs-12.col-md-9, .favorites-page.row.col-xs-12.col-md-9 { margin-left: 0; } // Aligns with ".glyphicon-user"
 	.profile-right-container {
 		padding-right: 15px;
 		section.profile-right.profile-page.public-profile-page {
