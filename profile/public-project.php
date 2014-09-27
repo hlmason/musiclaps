@@ -96,7 +96,7 @@
 					<div class="row col-xs-12">
 						<div class="share-to-social-networks-container" id="shareToSocialNetworksContainer">
 							<img class="facebook-icon first-img" src="<?php echo BASE_URL; ?>assets/images/global/facebook-icon.png" alt="Facebook icon"><!-- Hard-coded placeholder -->
-							<img class="twitter-<!-- Hard-coded placeholder -->icon" src="<?php echo BASE_URL; ?>assets/images/global/twitter-icon.png" alt="Twitter icon">
+							<img class="twitter icon" src="<?php echo BASE_URL; ?>assets/images/global/twitter-icon.png" alt="Twitter icon"><!-- Hard-coded placeholder -->
 							<img class="google-icon" src="<?php echo BASE_URL; ?>assets/images/global/google-icon.jpg" alt="Google icon"><!-- Hard-coded placeholder -->
 							<img id="reddit-icon" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/reddit-icon.gif" alt="Reddit icon"><!-- Hard-coded placeholder -->
 							<img id="tumblr-icon" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/tumblr-icon.png" alt="Tumblr icon"><!-- Hard-coded placeholder -->
