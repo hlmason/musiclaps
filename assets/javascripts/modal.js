@@ -8,7 +8,7 @@ $(document).ready(function() {
 	passwordReq.hide();
 
 	$('.registerJS').on('click', function() {
-		if ( registerOrLogin.is(':visible') ) {
+		if ( registerOrLogin.is(':visible') ) { // This modal is on the Live Player page
 			registerOrLogin.modal('hide');
 			register.modal('show');
 		} else {
@@ -28,15 +28,16 @@ $(document).ready(function() {
 			});
 
 	$('.loginJS').on('click', function() {
-		if ( registerOrLogin.is(':visible') ) {
+		if ( registerOrLogin.is(':visible') ) { // This modal is on the Live Player page
 			registerOrLogin.modal('hide');
 			login.modal('show');
 		} else {
 			login.modal('show');
+
 		}
 	});
 
-	$('#registerOrLoginJS').on('click', function() {
+	$('#registerOrLoginJS').on('click', function() { // This modal is on the Live Player page
 		registerOrLogin.modal('show');
 	});
 

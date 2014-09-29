@@ -1,10 +1,10 @@
 					<section class="row projects-container projectsContainer">
-						<div class="col-xs-4 col-sm-3">
+						<div class="col-xs-5 col-sm-3">
 							<span class="glyphicon-pencil-container"><span class="glyphicon glyphicon-pencil glyphiconPencil"></span></span>
 							<img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
 						</div>
 					
-						<div class="col-xs-8 col-sm-6 col-md-7">
+						<div class="col-xs-7 col-sm-6 col-md-7">
 							<h4>$project title</h4><!-- Hard-coded placeholder -->
 							<h5>Upload Date: <span class="normal">$# days ago</span></h5><!-- Hard-coded placeholder -->
 							<h5>Plays: <span class="normal">$# of plays</span></h5><!-- Hard-coded placeholder -->

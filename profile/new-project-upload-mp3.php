@@ -20,7 +20,7 @@
 							<div class="col-xs-6">
 								<h4>Upload an MP3 file</h4>
 								<h5>128-bit to 160-bit</h5>
-								<h5>Note: <span class="normal">128-bit is recommended<span class="block"> Uploads take longer with higher bit rates</span></span></h5>
+								<h5>Note: <span class="normal">128-bit is recommended<span class="block"> (Uploads take longer with higher bit rates)</span></span></h5>
 							</div>
 							
 							<div class="col-xs-6">
@@ -130,10 +130,10 @@
 
 							<section class="row col-xs-12 newProject" id="choose-project-img-container">
 								<div class="row">
-									<div class="col-xs-4">	
+									<div class="col-xs-3 col-sm-4">	
 										<h4>Project Image</h4>
 									</div>
-									<div class="col-xs-4">
+									<div class="col-xs-5 col-sm-4">
 										<input id="choose_project_img" type="submit" value="Choose File">&nbsp; <span>No file chosen</span>
 									</div>
 									<div class="col-xs-4">	
@@ -143,10 +143,10 @@
 							</section>
 
 							<div class="row col-xs-12" id="choose-mp3-file-container">
-								<div class="col-xs-4">	
+								<div class="col-xs-3 col-sm-4">	
 									<h4>MP3 File</h4>
 								</div>
-								<div class="col-xs-4">
+								<div class="col-xs-5 col-sm-4">
 									<input id="choose_mp3_file" type="submit" value="Choose File">&nbsp; <span>No file chosen</span>
 								</div>
 								<div class="col-xs-4">	

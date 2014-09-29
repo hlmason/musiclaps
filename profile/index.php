@@ -16,13 +16,13 @@
 				<div class="row col-xs-12 col-sm-8 profile-page">
 
 					<div class="row" id="avatar-n-edit-profile">	
-						<div class="col-xs-4 col-sm-3">
+						<div class="col-xs-5 col-sm-3">
 							<img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 						</div>
-						<div class="col-xs-8 col-sm-4">
+						<div class="col-xs-7 col-sm-4">
 							<h2 id="user-id">$userid</h2><!-- Hard-coded placeholder -->
 						</div>
-						<div class="col-xs-8 col-sm-5" id="edit-save-profile"><!-- profile/public-profile.php does not contain this part because it does not contain the form -->
+						<div class="col-xs-7 col-sm-5" id="edit-save-profile"><!-- profile/public-profile.php does not contain this part because it does not contain the form -->
 							<a>
 								<h4 class="edit-profile" id="editProfile"><span class="glyphicon glyphicon-edit"></span>&nbsp; Edit Profile</h4>
 							</a>

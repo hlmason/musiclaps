@@ -744,7 +744,7 @@ h1.landing-page {
 			}
 			ul {
 				position: relative; // For Firefox
-				top: -87px;
+				top: -87px; // For Firefox
 				li {
 					display: inline-block;
 					img { // Play, pause, stop, and record buttons
@@ -1516,9 +1516,11 @@ section.project-form-header, .project-info-bar, .volume-and-pan, #save-stage-bac
 }
 
 section.project-form-header {
-	h3, .glyphicon-repeat, .glyphicon-lock, select.project-type, .glyphicon-trash, h4.project-type {
+	h3, .glyphicon-repeat, .glyphicon-lock, select.project-type, .glyphicon-trash, h4.project-type /* "Groups" Page */ {
 		margin-right: 10px;
-		margin-top: 15px; 
+	}
+	h3, select.project-type, h4.project-type {
+		margin-top: 15px;
 	}
 	h3, h4 {
 		margin-bottom: 0;
@@ -1529,8 +1531,14 @@ section.project-form-header {
 	h4 {
 		float: right;
 	}
-	.glyphicon-repeat {
-		color: $musiclaps-dark-gray;
+	.glyphicon {
+		margin-top: 17px;
+		&.glyphicon-repeat {
+			color: $musiclaps-dark-gray; // For "Open Collab" page
+		}
+	}
+	&.requesting-collab-page .glyphicon-repeat {
+		margin-top: 19px; // Overrides "margin-top: 17px;"
 	}
 }
 
@@ -1556,14 +1564,18 @@ section.project-form-header {
 	}
 	select.project-type, .glyphicon-trash {
 		margin-right: 10px;
+	}
+	select.project-type {
 		margin-top: 8px;
 	}
-}
-
-.project-info-bar.requesting-collab-page {
-	background-color: white; // Overrides $musiclaps-light-gray
-	&.xs {
-		display: none;
+	.glyphicon-trash {
+		margin-top: 6px;
+	}
+	&.requesting-collab-page {
+		background-color: white; // Overrides $musiclaps-light-gray
+		&.xs {
+			display: none;
+		}	
 	}
 }
 
@@ -1635,9 +1647,9 @@ form#project-form {
 	#no-img-container {
 		background-color: $musiclaps-light-gray;
 		color: #777;
-		height: 80px; // Half the size of recommended height (190)
+		height: 80px; // Half the size of recommended height (190px)
 		text-align: center;
-		width: 310px; // Half the size of recommended width (620)
+		width: 310px; // Half the size of recommended width (620px)
 		h2 { // "no image"
 			margin-top: 0;
 			padding-top: 20px;
@@ -2734,6 +2746,7 @@ footer {
 			section.projects-container.first { margin-top: 10px; }
 		}
 	}
+	#players-wanted-page { margin-top: 0; }
 	nav {
 		.glyphicon-user { margin-left: 15px; } // Aligns with ".profile-right-container"
 		ul.user-menu a { margin-left: 25px; } // Aligns links with ".glyphicon-user"
@@ -2753,9 +2766,9 @@ footer {
 		}
 	}
 	.profile-right-container, #new-project-page.row.col-xs-12.col-md-9, .projects-container.row.col-xs-12.col-md-9, 
-	.lyrics-project-container .row.col-xs-12.col-md-9, .lyrics-project-container .row.col-xs-12.col-md-3,
-	.youtube-page.row.col-xs-12.col-md-9, #groups-page.row.col-xs-12.col-md-9, .favorites-page.row.col-xs-12.col-md-9, 
-	#messages-page.row.col-xs-12.col-md-9 { margin-left: 0; } // Aligns with ".glyphicon-user"
+	.lyrics-project-container .row.col-xs-12.col-md-9, .lyrics-project-container .row.col-xs-12.col-md-3, 
+	#collaborators-page.row.col-xs-12.col-md-9, .youtube-page.row.col-xs-12.col-md-9, #groups-page.row.col-xs-12.col-md-9, 
+	.favorites-page.row.col-xs-12.col-md-9, #messages-page.row.col-xs-12.col-md-9 { margin-left: 0; } // Aligns with ".glyphicon-user"
 	.profile-right-container {
 		padding-right: 15px;
 		section.profile-right.profile-page.public-profile-page {
@@ -2770,6 +2783,7 @@ footer {
 	}
 	section.projects-container {
 		h4, h5 { margin-bottom: 0; }
+		h4 { margin-top: 0; }
 		h5 {
 			&.last-h5.sm { display: none; }
 			&.last-h5.xs { display: block; }
@@ -2824,6 +2838,7 @@ footer {
 			margin-left: 10px;
 			margin-top: 0;
 		}
+		h5 { margin-left: 10px; } // Aligns date project started with project name
 	}
 	ul#copyright-types-container { 
 		height: 493px !important;
@@ -2903,4 +2918,31 @@ footer {
 	// h1.landing-page { font-size: 18px; } // "Online Music Collaboration Made Simple"
 	h3.select-song-heading { font-size: 15px; }
 	h2#user-id, h4.edit-profile, h4.save-profile { margin-left: 10px; }
+}
+
+@media only screen and (max-width: 399px) {
+	section.project-form-header, .project-info-bar { 
+		select { font-size: 11px; }
+	}
+	section.project-form-header {
+		h3 { margin-right: 0; } // For "Requesting Collab" page project listings
+		.glyphicon-lock { margin-right: 3px; }
+	}
+	.project-info-bar {
+		select.project-type {
+			margin-left: 4px; 
+			margin-right: 5px;
+		}
+		&.requesting-collab-page {
+			height: 60px;
+			input.save-volume { display: none; }
+		}
+	}
+	#no-img-container { 
+		height: 63.3px !important; // One-third the size of recommended height (620px)
+		width: 206.7px !important; // One-third the size of recommended width (190px)
+	}
+	ul#copyright-types-container {
+		height: 580px !important;
+	}
 }

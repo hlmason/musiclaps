@@ -13,7 +13,7 @@
 		
 			<div class="row col-lg-10 col-lg-offset-1">				
 					
-				<div class="row col-xs-12 col-md-9">
+				<div class="row col-xs-12 col-md-9" id="collaborators-page">
 
 					<div class="collaborators-container">
 						<label for="collab_type" id="collab-label">Sort by</label>
