@@ -4451,6 +4451,8 @@ section#lyrics-container-header {
   font-size: 12px; }
   .youtube-page-form input#save_name:hover, .youtube-page-form input#save_name:focus, .youtube-page-form input#edit_name:hover, .youtube-page-form input#edit_name:focus {
     background-color: #45b7ff; }
+.youtube-page-form .xs {
+  display: none; }
 
 section.profile-right#youtube-vids {
   height: 1024px;
@@ -5306,7 +5308,21 @@ footer {
       margin-left: 32px; }
     .volume-and-pan.xs input.save-volume-and-pan {
       float: none;
-      margin-left: 26px; } }
+      margin-left: 26px; }
+
+  .youtube-page-form label {
+    margin-bottom: 2px;
+    margin-top: 10px; }
+  .youtube-page-form select, .youtube-page-form input#name {
+    width: 100%; }
+  .youtube-page-form input#save_name, .youtube-page-form input#edit_name {
+    margin-top: 10px; }
+  .youtube-page-form .sm {
+    display: none; }
+  .youtube-page-form .xs {
+    display: block; }
+    .youtube-page-form .xs label#name-label {
+      margin-left: 0 !important; } }
 @media only screen and (max-width: 496px) {
   #players-wanted-page h3.wanted {
     display: block; }

@@ -1936,6 +1936,7 @@ section#lyrics-container-header { // "Display Lyrics" and "Select Sound"
 		color: white;
 		font-size: 12px;
 	}
+	.xs { display: none; }
 }
 
 section.profile-right#youtube-vids {
@@ -2854,6 +2855,16 @@ footer {
 		input.save-volume-and-pan {
 			float: none;
 			margin-left: 26px;
+		}
+	}
+	.youtube-page-form {
+		label { @include form-fields-label(10px); }
+		select, input#name { width: 100%; }
+		input#save_name, input#edit_name { margin-top: 10px; }
+		.sm { display: none; }
+		.xs {
+			display: block;
+			label#name-label { margin-left: 0 !important; }
 		}
 	}
 }
