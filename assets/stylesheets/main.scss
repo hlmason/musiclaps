@@ -2956,4 +2956,16 @@ footer {
 	ul#copyright-types-container {
 		height: 580px !important;
 	}
+	section#messages-header button { 
+		float: none;
+		margin-bottom: 10px;
+		margin-top: 0;
+	}
+	.add-friend-container {
+		label, input.add-friend-field { float: left; }
+		input.add-friend-field { 
+			@include form-fields-input(100%);
+			margin-top: 5px; 
+		}
+	}
 }
