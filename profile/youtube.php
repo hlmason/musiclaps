@@ -53,15 +53,33 @@
 						</div>
 
 						<div class="row col-xs-12 youtube-page-form" id="newYouTubeConnectionForm">
-							<label for="select_project">Select Project</label>
-							<select>
-								<option value="sound">Europa Sax(1)</option><!-- Hard-coded placeholder -->
-							</select>
+							<div class="sm"><!-- Only visible at viewport widths > 580px -->
+								<label for="select_project">Select Project</label>
+								<select>
+									<option value="sound">Europa Sax(1)</option><!-- Hard-coded placeholder -->
+								</select>
 
-							<label id="name-label" for="name">Name</label>
-							<input id="name" type="text" name="name">
+								<label id="name-label" for="name">Name</label>
+								<input id="name" type="text" name="name">
 
-							<input id="save_name" type="submit" value="Save">
+								<input id="save_name" type="submit" value="Save">
+							</div>
+							
+							<div class="xs"><!-- Only visible at viewport widths <= 580px -->
+								<div>
+									<label for="select_project">Select Project</label>
+									<select>
+										<option value="sound">Europa Sax(1)</option><!-- Hard-coded placeholder -->
+									</select>
+								</div>
+
+								<div>
+									<label id="name-label" for="name">Name</label>
+									<input id="name" type="text" name="name">
+
+									<input id="save_name" type="submit" value="Save">
+								</div>
+							</div>
 						</div>
 
 						<div class="row col-xs-12 youtube-page-form" id="editYouTubeConnectionForm">
