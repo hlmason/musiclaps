@@ -2650,7 +2650,10 @@ footer {
 		h4 { margin-top: 17px; }
 	}
 	#upload-avatar li { font-size: 12px; }
-	input#save_profile { margin-left: 135px !important; }
+	input#save_profile { 
+		margin-left: 0 !important; 
+		margin-top: 10px !important;
+	}
 	.profile-right-container {
 		margin-left: 25px;
 		padding-right: 0;
@@ -2902,7 +2905,6 @@ footer {
 		border-bottom: none !important;
 		ul { margin-left: 10px; }
 	}
-	input#save_profile { margin-left: 134px !important; }
 	.public-project-info.type-of-collab-container h5 { margin-top: 15px; }
 }
 
@@ -2920,6 +2922,7 @@ footer {
 
 @media only screen and (max-width: 399px) {
 	select { font-size: 11px; }
+	form.profile-page input#save_profile { margin-top: 0 !important; }
 	section.project-form-header {
 		h3 { margin-right: 0; } // For "Requesting Collab" page project listings
 		.glyphicon-lock { margin-right: 3px; }

@@ -198,10 +198,10 @@
 									<label for="upload_avatar">Your Image</label>
 									<div class="row col-xs-12">
 										<div class="row">
-											<div class="col-xs-5 col-sm-4">
+											<div class="col-xs-6 col-sm-4">
 												<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 											</div>
-											<div class="col-xs-7 col-sm-8" id="upload-avatar">	
+											<div class="col-xs-6 col-sm-8" id="upload-avatar">	
 												<ul><!-- TODO: Edit markup for functional login and make this look better at viewport widths closer to 767px and 400px -->
 													<li><span class="bold">Upload Your Image</span> (120 x 120 recommended)</li>
 													<li><input id="choose_avatar_file" type="submit" value="Choose File">&nbsp; <span>No file chosen</span></li><!-- Hard-coded placeholder -->
