@@ -5098,7 +5098,8 @@ footer {
     font-size: 12px; }
 
   input#save_profile {
-    margin-left: 135px !important; }
+    margin-left: 0 !important;
+    margin-top: 10px !important; }
 
   .profile-right-container {
     margin-left: 25px;
@@ -5370,9 +5371,6 @@ footer {
     #upload-avatar ul {
       margin-left: 10px; }
 
-  input#save_profile {
-    margin-left: 134px !important; }
-
   .public-project-info.type-of-collab-container h5 {
     margin-top: 15px; } }
 @media only screen and (max-width: 447px) {
@@ -5387,6 +5385,9 @@ footer {
 @media only screen and (max-width: 399px) {
   select {
     font-size: 11px; }
+
+  form.profile-page input#save_profile {
+    margin-top: 0 !important; }
 
   section.project-form-header h3 {
     margin-right: 0; }
