@@ -5019,8 +5019,8 @@ footer {
   nav ul.navbar-right#logged-out li:last-child {
     margin-bottom: 7px;
     padding-bottom: 10px; }
-  nav ul.navbar-right#logged-out li:last-child a {
-    color: #444444 !important; }
+    nav ul.navbar-right#logged-out li:last-child a {
+      color: #444444 !important; }
   nav ul.navbar-right#logged-in li#welcome-user {
     display: none; }
   nav ul.navbar-right#logged-in li#log-out {
@@ -5227,9 +5227,9 @@ footer {
 
   .profile-right-container, #new-project-page.row.col-xs-12.col-md-9, .projects-container.row.col-xs-12.col-md-9,
   .lyrics-project-container .row.col-xs-12.col-md-9, .lyrics-project-container .row.col-xs-12.col-md-3,
-  #collaborators-page.row.col-xs-12.col-md-9, .youtube-page.row.col-xs-12.col-md-9, #groups-page.row.col-xs-12.col-md-9,
+  #collaborators-page.row.col-xs-12.col-md-9, .youtube-page.row.col-xs-12.col-md-9, .groups-page.row.col-xs-12.col-md-9,
   .favorites-page.row.col-xs-12.col-md-9, #messages-page.row.col-xs-12.col-md-9 {
-    margin-left: 0; }
+    margin-left: 0 !important; }
 
   .profile-right-container {
     padding-right: 15px; }
@@ -5336,7 +5336,16 @@ footer {
   .youtube-page-form .xs {
     display: block; }
     .youtube-page-form .xs label#name-label {
-      margin-left: 0 !important; } }
+      margin-left: 0 !important; }
+
+  section.create-new-group-container select {
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    padding-top: 3px;
+    width: 50%; } }
 @media only screen and (max-width: 496px) {
   #players-wanted-page h3.wanted {
     display: block; }
@@ -5376,7 +5385,7 @@ footer {
   h2#user-id, h4.edit-profile, h4.save-profile {
     margin-left: 10px; } }
 @media only screen and (max-width: 399px) {
-  section.project-form-header select, .project-info-bar select {
+  select {
     font-size: 11px; }
 
   section.project-form-header h3 {
@@ -5414,4 +5423,7 @@ footer {
     padding-left: 8px;
     padding-top: 3px;
     width: 100%;
-    margin-top: 5px; } }
+    margin-top: 5px; }
+
+  .project-info-bar.groups-page select.project-type {
+    margin-left: 10px; } }
