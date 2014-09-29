@@ -2515,11 +2515,9 @@ footer {
 	section#public-project-header h5, img#cover-song {
 		margin-right: 24px !important;  // Aligns elements with Live Player
 	}
-	form.profile-page {
-		input.change-password {
-			margin-top: 30px;
-			margin-left: 0;
-		}
+	form.profile-page input.change-password {
+		margin-top: 30px;
+		margin-left: 0;
 	}
 	section.profile-right.profile-page { height: 1346px; } // "Profile" Page
 }
@@ -2576,9 +2574,9 @@ footer {
 			&:first-child { margin-top: 15px; }
 			&:last-child { 
 				margin-bottom: 7px; 
-				padding-bottom: 10px; 
+				padding-bottom: 10px;
+				a { color: $musiclaps-dark-gray !important; } // Changes "Register" link color so that it matches the rest of the links in the collapsed menu
 			}
-			&:last-child a { color: $musiclaps-dark-gray !important; } // Changes "Register" link color so that it's visible and matches the rest of the links in the collapsed menu
 		}
 		ul.navbar-right#logged-in {
 			li#welcome-user { display: none; }
@@ -2635,11 +2633,9 @@ footer {
 		}
 		h4 { font-size: 12px; }
 	}
-	#all-music-page {
-		.col-xs-12.col-md-4 { 
-			padding-right: 0; 
-			h4, h5 { margin: 0; }
-		}
+	#all-music-page .col-xs-12.col-md-4 { 
+		padding-right: 0; 
+		h4, h5 { margin: 0; }
 	}
 	section#public-project-header h5, img#cover-song { margin-right: 38px !important; } // Aligns elements with Live Player
 	#about-me { border-top: none; }
@@ -2661,9 +2657,7 @@ footer {
 	}
 	.public-project-page.row.col-xs-12.col-md-3, .recommended.row.col-md-3, .youtube-page.row.col-md-3 { display: none; } // Project listings and "Recommended" box
 	#youtube-settings { margin-left: 0; }
-	section.projects-container.favorites-page:not(.first-listing) {
-		margin-left: 15px;
-	}
+	section.projects-container.favorites-page:not(.first-listing) { margin-left: 15px; }
 	footer {
 		.navbar-brand { position: absolute; }
 		.navbar-left, .navbar-right { margin-top: 50px; }
@@ -2738,9 +2732,7 @@ footer {
 
 	}
 	#all-music-page {
-		.ads-container {
-			img { display: none; }
-		}
+		.ads-container img { display: none; }
 		h1 { margin-top: 0; }
 		.col-xs-12.col-md-4 { 
 			padding-right: 15px; 
@@ -2768,13 +2760,11 @@ footer {
 	}
 	.profile-right-container, #new-project-page.row.col-xs-12.col-md-9, .projects-container.row.col-xs-12.col-md-9, 
 	.lyrics-project-container .row.col-xs-12.col-md-9, .lyrics-project-container .row.col-xs-12.col-md-3, 
-	#collaborators-page.row.col-xs-12.col-md-9, .youtube-page.row.col-xs-12.col-md-9, #groups-page.row.col-xs-12.col-md-9, 
-	.favorites-page.row.col-xs-12.col-md-9, #messages-page.row.col-xs-12.col-md-9 { margin-left: 0; } // Aligns with ".glyphicon-user"
+	#collaborators-page.row.col-xs-12.col-md-9, .youtube-page.row.col-xs-12.col-md-9, .groups-page.row.col-xs-12.col-md-9, 
+	.favorites-page.row.col-xs-12.col-md-9, #messages-page.row.col-xs-12.col-md-9 { margin-left: 0 !important; } // Aligns with ".glyphicon-user"
 	.profile-right-container {
 		padding-right: 15px;
-		section.profile-right.profile-page.public-profile-page {
-			margin-top: 15px;
-		}
+		section.profile-right.profile-page.public-profile-page { margin-top: 15px; }
 	}
 	#new-project-page.row.col-xs-12.col-md-9 { 
 		li { 
@@ -2801,18 +2791,16 @@ footer {
 }
 
 @media only screen and (max-width: 731px) {
-	.project-info-bar {
-		&.requesting-collab-page {
-			&.sm { display: none; }
-			&.xs {
-				display: block;
-				h4:not(.last-h4), .glyphicon-volume-up { margin-left: 5px; }
-				h4:not(.last-h4) { // Not "100"
-					font-size: 12px;
-					margin-left: 5px;
-				}
-				h5 { margin-left: 10px; }
+	.project-info-bar.requesting-collab-page {
+		&.sm { display: none; }
+		&.xs {
+			display: block;
+			h4:not(.last-h4), .glyphicon-volume-up { margin-left: 5px; }
+			h4:not(.last-h4) { // Not "100"
+				font-size: 12px;
+				margin-left: 5px;
 			}
+			h5 { margin-left: 10px; }
 		}
 	}
 }
@@ -2882,6 +2870,7 @@ footer {
 			label#name-label { margin-left: 0 !important; }
 		}
 	}
+	section.create-new-group-container select { @include form-fields-input(50%); } // "Select Sound"
 }
 
 @media only screen and (max-width: 496px) {
@@ -2919,9 +2908,7 @@ footer {
 
 @media only screen and (max-width: 447px) {
 // Breakpoint of "You can add up to 3 YouTube videos per project" (YouTube Page)
-	#info-below-youtube-player {
-		img { margin-top: 10px; }
-	}
+	#info-below-youtube-player img { margin-top: 10px; }
 }
 
 @media only screen and (max-width: 417px) {
@@ -2932,9 +2919,7 @@ footer {
 }
 
 @media only screen and (max-width: 399px) {
-	section.project-form-header, .project-info-bar { 
-		select { font-size: 11px; }
-	}
+	select { font-size: 11px; }
 	section.project-form-header {
 		h3 { margin-right: 0; } // For "Requesting Collab" page project listings
 		.glyphicon-lock { margin-right: 3px; }
@@ -2953,9 +2938,7 @@ footer {
 		height: 63.3px !important; // One-third the size of recommended height (620px)
 		width: 206.7px !important; // One-third the size of recommended width (190px)
 	}
-	ul#copyright-types-container {
-		height: 580px !important;
-	}
+	ul#copyright-types-container { height: 580px !important; }
 	section#messages-header button { 
 		float: none;
 		margin-bottom: 10px;
@@ -2968,4 +2951,5 @@ footer {
 			margin-top: 5px; 
 		}
 	}
+	.project-info-bar.groups-page select.project-type { margin-left: 10px; }
 }
