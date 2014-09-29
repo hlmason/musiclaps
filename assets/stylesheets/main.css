@@ -5397,4 +5397,21 @@ footer {
     width: 206.7px !important; }
 
   ul#copyright-types-container {
-    height: 580px !important; } }
+    height: 580px !important; }
+
+  section#messages-header button {
+    float: none;
+    margin-bottom: 10px;
+    margin-top: 0; }
+
+  .add-friend-container label, .add-friend-container input.add-friend-field {
+    float: left; }
+  .add-friend-container input.add-friend-field {
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    padding-top: 3px;
+    width: 100%;
+    margin-top: 5px; } }

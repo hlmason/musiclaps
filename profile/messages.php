@@ -31,7 +31,7 @@
 
 					<!-- Hidden upon page load -->
 					<div class="add-friend-container row col-xs-12" id="addFriendContainer">
-						<label id="add-friend-label" for="add_friend">Member's Username</label>
+						<label for="add_friend">Member's Username</label>
 						<input class="add-friend-field" id="add_friend" type="text" name="add_friend">
 						<input class="add-friend-submit" type="submit" value="Add">
 					</div>
