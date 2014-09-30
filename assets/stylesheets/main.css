@@ -5384,7 +5384,7 @@ footer {
     margin-left: 10px; } }
 @media only screen and (max-width: 399px) {
   section#username-and-number-of-songs h4, section#username-and-number-of-songs h5 {
-    margin-left: 20px !important; }
+    margin-left: 22px !important; }
 
   select {
     font-size: 11px; }
