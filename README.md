@@ -72,7 +72,7 @@ Elements/selectors tend to come in the order they appear in the markup; exceptio
 
 Properties are in alphabetical order, although it is of course not necessary to observe this.
 
-Comments have been applied liberally and may be outdated.
+Comments have been made liberally and may be outdated.
 
 =================================
 
