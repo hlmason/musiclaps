@@ -20,7 +20,7 @@ Macro Organization:
 
 HTML/PHP:
 
-The "include" folder contains files with snippets of code that have been 'included' (include(ROOT_PATH . 'include/...')) in other files.
+The "include/" folder contains files with snippets of code that have been 'included' (include(ROOT_PATH . 'include/...')) in other files.
 
 
 CSS/Sass, Javascript/jQuery:
