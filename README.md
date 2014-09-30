@@ -68,7 +68,7 @@ Media Queries
 
 Please continue to observe the above categories until a new system is implemented.
 
-Elements/selectors tend to come in the order they come in the markup; exceptions occur when one or more elements/selectors are grouped together.  
+Elements/selectors tend to come in the order they appear in the markup; exceptions occur when one or more elements/selectors are grouped together.  
 
 Properties are in alphabetical order, although it is not necessary to observe this.  
 
