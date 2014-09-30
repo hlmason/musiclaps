@@ -18,6 +18,11 @@ The app was originally built by a back-end engineer in an obscure language calle
 
 Macro Organization:
 
+HTML/PHP:
+
+The "include" folder contains files with snippets of code that have been 'included' (include(ROOT_PATH . 'include/...')) in other files.
+
+
 CSS/Sass, Javascript/jQuery:
 
 As in Rails projects, the "assets/" folder contains the CSS/Sass ("assets/stylesheets/"), Javascript/jQuery ("assets/javascripts/"), and image ("assets/images/") files.
@@ -30,17 +35,6 @@ The "assets/images/" folder also contains subfolders.
 
 The "assets/fonts/" folder contains Bootstrap glyphicon files.
 
-
-HTML/PHP:
-
-There are two versions of those files which have both logged in and logged out statuses; the difference between each status is only in the header (https://github.com/hlmason/musiclaps/issues/2).
-
-Many pages are organized as "index.php" files inside a root directory folder (https://github.com/hlmason/musiclaps/issues/3).
-
-In places where the front-end needs to be 'connected' to the back-end, "Placeholder" or "Hard-coded placeholder" has been inserted as a comment.  Please delete such comments once the back-end is 'connected'.
-
-The "include" folder contains files with snippets of code that have been 'included' in other files.
-
 =================================
 
 Micro Organization:
@@ -49,7 +43,7 @@ The "assets/stylesheets/_customized.bootstrap.min.scss" file is a customized Boo
 
 The "assets/javascripts/customized.bootstrap.min.js" file is a customized Bootstrap 3.2.0 file which includes dropdowns, modals, collapse, and transitions (Go to http://getbootstrap.com/customize/ and scroll down).
 
-Hand-coded CSS is in the "assets/stylesheets/main.scss" file.  The file is long and may need to be reorganized in the future.  The code is currently organized into the following categories:
+Hand-coded CSS (i.e. Bootstrap overrides) is in the "assets/stylesheets/main.scss" file.  The file is long and may need to be reorganized in the future.  The code is currently organized into the following categories:
 
 Variables<br>
 Mixins<br>
@@ -74,7 +68,11 @@ Media Queries
 
 Please continue to observe the above categories until a new system is implemented.
 
-Elements/selectors tend to come in the order they come in the markup; exceptions occur when one or more are grouped together.  Properties are in alphabetical order, although it is not necessary to observe this.  Comments have been applied liberally and may be outdated.
+Elements/selectors tend to come in the order they come in the markup; exceptions occur when one or more elements/selectors are grouped together.  
+
+Properties are in alphabetical order, although it is not necessary to observe this.  
+
+Comments have been applied liberally and may be outdated.
 
 =================================
 
