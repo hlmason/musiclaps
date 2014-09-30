@@ -5383,6 +5383,9 @@ footer {
   h2#user-id, h4.edit-profile, h4.save-profile {
     margin-left: 10px; } }
 @media only screen and (max-width: 399px) {
+  section#username-and-number-of-songs h4, section#username-and-number-of-songs h5 {
+    margin-left: 20px !important; }
+
   select {
     font-size: 11px; }
 
