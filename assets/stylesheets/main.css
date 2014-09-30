@@ -3039,7 +3039,7 @@ nav ul.nav {
     text-transform: uppercase; }
     nav ul.nav a:hover, nav ul.nav a:focus, nav ul.nav a.active {
       color: #38aaff !important; }
-    nav ul.nav a:not(#welcome-user-link) {
+    nav ul.nav a:not(.welcome-user-link) {
       padding: 15px; }
 nav ul.navbar-left > li {
   border-left: 1px solid #cecece; }
@@ -3107,14 +3107,16 @@ nav ul.navbar-right#logged-out li {
       background-color: #45B7FF; }
     nav ul.navbar-right#logged-out li:last-child a {
       color: white !important; }
-nav ul.navbar-right li#welcome-user {
+nav ul.navbar-right li#welcome-user-sm, nav li#welcome-user-xs {
   margin-right: 10px;
   margin-top: 28px !important; }
-  nav ul.navbar-right li#welcome-user a {
+  nav ul.navbar-right li#welcome-user-sm a, nav li#welcome-user-xs a {
     color: #1F91E6 !important;
     text-transform: initial; }
-    nav ul.navbar-right li#welcome-user a:hover, nav ul.navbar-right li#welcome-user a:focus {
+    nav ul.navbar-right li#welcome-user-sm a:hover, nav ul.navbar-right li#welcome-user-sm a:focus, nav li#welcome-user-xs a:hover, nav li#welcome-user-xs a:focus {
       color: #444444 !important; }
+nav li#welcome-user-xs {
+  display: none; }
 
 /* ==========================================
     Nav below top nav / collapsed "User Menu"
@@ -5021,10 +5023,19 @@ footer {
     padding-bottom: 10px; }
     nav ul.navbar-right#logged-out li:last-child a {
       color: #444444 !important; }
-  nav ul.navbar-right#logged-in li#welcome-user {
+  nav ul.navbar-right#logged-in li#welcome-user-sm {
     display: none; }
+  nav ul.navbar-right#logged-in li#welcome-user-xs {
+    display: block;
+    padding-left: 10px;
+    margin-bottom: 17px;
+    margin-left: 12px;
+    margin-top: 0 !important; }
+    nav ul.navbar-right#logged-in li#welcome-user-xs a.welcome-user-link {
+      margin-left: 0;
+      padding-left: 0 !important; }
   nav ul.navbar-right#logged-in li#log-out {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     margin-top: 15px; }
     nav ul.navbar-right#logged-in li#log-out input {
       border: none;

@@ -345,7 +345,7 @@ nav {
 				&:hover, &:focus, &.active {
 					color: $musiclaps-blue !important;
 				}
-				&:not(#welcome-user-link) {
+				&:not(.welcome-user-link) {
 					padding: 15px;	
 				}
 			}
@@ -427,7 +427,7 @@ nav {
 			}
 		}
 	}
-	ul.navbar-right li#welcome-user {
+	ul.navbar-right li#welcome-user-sm, li#welcome-user-xs {
 		margin-right: 10px;
 		margin-top: 28px !important;
 		a {
@@ -437,6 +437,9 @@ nav {
 				color: $musiclaps-dark-gray !important;
 			}
 		}
+	}
+	li#welcome-user-xs {
+		display: none;
 	}
 }
 
@@ -2579,9 +2582,20 @@ footer {
 			}
 		}
 		ul.navbar-right#logged-in {
-			li#welcome-user { display: none; }
+			li#welcome-user-sm { display: none; }
+			li#welcome-user-xs { 
+				display: block;
+				padding-left: 10px;
+				margin-bottom: 17px;
+				margin-left: 12px;
+				margin-top: 0 !important;
+				a.welcome-user-link {
+					margin-left: 0; 
+					padding-left: 0 !important;
+				}
+			}
 			li#log-out {
-				margin-bottom: 12px;
+				margin-bottom: 15px;
 				margin-top: 15px; // Gives "Log Out" link on collapsed menu approximately the same top spacing as other nav links
 				input { // "Log out" link
 					border: none;
