@@ -20,7 +20,7 @@ Macro Organization:
 
 HTML/PHP:
 
-The "include" folder contains files with snippets of code that have been 'included' (include(ROOT_PATH . 'include/...')) in other files.
+The "include/" folder contains files with snippets of code that have been 'included' (include(ROOT_PATH . 'include/...')) in other files.
 
 
 CSS/Sass, Javascript/jQuery:
@@ -68,9 +68,9 @@ Media Queries
 
 Please continue to observe the above categories until a new system is implemented.
 
-Elements/selectors tend to come in the order they come in the markup; exceptions occur when one or more elements/selectors are grouped together.  
+Elements/selectors tend to come in the order they appear in the markup; exceptions occur when one or more elements/selectors are grouped together.  In almost all cases, selectors include element names - despite being unnecessary - to make it easier to identify the context.
 
-Properties are in alphabetical order, although it is not necessary to observe this.  
+Properties are in alphabetical order, although it is of course not necessary to observe this.
 
 Comments have been applied liberally and may be outdated.
 
