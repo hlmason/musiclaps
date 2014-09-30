@@ -16,9 +16,11 @@ $(document).ready(function() {
 		}		
 	});
 
-	myProjectsDropdownMenu.mouseleave (function() { // Makes dropdown menu go away without having to click
-		myProjectsCaret.removeClass('upside-down');
-		myProjectsDropdownMenu.hide();		
+	myProjectsDropdownMenu.mouseleave (function() { // Makes dropdown menu go away without having to click.  Note: not implemented for collapsed menu - poor UX
+		if ($(window).width() > 991) {
+			myProjectsCaret.removeClass('upside-down');
+			myProjectsDropdownMenu.hide();
+		}	
 	});
 	
 	$('a#inProgressPrivateLink').on('click', function() {
@@ -54,9 +56,11 @@ $(document).ready(function() {
 		}		
 	});
 
-	collaborationsDropdownMenu.mouseleave (function() { // Makes dropdown menu go away without having to click
-		collaborationsCaret.removeClass('upside-down');
-		collaborationsDropdownMenu.hide();		
+	collaborationsDropdownMenu.mouseleave (function() { // Makes dropdown menu go away without having to click.  Note: not implemented for collapsed menu - poor UX
+		if ($(window).width() > 991) {
+			collaborationsCaret.removeClass('upside-down');
+			collaborationsDropdownMenu.hide();
+		}	
 	});
 	
 	$('a#openCollabLink').on('click', function() {
