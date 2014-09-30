@@ -20,34 +20,36 @@ Macro Organization:
 
 CSS/Sass, Javascript/jQuery:
 
-	As in Rails projects, the "assets/" folder contains the CSS/Sass ("assets/stylesheets/"), Javascript/jQuery ("assets/javascripts/"), and image ("assets/images/") files.
+As in Rails projects, the "assets/" folder contains the CSS/Sass ("assets/stylesheets/"), Javascript/jQuery ("assets/javascripts/"), and image ("assets/images/") files.
 
-	Note that the "walkthrough/" folder contains a separate "assets/" folder.  The "walkthrough/" folder was created by a second front-end development contractor using Adobe Captivate and does not visually or organizationally match the rest of the project with the exception of the "include/header.php" and "include/footer.php" files.
+Note that the "walkthrough/" folder contains a separate "assets/" folder.  The "walkthrough/" folder was created by a second front-end development contractor using Adobe Captivate and does not visually or organizationally match the rest of the project with the exception of the "include/header.php" and "include/footer.php" files.
 
-	The "assets/javascripts/" folder contains a subfolder called "profile/"; this folder correlates with the root directory "profile/" folder.
+The "assets/javascripts/" folder contains a subfolder called "profile/"; this folder correlates with the root directory "profile/" folder.
 
-	The "assets/images/" folder also contains subfolders.
+The "assets/images/" folder also contains subfolders.
 
-	The "assets/fonts/" folder contains Bootstrap glyphicon files.
+The "assets/fonts/" folder contains Bootstrap glyphicon files.
 
 
 HTML/PHP:
 
-	There are two versions of those files which have both logged in and logged out statuses; the difference between each status is only in the header.  This will be logged under GitHub issues to be refactored.
+There are two versions of those files which have both logged in and logged out statuses; the difference between each status is only in the header (https://github.com/hlmason/musiclaps/issues/2).
 
-	Many pages are organized as "index.php" files inside a root directory folder.  This will also be logged under GitHub issues so that proper routing can be implemented.
+Many pages are organized as "index.php" files inside a root directory folder (https://github.com/hlmason/musiclaps/issues/3).
 
-	In places where the front-end needs to be 'connected' to the back-end, "Placeholder" or "Hard-coded placeholder" has been inserted as a comment.  Please delete such comments once the back-end is 'connected'.
+In places where the front-end needs to be 'connected' to the back-end, "Placeholder" or "Hard-coded placeholder" has been inserted as a comment.  Please delete such comments once the back-end is 'connected'.
+
+The "include" folder contains files with snippets of code that have been 'included' in other files.
 
 =================================
 
 Micro Organization:
 
-The "assets/stylesheets/_customized.bootstrap.min.scss" file is a customized Bootstrap 3.2.0 file which includes grid system, forms, glyphicons, navs, navbar, progress bars, component animations, dropdown, and modals (http://getbootstrap.com/customize/).
+The "assets/stylesheets/_customized.bootstrap.min.scss" file is a customized Bootstrap 3.2.0 file which includes grid system, forms, glyphicons, navs, navbar, progress bars, component animations, dropdowns, and modals (http://getbootstrap.com/customize/).
 
 The "assets/javascripts/customized.bootstrap.min.js" file is a customized Bootstrap 3.2.0 file which includes dropdowns, modals, collapse, and transitions (Go to http://getbootstrap.com/customize/ and scroll down).
 
-Custom CSS is in the "assets/stylesheets/main.scss" file.  The file is long and may need to be reorganized in the future.  The code is currently organized into the following categories:
+Hand-coded CSS is in the "assets/stylesheets/main.scss" file.  The file is long and may need to be reorganized in the future.  The code is currently organized into the following categories:
 
 Variables<br>
 Mixins<br>
