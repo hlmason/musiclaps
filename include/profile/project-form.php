@@ -42,51 +42,67 @@
 	?>
 	<!-- End of volume and pan -->
 
-	<form id="project-form">
-		<div class="row col-xs-12">
+	<div class="row col-xs-12">
+		<form class="project-form" action="process.php" method="post">
 			<label for="project_title_project_form">Project Title
 				<input class="save" type="submit" value="Save">
 			</label>
 			<input id="project_title_project_form" type="text" name="project_title_project_form">
-		</div>
+		</form>
+	</div>
 
-		<div class="row col-xs-12">
+	<div class="row col-xs-12">
+		<form class="project-form" action="process.php" method="post">
 			<label id="cover-song-label" for="cover_song">Cover Song
 				<input class="cover-song-checkbox" type="checkbox" name="arrangement">
 				<input class="save" type="submit" value="Save">
 			</label>
 			<input id="cover_song" type="text" name="cover_song" placeholder="Please credit the songwriter if it is not you.">
-		</div>
+		</form>
+	</div>
 
-		<div class="row col-xs-12">
+	<div class="row col-xs-12">
+		<form class="project-form" action="process.php" method="post">
 			<label for="description">Description
 				<input class="save" type="submit" value="Save">
 			</label>
 			<textarea id="description" name="description" placeholder="If you are requesting collaboration, you can mention which instrument(s) here."></textarea>
-		</div>
+		</form>
+	</div>
 
-		<label for="genre">Genre <span class="normal">(select one or more)</span></label>
-		<div id="genre-form-projects">
-			<!-- Genre form -->
-			<?php
-				include(ROOT_PATH . 'include/profile/genre-form.php');
-			?>
-		<!-- End of genre form -->
+	<div class="row col-xs-12">
+		<form class="project-form" action="process.php" method="post">
+			<label for="genre">Genre <span class="normal">(select one or more)</span>
+				<input class="save" id="save-genre" type="submit" value="Save">
+			</label>
+			<div id="genre-form-projects">
+				<!-- Genre form -->
+				<?php
+					include(ROOT_PATH . 'include/profile/genre-form.php');
+				?>
+			<!-- End of genre form -->
+		</form>
+	</div>
 
-		<div class="row col-xs-12">
+	<div class="row col-xs-12">
+		<form class="project-form" action="process.php" method="post">
 			<label for="search_tags">Search Tags
 				<input class="save" type="submit" value="Save">
 			</label>
 			<textarea id="search_tags" name="search_tags" placeholder="Examples: Song Title, Genre, etc."></textarea>
-		</div>
+		</form>
+	</div>
 
-		<div class="row col-xs-12">
+	<div class="row col-xs-12">
+		<form class="project-form" action="process.php" method="post">
 			<label for="scrolling_comment">Scrolling Comment
 				<input class="save" type="submit" value="Save">
 			</label>
 			<textarea id="scrolling_comment" name="scrolling_comment"></textarea>
-		</div>
+		</form>
+	</div>
 
+	<form class="project-form" action="process.php" method="post">
 		<div class="row col-xs-12">
 			<label for="stage_background_img">Stage Background Image <span class="normal">(620w x 190h recommended)</span>
 			</label>
@@ -109,7 +125,9 @@
 				</div>
 			</div>
 		</div>
+	</form>
 
+	<form class="project-form" action="process.php" method="post">
 		<section class="row col-xs-12">
 			<h4 id="type-of-collab">Type of Collaboration</h4>
 		</section>
@@ -131,7 +149,9 @@
 				</div>
 			</div>
 		</div>
+	</form>
 
+	<form class="project-form" action="process.php" method="post">
 		<section class="row col-xs-12">
 			<h4 id="copyright">Copyright <span class="normal">(original songs only)</h4>
 			<h4 class="red"><strong>Creative Commons licenses are irrevocable

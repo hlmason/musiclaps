@@ -1509,8 +1509,8 @@ section.projects-container.favorites-page {
 	margin-top: 15px;
 }
 
-section.project-form-header, .project-info-bar, .volume-and-pan, form#project-form, section.create-new-group-container {
-	.glyphicon:not(.glyphicon-volume-up), select.project-type, input.save-volume-and-pan, input.save, input.save-volume {
+section.project-form-header, .project-info-bar, .volume-and-pan, form.project-form, section.create-new-group-container {
+	.glyphicon:not(.glyphicon-volume-up), select.project-type, input.save-volume-and-pan, input.save:not(#save-genre), input.save-volume {
 		float: right;
 	}
 }
@@ -1628,9 +1628,9 @@ section.project-form-header {
 	}
 }
 
-form#project-form {
+form.project-form {
 	label {
-		@include form-fields-label(25px);
+		@include form-fields-label(15px);
 		width: 100%;
 		h4 {
 			margin-bottom: 0;
@@ -1642,6 +1642,9 @@ form#project-form {
 	}
 	input.save {
 		@include submit-save-blue;
+		&#save-genre {
+			margin-left: 49px;
+		}
 	}
 	input.cover-song-checkbox {
 		display: inline-block;

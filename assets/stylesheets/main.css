@@ -4042,7 +4042,7 @@ section.projects-container.favorites-page {
 .live-player-container, .project-info-bar {
   margin-top: 15px; }
 
-section.project-form-header .glyphicon:not(.glyphicon-volume-up), section.project-form-header select.project-type, section.project-form-header input.save-volume-and-pan, section.project-form-header input.save, section.project-form-header input.save-volume, .project-info-bar .glyphicon:not(.glyphicon-volume-up), .project-info-bar select.project-type, .project-info-bar input.save-volume-and-pan, .project-info-bar input.save, .project-info-bar input.save-volume, .volume-and-pan .glyphicon:not(.glyphicon-volume-up), .volume-and-pan select.project-type, .volume-and-pan input.save-volume-and-pan, .volume-and-pan input.save, .volume-and-pan input.save-volume, form#project-form .glyphicon:not(.glyphicon-volume-up), form#project-form select.project-type, form#project-form input.save-volume-and-pan, form#project-form input.save, form#project-form input.save-volume, section.create-new-group-container .glyphicon:not(.glyphicon-volume-up), section.create-new-group-container select.project-type, section.create-new-group-container input.save-volume-and-pan, section.create-new-group-container input.save, section.create-new-group-container input.save-volume {
+section.project-form-header .glyphicon:not(.glyphicon-volume-up), section.project-form-header select.project-type, section.project-form-header input.save-volume-and-pan, section.project-form-header input.save:not(#save-genre), section.project-form-header input.save-volume, .project-info-bar .glyphicon:not(.glyphicon-volume-up), .project-info-bar select.project-type, .project-info-bar input.save-volume-and-pan, .project-info-bar input.save:not(#save-genre), .project-info-bar input.save-volume, .volume-and-pan .glyphicon:not(.glyphicon-volume-up), .volume-and-pan select.project-type, .volume-and-pan input.save-volume-and-pan, .volume-and-pan input.save:not(#save-genre), .volume-and-pan input.save-volume, form.project-form .glyphicon:not(.glyphicon-volume-up), form.project-form select.project-type, form.project-form input.save-volume-and-pan, form.project-form input.save:not(#save-genre), form.project-form input.save-volume, section.create-new-group-container .glyphicon:not(.glyphicon-volume-up), section.create-new-group-container select.project-type, section.create-new-group-container input.save-volume-and-pan, section.create-new-group-container input.save:not(#save-genre), section.create-new-group-container input.save-volume {
   float: right; }
 
 section.project-form-header .glyphicon, .project-info-bar .glyphicon, .volume-and-pan .glyphicon, #save-stage-background-img-and-trash-container .glyphicon {
@@ -4130,14 +4130,14 @@ section.project-form-header.requesting-collab-page .glyphicon-repeat {
   .volume-and-pan h4.left-to-right {
     margin-left: 70px; }
 
-form#project-form label {
+form.project-form label {
   margin-bottom: 2px;
-  margin-top: 25px;
+  margin-top: 15px;
   width: 100%; }
-  form#project-form label h4 {
+  form.project-form label h4 {
     margin-bottom: 0;
     margin-top: 0; }
-form#project-form input#project_title_project_form, form#project-form input#cover_song, form#project-form textarea {
+form.project-form input#project_title_project_form, form.project-form input#cover_song, form.project-form textarea {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -4145,7 +4145,7 @@ form#project-form input#project_title_project_form, form#project-form input#cove
   padding-left: 8px;
   padding-top: 3px;
   width: 100%; }
-form#project-form input.save {
+form.project-form input.save {
   -moz-border-radius: 2px;
   border-radius: 2px;
   background-color: #38aaff;
@@ -4155,50 +4155,52 @@ form#project-form input.save {
   font-weight: normal;
   font-size: 12px;
   text-transform: uppercase; }
-  form#project-form input.save:hover, form#project-form input.save:focus {
+  form.project-form input.save:hover, form.project-form input.save:focus {
     background-color: #45b7ff; }
-form#project-form input.cover-song-checkbox {
+  form.project-form input.save#save-genre {
+    margin-left: 49px; }
+form.project-form input.cover-song-checkbox {
   display: inline-block;
   margin-left: 2px; }
-form#project-form #description {
+form.project-form #description {
   min-height: 142px; }
-form#project-form #no-img-container {
+form.project-form #no-img-container {
   background-color: #e7e7e7;
   color: #777;
   height: 80px;
   text-align: center;
   width: 310px; }
-  form#project-form #no-img-container h2 {
+  form.project-form #no-img-container h2 {
     margin-top: 0;
     padding-top: 20px; }
-form#project-form #upload-stage-background-img-container {
+form.project-form #upload-stage-background-img-container {
   border-bottom: 1px solid #cecece;
   border-top: 1px solid #cecece; }
-  form#project-form #upload-stage-background-img-container input.choose-file, form#project-form #upload-stage-background-img-container span, form#project-form #upload-stage-background-img-container #save-stage-background-img-and-trash-container {
+  form.project-form #upload-stage-background-img-container input.choose-file, form.project-form #upload-stage-background-img-container span, form.project-form #upload-stage-background-img-container #save-stage-background-img-and-trash-container {
     margin-top: 10px; }
-  form#project-form #upload-stage-background-img-container input.save-stage-background-img {
+  form.project-form #upload-stage-background-img-container input.save-stage-background-img {
     margin-bottom: 10px; }
-form#project-form h4#type-of-collab, form#project-form h4#copyright, form#project-form h4.red {
+form.project-form h4#type-of-collab, form.project-form h4#copyright, form.project-form h4.red {
   padding-bottom: 5px;
   padding-left: 10px;
   padding-top: 5px; }
-form#project-form h4#type-of-collab, form#project-form h4#copyright {
+form.project-form h4#type-of-collab, form.project-form h4#copyright {
   background-color: #e7e7e7;
   border: 1px solid #cecece;
   margin-bottom: 0;
   margin-top: 35px; }
-form#project-form h4.red {
+form.project-form h4.red {
   color: red;
   margin-bottom: 0;
   margin-top: 0; }
-form#project-form h4.red, form#project-form .type-of-collab-container, form#project-form ul#copyright-types-container {
+form.project-form h4.red, form.project-form .type-of-collab-container, form.project-form ul#copyright-types-container {
   border-bottom: 1px solid #cecece;
   border-left: 1px solid #cecece;
   border-right: 1px solid #cecece; }
-form#project-form .type-of-collab-container {
+form.project-form .type-of-collab-container {
   height: 36px;
   text-align: center; }
-  form#project-form .type-of-collab-container button {
+  form.project-form .type-of-collab-container button {
     -moz-border-radius: 10px;
     border-radius: 10px;
     background-color: #f4f4f4;
@@ -4208,33 +4210,33 @@ form#project-form .type-of-collab-container {
     letter-spacing: 0.5px;
     padding: 6px 10px;
     margin-top: 3px; }
-    form#project-form .type-of-collab-container button:hover {
+    form.project-form .type-of-collab-container button:hover {
       background-color: #444;
       color: #38aaff; }
-form#project-form ul#copyright-types-container {
+form.project-form ul#copyright-types-container {
   height: 377px;
   margin-top: 0;
   padding-left: 15px; }
-  form#project-form ul#copyright-types-container li:first-child {
+  form.project-form ul#copyright-types-container li:first-child {
     margin-top: 10px; }
-  form#project-form ul#copyright-types-container li:not(.first-list-item) {
+  form.project-form ul#copyright-types-container li:not(.first-list-item) {
     margin-top: 15px; }
-  form#project-form ul#copyright-types-container li img {
+  form.project-form ul#copyright-types-container li img {
     margin-left: 15px; }
-    form#project-form ul#copyright-types-container li img img#all-rights-reserved {
+    form.project-form ul#copyright-types-container li img img#all-rights-reserved {
       height: 32px;
       width: 32px; }
-    form#project-form ul#copyright-types-container li img:not(#all-rights-reserved) {
+    form.project-form ul#copyright-types-container li img:not(#all-rights-reserved) {
       height: 31px;
       width: 88px; }
-  form#project-form ul#copyright-types-container li h4 {
+  form.project-form ul#copyright-types-container li h4 {
     display: inline-block;
     font-weight: normal;
     margin-bottom: 0;
     margin-top: 0; }
-    form#project-form ul#copyright-types-container li h4.first-h4 {
+    form.project-form ul#copyright-types-container li h4.first-h4 {
       margin-left: 70px; }
-    form#project-form ul#copyright-types-container li h4:not(.first-h4) {
+    form.project-form ul#copyright-types-container li h4:not(.first-h4) {
       margin-left: 15px; }
 
 #upload-stage-background-img-container input.choose-file, #upload-stage-background-img-container span, #upload-stage-background-img-container input.save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-sound-img-container input.choose-file, section.change-sound-img-container span, section.change-sound-img-container input.save-stage-background-img, section.change-sound-img-container input.update-file {
