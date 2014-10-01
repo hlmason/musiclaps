@@ -483,6 +483,9 @@ nav {
 						background-color: white; // Same as active
 					}
 				}
+				 &.active { 
+ 					background-color: white; // Removes hover background color (#f4f4f4) on active tab
+ 				}
 			}
 			&#new-project, &#my-projects, &#collaborations {
 				a:not(.dropdown-menu-link) { 

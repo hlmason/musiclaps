@@ -3152,6 +3152,8 @@ ul.user-menu li:not(.dropdown-menu-list-item) {
       background-color: #f4f4f4; }
     ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):not(.active):hover, ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):not(.active):focus {
       background-color: white; }
+    ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link).active {
+      background-color: white; }
   ul.user-menu li:not(.dropdown-menu-list-item)#new-project a:not(.dropdown-menu-link), ul.user-menu li:not(.dropdown-menu-list-item)#my-projects a:not(.dropdown-menu-link), ul.user-menu li:not(.dropdown-menu-list-item)#collaborations a:not(.dropdown-menu-link) {
     padding: 14px 11px 12px 12px; }
 
