@@ -39,6 +39,8 @@ The "assets/fonts/" folder contains Bootstrap glyphicon files.
 
 Micro Organization:
 
+As a general rule in this project, CSS/Sass variables contain dashes, Javascript/jQuery variables are in camel case, and PHP variables contain underscores.
+
 The "assets/stylesheets/_customized.bootstrap.min.scss" file is a customized Bootstrap 3.2.0 file which includes grid system, forms, glyphicons, navs, navbar, progress bars, component animations, dropdowns, and modals (http://getbootstrap.com/customize/).
 
 The "assets/javascripts/customized.bootstrap.min.js" file is a customized Bootstrap 3.2.0 file which includes dropdowns, modals, collapse, and transitions (Go to http://getbootstrap.com/customize/ and scroll down).
