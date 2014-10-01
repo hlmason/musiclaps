@@ -10,11 +10,9 @@
 				<h4>R</h4>
 
 				<span class="glyphicon glyphicon-save"></span>
-				<input class="save-volume-and-pan" type="submit" value="Save">
+				<input class="save-volume-and-pan" type="submit" name="save_volume_and_pan" value="Save">
 			</div>
-		</form>
-
-		<form class="project-form" action="process.php" method="post">	
+			
 			<div class="volume-and-pan xs"><!-- Only visible at viewport widths <= 580px -->
 				<div>
 					<span class="glyphicon glyphicon-volume-up"></span>
@@ -30,7 +28,7 @@
 
 				<div>
 					<span class="glyphicon glyphicon-save"></span>
-					<input class="save-volume-and-pan" type="submit" value="Save">
+					<input class="save-volume-and-pan" type="submit" name="save_volume_and_pan" value="Save">
 				</div>
 			</div>
 		</form>

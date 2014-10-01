@@ -1637,7 +1637,7 @@ form.project-form {
 			margin-top: 0;
 		}
 	}
-	input#project_title_project_form, input#cover_song, textarea {
+	input#project_title_project_form, input#credit_cover_song, textarea {
 		@include form-fields-input(100%);
 	}
 	input.save {

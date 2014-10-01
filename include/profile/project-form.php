@@ -11,7 +11,7 @@
 		<h3>Project Title</h3><!-- Hard-coded placeholder -->
 		<!-- Markup is backwards because elements are floated right -->
 		<span class="glyphicon glyphicon-trash"></span>
-		<select class="project-type">
+		<select class="project-type" name="project_type">
 			<option value="private">Private</option>
 			<option value="public">Public</option>
 			<option value="group">Group</option>
@@ -45,7 +45,7 @@
 	<div class="row col-xs-12">
 		<form class="project-form" action="process.php" method="post">
 			<label for="project_title_project_form">Project Title
-				<input class="save" type="submit" value="Save">
+				<input class="save" type="submit" name="save_project_title_project_form" value="Save">
 			</label>
 			<input id="project_title_project_form" type="text" name="project_title_project_form">
 		</form>
@@ -53,18 +53,18 @@
 
 	<div class="row col-xs-12">
 		<form class="project-form" action="process.php" method="post">
-			<label id="cover-song-label" for="cover_song">Cover Song
-				<input class="cover-song-checkbox" type="checkbox" name="arrangement">
-				<input class="save" type="submit" value="Save">
+			<label id="cover-song-label">Cover Song
+				<input class="cover-song-checkbox" type="checkbox" name="cover_song">
+				<input class="save" type="submit" name="save_cover_song" value="Save">
 			</label>
-			<input id="cover_song" type="text" name="cover_song" placeholder="Please credit the songwriter if it is not you.">
+			<input id="credit_cover_song" type="text" name="credit_cover_song" placeholder="Please credit the songwriter if it is not you.">
 		</form>
 	</div>
 
 	<div class="row col-xs-12">
 		<form class="project-form" action="process.php" method="post">
 			<label for="description">Description
-				<input class="save" type="submit" value="Save">
+				<input class="save" type="submit" name="save_description" value="Save">
 			</label>
 			<textarea id="description" name="description" placeholder="If you are requesting collaboration, you can mention which instrument(s) here."></textarea>
 		</form>
@@ -73,7 +73,7 @@
 	<div class="row col-xs-12">
 		<form class="project-form" action="process.php" method="post">
 			<label for="genre">Genre <span class="normal">(select one or more)</span>
-				<input class="save" id="save-genre" type="submit" value="Save">
+				<input class="save" id="save-genre" type="submit" name="save_genre" value="Save">
 			</label>
 			<div id="genre-form-projects">
 				<!-- Genre form -->
@@ -87,7 +87,7 @@
 	<div class="row col-xs-12">
 		<form class="project-form" action="process.php" method="post">
 			<label for="search_tags">Search Tags
-				<input class="save" type="submit" value="Save">
+				<input class="save" type="submit" name="save_search_tags" value="Save">
 			</label>
 			<textarea id="search_tags" name="search_tags" placeholder="Examples: Song Title, Genre, etc."></textarea>
 		</form>
@@ -96,7 +96,7 @@
 	<div class="row col-xs-12">
 		<form class="project-form" action="process.php" method="post">
 			<label for="scrolling_comment">Scrolling Comment
-				<input class="save" type="submit" value="Save">
+				<input class="save" type="submit" name="save_scrolling_comment" value="Save">
 			</label>
 			<textarea id="scrolling_comment" name="scrolling_comment"></textarea>
 		</form>
@@ -116,9 +116,9 @@
 				</div>
 				<div class="col-xs-12 col-sm-6">
 					<div id="upload-stage-background-img-container">
-						<input class="choose-file" id="choose_stage_background_img" type="submit" value="Choose File">&nbsp; <span>No file chosen</span>
+						<input class="choose-file" id="choose_stage_background_img" type="submit" name="save_choose_stage_background_img" value="Choose File">&nbsp; <span>No file chosen</span>
 						<div id="save-stage-background-img-and-trash-container">
-							<input class="save-stage-background-img" type="submit" value="Save">
+							<input class="save-stage-background-img" type="submit" name="save_stage_background_img" value="Save">
 							<span class="glyphicon glyphicon-trash"></span>
 						</div>
 					</div>

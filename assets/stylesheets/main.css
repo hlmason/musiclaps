@@ -4137,7 +4137,7 @@ form.project-form label {
   form.project-form label h4 {
     margin-bottom: 0;
     margin-top: 0; }
-form.project-form input#project_title_project_form, form.project-form input#cover_song, form.project-form textarea {
+form.project-form input#project_title_project_form, form.project-form input#credit_cover_song, form.project-form textarea {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
