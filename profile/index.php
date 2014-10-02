@@ -26,10 +26,12 @@
 							<a>
 								<h4 class="edit-profile" id="editProfile"><span class="glyphicon glyphicon-edit"></span>&nbsp; Edit Profile</h4>
 							</a>
-							<h4 class="save-profile" id="saveProfile">
-								<span class="glyphicon glyphicon-save"></span>
-								<input type="submit" value="Save"> | &nbsp;
-							</h4>
+							<form class="profile-page" action="<?php echo BASE_URL; ?>controllers/process-profile.php" method="post">
+								<h4 class="save-profile" id="saveProfile">
+									<span class="glyphicon glyphicon-save"></span>
+									<input type="submit" value="Save"> | &nbsp;
+								</h4>
+							</form>
 							<a>
 								<h4 class="dont-save-profile" id="dontSaveProfile">Don't Save &nbsp;<span class="glyphicon glyphicon-remove-circle"></span></h4>
 							</a>

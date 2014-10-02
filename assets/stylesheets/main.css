@@ -3741,17 +3741,20 @@ section#messages-header button, section#groups-header button {
     margin-top: 8px; }
   #avatar-n-edit-profile #edit-save-profile h4.edit-profile {
     margin-bottom: 0; }
+  #avatar-n-edit-profile #edit-save-profile form.profile-page {
+    display: inline-block; }
+    #avatar-n-edit-profile #edit-save-profile form.profile-page h4.save-profile input {
+      background: none;
+      border: none;
+      color: #428bca;
+      font-weight: bold;
+      padding-left: 2px; }
+      #avatar-n-edit-profile #edit-save-profile form.profile-page h4.save-profile input:hover, #avatar-n-edit-profile #edit-save-profile form.profile-page h4.save-profile input:focus {
+        color: #2a6496; }
   #avatar-n-edit-profile #edit-save-profile h4.save-profile, #avatar-n-edit-profile #edit-save-profile h4.dont-save-profile {
     display: inline-block; }
   #avatar-n-edit-profile #edit-save-profile .glyphicon {
     color: #444444; }
-  #avatar-n-edit-profile #edit-save-profile h4.save-profile input {
-    background: none;
-    border: none;
-    color: #428bca;
-    font-weight: bold; }
-    #avatar-n-edit-profile #edit-save-profile h4.save-profile input:hover, #avatar-n-edit-profile #edit-save-profile h4.save-profile input:focus {
-      color: #2a6496; }
 
 #about-me {
   border-top: 1px solid #cecece;
