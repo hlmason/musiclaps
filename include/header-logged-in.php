@@ -95,7 +95,9 @@
 					</li>
 				</ul>
 
-				<span class="glyphicon glyphicon-search" id="glyphiconSearch"></span><input class="search" id="searchJS" type="text" name="search" placeholder="Search">
+				<form class="search" action="<?php echo BASE_URL; ?>controllers/process-search.php" method="get">
+					<span class="glyphicon glyphicon-search" id="glyphiconSearch"></span><input class="search" id="searchJS" type="text" name="search" placeholder="Search">
+				</form>
 				
 				<ul id="flags">
 					<li><a><img id="usa-flag" src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/usa-flag.jpg" alt="American flag"></a></li>

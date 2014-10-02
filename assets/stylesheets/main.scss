@@ -371,9 +371,12 @@ nav {
 			}
 		}
 	}
-	input.search {
-		@include form-fields-input(181px);
-		margin-left: 8px;
+	form.search {
+		display: inline-block;
+		input.search {
+			@include form-fields-input(181px);
+			margin-left: 8px;
+		}
 	}
 	.glyphicon-search {
 		cursor: pointer;
