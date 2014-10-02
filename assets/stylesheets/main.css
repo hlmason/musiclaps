@@ -5413,13 +5413,19 @@ footer {
   select {
     font-size: 11px; }
 
-  form.profile-page input#save_profile {
+  #edit-save-profile h4.save-profile {
+    margin-bottom: 5px; }
+  #edit-save-profile h4.dont-save-profile {
+    margin-left: 10px;
     margin-top: 0 !important; }
 
   #upload-avatar {
     border-bottom: none !important; }
     #upload-avatar ul {
       margin-left: 10px !important; }
+
+  form.profile-page input#save_profile {
+    margin-top: 0 !important; }
 
   section.project-form-header h3 {
     margin-right: 0; }
