@@ -3858,19 +3858,15 @@ form.profile-page input.change-password {
   margin-top: 49px;
   margin-left: 65px; }
 
-input.change-password, #choose-avatar-container input, #save-profile-container input, section#choose-project-img-container input,
-#choose-mp3-file-container input, #upload-project-container input {
+input.change-password, #save-profile-container input, #upload-project-container input {
   -moz-border-radius: 10px;
   border-radius: 10px; }
 
-input.change-password, #choose-avatar-container input, section#choose-project-img-container input,
-#choose-mp3-file-container input {
+input.change-password {
   background-color: #e7e7e7;
   border: 1px solid #cecece;
   padding: 3px 10px; }
-  input.change-password:hover, input.change-password:focus, #choose-avatar-container input:hover, #choose-avatar-container input:focus, section#choose-project-img-container input:hover, section#choose-project-img-container input:focus,
-  #choose-mp3-file-container input:hover,
-  #choose-mp3-file-container input:focus {
+  input.change-password:hover, input.change-password:focus {
     background-color: #d9d9d9; }
 
 #save-profile-container input, #upload-project-container input {
@@ -3881,7 +3877,7 @@ input.change-password, #choose-avatar-container input, section#choose-project-im
   #save-profile-container input:hover, #save-profile-container input:focus, #upload-project-container input:hover, #upload-project-container input:focus {
     background-color: #45b7ff; }
 
-#choose-avatar-container input, section#choose-project-img-container input, #choose-mp3-file-container input {
+#choose-avatar-container input, section#choose-project-img-container input, section#choose-mp3-file-container input {
   font-size: 12px; }
 
 #genre-form-profile, #skills, #genre-form-projects {
@@ -3921,7 +3917,7 @@ section.upload-mp3-container h4, section.upload-mp3-container h5 {
   margin-top: 5px; }
 section.upload-mp3-container h5, section.upload-mp3-container li {
   font-size: 12px; }
-section.upload-mp3-container ul, section.upload-mp3-container #choose-mp3-file-container {
+section.upload-mp3-container ul, section.upload-mp3-container section#choose-mp3-file-container {
   border-bottom: 1px solid #cecece;
   padding-bottom: 10px;
   padding-left: 0; }
@@ -3973,11 +3969,8 @@ section.upload-mp3-container label#project-title-label, section.upload-mp3-conta
   margin-top: 20px; }
 section.upload-mp3-container label#instruments-label {
   display: block; }
-section.upload-mp3-container section#choose-project-img-container, section.upload-mp3-container #choose-mp3-file-container {
-  vertical-align: middle;
-  width: 100%; }
-  section.upload-mp3-container section#choose-project-img-container span, section.upload-mp3-container #choose-mp3-file-container span {
-    font-size: 12px; }
+section.upload-mp3-container section#choose-project-img-container input, section.upload-mp3-container section#choose-mp3-file-container input {
+  margin-top: 5px; }
 section.upload-mp3-container #upload-project-container {
   margin-top: 30px;
   text-align: center; }
@@ -4132,7 +4125,7 @@ section.project-form-header.requesting-collab-page .glyphicon-repeat {
 
 form.project-form label {
   margin-bottom: 2px;
-  margin-top: 15px;
+  margin-top: 20px;
   width: 100%; }
   form.project-form label h4 {
     margin-bottom: 0;
@@ -4176,7 +4169,7 @@ form.project-form #no-img-container {
 form.project-form #upload-stage-background-img-container {
   border-bottom: 1px solid #cecece;
   border-top: 1px solid #cecece; }
-  form.project-form #upload-stage-background-img-container input.choose-file, form.project-form #upload-stage-background-img-container span, form.project-form #upload-stage-background-img-container #save-stage-background-img-and-trash-container {
+  form.project-form #upload-stage-background-img-container input.choose-file, form.project-form #upload-stage-background-img-container .glyphicon-trash, form.project-form #upload-stage-background-img-container #save-stage-background-img-and-trash-container {
     margin-top: 10px; }
   form.project-form #upload-stage-background-img-container input.save-stage-background-img {
     margin-bottom: 10px; }
@@ -4239,17 +4232,11 @@ form.project-form ul#copyright-types-container {
     form.project-form ul#copyright-types-container li h4:not(.first-h4) {
       margin-left: 15px; }
 
-#upload-stage-background-img-container input.choose-file, #upload-stage-background-img-container span, #upload-stage-background-img-container input.save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-sound-img-container input.choose-file, section.change-sound-img-container span, section.change-sound-img-container input.save-stage-background-img, section.change-sound-img-container input.update-file {
-  font-size: 12px; }
 #upload-stage-background-img-container input.choose-file, #upload-stage-background-img-container input.save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-sound-img-container input.choose-file, section.change-sound-img-container input.save-stage-background-img, section.change-sound-img-container input.update-file {
+  font-size: 12px; }
+#upload-stage-background-img-container input.save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-sound-img-container input.save-stage-background-img, section.change-sound-img-container input.update-file {
   -moz-border-radius: 10px;
   border-radius: 10px; }
-#upload-stage-background-img-container input.choose-file, section.change-sound-img-container input.choose-file {
-  background-color: #e7e7e7;
-  border: 1px solid #cecece;
-  padding: 3px 10px; }
-  #upload-stage-background-img-container input.choose-file:hover, #upload-stage-background-img-container input.choose-file:focus, section.change-sound-img-container input.choose-file:hover, section.change-sound-img-container input.choose-file:focus {
-    background-color: #d9d9d9; }
 #upload-stage-background-img-container input.save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-sound-img-container input.save-stage-background-img, section.change-sound-img-container input.update-file {
   background-color: #38aaff;
   border: 1px solid #38aaff;
@@ -4258,19 +4245,26 @@ form.project-form ul#copyright-types-container {
   #upload-stage-background-img-container input.save-stage-background-img:hover, #upload-stage-background-img-container input.save-stage-background-img:focus, #upload-stage-background-img-container input.update-file:hover, #upload-stage-background-img-container input.update-file:focus, section.change-sound-img-container input.save-stage-background-img:hover, section.change-sound-img-container input.save-stage-background-img:focus, section.change-sound-img-container input.update-file:hover, section.change-sound-img-container input.update-file:focus {
     background-color: #45b7ff; }
 
-section.change-sound-img-container .glyphicon-remove {
-  cursor: pointer; }
-  section.change-sound-img-container .glyphicon-remove:hover {
-    color: #555; }
-section.change-sound-img-container h4, section.change-sound-img-container input.update-file {
+section.change-sound-img-container form {
   display: inline-block;
-  margin-top: 10px; }
-section.change-sound-img-container h4 {
-  margin-left: 10px; }
-section.change-sound-img-container input.choose-file {
-  margin-left: 25px; }
-section.change-sound-img-container input.update-file {
-  float: right; }
+  width: 100%; }
+  section.change-sound-img-container form .glyphicon-remove {
+    cursor: pointer;
+    float: left !important;
+    margin-top: 12px; }
+    section.change-sound-img-container form .glyphicon-remove:hover {
+      color: #555; }
+  section.change-sound-img-container form h4, section.change-sound-img-container form input.update-file {
+    margin-top: 10px; }
+  section.change-sound-img-container form h4, section.change-sound-img-container form input[type="file"] {
+    display: inline-block; }
+  section.change-sound-img-container form h4 {
+    margin-left: 5px; }
+  section.change-sound-img-container form input.choose-file {
+    margin-left: 25px;
+    margin-top: 10px; }
+  section.change-sound-img-container form input.update-file {
+    float: right; }
 
 section#lyrics-settings-sm, section#lyrics-settings-xs {
   border: 1px solid #cecece;
@@ -5256,6 +5250,8 @@ footer {
     display: block; }
     #new-project-page.row.col-xs-12.col-md-9 li:not(.first-list-item) {
       padding-left: 5px; }
+  #new-project-page.row.col-xs-12.col-md-9 section#choose-project-img-container h5, #new-project-page.row.col-xs-12.col-md-9 section#choose-mp3-file-container h5 {
+    font-weight: normal; }
 
   section.projects-container h4, section.projects-container h5 {
     margin-bottom: 0; }
@@ -5312,7 +5308,18 @@ footer {
     ul#copyright-types-container img, ul#copyright-types-container h5 {
       margin-left: 5px !important; }
     ul#copyright-types-container h4 {
-      font-size: 12px; } }
+      font-size: 12px; }
+
+  section.change-sound-img-container h4, section.change-sound-img-container input {
+    display: block !important; }
+  section.change-sound-img-container h4 {
+    margin-bottom: 0;
+    margin-left: 18px !important; }
+  section.change-sound-img-container input.choose-file {
+    margin-left: 0 !important;
+    margin-top: 0; }
+  section.change-sound-img-container input.update-file {
+    float: none !important; } }
 @media only screen and (max-width: 580px) {
   h1.landing-page {
     font-size: 24px; }
@@ -5380,12 +5387,7 @@ footer {
 
   #info-below-youtube-player h4 {
     font-size: 12px; } }
-@media only screen and (max-width: 461px) {
-  #upload-avatar {
-    border-bottom: none !important; }
-    #upload-avatar ul {
-      margin-left: 10px; }
-
+@media only screen and (max-width: 459px) {
   .public-project-info.type-of-collab-container h5 {
     margin-top: 15px; } }
 @media only screen and (max-width: 447px) {
@@ -5406,6 +5408,11 @@ footer {
 
   form.profile-page input#save_profile {
     margin-top: 0 !important; }
+
+  #upload-avatar {
+    border-bottom: none !important; }
+    #upload-avatar ul {
+      margin-left: 10px !important; }
 
   section.project-form-header h3 {
     margin-right: 0; }

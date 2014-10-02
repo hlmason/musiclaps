@@ -1,5 +1,5 @@
 	<section class="row col-xs-12 volumeAndPan">
-		<form class="project-form" action="process.php" method="post">
+		<form class="project-form" action="<?php echo BASE_URL; ?>include/profile/process.php" method="post">
 			<div class="volume-and-pan sm"><!-- Only visible at viewport widths > 580px -->
 				<span class="glyphicon glyphicon-volume-up"></span>
 				<div class="slider"></div>
@@ -12,7 +12,7 @@
 				<span class="glyphicon glyphicon-save"></span>
 				<input class="save-volume-and-pan" type="submit" name="save_volume_and_pan" value="Save">
 			</div>
-			
+
 			<div class="volume-and-pan xs"><!-- Only visible at viewport widths <= 580px -->
 				<div>
 					<span class="glyphicon glyphicon-volume-up"></span>
