@@ -11,8 +11,7 @@
 			</div>
 			
 			<div class="modal-body" id="registration-full-modal-body">
-				<form>
-					
+				<form action="<?php echo BASE_URL; ?>controllers/process-registration.php" method="post">		
 					<div>
 						<label id="email-label" for="email"><span class="musiclaps-blue">*</span> Email Address</label>
 						<input id="email" type="email" name="email">
@@ -35,8 +34,9 @@
 					</div>
 
 					<div>
-						<label id="birth-date-label-modal" for="birth_date"><span class="musiclaps-blue">*</span> Birth Date</label>
-						<!-- Birth date form -->
+						<label id="birth-date-label-modal" for="birth_date_registration"><span class="musiclaps-blue">*</span> Birth Date</label>
+						<select class="birth-date-field" id="birth_date_registration">
+							<!-- Birth date form -->
 						<?php
 							include(ROOT_PATH . 'include/birth-date-form.php');
 						?>
@@ -44,7 +44,7 @@
 
 					<div>
 						<label id="gender-label" for="gender"><span class="musiclaps-blue">*</span> Gender</label>
-						<select>
+						<select id="gender">
 							<option value=""></option>
 							<option value="male">Male</option>
 							<option value="female">Female</option>
@@ -66,7 +66,6 @@
 					<div id="agree-checkbox">
 						<input type="checkbox" name="agree" value="agree">&nbsp; I agree to the Musiclaps <a href="<?php echo BASE_URL; ?>terms/" target="blank">Terms of Use</a> and <a href="<?php echo BASE_URL; ?>privacy/" target="blank">Privacy Policy</a>.
 					</div>
-
 				</form>
 			</div>
 			

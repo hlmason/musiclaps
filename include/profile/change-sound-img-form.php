@@ -1,6 +1,6 @@
 					<section class="row col-xs-12 change-sound-img-container changeSoundImgContainer">
 
-						<form action="<?php echo BASE_URL; ?>include/profile/process.php" method="post" enctype="multipart/form-data">
+						<form action="<?php echo BASE_URL; ?>controllers/process-sound-img.php" method="post" enctype="multipart/form-data">
 							<span class="glyphicon glyphicon-remove glyphiconRemove"></span>
 							<h4>Change Sound Image</h4>
 						

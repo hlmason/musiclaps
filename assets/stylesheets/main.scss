@@ -1275,7 +1275,7 @@ form.profile-page {
 	label {
 		@include form-fields-label(25px);
 	}
-	select#birth-date-field, input#zip { // Adds space btwn field and label. Should remain inside "form.profile-page"; otherwise it will affect modal fields
+	select.birth-date-field, input#zip { // Adds space btwn field and label. Should remain inside "form.profile-page"; otherwise it will affect modal fields
 		margin-left: 5px;
 	}
 	input#zip {
@@ -1836,10 +1836,10 @@ section#lyrics-container-header, #lyrics-container-form {
 	}
 }
 
-section#lyrics-container-header { // "Display Lyrics" and "Select Sound"
+section#lyrics-container-header { // "Display Lyrics" and "Select Project"
 	border: $nav-border;
 	margin-top: 15px;
-	h4 {
+	label {
 		margin-bottom: 3px;
 		margin-top: 0;
 	}
@@ -2082,11 +2082,8 @@ section.messages-container {
 			width: 90%;
 		}
 	}
-	h4 { // "Message to username"
-		display: inline-block;
-		margin-bottom: 5px;
-		margin-left: 2px;
-		margin-top: 0;
+	label { // "Message to username"
+		margin-left: 2px;	
 	}
 	textarea {
 		@include form-fields-input(100%);
@@ -2144,7 +2141,7 @@ section.create-new-group-container {
 		@include form-fields-input(50%);
 		margin-top: 15px;
 	}
-	select { // "Select Sound"
+	select { // "Select Project"
 		@include form-fields-input(25%);
 		margin-left: 5px;
 	}
@@ -2906,6 +2903,7 @@ footer {
 			margin-left: 26px;
 		}
 	}
+	#info-below-youtube-player h4 { margin-bottom: 5px; }
 	.youtube-page-form {
 		label { @include form-fields-label(10px); }
 		select, input#name { width: 100%; }
@@ -2916,7 +2914,7 @@ footer {
 			label#name-label { margin-left: 0 !important; }
 		}
 	}
-	section.create-new-group-container select { @include form-fields-input(50%); } // "Select Sound"
+	section.create-new-group-container select { @include form-fields-input(50%); } // "Select Project"
 }
 
 @media only screen and (max-width: 496px) {
@@ -2956,6 +2954,8 @@ footer {
 	// h1.landing-page { font-size: 18px; } // "Online Music Collaboration Made Simple"
 	h3.select-song-heading { font-size: 15px; }
 	h2#user-id, h4.edit-profile, h4.save-profile { margin-left: 10px; }
+	input.save#save-genre { float: right; margin-left: 0 !important; }
+	#genre-form-projects { width: 100%; }
 }
 
 @media only screen and (max-width: 399px) {

@@ -44,7 +44,7 @@
 							</li>
 						</ul>
 
-						<form action="<?php echo BASE_URL; ?>include/profile/process.php" method="post">
+						<form action="<?php echo BASE_URL; ?>controllers/process-mp3.php" method="post">
 							<section id="newProject">
 								<div class="row col-xs-12">
 									<label id="project-title-label" for="project_title_new_project">Project Title <span class="normal">(max 80 characters)</span></label>

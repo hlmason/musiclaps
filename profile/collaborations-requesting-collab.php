@@ -46,35 +46,37 @@
 						</section>
 						
 						<section class="row col-xs-12">
-							<div class="project-info-bar requesting-collab-page sm"><!-- Only visible at viewport widths > 731px -->
-								<h4 class="first-h4">$project #</h4><!-- Hard-coded placeholder -->
-								<h4>$instrument name</h4><!-- Hard-coded placeholder -->
-								<h5>$date project started</h5>
-								<span class="glyphicon glyphicon-volume-up"></span>
-								<div class="slider"></div>
-								<h4 class="last-h4">100</h4><!-- Hard-coded placeholder -->
-
-								<!-- Markup is backwards because elements are floated right -->
-								<span class="glyphicon glyphicon-trash"></span>
-								<span class="glyphicon glyphicon-save"></span>
-								<input class="save-volume" type="submit" value="Save">
-							</div>
-								
-							<div class="project-info-bar requesting-collab-page xs"><!-- Only visible at viewport widths <= 731px -->
-								<h4 class="first-h4">$project #</h4><!-- Hard-coded placeholder -->
-								<h4>$instrument name</h4><!-- Hard-coded placeholder -->
-								<h5>$date project started</h5>
-								
-								<div>
+							<form action="<?php echo BASE_URL; ?>controllers/process-project-form.php" method="post">
+								<div class="project-info-bar requesting-collab-page sm"><!-- Only visible at viewport widths > 731px -->
+									<h4 class="first-h4">$project #</h4><!-- Hard-coded placeholder -->
+									<h4>$instrument name</h4><!-- Hard-coded placeholder -->
+									<h5>$date project started</h5>
 									<span class="glyphicon glyphicon-volume-up"></span>
 									<div class="slider"></div>
 									<h4 class="last-h4">100</h4><!-- Hard-coded placeholder -->
+
 									<!-- Markup is backwards because elements are floated right -->
 									<span class="glyphicon glyphicon-trash"></span>
 									<span class="glyphicon glyphicon-save"></span>
 									<input class="save-volume" type="submit" value="Save">
 								</div>
-							</div>
+									
+								<div class="project-info-bar requesting-collab-page xs"><!-- Only visible at viewport widths <= 731px -->
+									<h4 class="first-h4">$project #</h4><!-- Hard-coded placeholder -->
+									<h4>$instrument name</h4><!-- Hard-coded placeholder -->
+									<h5>$date project started</h5>
+									
+									<div>
+										<span class="glyphicon glyphicon-volume-up"></span>
+										<div class="slider"></div>
+										<h4 class="last-h4">100</h4><!-- Hard-coded placeholder -->
+										<!-- Markup is backwards because elements are floated right -->
+										<span class="glyphicon glyphicon-trash"></span>
+										<span class="glyphicon glyphicon-save"></span>
+										<input class="save-volume" type="submit" value="Save">
+									</div>
+								</div>
+							</form>
 						</section>
 					</div>
 

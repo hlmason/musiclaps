@@ -25,15 +25,15 @@
 					<!-- Hidden upon page load -->
 					<section class="row col-xs-12 create-new-group-container" id="createNewGroupContainer">
 						<h4>Create a New Group</h4>
-						<form>
+						<form action="<?php echo BASE_URL; ?>controllers/process-groups.php" method="post">
 							<div>
 								<label for="group_name">Group Name</label>
 								<input id="group_name" type="text" name="group_name">
 							</div>
 							
 							<div>
-								<label for="select_sound">Select Sound</label>
-								<select>
+								<label for="select_project_groups_page">Select Project</label>
+								<select id="select_project_groups_page">
 									<option value="project_title">$Project Title</option><!-- Hard-coded placeholder -->
 								</select>
 							</div>

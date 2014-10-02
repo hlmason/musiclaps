@@ -74,11 +74,12 @@
 						  		</div><!-- Hard-coded placeholder -->
 							</div>
 
-							<form class="profile-page" action="<?php echo BASE_URL; ?>include/profile/process.php" method="post">
+							<form class="profile-page" action="<?php echo BASE_URL; ?>controllers/process-profile.php" method="post">
 								<div class="row">
 									<div class="col-xs-12 col-lg-6">
-										<label id="birth-date-label-profile" for="birthdate">Birth Date</label>
-										<!-- Birth date form -->
+										<label id="birth-date-label-profile" for="birth_date_profile_page">Birth Date</label>
+										<select class="birth-date-field" id="birth_date_profile_page">
+											<!-- Birth date form -->
 										<?php
 											include(ROOT_PATH . 'include/birth-date-form.php');
 										?>
@@ -113,7 +114,7 @@
 
 								<div class="row">
 									<div class="col-xs-12 col-lg-6">
-										<label for="genre">Genre <span class="normal">(select one or more)</span></label>
+										<label>Genre <span class="normal">(select one or more)</span></label>
 										<div id="genre-form-profile">
 											<!-- Genre form -->
 											<?php
@@ -122,7 +123,7 @@
 										<!-- End of genre form -->
 									</div>
 									<div class="col-xs-12 col-lg-6">
-										<label for="skills">Skills <span class="normal">(select one or more)</span></label>
+										<label>Skills <span class="normal">(select one or more)</span></label>
 										<div id="skills">
 											<span><input type="checkbox" name="accordion">&nbsp; Accordion</span>
 											<span><input type="checkbox" name="arrangement">&nbsp; Arrangement</span>
