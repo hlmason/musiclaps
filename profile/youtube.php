@@ -24,25 +24,27 @@
 
 							<div class="col-xs-12 col-md-5">
 								<div id="youtube-settings">
-									<div>
-										<input id="new_youtube_connection" type="radio" name="youtube_connection" value="new">
-										<label id="new-youtube-connection-label" for="new_youtube_connection">New</label>
-									 	
-									 	<input id="edit_youtube_connection" type="radio" name="youtube_connection" value="edit">
-									 	<label for="edit_youtube_connection">Edit</label>
-									</div>
+									<form action="<?php echo BASE_URL; ?>controllers/process-youtube-links.php" method="post">
+										<div>
+											<input id="new_youtube_connection" type="radio" name="youtube_connection" value="new">
+											<label id="new-youtube-connection-label" for="new_youtube_connection">New</label>
+										 	
+										 	<input id="edit_youtube_connection" type="radio" name="youtube_connection" value="edit">
+										 	<label for="edit_youtube_connection">Edit</label>
+										</div>
 
-									<div>
-										<label id="youtube-id-label" for="youtube_id"><span class="musiclaps-blue">*</span> YouTube ID <span class="glyphicon glyphicon-question-sign"></span></label>
-										<div class="youtube-id-req" id="youTubeIdReq">The YouTube ID is the group of letters and numbers <strong>at the end</strong> of the YouTube URL (following the equal sign)</div>
-										<input id="youtube_id" type="text" name="youtube_id">
-									</div>
-									
-									<input id="view_youtube_vid" type="submit" value="View Youtube Video">
-									
-									<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="YouTube video image"><!-- Hard-coded placeholder -->
-									
-									<input id="link_to_project" type="submit" value="Link Video to Your Project">
+										<div>
+											<label id="youtube-id-label" for="youtube_id"><span class="musiclaps-blue">*</span> YouTube ID <span class="glyphicon glyphicon-question-sign"></span></label>
+											<div class="youtube-id-req" id="youTubeIdReq">The YouTube ID is the group of letters and numbers <strong>at the end</strong> of the YouTube URL (following the equal sign)</div>
+											<input id="youtube_id" type="text" name="youtube_id">
+										</div>
+										
+										<input id="view_youtube_vid" type="submit" value="View Youtube Video">
+										
+										<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="YouTube video image"><!-- Hard-coded placeholder -->
+										
+										<input id="link_to_project" type="submit" value="Link Video to Your Project">
+									</form>
 								</div>
 							</div>
 						</div>
@@ -53,42 +55,46 @@
 						</div>
 
 						<div class="row col-xs-12 youtube-page-form" id="newYouTubeConnectionForm">
-							<div class="sm"><!-- Only visible at viewport widths > 580px -->
-								<label for="select_project">Select Project</label>
-								<select>
-									<option value="sound">Europa Sax(1)</option><!-- Hard-coded placeholder -->
-								</select>
-
-								<label id="name-label" for="name">Name</label>
-								<input id="name" type="text" name="name">
-
-								<input id="save_name" type="submit" value="Save">
-							</div>
-							
-							<div class="xs"><!-- Only visible at viewport widths <= 580px -->
-								<div>
-									<label for="select_project">Select Project</label>
-									<select>
-										<option value="sound">Europa Sax(1)</option><!-- Hard-coded placeholder -->
+							<form action="<?php echo BASE_URL; ?>controllers/process-youtube-links.php" method="post">
+								<div class="sm"><!-- Only visible at viewport widths > 580px -->
+									<label for="select_project_new_sm">Select Project</label>
+									<select id="select_project_new_sm">
+										<option value="sound">$Project Title</option><!-- Hard-coded placeholder -->
 									</select>
-								</div>
 
-								<div>
 									<label id="name-label" for="name">Name</label>
 									<input id="name" type="text" name="name">
 
 									<input id="save_name" type="submit" value="Save">
 								</div>
-							</div>
+								
+								<div class="xs"><!-- Only visible at viewport widths <= 580px -->
+									<div>
+										<label for="select_project_new_xs">Select Project</label>
+										<select id="select_project_new_xs">
+											<option value="sound">$Project Title</option><!-- Hard-coded placeholder -->
+										</select>
+									</div>
+
+									<div>
+										<label id="name-label" for="name">Name</label>
+										<input id="name" type="text" name="name">
+
+										<input id="save_name" type="submit" value="Save">
+									</div>
+								</div>
+							</form>
 						</div>
 
 						<div class="row col-xs-12 youtube-page-form" id="editYouTubeConnectionForm">
-							<label for="select_project">Select Project</label>
-							<select>
-								<option value="sound">Europa Sax(1)</option><!-- Hard-coded placeholder -->
-							</select>
+							<form action="<?php echo BASE_URL; ?>controllers/process-youtube-links.php" method="post">
+								<label for="select_project_edit">Select Project</label>
+								<select id="select_project_edit">
+									<option value="sound">$Project Title</option><!-- Hard-coded placeholder -->
+								</select>
 
-							<input id="edit_name" type="submit" value="Edit">
+								<input id="edit_name" type="submit" value="Edit">
+							</form>
 						</div>
 					
 					</div>

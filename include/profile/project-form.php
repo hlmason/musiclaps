@@ -43,7 +43,7 @@
 	<!-- End of volume and pan -->
 
 	<div class="row col-xs-12">
-		<form class="project-form" action="<?php echo BASE_URL; ?>include/profile/process.php" method="post">
+		<form class="project-form" action="<?php echo BASE_URL; ?>controllers/process-project-form.php" method="post">
 			<label for="project_title_project_form">Project Title
 				<input class="save" type="submit" name="save_project_title_project_form" value="Save">
 			</label>
@@ -52,7 +52,7 @@
 	</div>
 
 	<div class="row col-xs-12">
-		<form class="project-form" action="<?php echo BASE_URL; ?>include/profile/process.php" method="post">
+		<form class="project-form" action="<?php echo BASE_URL; ?>controllers/process-project-form.php" method="post">
 			<label id="cover-song-label">Cover Song
 				<input class="cover-song-checkbox" type="checkbox" name="cover_song">
 				<input class="save" type="submit" name="save_cover_song" value="Save">
@@ -62,7 +62,7 @@
 	</div>
 
 	<div class="row col-xs-12">
-		<form class="project-form" action="<?php echo BASE_URL; ?>include/profile/process.php" method="post">
+		<form class="project-form" action="<?php echo BASE_URL; ?>controllers/process-project-form.php" method="post">
 			<label for="description">Description
 				<input class="save" type="submit" name="save_description" value="Save">
 			</label>
@@ -71,7 +71,7 @@
 	</div>
 
 	<div class="row col-xs-12">
-		<form class="project-form" action="<?php echo BASE_URL; ?>include/profile/process.php" method="post">
+		<form class="project-form" action="<?php echo BASE_URL; ?>controllers/process-project-form.php" method="post">
 			<label for="genre">Genre <span class="normal">(select one or more)</span>
 				<input class="save" id="save-genre" type="submit" name="save_genre" value="Save">
 			</label>
@@ -85,7 +85,7 @@
 	</div>
 
 	<div class="row col-xs-12">
-		<form class="project-form" action="<?php echo BASE_URL; ?>include/profile/process.php" method="post">
+		<form class="project-form" action="<?php echo BASE_URL; ?>controllers/process-project-form.php" method="post">
 			<label for="search_tags">Search Tags
 				<input class="save" type="submit" name="save_search_tags" value="Save">
 			</label>
@@ -94,7 +94,7 @@
 	</div>
 
 	<div class="row col-xs-12">
-		<form class="project-form" action="<?php echo BASE_URL; ?>include/profile/process.php" method="post">
+		<form class="project-form" action="<?php echo BASE_URL; ?>controllers/process-project-form.php" method="post">
 			<label for="scrolling_comment">Scrolling Comment
 				<input class="save" type="submit" name="save_scrolling_comment" value="Save">
 			</label>
@@ -102,7 +102,7 @@
 		</form>
 	</div>
 
-	<form class="project-form" action="<?php echo BASE_URL; ?>include/profile/process.php" method="post" enctype="multipart/form-data">
+	<form class="project-form" action="<?php echo BASE_URL; ?>controllers/process-project-form.php" method="post" enctype="multipart/form-data">
 		<div class="row col-xs-12">
 			<label for="stage_background_img">Stage Background Image <span class="normal">(620w x 190h recommended)</span>
 			</label>
@@ -127,7 +127,7 @@
 		</div>
 	</form>
 
-	<form class="project-form" action="<?php echo BASE_URL; ?>include/profile/process.php" method="post">
+	<form class="project-form" action="<?php echo BASE_URL; ?>controllers/process-project-form.php" method="post">
 		<section class="row col-xs-12">
 			<h4 id="type-of-collab">Type of Collaboration</h4>
 		</section>
@@ -151,7 +151,7 @@
 		</div>
 	</form>
 
-	<form class="project-form" action="<?php echo BASE_URL; ?>include/profile/process.php" method="post">
+	<form class="project-form" action="<?php echo BASE_URL; ?>controllers/process-project-form.php" method="post">
 		<section class="row col-xs-12">
 			<h4 id="copyright">Copyright <span class="normal">(original songs only)</h4>
 			<h4 class="red"><strong>Creative Commons licenses are irrevocable

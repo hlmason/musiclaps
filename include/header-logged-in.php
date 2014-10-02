@@ -104,7 +104,7 @@
 				<ul class="nav navbar-nav navbar-right" id="logged-in">
 					<li id="welcome-user-sm">Welcome, &nbsp;<span class="musiclaps-blue"><a class="welcome-user-link" href="<?php echo BASE_URL; ?>profile/index.php">$firstname</a></span></li><!-- Hard-coded placeholder -->
 					<li id="log-out">
-						<form action="<?php echo BASE_URL; ?>/logout.php" method="post">
+						<form action="<?php echo BASE_URL; ?>controllers/process-logout.php" method="post">
 							<input type="submit" value="Log out">
 						</form>
 					</li>
