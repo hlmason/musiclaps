@@ -23,9 +23,11 @@ $(document).ready(function() {
 		}		
 	});
 
-	newProjectDropdownMenu.mouseleave (function() { // Makes dropdown menu go away without having to click
-		newProjectCaret.removeClass('upside-down');
-		newProjectDropdownMenu.hide();		
+	newProjectDropdownMenu.mouseleave (function() { // Makes dropdown menu go away without having to click.  Note: not implemented for collapsed menu - poor UX
+		if ($(window).width() > 991) {
+			newProjectCaret.removeClass('upside-down');
+			newProjectDropdownMenu.hide();
+		}		
 	});
 	
 	$('a#recordingPlayerLink').on('click', function() {

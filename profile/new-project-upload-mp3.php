@@ -44,7 +44,7 @@
 							</li>
 						</ul>
 
-						<form>
+						<form action="<?php echo BASE_URL; ?>include/profile/process.php" method="post">
 							<section id="newProject">
 								<div class="row col-xs-12">
 									<label id="project-title-label" for="project_title_new_project">Project Title <span class="normal">(max 80 characters)</span></label>
@@ -130,29 +130,29 @@
 
 							<section class="row col-xs-12 newProject" id="choose-project-img-container">
 								<div class="row">
-									<div class="col-xs-3 col-sm-4">	
+									<div class="col-xs-3">	
 										<h4>Project Image</h4>
 									</div>
-									<div class="col-xs-5 col-sm-4">
-										<input id="choose_project_img" type="submit" value="Choose File">&nbsp; <span>No file chosen</span>
+									<div class="col-xs-5">
+										<input id="choose_project_img" type="file" value="Choose File">
 									</div>
-									<div class="col-xs-4">	
+									<div class="col-xs-12 col-sm-4">	
 										<h5>120(w) x 90(h) in jpg format</h5>
 									</div>
 								</div>
 							</section>
 
-							<div class="row col-xs-12" id="choose-mp3-file-container">
-								<div class="col-xs-3 col-sm-4">	
+							<section class="row col-xs-12" id="choose-mp3-file-container">
+								<div class="col-xs-3">	
 									<h4>MP3 File</h4>
 								</div>
-								<div class="col-xs-5 col-sm-4">
-									<input id="choose_mp3_file" type="submit" value="Choose File">&nbsp; <span>No file chosen</span>
+								<div class="col-xs-5">
+									<input id="choose_mp3_file" type="file" value="Choose File">
 								</div>
-								<div class="col-xs-4">	
+								<div class="col-xs-12 col-sm-4">	
 									<h5>Max Size 10MB</h5>
 								</div>
-							</div>
+							</section>
 
 							<div class="row col-xs-12" id="upload-project-container">
 								<input id="upload_project" type="submit" value="Upload Project">
