@@ -3055,15 +3055,17 @@ nav ul ul.dropdown-menu {
       margin-top: -15px; }
     nav ul ul.dropdown-menu a:last-child {
       margin-bottom: 8px; }
-nav input.search {
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid #cecece;
-  padding-bottom: 3px;
-  padding-left: 8px;
-  padding-top: 3px;
-  width: 181px;
-  margin-left: 8px; }
+nav form.search {
+  display: inline-block; }
+  nav form.search input.search {
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    padding-top: 3px;
+    width: 181px;
+    margin-left: 8px; }
 nav .glyphicon-search {
   cursor: pointer;
   margin-left: 15px;
