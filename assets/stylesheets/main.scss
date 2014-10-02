@@ -1168,14 +1168,18 @@ section#messages-header button, section#groups-header button { // "Add New Frien
 		h4.edit-profile {
 			margin-bottom: 0;
 		}
+		form.profile-page {
+			display: inline-block;
+			h4.save-profile input {
+				@include input-link;
+				padding-left: 2px;
+			}
+		}
 		h4.save-profile, h4.dont-save-profile {
 			display: inline-block;
 		}
 		.glyphicon {
 			color: $musiclaps-dark-gray;
-		}
-		h4.save-profile input {
-			@include input-link;
 		}
 	}
 }
