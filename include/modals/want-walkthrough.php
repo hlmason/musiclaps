@@ -1,4 +1,4 @@
-	<div class="modal fade" id="wantDemo" tabindex="-1" role="dialog" aria-labelledby="wantDemoLabel" aria-hidden="true">
+	<div class="modal fade" id="wantWalkthrough" tabindex="-1" role="dialog" aria-labelledby="wantWalkthroughLabel" aria-hidden="true">
 		<div class="modal-dialog modal-sm">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -6,7 +6,7 @@
 						<span aria-hidden="true">&times;</span>
 						<span class="sr-only">Close</span>
 					</button>
-					<h3 class="modal-title want-demo-heading" id="wantDemoLabel">Welcome to soundcheck !</h3>
+					<h3 class="modal-title want-demo-heading" id="wantWalkthroughLabel">Welcome to soundcheck !</h3>
 				</div>
 				<div class="modal-body" id="walkthrough">
 					<h4>Would you like a walkthrough?<h4>
