@@ -1,8 +1,7 @@
 <?php
 	require_once('../include/config.php');
 
-	$pageTitle = 'All Music';
-	$page = 'All Music';
+	$page_title = 'All Music';
 	
 	include(ROOT_PATH . 'include/header.php');
 ?>

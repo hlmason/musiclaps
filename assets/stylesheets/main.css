@@ -3057,6 +3057,12 @@ nav ul ul.dropdown-menu {
       margin-bottom: 8px; }
 nav form.search {
   display: inline-block; }
+  nav form.search .glyphicon-search {
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top: 30px; }
+    nav form.search .glyphicon-search:hover {
+      color: #38aaff; }
   nav form.search input.search {
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -3066,12 +3072,6 @@ nav form.search {
     padding-top: 3px;
     width: 181px;
     margin-left: 8px; }
-nav .glyphicon-search {
-  cursor: pointer;
-  margin-left: 15px;
-  margin-top: 30px; }
-  nav .glyphicon-search:hover {
-    color: #38aaff; }
 nav ul#flags {
   float: right;
   margin-bottom: 0;
@@ -4998,7 +4998,7 @@ footer {
       padding-bottom: 0 !important; }
       nav ul .dropdown ul.dropdown-menu li a:last-child {
         margin-bottom: 0; }
-  nav input.search {
+  nav form.search {
     display: none; }
   nav .glyphicon-search {
     display: none; }

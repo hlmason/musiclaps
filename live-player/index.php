@@ -1,8 +1,7 @@
 <?php
 	require_once('../include/config.php');
 
-	$pageTitle = 'Live Player';
-	$page = 'Live Player';
+	$page_title = 'Live Player';
 	
 	include(ROOT_PATH . 'include/header.php');
 ?>

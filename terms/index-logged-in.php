@@ -1,8 +1,7 @@
 <?php
 	require_once('../include/config.php');
 
-	$pageTitle = 'Terms of Use';
-	$page = 'Terms';
+	$page_title = 'Terms of Use';
 	
 	include(ROOT_PATH . 'include/header-logged-in.php');
 ?>

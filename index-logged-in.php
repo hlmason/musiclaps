@@ -1,7 +1,7 @@
 <?php
 	require_once('include/config.php');
 
-	$pageTitle = 'Play with the World Today';
+	$page_title = 'Play with the World Today';
 	
 	include(ROOT_PATH . 'include/header-logged-in.php');
 ?>

@@ -1,8 +1,7 @@
 <?php
 	require_once('../include/config.php');
 
-	$pageTitle = 'Players Wanted';
-	$page = 'Players Wanted';
+	$page_title = 'Players Wanted';
 	
 	include(ROOT_PATH . 'include/header.php');
 ?>

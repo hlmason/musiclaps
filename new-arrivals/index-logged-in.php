@@ -1,8 +1,7 @@
 <?php
 	require_once('../include/config.php');
 
-	$pageTitle = 'New Arrivals';
-	$page = 'New Arrivals';
+	$page_title = 'New Arrivals';
 	
 	include(ROOT_PATH . 'include/header-logged-in.php');
 ?>

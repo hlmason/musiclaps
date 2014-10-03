@@ -1,8 +1,7 @@
 <?php
 	require_once('../include/config.php');
 
-	$pageTitle = 'Recommended';
-	$page = 'Recommended';
+	$page_title = 'Recommended';
 	
 	include(ROOT_PATH . 'include/header-logged-in.php');
 ?>

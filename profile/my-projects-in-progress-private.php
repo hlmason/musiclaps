@@ -1,8 +1,7 @@
 <?php
 	require_once('../include/config.php');
 
-	$pageTitle = 'In Progress/Private Projects';
-	$page = 'In Progress/Private Projects';
+	$page_title = 'In Progress/Private Projects';
 	
 	include(ROOT_PATH . 'include/header-logged-in.php');
 	include(ROOT_PATH . 'include/db-connection.php');

@@ -1,8 +1,7 @@
 <?php
 	require_once('../include/config.php');
 
-	$pageTitle = 'Privacy Policy';
-	$page = 'Privacy';
+	$page_title = 'Privacy Policy';
 	
 	include(ROOT_PATH . 'include/header-logged-in.php');
 ?>

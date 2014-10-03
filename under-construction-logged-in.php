@@ -1,7 +1,7 @@
 <?php
 	require_once('include/config.php');
 
-	$pageTitle = 'Under Construction';
+	$page_title = 'Under Construction';
 	
 	include(ROOT_PATH . 'include/header-logged-in.php');
 ?>
