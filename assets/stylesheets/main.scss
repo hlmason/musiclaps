@@ -2152,10 +2152,10 @@ section.create-new-group-container {
 	label, textarea {
 		margin-left: 15px;
 	}
-	input#group_name, select {
+	input.group-name, select {
 		margin-left: 5px;
 	}
-	input#group_name {
+	input.group-name {
 		@include form-fields-input(50%);
 		margin-top: 15px;
 	}

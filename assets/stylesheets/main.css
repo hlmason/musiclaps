@@ -4643,9 +4643,9 @@ section.create-new-group-container {
     margin-bottom: 15px; }
   section.create-new-group-container label, section.create-new-group-container textarea {
     margin-left: 15px; }
-  section.create-new-group-container input#group_name, section.create-new-group-container select {
+  section.create-new-group-container input.group-name, section.create-new-group-container select {
     margin-left: 5px; }
-  section.create-new-group-container input#group_name {
+  section.create-new-group-container input.group-name {
     -moz-border-radius: 5px;
     border-radius: 5px;
     border: 1px solid #cecece;

@@ -27,19 +27,19 @@
 						<form action="<?php echo BASE_URL; ?>controllers/process-groups.php" method="post">
 							<div>
 								<label for="group_name">Group Name</label>
-								<input id="group_name" type="text" name="group_name">
+								<input class="group-name" id="group_name" type="text" name="group_name">
 							</div>
 							
 							<div>
 								<label for="select_project_groups_page">Select Project</label>
-								<select id="select_project_groups_page">
+								<select id="select_project_groups_page" name="">
 									<option value="project_title">$Project Title</option><!-- Hard-coded placeholder -->
 								</select>
 							</div>
 							
 							<div>
 								<label for="add_member">Add Member (Username)</label>
-								<textarea id="add_member" name="add_member" placeholder="Example: April, James, Paul, etc."></textarea>
+								<textarea id="add_member" name="" placeholder="Example: April, James, Paul, etc."></textarea>
 							</div>
 
 							<div>
