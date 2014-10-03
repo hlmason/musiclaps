@@ -11,8 +11,8 @@
 			</div>
 
 			<div class="modal-body" id="register-or-login-modal-body">
-				<input class="registerJS" type="submit" value="Register">
-				<input class="loginJS" type="submit" value="Login">
+				<button class="registerJS" type="button">Register</button>
+				<button class="loginJS" type="button">Log in</button>
 			</div>
 
 		</div>

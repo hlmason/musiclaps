@@ -2943,13 +2943,13 @@ span.normal {
   font-size: 12px;
   margin-bottom: 2px; }
 
-#register-or-login-modal-body input, .modal-footer:not(.registration-modal-footer) input, .navbar-right input {
+.modal-footer:not(.registration-modal-footer) input, .navbar-right input {
   -moz-border-radius: 10px;
   border-radius: 10px;
   background-color: #e7e7e7;
   border: 1px solid #cecece;
   padding: 5px 10px; }
-  #register-or-login-modal-body input:hover, #register-or-login-modal-body input:focus, .modal-footer:not(.registration-modal-footer) input:hover, .modal-footer:not(.registration-modal-footer) input:focus, .navbar-right input:hover, .navbar-right input:focus {
+  .modal-footer:not(.registration-modal-footer) input:hover, .modal-footer:not(.registration-modal-footer) input:focus, .navbar-right input:hover, .navbar-right input:focus {
     background-color: #d9d9d9; }
 
 img.facebook-icon, img.google-icon, img#reddit-icon, img#tumblr-icon, img#stumbleupon-icon,
@@ -3236,14 +3236,30 @@ ul.user-menu li:not(.dropdown-menu-list-item) {
       width: 12px; }
   .modal-content .modal-body#login-modal-body input {
     margin-top: 15px; }
-  .modal-content .modal-body#register-or-login-modal-body input {
+  .modal-content .modal-body#register-or-login-modal-body
+  button {
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+    border: none;
+    color: #444444;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding: 5px 10px;
+    border: 1px solid #cecece;
     display: block;
     font-weight: bold;
     width: 100%; }
-  .modal-content .modal-body#register-or-login-modal-body input:first-child {
-    margin-top: 5px; }
-  .modal-content .modal-body#register-or-login-modal-body input:last-child {
-    margin-top: 20px; }
+    .modal-content .modal-body#register-or-login-modal-body
+    button:hover, .modal-content .modal-body#register-or-login-modal-body
+    button:focus {
+      background-color: #d9d9d9; }
+    .modal-content .modal-body#register-or-login-modal-body
+    button:first-child {
+      margin-top: 5px; }
+    .modal-content .modal-body#register-or-login-modal-body
+    button:last-child {
+      margin-top: 20px; }
   .modal-content .modal-body h4 {
     margin-bottom: 0;
     margin-top: 12px; }
@@ -3267,6 +3283,18 @@ ul.user-menu li:not(.dropdown-menu-list-item) {
     margin-right: 58px; }
   .modal-content .modal-footer#register-modal-footer, .modal-content .modal-footer.registration-modal-footer {
     border-top: none; }
+  .modal-content .modal-footer#register-modal-footer button {
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+    border: none;
+    color: #444444;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding: 5px 10px;
+    border: 1px solid #cecece; }
+    .modal-content .modal-footer#register-modal-footer button:hover, .modal-content .modal-footer#register-modal-footer button:focus {
+      background-color: #d9d9d9; }
   .modal-content .modal-footer.registration-modal-footer input {
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -3650,7 +3678,7 @@ section#recording-instructions #save-container {
     border: 1px solid #cecece;
     float: right;
     margin-right: 60px; }
-    #players-wanted-page button:hover {
+    #players-wanted-page button:hover, #players-wanted-page button:focus {
       background-color: #d9d9d9; }
   #players-wanted-page h4.no-listings {
     font-weight: normal;
