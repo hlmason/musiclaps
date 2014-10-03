@@ -11,8 +11,8 @@
 				<h2 class="modal-title registration-express-modal-heading" id="registrationExpressLabel">Email Registration</h2>
 			</div>
 			
-			<div class="modal-body" id="registration-express-modal-body">
-				<form action="<?php echo BASE_URL; ?>controllers/process-registration.php" method="post">
+			<form action="<?php echo BASE_URL; ?>controllers/process-registration.php" method="post">	
+				<div class="modal-body" id="registration-express-modal-body">
 					<div>
 						<label for="email"><span class="musiclaps-blue">*</span> Email Address</label>
 						<input id="email" type="email" name="email">
@@ -20,13 +20,13 @@
 					
 					<div>
 						<label for="username"><span class="musiclaps-blue">*</span> Username</label>
-						<input id="username" type="text" name="username">
+						<input id="username" type="text" name="userid">
 					</div>
 					
 					<div>
 						<label for="password"><span class="musiclaps-blue">*</span> Password <span class="glyphicon glyphicon-question-sign"></span></label>
 						<div class="password-req" id="passwordReq">Must be between 6 and 20 characters and contain at least 1 letter and 1 number</div>
-						<input id="password" type="text" name="password">
+						<input id="password" type="password" name="password">
 					</div>
 					
 					<div>
@@ -35,17 +35,14 @@
 					</div>
 
 					<div id="agree-checkbox">
-						<input type="checkbox" name="agree" value="agree">&nbsp; I agree to the Musiclaps <a href="<?php echo BASE_URL; ?>terms/" target="blank">Terms of Use</a> and <a href="<?php echo BASE_URL; ?>privacy/" target="blank">Privacy Policy</a>.
-					</div>	
-				</form>
-			</div>
-			
-			<div class="modal-footer registration-modal-footer">
-				<form>
+						<input type="checkbox" name="tos" value="agree">&nbsp; I agree to the Musiclaps <a href="<?php echo BASE_URL; ?>terms/" target="blank">Terms of Use</a> and <a href="<?php echo BASE_URL; ?>privacy/" target="blank">Privacy Policy</a>.
+					</div>
+				</div>
+				
+				<div class="modal-footer registration-modal-footer">
 					<input type="submit" value="Register">
-				</form>
-			 </div>
-
+				</div>
+			</form>
 		</div>
 	</div>
 </div>
