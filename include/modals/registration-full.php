@@ -10,22 +10,22 @@
 				<h2 class="modal-title registration-full-modal-heading" id="registrationFullLabel">Email Registration</h2>
 			</div>
 			
-			<div class="modal-body" id="registration-full-modal-body">
-				<form action="<?php echo BASE_URL; ?>controllers/process-registration.php" method="post">		
+			<form action="<?php echo BASE_URL; ?>controllers/process-registration.php" method="post">	
+				<div class="modal-body" id="registration-full-modal-body">	
 					<div>
 						<label id="email-label" for="email"><span class="musiclaps-blue">*</span> Email Address</label>
 						<input id="email" type="email" name="email">
 					</div>
 					
 					<div>
-						<label for="username"><span class="musiclaps-blue">*</span> Username</label>
-						<input id="username" type="text" name="username">
+						<label for="userid"><span class="musiclaps-blue">*</span> Username</label>
+						<input id="userid" type="text" name="userid">
 					</div>
 					
 					<div>
 						<label for="password"><span class="musiclaps-blue">*</span> Password <span class="glyphicon glyphicon-question-sign"></span></label>
 						<div class="password-req" id="passwordReq">Must be between 6 and 20 characters and contain at least 1 letter and 1 number</div>
-						<input id="password" type="text" name="password">
+						<input id="password" type="password" name="password">
 					</div>
 					
 					<div>
@@ -35,7 +35,7 @@
 
 					<div>
 						<label id="birth-date-label-modal" for="birth_date_registration"><span class="musiclaps-blue">*</span> Birth Date</label>
-						<select class="birth-date-field" id="birth_date_registration">
+						<select class="birth-date-field" id="birth_date_registration" name="birthday">
 							<!-- Birth date form -->
 						<?php
 							include(ROOT_PATH . 'include/birth-date-form.php');
@@ -44,7 +44,7 @@
 
 					<div>
 						<label id="gender-label" for="gender"><span class="musiclaps-blue">*</span> Gender</label>
-						<select id="gender">
+						<select id="gender" name="gender">
 							<option value=""></option>
 							<option value="male">Male</option>
 							<option value="female">Female</option>
@@ -54,7 +54,7 @@
 					
 					<div>
 						<label id="zip-label" for="zip"><span class="musiclaps-blue">*</span> Zip/Postal Code</label>
-						<input id="zip" type="text" name="zip">
+						<input id="zip" type="text" name="zipcode">
 					</div>
 					
 					<div>
@@ -64,17 +64,14 @@
 					</div>
 					
 					<div id="agree-checkbox">
-						<input type="checkbox" name="agree" value="agree">&nbsp; I agree to the Musiclaps <a href="<?php echo BASE_URL; ?>terms/" target="blank">Terms of Use</a> and <a href="<?php echo BASE_URL; ?>privacy/" target="blank">Privacy Policy</a>.
+						<input type="checkbox" name="tos" value="agree">&nbsp; I agree to the Musiclaps <a href="<?php echo BASE_URL; ?>terms/" target="blank">Terms of Use</a> and <a href="<?php echo BASE_URL; ?>privacy/" target="blank">Privacy Policy</a>.
 					</div>
-				</form>
-			</div>
-			
-			<div class="modal-footer registration-modal-footer">
-				<form>
+				</div>
+				
+				<div class="modal-footer registration-modal-footer">
 					<input type="submit" value="Register">
-				</form>
-			 </div>
-
+				</div>
+			</form>
 		</div>
 	</div>
 </div>
