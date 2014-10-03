@@ -87,29 +87,29 @@
 									<!-- End of birth date form -->
 									<div class="col-xs-12 col-lg-6">
 										<label for="zip">Zip/Postal Code</label>
-										<input id="zip" type="text" name="zip">
+										<input id="zip" type="text" name="zipcode">
 									</div>
 								</div>
 
 								<div class="row">
 									<div class="col-xs-12 col-lg-6">
 										<label for="website_url">Website URL</label>
-										<input id="website_url" type="text" name="website_url">
+										<input class="website-url" id="website_url" type="text" name="website">
 									</div>
 									<div class="col-xs-12 col-lg-6">
 										<label for="website_title">Website Title</label>
-										<input id="website_title" type="text" name="website_title">
+										<input class="website-url" id="website_title" type="text" name="site_title">
 									</div>
 								</div>
 
 								<div class="row">
 									<div class="col-xs-12 col-lg-6">
-											<label for="fav_artists">Favorite Artists</label>
-											<textarea id="fav_artists" name="fav_artists"></textarea>
+										<label for="fav_artists">Favorite Artists</label>
+										<textarea id="fav_artists" name=""></textarea>
 									</div>
 									<div class="col-xs-12 col-lg-6">
 										<label for="fav_songs">Favorite Songs</label>
-										<textarea id="fav_songs" name="fav_songs"></textarea>
+										<textarea id="fav_songs" name=""></textarea>
 									</div>
 								</div>
 
@@ -188,10 +188,10 @@
 								<div class="row">
 									<div class="col-xs-12 col-lg-6">
 										<label for="change_username">Change Username</label>
-										<input id="change_username" type="text" name="change_username">
+										<input class="change-username" id="change_username" type="text" name="change_username">
 									</div>
 									<div class="col-xs-12 col-lg-6">
-										<input class="change-password" id="change_password" type="submit" value="Change Password">
+										<input id="change-password" type="submit" name="change_password" value="Change Password">
 									</div>
 								</div>
 
@@ -205,7 +205,7 @@
 											<div class="col-xs-6 col-sm-8" id="upload-avatar">	
 												<ul><!-- TODO: Edit markup for functional login and make this look better at viewport widths closer to 767px and 400px -->
 													<li><span class="bold">Upload Your Image</span> (120 x 120 recommended)</li>
-													<li><input id="choose_avatar_file" type="file" value="Choose File"></li>
+													<li><input type="file" name="choose_avatar_file" value="Choose File"></li>
 												</ul>
 											</div>
 										</div>
@@ -213,7 +213,7 @@
 								</div>
 
 								<div id="save-profile-container">
-									<input id="save_profile" type="submit" value="Save Profile">
+									<input id="save-profile" type="submit" name="save_profile" value="Save Profile">
 								</div>
 							</form>
 							

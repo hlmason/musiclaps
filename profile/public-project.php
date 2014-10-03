@@ -116,7 +116,7 @@
 					<section class="row col-xs-12" id="comment-container">
 						<form action="<?php echo BASE_URL; ?>controllers/process-comments.php" method="post">
 							<label for="comment_public_project_page">Post a Comment</label>
-							<textarea id="comment_public_project_page" name="comment_public_project_page"></textarea>
+							<textarea id="comment_public_project_page" name=""></textarea>
 							<!-- Markup is backwards because elements are floated right -->
 							<input type="submit" value="Post">
 							<h4>500 characters remaining</h4><!-- Hard-coded placeholder -->
