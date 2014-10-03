@@ -3138,7 +3138,7 @@ h4.user-menu {
   margin-top: 10px; }
 
 ul.user-menu li:not(.first-list-item) {
-  padding-left: 2px; }
+  padding-left: 3px; }
 ul.user-menu li:not(.dropdown-menu-list-item) {
   border-bottom: 1px solid #cecece; }
   ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link) {
@@ -3157,7 +3157,7 @@ ul.user-menu li:not(.dropdown-menu-list-item) {
     ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link).active {
       background-color: white; }
   ul.user-menu li:not(.dropdown-menu-list-item)#new-project a:not(.dropdown-menu-link), ul.user-menu li:not(.dropdown-menu-list-item)#my-projects a:not(.dropdown-menu-link), ul.user-menu li:not(.dropdown-menu-list-item)#collaborations a:not(.dropdown-menu-link) {
-    padding: 14px 11px 12px 12px; }
+    padding: 14px 12px 12px; }
 
 /* ===================================
     Modal

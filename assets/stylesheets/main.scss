@@ -467,7 +467,7 @@ nav {
 
 	ul.user-menu {
 		li:not(.first-list-item) { // Not "Profile" / "My Profile" tabs
-			padding-left: 2px;
+			padding-left: 3px;
 		}
 		li:not(.dropdown-menu-list-item) {
 			border-bottom: $nav-border;
@@ -492,7 +492,7 @@ nav {
 			}
 			&#new-project, &#my-projects, &#collaborations {
 				a:not(.dropdown-menu-link) { 
-					padding: 14px 11px 12px 12px; // Asymmetrical so bar lines up with "Recommended" box / Overwrites general padding of 15px for links
+					padding: 14px 12px 12px; // Left/right padding lines menu up with "Recommended" box (overwrites general padding of 15px for links)
 				}
 			}
 		}
