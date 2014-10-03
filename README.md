@@ -72,8 +72,6 @@ Please continue to observe the above categories until a new system is implemente
 
 Elements/selectors tend to come in the order they appear in the markup; exceptions occur when one or more elements/selectors are grouped together.  In most cases, selectors include element names - despite being unnecessary - to make it easier to identify the context.
 
-Properties are in alphabetical order, although it is of course not necessary to observe this.
-
 Comments have been made liberally and may be outdated.
 
 =================================
