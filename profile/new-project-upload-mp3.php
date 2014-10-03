@@ -47,18 +47,18 @@
 							<section id="newProject">
 								<div class="row col-xs-12">
 									<label id="project-title-label" for="project_title_new_project">Project Title <span class="normal">(max 80 characters)</span></label>
-									<input id="project_title_new_project" type="text" name="project_title_new_project">
+									<input class="project-title-new-project" id="project_title_new_project" type="text" name="">
 								</div>
 
 								<div class="row col-xs-12">
 									<label id="tempo-label" for="tempo">Tempo <span class="normal">(leave blank if unsure)</span></label>
-									<input id="tempo" type="text" name="tempo">
+									<input class="tempo" id="tempo" type="text" name="">
 								</div>
 							</section>
 
 							<section id="addPart">
 								<label id="select-sound-label" for="select_sound">Select Your Sound</label>
-								<select id="select_sound">
+								<select class="select-sound" id="select_sound" name="">
 									<option value="test">Test</option>
 								</select>
 							</section>
@@ -69,7 +69,7 @@
 
 							<div class="row col-xs-12">
 								<label id="instruments-label" for="instruments">Select Instrument</label>
-								<select id="instruments" size="6">
+								<select class="instruments" id="instruments" name="" size="6">
 									<span><option value="arrangement">&nbsp; Accordion</option></span>
 									<span><option value="banjo">&nbsp; Banjo</option></span>
 									<span><option value="bass">&nbsp; Bass</option></span>
@@ -123,8 +123,8 @@
 							</div>
 
 							<div class="row col-xs-12">
-								<label id="comment-new-project-page-label" for="comment-new-project-page">Comment <span class="normal">(max 50 characters)</span></label>
-								<input id="comment-new-project-page" type="text" name="comment-new-project-page">
+								<label id="comment-new-project-page-label" for="comment_new_project_page">Comment <span class="normal">(max 50 characters)</span></label>
+								<input class="comment-new-project-page" id="comment_new_project_page" type="text" name="comment-new-project-page">
 							</div>
 
 							<section class="row col-xs-12 newProject" id="choose-project-img-container">
@@ -133,7 +133,7 @@
 										<h4>Project Image</h4>
 									</div>
 									<div class="col-xs-5">
-										<input id="choose_project_img" type="file" value="Choose File">
+										<input type="file" name="" value="Choose File">
 									</div>
 									<div class="col-xs-12 col-sm-4">	
 										<h5>120(w) x 90(h) in jpg format</h5>
@@ -146,7 +146,7 @@
 									<h4>MP3 File</h4>
 								</div>
 								<div class="col-xs-5">
-									<input id="choose_mp3_file" type="file" value="Choose File">
+									<input type="file" name="" value="Choose File">
 								</div>
 								<div class="col-xs-12 col-sm-4">	
 									<h5>Max Size 10MB</h5>
@@ -154,7 +154,7 @@
 							</section>
 
 							<div class="row col-xs-12" id="upload-project-container">
-								<input id="upload_project" type="submit" value="Upload Project">
+								<input type="submit" name="" value="Upload Project">
 							</div>
 						</form>
 					</section>

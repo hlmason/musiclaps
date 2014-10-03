@@ -1350,7 +1350,7 @@ input#change-password {
 	height: 106px;
 }
 
-#genre-form-profile, #skills, #instruments, #genre-form-projects {
+#genre-form-profile, #skills, .instruments, #genre-form-projects {
 	@include form-fields-input(12px);
 	overflow-y: scroll;
 	padding-top: 2px;
@@ -1365,7 +1365,7 @@ input#change-password {
 	width: 120px;
 }
 
-#instruments {
+.instruments {
 	padding-left: 0; // Overrides @mixin form-fields-input
 }
 
@@ -1410,19 +1410,19 @@ section.upload-mp3-container {
 			}
 		}
 	}
-	input#project_title_new_project, input#comment-new-project-page {
+	input.project-title-new-project, input.comment-new-project-page {
 		@include form-fields-input(100%);
 	}
-	input#comment-new-project-page, section#choose-project-img-container {
+	input.comment-new-project-page, section#choose-project-img-container {
 		margin-bottom: 20px;
 	}
-	input#tempo, select#select_sound {
+	input.tempo, select.select-sound {
 		margin-left: 5px;
 	}
-	select#select_sound {
+	select.select-sound {
 		@include form-fields-input(25%);
 	}
-	input#tempo {
+	input.tempo {
 		@include form-fields-input(50%);
 	}
 	section.add-part-to-group-container h4 {
@@ -2152,10 +2152,10 @@ section.create-new-group-container {
 	label, textarea {
 		margin-left: 15px;
 	}
-	input#group_name, select {
+	input.group-name, select {
 		margin-left: 5px;
 	}
-	input#group_name {
+	input.group-name {
 		@include form-fields-input(50%);
 		margin-top: 15px;
 	}

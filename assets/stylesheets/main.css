@@ -3916,7 +3916,7 @@ input#change-password {
 #genre-form-profile, #skills, #genre-form-projects {
   height: 106px; }
 
-#genre-form-profile, #skills, #instruments, #genre-form-projects {
+#genre-form-profile, #skills, .instruments, #genre-form-projects {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -3927,14 +3927,14 @@ input#change-password {
   overflow-y: scroll;
   padding-top: 2px;
   width: 261px; }
-  #genre-form-profile span, #skills span, #instruments span, #genre-form-projects span {
+  #genre-form-profile span, #skills span, .instruments span, #genre-form-projects span {
     display: block; }
 
 #choose-avatar-container img {
   height: 120px;
   width: 120px; }
 
-#instruments {
+.instruments {
   padding-left: 0; }
 
 #recording-player, section.upload-mp3-container {
@@ -3967,7 +3967,7 @@ section.upload-mp3-container ul {
       padding-left: 20px; }
     section.upload-mp3-container ul li label {
       font-weight: normal; }
-section.upload-mp3-container input#project_title_new_project, section.upload-mp3-container input#comment-new-project-page {
+section.upload-mp3-container input.project-title-new-project, section.upload-mp3-container input.comment-new-project-page {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -3975,11 +3975,11 @@ section.upload-mp3-container input#project_title_new_project, section.upload-mp3
   padding-left: 8px;
   padding-top: 3px;
   width: 100%; }
-section.upload-mp3-container input#comment-new-project-page, section.upload-mp3-container section#choose-project-img-container {
+section.upload-mp3-container input.comment-new-project-page, section.upload-mp3-container section#choose-project-img-container {
   margin-bottom: 20px; }
-section.upload-mp3-container input#tempo, section.upload-mp3-container select#select_sound {
+section.upload-mp3-container input.tempo, section.upload-mp3-container select.select-sound {
   margin-left: 5px; }
-section.upload-mp3-container select#select_sound {
+section.upload-mp3-container select.select-sound {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -3987,7 +3987,7 @@ section.upload-mp3-container select#select_sound {
   padding-left: 8px;
   padding-top: 3px;
   width: 25%; }
-section.upload-mp3-container input#tempo {
+section.upload-mp3-container input.tempo {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -4643,9 +4643,9 @@ section.create-new-group-container {
     margin-bottom: 15px; }
   section.create-new-group-container label, section.create-new-group-container textarea {
     margin-left: 15px; }
-  section.create-new-group-container input#group_name, section.create-new-group-container select {
+  section.create-new-group-container input.group-name, section.create-new-group-container select {
     margin-left: 5px; }
-  section.create-new-group-container input#group_name {
+  section.create-new-group-container input.group-name {
     -moz-border-radius: 5px;
     border-radius: 5px;
     border: 1px solid #cecece;
