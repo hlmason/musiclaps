@@ -3864,7 +3864,7 @@ form.profile-page input#zip {
   padding-left: 8px;
   padding-top: 3px;
   width: 151px; }
-form.profile-page input#website_url, form.profile-page input#website_title, form.profile-page textarea, form.profile-page input#change_username {
+form.profile-page input.website-url, form.profile-page input.website-title, form.profile-page textarea, form.profile-page input.change-username {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -3883,23 +3883,23 @@ form.profile-page #upload-avatar {
     padding-top: 5px; }
     form.profile-page #upload-avatar li:last-child span {
       font-size: 12px; }
-form.profile-page input#save_profile {
+form.profile-page input#save-profile {
   border-top: 1px solid #cecece;
   margin-top: -10px;
   margin-left: 290px; }
-form.profile-page input.change-password {
+form.profile-page input#change-password {
   margin-top: 49px;
   margin-left: 65px; }
 
-input.change-password, #save-profile-container input, #upload-project-container input {
+input#change-password, #save-profile-container input, #upload-project-container input {
   -moz-border-radius: 10px;
   border-radius: 10px; }
 
-input.change-password {
+input#change-password {
   background-color: #e7e7e7;
   border: 1px solid #cecece;
   padding: 3px 10px; }
-  input.change-password:hover, input.change-password:focus {
+  input#change-password:hover, input#change-password:focus {
     background-color: #d9d9d9; }
 
 #save-profile-container input, #upload-project-container input {
@@ -5003,7 +5003,7 @@ footer {
   section#public-project-header h5, img#cover-song {
     margin-right: 24px !important; }
 
-  form.profile-page input.change-password {
+  form.profile-page input#change-password {
     margin-top: 30px;
     margin-left: 0; }
 
@@ -5136,13 +5136,15 @@ footer {
   #upload-avatar li {
     font-size: 12px; }
 
-  input#save_profile {
+  input#save-profile {
     margin-left: 0 !important;
     margin-top: 10px !important; }
 
   .profile-right-container {
     margin-left: 25px;
     padding-right: 0; }
+    .profile-right-container section.profile-right.profile-page {
+      height: 1361px; }
 
   .public-project-page.row.col-xs-12.col-md-3, .recommended.row.col-md-3, .youtube-page.row.col-md-3 {
     display: none; }
@@ -5457,7 +5459,7 @@ footer {
     #upload-avatar ul {
       margin-left: 10px !important; }
 
-  form.profile-page input#save_profile {
+  form.profile-page input#save-profile {
     margin-top: 0 !important; }
 
   section.project-form-header h3 {

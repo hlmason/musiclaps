@@ -1299,7 +1299,7 @@ form.profile-page {
 	input#zip {
 		@include form-fields-input(151px);
 	}
-	input#website_url, input#website_title, textarea, input#change_username {
+	input.website-url, input.website-title, textarea, input.change-username {
 		@include form-fields-input(100%);
 	}
 	img { // "Your image"
@@ -1318,22 +1318,22 @@ form.profile-page {
 			}
 		}
 	}
-	input#save_profile {
+	input#save-profile {
 		border-top: $nav-border;
 		margin-top: -10px;
 		margin-left: 290px;
 	}
-	input.change-password {
+	input#change-password {
 		margin-top: 49px;
 		margin-left: 65px;
 	}
 }
 
-input.change-password, #save-profile-container input, #upload-project-container input {
+input#change-password, #save-profile-container input, #upload-project-container input {
 	@include border-radius(10px);
 }
 
-input.change-password {
+input#change-password {
 	@include submit($musiclaps-light-gray, $nav-border, 3px 10px, #d9d9d9);
 }
 
@@ -2545,11 +2545,11 @@ footer {
 	section#public-project-header h5, img#cover-song {
 		margin-right: 24px !important;  // Aligns elements with Live Player
 	}
-	form.profile-page input.change-password {
+	form.profile-page input#change-password {
 		margin-top: 30px;
 		margin-left: 0;
 	}
-	section.profile-right.profile-page { height: 1346px; } // "Profile" Page
+	section.profile-right.profile-page { height: 1346px; }
 }
 
 @media only screen and (max-width: 991px) {
@@ -2691,13 +2691,14 @@ footer {
 		h4 { margin-top: 17px; }
 	}
 	#upload-avatar li { font-size: 12px; }
-	input#save_profile { 
+	input#save-profile { 
 		margin-left: 0 !important; 
 		margin-top: 10px !important;
 	}
 	.profile-right-container {
 		margin-left: 25px;
 		padding-right: 0;
+		section.profile-right.profile-page { height: 1361px; }
 	}
 	.public-project-page.row.col-xs-12.col-md-3, .recommended.row.col-md-3, .youtube-page.row.col-md-3 { display: none; } // Project listings and "Recommended" box
 	#youtube-settings { margin-left: 0; }
@@ -2994,7 +2995,7 @@ footer {
 		border-bottom: none !important;
 		ul { margin-left: 10px !important; }
 	}
-	form.profile-page input#save_profile { margin-top: 0 !important; }
+	form.profile-page input#save-profile { margin-top: 0 !important; }
 	section.project-form-header {
 		h3 { margin-right: 0; } // For "Requesting Collab" page project listings
 		.glyphicon-lock { margin-right: 3px; }
