@@ -373,17 +373,17 @@ nav {
 	}
 	form.search {
 		display: inline-block;
+		.glyphicon-search {
+			cursor: pointer;
+			margin-left: 15px;
+			margin-top: 30px;
+			&:hover {
+				color: $musiclaps-blue;
+			}
+		}
 		input.search {
 			@include form-fields-input(181px);
 			margin-left: 8px;
-		}
-	}
-	.glyphicon-search {
-		cursor: pointer;
-		margin-left: 15px;
-		margin-top: 30px;
-		&:hover {
-			color: $musiclaps-blue;
 		}
 	}
 	ul#flags {
@@ -2565,7 +2565,7 @@ footer {
 		// input.search, .glyphicon-search, ul#flags {
 		// 	position: absolute;
 		// }
-		input.search {
+		form.search {
 			display: none;
 			// left: 85px;
 			// top: 40px;

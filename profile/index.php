@@ -1,8 +1,7 @@
 <?php
 	require_once('../include/config.php');
 
-	$pageTitle = 'My Profile';
-	$page = 'My Profile';
+	$page_title = 'My Profile';
 	
 	include(ROOT_PATH . 'include/header-logged-in.php');
 	include(ROOT_PATH . 'include/db-connection.php');

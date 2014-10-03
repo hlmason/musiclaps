@@ -1,8 +1,7 @@
 <?php
 	require_once('../include/config.php');
 
-	$pageTitle = 'Audition Projects';
-	$page = 'Audition Projects';
+	$page_title = 'Audition Projects';
 	
 	include(ROOT_PATH . 'include/header-logged-in.php');
 	include(ROOT_PATH . 'include/db-connection.php');

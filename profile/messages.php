@@ -1,8 +1,7 @@
 <?php
 	require_once('../include/config.php');
 
-	$pageTitle = 'Messages';
-	$page = 'Messages';
+	$page_title = 'Messages';
 	
 	include(ROOT_PATH . 'include/header-logged-in.php');
 	include(ROOT_PATH . 'include/db-connection.php');

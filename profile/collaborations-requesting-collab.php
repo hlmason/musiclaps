@@ -1,8 +1,7 @@
 <?php
 	require_once('../include/config.php');
 
-	$pageTitle = 'Requesting Collab Projects';
-	$page = 'Requesting Collab Projects';
+	$page_title = 'Requesting Collab Projects';
 	
 	include(ROOT_PATH . 'include/header-logged-in.php');
 	include(ROOT_PATH . 'include/db-connection.php');

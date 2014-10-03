@@ -1,7 +1,7 @@
 <?php
 	require_once('../include/config.php');
 
-	$pageTitle = 'End of Soundcheck';
+	$page_title = 'End of Soundcheck';
 	
 	include(ROOT_PATH . 'include/header.php');
 ?>

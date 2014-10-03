@@ -19,7 +19,7 @@
 	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/stylesheets/main.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>walkthrough/assets/css/tutorial.css"><!-- Julie's Captivate -->
-	<title>Musiclaps | <?php echo $pageTitle; ?></title>
+	<title>Musiclaps | <?php echo $page_title; ?></title>
 	<!-- [if lt IE 9]> -->
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <!-- [endif] -->
@@ -54,40 +54,160 @@
 				<ul class="nav navbar-nav navbar-left">
 					<li>
 						<div class="dropdown">
-							<a class="dropdown-toggle" id="musicDropdownLink" data-toggle="dropdown">Music
-								<span class="caret"></span>
+							<a class="dropdown-toggle 
+								<?php 
+									if ($page_title == "New Arrivals") { 
+										echo "active"; 
+									} else if ($page_title == "Recommended") { 
+										echo "active"; 
+									} else if ($page_title == "Staff Picks") { 
+										echo "active"; 
+									} else if ($page_title == "Collaborations") { 
+										echo "active"; 
+									} else if ($page_title == "All Music") { 
+										echo "active"; 
+									} 
+								?>" id="musicDropdownLink" data-toggle="dropdown">Music<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu" id="musicDropdownMenu" role="menu" aria-labelledby="musicDropdownLink">
-								<li role="presentation"><a class="<?php if ($page == "New Arrivals") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>new-arrivals/">New Arrivals</a></li>
-								<li role="presentation"><a class="<?php if ($page == "Recommended") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>recommended/">Recommended</a></li>
-								<li role="presentation"><a class="<?php if ($page == "Staff Picks") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>staff-picks/">Staff Picks</a></li>
-								<li role="presentation"><a class="<?php if ($page == "Collaborations") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>collaborations/">Collaborations</a></li>
-								<li role="presentation"><a class="<?php if ($page == "All Music") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>all-music/">All Music</a></li>
+								<li role="presentation">
+									<a class="
+										<?php 
+											if ($page_title == "New Arrivals") { 
+												echo "active"; 
+											} 
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>new-arrivals/">New Arrivals
+									</a>
+								</li>
+								<li role="presentation">
+									<a class="
+										<?php 
+											if ($page_title == "Recommended") { 
+												echo "active"; 
+											} 
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>recommended/">Recommended
+									</a>
+								</li>
+								<li role="presentation">
+									<a class="
+										<?php 
+											if ($page_title == "Staff Picks") { 
+												echo "active"; 
+											} 
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>staff-picks/">Staff Picks
+									</a>
+								</li>
+								<li role="presentation">
+									<a class="
+										<?php 
+											if ($page_title == "Collaborations") { 
+												echo "active"; 
+											} 
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>collaborations/">Collaborations
+									</a>
+								</li>
+								<li role="presentation">
+									<a class="
+										<?php 
+											if ($page_title == "All Music") { 
+												echo "active"; 
+											} 
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>all-music/">All Music
+									</a>
+								</li>
 							</ul>
 						</div>
 					</li>
 					<li>
 						<div class="dropdown">
-							<a class="dropdown-toggle" id="peopleDropdownLink" data-toggle="dropdown">People
-								<span class="caret"></span>
+							<a class="dropdown-toggle
+								<?php 
+									if ($page_title == "Players Wanted") { 
+										echo "active"; 
+									} else if ($page_title == "Players Available") { 
+										echo "active"; 
+									} else if ($page_title == "Collab Cafe") { 
+										echo "active";
+									}
+								?>" id="peopleDropdownLink" data-toggle="dropdown">People<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu" id="peopleDropdownMenu" role="menu" aria-labelledby="peopleDropdownLink">
-								<li role="presentation"><a class="<?php if ($page == "Players Wanted") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>players-wanted/">Players Wanted</a></li>
-								<li role="presentation"><a class="<?php if ($page == "Players Available") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Players Available</a></li>
-								<li role="presentation"><a class="<?php if ($page == "Collab Cafe") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Collab Cafe</a></li>
+								<li role="presentation">
+									<a class="
+										<?php 
+											if ($page_title == "Players Wanted") { 
+												echo "active"; 
+											} 
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>players-wanted/">Players Wanted
+									</a>
+								</li>
+								<li role="presentation">
+									<a class="
+										<?php 
+											if ($page_title == "Players Available") { 
+												echo "active"; 
+											} 
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Players Available
+									</a>
+								</li>
+								<li role="presentation">
+									<a class="
+										<?php 
+											if ($page_title == "Collab Cafe") { 
+												echo "active"; 
+											} 
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Collab Cafe
+									</a>
+								</li>
 							</ul>
 						</div>
 					</li>
 					<li>
 						<div class="dropdown">
-							<a class="dropdown-toggle" id="ourStoryDropdownLink" data-toggle="dropdown">Our Story
-								<span class="caret"></span>
+							<a class="dropdown-toggle
+								<?php 
+									if ($page_title == "Technology") { 
+										echo "active"; 
+									} else if ($page_title == "Company") { 
+										echo "active"; 
+									} else if ($page_title == "Contact") { 
+										echo "active";
+									}
+								?>" id="ourStoryDropdownLink" data-toggle="dropdown">Our Story<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu" id="ourStoryDropdownMenu" role="menu" aria-labelledby="ourStoryDropdownLink">
-								<li role="presentation"><a class="<?php if ($page == "Technology") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Technology</a></li>
-								<!-- <li role="presentation"><a class="<?php if ($page == "FAQs (Forum)") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>forum">FAQs (Forum)</a></li> -->
-								<li role="presentation"><a class="<?php if ($page == "Company") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Company</a></li>
-								<li role="presentation"><a class="<?php if ($page == "Contact") { echo "active"; } ?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Contact</a></li>
+								<li role="presentation">
+									<a class="
+										<?php if ($page_title == "Technology") { 
+											echo "active"; } 
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Technology
+									</a>
+								</li>
+								<!-- <li role="presentation">
+									<a class="
+										<?php if ($page_title == "FAQs (Forum)") { 
+												echo "active"; 
+											} 
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>forum">FAQs (Forum)
+									</a>
+								</li> -->
+								<li role="presentation">
+									<a class="
+										<?php if ($page_title == "Company") { 
+												echo "active"; 
+											} 
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Company
+									</a>
+								</li>
+								<li role="presentation">
+									<a class="
+										<?php 
+											if ($page_title == "Contact") { 
+												echo "active"; 
+											} 
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Contact
+									</a>
+								</li>
 							</ul>
 						</div>
 					</li>
