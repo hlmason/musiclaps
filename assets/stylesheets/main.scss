@@ -222,8 +222,8 @@ span.normal {
 	}
 }
 
-#register-or-login-modal-body, .modal-footer:not(.registration-modal-footer), .navbar-right {
-	input { // Modal buttons and nav "Log out" button
+.modal-footer:not(.registration-modal-footer), .navbar-right {
+	input { // "Log in" and "Log out" buttons
 		@include border-radius(10px);
 		@include submit($musiclaps-light-gray, $nav-border, 5px 10px, #d9d9d9);
 	}
@@ -593,17 +593,21 @@ nav {
 				margin-top: 15px;
 			}
 		}
-		&#register-or-login-modal-body {
-			input {
+		&#register-or-login-modal-body // On modal that appears after clicking "Save Recording"
+			button {
+				@include button($musiclaps-light-gray, $musiclaps-dark-gray, 14px, 5px 10px);
+				border: $nav-border;
 				display: block;
 				font-weight: bold;
 				width: 100%;
-			}
-			input:first-child {
-				margin-top: 5px;
-			}
-			input:last-child {
-				margin-top: 20px;
+				&:hover, &:focus {
+					background-color: #d9d9d9;
+				}
+				&:first-child {
+					margin-top: 5px;
+				}
+				&:last-child {
+					margin-top: 20px;
 			}
 		}
 		h4 {
@@ -639,6 +643,13 @@ nav {
 		}
 		&#register-modal-footer, &.registration-modal-footer {
 			border-top: none;
+		}
+		&#register-modal-footer button {
+			@include button($musiclaps-light-gray, $musiclaps-dark-gray, 14px, 5px 10px);
+			border: $nav-border;
+			&:hover, &:focus {
+				background-color: #d9d9d9;
+			}
 		}
 		&.registration-modal-footer input { // "Register" button
 			@include button-blue-wide(10px);
@@ -1072,7 +1083,7 @@ section#recording-instructions {
 		border: $nav-border;
 		float: right;
 		margin-right: 60px;
-		&:hover {
+		&:hover, &:focus {
 			background-color: #d9d9d9;
 		}
 	}

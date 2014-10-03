@@ -7,7 +7,7 @@
 ?>
 
 	<?php
-		include(ROOT_PATH . 'include/modals/welcome-to-soundcheck.php');
+		include(ROOT_PATH . 'include/modals/want-walkthrough.php');
 	?>
 
 	<?php

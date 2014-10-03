@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
 	var passwordReq = $('#passwordReq');
-	var registerOrLogin = $('#registerOrLogin');
-	var register = $('#registerJS');
-	var login = $('#loginJS');
+	var registerOrLogin = $('#registerOrLogin'); // Modal
+	var register = $('#registerJS'); // Modal
+	var login = $('#loginJS'); // Modal
 
 	passwordReq.hide();
 
-	$('.registerJS').on('click', function() {
+	$('.registerJS').on('click', function() { // This is a link on header.php and index.php, and a button on register-or-login.php
 		if ( registerOrLogin.is(':visible') ) { // This modal is on the Live Player page
 			registerOrLogin.modal('hide');
 			register.modal('show');
@@ -15,7 +15,7 @@ $(document).ready(function() {
 			register.modal('show');
 		}
 	});
-		$('#registrationFullJS').on('click', function() {
+		$('button#registrationFullJS').on('click', function() {
 			register.modal('hide');
 			$('#registrationFull').modal('show');
 		});
@@ -27,7 +27,7 @@ $(document).ready(function() {
 				passwordReq.fadeIn('slow');
 			});
 
-	$('.loginJS').on('click', function() {
+	$('.loginJS').on('click', function() { // This is a link on login.php and a button on register-or-login.php
 		if ( registerOrLogin.is(':visible') ) { // This modal is on the Live Player page
 			registerOrLogin.modal('hide');
 			login.modal('show');
@@ -37,7 +37,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$('#registerOrLoginJS').on('click', function() { // This modal is on the Live Player page
+	$('button#registerOrLoginJS').on('click', function() { // This modal is on the Live Player page
 		registerOrLogin.modal('show');
 	});
 

@@ -16,15 +16,15 @@
 
 			<form action="<?php echo BASE_URL; ?>controllers/process-login.php" method="post">
 				<div class="modal-body" id="login-modal-body">
-					<input id="userid" type="text" name="userid" placeholder="Username">
-					<input id="password" type="password" name="password" placeholder="Password">
+					<input type="text" name="userid" placeholder="Username">
+					<input type="password" name="password" placeholder="Password">
 					<div class="error-message">	
 						<?= (! empty($_SESSION['login_error']) ? $_SESSION['login_error'] : '' ) ?>
 					</div>
 				</div>
 				<div class="modal-footer">
 					<a>Forgot Password</a>
-					<input type="submit" value="Log in">
+					<input type="submit" name="login" value="Log in">
 			    </div>
 			</form>
 
