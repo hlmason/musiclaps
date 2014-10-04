@@ -4162,10 +4162,7 @@ form.project-form label {
   margin-bottom: 2px;
   margin-top: 20px;
   width: 100%; }
-  form.project-form label h4 {
-    margin-bottom: 0;
-    margin-top: 0; }
-form.project-form input#project_title_project_form, form.project-form input#credit_cover_song, form.project-form textarea {
+form.project-form input.project-title-project-form, form.project-form input.credit-cover-song, form.project-form textarea {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -4190,7 +4187,7 @@ form.project-form input.save {
 form.project-form input.cover-song-checkbox {
   display: inline-block;
   margin-left: 2px; }
-form.project-form #description {
+form.project-form textarea.description {
   min-height: 142px; }
 form.project-form #no-img-container {
   background-color: #e7e7e7;
@@ -4206,7 +4203,7 @@ form.project-form #upload-stage-background-img-container {
   border-top: 1px solid #cecece; }
   form.project-form #upload-stage-background-img-container input.choose-file, form.project-form #upload-stage-background-img-container .glyphicon-trash, form.project-form #upload-stage-background-img-container #save-stage-background-img-and-trash-container {
     margin-top: 10px; }
-  form.project-form #upload-stage-background-img-container input.save-stage-background-img {
+  form.project-form #upload-stage-background-img-container input#save-stage-background-img {
     margin-bottom: 10px; }
 form.project-form h4#type-of-collab, form.project-form h4#copyright, form.project-form h4.red {
   padding-bottom: 5px;
@@ -4228,18 +4225,17 @@ form.project-form h4.red, form.project-form .type-of-collab-container, form.proj
 form.project-form .type-of-collab-container {
   height: 36px;
   text-align: center; }
-  form.project-form .type-of-collab-container button {
+  form.project-form .type-of-collab-container input {
     -moz-border-radius: 10px;
     border-radius: 10px;
-    background-color: #f4f4f4;
-    border: none;
-    color: #444444;
+    background-color: #e7e7e7;
+    border: 1px solid #cecece;
+    padding: 4px 10px;
     font-size: 12px;
-    letter-spacing: 0.5px;
-    padding: 6px 10px;
-    margin-top: 3px; }
-    form.project-form .type-of-collab-container button:hover {
-      background-color: #444;
+    margin-top: 4px; }
+    form.project-form .type-of-collab-container input:hover, form.project-form .type-of-collab-container input:focus {
+      background-color: #444444; }
+    form.project-form .type-of-collab-container input:hover {
       color: #38aaff; }
 form.project-form ul#copyright-types-container {
   height: 377px;
@@ -4267,17 +4263,17 @@ form.project-form ul#copyright-types-container {
     form.project-form ul#copyright-types-container li h4:not(.first-h4) {
       margin-left: 15px; }
 
-#upload-stage-background-img-container input.choose-file, #upload-stage-background-img-container input.save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-sound-img-container input.choose-file, section.change-sound-img-container input.save-stage-background-img, section.change-sound-img-container input.update-file {
+#upload-stage-background-img-container input.choose-file, #upload-stage-background-img-container input#save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-sound-img-container input.choose-file, section.change-sound-img-container input#save-stage-background-img, section.change-sound-img-container input.update-file {
   font-size: 12px; }
-#upload-stage-background-img-container input.save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-sound-img-container input.save-stage-background-img, section.change-sound-img-container input.update-file {
+#upload-stage-background-img-container input#save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-sound-img-container input#save-stage-background-img, section.change-sound-img-container input.update-file {
   -moz-border-radius: 10px;
   border-radius: 10px; }
-#upload-stage-background-img-container input.save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-sound-img-container input.save-stage-background-img, section.change-sound-img-container input.update-file {
+#upload-stage-background-img-container input#save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-sound-img-container input#save-stage-background-img, section.change-sound-img-container input.update-file {
   background-color: #38aaff;
   border: 1px solid #38aaff;
   padding: 3px 10px;
   color: white; }
-  #upload-stage-background-img-container input.save-stage-background-img:hover, #upload-stage-background-img-container input.save-stage-background-img:focus, #upload-stage-background-img-container input.update-file:hover, #upload-stage-background-img-container input.update-file:focus, section.change-sound-img-container input.save-stage-background-img:hover, section.change-sound-img-container input.save-stage-background-img:focus, section.change-sound-img-container input.update-file:hover, section.change-sound-img-container input.update-file:focus {
+  #upload-stage-background-img-container input#save-stage-background-img:hover, #upload-stage-background-img-container input#save-stage-background-img:focus, #upload-stage-background-img-container input.update-file:hover, #upload-stage-background-img-container input.update-file:focus, section.change-sound-img-container input#save-stage-background-img:hover, section.change-sound-img-container input#save-stage-background-img:focus, section.change-sound-img-container input.update-file:hover, section.change-sound-img-container input.update-file:focus {
     background-color: #45b7ff; }
 
 section.change-sound-img-container form {
