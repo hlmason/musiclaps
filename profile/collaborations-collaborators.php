@@ -16,7 +16,7 @@
 
 					<div class="collaborators-container">
 						<label for="collab_type" id="collab-label">Sort by</label>
-						<select id="collab_type">
+						<select id="collab_type" name="">
 							<option value="all_collab">All</option>
 							<option value="open_collab">Open Collab</option>
 							<option value="requesting_collab">Requesting Collab</option>

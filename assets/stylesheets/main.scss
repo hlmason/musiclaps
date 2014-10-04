@@ -1597,7 +1597,10 @@ section.project-form-header {
 		background-color: white; // Overrides $musiclaps-light-gray
 		&.xs {
 			display: none;
-		}	
+		}
+		h4, h5 {
+			margin-top: 0;
+		}
 	}
 }
 
@@ -1942,11 +1945,11 @@ section#lyrics-container-header { // "Display Lyrics" and "Select Project"
 	label#youtube-id-label {
 		@include form-fields-label(10px);
 	}
-	input#youtube_id {
+	input.youtube-id {
 		@include form-fields-input(100%);
 		margin-bottom: 5px;
 	}
-	input#view_youtube_vid, input#link_to_project {
+	input#view_youtube_vid, input#link-to-project {
 		@include border-radius(5px);
 		font-size: 12px;
 		width: 100%;
@@ -1954,7 +1957,7 @@ section#lyrics-container-header { // "Display Lyrics" and "Select Project"
 	input#view_youtube_vid {
 		@include submit($musiclaps-light-gray, $nav-border, 3px 10px, #d9d9d9);
 	}
-	input#link_to_project {
+	input#link-to-project {
 		@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
 		color: white;
 	}
@@ -1968,7 +1971,7 @@ section#lyrics-container-header { // "Display Lyrics" and "Select Project"
 }
 
 .youtube-page-form {
-	select, input#name { // "Select Project" and "Name"
+	select, input.name { // "Select Project" and "Name"
 		@include form-fields-input(25%);
 		margin-left: 1px;
 	}
@@ -2843,6 +2846,7 @@ footer {
 		&.sm { display: none; }
 		&.xs {
 			display: block;
+			h4, h5 { margin-top: 7px; }
 			h4:not(.last-h4), .glyphicon-volume-up { margin-left: 5px; }
 			h4:not(.last-h4) { // Not "100"
 				font-size: 12px;
@@ -2925,7 +2929,7 @@ footer {
 	#info-below-youtube-player h4 { margin-bottom: 5px; }
 	.youtube-page-form {
 		label { @include form-fields-label(10px); }
-		select, input#name { width: 100%; }
+		select, input.name { width: 100%; }
 		input#save_name, input#edit_name { margin-top: 10px; }
 		.sm { display: none; }
 		.xs {

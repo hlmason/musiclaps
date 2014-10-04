@@ -39,7 +39,7 @@
 							
 							<div>
 								<label for="add_member">Add Member (Username)</label>
-								<textarea id="add_member" name="" placeholder="Example: April, James, Paul, etc."></textarea>
+								<textarea id="add_member" name="userid" placeholder="Example: April, James, Paul, etc."></textarea>
 							</div>
 
 							<div>
