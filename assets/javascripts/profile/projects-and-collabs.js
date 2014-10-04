@@ -130,7 +130,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$('button.noCollab').on('click', function() {
+	$('input.noCollab').on('click', function() {
 		noCollabGlyphicon.show();
 		if ( openCollabGlyphicon.is(':visible') ) {
 			openCollabGlyphicon.hide();
@@ -139,7 +139,7 @@ $(document).ready(function() {
 			requestingCollabGlyphicon.hide();
 		}
 	});
-	$('button.openCollab').on('click', function() {
+	$('input.openCollab').on('click', function() {
 		openCollabGlyphicon.show();
 		if ( noCollabGlyphicon.is(':visible') ) {
 			noCollabGlyphicon.hide();
@@ -148,7 +148,7 @@ $(document).ready(function() {
 			requestingCollabGlyphicon.hide();
 		}
 	});
-	$('button.requestingCollab').on('click', function() {
+	$('input.requestingCollab').on('click', function() {
 		requestingCollabGlyphicon.show();
 		if ( openCollabGlyphicon.is(':visible') ) {
 			openCollabGlyphicon.hide();

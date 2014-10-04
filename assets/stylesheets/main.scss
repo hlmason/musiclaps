@@ -1651,12 +1651,12 @@ form.project-form {
 	label {
 		@include form-fields-label(20px);
 		width: 100%;
-		h4 {
-			margin-bottom: 0;
-			margin-top: 0;
-		}
+		// h4 {
+		// 	margin-bottom: 0;
+		// 	margin-top: 0;
+		// }
 	}
-	input#project_title_project_form, input#credit_cover_song, textarea {
+	input.project-title-project-form, input.credit-cover-song, textarea {
 		@include form-fields-input(100%);
 	}
 	input.save {
@@ -1669,7 +1669,7 @@ form.project-form {
 		display: inline-block;
 		margin-left: 2px;
 	}
-	#description {
+	textarea.description {
 		min-height: 142px;
 	}
 	#no-img-container {
@@ -1689,7 +1689,7 @@ form.project-form {
 		input.choose-file, .glyphicon-trash, #save-stage-background-img-and-trash-container {
 			margin-top: 10px;
 		}
-		input.save-stage-background-img {
+		input#save-stage-background-img {
 			margin-bottom: 10px;
 		}
 	}
@@ -1717,11 +1717,13 @@ form.project-form {
 	.type-of-collab-container { // TODO: Fix positioning of ".glyphicon-ok"; not sure what happened here as it was perfectly positioned before
 		height: 36px;
 		text-align: center;
-		button {
-			@include button(#F4F4F4, $musiclaps-dark-gray, 12px, 6px 10px);
-			margin-top: 3px;
+		input {
+			@include border-radius(10px);
+			@include submit($musiclaps-light-gray, $nav-border, 4px 10px, #444);
+			font-size: 12px;
+			// @include button(#F4F4F4, $musiclaps-dark-gray, 12px, 6px 10px);
+			margin-top: 4px;
 			&:hover {
-				background-color: #444;
 				color: $musiclaps-blue;
 			}
 		}
@@ -1765,13 +1767,13 @@ form.project-form {
 }
 
 #upload-stage-background-img-container, section.change-sound-img-container {
-	input.choose-file, input.save-stage-background-img, input.update-file {
+	input.choose-file, input#save-stage-background-img, input.update-file {
 		font-size: 12px;
 	}
-	input.save-stage-background-img, input.update-file {
+	input#save-stage-background-img, input.update-file {
 		@include border-radius(10px);
 	}
-	input.save-stage-background-img, input.update-file {
+	input#save-stage-background-img, input.update-file {
 		@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
 		color: white;
 	}

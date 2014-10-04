@@ -11,7 +11,7 @@
 		<h3>Project Title</h3><!-- Hard-coded placeholder -->
 		<!-- Markup is backwards because elements are floated right -->
 		<span class="glyphicon glyphicon-trash"></span>
-		<select class="project-type" name="project_type">
+		<select class="project-type" name="">
 			<option value="private">Private</option>
 			<option value="public">Public</option>
 			<option value="group">Group</option>
@@ -45,28 +45,28 @@
 	<div class="row col-xs-12">
 		<form class="project-form" action="<?php echo BASE_URL; ?>controllers/process-project-form.php" method="post">
 			<label for="project_title_project_form">Project Title
-				<input class="save" type="submit" name="save_project_title_project_form" value="Save">
+				<input class="save" type="submit" name="" value="Save">
 			</label>
-			<input id="project_title_project_form" type="text" name="project_title_project_form">
+			<input class="project-title-project-form" id="project_title_project_form" type="text" name="">
 		</form>
 	</div>
 
 	<div class="row col-xs-12">
 		<form class="project-form" action="<?php echo BASE_URL; ?>controllers/process-project-form.php" method="post">
 			<label id="cover-song-label">Cover Song
-				<input class="cover-song-checkbox" type="checkbox" name="cover_song">
-				<input class="save" type="submit" name="save_cover_song" value="Save">
+				<input class="cover-song-checkbox" type="checkbox" name="">
+				<input class="save" type="submit" name="" value="Save">
 			</label>
-			<input id="credit_cover_song" type="text" name="credit_cover_song" placeholder="Please credit the songwriter if it is not you.">
+			<input class="credit-cover-song" id="credit_cover_song" type="text" name="" placeholder="Please credit the songwriter if it is not you.">
 		</form>
 	</div>
 
 	<div class="row col-xs-12">
 		<form class="project-form" action="<?php echo BASE_URL; ?>controllers/process-project-form.php" method="post">
 			<label for="description">Description
-				<input class="save" type="submit" name="save_description" value="Save">
+				<input class="save" type="submit" name="" value="Save">
 			</label>
-			<textarea id="description" name="description" placeholder="If you are requesting collaboration, you can mention which instrument(s) here."></textarea>
+			<textarea class="description" id="description" name="" placeholder="If you are requesting collaboration, you can mention which instrument(s) here."></textarea>
 		</form>
 	</div>
 
@@ -87,18 +87,18 @@
 	<div class="row col-xs-12">
 		<form class="project-form" action="<?php echo BASE_URL; ?>controllers/process-project-form.php" method="post">
 			<label for="search_tags">Search Tags
-				<input class="save" type="submit" name="save_search_tags" value="Save">
+				<input class="save" type="submit" name="" value="Save">
 			</label>
-			<textarea id="search_tags" name="search_tags" placeholder="Examples: Song Title, Genre, etc."></textarea>
+			<textarea id="search_tags" name="" placeholder="Examples: Song Title, Genre, etc."></textarea>
 		</form>
 	</div>
 
 	<div class="row col-xs-12">
 		<form class="project-form" action="<?php echo BASE_URL; ?>controllers/process-project-form.php" method="post">
 			<label for="scrolling_comment">Scrolling Comment
-				<input class="save" type="submit" name="save_scrolling_comment" value="Save">
+				<input class="save" type="submit" name="" value="Save">
 			</label>
-			<textarea id="scrolling_comment" name="scrolling_comment"></textarea>
+			<textarea id="scrolling_comment" name=""></textarea>
 		</form>
 	</div>
 
@@ -116,9 +116,9 @@
 				</div>
 				<div class="col-xs-12 col-sm-6">
 					<div id="upload-stage-background-img-container">
-						<input class="choose-file" id="choose_stage_background_img" type="file" name="save_choose_stage_background_img" value="Choose File">
+						<input class="choose-file" id="stage_background_img" type="file" name="" value="Choose File">
 						<div id="save-stage-background-img-and-trash-container">
-							<input class="save-stage-background-img" type="submit" name="save_stage_background_img" value="Save">
+							<input id="save-stage-background-img" type="submit" name="" value="Save">
 							<span class="glyphicon glyphicon-trash"></span>
 						</div>
 					</div>
@@ -136,15 +136,15 @@
 				<div class="row">
 					<div class="col-xs-4">
 						<span class="glyphicon glyphicon-ok noCollabGlyphicon"></span>
-						<button class="noCollab" type="button">No Collab</button>
+						<input class="noCollab" type="submit" name="" value="No Collab">
 					</div>
 					<div class="col-xs-4">
 						<span class="glyphicon glyphicon-ok openCollabGlyphicon"></span>
-						<button class="openCollab" type="button">Open Collab</button>
+						<input class="openCollab" type="submit" name="" value="Open Collab">
 					</div>
 					<div class="col-xs-4">
 						<span class="glyphicon glyphicon-ok requestingCollabGlyphicon"></span>
-						<button class="requestingCollab" type="button">Requesting Collab</button>
+						<input class="requestingCollab" type="submit" name="" value="Requesting Collab">
 					</div>
 				</div>
 			</div>
@@ -160,42 +160,42 @@
 		<div class="row col-xs-12">
 			<ul id="copyright-types-container">
 				<li class="row col-xs-12 first-list-item">
-					<input type="radio" name="copyright_type" value="all_rights_reserved">
+					<input type="radio" name="" value="all_rights_reserved">
 					<img id="all-rights-reserved" src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/all-rights-reserved.gif" alt="Copyright symbol">
 					<h4 class="first-h4">All Rights Reserved</h4>
 				</li>
 				<li class="row col-xs-12">
-					<input type="radio" name="copyright_type" value="cc_by">
+					<input type="radio" name="" value="cc_by">
 					<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/cc-by.png" alt="Attribution symbol">
 					<h4>Attribution</h4>
 				</li>
 				<li class="row col-xs-12">
-					<input type="radio" name="copyright_type" value="cc_by_nd">
+					<input type="radio" name="" value="cc_by_nd">
 					<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/cc-by-nd.png" alt="Attribution-NoDerivs symbol">
 					<h4>Attribution - No Derivative Works</h4>
 				</li>
 				<li class="row col-xs-12">
-					<input type="radio" name="copyright_type" value="cc_by_nc_sa">
+					<input type="radio" name="" value="cc_by_nc_sa">
 					<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/cc-by-nc-sa.png" alt="Attribution-NonCommercial-ShareAlike symbol">
 					<h4>Attribution - NonCommercial - Share Alike</h4>
 				</li>
 				<li class="row col-xs-12">
-					<input type="radio" name="copyright_type" value="cc_by_sa">
+					<input type="radio" name="" value="cc_by_sa">
 					<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/cc-by-sa.png" alt="Attribution-ShareAlike symbol">
 					<h4>Attribution - Share Alike</h4>
 				</li>
 				<li class="row col-xs-12">
-					<input type="radio" name="copyright_type" value="cc_by_nc">
+					<input type="radio" name="" value="cc_by_nc">
 					<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/cc-by-nc.png" alt="Attribution-NonCommercial symbol">
 					<h4>Attribution - NonCommercial</h4>
 				</li>
 				<li class="row col-xs-12">
-					<input type="radio" name="copyright_type" value="cc_by_nc_nd">
+					<input type="radio" name="" value="cc_by_nc_nd">
 					<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/cc-by-nc-nd.png" alt="Attribution-NonCommercial-NoDerivs symbol">
 					<h4>Attribution - NonCommercial - No Derivative Works</h4>
 				</li>
 				<li class="row col-xs-12">
-					<input type="radio" name="copyright_type" value="public_domain">
+					<input type="radio" name="" value="public_domain">
 					<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/public-domain.png" alt="Public Domain symbol">
 					<h4>Public Domain</h4>
 				</li>
