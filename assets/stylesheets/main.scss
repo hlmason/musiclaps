@@ -1848,8 +1848,11 @@ section#lyrics-container-header, #lyrics-container-form {
 	padding: 5px;
 	label {
 		@include form-fields-label(5px);
+		&#title-label, &#display-lyrics-title {
+			margin-top: 0; // Overrides the above ("margin-top: 5px")
+		}
 	}
-	select, input#title, input#songwriter_or_composer, textarea {
+	select, input.title, input.songwriter-or-composer, textarea {
 		@include form-fields-input(100%);
 	}
 	textarea {
