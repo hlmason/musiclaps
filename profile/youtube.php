@@ -35,14 +35,14 @@
 										<div>
 											<label id="youtube-id-label" for="youtube_id"><span class="musiclaps-blue">*</span> YouTube ID <span class="glyphicon glyphicon-question-sign"></span></label>
 											<div class="youtube-id-req" id="youTubeIdReq">The YouTube ID is the group of letters and numbers <strong>at the end</strong> of the YouTube URL (following the equal sign)</div>
-											<input id="youtube_id" type="text" name="youtube_id">
+											<input class="youtube-id" id="youtube_id" type="text" name="uid">
 										</div>
 										
 										<input id="view_youtube_vid" type="submit" value="View Youtube Video">
 										
 										<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="YouTube video image"><!-- Hard-coded placeholder -->
 										
-										<input id="link_to_project" type="submit" value="Link Video to Your Project">
+										<input id="link-to-project" type="submit" name="" value="Link Video to Your Project">
 									</form>
 								</div>
 							</div>
@@ -57,14 +57,14 @@
 							<form action="<?php echo BASE_URL; ?>controllers/process-youtube-links.php" method="post">
 								<div class="sm"><!-- Only visible at viewport widths > 580px -->
 									<label for="select_project_new_sm">Select Project</label>
-									<select id="select_project_new_sm">
+									<select id="select_project_new_sm" name="">
 										<option value="sound">$Project Title</option><!-- Hard-coded placeholder -->
 									</select>
 
-									<label id="name-label" for="name">Name</label>
-									<input id="name" type="text" name="name">
+									<label id="name-label" for="name_sm">Name</label>
+									<input class="name" id="name_sm" type="text" name="">
 
-									<input id="save_name" type="submit" value="Save">
+									<input id="save_name" type="submit" name="" value="Save">
 								</div>
 								
 								<div class="xs"><!-- Only visible at viewport widths <= 580px -->
@@ -76,10 +76,10 @@
 									</div>
 
 									<div>
-										<label id="name-label" for="name">Name</label>
-										<input id="name" type="text" name="name">
+										<label id="name-label" for="name_xs">Name</label>
+										<input class="name" id="name_xs" type="text" name="">
 
-										<input id="save_name" type="submit" value="Save">
+										<input id="save_name" type="submit" name="" value="Save">
 									</div>
 								</div>
 							</form>

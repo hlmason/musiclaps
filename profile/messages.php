@@ -32,8 +32,8 @@
 					<div class="add-friend-container row col-xs-12" id="addFriendContainer">
 						<form action="<?php echo BASE_URL; ?>controllers/process-messages.php" method="post">
 							<label for="add_friend">Member's Username</label>
-							<input class="add-friend-field" id="add_friend" type="text" name="add_friend">
-							<input class="add-friend-submit" type="submit" value="Add">
+							<input class="add-friend-field" id="add_friend" type="text" name="">
+							<input class="add-friend-submit" type="submit" name="" value="Add">
 						</form>
 					</div>
 
@@ -126,7 +126,7 @@
 								<span class="glyphicon glyphicon-pencil"></span>
 								<label for="compose_message">Message to $username</label><!-- Hard-coded placeholder -->
 								<textarea id="compose_message" name="compose_message"></textarea>
-								<input class="send-message" type="submit" value="Send">
+								<input class="send-message" type="submit" name="" value="Send">
 							</form>
 						</section>
 					</section>

@@ -4117,6 +4117,8 @@ section.project-form-header.requesting-collab-page .glyphicon-repeat {
     background-color: white; }
     .project-info-bar.requesting-collab-page.xs {
       display: none; }
+    .project-info-bar.requesting-collab-page h4, .project-info-bar.requesting-collab-page h5 {
+      margin-top: 0; }
 
 .volume-and-pan, .project-info-bar.requesting-collab-page {
   border-bottom: 1px solid #cecece;
@@ -4436,7 +4438,7 @@ section#lyrics-container-header {
   #youtube-settings label#youtube-id-label {
     margin-bottom: 2px;
     margin-top: 10px; }
-  #youtube-settings input#youtube_id {
+  #youtube-settings input.youtube-id {
     -moz-border-radius: 5px;
     border-radius: 5px;
     border: 1px solid #cecece;
@@ -4445,7 +4447,7 @@ section#lyrics-container-header {
     padding-top: 3px;
     width: 100%;
     margin-bottom: 5px; }
-  #youtube-settings input#view_youtube_vid, #youtube-settings input#link_to_project {
+  #youtube-settings input#view_youtube_vid, #youtube-settings input#link-to-project {
     -moz-border-radius: 5px;
     border-radius: 5px;
     font-size: 12px;
@@ -4456,12 +4458,12 @@ section#lyrics-container-header {
     padding: 3px 10px; }
     #youtube-settings input#view_youtube_vid:hover, #youtube-settings input#view_youtube_vid:focus {
       background-color: #d9d9d9; }
-  #youtube-settings input#link_to_project {
+  #youtube-settings input#link-to-project {
     background-color: #38aaff;
     border: 1px solid #38aaff;
     padding: 3px 10px;
     color: white; }
-    #youtube-settings input#link_to_project:hover, #youtube-settings input#link_to_project:focus {
+    #youtube-settings input#link-to-project:hover, #youtube-settings input#link-to-project:focus {
       background-color: #45b7ff; }
   #youtube-settings img {
     margin-top: 10px;
@@ -4470,7 +4472,7 @@ section#lyrics-container-header {
     padding-right: 10px;
     padding-top: 10px; }
 
-.youtube-page-form select, .youtube-page-form input#name {
+.youtube-page-form select, .youtube-page-form input.name {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -5308,6 +5310,8 @@ footer {
     display: none; }
   .project-info-bar.requesting-collab-page.xs {
     display: block; }
+    .project-info-bar.requesting-collab-page.xs h4, .project-info-bar.requesting-collab-page.xs h5 {
+      margin-top: 7px; }
     .project-info-bar.requesting-collab-page.xs h4:not(.last-h4), .project-info-bar.requesting-collab-page.xs .glyphicon-volume-up {
       margin-left: 5px; }
     .project-info-bar.requesting-collab-page.xs h4:not(.last-h4) {
@@ -5385,7 +5389,7 @@ footer {
   .youtube-page-form label {
     margin-bottom: 2px;
     margin-top: 10px; }
-  .youtube-page-form select, .youtube-page-form input#name {
+  .youtube-page-form select, .youtube-page-form input.name {
     width: 100%; }
   .youtube-page-form input#save_name, .youtube-page-form input#edit_name {
     margin-top: 10px; }
