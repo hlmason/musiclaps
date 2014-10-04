@@ -4354,7 +4354,9 @@ section#lyrics-container-header, #lyrics-container-form {
   section#lyrics-container-header label, #lyrics-container-form label {
     margin-bottom: 2px;
     margin-top: 5px; }
-  section#lyrics-container-header select, section#lyrics-container-header input#title, section#lyrics-container-header input#songwriter_or_composer, section#lyrics-container-header textarea, #lyrics-container-form select, #lyrics-container-form input#title, #lyrics-container-form input#songwriter_or_composer, #lyrics-container-form textarea {
+    section#lyrics-container-header label#title-label, section#lyrics-container-header label#display-lyrics-title, #lyrics-container-form label#title-label, #lyrics-container-form label#display-lyrics-title {
+      margin-top: 0; }
+  section#lyrics-container-header select, section#lyrics-container-header input.title, section#lyrics-container-header input.songwriter-or-composer, section#lyrics-container-header textarea, #lyrics-container-form select, #lyrics-container-form input.title, #lyrics-container-form input.songwriter-or-composer, #lyrics-container-form textarea {
     -moz-border-radius: 5px;
     border-radius: 5px;
     border: 1px solid #cecece;
