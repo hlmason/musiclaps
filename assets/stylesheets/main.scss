@@ -50,13 +50,6 @@ $box-shadow: 10px 10px 5px $musiclaps-dark-gray;
 	padding: $padding;
 }
 
-@mixin button-blue-wide ($border-radius) {
-	@include border-radius($border-radius);
-	@include submit($musiclaps-blue, 1px solid #1F91E6, 5px 10px, #45B7FF);
-	color: white;
-	width: 100%;
-}
-
 @mixin form-fields-input($width) {
 	@include border-radius(5px);
 	border: $nav-border;
@@ -79,16 +72,6 @@ $box-shadow: 10px 10px 5px $musiclaps-dark-gray;
 	margin-bottom: $margin-bottom;
 	margin-top: $margin-top;
 	text-align: center;
-}
-
-@mixin input-link {
-	background: none;
-	border: none;
-	color: #428bca;
-	font-weight: bold;
-	&:hover, &:focus {
-		color: #2a6496;
-	}
 }
 
 @mixin nav-border($color) { // Note that there is a variable with the same name
@@ -119,7 +102,7 @@ $box-shadow: 10px 10px 5px $musiclaps-dark-gray;
 	}
 }
 
-@mixin submit($background-color, $border, $padding, $hover-color) {
+@mixin submit-button($background-color, $border, $padding, $hover-color) {
 	background-color: $background-color;
 	border: $border;
 	padding: $padding;
@@ -128,13 +111,30 @@ $box-shadow: 10px 10px 5px $musiclaps-dark-gray;
 	}
 }
 		
-@mixin submit-save-blue {
+@mixin submit-button-blue {
 	@include border-radius(2px);
-	@include submit($musiclaps-blue, $musiclaps-blue-border, 1px 7px, #45B7FF);
+	@include submit-button($musiclaps-blue, $musiclaps-blue-border, 1px 7px, #45B7FF);
 	color: white;
 	font-weight: normal;
 	font-size: 12px;
 	text-transform: uppercase;
+}
+
+@mixin submit-button-blue-wide ($border-radius) {
+	@include border-radius($border-radius);
+	@include submit-button($musiclaps-blue, 1px solid #1F91E6, 5px 10px, #45B7FF);
+	color: white;
+	width: 100%;
+}
+
+@mixin submit-link {
+	background: none;
+	border: none;
+	color: #428bca;
+	font-weight: bold;
+	&:hover, &:focus {
+		color: #2a6496;
+	}
 }
 
 @mixin transform($degrees) {
@@ -225,7 +225,7 @@ span.normal {
 .modal-footer:not(.registration-modal-footer), .navbar-right {
 	input { // "Log in" and "Log out" buttons
 		@include border-radius(10px);
-		@include submit($musiclaps-light-gray, $nav-border, 5px 10px, #d9d9d9);
+		@include submit-button($musiclaps-light-gray, $nav-border, 5px 10px, #d9d9d9);
 	}
 }
 
@@ -652,7 +652,7 @@ nav {
 			}
 		}
 		&.registration-modal-footer input { // "Register" button
-			@include button-blue-wide(10px);
+			@include submit-button-blue-wide(10px);
 			text-transform: uppercase;
 		}
 	}
@@ -1125,7 +1125,7 @@ section#recording-instructions {
 		}
 		input.post-request {
 			@include border-radius(10px);
-			@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+			@include submit-button($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
 			color: white;
 			float: right;
 			margin-top: 10px;
@@ -1185,7 +1185,7 @@ section#messages-header button, section#groups-header button { // "Add New Frien
 		form.profile-page {
 			display: inline-block;
 			h4.save-profile input {
-				@include input-link;
+				@include submit-link;
 				padding-left: 2px;
 			}
 		}
@@ -1334,11 +1334,11 @@ input#change-password, #save-profile-container input, #upload-project-container 
 }
 
 input#change-password {
-	@include submit($musiclaps-light-gray, $nav-border, 3px 10px, #d9d9d9);
+	@include submit-button($musiclaps-light-gray, $nav-border, 3px 10px, #d9d9d9);
 }
 
 #save-profile-container input, #upload-project-container input {
-	@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+	@include submit-button($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
 	color: white;
 }
 
@@ -1628,7 +1628,7 @@ section.project-form-header {
 		margin-right: 9px;
 	}
 	input.save-volume-and-pan, input.save-volume {
-		@include input-link;
+		@include submit-link;
 		margin-top: 6px;
 		padding-right: 5px;
 	}
@@ -1660,7 +1660,7 @@ form.project-form {
 		@include form-fields-input(100%);
 	}
 	input.save {
-		@include submit-save-blue;
+		@include submit-button-blue;
 		&#save-genre {
 			margin-left: 49px;
 		}
@@ -1719,7 +1719,7 @@ form.project-form {
 		text-align: center;
 		input {
 			@include border-radius(10px);
-			@include submit($musiclaps-light-gray, $nav-border, 4px 10px, #444);
+			@include submit-button($musiclaps-light-gray, $nav-border, 4px 10px, #444);
 			font-size: 12px;
 			// @include button(#F4F4F4, $musiclaps-dark-gray, 12px, 6px 10px);
 			margin-top: 4px;
@@ -1774,7 +1774,7 @@ form.project-form {
 		@include border-radius(10px);
 	}
 	input#save-stage-background-img, input.update-file {
-		@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+		@include submit-button($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
 		color: white;
 	}
 }
@@ -1823,7 +1823,7 @@ section#lyrics-settings-sm, section#lyrics-settings-xs {
 		margin-top: 10px;
 	}
 	input.save {
-		@include submit-save-blue;
+		@include submit-button-blue;
 		float: right;
 		margin-top: 10px;
 	}
@@ -1879,7 +1879,7 @@ section#lyrics-container-header { // "Display Lyrics" and "Select Project"
 	border-left: $nav-border;
 	border-right: $nav-border;
 	input#save_lyrics {
-		@include button-blue-wide(2px);
+		@include submit-button-blue-wide(2px);
 	}
 }
 
@@ -1960,10 +1960,10 @@ section#lyrics-container-header { // "Display Lyrics" and "Select Project"
 		width: 100%;
 	}
 	input#view_youtube_vid {
-		@include submit($musiclaps-light-gray, $nav-border, 3px 10px, #d9d9d9);
+		@include submit-button($musiclaps-light-gray, $nav-border, 3px 10px, #d9d9d9);
 	}
 	input#link-to-project {
-		@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+		@include submit-button($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
 		color: white;
 	}
 	img {
@@ -1985,7 +1985,7 @@ section#lyrics-container-header { // "Display Lyrics" and "Select Project"
 	}
 	input#save_name, input#edit_name {
 		@include border-radius(10px);
-		@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+		@include submit-button($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
 		color: white;
 		font-size: 12px;
 	}
@@ -2052,7 +2052,7 @@ section#messages-header {
 	}
 	input.add-friend-submit {
 		@include border-radius(10px);
-		@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+		@include submit-button($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
 		color: white;
 		font-size: 12px;
 		font-weight: normal;
@@ -2117,7 +2117,7 @@ section.messages-container {
 	}
 	input.send-message {
 		@include border-radius(10px);
-		@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+		@include submit-button($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
 		color: white;
 		float: right;
 		margin-top: 3px;
@@ -2175,7 +2175,7 @@ section.create-new-group-container {
 		@include form-fields-input(90%);
 	}
 	input.save {
-		@include submit-save-blue;
+		@include submit-button-blue;
 		margin-bottom: 15px;
 		margin-right: 15px;
 		margin-top: 15px;
@@ -2361,7 +2361,7 @@ section#comment-container {
 	}
 	input {
 		@include border-radius(10px);
-		@include submit($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+		@include submit-button($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
 		color: white;
 		float: right;
 		margin-top: 3px;
@@ -2741,7 +2741,7 @@ footer {
 		li:not(.first-list-item) { margin-top: 15px; }
 		img { margin-bottom: 1px; } // Social media icons
 		input { // Social media login buttons
-			@include submit($musiclaps-light-gray, $nav-border, 3px 6px, #d9d9d9);
+			@include submit-button($musiclaps-light-gray, $nav-border, 3px 6px, #d9d9d9);
 			@include border-bottom-right-radius(5px);
 			@include border-top-right-radius(5px);
 			margin-left: 2px;
