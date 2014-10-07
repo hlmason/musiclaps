@@ -7,4 +7,5 @@
 	
 	// Redirect to landing page
 	header('location:' . BASE_URL);
+	exit();
 ?>
