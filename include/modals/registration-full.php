@@ -70,6 +70,7 @@
 				
 				<div class="modal-footer registration-modal-footer">
 					<input type="submit" value="Register">
+					<input type="hidden" name="register" value="register">
 				</div>
 			</form>
 		</div>
