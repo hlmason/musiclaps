@@ -41,4 +41,32 @@ $(document).ready(function() {
 		registerOrLogin.modal('show');
 	});
 
+
+	/* ===========================================
+	    Ajax for registration modal validations
+	=========================================== */
+	$('form.registrationForm').submit(function() {
+		
+		var registrationForm = $(this);
+		var input = $('input');
+		var select = $('select');
+		var validationErrorMessages = $('#validationErrorMessages');
+
+		$.post(registrationForm.attr('action'), registrationForm.serialize(), function(data) {
+			console.log(data);
+			if (data['error'] == true) {
+				input.css('border', '2px solid #38AAFF');
+				select.css('border', '2px solid #38AAFF');
+				validationErrorMessages.html(data['html']);
+			} else {
+				input.css('border', '1px solid #cecece');
+				input.css('border', '1px solid #cecece');
+				validationErrorMessages.html(data['html']);
+				// document.getElementById('resetForm').reset();
+			}
+		}, 
+			'json');
+		return false;
+	});
+
 });

@@ -10,8 +10,9 @@
 				<h2 class="modal-title registration-full-modal-heading" id="registrationFullLabel">Email Registration</h2>
 			</div>
 			
-			<form action="<?php echo BASE_URL; ?>controllers/process-registration.php" method="post">	
-				<div class="modal-body" id="registration-full-modal-body">	
+			<form class="registrationForm" id="resetForm" action="<?php echo BASE_URL; ?>controllers/process-registration.php" method="post">	
+				<div class="modal-body" id="registration-full-modal-body">
+					<div id="validationErrorMessages"></div>	
 					<div>
 						<label id="email-label" for="email"><span class="musiclaps-blue">*</span> Email Address</label>
 						<input id="email" type="email" name="email">
@@ -70,6 +71,7 @@
 				
 				<div class="modal-footer registration-modal-footer">
 					<input type="submit" value="Register">
+					<input type="hidden" name="register" value="register">
 				</div>
 			</form>
 		</div>

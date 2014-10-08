@@ -1,5 +1,6 @@
 <?php
-	include ("include/db-connection.php");
+	require_once('../include/config.php');
+	include('../include/db-connection.php');
 	
 	//selects using the user input 
 	$get_user_query = 'SELECT * FROM user WHERE userid="'. $_POST['userid'] .'" AND password="'. md5($_POST['password']) .'"';
@@ -19,7 +20,7 @@
 		);
 		
 		//redirects to the main page/home page
-		header( 'Location: ../profile/index.php' );
+		header('location: ../profile/index.php');
 	}
 	//if login is incorrect, it will show this error message below
 	else
@@ -27,6 +28,6 @@
 		$_SESSION['login_error'] = "<p>Username and Password do not match!</p>"; 
 		
 		//redirects to the sign in page and returns error
-		header( 'Location: ../profile/index.php' ) ; // TODO: fix these validations
+		header('location: ../profile/index.php') ; // TODO: fix these validations
 	}
 ?>
