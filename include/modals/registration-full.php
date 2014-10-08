@@ -10,12 +10,13 @@
 				<h2 class="modal-title registration-full-modal-heading" id="registrationFullLabel">Email Registration</h2>
 			</div>
 			
-			<form action="<?php echo BASE_URL; ?>controllers/process-registration.php" method="post">	
+			<form id="registrationForm" action="<?php echo BASE_URL; ?>controllers/process-registration.php" method="post">	
 				<div class="modal-body" id="registration-full-modal-body">	
 					<div>
 						<label id="email-label" for="email"><span class="musiclaps-blue">*</span> Email Address</label>
 						<input id="email" type="email" name="email">
 					</div>
+					<div id="email_validation_error"></div>
 					
 					<div>
 						<label for="userid"><span class="musiclaps-blue">*</span> Username</label>

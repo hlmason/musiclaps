@@ -41,4 +41,27 @@ $(document).ready(function() {
 		registerOrLogin.modal('show');
 	});
 
+
+	// Ajax for registration modal validations
+	$('form#registrationForm').submit(function() {
+		
+		var registrationForm = $(this);
+		var email = $('input#email');
+		var email_validation_error = $('#email_validation_error');
+
+		$.post(registrationForm.attr('action'), registrationForm.serialize(), function(data) {
+			console.log(data);
+			if (data['error_type_email'] == true) {
+				email.css('border', '2px solid #38AAFF');
+				email_validation_error.html(data['html']);
+			} else {
+				email.css('border', '1px solid #cecece');
+				email_validation_error.html(data['html']);
+				// document.getElementById('reset_form').reset();
+			}
+		}, 
+			'json');
+		return false;
+	});
+
 });

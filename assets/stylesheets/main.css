@@ -2915,12 +2915,14 @@ a:hover {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"; }
 
-label#birth-date-label-modal, label#gender-label,
-label#birth-date-label-profile, label#collab-label {
+form label#birth-date-label-modal, form label#gender-label,
+form label#birth-date-label-profile, form label#collab-label {
   margin-right: 2px; }
-
-textarea {
+form textarea {
   max-width: 100%; }
+form h4.error-message {
+  margin-left: 2px !important;
+  margin-top: 5px !important; }
 
 span.block {
   display: block; }

@@ -183,13 +183,18 @@ a:hover {
 	ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"; // IE8
 }
 
-label#birth-date-label-modal, label#gender-label, 
-label#birth-date-label-profile, label#collab-label { // Full registration modal, Profile page, and Collaborators page 
-	margin-right: 2px;
-}
-
-textarea {
-	max-width: 100%; // Prevents user from expanding textarea horizontally
+form {
+	label#birth-date-label-modal, label#gender-label, 
+	label#birth-date-label-profile, label#collab-label { // Full registration modal, Profile page, and Collaborators page 
+		margin-right: 2px;
+	}
+	textarea {
+		max-width: 100%; // Prevents user from expanding textarea horizontally
+	}
+	h4.error-message {
+		margin-left: 2px !important;
+		margin-top: 5px !important;
+	}
 }
 
 span.block {
