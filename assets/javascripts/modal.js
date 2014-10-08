@@ -45,7 +45,7 @@ $(document).ready(function() {
 	/* ===========================================
 	    Ajax for registration modal validations
 	=========================================== */
-	$('form#registrationForm').submit(function() {
+	$('form.registrationForm').submit(function() {
 		
 		var registrationForm = $(this);
 		var input = $('input');
@@ -62,7 +62,7 @@ $(document).ready(function() {
 				input.css('border', '1px solid #cecece');
 				input.css('border', '1px solid #cecece');
 				validationErrorMessages.html(data['html']);
-				// document.getElementById('reset_form').reset();
+				// document.getElementById('resetForm').reset();
 			}
 		}, 
 			'json');
