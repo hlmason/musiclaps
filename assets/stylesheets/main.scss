@@ -194,6 +194,9 @@ form {
 	h4.error-message {
 		margin-left: 2px !important;
 		margin-top: 5px !important;
+		&:first-child {
+			margin-top: 15px !important; // Overwrites the above ("margin-top: 5px !important")
+		}
 	}
 }
 

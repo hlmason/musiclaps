@@ -2923,6 +2923,8 @@ form textarea {
 form h4.error-message {
   margin-left: 2px !important;
   margin-top: 5px !important; }
+  form h4.error-message:first-child {
+    margin-top: 15px !important; }
 
 span.block {
   display: block; }
