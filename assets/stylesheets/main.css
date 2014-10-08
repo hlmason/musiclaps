@@ -2945,7 +2945,8 @@ span.normal {
   color: #38aaff !important; }
 #registration-full-modal-body .password-req, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .password-req, #registration-express-modal-body .youtube-id-req, #youtube-settings .password-req, #youtube-settings .youtube-id-req {
   font-size: 12px;
-  margin-bottom: 2px; }
+  margin-bottom: 2px;
+  margin-left: 2px; }
 
 .modal-footer:not(.registration-modal-footer) input, .navbar-right input {
   -moz-border-radius: 10px;
