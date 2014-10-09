@@ -1,6 +1,6 @@
 <?php
 	require_once('../include/config.php');
-	include('../include/db-connection.php');
+	include('../include/new-db-connection.php');
 	
 	//selects using the user input 
 	$get_user_query = 'SELECT * FROM user WHERE userid="'. $_POST['userid'] .'" AND password="'. md5($_POST['password']) .'"';

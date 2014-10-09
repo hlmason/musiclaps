@@ -50,12 +50,4 @@ function run_mysql_query($query)
  	return $connection->insert_id;
 }
 
-//This function will return an escaped string.  IE the string "That's crazy!" Will be returned as:
-// "That\'s crazy!...This helps secure your database!
-function escape_this_string($string)
-{
-	global $connection;
-	return $connection->real_escape_string($string);
-}
-
 ?>
