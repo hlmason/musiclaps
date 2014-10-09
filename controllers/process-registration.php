@@ -86,7 +86,7 @@
 		// 	exit();
 		// } else {
 		// 	$_SESSION['success'] = "You have successfully registered for Musiclaps";
-		// 	header('location: ../include/user-menu.php');
+		// 	header('location: ../include/profile/user-menu.php');
 		// 	exit();
 		// }
 

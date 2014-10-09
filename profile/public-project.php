@@ -16,14 +16,14 @@
 					
 				<div class="row col-xs-12 col-md-9">
 
-				<!-- Recording Player -->
+					<!-- Recording Player -->
 					<div class="row col-xs-12 live-player-container">
 						<iframe width="620" height="380" src="https://www.musiclaps.com/embed/player?songid=null" frameborder="0" scrolling="no"></iframe><!-- Placeholder -->
 					</div>
 					<!-- End of Recording Player -->
 
 
-					<section class="row col-xs-12" id="public-project-header">
+					<section class="row col-xs-12 public-project-header">
 						<h3>Project Title</h3><!-- Hard-coded placeholder -->
 						<h5>Date Uploaded: <span class="normal">07/17/14</span></h5><!-- Hard-coded placeholder -->
 					</section>
@@ -34,22 +34,22 @@
 						</div>	
 
 						<div class="row col-xs-7 col-sm-6">
-							<section id="username-and-number-of-songs">
+							<section class="username-and-number-of-songs">
 								<a href="<?php echo BASE_URL; ?>profile/public-profile.php"><h4>$username</h4></a><!-- Hard-coded placeholder -->
 								<h5>$# Songs</h5><!-- Hard-coded placeholder -->
 							</section>
 							
-							<div id="youtube-links">
-								<a id="first-link" href="#"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/link-to-youtube-icon.jpg" alt="Link to YouTube icon"></a><!-- Hard-coded placeholder -->
+							<div class="youtube-links">
+								<a class="first-link" href="#"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/link-to-youtube-icon.jpg" alt="Link to YouTube icon"></a><!-- Hard-coded placeholder -->
 								<a href="#"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/link-to-youtube-icon-gray.png" alt="Link to YouTube icon"></a><!-- Hard-coded placeholder -->
 								<a href="#"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/link-to-youtube-icon-gray.png" alt="Link to YouTube icon"></a><!-- Hard-coded placeholder -->
 							</div>
 						</div>
 
 						<div class="row col-xs-1 col-sm-4">
-							<section id="number-of-listens">
+							<section class="number-of-listens">
 								<h2>#</h2>
-								<h5 id="listens">listens</h5>
+								<h5>listens</h5>
 							</section>
 						</div>
 					</section>
@@ -71,13 +71,13 @@
 
 
 					<section class="row col-xs-12 public-project-info">
-						<img id="clapping-hands" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/clapping-hands.png" alt="1 pair of clapping hands">
+						<img class="clapping-hands" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/clapping-hands.png" alt="1 pair of clapping hands">
 						<h4 id="number-of-claps"># claps</h4><!-- Hard-coded placeholder -->
 						
 						<!-- <span class="glyphicon glyphicon-thumbs-up"></span> -->
 
 						<span class="glyphicon glyphicon-heart"></span>
-						<h4 id="favorites"># favorites</h4><!-- Hard-coded placeholder -->
+						<h4 class="favorites"># favorites</h4><!-- Hard-coded placeholder -->
 					</section>
 					
 					<div class="row col-xs-12 public-project-info">

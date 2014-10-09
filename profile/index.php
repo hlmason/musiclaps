@@ -6,7 +6,7 @@
 	include(ROOT_PATH . 'include/header-logged-in.php');
 	include(ROOT_PATH . 'include/db-connection.php');
 	include(ROOT_PATH . 'controllers/get-profile.php');
-	include(ROOT_PATH . 'include/user-menu.php');
+	include(ROOT_PATH . 'include/profile/user-menu.php');
 
 ?>
 		
@@ -54,7 +54,7 @@
 
 					<!-- "My Public Projects" -->
 					<section id="myPublicProjects">
-						<div class="row col-xs-12 public-projects-and-collaborations-container">
+						<section class="row col-xs-12 public-projects-and-collaborations-container">
 							
 							<h4 class="my-public-projects-heading">My Public Projects <span class="normal">($number)</span></h4>
 
@@ -237,9 +237,9 @@
 							<div class="col-xs-1"></div>
 						</div>
 
-						<div class="row col-xs-12" id="user-location-map-container">
+						<div class="row col-xs-12 user-location-map-container">
 							<h4>Location: </h4>
-							<div id="user-location-map"></div><!-- Placeholder -->
+							<div class="user-location-map"></div><!-- Placeholder -->
 						</div>
 
 						<div class="row col-xs-12">

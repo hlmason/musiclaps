@@ -6,7 +6,7 @@
 	include(ROOT_PATH . 'include/header-logged-in.php');
 	include(ROOT_PATH . 'include/db-connection.php');
 	include(ROOT_PATH . 'controllers/get-profile.php');
-	include(ROOT_PATH . 'include/user-menu.php');
+	include(ROOT_PATH . 'include/profile/user-menu.php');
 
 ?>
 		

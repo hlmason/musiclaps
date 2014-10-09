@@ -1,4 +1,4 @@
-<div class="modal fade" id="registerOrLogin" tabindex="-1" role="dialog" aria-labelledby="registerOrLoginLabel" aria-hidden="true">
+<div class="modal fade registerOrLogin" tabindex="-1" role="dialog" aria-labelledby="registerOrLoginLabel" aria-hidden="true">
 	<div class="modal-dialog modal-sm">
 		<div class="modal-content">
 
@@ -10,7 +10,7 @@
 				<h3 class="modal-title" id="registerOrLoginLabel">Please register or log in to save</h3>
 			</div>
 
-			<div class="modal-body" id="register-or-login-modal-body">
+			<div class="modal-body register-or-login-modal-body">
 				<button class="registerJS" type="button">Register</button>
 				<button class="loginJS" type="button">Log in</button>
 			</div>

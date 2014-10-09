@@ -33,7 +33,6 @@
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/live-player.js"></script>
 	<script src="<?php echo BASE_URL; ?>walkthrough/assets/js/standard.js"></script><!-- Julie's Captivate -->
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/public-project.js"></script>
-	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/public-profile.js"></script>
 </head>
 <body>
 
