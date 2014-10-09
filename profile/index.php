@@ -237,9 +237,9 @@
 							<div class="col-xs-1"></div>
 						</div>
 
-						<div class="row col-xs-12" id="user-location-map-container">
+						<div class="row col-xs-12 user-location-map-container">
 							<h4>Location: </h4>
-							<div id="user-location-map"></div><!-- Placeholder -->
+							<div class="user-location-map"></div><!-- Placeholder -->
 						</div>
 
 						<div class="row col-xs-12">

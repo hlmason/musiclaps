@@ -12,22 +12,9 @@
 	<div id="wrapper">
 		<div class="container">
 			
-			<nav class="row col-lg-10 col-lg-offset-1">
-				<span class="glyphicon glyphicon-user glyphiconUser"></span>
-				<h4 class="user-menu userMenu">User Menu</h4>
-				<ul class="nav navbar-nav user-menu userMenu">
-					<li class="first-list-item" id="profileLink">
-						<a class="white" id="publicProfileLink" href="#">Profile</a>
-					</li>
-					<li>
-						<a id="collaborationsLink" href="#">Collaborations</a>
-					</li>
-					<li>
-						<a id="friendsLink" href="#">Friends</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="col-lg-1"></div>
+			<?php
+				include(ROOT_PATH . 'include/profile/user-menu-b.php');
+			?>
 		
 			<div class="row col-lg-10 col-lg-offset-1">				
 					
@@ -64,7 +51,7 @@
 							<h4 class="my-public-projects-heading">Projects <span class="normal">($number)</span></h4><!-- Hard-coded placeholder / Note that this says "My Public Projects" on public-profile-logged-in.php -->
 
 							<?php
-								include(ROOT_PATH . 'include/profile/public-projects-and-collaborations.php');
+								include(ROOT_PATH . 'include/profile/public-projects-and-collaborations-b.php');
 							?>
 					<!-- End of "Projects" -->
 
@@ -76,7 +63,7 @@
 							<h4 class="my-public-projects-heading">Collaborations <span class="normal">($number)</span></h4><!-- Hard-coded placeholder / Note that this says "My Collaborations" on public-profile-logged-in.php -->
 						
 							<?php
-								include(ROOT_PATH . 'include/profile/public-projects-and-collaborations.php');
+								include(ROOT_PATH . 'include/profile/public-projects-and-collaborations-b.php');
 							?>
 					<!-- End of "Collaborations" -->
 

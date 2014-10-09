@@ -1,9 +1,9 @@
 <?php
 	require_once('../include/config.php');
 
-	$page_title = 'Project Name'; // Hard-coded placeholder 
+	$page_title = 'Project Name'; // Hard-coded placeholder
 	
-	include(ROOT_PATH . 'include/header-logged-in.php');
+	include(ROOT_PATH . 'include/header.php');
 	include(ROOT_PATH . 'include/db-connection.php');
 	include(ROOT_PATH . 'controllers/get-profile.php');
 
@@ -30,12 +30,12 @@
 					
 					<section class="row col-xs-12 public-project-info">	
 						<div class="row col-xs-4 col-sm-2">
-							<a href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"></a>
+							<a href="<?php echo BASE_URL; ?>profile/public-profile.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"></a>
 						</div>
 
 						<div class="row col-xs-7 col-sm-6">
 							<section class="username-and-number-of-songs">
-								<a href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php"><h4>$username</h4></a><!-- Hard-coded placeholder -->
+								<a href="<?php echo BASE_URL; ?>profile/public-profile.php"><h4>$username</h4></a><!-- Hard-coded placeholder -->
 								<h5>$# Songs</h5><!-- Hard-coded placeholder -->
 							</section>
 							
@@ -95,7 +95,7 @@
 					<div class="row col-xs-12">
 						<div class="share-to-social-networks-container" id="shareToSocialNetworksContainer">
 							<img class="facebook-icon first-img" src="<?php echo BASE_URL; ?>assets/images/global/facebook-icon.png" alt="Facebook icon"><!-- Hard-coded placeholder -->
-							<img class="twitter-<!-- Hard-coded placeholder -->icon" src="<?php echo BASE_URL; ?>assets/images/global/twitter-icon.png" alt="Twitter icon">
+							<img class="twitter icon" src="<?php echo BASE_URL; ?>assets/images/global/twitter-icon.png" alt="Twitter icon"><!-- Hard-coded placeholder -->
 							<img class="google-icon" src="<?php echo BASE_URL; ?>assets/images/global/google-icon.jpg" alt="Google icon"><!-- Hard-coded placeholder -->
 							<img id="reddit-icon" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/reddit-icon.gif" alt="Reddit icon"><!-- Hard-coded placeholder -->
 							<img id="tumblr-icon" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/tumblr-icon.png" alt="Tumblr icon"><!-- Hard-coded placeholder -->
@@ -130,8 +130,8 @@
 							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
 						</div>
 						<section class="row col-xs-12">
-							<a href="<?php echo BASE_URL; ?>profile/public-project-logged-in.php"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
-							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
+							<a href="<?php echo BASE_URL; ?>profile/public-project.php"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
+							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
 							<h5># Plays</h5><!-- Hard-coded placeholder -->
 						</section>
 
@@ -139,8 +139,8 @@
 							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
 						</div>
 						<section class="row col-xs-12">
-							<a href="<?php echo BASE_URL; ?>profile/public-project-logged-in.php"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
-							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
+							<a href="<?php echo BASE_URL; ?>profile/public-project.php"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
+							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
 							<h5># Plays</h5><!-- Hard-coded placeholder -->
 						</section>
 
@@ -148,8 +148,8 @@
 							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
 						</div>
 						<section class="row col-xs-12">
-							<a href="<?php echo BASE_URL; ?>profile/public-project-logged-in.php"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
-							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
+							<a href="<?php echo BASE_URL; ?>profile/public-project.php"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
+							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
 							<h5># Plays</h5><!-- Hard-coded placeholder -->
 						</section>
 
@@ -157,8 +157,8 @@
 							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
 						</div>
 						<section class="row col-xs-12">
-							<a href="<?php echo BASE_URL; ?>profile/public-project-logged-in.php"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
-							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
+							<a href="<?php echo BASE_URL; ?>profile/public-project.php"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
+							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
 							<h5># Plays</h5><!-- Hard-coded placeholder -->
 						</section>
 					</div>

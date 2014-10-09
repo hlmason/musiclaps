@@ -2967,7 +2967,7 @@ img#microsoft-icon {
   height: 29px;
   width: 29px; }
 
-#youtube-links img, #info-below-youtube-player img, #youtube-link img {
+.youtube-links img, #info-below-youtube-player img, #youtube-link img {
   height: 18px;
   width: 57px; }
 
@@ -4715,62 +4715,81 @@ section.groups-container {
     section.groups-container section.projects-container-groups-page h5 {
       font-size: 12px; }
 
-section#public-project-header h3, section#public-project-header h5 {
+section.public-project-header h3, section.public-project-header h5 {
   display: inline-block;
   margin-bottom: 10px;
   margin-right: 5px;
   margin-top: 15px; }
-section#public-project-header h5 {
+section.public-project-header h5 {
   float: right; }
 
-section#public-project-header h5, img#cover-song {
+section.public-project-header h5, img#cover-song {
   margin-right: 10px !important; }
 
 .public-project-info img.avatar {
   height: 65px;
   position: absolute;
   width: 65px; }
-.public-project-info section#username-and-number-of-songs h4, .public-project-info section#username-and-number-of-songs h5 {
+.public-project-info section.username-and-number-of-songs h4, .public-project-info section.username-and-number-of-songs h5 {
   display: inline-block;
   margin-bottom: 10px;
   margin-top: 5px; }
-.public-project-info section#username-and-number-of-songs h5 {
+.public-project-info section.username-and-number-of-songs h5 {
   margin-left: 5px; }
 .public-project-info h5 {
   font-weight: normal; }
-.public-project-info #youtube-links a:not(#first-link) {
+.public-project-info .youtube-links a:not(.first-link) {
   padding-left: 10px; }
-.public-project-info #youtube-links img {
+.public-project-info .youtube-links img {
   height: 18px;
   width: 57px; }
-.public-project-info section#number-of-listens h2, .public-project-info section#number-of-listens h5 {
+.public-project-info section.number-of-listens h2, .public-project-info section.number-of-listens h5 {
   margin-bottom: 0;
   margin-top: 0;
   text-align: right; }
-.public-project-info.type-of-collab-container h5, .public-project-info img#clapping-hands {
+.public-project-info.type-of-collab-container h5, .public-project-info.clapping-hands-and-favorites-container h4, .public-project-info img.clapping-hands {
   margin-bottom: 12px; }
-.public-project-info.type-of-collab-container {
+.public-project-info.type-of-collab-container, .public-project-info#project-detail-container, .public-project-info.clapping-hands-and-favorites-container {
   border-bottom: 1px solid #cecece;
   padding-bottom: 5px; }
-  .public-project-info.type-of-collab-container h5 {
-    display: inline-block;
-    margin-top: 25px; }
-  .public-project-info.type-of-collab-container .glyphicon:not(.first-glyphicon) {
-    margin-left: 23px; }
-  .public-project-info.type-of-collab-container img#cover-song {
-    float: right;
-    height: 46px;
-    margin-right: 25px;
-    width: 88px; }
-.public-project-info img#clapping-hands {
+.public-project-info.type-of-collab-container img#cover-song, .public-project-info.type-of-collab-container img#cover-song-public-project-b-page {
+  height: 31px;
+  width: 88px; }
+.public-project-info.type-of-collab-container h5 {
+  display: inline-block;
+  margin-top: 25px; }
+.public-project-info.type-of-collab-container .glyphicon:not(.first-glyphicon) {
+  margin-left: 23px; }
+.public-project-info.type-of-collab-container img#cover-song {
+  float: right;
+  margin-right: 25px;
+  margin-top: 20px; }
+.public-project-info#project-detail-container h3 {
+  display: inline-block; }
+.public-project-info#project-detail-container .glyphicon-envelope {
+  margin-left: 15px; }
+.public-project-info#project-detail-container #project-details h4, .public-project-info#project-detail-container h4.project-img {
+  font-weight: normal; }
+.public-project-info#project-detail-container h4.project-img {
+  margin-bottom: 5px; }
+.public-project-info#project-detail-container img.project-img {
+  height: 75px;
+  width: 120px; }
+.public-project-info #likes-container img.avatar {
+  height: 65px;
+  width: 65px; }
+.public-project-info img.clapping-hands {
   height: 25px;
   width: 25px; }
-.public-project-info img#clapping-hands, .public-project-info .glyphicon-heart {
+.public-project-info img.clapping-hands, .public-project-info .glyphicon-heart {
   cursor: pointer; }
-.public-project-info h4#number-of-claps, .public-project-info h4#favorites {
+.public-project-info h4#number-of-claps, .public-project-info h4#number-of-claps-public-project-b-page, .public-project-info h4.favorites {
   display: inline-block;
-  margin-bottom: 0;
+  margin-bottom: 0; }
+.public-project-info h4#number-of-claps {
   margin-top: 15px; }
+.public-project-info h4#number-of-claps-public-project-b-page {
+  margin-top: 25px; }
 .public-project-info .glyphicon-heart {
   font-size: 1.25em;
   margin-left: 30px; }
@@ -4873,17 +4892,24 @@ section.profile-right.profile-page {
       height: 115px; }
     section.profile-right.profile-page .row:not(.last-row) {
       border-bottom: 1px solid #999; }
-    section.profile-right.profile-page .row#user-location-map-container {
+    section.profile-right.profile-page .row.user-location-map-container {
       height: 230px; }
-      section.profile-right.profile-page .row#user-location-map-container #user-location-map {
+      section.profile-right.profile-page .row.user-location-map-container .user-location-map {
         background-color: lightblue;
         height: 160px;
         width: 100%; }
+      section.profile-right.profile-page .row.user-location-map-container img.avatar {
+        height: 65px;
+        margin-top: 40px;
+        width: 65px; }
   section.profile-right.profile-page h2 {
     margin-bottom: 3px; }
 
 section.profile-right.profile-page.public-profile-page {
   margin-top: -28px; }
+
+section.profile-right.profile-page .row {
+  margin-left: 10px; }
 
 section.profile-right.recommended {
   height: 844px; }
@@ -5005,7 +5031,7 @@ footer {
     #all-music-page section.projects-container h4, #all-music-page section.projects-container h5 {
       margin-left: 12px; }
 
-  section#public-project-header h5, img#cover-song {
+  section.public-project-header h5, img#cover-song {
     margin-right: 24px !important; }
 
   form.profile-page input#change-password {
@@ -5120,7 +5146,7 @@ footer {
     #all-music-page .col-xs-12.col-md-4 h4, #all-music-page .col-xs-12.col-md-4 h5 {
       margin: 0; }
 
-  section#public-project-header h5, img#cover-song {
+  section.public-project-header h5, img#cover-song {
     margin-right: 38px !important; }
 
   #about-me {
@@ -5424,7 +5450,7 @@ footer {
       #players-wanted-page section.col-xs-10 table span.username {
         margin-left: 0; }
 
-  #youtube-links a:not(#first-link) {
+  .youtube-links a:not(.first-link) {
     padding-left: 0 !important; }
 
   #info-below-youtube-player h4 {
@@ -5449,7 +5475,7 @@ footer {
   #genre-form-projects {
     width: 100%; } }
 @media only screen and (max-width: 399px) {
-  section#username-and-number-of-songs h4, section#username-and-number-of-songs h5 {
+  section.username-and-number-of-songs h4, section.username-and-number-of-songs h5 {
     margin-left: 22px !important; }
 
   select {
