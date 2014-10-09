@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	var passwordReq = $('#passwordReq');
-	var registerOrLogin = $('#registerOrLogin'); // Modal
+	var registerOrLogin = $('.registerOrLogin'); // Modal
 	var register = $('#registerJS'); // Modal
 	var login = $('#loginJS'); // Modal
 
@@ -37,10 +37,13 @@ $(document).ready(function() {
 		}
 	});
 
-	$('button#registerOrLoginJS').on('click', function() { // This modal is on the Live Player page
+	$('button.registerOrLoginJS').on('click', function() { // This modal is on the Live Player page
 		registerOrLogin.modal('show');
 	});
 
+	$('#glyphiconEnvelope').on('click', function() { // This modal is on the Live Player page
+		registerOrLogin.modal('show');
+	});
 
 	/* ===========================================
 	    Ajax for registration modal validations

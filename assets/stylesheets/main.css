@@ -3241,7 +3241,7 @@ ul.user-menu li:not(.dropdown-menu-list-item) {
       width: 12px; }
   .modal-content .modal-body#login-modal-body input {
     margin-top: 15px; }
-  .modal-content .modal-body#register-or-login-modal-body
+  .modal-content .modal-body.register-or-login-modal-body
   button {
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -3255,14 +3255,14 @@ ul.user-menu li:not(.dropdown-menu-list-item) {
     display: block;
     font-weight: bold;
     width: 100%; }
-    .modal-content .modal-body#register-or-login-modal-body
-    button:hover, .modal-content .modal-body#register-or-login-modal-body
+    .modal-content .modal-body.register-or-login-modal-body
+    button:hover, .modal-content .modal-body.register-or-login-modal-body
     button:focus {
       background-color: #d9d9d9; }
-    .modal-content .modal-body#register-or-login-modal-body
+    .modal-content .modal-body.register-or-login-modal-body
     button:first-child {
       margin-top: 5px; }
-    .modal-content .modal-body#register-or-login-modal-body
+    .modal-content .modal-body.register-or-login-modal-body
     button:last-child {
       margin-top: 20px; }
   .modal-content .modal-body h4 {
@@ -4767,6 +4767,7 @@ section.public-project-header h5, img#cover-song {
 .public-project-info#project-detail-container h3 {
   display: inline-block; }
 .public-project-info#project-detail-container .glyphicon-envelope {
+  cursor: pointer;
   margin-left: 15px; }
 .public-project-info#project-detail-container #project-details h4, .public-project-info#project-detail-container h4.project-img {
   font-weight: normal; }
@@ -4908,7 +4909,7 @@ section.profile-right.profile-page {
 section.profile-right.profile-page.public-profile-page {
   margin-top: -28px; }
 
-section.profile-right.profile-page .row {
+section.profile-right.profile-page.public-profile-b-page .row {
   margin-left: 10px; }
 
 section.profile-right.recommended {

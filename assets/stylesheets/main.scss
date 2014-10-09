@@ -602,7 +602,7 @@ nav {
 				margin-top: 15px;
 			}
 		}
-		&#register-or-login-modal-body // On modal that appears after clicking "Save Recording"
+		&.register-or-login-modal-body // On modal that appears after clicking "Save Recording"
 			button {
 				@include button($musiclaps-light-gray, $musiclaps-dark-gray, 14px, 5px 10px);
 				border: $nav-border;
@@ -2305,6 +2305,7 @@ section.public-project-header h5, img#cover-song {
 			display: inline-block;
 		}
 		.glyphicon-envelope {
+			cursor: pointer; // For logged out page
 			margin-left: 15px;
 		}
 		#project-details h4, h4.project-img {
@@ -2466,9 +2467,9 @@ section.profile-right.profile-page.public-profile-page {
 	margin-top: -28px;
 }
 
-section.profile-right.profile-page {
+section.profile-right.profile-page.public-profile-b-page {
 	.row {
-		margin-left: 10px;
+		margin-left: 10px; // Overwrites "margin-left: 15px"
 	}
 }
 

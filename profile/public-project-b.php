@@ -12,7 +12,7 @@
 	<div id="wrapper">
 		<div class="container">
 
-			<div class="row col-lg-10 col-lg-offset-2">				
+			<div class="row col-lg-10 col-lg-offset-1">				
 					
 				<div class="row col-xs-12 col-md-9">
 
@@ -25,7 +25,6 @@
 
 					<section class="row col-xs-12 public-project-header">
 						<h3>Project Title</h3><!-- Hard-coded placeholder -->
-						<h5>Date Uploaded: <span class="normal">07/17/14</span></h5><!-- Hard-coded placeholder -->
 					</section>
 					
 					<section class="row col-xs-12 public-project-info">	
@@ -55,119 +54,89 @@
 					</section>
 					
 					<section class="row col-xs-12">
-						<div class="type-of-collab-container public-project-info">
-							<span class="glyphicon first-glyphicon"></span><!-- Placeholder -->
-							<h5>No Collab</h5>
+						<div class="clapping-hands-and-favorites-container public-project-info">
+							<img class="clapping-hands" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/clapping-hands.png" alt="1 pair of clapping hands">
+							<h4 id="number-of-claps-public-project-b-page"># claps</h4><!-- Hard-coded placeholder -->
+							
+							<!-- <span class="glyphicon glyphicon-thumbs-up"></span> -->
 
-							<span class="glyphicon glyphicon-ok"></span><!-- Hard-coded placeholder -->
-							<h5>Open Collab</h5>
-
-							<span class="glyphicon"></span><!-- Placeholder -->
-							<h5>Requesting Collab</h5>
-
-							<img id="cover-song" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/cover-song.png" alt="Cover song icon">
+							<span class="glyphicon glyphicon-heart"></span>
+							<h4 class="favorites"># favorites</h4><!-- Hard-coded placeholder -->
 						</div>
 					</section>
 
 
-					<section class="row col-xs-12 public-project-info">
-						<img class="clapping-hands" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/clapping-hands.png" alt="1 pair of clapping hands">
-						<h4 id="number-of-claps"># claps</h4><!-- Hard-coded placeholder -->
+					<section class="row col-xs-12">
+						<div class="public-project-info" id="project-detail-container">
+							<h3>Project Details</h3><span class="glyphicon glyphicon-envelope" id="glyphiconEnvelope"></span>
+							<!-- Register or login modal -->
+							<?php
+								include(ROOT_PATH . 'include/modals/register-or-login.php');
+							?>
+							<!-- End of register or login modal -->
+
+							<div class="row">
+								<div class="col-xs-4">
+									<h4>Genre</h4>
+									<h4>BPM</h4>
+									<h4>Status</h4>
+									<h4>License</h4>
+								</div>
+								<div class="col-xs-4" id="project-details">
+									<h4>None specified</h4><!-- Hard-coded placeholder -->
+									<h4>Unknown</h4><!-- Hard-coded placeholder -->
+									<h4><span class="glyphicon glyphicon-ok"></span> Open collab</h4><!-- Hard-coded placeholder -->
+									<img id="cover-song-public-project-b-page" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/cover-song.png" alt="Cover song icon"><!-- Hard-coded placeholder -->
+								</div>
+								<div class="col-xs-4">
+									<h4 class="project-img">Project image</h4>
+									<img class="project-img" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="row col-xs-12">
+						<div class="public-project-info" id="likes-container">
+							<h3>Who Likes this Project</h3>
+							<a href="<?php echo BASE_URL; ?>profile/public-profile.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"></a><!-- Hard-coded placeholder -->
+						</div>
+					</section>
+
+					<!-- "Collaborations" -->
+					<section id="collaborationsJS">
+						<div class="row col-xs-12 public-projects-and-collaborations-container">
+							
+							<h4 class="my-public-projects-heading">Collaborations <span class="normal">($number)</span></h4><!-- Hard-coded placeholder / Note that this says "My Collaborations" on public-profile.php -->
 						
-						<!-- <span class="glyphicon glyphicon-thumbs-up"></span> -->
-
-						<span class="glyphicon glyphicon-heart"></span>
-						<h4 class="favorites"># favorites</h4><!-- Hard-coded placeholder -->
-					</section>
-					
-					<div class="row col-xs-12 public-project-info">
-						<img id="facebook-like-button" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/facebook-like-button.png" alt="Facebook 'like' button">
-					</div>
-
-
-					<div class="row col-xs-12">
-						<div id="share-or-embed-buttons">
-							<button class="navigate musiclaps-dark-gray" id="share" type="button">Share</button>
-							<button class="navigate dark-button-navigate-hover-js" id="embed" type="button">Embed</button>
-						</div>
-					</div>
-
-					<div class="row col-xs-12">
-						<div class="share-to-social-networks-container" id="shareToSocialNetworksContainer">
-							<img class="facebook-icon first-img" src="<?php echo BASE_URL; ?>assets/images/global/facebook-icon.png" alt="Facebook icon"><!-- Hard-coded placeholder -->
-							<img class="twitter icon" src="<?php echo BASE_URL; ?>assets/images/global/twitter-icon.png" alt="Twitter icon"><!-- Hard-coded placeholder -->
-							<img class="google-icon" src="<?php echo BASE_URL; ?>assets/images/global/google-icon.jpg" alt="Google icon"><!-- Hard-coded placeholder -->
-							<img id="reddit-icon" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/reddit-icon.gif" alt="Reddit icon"><!-- Hard-coded placeholder -->
-							<img id="tumblr-icon" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/tumblr-icon.png" alt="Tumblr icon"><!-- Hard-coded placeholder -->
-							<img id="pinterest-icon" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/pinterest-icon.png" alt="Pinterest icon"><!-- Hard-coded placeholder -->
-							<img id="stumbleupon-icon" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/stumbleupon-icon.jpg" alt="Stumbleupon icon"><!-- Hard-coded placeholder -->
-
-							<input type="text" value="https://www.musiclaps.com//play?songid=8a022c7833672178"><!-- Hard-coded placeholder -->
-						</div>
-
-						<!-- Hidden upon page load -->
-						<div class="embed-container" id="embedContainer">
-							<textarea>
-								<iframe width="620" height="380" src="https://www.musiclaps.com//embed/player?songid=8a022c7833672178" frameborder="0" scrolling="no"></iframe><!-- Hard-coded placeholder -->
-							</textarea>
-						</div>
-					</div>
-
-					<section class="row col-xs-12" id="comment-container">
-						<form action="<?php echo BASE_URL; ?>controllers/process-comments.php" method="post">
-							<label for="comment_public_project_page">Post a Comment</label>
-							<textarea id="comment_public_project_page" name=""></textarea>
-							<!-- Markup is backwards because elements are floated right -->
-							<input type="submit" value="Post">
-							<h4>500 characters remaining</h4><!-- Hard-coded placeholder -->
-						</form>
-					</section>
+							<?php
+								include(ROOT_PATH . 'include/profile/public-projects-and-collaborations-b.php');
+							?>
+					<!-- End of "Collaborations" -->
 
 				</div>
-				<div class="row col-xs-12 col-md-3 public-project-page">
-					<div class="profile-right public-project-page">
-						<div class="row col-xs-12">
-							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
+				<div class="row col-xs-12 col-md-3 profile-right-container">
+					<section class="profile-right profile-page public-profile-b-page"><!-- profile/index.php does not contain the class name "public-profile-page" -->
+						
+						<div class="row first-row">
+							<div class="col-xs-121">
+								<h3>Project Overview</h3><!-- Hard-coded placeholder -->
+							</div>
 						</div>
-						<section class="row col-xs-12">
-							<a href="<?php echo BASE_URL; ?>profile/public-project.php"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
-							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
-							<h5># Plays</h5><!-- Hard-coded placeholder -->
-						</section>
 
-						<div class="row col-xs-12">
-							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
+						<div class="row col-xs-12 user-location-map-container">
+							<h3>Location: </h3>
+							<div class="user-location-map"></div><!-- Placeholder -->
+							<a href="<?php echo BASE_URL; ?>profile/public-profile.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"></a><!-- Hard-coded placeholder -->
 						</div>
-						<section class="row col-xs-12">
-							<a href="<?php echo BASE_URL; ?>profile/public-project.php"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
-							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
-							<h5># Plays</h5><!-- Hard-coded placeholder -->
-						</section>
 
-						<div class="row col-xs-12">
-							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
-						</div>
-						<section class="row col-xs-12">
-							<a href="<?php echo BASE_URL; ?>profile/public-project.php"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
-							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
-							<h5># Plays</h5><!-- Hard-coded placeholder -->
-						</section>
-
-						<div class="row col-xs-12">
-							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
-						</div>
-						<section class="row col-xs-12">
-							<a href="<?php echo BASE_URL; ?>profile/public-project.php"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
-							<h5>User: <a href="<?php echo BASE_URL; ?>profile/public-profile.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
-							<h5># Plays</h5><!-- Hard-coded placeholder -->
-						</section>
-					</div>
-				</div>		
+					</section>
+				</div>
 			</div>
-			<!-- <div class="col-lg-1"></div>	 -->
+			<div class="col-lg-1"></div>
 		
 		</div>
 
 	<?php
-		include(ROOT_PATH . 'include/footer-logged-in.php');
+		include(ROOT_PATH . 'include/footer.php');
 	?>
