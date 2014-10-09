@@ -54,7 +54,7 @@
 
 					<!-- "My Public Projects" -->
 					<section id="myPublicProjects">
-						<div class="row col-xs-12 public-projects-and-collaborations-container">
+						<section class="row col-xs-12 public-projects-and-collaborations-container">
 							
 							<h4 class="my-public-projects-heading">My Public Projects <span class="normal">($number)</span></h4>
 

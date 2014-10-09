@@ -13,7 +13,7 @@
 		<div class="container">
 			
 			<?php
-				include(ROOT_PATH . 'include/profile/user-menu-b.php');
+				include(ROOT_PATH . 'include/profile/user-menu-b-logged-in.php');
 			?>
 		
 			<div class="row col-lg-10 col-lg-offset-1">				
@@ -44,28 +44,37 @@
 						<div class="col-sm-1"></div>
 					</div>
 
-					<!-- "Projects" -->
-					<section id="publicProjects">
-						<div class="row col-xs-12 public-projects-and-collaborations-container">
-							
-							<h4 class="my-public-projects-heading">My Public Projects <span class="normal">($number)</span></h4><!-- Hard-coded placeholder / Note that this says "Projects" on public-profile.php -->
+					<section class="row col-xs-12 public-projects-and-collaborations-container">
 						
-							<?php
-								include(ROOT_PATH . 'include/profile/public-projects-and-collaborations-b-logged-in.php');
-							?>
-					<!-- End of "Projects" -->
-
+						<h4 class="my-public-projects-heading">My Public Projects <span class="normal">($number)</span></h4><!-- Hard-coded placeholder / Note that this says "Projects" on public-profile.php -->
 					
-					<!-- "Collaborations" -->
-					<section id="collaborationsJS">
-						<div class="row col-xs-12 public-projects-and-collaborations-container">
+						<div class="row col-xs-12">
 							
-							<h4 class="my-public-projects-heading">My Collaborations <span class="normal">($number)</span></h4><!-- Hard-coded placeholder / Note that this says "Collaborations" on public-profile.php -->
+							<div class="row">
+								<section class="col-xs-12 col-md-6 public-projects-and-collaborations">
+									<div class="row col-xs-6 col-sm-4 col-md-6">
+										<a href="<?php echo BASE_URL; ?>profile/public-project-b-logged-in.php"><img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"></a><!-- Hard-coded placeholder -->
+									</div>
+									<div class="row col-xs-6 col-sm-8 col-md-6">
+										<a href="<?php echo BASE_URL; ?>profile/public-project-b-logged-in.php"><h4>$project title</h4></a><!-- Hard-coded placeholder -->
+										<h5>$#### Plays</h5><!-- Hard-coded placeholder -->
+									</div>
+								</section>
+
+								<section class="col-xs-12 col-md-6 public-projects-and-collaborations">
+									<div class="row col-xs-6 col-sm-4 col-md-6">
+										<a href="<?php echo BASE_URL; ?>profile/public-project-b-logged-in.php"><img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"></a><!-- Hard-coded placeholder -->
+									</div>
+									<div class="row col-xs-6 col-sm-8 col-md-6">
+										<a href="<?php echo BASE_URL; ?>profile/public-project-b-logged-in.php"><h4>$project title</h4></a><!-- Hard-coded placeholder -->
+										<h5>$#### Plays</h5><!-- Hard-coded placeholder -->
+									</div>
+								</section>
+							</div>
 						
-							<?php
-								include(ROOT_PATH . 'include/profile/public-projects-and-collaborations-b-logged-in.php');
-							?>
-					<!-- End of "Collaborations" -->
+						</div>
+
+					</section>
 
 				</div>		
 				<div class="row col-xs-12 col-sm-4 profile-right-container">

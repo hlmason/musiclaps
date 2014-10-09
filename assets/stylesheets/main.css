@@ -3812,25 +3812,25 @@ section#messages-header button, section#groups-header button {
   #about-me li#glyphicon-home {
     float: right; }
 
-.public-projects-and-collaborations-container {
+section.public-projects-and-collaborations-container {
   padding-right: 0; }
-  .public-projects-and-collaborations-container section.public-projects-and-collaborations {
+  section.public-projects-and-collaborations-container section.public-projects-and-collaborations {
     border: 1px solid #cecece;
     margin-left: 15px;
     padding-right: 0;
     width: 47%; }
-    .public-projects-and-collaborations-container section.public-projects-and-collaborations img {
+    section.public-projects-and-collaborations-container section.public-projects-and-collaborations img {
       height: 85px;
       padding-bottom: 10px;
       padding-top: 10px;
       width: 98px; }
-    .public-projects-and-collaborations-container section.public-projects-and-collaborations h4, .public-projects-and-collaborations-container section.public-projects-and-collaborations h5 {
+    section.public-projects-and-collaborations-container section.public-projects-and-collaborations h4, section.public-projects-and-collaborations-container section.public-projects-and-collaborations h5 {
       display: inline-block;
       margin-left: 7px; }
-    .public-projects-and-collaborations-container section.public-projects-and-collaborations h4 {
+    section.public-projects-and-collaborations-container section.public-projects-and-collaborations h4 {
       margin-bottom: 0;
       margin-top: 10px; }
-    .public-projects-and-collaborations-container section.public-projects-and-collaborations h5 {
+    section.public-projects-and-collaborations-container section.public-projects-and-collaborations h5 {
       margin-top: 7px; }
 
 h4.my-public-projects-heading {

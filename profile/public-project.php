@@ -16,7 +16,7 @@
 					
 				<div class="row col-xs-12 col-md-9">
 
-				<!-- Recording Player -->
+					<!-- Recording Player -->
 					<div class="row col-xs-12 live-player-container">
 						<iframe width="620" height="380" src="https://www.musiclaps.com/embed/player?songid=null" frameborder="0" scrolling="no"></iframe><!-- Placeholder -->
 					</div>

@@ -4,19 +4,21 @@
 	$page_title = 'Project Name'; // Hard-coded placeholder
 	
 	include(ROOT_PATH . 'include/header.php');
-	include(ROOT_PATH . 'include/db-connection.php');
-	include(ROOT_PATH . 'controllers/get-profile.php');
 
 ?>
 
 	<div id="wrapper">
 		<div class="container">
 
+			<?php
+				include(ROOT_PATH . 'include/profile/user-menu-b.php');
+			?>
+
 			<div class="row col-lg-10 col-lg-offset-1">				
 					
 				<div class="row col-xs-12 col-md-9">
 
-				<!-- Recording Player -->
+					<!-- Recording Player -->
 					<div class="row col-xs-12 live-player-container">
 						<iframe width="620" height="380" src="https://www.musiclaps.com/embed/player?songid=null" frameborder="0" scrolling="no"></iframe><!-- Placeholder -->
 					</div>
@@ -102,17 +104,6 @@
 							<a href="<?php echo BASE_URL; ?>profile/public-profile.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"></a><!-- Hard-coded placeholder -->
 						</div>
 					</section>
-
-					<!-- "Collaborations" -->
-					<section id="collaborationsJS">
-						<div class="row col-xs-12 public-projects-and-collaborations-container">
-							
-							<h4 class="my-public-projects-heading">Collaborations <span class="normal">($number)</span></h4><!-- Hard-coded placeholder / Note that this says "My Collaborations" on public-profile.php -->
-						
-							<?php
-								include(ROOT_PATH . 'include/profile/public-projects-and-collaborations-b.php');
-							?>
-					<!-- End of "Collaborations" -->
 
 				</div>
 				<div class="row col-xs-12 col-md-3 profile-right-container">

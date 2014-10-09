@@ -1,11 +1,9 @@
 <?php
 	require_once('../include/config.php');
 
-	$page_title = 'Userid'; // Hard-coded placeholder
+	$page_title = 'Collaborations'; // Hard-coded placeholder
 	
 	include(ROOT_PATH . 'include/header.php');
-	include(ROOT_PATH . 'include/db-connection.php');
-	include(ROOT_PATH . 'controllers/get-profile.php');
 
 ?>
 
@@ -46,7 +44,7 @@
 
 					<section class="row col-xs-12 public-projects-and-collaborations-container">
 						
-						<h4 class="my-public-projects-heading">Projects <span class="normal">($number)</span></h4><!-- Hard-coded placeholder / Note that this says "My Public Projects" on public-profile-logged-in.php -->
+						<h4 class="my-public-projects-heading">Collaborations <span class="normal">($number)</span></h4><!-- Hard-coded placeholder / Note that this says "My Public Projects" on public-profile-logged-in.php -->
 
 						<div class="row col-xs-12">
 							

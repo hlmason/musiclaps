@@ -3,27 +3,27 @@
 				<h4 class="user-menu userMenu">User Menu</h4>
 				<ul class="nav navbar-nav user-menu userMenu">
 					<li class="first-list-item">
-						<a class="
-							<?php 
+						<a class=
+							"<?php 
 								if ($page_title == "Userid") { 
 									echo "active"; 
 								} 
-							?>" href="<?php echo BASE_URL; ?>profile/public-profile.php">Profile
+							?>" href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php">Profile
 						</a>
 					</li>
 					<li>
 						<a class="
 							<?php 
-								if ($page_title == "Collaborations") { 
+								if ($page_title == "My Collaborations") { 
 									echo "active"; 
 								} 
-							?>" href="<?php echo BASE_URL; ?>profile/public-collaborations.php">Collaborations
+							?>" href="<?php echo BASE_URL; ?>profile/public-collaborations-logged-in.php">Collaborations
 						</a>
 					</li>
 					<li>
 						<a class="
 							<?php 
-								if ($page_title == "Friends") { 
+								if ($page_title == "My Friends") { 
 									echo "active"; 
 								} 
 							?>" href="#">Friends
