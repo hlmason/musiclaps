@@ -16,7 +16,7 @@
 
 			<div class="row col-lg-10 col-lg-offset-1">				
 					
-				<div class="row col-xs-12 col-md-9">
+				<div class="row col-xs-12 col-md-9 public-profile-b-page">
 
 					<!-- Recording Player -->
 					<div class="row col-xs-12 live-player-container">
@@ -69,7 +69,7 @@
 
 
 					<section class="row col-xs-12">
-						<div class="public-project-info" id="project-detail-container">
+						<div class="public-project-info" id="project-details-container">
 							<h3>Project Details</h3><span class="glyphicon glyphicon-envelope" id="glyphiconEnvelope"></span>
 							<!-- Register or login modal -->
 							<?php
@@ -106,7 +106,7 @@
 					</section>
 
 				</div>
-				<div class="row col-xs-12 col-md-3 profile-right-container">
+				<div class="row col-xs-12 col-md-3 profile-right-container public-profile-b-page">
 					<section class="profile-right profile-page public-profile-b-page"><!-- profile/index.php does not contain the class name "public-profile-page" -->
 						
 						<div class="row first-row">
