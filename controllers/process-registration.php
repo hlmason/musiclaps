@@ -15,8 +15,8 @@
 			$validation_error_messages['validation_type']['email'] = "Please enter a valid email address";
 		} else {
 			function check_duplicate_email($email_field) {
-				$mysql_email_query = "SELECT * FROM user WHERE email = '{$email_field}'";
-				$result = fetch_record($mysql_email_query); // The fetch_record function is defined on include/new-db-connection.php
+				$check_duplicate_email_query = "SELECT * FROM user WHERE email = '{$email_field}'";
+				$result = fetch_record($check_duplicate_email_query); // The fetch_record function is defined on include/new-db-connection.php
 				if ($result) {
 					return true;
 				} else {
