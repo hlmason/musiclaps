@@ -1,5 +1,5 @@
 <?php
-	require_once('../../include/config.php');
+	require_once('../../controllers/require/config.php');
 
 	$page_title = 'Staff Picks';
 	

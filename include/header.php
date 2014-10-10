@@ -212,7 +212,7 @@
 					</li>
 				</ul>
 
-				<form class="search" action="<?php echo BASE_URL; ?>controllers/process-search.php" method="get">
+				<form class="search" action="<?php echo BASE_URL; ?>controllers/header-controller.php" method="get">
 					<span class="glyphicon glyphicon-search" id="glyphiconSearch"></span><input class="search" id="searchJS" type="text" name="search" placeholder="Search">
 				</form>
 				

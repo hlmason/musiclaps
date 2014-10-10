@@ -1,11 +1,10 @@
 <?php
-	require_once('../../include/config.php');
+	require_once('../../controllers/require/config.php');
 
 	$page_title = 'My Profile';
 	
+	include(ROOT_PATH . 'models/db-connection.php');
 	include(ROOT_PATH . 'include/header-logged-in.php');
-	include(ROOT_PATH . 'include/db-connection.php');
-	include(ROOT_PATH . 'controllers/get-profile.php');
 	include(ROOT_PATH . 'include/profile/user-menu.php');
 
 ?>
@@ -25,7 +24,7 @@
 							<a>
 								<h4 class="edit-profile" id="editProfile"><span class="glyphicon glyphicon-edit"></span>&nbsp; Edit Profile</h4>
 							</a>
-							<form class="profile-page" action="<?php echo BASE_URL; ?>controllers/process-profile.php" method="post">
+							<form class="profile-page" action="<?php echo BASE_URL; ?>controllers/profile/index-controller.php" method="post">
 								<h4 class="save-profile" id="saveProfile">
 									<span class="glyphicon glyphicon-save"></span>
 									<input type="submit" value="Save"> | &nbsp;
@@ -75,7 +74,7 @@
 						  		</div><!-- Hard-coded placeholder -->
 							</div>
 
-							<form class="profile-page" action="<?php echo BASE_URL; ?>controllers/process-profile.php" method="post">
+							<form class="profile-page" action="<?php echo BASE_URL; ?>controllers/profile/index-controller.php" method="post">
 								<div class="row">
 									<div class="col-xs-12 col-lg-6">
 										<label id="birth-date-label-profile" for="birth_date_profile_page">Birth Date</label>

@@ -1,11 +1,10 @@
 <?php
-	require_once('../../include/config.php');
+	require_once('../../controllers/require/config.php');
 
 	$page_title = 'Requesting Collab Projects';
 	
+	include(ROOT_PATH . 'models/new-db-connection.php');
 	include(ROOT_PATH . 'include/header-logged-in.php');
-	include(ROOT_PATH . 'include/db-connection.php');
-	include(ROOT_PATH . 'controllers/get-profile.php');
 	include(ROOT_PATH . 'include/profile/user-menu.php');
 
 ?>
@@ -45,7 +44,7 @@
 						</section>
 						
 						<section class="row col-xs-12">
-							<form action="<?php echo BASE_URL; ?>controllers/process-project-form.php" method="post">
+							<form action="<?php echo BASE_URL; ?>controllers/profile/project-form-controller.php" method="post">
 								<div class="project-info-bar requesting-collab-page sm"><!-- Only visible at viewport widths > 731px -->
 									<h4 class="first-h4">$project #</h4><!-- Hard-coded placeholder -->
 									<h4>$instrument name</h4><!-- Hard-coded placeholder -->

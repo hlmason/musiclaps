@@ -1,11 +1,10 @@
 <?php
-	require_once('../../include/config.php');
+	require_once('../../controllers/require/config.php');
 
 	$page_title = 'Lyrics';
 	
+	include(ROOT_PATH . 'models/new-db-connection.php');
 	include(ROOT_PATH . 'include/header-logged-in.php');
-	include(ROOT_PATH . 'include/db-connection.php');
-	include(ROOT_PATH . 'controllers/get-profile.php');
 	include(ROOT_PATH . 'include/profile/user-menu.php');
 
 ?>
@@ -21,7 +20,7 @@
 						</div>
 						<!-- End of Recording Player -->
 
-						<form action="<?php echo BASE_URL; ?>controllers/process-lyrics.php" method="post">
+						<form action="<?php echo BASE_URL; ?>controllers/profile/lyrics-controller.php" method="post">
 							<section class="row col-xs-12" id="lyrics-settings-sm"><!-- Only visible at viewport widths > 688px -->
 								<div>
 									<h4>Pause and scrolling speed</h4>
@@ -57,7 +56,7 @@
 					</div>
 
 					<div class="row col-xs-12 col-md-3">
-						<form action="<?php echo BASE_URL; ?>controllers/process-lyrics.php" method="post">
+						<form action="<?php echo BASE_URL; ?>controllers/profile/lyrics-controller.php" method="post">
 							<section id="lyrics-container-header">
 								<label id="display-lyrics-title" for="select_project_lyrics_page">Display Lyrics</label>
 								<select id="select_project_lyrics_page" name="">

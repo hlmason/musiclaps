@@ -1,11 +1,10 @@
 <?php
-	require_once('../../include/config.php');
+	require_once('../../controllers/require/config.php');
 
 	$page_title = 'YouTube';
 	
+	include(ROOT_PATH . 'models/new-db-connection.php');
 	include(ROOT_PATH . 'include/header-logged-in.php');
-	include(ROOT_PATH . 'include/db-connection.php');
-	include(ROOT_PATH . 'controllers/get-profile.php');
 	include(ROOT_PATH . 'include/profile/user-menu.php');
 
 ?>
@@ -23,7 +22,7 @@
 
 							<div class="col-xs-12 col-md-5">
 								<div id="youtube-settings">
-									<form action="<?php echo BASE_URL; ?>controllers/process-youtube-links.php" method="post">
+									<form action="<?php echo BASE_URL; ?>controllers/profile/youtube-controller.php" method="post">
 										<div>
 											<input id="new_youtube_connection" type="radio" name="youtube_connection" value="new">
 											<label id="new-youtube-connection-label" for="new_youtube_connection">New</label>
@@ -54,7 +53,7 @@
 						</div>
 
 						<div class="row col-xs-12 youtube-page-form" id="newYouTubeConnectionForm">
-							<form action="<?php echo BASE_URL; ?>controllers/process-youtube-links.php" method="post">
+							<form action="<?php echo BASE_URL; ?>controllers/profile/youtube-controller.php" method="post">
 								<div class="sm"><!-- Only visible at viewport widths > 580px -->
 									<label for="select_project_new_sm">Select Project</label>
 									<select id="select_project_new_sm" name="">
@@ -86,7 +85,7 @@
 						</div>
 
 						<div class="row col-xs-12 youtube-page-form" id="editYouTubeConnectionForm">
-							<form action="<?php echo BASE_URL; ?>controllers/process-youtube-links.php" method="post">
+							<form action="<?php echo BASE_URL; ?>controllers/profile/youtube-controller.php" method="post">
 								<label for="select_project_edit">Select Project</label>
 								<select id="select_project_edit">
 									<option value="sound">$Project Title</option><!-- Hard-coded placeholder -->

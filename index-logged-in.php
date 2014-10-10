@@ -1,5 +1,5 @@
 <?php
-	require_once('include/config.php');
+	require_once('controllers/require/config.php');
 
 	$page_title = 'Play with the World Today';
 	
@@ -9,7 +9,7 @@
 	<div id="wrapper">
 
 		<h1 class="landing-page">
-			Online <a href="https://www.musiclaps.com/play?m=rs&show=all&svv=collab">Music Collaboration</a> Made Simple
+			Online <a href="<?php echo BASE_URL; ?>views/collaborations/index-logged-in.php">Music Collaboration</a> Made Simple
 		</h1>
 		<div id="landing-page-hero">
 			<div id="musical-notes-map"></div>
@@ -151,8 +151,8 @@
 					<a id="contests-and-auditions"><div class="col-md-7 col-md-offset-1"></a>					
 						<h2>Contests and Auditions</h2>
 						<ul>
-							<li class="first-list-item"><a href="contests/musiclaps-contest.pdf" target="blank">In-House Contest</a></li>
-							<li><a href="contests/red-hot-chili-peppers.pdf" target="blank">Band Promotion Contest</a></li>
+							<li class="first-list-item"><a href="assets/contests/musiclaps-contest.pdf" target="blank">In-House Contest</a></li>
+							<li><a href="assets/contests/red-hot-chili-peppers.pdf" target="blank">Band Promotion Contest</a></li>
 							<li><a>Content Dev Contest</a></li>
 							<li><a>SpoofTube Contest</a></li>
 							<li><a>Monday Open Mics</a></li>

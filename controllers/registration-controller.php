@@ -1,6 +1,6 @@
 <?php
 	// session_start();
-	include('../include/new-db-connection.php');
+	include('../models/new-db-connection.php');
 
 	// Registration
 	if ( isset($_POST['register']) AND $_POST['register'] == 'register' ) {
@@ -16,7 +16,7 @@
 		} else {
 			function check_duplicate_email($email_field) {
 				$check_duplicate_email_query = "SELECT * FROM user WHERE email = '{$email_field}'";
-				$result = fetch_record($check_duplicate_email_query); // The fetch_record function is defined on include/new-db-connection.php
+				$result = fetch_record($check_duplicate_email_query); // The fetch_record function is defined in models/new-db-connection.php
 				if ($result) {
 					return true;
 				} else {

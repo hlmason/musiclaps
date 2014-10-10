@@ -1,11 +1,10 @@
 <?php
-	require_once('../../include/config.php');
+	require_once('../../controllers/require/config.php');
 
 	$page_title = 'Userid'; // Hard-coded placeholder
 	
+	include(ROOT_PATH . 'models/new-db-connection.php');
 	include(ROOT_PATH . 'include/header-logged-in.php');
-	include(ROOT_PATH . 'include/db-connection.php');
-	include(ROOT_PATH . 'controllers/get-profile.php');
 
 ?>
 

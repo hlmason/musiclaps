@@ -1,11 +1,10 @@
 <?php
-	require_once('../../include/config.php');
+	require_once('../../controllers/require/config.php');
 
 	$page_title = 'Upload MP3';
 	
+	include(ROOT_PATH . 'models/new-db-connection.php');
 	include(ROOT_PATH . 'include/header-logged-in.php');
-	include(ROOT_PATH . 'include/db-connection.php');
-	include(ROOT_PATH . 'controllers/get-profile.php');
 	include(ROOT_PATH . 'include/profile/user-menu.php');
 
 ?>
@@ -43,7 +42,7 @@
 							</li>
 						</ul>
 
-						<form action="<?php echo BASE_URL; ?>controllers/process-mp3.php" method="post">
+						<form action="<?php echo BASE_URL; ?>controllers/profile/new-project/upload-mp3-controller.php" method="post">
 							<section id="newProject">
 								<div class="row col-xs-12">
 									<label id="project-title-label" for="project_title_new_project">Project Title <span class="normal">(max 80 characters)</span></label>

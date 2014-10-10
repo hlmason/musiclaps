@@ -214,7 +214,7 @@
 					</li>
 				</ul>
 
-				<form class="search" action="<?php echo BASE_URL; ?>controllers/process-search.php" method="get">
+				<form class="search" action="<?php echo BASE_URL; ?>controllers/header-controller.php" method="get">
 					<span class="glyphicon glyphicon-search" id="glyphiconSearch"></span><input class="search" id="searchJS" type="text" name="search" placeholder="Search">
 				</form>
 				
@@ -225,7 +225,7 @@
 				<ul class="nav navbar-nav navbar-right" id="logged-in">
 					<li id="welcome-user-sm">Welcome, &nbsp;<span class="musiclaps-blue"><a class="welcome-user-link" href="<?php echo BASE_URL; ?>views/profile/index.php">$firstname</a></span></li><!-- Hard-coded placeholder -->
 					<li id="log-out">
-						<form action="<?php echo BASE_URL; ?>controllers/process-logout.php" method="post">
+						<form action="<?php echo BASE_URL; ?>controllers/logout-controller.php" method="post">
 							<input type="submit" value="Log out">
 						</form>
 					</li>

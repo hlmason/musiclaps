@@ -1,11 +1,10 @@
 <?php
-	require_once('../../include/config.php');
+	require_once('../../controllers/require/config.php');
 
 	$page_title = 'Groups';
 	
+	include(ROOT_PATH . 'models/new-db-connection.php');
 	include(ROOT_PATH . 'include/header-logged-in.php');
-	include(ROOT_PATH . 'include/db-connection.php');
-	include(ROOT_PATH . 'controllers/get-profile.php');
 	include(ROOT_PATH . 'include/profile/user-menu.php');
 
 ?>
@@ -24,7 +23,7 @@
 					<!-- Hidden upon page load -->
 					<section class="row col-xs-12 create-new-group-container" id="createNewGroupContainer">
 						<h4>Create a New Group</h4>
-						<form action="<?php echo BASE_URL; ?>controllers/process-groups.php" method="post">
+						<form action="<?php echo BASE_URL; ?>controllers/profile/groups-controller.php" method="post">
 							<div>
 								<label for="group_name">Group Name</label>
 								<input class="group-name" id="group_name" type="text" name="group_name">
