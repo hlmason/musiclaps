@@ -29,7 +29,7 @@
 	                          echo 
 	                          	"<script language='javascript'>
 		                          	setTimeout(function() {
-		                          		window.location.replace('../live-player/index.php');
+		                          		window.location.replace('../views/live-player/index.php');
 		                          	}, 5000);
 								</script>";
 						  }

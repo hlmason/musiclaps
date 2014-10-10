@@ -8,7 +8,7 @@
 								if ($page_title == "Userid") { 
 									echo "active"; 
 								} 
-							?>" href="<?php echo BASE_URL; ?>profile/public-profile-logged-in.php">Profile
+							?>" href="<?php echo BASE_URL; ?>views/profile/public-profile-logged-in.php">Profile
 						</a>
 					</li>
 					<li>
@@ -17,7 +17,7 @@
 								if ($page_title == "My Collaborations") { 
 									echo "active"; 
 								} 
-							?>" href="<?php echo BASE_URL; ?>profile/public-collaborations-logged-in.php">Collaborations
+							?>" href="<?php echo BASE_URL; ?>views/profile/public-collaborations-logged-in.php">Collaborations
 						</a>
 					</li>
 					<li>

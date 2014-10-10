@@ -20,7 +20,7 @@
 		);
 		
 		//redirects to the main page/home page
-		header('location: ../profile/index.php');
+		header('location: ../views/profile/index.php');
 	}
 	//if login is incorrect, it will show this error message below
 	else
@@ -28,6 +28,6 @@
 		$_SESSION['login_error'] = "<p>Username and Password do not match!</p>"; 
 		
 		//redirects to the sign in page and returns error
-		header('location: ../profile/index.php') ; // TODO: fix these validations
+		header('location: ../views/profile/index.php') ; // TODO: fix these validations
 	}
 ?>

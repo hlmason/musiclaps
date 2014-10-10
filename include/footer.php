@@ -11,12 +11,12 @@
 				<img src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/musiclaps-logo.png" alt="Musiclaps logo">&nbsp; &copy; <?php echo date('Y'); ?>
 			</a>
 			<ul class="nav navbar-nav navbar-left">
-				<li><a class="<?php if ($page_title == "Company") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>under-construction.php">Company</a></li>
-				<li><a class="<?php if ($page_title == "Press") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>under-construction.php">Press</a></li>
-				<li><a class="<?php if ($page_title == "Contact") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>under-construction.php">Contact</a></li>
-				<li><a class="<?php if ($page_title == "Privacy Policy") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>privacy/">Privacy</a></li>
-				<li><a class="<?php if ($page_title == "Terms of Use") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>terms/">Terms</a></li>
-				<li><a class="<?php if ($page_title == "FAQs") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>faqs/">FAQs</a></li>
+				<li><a class="<?php if ($page_title == "Company") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>views/under-construction/">Company</a></li>
+				<li><a class="<?php if ($page_title == "Press") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>views/under-construction/">Press</a></li>
+				<li><a class="<?php if ($page_title == "Contact") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>views/under-construction/">Contact</a></li>
+				<li><a class="<?php if ($page_title == "Privacy Policy") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>views/privacy/">Privacy</a></li>
+				<li><a class="<?php if ($page_title == "Terms of Use") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>views/terms/">Terms</a></li>
+				<li><a class="<?php if ($page_title == "FAQs") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>views/faqs/">FAQs</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="https://www.facebook.com/Musiclaps" target="blank"><img class="facebook-icon" src="<?php echo BASE_URL; ?>assets/images/global/facebook-icon.png" alt="Facebook icon"></a></li>

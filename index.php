@@ -35,10 +35,10 @@
 				</div>
 				<div class="row">		
 					<ul>
-						<li><a href="<?php echo BASE_URL; ?>live-player/"><img src="<?php echo BASE_URL; ?>assets/images/landing-pg/play-btn.png" alt="Play button"></a></li>
-						<li><a href="<?php echo BASE_URL; ?>live-player/"><img src="<?php echo BASE_URL; ?>assets/images/landing-pg/pause-btn.png" alt="Pause button"></a></li>
-						<li><a href="<?php echo BASE_URL; ?>live-player/"><img src="<?php echo BASE_URL; ?>assets/images/landing-pg/stop-btn.png" alt="Stop button"></a></li>
-						<li><a href="<?php echo BASE_URL; ?>live-player/"><img src="<?php echo BASE_URL; ?>assets/images/landing-pg/record-btn.png" alt="Record button"></a></li>
+						<li><a href="<?php echo BASE_URL; ?>views/live-player/"><img src="<?php echo BASE_URL; ?>assets/images/landing-pg/play-btn.png" alt="Play button"></a></li>
+						<li><a href="<?php echo BASE_URL; ?>views/live-player/"><img src="<?php echo BASE_URL; ?>assets/images/landing-pg/pause-btn.png" alt="Pause button"></a></li>
+						<li><a href="<?php echo BASE_URL; ?>views/live-player/"><img src="<?php echo BASE_URL; ?>assets/images/landing-pg/stop-btn.png" alt="Stop button"></a></li>
+						<li><a href="<?php echo BASE_URL; ?>views/live-player/"><img src="<?php echo BASE_URL; ?>assets/images/landing-pg/record-btn.png" alt="Record button"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -95,7 +95,7 @@
 						</p>
 						<ul>
 							<li class="first-list-item"><a class="registerJS">Set up a profile and start recording</a></li>
-							<li><a href="<?php echo BASE_URL; ?>live-player/">Try a soundcheck</a></li>
+							<li><a href="<?php echo BASE_URL; ?>views/live-player/">Try a soundcheck</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4">

@@ -77,7 +77,7 @@
 											if ($page_title == "New Arrivals") { 
 												echo "active"; 
 											} 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>new-arrivals/index-logged-in.php">New Arrivals
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/new-arrivals/index-logged-in.php">New Arrivals
 									</a>
 								</li>
 								<li role="presentation">
@@ -86,7 +86,7 @@
 											if ($page_title == "Recommended") { 
 												echo "active"; 
 											} 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>recommended/index-logged-in.php">Recommended
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/recommended/index-logged-in.php">Recommended
 									</a>
 								</li>
 								<li role="presentation">
@@ -95,7 +95,7 @@
 											if ($page_title == "Staff Picks") { 
 												echo "active"; 
 											} 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>staff-picks/index-logged-in.php">Staff Picks
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/staff-picks/index-logged-in.php">Staff Picks
 									</a>
 								</li>
 								<li role="presentation">
@@ -104,7 +104,7 @@
 											if ($page_title == "Collaborations") { 
 												echo "active"; 
 											} 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>collaborations/index-logged-in.php">Collaborations
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/collaborations/index-logged-in.php">Collaborations
 									</a>
 								</li>
 								<li role="presentation">
@@ -113,7 +113,7 @@
 											if ($page_title == "All Music") { 
 												echo "active"; 
 											} 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>all-music/index-logged-in.php">All Music
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/all-music/index-logged-in.php">All Music
 									</a>
 								</li>
 							</ul>
@@ -139,7 +139,7 @@
 											if ($page_title == "Players Wanted") { 
 												echo "active"; 
 											} 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>players-wanted/index-logged-in.php">Players Wanted
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/players-wanted/index-logged-in.php">Players Wanted
 									</a>
 								</li>
 								<li role="presentation">
@@ -148,7 +148,7 @@
 											if ($page_title == "Players Available") { 
 												echo "active"; 
 											} 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction-logged-in.php">Players Available
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/under-construction/index-logged-in.php">Players Available
 									</a>
 								</li>
 								<li role="presentation">
@@ -157,7 +157,7 @@
 											if ($page_title == "Collab Cafe") { 
 												echo "active"; 
 											} 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction-logged-in.php">Collab Cafe
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/under-construction/index-logged-in.php">Collab Cafe
 									</a>
 								</li>
 							</ul>
@@ -181,7 +181,7 @@
 									<a class="
 										<?php if ($page_title == "Technology") { 
 											echo "active"; } 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction-logged-in.php">Technology
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/under-construction/index-logged-in.php">Technology
 									</a>
 								</li>
 								<!-- <li role="presentation">
@@ -197,7 +197,7 @@
 										<?php if ($page_title == "Company") { 
 												echo "active"; 
 											} 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction-logged-in.php">Company
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/under-construction/index-logged-in.php">Company
 									</a>
 								</li>
 								<li role="presentation">
@@ -206,7 +206,7 @@
 											if ($page_title == "Contact") { 
 												echo "active"; 
 											} 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction-logged-in.php">Contact
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/under-construction/index-logged-in.php">Contact
 									</a>
 								</li>
 							</ul>
@@ -223,13 +223,13 @@
 					<li><a><img src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/japan-flag.jpg" alt="Japanese flag"></a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right" id="logged-in">
-					<li id="welcome-user-sm">Welcome, &nbsp;<span class="musiclaps-blue"><a class="welcome-user-link" href="<?php echo BASE_URL; ?>profile/index.php">$firstname</a></span></li><!-- Hard-coded placeholder -->
+					<li id="welcome-user-sm">Welcome, &nbsp;<span class="musiclaps-blue"><a class="welcome-user-link" href="<?php echo BASE_URL; ?>views/profile/index.php">$firstname</a></span></li><!-- Hard-coded placeholder -->
 					<li id="log-out">
 						<form action="<?php echo BASE_URL; ?>controllers/process-logout.php" method="post">
 							<input type="submit" value="Log out">
 						</form>
 					</li>
-					<li id="welcome-user-xs">Welcome, &nbsp;<span class="musiclaps-blue"><a class="welcome-user-link" href="<?php echo BASE_URL; ?>profile/index.php">$firstname</a></span></li><!-- Hard-coded placeholder -->
+					<li id="welcome-user-xs">Welcome, &nbsp;<span class="musiclaps-blue"><a class="welcome-user-link" href="<?php echo BASE_URL; ?>views/profile/index.php">$firstname</a></span></li><!-- Hard-coded placeholder -->
 				</ul>
 			</div>
 		</div>

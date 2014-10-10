@@ -75,7 +75,7 @@
 											if ($page_title == "New Arrivals") { 
 												echo "active"; 
 											} 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>new-arrivals/">New Arrivals
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/new-arrivals/">New Arrivals
 									</a>
 								</li>
 								<li role="presentation">
@@ -84,7 +84,7 @@
 											if ($page_title == "Recommended") { 
 												echo "active"; 
 											} 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>recommended/">Recommended
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/recommended/">Recommended
 									</a>
 								</li>
 								<li role="presentation">
@@ -93,7 +93,7 @@
 											if ($page_title == "Staff Picks") { 
 												echo "active"; 
 											} 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>staff-picks/">Staff Picks
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/staff-picks/">Staff Picks
 									</a>
 								</li>
 								<li role="presentation">
@@ -102,7 +102,7 @@
 											if ($page_title == "Collaborations") { 
 												echo "active"; 
 											} 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>collaborations/">Collaborations
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/collaborations/">Collaborations
 									</a>
 								</li>
 								<li role="presentation">
@@ -111,7 +111,7 @@
 											if ($page_title == "All Music") { 
 												echo "active"; 
 											} 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>all-music/">All Music
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/all-music/">All Music
 									</a>
 								</li>
 							</ul>
@@ -137,7 +137,7 @@
 											if ($page_title == "Players Wanted") { 
 												echo "active"; 
 											} 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>players-wanted/">Players Wanted
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/players-wanted/">Players Wanted
 									</a>
 								</li>
 								<li role="presentation">
@@ -146,7 +146,7 @@
 											if ($page_title == "Players Available") { 
 												echo "active"; 
 											} 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Players Available
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/under-construction/">Players Available
 									</a>
 								</li>
 								<li role="presentation">
@@ -155,7 +155,7 @@
 											if ($page_title == "Collab Cafe") { 
 												echo "active"; 
 											} 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Collab Cafe
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/under-construction/">Collab Cafe
 									</a>
 								</li>
 							</ul>
@@ -179,7 +179,7 @@
 									<a class="
 										<?php if ($page_title == "Technology") { 
 											echo "active"; } 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Technology
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/under-construction/">Technology
 									</a>
 								</li>
 								<!-- <li role="presentation">
@@ -195,7 +195,7 @@
 										<?php if ($page_title == "Company") { 
 												echo "active"; 
 											} 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Company
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/under-construction/">Company
 									</a>
 								</li>
 								<li role="presentation">
@@ -204,7 +204,7 @@
 											if ($page_title == "Contact") { 
 												echo "active"; 
 											} 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>under-construction.php">Contact
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/under-construction/">Contact
 									</a>
 								</li>
 							</ul>

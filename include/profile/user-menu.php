@@ -11,7 +11,7 @@
 								if ($page_title == "My Profile") { 
 									echo "active"; 
 								} 
-							?>" href="<?php echo BASE_URL; ?>profile/">My Profile
+							?>" href="<?php echo BASE_URL; ?>views/profile/">My Profile
 						</a>
 					</li>
 					
@@ -160,7 +160,7 @@
 								if ($page_title == "YouTube") { 
 									echo "active"; 
 								} 
-							?>" href="<?php echo BASE_URL; ?>profile/youtube.php">YouTube
+							?>" href="<?php echo BASE_URL; ?>views/profile/youtube.php">YouTube
 						</a>
 					</li>
 					
@@ -170,7 +170,7 @@
 								if ($page_title == "Messages") { 
 									echo "active"; 
 								} 
-							?>" href="<?php echo BASE_URL; ?>profile/messages.php">Messages
+							?>" href="<?php echo BASE_URL; ?>views/profile/messages.php">Messages
 						</a>
 					</li>
 					
@@ -180,7 +180,7 @@
 								if ($page_title == "Groups") { 
 									echo "active"; 
 								} 
-							?>" href="<?php echo BASE_URL; ?>profile/groups.php">Groups
+							?>" href="<?php echo BASE_URL; ?>views/profile/groups.php">Groups
 						</a>
 					</li>
 					
@@ -190,7 +190,7 @@
 								if ($page_title == "Favorites") { 
 									echo "active"; 
 								} 
-							?>" href="<?php echo BASE_URL; ?>profile/favorites.php">Favorites
+							?>" href="<?php echo BASE_URL; ?>views/profile/favorites.php">Favorites
 						</a>
 					</li>
 				</ul>
