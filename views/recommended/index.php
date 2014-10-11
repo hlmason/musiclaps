@@ -3,7 +3,7 @@
 
 	$page_title = 'Recommended';
 	
-	include(ROOT_PATH . 'include/header.php');
+	include(ROOT_PATH . 'views/include/header.php');
 ?>
 
 	<div id="wrapper">
@@ -13,7 +13,7 @@
 
 			<div class="row col-xs-12 col-sm-9">
 				<?php
-					include(ROOT_PATH . 'include/public-project-listings.php');
+					include(ROOT_PATH . 'views/include/public-project-listings.php');
 				?>
 			</div>
 
@@ -26,5 +26,5 @@
 		</div>
 
 	<?php
-		include(ROOT_PATH . 'include/footer.php');
+		include(ROOT_PATH . 'views/include/footer.php');
 	?>

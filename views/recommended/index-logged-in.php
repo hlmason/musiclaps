@@ -3,7 +3,7 @@
 
 	$page_title = 'Recommended';
 	
-	include(ROOT_PATH . 'include/header-logged-in.php');
+	include(ROOT_PATH . 'views/include/header-logged-in.php');
 ?>
 
 	<div id="wrapper">
@@ -13,7 +13,7 @@
 
 			<div class="row col-xs-12 col-sm-9">
 				<?php
-					include(ROOT_PATH . 'include/public-project-listings-logged-in.php');
+					include(ROOT_PATH . 'views/include/public-project-listings-logged-in.php');
 				?>
 			</div>
 
@@ -26,5 +26,5 @@
 		</div>
 
 	<?php
-		include(ROOT_PATH . 'include/footer-logged-in.php');
+		include(ROOT_PATH . 'views/include/footer-logged-in.php');
 	?>

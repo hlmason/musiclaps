@@ -4,8 +4,8 @@
 	$page_title = 'Audition Projects';
 	
 	include(ROOT_PATH . 'models/new-db-connection.php');
-	include(ROOT_PATH . 'include/header-logged-in.php');
-	include(ROOT_PATH . 'include/profile/user-menu.php');
+	include(ROOT_PATH . 'views/include/header-logged-in.php');
+	include(ROOT_PATH . 'views/include/profile/user-menu.php');
 
 ?>
 		
@@ -15,27 +15,27 @@
 
 					<!-- Project listings -->
 					<?php
-						include(ROOT_PATH . 'include/profile/project-listings.php');
+						include(ROOT_PATH . 'views/include/profile/project-listings.php');
 					?>
 					<!-- End of Project listings -->
 
 
 						<!-- Project form -->
 						<?php
-							include(ROOT_PATH . 'include/profile/project-form.php');
+							include(ROOT_PATH . 'views/include/profile/project-form.php');
 						?>
 						<!-- End of project form -->
 
 
 					<!-- "Change Sound Image" form -->
 					<?php
-						include(ROOT_PATH . 'include/profile/change-sound-img-form.php');
+						include(ROOT_PATH . 'views/include/profile/change-sound-img-form.php');
 					?>
 					<!-- End of "Change Sound Image" form -->
 
 				</div>
 				<?php
-					include(ROOT_PATH . 'include/profile/recommended.php');
+					include(ROOT_PATH . 'views/include/profile/recommended.php');
 				?>
 
 			</div>
@@ -44,5 +44,5 @@
 		</div>
 
 	<?php
-		include(ROOT_PATH . 'include/footer-logged-in.php');
+		include(ROOT_PATH . 'views/include/footer-logged-in.php');
 	?>

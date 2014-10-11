@@ -4,8 +4,8 @@
 	$page_title = 'Groups';
 	
 	include(ROOT_PATH . 'models/new-db-connection.php');
-	include(ROOT_PATH . 'include/header-logged-in.php');
-	include(ROOT_PATH . 'include/profile/user-menu.php');
+	include(ROOT_PATH . 'views/include/header-logged-in.php');
+	include(ROOT_PATH . 'views/include/profile/user-menu.php');
 
 ?>
 
@@ -108,14 +108,14 @@
 						</section>
 						<!-- Volume and pan -->
 						<?php
-							include(ROOT_PATH . 'include/profile/volume-and-pan.php');
+							include(ROOT_PATH . 'views/include/profile/volume-and-pan.php');
 						?>
 						<!-- End of volume and pan -->
 					</div>
 
 				</div>
 				<?php
-					include(ROOT_PATH . 'include/profile/recommended.php');
+					include(ROOT_PATH . 'views/include/profile/recommended.php');
 				?>		
 			</div>
 			<div class="col-lg-1"></div>	
@@ -123,5 +123,5 @@
 		</div>
 
 	<?php
-		include(ROOT_PATH . 'include/footer-logged-in.php');
+		include(ROOT_PATH . 'views/include/footer-logged-in.php');
 	?>

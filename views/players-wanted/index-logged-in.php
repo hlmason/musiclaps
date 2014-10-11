@@ -3,7 +3,7 @@
 
 	$page_title = 'Players Wanted';
 	
-	include(ROOT_PATH . 'include/header-logged-in.php');
+	include(ROOT_PATH . 'views/include/header-logged-in.php');
 ?>
 
 	<div id="wrapper">
@@ -191,5 +191,5 @@
 		</div>
 
 	<?php
-		include(ROOT_PATH . 'include/footer.php');
+		include(ROOT_PATH . 'views/include/footer.php');
 	?>

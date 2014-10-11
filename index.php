@@ -3,7 +3,7 @@
 
 	$page_title = 'Play with the World Today';
 	
-	include(ROOT_PATH . 'include/header.php');
+	include(ROOT_PATH . 'views/include/header.php');
 ?>
 
 	<div id="wrapper">
@@ -167,5 +167,5 @@
 		</section>
 
 	<?php
-		include(ROOT_PATH . 'include/footer.php');
+		include(ROOT_PATH . 'views/include/footer.php');
 	?>

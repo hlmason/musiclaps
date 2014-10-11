@@ -38,7 +38,7 @@
 	</section>
 	<!-- Volume and pan -->
 	<?php
-		include(ROOT_PATH . 'include/profile/volume-and-pan.php');
+		include(ROOT_PATH . 'views/include/profile/volume-and-pan.php');
 	?>
 	<!-- End of volume and pan -->
 
@@ -78,7 +78,7 @@
 			<div id="genre-form-projects">
 				<!-- Genre form -->
 				<?php
-					include(ROOT_PATH . 'include/profile/genre-form.php');
+					include(ROOT_PATH . 'views/include/profile/genre-form.php');
 				?>
 			<!-- End of genre form -->
 		</form>

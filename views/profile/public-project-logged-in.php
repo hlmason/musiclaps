@@ -4,7 +4,7 @@
 	$page_title = 'Project Name'; // Hard-coded placeholder 
 	
 	include(ROOT_PATH . 'models/new-db-connection.php');
-	include(ROOT_PATH . 'include/header-logged-in.php');
+	include(ROOT_PATH . 'views/include/header-logged-in.php');
 
 ?>
 
@@ -113,7 +113,7 @@
 					</div>
 
 					<section class="row col-xs-12" id="comment-container">
-						<form action="<?php echo BASE_URL; ?>controllers/profile/comments-controller.php" method="post">
+						<form action="<?php echo BASE_URL; ?>controllers/public-project-controller.php" method="post">
 							<label for="comment_public_project_page">Post a Comment</label>
 							<textarea id="comment_public_project_page" name=""></textarea>
 							<!-- Markup is backwards because elements are floated right -->
@@ -168,5 +168,5 @@
 		</div>
 
 	<?php
-		include(ROOT_PATH . 'include/footer-logged-in.php');
+		include(ROOT_PATH . 'views/include/footer-logged-in.php');
 	?>

@@ -4,8 +4,8 @@
 	$page_title = 'Lyrics';
 	
 	include(ROOT_PATH . 'models/new-db-connection.php');
-	include(ROOT_PATH . 'include/header-logged-in.php');
-	include(ROOT_PATH . 'include/profile/user-menu.php');
+	include(ROOT_PATH . 'views/include/header-logged-in.php');
+	include(ROOT_PATH . 'views/include/profile/user-menu.php');
 
 ?>
 		
@@ -90,5 +90,5 @@
 		</div>
 
 	<?php
-		include(ROOT_PATH . 'include/footer-logged-in.php');
+		include(ROOT_PATH . 'views/include/footer-logged-in.php');
 	?>

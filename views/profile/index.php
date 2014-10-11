@@ -4,8 +4,8 @@
 	$page_title = 'My Profile';
 	
 	include(ROOT_PATH . 'models/db-connection.php');
-	include(ROOT_PATH . 'include/header-logged-in.php');
-	include(ROOT_PATH . 'include/profile/user-menu.php');
+	include(ROOT_PATH . 'views/include/header-logged-in.php');
+	include(ROOT_PATH . 'views/include/profile/user-menu.php');
 
 ?>
 		
@@ -57,9 +57,34 @@
 							
 							<h4 class="my-public-projects-heading">My Public Projects <span class="normal">($number)</span></h4>
 
-							<?php
-								include(ROOT_PATH . 'include/profile/public-projects-and-collaborations-logged-in.php');
-							?>
+							<div class="row col-xs-12">
+								
+								<div class="row">
+									<section class="col-xs-12 col-md-6 public-projects-and-collaborations">
+										<div class="row col-xs-6 col-sm-4 col-md-6">
+											<a href="<?php echo BASE_URL; ?>views/profile/public-project-logged-in.php"><img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"></a><!-- Hard-coded placeholder -->
+										</div>
+										<div class="row col-xs-6 col-sm-8 col-md-6">
+											<a href="<?php echo BASE_URL; ?>views/profile/public-project-logged-in.php"><h4>$project title</h4></a><!-- Hard-coded placeholder -->
+											<h5>$#### Plays</h5><!-- Hard-coded placeholder -->
+										</div>
+									</section>
+
+									<section class="col-xs-12 col-md-6 public-projects-and-collaborations">
+										<div class="row col-xs-6 col-sm-4 col-md-6">
+											<a href="<?php echo BASE_URL; ?>views/profile/public-project-logged-in.php"><img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"></a><!-- Hard-coded placeholder -->
+										</div>
+										<div class="row col-xs-6 col-sm-8 col-md-6">
+											<a href="<?php echo BASE_URL; ?>views/profile/public-project-logged-in.php"><h4>$project title</h4></a><!-- Hard-coded placeholder -->
+											<h5>$#### Plays</h5><!-- Hard-coded placeholder -->
+										</div>
+									</section>
+								</div>
+							
+							</div>
+
+						</section>
+					</section>
 					<!-- End of "My Public Projects" -->
 
 
@@ -81,7 +106,7 @@
 										<select class="birth-date-field" id="birth_date_profile_page">
 											<!-- Birth date form -->
 										<?php
-											include(ROOT_PATH . 'include/birth-date-form.php');
+											include(ROOT_PATH . 'views/include/birth-date-form.php');
 										?>
 									<!-- End of birth date form -->
 									<div class="col-xs-12 col-lg-6">
@@ -118,7 +143,7 @@
 										<div id="genre-form-profile">
 											<!-- Genre form -->
 											<?php
-												include(ROOT_PATH . 'include/profile/genre-form.php');
+												include(ROOT_PATH . 'views/include/profile/genre-form.php');
 											?>
 										<!-- End of genre form -->
 									</div>
@@ -279,5 +304,5 @@
 		</div>
 
 	<?php
-		include(ROOT_PATH . 'include/footer-logged-in.php');
+		include(ROOT_PATH . 'views/include/footer-logged-in.php');
 	?>

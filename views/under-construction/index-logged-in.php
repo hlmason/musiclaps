@@ -3,7 +3,7 @@
 
 	$page_title = 'Under Construction';
 	
-	include(ROOT_PATH . 'include/header-logged-in.php');
+	include(ROOT_PATH . 'views/include/header-logged-in.php');
 ?>
 
 	<div id="wrapper">
@@ -26,5 +26,5 @@
 		</div>
 
 	<?php
-		include(ROOT_PATH . 'include/footer-logged-in.php');
+		include(ROOT_PATH . 'views/include/footer-logged-in.php');
 	?>

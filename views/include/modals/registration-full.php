@@ -39,7 +39,7 @@
 						<select class="birth-date-field" id="birth_date_registration" name="birthday">
 							<!-- Birth date form -->
 						<?php
-							include(ROOT_PATH . 'include/birth-date-form.php');
+							include(ROOT_PATH . 'views/include/birth-date-form.php');
 						?>
 					<!-- End of birth date form -->
 

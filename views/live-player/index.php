@@ -3,7 +3,7 @@
 
 	$page_title = 'Live Player';
 	
-	include(ROOT_PATH . 'include/header.php');
+	include(ROOT_PATH . 'views/include/header.php');
 ?>
 
 	<?php
@@ -102,5 +102,5 @@
 		</section>
 
 	<?php
-		include(ROOT_PATH . 'include/footer.php');
+		include(ROOT_PATH . 'views/include/footer.php');
 	?>

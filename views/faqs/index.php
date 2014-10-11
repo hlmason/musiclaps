@@ -3,7 +3,7 @@
 
 	$page_title = 'FAQs';
 	
-	include(ROOT_PATH . 'include/header.php');
+	include(ROOT_PATH . 'views/include/header.php');
 ?>
 
 	<div id="wrapper">
@@ -257,5 +257,5 @@
 		</div>
 
 	<?php
-		include(ROOT_PATH . 'include/footer.php');
+		include(ROOT_PATH . 'views/include/footer.php');
 	?>

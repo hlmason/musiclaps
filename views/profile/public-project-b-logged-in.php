@@ -3,7 +3,7 @@
 
 	$page_title = 'Project Name'; // Hard-coded placeholder 
 	
-	include(ROOT_PATH . 'include/header-logged-in.php');
+	include(ROOT_PATH . 'views/include/header-logged-in.php');
 
 ?>
 
@@ -11,7 +11,7 @@
 		<div class="container">
 
 			<?php
-				include(ROOT_PATH . 'include/profile/user-menu-b-logged-in.php');
+				include(ROOT_PATH . 'views/include/user-menu-b-logged-in.php');
 			?>
 
 			<div class="row col-lg-10 col-lg-offset-1">				
@@ -123,5 +123,5 @@
 		</div>
 
 	<?php
-		include(ROOT_PATH . 'include/footer-logged-in.php');
+		include(ROOT_PATH . 'views/include/footer-logged-in.php');
 	?>
