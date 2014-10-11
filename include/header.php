@@ -230,20 +230,20 @@
 
 	<!-- Register modal -->
 	<?php
-		include(ROOT_PATH . 'include/modals/register.php');
+		include(ROOT_PATH . 'views/include/modals/register.php');
 	?>
 	<!-- End of register modal -->
 
 
 	<!-- Email registration modal -->
 	<?php
-		include(ROOT_PATH . 'include/modals/registration-full.php');
+		include(ROOT_PATH . 'views/include/modals/registration-full.php');
 	?>
 	<!-- End of email registration modal -->
 
 
 	<!-- Login modal -->
 	<?php
-		include(ROOT_PATH . 'include/modals/login.php');
+		include(ROOT_PATH . 'views/include/modals/login.php');
 	?>
 	<!-- End of login modal -->

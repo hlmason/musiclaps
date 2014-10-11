@@ -11,7 +11,7 @@
 			</div>
 
 			<?php
-				include(ROOT_PATH . 'include/modals/social-network-login.php');
+				include(ROOT_PATH . 'views/include/modals/social-network-login.php');
 			?>
 
 			<form action="<?php echo BASE_URL; ?>controllers/login-controller.php" method="post">

@@ -11,7 +11,7 @@
 			</div>
 
 			<?php
-				include(ROOT_PATH . 'include/modals/social-network-login.php');
+				include(ROOT_PATH . 'views/include/modals/social-network-login.php');
 			?>
 			
 			<div class="modal-footer" id="register-modal-footer">

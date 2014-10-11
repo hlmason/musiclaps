@@ -82,7 +82,7 @@
 
 		// if( count($validation_error_messages) > 0 ) {
 		// 	$_SESSION['errors'] = $validation_error_messages;
-		// 	header('location: ../include/modals/registration-full.php');
+		// 	header('location: ../views/include/modals/registration-full.php');
 		// 	exit();
 		// } else {
 		// 	$_SESSION['success'] = "You have successfully registered for Musiclaps";

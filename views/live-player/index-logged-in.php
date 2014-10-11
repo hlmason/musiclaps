@@ -7,11 +7,11 @@
 ?>
 
 	<?php
-		include(ROOT_PATH . 'include/modals/want-walkthrough.php');
+		include(ROOT_PATH . 'views/include/modals/want-walkthrough.php');
 	?>
 
 	<?php
-		include(ROOT_PATH . 'include/modals/select-song.php');
+		include(ROOT_PATH . 'views/include/modals/select-song.php');
 	?>
 
 	<div id="wrapper">
@@ -88,14 +88,14 @@
 
 			<!-- Register or login modal -->
 			<?php
-				include(ROOT_PATH . 'include/modals/register-or-login.php');
+				include(ROOT_PATH . 'views/include/modals/register-or-login.php');
 			?>
 			<!-- End of register or login modal -->
 
 			
 			<!-- Express registration modal -->
 			<?php
-				// include(ROOT_PATH . 'include/modals/registration-express.php');
+				// include(ROOT_PATH . 'views/include/modals/registration-express.php');
 			?><!-- Express registration per Bart's request.  Not sure where/how this is going to be integrated. -->
 			<!-- End of express registration modal -->
 

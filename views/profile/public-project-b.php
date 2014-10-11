@@ -73,7 +73,7 @@
 							<h3>Project Details</h3><span class="glyphicon glyphicon-envelope" id="glyphiconEnvelope"></span>
 							<!-- Register or login modal -->
 							<?php
-								include(ROOT_PATH . 'include/modals/register-or-login.php');
+								include(ROOT_PATH . 'views/include/modals/register-or-login.php');
 							?>
 							<!-- End of register or login modal -->
 
