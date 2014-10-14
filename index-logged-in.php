@@ -87,9 +87,9 @@
 					<div class="col-md-7 col-md-offset-1">
 						<h2>Technology</h2>
 						<p><!-- Keep to approximately 45-75 characters per line -->
-							Musiclaps makes music collaboration easy by allowing you to record and upload tracks using just your computer.  You can then share so that others can listen and collaborate by recording and laying their tracks on top of yours.<br><br>
+							Musiclaps makes music collaboration easy by enabling you to record and upload tracks using just your computer.  You can then share your work so that others can listen and collaborate by recording their tracks on top of yours.<br><br>
 
-							Take your musical creations to the next level with this new, interactive platform!<br>
+							Take your musical creations to the next level with Musiclaps!<br>
 						</p>
 						<ul>
 							<li class="first-list-item"><a class="registerJS">Set up a profile and start recording</a></li>
