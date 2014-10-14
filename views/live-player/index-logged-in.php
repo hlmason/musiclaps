@@ -79,7 +79,7 @@
 			<!-- End of Step 3 -->
 
 			<div class="container" id="save-container">
-				<button class="save registerOrLoginJS" type="button">Save Recording</button>
+				<button class="save" type="button">Save Recording</button><!-- Need to add logic -->
 			</div>
 
 <!-- 			<div class="container" id="save-container">

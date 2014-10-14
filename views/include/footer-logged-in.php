@@ -33,5 +33,15 @@
 		    }
 		});
 	</script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/header.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/user-menu.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/index.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/new-project.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/my-projects-and-collaborations.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/youtube.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/messages.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/groups.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/live-player.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/players-wanted.js"></script>
 </body>
 </html>

@@ -41,7 +41,7 @@ $(document).ready(function() {
 		registerOrLogin.modal('show');
 	});
 
-	$('#glyphiconEnvelope').on('click', function() { // This modal is on the Live Player page
+	$('#glyphiconEnvelope').on('click', function() { // This modal is on the Public Project 'B' page
 		registerOrLogin.modal('show');
 	});
 

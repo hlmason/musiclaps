@@ -26,14 +26,7 @@
     <script src="<?php echo BASE_URL; ?>assets/javascripts/customized.bootstrap.min.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/index.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/wmuSlider.min.js"></script>
-	<script src="<?php echo BASE_URL; ?>assets/javascripts/header.js"></script>
-	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/user-menu.js"></script>
-	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/index.js"></script>
-	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/new-project.js"></script>
-	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/my-projects-and-collaborations.js"></script>
-	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/youtube.js"></script>
-	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/messages.js"></script>
-	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/groups.js"></script>
+	<script src="<?php echo BASE_URL; ?>walkthrough/assets/js/standard.js"></script><!-- Julie's Captivate -->
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/public-project.js"></script>
 </head>
 <body>
