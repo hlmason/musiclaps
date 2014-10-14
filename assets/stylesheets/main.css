@@ -3475,14 +3475,14 @@ section#technology, section#backstage, section.music-ed, section.contests-and-au
   padding-bottom: 30px; }
   section#technology h2, section#backstage h2, section.music-ed h2, section.contests-and-auditions h2 {
     color: #444444;
-    font-size: 26px;
+    font-size: 29px;
     font-weight: normal;
     letter-spacing: 0.5px;
     margin-bottom: 15px;
     margin-top: 30px;
     text-align: center; }
   section#technology p, section#backstage p, section.music-ed p, section.contests-and-auditions p {
-    font-size: 18px;
+    font-size: 21px;
     letter-spacing: 0.25px;
     margin-bottom: 0;
     margin-top: 0; }
@@ -5249,13 +5249,6 @@ footer {
   #stage-inner ul {
     top: -55px !important; }
 
-  section#technology h2, section#backstage h2, section.music-ed h2, section.contests-and-auditions h2 {
-    font-size: 22px; }
-  section#technology p, section#backstage p, section.music-ed p, section.contests-and-auditions p {
-    font-size: 16px; }
-  section#technology a, section#backstage a, section.music-ed a, section.contests-and-auditions a {
-    font-size: 14px; }
-
   .wmuSlider {
     display: none; }
 
@@ -5395,6 +5388,13 @@ footer {
   h1.landing-page {
     font-size: 24px; }
 
+  section#technology h2, section#backstage h2, section.music-ed h2, section.contests-and-auditions h2 {
+    font-size: 23px; }
+  section#technology p, section#backstage p, section.music-ed p, section.contests-and-auditions p {
+    font-size: 15px; }
+  section#technology a, section#backstage a, section.music-ed a, section.contests-and-auditions a {
+    font-size: 12px; }
+
   img#rainbow-music-notes {
     display: none; }
 
@@ -5487,6 +5487,13 @@ footer {
   #genre-form-projects {
     width: 100%; } }
 @media only screen and (max-width: 399px) {
+  section#technology h2, section#backstage h2, section.music-ed h2, section.contests-and-auditions h2 {
+    font-size: 20px; }
+  section#technology p, section#backstage p, section.music-ed p, section.contests-and-auditions p {
+    font-size: 12px; }
+  section#technology a, section#backstage a, section.music-ed a, section.contests-and-auditions a {
+    font-size: 10px; }
+
   section.username-and-number-of-songs h4, section.username-and-number-of-songs h5 {
     margin-left: 22px !important; }
 

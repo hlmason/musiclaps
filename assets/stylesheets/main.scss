@@ -89,7 +89,7 @@ $box-shadow: 10px 10px 5px $musiclaps-dark-gray;
 
 @mixin section-paragraph-and-links {
 	p {
-		font-size: 18px;
+		font-size: 21px;
 		letter-spacing: 0.25px;
 		margin-bottom: 0;
 		margin-top: 0;
@@ -848,7 +848,7 @@ h1.landing-page {
 	section#technology, section#backstage, section.music-ed, section.contests-and-auditions {
 		padding-bottom: 30px;
 		h2 {
-			@include heading(26px, 15px, 30px);
+			@include heading(29px, 15px, 30px);
 		}
 		@include section-paragraph-and-links;
 		ul {
@@ -2824,11 +2824,6 @@ footer {
 		p { margin-top: -30px !important; }
 		ul { top: -55px !important; }
 	}
-	section#technology, section#backstage, section.music-ed, section.contests-and-auditions {
-		h2 { font-size: 22px; }
-		p { font-size: 16px; }
-		a { font-size: 14px; }
-	}
 	.wmuSlider { display: none; } // Hides image slider below stage
 	#new-arrivals-page, #recommended-page, #staff-picks-page, #collaborations-page {
 		&.container { 
@@ -2969,6 +2964,11 @@ footer {
 @media only screen and (max-width: 580px) {
 // Breakpoint of "Select a song" modal (Live Player Page)
 	h1.landing-page { font-size: 24px; } // "Online Music Collaboration Made Simple"
+	section#technology, section#backstage, section.music-ed, section.contests-and-auditions {
+		h2 { font-size: 23px; }
+		p { font-size: 15px; }
+		a { font-size: 12px; }
+	}
 	img#rainbow-music-notes { display: none; }
 	.public-project-info.type-of-collab-container {
 		padding-bottom: 15px;
@@ -3048,6 +3048,11 @@ footer {
 }
 
 @media only screen and (max-width: 399px) {
+	section#technology, section#backstage, section.music-ed, section.contests-and-auditions {
+		h2 { font-size: 20px; }
+		p { font-size: 12px; }
+		a { font-size: 10px; }
+	}
 	section.username-and-number-of-songs {
 		h4, h5 { margin-left: 22px !important; }
 	}

@@ -87,11 +87,9 @@
 					<div class="col-md-7 col-md-offset-1">
 						<h2>Technology</h2>
 						<p><!-- Keep to approximately 45-75 characters per line -->
-							Musiclaps makes musical collaboration easy by allowing you to record or upload tracks through your PC into a web platform.  Then you can protect and share it so others can listen and collaborate by recording their tracks on top of yours.<br><br>  
+							Musiclaps makes music collaboration easy by allowing you to record and upload tracks using just your computer.  You can then share so that others can listen and collaborate by recording and laying their tracks on top of yours.<br><br>
 
-							Learn faster, create at a higher level, compete, improve and enjoy.  Why post comments?  Post your tracks instead and have a musical conversation on Musiclaps.<br><br>  
-
-							While your music is not sold here, collaborating with musicians worldwide is sure to make it sell better elsewhere!
+							Take your musical creations to the next level with this new, interactive platform!<br>
 						</p>
 						<ul>
 							<li class="first-list-item"><a class="registerJS">Set up a profile and start recording</a></li>
