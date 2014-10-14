@@ -38,8 +38,8 @@
 		// Password validation
 		if ( empty($_POST['password']) ) {
 			$validation_error_messages['validation_type']['password'] = "Please enter a password";
-		} elseif ( strlen($_POST['password']) < 6 OR ( strlen($_POST['password']) > 20 ) ) {
-			$validation_error_messages['validation_type']['password'] = "Please enter a password containing 6 to 20 characters";
+		} elseif ( strlen($_POST['password']) < 6 OR ( strlen($_POST['password']) > 12 ) ) {
+			$validation_error_messages['validation_type']['password'] = "Please enter a password containing 6 to 12 characters";
 		}
 
 
