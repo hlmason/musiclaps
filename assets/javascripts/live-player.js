@@ -8,7 +8,7 @@ $(document).ready(function() {
     });
 
     // Radio buttons
-	$('input').on('click', function() { // Asks whether user wants demo
+	$('input').on('click', function() { // Asks whether user wants walkthrough
 		if ( $('input[value="yes"]').is(':checked') ) { // If yes,
 			wantWalkthrough.modal('hide'); // modal is hidden
 			window.location.href='../../walkthrough/walkthrough.php'; // and user is redirected to walkthrough;
@@ -19,7 +19,7 @@ $(document).ready(function() {
 	});
 
 	// Text to right of radio buttons is selectable for mobile UX
-	$('a.yesOrNo').on('click', function() { // Asks whether user wants demo
+	$('a.yesOrNo').on('click', function() { // Asks whether user wants walkthrough
 		$(this).data('clicked', true);
 		if ( $('a#yes').data('clicked') ) { // If yes,
 			wantWalkthrough.modal('hide'); // modal is hidden
