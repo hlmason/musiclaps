@@ -8,7 +8,7 @@
 				<?php
 					$date = date_default_timezone_set('America/Los_Angeles'); // Required to use PHP date() function below
 				?>
-				<img src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/musiclaps-logo.png" alt="Musiclaps logo">&nbsp; &copy; <?php echo date('Y'); ?>
+				<img src="<?php echo BASE_URL; ?>assets/images/header-and-footer/musiclaps-logo.png" alt="Musiclaps logo">&nbsp; &copy; <?php echo date('Y'); ?>
 			</a>
 			<ul class="nav navbar-nav navbar-left">
 				<li><a class="<?php if ($page_title == "Company") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>views/under-construction/index-logged-in.php">Company</a></li>
@@ -21,7 +21,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="https://www.facebook.com/Musiclaps" target="blank"><img class="facebook-icon" src="<?php echo BASE_URL; ?>assets/images/global/facebook-icon.png" alt="Facebook icon"></a></li>
 				<li><a href="https://twitter.com/musiclaps" target="blank"><img class="twitter-icon" src="<?php echo BASE_URL; ?>assets/images/global/twitter-icon.png" alt="Twitter icon"></a></li>
-				<li><a href="https://www.youtube.com/user/Musiclaps" target="blank"><img id="youtube-icon" src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/youtube-icon.png" alt="YouTube icon"></a></li>
+				<li><a href="https://www.youtube.com/user/Musiclaps" target="blank"><img id="youtube-icon" src="<?php echo BASE_URL; ?>assets/images/header-and-footer/youtube-icon.png" alt="YouTube icon"></a></li>
 			</ul>
 		</div>
 	</footer>

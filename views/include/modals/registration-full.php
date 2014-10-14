@@ -59,7 +59,7 @@
 					</div>
 					
 					<div>
-						<img id="captcha-img" src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/captcha.png" alt="Captcha"><!-- Hard-coded placeholder -->
+						<img id="captcha-img" src="<?php echo BASE_URL; ?>assets/images/header-and-footer/captcha.png" alt="Captcha"><!-- Hard-coded placeholder -->
 						<label for="captcha"><span class="musiclaps-blue">*</span> Please type in the text</label>
 						<input id="captcha" type="text" name="captcha">
 					</div>

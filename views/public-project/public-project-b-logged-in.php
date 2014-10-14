@@ -57,7 +57,7 @@
 					
 					<section class="row col-xs-12">
 						<div class="clapping-hands-and-favorites-container public-project-info">
-							<img class="clapping-hands" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/clapping-hands.png" alt="1 pair of clapping hands">
+							<img class="clapping-hands" src="<?php echo BASE_URL; ?>assets/images/public-project-pages/clapping-hands.png" alt="1 pair of clapping hands">
 							<h4 id="number-of-claps-public-project-b-page"># claps</h4><!-- Hard-coded placeholder -->
 							
 							<!-- <span class="glyphicon glyphicon-thumbs-up"></span> -->
@@ -82,7 +82,7 @@
 									<h4>None specified</h4><!-- Hard-coded placeholder -->
 									<h4>Unknown</h4><!-- Hard-coded placeholder -->
 									<h4><span class="glyphicon glyphicon-ok"></span> Open collab</h4><!-- Hard-coded placeholder -->
-									<img id="cover-song-public-project-b-page" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/cover-song.png" alt="Cover song icon"><!-- Hard-coded placeholder -->
+									<img id="cover-song-public-project-b-page" src="<?php echo BASE_URL; ?>assets/images/public-project-pages/cover-song.png" alt="Cover song icon"><!-- Hard-coded placeholder -->
 								</div>
 								<div class="col-xs-4">
 									<h4 class="project-img">Project image</h4>

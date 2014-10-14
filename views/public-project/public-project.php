@@ -64,13 +64,13 @@
 							<span class="glyphicon"></span><!-- Placeholder -->
 							<h5>Requesting Collab</h5>
 
-							<img id="cover-song" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/cover-song.png" alt="Cover song icon">
+							<img id="cover-song" src="<?php echo BASE_URL; ?>assets/images/public-project-pages/cover-song.png" alt="Cover song icon">
 						</div>
 					</section>
 
 
 					<section class="row col-xs-12 public-project-info">
-						<img class="clapping-hands" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/clapping-hands.png" alt="1 pair of clapping hands">
+						<img class="clapping-hands" src="<?php echo BASE_URL; ?>assets/images/public-project-pages/clapping-hands.png" alt="1 pair of clapping hands">
 						<h4 id="number-of-claps"># claps</h4><!-- Hard-coded placeholder -->
 						
 						<!-- <span class="glyphicon glyphicon-thumbs-up"></span> -->
@@ -80,7 +80,7 @@
 					</section>
 					
 					<div class="row col-xs-12 public-project-info">
-						<img id="facebook-like-button" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/facebook-like-button.png" alt="Facebook 'like' button">
+						<img id="facebook-like-button" src="<?php echo BASE_URL; ?>assets/images/public-project-pages/facebook-like-button.png" alt="Facebook 'like' button">
 					</div>
 
 
@@ -96,10 +96,10 @@
 							<img class="facebook-icon first-img" src="<?php echo BASE_URL; ?>assets/images/global/facebook-icon.png" alt="Facebook icon"><!-- Hard-coded placeholder -->
 							<img class="twitter icon" src="<?php echo BASE_URL; ?>assets/images/global/twitter-icon.png" alt="Twitter icon"><!-- Hard-coded placeholder -->
 							<img class="google-icon" src="<?php echo BASE_URL; ?>assets/images/global/google-icon.jpg" alt="Google icon"><!-- Hard-coded placeholder -->
-							<img id="reddit-icon" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/reddit-icon.gif" alt="Reddit icon"><!-- Hard-coded placeholder -->
-							<img id="tumblr-icon" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/tumblr-icon.png" alt="Tumblr icon"><!-- Hard-coded placeholder -->
-							<img id="pinterest-icon" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/pinterest-icon.png" alt="Pinterest icon"><!-- Hard-coded placeholder -->
-							<img id="stumbleupon-icon" src="<?php echo BASE_URL; ?>assets/images/profile-pages/public-project/stumbleupon-icon.jpg" alt="Stumbleupon icon"><!-- Hard-coded placeholder -->
+							<img id="reddit-icon" src="<?php echo BASE_URL; ?>assets/images/public-project-pages/reddit-icon.gif" alt="Reddit icon"><!-- Hard-coded placeholder -->
+							<img id="tumblr-icon" src="<?php echo BASE_URL; ?>assets/images/public-project-pages/tumblr-icon.png" alt="Tumblr icon"><!-- Hard-coded placeholder -->
+							<img id="pinterest-icon" src="<?php echo BASE_URL; ?>assets/images/public-project-pages/pinterest-icon.png" alt="Pinterest icon"><!-- Hard-coded placeholder -->
+							<img id="stumbleupon-icon" src="<?php echo BASE_URL; ?>assets/images/public-project-pages/stumbleupon-icon.jpg" alt="Stumbleupon icon"><!-- Hard-coded placeholder -->
 
 							<input type="text" value="https://www.musiclaps.com//play?songid=8a022c7833672178"><!-- Hard-coded placeholder -->
 						</div>

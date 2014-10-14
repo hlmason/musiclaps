@@ -48,7 +48,7 @@
 	            </button>
 	            <h4 data-toggle="collapse" data-target=".navbar-collapse">Menu</h4>
 				<a class="navbar-brand" href="<?php echo BASE_URL; ?>index-logged-in.php">
-					<img src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/musiclaps-logo.png" alt="Musiclaps logo">
+					<img src="<?php echo BASE_URL; ?>assets/images/header-and-footer/musiclaps-logo.png" alt="Musiclaps logo">
 				</a>
 			</div>
 			<div class="collapse navbar-collapse">
@@ -219,8 +219,8 @@
 				</form>
 				
 				<ul id="flags">
-					<li><a><img id="usa-flag" src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/usa-flag.jpg" alt="American flag"></a></li>
-					<li><a><img src="<?php echo BASE_URL; ?>assets/images/nav-and-footer/japan-flag.jpg" alt="Japanese flag"></a></li>
+					<li><a><img id="usa-flag" src="<?php echo BASE_URL; ?>assets/images/header-and-footer/usa-flag.jpg" alt="American flag"></a></li>
+					<li><a><img src="<?php echo BASE_URL; ?>assets/images/header-and-footer/japan-flag.jpg" alt="Japanese flag"></a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right" id="logged-in">
 					<li id="welcome-user-sm">Welcome, &nbsp;<span class="musiclaps-blue"><a class="welcome-user-link" href="<?php echo BASE_URL; ?>views/profile/index.php">$firstname</a></span></li><!-- Hard-coded placeholder -->
