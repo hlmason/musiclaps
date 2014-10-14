@@ -167,7 +167,7 @@
 								<h4 id="new-request">&nbsp; New Request</h4>
 							</div>
 							
-							<div class="new-request-container">
+							<form class="new-request-container" action="<?php echo BASE_URL; ?>controllers/players-wanted-controller.php" method="post">
 								<div>
 									<label id="request-title-label" for="request_title">Title</label>
 									<input id="request_title" type="text" name="request_title">
@@ -179,7 +179,7 @@
 								</div>
 
 								<input class="post-request" type="submit" value="Post">
-							</div>
+							</form>
 						</section>
 					</div>
 					
