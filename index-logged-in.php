@@ -130,6 +130,9 @@
 				<div class="row">
 					<a id="music-ed"><div class="col-md-7 col-md-offset-1"></a>		
 						<h2>Music Education</h2>
+						<p><!-- Keep to approximately 45-75 characters per line -->
+							Experience the future of music education using Musiclaps.
+						</p>
 						<ul>
 							<li class="first-list-item"><a>Little Kids rock song of the week!</a></li>
 							<li><a>Rockstar GarageBand Composition</a></li>
@@ -148,6 +151,9 @@
 				<div class="row">
 					<a id="contests-and-auditions"><div class="col-md-7 col-md-offset-1"></a>					
 						<h2>Contests and Auditions</h2>
+						<p><!-- Keep to approximately 45-75 characters per line -->
+							Compete in one of our contests.
+						</p>
 						<ul>
 							<li class="first-list-item"><a href="assets/contests/musiclaps-contest.pdf" target="blank">In-House Contest</a></li>
 							<li><a href="assets/contests/red-hot-chili-peppers.pdf" target="blank">Band Promotion Contest</a></li>
