@@ -27,7 +27,7 @@ CSS/Sass, Javascript/jQuery:
 
 As in Rails projects, the "assets/" folder contains the CSS/Sass ("assets/stylesheets/"), Javascript/jQuery ("assets/javascripts/"), and image ("assets/images/") files.
 
-Note that the "walkthrough/" folder contains a separate "assets/" folder.  The "walkthrough/" folder was created by a second front-end development contractor using Adobe Captivate and does not visually or organizationally match the rest of the project with the exception of the "include/header.php" and "include/footer.php" files.
+Note that the "walkthrough/" folder contains a separate "assets/" folder.  The "walkthrough/" folder was created by a second front-end development contractor using Adobe Captivate and does not visually or organizationally match the rest of the project with the exception of the "views/include/header.php" and "views/include/footer.php" files.
 
 The "assets/javascripts/" folder contains a subfolder called "profile/"; this folder correlates with the root directory "profile/" folder.
 

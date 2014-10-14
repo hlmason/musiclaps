@@ -1,15 +1,15 @@
 <?php
-	require_once('include/config.php');
+	require_once('controllers/require/config.php');
 
 	$page_title = 'Play with the World Today';
 	
-	include(ROOT_PATH . 'include/header-logged-in.php');
+	include(ROOT_PATH . 'views/include/header-logged-in.php');
 ?>
 
 	<div id="wrapper">
 
 		<h1 class="landing-page">
-			Online <a href="https://www.musiclaps.com/play?m=rs&show=all&svv=collab">Music Collaboration</a> Made Simple
+			Online <a href="<?php echo BASE_URL; ?>views/collaborations/index-logged-in.php">Music Collaboration</a> Made Simple
 		</h1>
 		<div id="landing-page-hero">
 			<div id="musical-notes-map"></div>
@@ -35,10 +35,10 @@
 				</div>
 				<div class="row">		
 					<ul>
-						<li><a href="<?php echo BASE_URL; ?>live-player/"><img src="<?php echo BASE_URL; ?>assets/images/landing-pg/play-btn.png" alt="Play button"></a></li>
-						<li><a href="<?php echo BASE_URL; ?>live-player/"><img src="<?php echo BASE_URL; ?>assets/images/landing-pg/pause-btn.png" alt="Pause button"></a></li>
-						<li><a href="<?php echo BASE_URL; ?>live-player/"><img src="<?php echo BASE_URL; ?>assets/images/landing-pg/stop-btn.png" alt="Stop button"></a></li>
-						<li><a href="<?php echo BASE_URL; ?>live-player/"><img src="<?php echo BASE_URL; ?>assets/images/landing-pg/record-btn.png" alt="Record button"></a></li>
+						<li><a href="<?php echo BASE_URL; ?>views/live-player/index-logged-in.php"><img src="<?php echo BASE_URL; ?>assets/images/landing-pg/play-btn.png" alt="Play button"></a></li>
+						<li><a href="<?php echo BASE_URL; ?>views/live-player/index-logged-in.php"><img src="<?php echo BASE_URL; ?>assets/images/landing-pg/pause-btn.png" alt="Pause button"></a></li>
+						<li><a href="<?php echo BASE_URL; ?>views/live-player/index-logged-in.php"><img src="<?php echo BASE_URL; ?>assets/images/landing-pg/stop-btn.png" alt="Stop button"></a></li>
+						<li><a href="<?php echo BASE_URL; ?>views/live-player/index-logged-in.php"><img src="<?php echo BASE_URL; ?>assets/images/landing-pg/record-btn.png" alt="Record button"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -93,7 +93,7 @@
 						</p>
 						<ul>
 							<li class="first-list-item"><a class="registerJS">Set up a profile and start recording</a></li>
-							<li><a href="<?php echo BASE_URL; ?>live-player/">Try a soundcheck</a></li>
+							<li><a href="<?php echo BASE_URL; ?>views/live-player/index-logged-in.php">Try a soundcheck</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4">
@@ -149,8 +149,8 @@
 					<a id="contests-and-auditions"><div class="col-md-7 col-md-offset-1"></a>					
 						<h2>Contests and Auditions</h2>
 						<ul>
-							<li class="first-list-item"><a href="contests/musiclaps-contest.pdf" target="blank">In-House Contest</a></li>
-							<li><a href="contests/red-hot-chili-peppers.pdf" target="blank">Band Promotion Contest</a></li>
+							<li class="first-list-item"><a href="assets/contests/musiclaps-contest.pdf" target="blank">In-House Contest</a></li>
+							<li><a href="assets/contests/red-hot-chili-peppers.pdf" target="blank">Band Promotion Contest</a></li>
 							<li><a>Content Dev Contest</a></li>
 							<li><a>SpoofTube Contest</a></li>
 							<li><a>Monday Open Mics</a></li>
@@ -165,5 +165,5 @@
 		</section>
 
 	<?php
-		include(ROOT_PATH . 'include/footer-logged-in.php');
+		include(ROOT_PATH . 'views/include/footer-logged-in.php');
 	?>

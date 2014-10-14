@@ -29,11 +29,11 @@ function musicianSilhouetteRandomizer() {
 
 // 	$(navbarBrandImg).hover(function() 
 // 	{	
-// 		if (navbarBrandImg.attr('src') == 'assets/images/nav-and-footer/musiclaps-logo-original-lighter.png')
+// 		if (navbarBrandImg.attr('src') == 'assets/images/header-and-footer/musiclaps-logo-original-lighter.png')
 // 		{
-// 			navbarBrandImg.attr('src', 'assets/images/nav-and-footer/musiclaps-logo-original-darker.png');
+// 			navbarBrandImg.attr('src', 'assets/images/header-and-footer/musiclaps-logo-original-darker.png');
 // 		} else {
-// 			navbarBrandImg.attr('src', 'assets/images/nav-and-footer/musiclaps-logo-original-lighter.png');
+// 			navbarBrandImg.attr('src', 'assets/images/header-and-footer/musiclaps-logo-original-lighter.png');
 // 		}
 // 	});
 

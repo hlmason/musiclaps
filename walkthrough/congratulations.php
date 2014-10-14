@@ -1,9 +1,9 @@
 <?php
-	require_once('../include/config.php');
+	require_once('../controllers/require/config.php');
 
 	$page_title = 'Congratulations';
 	
-	include(ROOT_PATH . 'include/header.php');
+	include(ROOT_PATH . 'views/include/header.php');
 ?>
 
 	<div id="wrapper">
@@ -29,7 +29,7 @@
 	                          echo 
 	                          	"<script language='javascript'>
 		                          	setTimeout(function() {
-		                          		window.location.replace('../live-player/index.php');
+		                          		window.location.replace('../views/live-player/index.php');
 		                          	}, 5000);
 								</script>";
 						  }
@@ -43,5 +43,5 @@
 		</div>
 
 	<?php
-		include(ROOT_PATH . 'include/footer.php');
+		include(ROOT_PATH . 'views/include/footer.php');
 	?>
