@@ -23,7 +23,7 @@
 
 			<div class="row">
 				<div class="col-xs-12 col-md-4">
-					<a href="<?php echo BASE_URL; ?>views/profile/public-project-logged-in.php">
+					<a href="<?php echo BASE_URL; ?>views/public-project/public-project-logged-in.php">
 						<section class="row projects-container first">
 							<div class="col-xs-5 col-sm-2 col-md-4">
 								<img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
@@ -41,7 +41,7 @@
 				</div>
 
 				<div class="col-xs-12 col-md-4">
-					<a href="<?php echo BASE_URL; ?>views/profile/public-project-logged-in.php">
+					<a href="<?php echo BASE_URL; ?>views/public-project/public-project-logged-in.php">
 						<section class="row projects-container">
 							<div class="col-xs-5 col-sm-2 col-md-4">
 								<img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
@@ -59,7 +59,7 @@
 				</div>
 
 				<div class="col-xs-12 col-md-4">
-					<a href="<?php echo BASE_URL; ?>views/profile/public-project-logged-in.php">
+					<a href="<?php echo BASE_URL; ?>views/public-project/public-project-logged-in.php">
 						<section class="row projects-container">
 							<div class="col-xs-5 col-sm-2 col-md-4">
 								<img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
