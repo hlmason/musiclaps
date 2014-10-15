@@ -3734,7 +3734,7 @@ section#recording-instructions #save-container {
 /* =====================================================================================================
     Profile, New Project, Projects, Collaborations, YouTube, Messages, Groups, and Project Profile Pages
 ====================================================================================================== */
-#avatar-n-edit-profile, #new-project-buttons,
+.avatar-and-username, #new-project-buttons,
 .projects-nav, #collaborations-buttons {
   margin-top: 15px; }
 
@@ -3763,32 +3763,32 @@ section#messages-header button, section#groups-header button {
   background-color: white !important;
   color: #1F91E6 !important; }
 
-#avatar-n-edit-profile img.avatar {
+.avatar-and-username img.avatar {
   box-shadow: 10px 10px 5px #444444;
   height: 100px;
   max-width: 100px; }
-#avatar-n-edit-profile h2#user-id {
+.avatar-and-username h2.user-id {
   font-weight: normal;
   margin-top: 0; }
-#avatar-n-edit-profile #edit-save-profile {
+.avatar-and-username #edit-save-profile {
   text-align: center; }
-  #avatar-n-edit-profile #edit-save-profile h4.edit-profile, #avatar-n-edit-profile #edit-save-profile h4.save-profile, #avatar-n-edit-profile #edit-save-profile h4.dont-save-profile {
+  .avatar-and-username #edit-save-profile h4.edit-profile, .avatar-and-username #edit-save-profile h4.save-profile, .avatar-and-username #edit-save-profile h4.dont-save-profile {
     margin-top: 8px; }
-  #avatar-n-edit-profile #edit-save-profile h4.edit-profile {
+  .avatar-and-username #edit-save-profile h4.edit-profile {
     margin-bottom: 0; }
-  #avatar-n-edit-profile #edit-save-profile form.profile-page {
+  .avatar-and-username #edit-save-profile form.profile-page {
     display: inline-block; }
-    #avatar-n-edit-profile #edit-save-profile form.profile-page h4.save-profile input {
+    .avatar-and-username #edit-save-profile form.profile-page h4.save-profile input {
       background: none;
       border: none;
       color: #428bca;
       font-weight: bold;
       padding-left: 2px; }
-      #avatar-n-edit-profile #edit-save-profile form.profile-page h4.save-profile input:hover, #avatar-n-edit-profile #edit-save-profile form.profile-page h4.save-profile input:focus {
+      .avatar-and-username #edit-save-profile form.profile-page h4.save-profile input:hover, .avatar-and-username #edit-save-profile form.profile-page h4.save-profile input:focus {
         color: #2a6496; }
-  #avatar-n-edit-profile #edit-save-profile h4.save-profile, #avatar-n-edit-profile #edit-save-profile h4.dont-save-profile {
+  .avatar-and-username #edit-save-profile h4.save-profile, .avatar-and-username #edit-save-profile h4.dont-save-profile {
     display: inline-block; }
-  #avatar-n-edit-profile #edit-save-profile .glyphicon {
+  .avatar-and-username #edit-save-profile .glyphicon {
     color: #444444; }
 
 .about-me {
@@ -5284,7 +5284,7 @@ footer {
     margin-left: 0; }
     .profile-page.row.col-xs-12.col-sm-8 #edit-save-profile {
       text-align: left !important; }
-    .profile-page.row.col-xs-12.col-sm-8 h2#user-id {
+    .profile-page.row.col-xs-12.col-sm-8 h2.user-id {
       margin-top: 10px !important; }
 
   .about-me {
@@ -5477,7 +5477,7 @@ footer {
   #project-details-container h4 {
     font-size: 10px; }
 
-  h2#user-id, h4.edit-profile, h4.save-profile {
+  h2.user-id, h4.edit-profile, h4.save-profile {
     margin-left: 10px; }
 
   input.save#save-genre {
