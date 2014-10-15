@@ -3731,8 +3731,8 @@ section#recording-instructions #save-container {
       #players-wanted-page form.new-request-container input.post-request:hover, #players-wanted-page form.new-request-container input.post-request:focus {
         background-color: #45b7ff; }
 
-/* =====================================================================================================
-    Profile, New Project, Projects, Collaborations, YouTube, Messages, Groups, and Project Profile Pages
+/* ======================================================================================================
+    Profile, New Project, Projects, Collaborations, YouTube, Messages, Groups, and Public Project Pages
 ====================================================================================================== */
 .avatar-and-username, #new-project-buttons,
 .projects-nav, #collaborations-buttons {

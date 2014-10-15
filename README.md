@@ -12,28 +12,17 @@ Back-End Framework: None currently
 
 Background: 
 
-The app was originally built by a back-end engineer in an obscure language called TeraScript.  A front-end development contractor was later hired, and the app was recoded from scratch (in HTML/PHP, CSS/Sass, and Javascript/jQuery).  In the future, the server-side language may or may not be PHP.
+The app was originally built by a back-end engineer in an obscure language called TeraScript.  A front-end development contractor was later hired, and the app was recoded from scratch (in HTML/PHP, CSS/Sass, and Javascript/jQuery).  In the future, the server-side language will not be PHP.
 
 =================================
 
 Macro Organization:
 
-HTML/PHP:
-
-The "include/" folder contains files with snippets of code that have been 'included' (include(ROOT_PATH . 'include/...')) in other files.
-
-
-CSS/Sass, Javascript/jQuery:
-
-As in Rails projects, the "assets/" folder contains the CSS/Sass ("assets/stylesheets/"), Javascript/jQuery ("assets/javascripts/"), and image ("assets/images/") files.
+The macro organization follows the MVC software architectural pattern with pages in the "views" folder; CSS/Sass and Javascript/jQuery files in the "assets" folder; database-related files in the "models" folder; and configuration, form validation, and form processing files in the "controllers" folder.  The "models" and "controllers" folders are for the most part empty since this GitHub project only contains the front-end portion of the project.
 
 Note that the "walkthrough/" folder contains a separate "assets/" folder.  The "walkthrough/" folder was created by a second front-end development contractor using Adobe Captivate and does not visually or organizationally match the rest of the project with the exception of the "views/include/header.php" and "views/include/footer.php" files.
 
-The "assets/javascripts/" folder contains a subfolder called "profile/"; this folder correlates with the root directory "profile/" folder.
-
-The "assets/images/" folder also contains subfolders.
-
-The "assets/fonts/" folder contains Bootstrap glyphicon files.
+The "views/include/" folder contains files with snippets of code that have been 'included' (include(ROOT_PATH . 'include/...')) in other files.
 
 =================================
 
@@ -44,6 +33,8 @@ As a general rule in this project, CSS/Sass variables contain dashes, Javascript
 The "assets/stylesheets/_customized.bootstrap.min.scss" file is a customized Bootstrap 3.2.0 file which includes grid system, forms, glyphicons, navs, navbar, progress bars, component animations, dropdowns, and modals (http://getbootstrap.com/customize/).
 
 The "assets/javascripts/customized.bootstrap.min.js" file is a customized Bootstrap 3.2.0 file which includes dropdowns, modals, collapse, and transitions (Go to http://getbootstrap.com/customize/ and scroll down).
+
+The "assets/fonts/" folder contains Bootstrap glyphicon files.
 
 Hand-coded CSS (i.e. Bootstrap overrides) is in the "assets/stylesheets/main.scss" file.  The file is long and may need to be reorganized in the future.  The code is currently organized into the following categories:
 
@@ -62,7 +53,7 @@ Live Player Page<br>
 New Arrivals, Recommended, Staff Picks, and Collaborations Pages<br>
 All Music Page<br>
 Players Wanted Page<br>
-Profile, New Project, Projects, Collaborations, YouTube, Messages, Groups, and Project Profile Pages<br>
+Profile, New Project, Projects, Collaborations, YouTube, Messages, Groups, and Public Project Pages<br>
 Footer<br>
   Privacy, Terms, and FAQs Pages<br>
 Under Construction Page<br>
