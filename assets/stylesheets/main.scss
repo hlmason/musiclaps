@@ -1207,7 +1207,7 @@ section#messages-header button, section#groups-header button { // "Add New Frien
 	}
 }
 
-#about-me {
+.about-me {
 	border-top: $nav-border;
 	margin-top: -65px;
 	h4 {
@@ -1231,7 +1231,7 @@ section#messages-header button, section#groups-header button { // "Add New Frien
 		font-size: 12px;
 		font-weight: 300;
 	}
-	li#glyphicon-home {
+	li.glyphicon-home {
 		float: right;
 	}
 }
@@ -2740,7 +2740,7 @@ footer {
 		h4, h5 { margin: 0; }
 	}
 	section.public-project-header h5, img#cover-song { margin-right: 38px !important; } // Aligns elements with Live Player
-	#about-me { border-top: none; }
+	.about-me { border-top: none; }
 	h4.my-public-projects-heading { margin-bottom: 0; }
 	section.public-projects-and-collaborations { 
 		margin-top: 10px;
@@ -2855,7 +2855,7 @@ footer {
 		#edit-save-profile { text-align: left !important; }
 		h2#user-id { margin-top: 10px !important; }
 	}
-	#about-me {
+	.about-me {
 		margin-left: 5px;
 		margin-top: 15px;
 		li.profile-page {

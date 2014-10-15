@@ -3700,16 +3700,16 @@ section#recording-instructions #save-container {
     border-top: 1px solid #cecece;
     padding-left: 10px;
     padding-top: 5px; }
-  #players-wanted-page .new-request-container {
+  #players-wanted-page form.new-request-container {
     border: 1px solid #cecece;
     min-height: 260px;
     padding: 10px; }
-    #players-wanted-page .new-request-container label:not(#request-title-label) {
+    #players-wanted-page form.new-request-container label:not(#request-title-label) {
       margin-bottom: 2px;
       margin-top: 10px; }
-    #players-wanted-page .new-request-container label#request-title-label {
+    #players-wanted-page form.new-request-container label#request-title-label {
       margin-bottom: 2px !important; }
-    #players-wanted-page .new-request-container input#request_title, #players-wanted-page .new-request-container textarea {
+    #players-wanted-page form.new-request-container input#request_title, #players-wanted-page form.new-request-container textarea {
       -moz-border-radius: 5px;
       border-radius: 5px;
       border: 1px solid #cecece;
@@ -3717,9 +3717,9 @@ section#recording-instructions #save-container {
       padding-left: 8px;
       padding-top: 3px;
       width: 100%; }
-    #players-wanted-page .new-request-container textarea {
+    #players-wanted-page form.new-request-container textarea {
       height: 113px; }
-    #players-wanted-page .new-request-container input.post-request {
+    #players-wanted-page form.new-request-container input.post-request {
       -moz-border-radius: 10px;
       border-radius: 10px;
       background-color: #38aaff;
@@ -3728,7 +3728,7 @@ section#recording-instructions #save-container {
       color: white;
       float: right;
       margin-top: 10px; }
-      #players-wanted-page .new-request-container input.post-request:hover, #players-wanted-page .new-request-container input.post-request:focus {
+      #players-wanted-page form.new-request-container input.post-request:hover, #players-wanted-page form.new-request-container input.post-request:focus {
         background-color: #45b7ff; }
 
 /* =====================================================================================================
@@ -3791,25 +3791,25 @@ section#messages-header button, section#groups-header button {
   #avatar-n-edit-profile #edit-save-profile .glyphicon {
     color: #444444; }
 
-#about-me {
+.about-me {
   border-top: 1px solid #cecece;
   margin-top: -65px; }
-  #about-me h4 {
+  .about-me h4 {
     margin-bottom: 7px;
     margin-top: 2px; }
-  #about-me ul.first-ul-profile-page, #about-me ul.second-ul-profile-page, #about-me ul.third-ul-profile-page {
+  .about-me ul.first-ul-profile-page, .about-me ul.second-ul-profile-page, .about-me ul.third-ul-profile-page {
     margin-top: 4px; }
-  #about-me ul.first-ul-profile-page, #about-me ul.second-ul-profile-page {
+  .about-me ul.first-ul-profile-page, .about-me ul.second-ul-profile-page {
     margin-bottom: 2px; }
-  #about-me ul.first-ul-profile-page li {
+  .about-me ul.first-ul-profile-page li {
     margin-right: 20px; }
-  #about-me ul.third-ul-profile-page {
+  .about-me ul.third-ul-profile-page {
     margin-bottom: 0; }
-  #about-me li.profile-page {
+  .about-me li.profile-page {
     display: inline-block;
     font-size: 12px;
     font-weight: 300; }
-  #about-me li#glyphicon-home {
+  .about-me li.glyphicon-home {
     float: right; }
 
 section.public-projects-and-collaborations-container {
@@ -5149,7 +5149,7 @@ footer {
   section.public-project-header h5, img#cover-song {
     margin-right: 38px !important; }
 
-  #about-me {
+  .about-me {
     border-top: none; }
 
   h4.my-public-projects-heading {
@@ -5287,10 +5287,10 @@ footer {
     .profile-page.row.col-xs-12.col-sm-8 h2#user-id {
       margin-top: 10px !important; }
 
-  #about-me {
+  .about-me {
     margin-left: 5px;
     margin-top: 15px; }
-    #about-me li.profile-page {
+    .about-me li.profile-page {
       display: block;
       float: none !important;
       margin-top: 8px; }
