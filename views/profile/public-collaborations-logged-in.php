@@ -1,7 +1,7 @@
 <?php
 	require_once('../../controllers/require/config.php');
 
-	$page_title = 'My Collaborations'; // Hard-coded placeholder
+	$page_title = 'My Collaborations';
 	
 	include(ROOT_PATH . 'views/include/header-logged-in.php');
 
@@ -34,7 +34,7 @@
 
 					<section class="row col-xs-12 public-projects-and-collaborations-container">
 						
-						<h4 class="my-public-projects-heading">My Collaborations <span class="normal">($number)</span></h4><!-- Hard-coded placeholder / Note that this says "My Collaborations" on public-profile-logged-in.php -->
+						<h4 class="my-public-projects-heading">My Collaborations <span class="normal">($number)</span></h4><!-- Hard-coded placeholder / Note that this says "Collaborations" on public-collaborations.php -->
 					
 						<div class="row col-xs-12">
 							

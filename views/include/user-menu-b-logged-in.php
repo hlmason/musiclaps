@@ -26,7 +26,7 @@
 								if ($page_title == "My Friends") { 
 									echo "active"; 
 								} 
-							?>" href="#">Friends
+							?>" href="<?php echo BASE_URL; ?>views/profile/friends-logged-in.php">Friends
 						</a>
 					</li>
 				</ul>

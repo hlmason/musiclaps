@@ -1,9 +1,9 @@
 <?php
 	require_once('../../controllers/require/config.php');
 
-	$page_title = 'Collaborations';
+	$page_title = 'My Friends';
 	
-	include(ROOT_PATH . 'views/include/header.php');
+	include(ROOT_PATH . 'views/include/header-logged-in.php');
 
 ?>
 
@@ -11,7 +11,7 @@
 		<div class="container">
 			
 			<?php
-				include(ROOT_PATH . 'views/include/user-menu-b.php');
+				include(ROOT_PATH . 'views/include/user-menu-b-logged-in.php');
 			?>
 		
 			<div class="row col-lg-10 col-lg-offset-1">				
@@ -32,35 +32,15 @@
 					<!-- End of "About me" div -->
 					
 
-					<section class="row col-xs-12 public-projects-and-collaborations-container">
+					<section class="row col-xs-12">
 						
-						<h4 class="my-public-projects-heading">Collaborations <span class="normal">($number)</span></h4><!-- Hard-coded placeholder / Note that this says "My Collaborations" on public-collaborations-logged-in.php -->
-
-						<div class="row col-xs-12">
+						<h4>My Friends <span class="normal">($number)</span></h4><!-- Hard-coded placeholder / Note that this says "Friends" on friends.php -->
+					
+<!-- 						<div class="row col-xs-12">
 							
-							<div class="row">
-								<section class="col-xs-12 col-md-6 public-projects-and-collaborations">
-									<div class="row col-xs-6 col-sm-4 col-md-6">
-										<a href="<?php echo BASE_URL; ?>views/public-project/public-project-b.php"><img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"></a><!-- Hard-coded placeholder -->
-									</div>
-									<div class="row col-xs-6 col-sm-8 col-md-6">
-										<a href="<?php echo BASE_URL; ?>views/public-project/public-project-b.php"><h4>$project title</h4></a><!-- Hard-coded placeholder -->
-										<h5>$#### Plays</h5><!-- Hard-coded placeholder -->
-									</div>
-								</section>
 
-								<section class="col-xs-12 col-md-6 public-projects-and-collaborations">
-									<div class="row col-xs-6 col-sm-4 col-md-6">
-										<a href="<?php echo BASE_URL; ?>views/public-project/public-project-b.php"><img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"></a><!-- Hard-coded placeholder -->
-									</div>
-									<div class="row col-xs-6 col-sm-8 col-md-6">
-										<a href="<?php echo BASE_URL; ?>views/public-project/public-project-b.php"><h4>$project title</h4></a><!-- Hard-coded placeholder -->
-										<h5>$#### Plays</h5><!-- Hard-coded placeholder -->
-									</div>
-								</section>
-							</div>
 						
-						</div>
+						</div> -->
 
 					</section>
 
