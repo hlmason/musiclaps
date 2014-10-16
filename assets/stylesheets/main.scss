@@ -487,32 +487,36 @@ nav {
 
 	ul.user-menu {
 		li:not(.first-list-item) { // Not "Profile" / "My Profile" tabs
-			padding-left: 3px;
+			padding-left: 2px;
 		}
 		li:not(.dropdown-menu-list-item) {
 			border-bottom: $nav-border;
-			a:not(.dropdown-menu-link) {
-				border-left: $nav-border;
-				border-right: $nav-border;
-				border-top: $nav-border;
-				@include border-top-left-radius(5px);
-				@include border-top-right-radius(5px);
-				text-transform: capitalize !important;
-				&:not(.active), &:hover, &:focus {
-					background-color: #f4f4f4;
-				}
-				&:not(.active) {
-					&:hover, &:focus {
-						background-color: white; // Same as active
+			a {
+				padding-left: 12px; // Lines menu up with "Recommended" box (overwrites general padding of 15px for links)
+				padding-right: 12px; // Lines menu up with "Recommended" box (overwrites general padding of 15px for links)
+				&:not(.dropdown-menu-link) {
+					border-left: $nav-border;
+					border-right: $nav-border;
+					border-top: $nav-border;
+					@include border-top-left-radius(5px);
+					@include border-top-right-radius(5px);
+					text-transform: capitalize !important;
+					&:not(.active), &:hover, &:focus {
+						background-color: #f4f4f4;
 					}
+					&:not(.active) {
+						&:hover, &:focus {
+							background-color: white; // Same as active
+						}
+					}
+					 &.active { 
+	 					background-color: white; // Removes hover background color (#f4f4f4) on active tab
+	 				}
 				}
-				 &.active { 
- 					background-color: white; // Removes hover background color (#f4f4f4) on active tab
- 				}
 			}
 			&#new-project, &#my-projects, &#collaborations {
 				a:not(.dropdown-menu-link) { 
-					padding: 14px 12px 12px; // Left/right padding lines menu up with "Recommended" box (overwrites general padding of 15px for links)
+					padding: 14px 11.5px 12px; // Left/right padding lines menu up with "Recommended" box (overwrites general padding of 15px for links)
 				}
 			}
 		}

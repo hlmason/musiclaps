@@ -157,10 +157,10 @@
 					<li>
 						<a class="
 							<?php 
-								if ($page_title == "YouTube") { 
+								if ($page_title == "YouTube Links") { 
 									echo "active"; 
 								} 
-							?>" href="<?php echo BASE_URL; ?>views/profile/youtube.php">YouTube
+							?>" href="<?php echo BASE_URL; ?>views/profile/youtube-links.php">YouTube Links
 						</a>
 					</li>
 					

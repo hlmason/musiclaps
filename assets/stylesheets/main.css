@@ -3142,26 +3142,29 @@ h4.user-menu {
   margin-top: 10px; }
 
 ul.user-menu li:not(.first-list-item) {
-  padding-left: 3px; }
+  padding-left: 2px; }
 ul.user-menu li:not(.dropdown-menu-list-item) {
   border-bottom: 1px solid #cecece; }
-  ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link) {
-    border-left: 1px solid #cecece;
-    border-right: 1px solid #cecece;
-    border-top: 1px solid #cecece;
-    -moz-border-top-left-radius: 5px;
-    border-top-left-radius: 5px;
-    -moz-border-top-right-radius: 5px;
-    border-top-right-radius: 5px;
-    text-transform: capitalize !important; }
-    ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):not(.active), ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):hover, ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):focus {
-      background-color: #f4f4f4; }
-    ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):not(.active):hover, ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):not(.active):focus {
-      background-color: white; }
-    ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link).active {
-      background-color: white; }
+  ul.user-menu li:not(.dropdown-menu-list-item) a {
+    padding-left: 12px;
+    padding-right: 12px; }
+    ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link) {
+      border-left: 1px solid #cecece;
+      border-right: 1px solid #cecece;
+      border-top: 1px solid #cecece;
+      -moz-border-top-left-radius: 5px;
+      border-top-left-radius: 5px;
+      -moz-border-top-right-radius: 5px;
+      border-top-right-radius: 5px;
+      text-transform: capitalize !important; }
+      ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):not(.active), ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):hover, ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):focus {
+        background-color: #f4f4f4; }
+      ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):not(.active):hover, ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):not(.active):focus {
+        background-color: white; }
+      ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link).active {
+        background-color: white; }
   ul.user-menu li:not(.dropdown-menu-list-item)#new-project a:not(.dropdown-menu-link), ul.user-menu li:not(.dropdown-menu-list-item)#my-projects a:not(.dropdown-menu-link), ul.user-menu li:not(.dropdown-menu-list-item)#collaborations a:not(.dropdown-menu-link) {
-    padding: 14px 12px 12px; }
+    padding: 14px 11.5px 12px; }
 
 /* ===================================
     Modal

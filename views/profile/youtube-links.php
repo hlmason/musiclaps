@@ -1,7 +1,7 @@
 <?php
 	require_once('../../controllers/require/config.php');
 
-	$page_title = 'YouTube';
+	$page_title = 'YouTube Links';
 	
 	include(ROOT_PATH . 'models/new-db-connection.php');
 	include(ROOT_PATH . 'views/include/header-logged-in.php');
