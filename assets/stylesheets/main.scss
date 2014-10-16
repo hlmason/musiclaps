@@ -1783,7 +1783,7 @@ form.project-form {
 	}
 }
 
-#upload-stage-background-img-container, section.change-sound-img-container {
+#upload-stage-background-img-container, section.change-project-img-container {
 	input.choose-file, input#save-stage-background-img, input.update-file {
 		font-size: 12px;
 	}
@@ -1796,7 +1796,7 @@ form.project-form {
 	}
 }
 
-section.change-sound-img-container {
+section.change-project-img-container {
 	form {
 		display: inline-block;
 		width: 100%;
@@ -1808,19 +1808,19 @@ section.change-sound-img-container {
 				color: #555;
 			}
 		}
-		h4, input.update-file {
+		label, input.update-file {
 			margin-top: 10px;
 		}
-		h4, input[type="file"] {
-			display: inline-block;
-		}
-		h4 {
+		label {
 			margin-left: 5px;
 		}
 		input {
 			&.choose-file {
 				margin-left: 25px;
 				margin-top: 10px;
+			}
+			&[type="file"] {
+				display: inline-block;
 			}
 			&.update-file {
 				float: right;
@@ -2953,7 +2953,7 @@ footer {
 		img, h5 { margin-left: 5px !important; }
 		h4 { font-size: 12px; }
 	}
-	section.change-sound-img-container {
+	section.change-project-img-container {
 		h4, input { display: block !important; }
 		h4 { 
 			margin-bottom: 0;

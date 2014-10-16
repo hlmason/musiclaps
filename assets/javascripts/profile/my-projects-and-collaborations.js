@@ -85,7 +85,7 @@ $(document).ready(function() {
 	var requestingCollabForm = $('#requestingCollabForm');
 	var requestingCollabContainer = $('section#requestingCollabContainer');
 
-	var changeSoundImgContainer = $('section.changeSoundImgContainer');
+	var changeProjectImgContainer = $('section.changeProjectImgContainer');
 	
 	var projectsContainer = $('section.projectsContainer');
 
@@ -104,7 +104,7 @@ $(document).ready(function() {
 
 	requestingCollabForm.hide();
 
-	changeSoundImgContainer.hide();
+	changeProjectImgContainer.hide();
 
 	
 	$(projectsContainer).on('click', function() {
@@ -118,7 +118,7 @@ $(document).ready(function() {
 
 
 	$('.glyphiconRemove').on('click', function() {
-		changeSoundImgContainer.hide();
+		changeProjectImgContainer.hide();
 	});
 
 
@@ -166,7 +166,7 @@ $(document).ready(function() {
 		glyphiconPencil.hide();
 	});
 	$(glyphiconPencil).on('click', function() {
-		changeSoundImgContainer.fadeIn('fast');
+		changeProjectImgContainer.fadeIn('fast');
 	});
 
 });

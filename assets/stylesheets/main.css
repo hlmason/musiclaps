@@ -4265,38 +4265,38 @@ form.project-form ul#copyright-types-container {
     form.project-form ul#copyright-types-container li h4:not(.first-h4) {
       margin-left: 15px; }
 
-#upload-stage-background-img-container input.choose-file, #upload-stage-background-img-container input#save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-sound-img-container input.choose-file, section.change-sound-img-container input#save-stage-background-img, section.change-sound-img-container input.update-file {
+#upload-stage-background-img-container input.choose-file, #upload-stage-background-img-container input#save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-project-img-container input.choose-file, section.change-project-img-container input#save-stage-background-img, section.change-project-img-container input.update-file {
   font-size: 12px; }
-#upload-stage-background-img-container input#save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-sound-img-container input#save-stage-background-img, section.change-sound-img-container input.update-file {
+#upload-stage-background-img-container input#save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-project-img-container input#save-stage-background-img, section.change-project-img-container input.update-file {
   -moz-border-radius: 10px;
   border-radius: 10px; }
-#upload-stage-background-img-container input#save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-sound-img-container input#save-stage-background-img, section.change-sound-img-container input.update-file {
+#upload-stage-background-img-container input#save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-project-img-container input#save-stage-background-img, section.change-project-img-container input.update-file {
   background-color: #38aaff;
   border: 1px solid #38aaff;
   padding: 3px 10px;
   color: white; }
-  #upload-stage-background-img-container input#save-stage-background-img:hover, #upload-stage-background-img-container input#save-stage-background-img:focus, #upload-stage-background-img-container input.update-file:hover, #upload-stage-background-img-container input.update-file:focus, section.change-sound-img-container input#save-stage-background-img:hover, section.change-sound-img-container input#save-stage-background-img:focus, section.change-sound-img-container input.update-file:hover, section.change-sound-img-container input.update-file:focus {
+  #upload-stage-background-img-container input#save-stage-background-img:hover, #upload-stage-background-img-container input#save-stage-background-img:focus, #upload-stage-background-img-container input.update-file:hover, #upload-stage-background-img-container input.update-file:focus, section.change-project-img-container input#save-stage-background-img:hover, section.change-project-img-container input#save-stage-background-img:focus, section.change-project-img-container input.update-file:hover, section.change-project-img-container input.update-file:focus {
     background-color: #45b7ff; }
 
-section.change-sound-img-container form {
+section.change-project-img-container form {
   display: inline-block;
   width: 100%; }
-  section.change-sound-img-container form .glyphicon-remove {
+  section.change-project-img-container form .glyphicon-remove {
     cursor: pointer;
     float: left !important;
     margin-top: 12px; }
-    section.change-sound-img-container form .glyphicon-remove:hover {
+    section.change-project-img-container form .glyphicon-remove:hover {
       color: #555; }
-  section.change-sound-img-container form h4, section.change-sound-img-container form input.update-file {
+  section.change-project-img-container form label, section.change-project-img-container form input.update-file {
     margin-top: 10px; }
-  section.change-sound-img-container form h4, section.change-sound-img-container form input[type="file"] {
-    display: inline-block; }
-  section.change-sound-img-container form h4 {
+  section.change-project-img-container form label {
     margin-left: 5px; }
-  section.change-sound-img-container form input.choose-file {
+  section.change-project-img-container form input.choose-file {
     margin-left: 25px;
     margin-top: 10px; }
-  section.change-sound-img-container form input.update-file {
+  section.change-project-img-container form input[type="file"] {
+    display: inline-block; }
+  section.change-project-img-container form input.update-file {
     float: right; }
 
 section#lyrics-settings-sm, section#lyrics-settings-xs {
@@ -5371,15 +5371,15 @@ footer {
     ul#copyright-types-container h4 {
       font-size: 12px; }
 
-  section.change-sound-img-container h4, section.change-sound-img-container input {
+  section.change-project-img-container h4, section.change-project-img-container input {
     display: block !important; }
-  section.change-sound-img-container h4 {
+  section.change-project-img-container h4 {
     margin-bottom: 0;
     margin-left: 18px !important; }
-  section.change-sound-img-container input.choose-file {
+  section.change-project-img-container input.choose-file {
     margin-left: 0 !important;
     margin-top: 0; }
-  section.change-sound-img-container input.update-file {
+  section.change-project-img-container input.update-file {
     float: none !important; } }
 @media only screen and (max-width: 580px) {
   h1.landing-page {

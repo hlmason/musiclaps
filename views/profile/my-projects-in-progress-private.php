@@ -27,11 +27,11 @@
 						<!-- End of project form -->
 
 
-					<!-- "Change Sound Image" form -->
+					<!-- "Change Project Image" form -->
 					<?php
-						include(ROOT_PATH . 'views/include/profile/change-sound-img-form.php');
+						include(ROOT_PATH . 'views/include/profile/change-project-img-form.php');
 					?>
-					<!-- End of "Change Sound Image" form -->
+					<!-- End of "Change Project Image" form -->
 
 				</div>
 				<?php
