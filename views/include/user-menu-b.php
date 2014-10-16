@@ -14,10 +14,19 @@
 					<li>
 						<a class="
 							<?php 
-								if ($page_title == "Collaborations") { 
+								if ($page_title == "Owned Collaborations") { 
 									echo "active"; 
 								} 
-							?>" href="<?php echo BASE_URL; ?>views/profile/public-collaborations.php">Collaborations
+							?>" href="<?php echo BASE_URL; ?>views/profile/owned-public-collaborations.php">Owned Collaborations
+						</a>
+					</li>
+					<li>
+						<a class="
+							<?php 
+								if ($page_title == "Joined Collaborations") { 
+									echo "active"; 
+								} 
+							?>" href="<?php echo BASE_URL; ?>views/profile/joined-public-collaborations.php">Joined Collaborations
 						</a>
 					</li>
 					<li>

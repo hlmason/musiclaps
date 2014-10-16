@@ -1,9 +1,9 @@
 <?php
 	require_once('../../controllers/require/config.php');
 
-	$page_title = 'Collaborations';
+	$page_title = 'My Joined Collaborations';
 	
-	include(ROOT_PATH . 'views/include/header.php');
+	include(ROOT_PATH . 'views/include/header-logged-in.php');
 
 ?>
 
@@ -11,7 +11,7 @@
 		<div class="container">
 			
 			<?php
-				include(ROOT_PATH . 'views/include/user-menu-b.php');
+				include(ROOT_PATH . 'views/include/user-menu-b-logged-in.php');
 			?>
 		
 			<div class="row col-lg-10 col-lg-offset-1">				
@@ -34,14 +34,14 @@
 
 					<section class="row col-xs-12 public-projects-and-collaborations-container">
 						
-						<h4 class="my-public-projects-heading">Collaborations <span class="normal">($number)</span></h4><!-- Hard-coded placeholder / Note that this says "My Collaborations" on public-collaborations-logged-in.php -->
-
+						<h4 class="my-public-projects-heading">My Joined Collaborations <span class="normal">($number)</span></h4><!-- Hard-coded placeholder / Note that this says "Joined Collaborations" on joined-public-collaborations.php -->
+					
 						<div class="row col-xs-12">
 							
 							<div class="row">
 								<!-- Project listings -->
 								<?php
-									include(ROOT_PATH . 'views/include/public-project/public-project-listings-b.php');
+									include(ROOT_PATH . 'views/include/public-project/public-project-listings-b-logged-in.php');
 								?>
 								<!-- End of project listings -->
 							</div>
