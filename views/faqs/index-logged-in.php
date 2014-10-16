@@ -45,16 +45,16 @@
        					It can also be used as an accompaniment when playing alone.
        				</p>
 
-		       	<h3>6. What is a track?</h3>
+		       	<h3>6. What is a part?</h3>
+	       			<p>
+		       			On Musiclaps, a part is an instrument or sound role.
+		       		</p>
+
+		       	<h3>7. What is a track?</h3>
 		       		<p>
 		       			A track is both a single recorded sound layer and a recording comprised of multiple tracks!  
 		       			Final recordings are typically comprised of multiple, layered tracks with one part per track.  
        					For example, in a recording with piano, guitar, drums, and vocals, there would typically be at least 4 tracks, one for each part.
-		       		</p>
-
-		       	<h3>7. What is a part?</h3>
-	       			<p>
-		       			On Musiclaps, a part is an instrument or sound role.
 		       		</p>
 
 		       <h3>8. Who is the project owner?</h3>
