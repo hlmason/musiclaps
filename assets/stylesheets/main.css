@@ -2941,9 +2941,11 @@ span.normal {
 .musiclaps-blue {
   color: #38aaff !important; }
 
-#registration-full-modal-body .glyphicon-question-sign, #registration-full-modal-body .password-req, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .glyphicon-question-sign, #registration-express-modal-body .password-req, #registration-express-modal-body .youtube-id-req, #youtube-settings .glyphicon-question-sign, #youtube-settings .password-req, #youtube-settings .youtube-id-req {
+#registration-full-modal-body .glyphicon-question-sign, #registration-full-modal-body .password-req, #registration-full-modal-body .lyrics-explanation, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .glyphicon-question-sign, #registration-express-modal-body .password-req, #registration-express-modal-body .lyrics-explanation, #registration-express-modal-body .youtube-id-req, #lyrics-settings-sm .glyphicon-question-sign, #lyrics-settings-sm .password-req, #lyrics-settings-sm .lyrics-explanation, #lyrics-settings-sm .youtube-id-req, #lyrics-settings-xs .glyphicon-question-sign, #lyrics-settings-xs .password-req, #lyrics-settings-xs .lyrics-explanation, #lyrics-settings-xs .youtube-id-req, #youtube-settings .glyphicon-question-sign, #youtube-settings .password-req, #youtube-settings .lyrics-explanation, #youtube-settings .youtube-id-req {
   color: #38aaff !important; }
-#registration-full-modal-body .password-req, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .password-req, #registration-express-modal-body .youtube-id-req, #youtube-settings .password-req, #youtube-settings .youtube-id-req {
+#registration-full-modal-body .password-req, #registration-full-modal-body .lyrics-explanation, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .password-req, #registration-express-modal-body .lyrics-explanation, #registration-express-modal-body .youtube-id-req, #lyrics-settings-sm .password-req, #lyrics-settings-sm .lyrics-explanation, #lyrics-settings-sm .youtube-id-req, #lyrics-settings-xs .password-req, #lyrics-settings-xs .lyrics-explanation, #lyrics-settings-xs .youtube-id-req, #youtube-settings .password-req, #youtube-settings .lyrics-explanation, #youtube-settings .youtube-id-req {
+  font-size: 12px; }
+#registration-full-modal-body .password-req, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .password-req, #registration-express-modal-body .youtube-id-req, #lyrics-settings-sm .password-req, #lyrics-settings-sm .youtube-id-req, #lyrics-settings-xs .password-req, #lyrics-settings-xs .youtube-id-req, #youtube-settings .password-req, #youtube-settings .youtube-id-req {
   font-size: 12px;
   margin-bottom: 2px;
   margin-left: 2px; }
@@ -4306,7 +4308,8 @@ section#lyrics-settings-sm, section#lyrics-settings-xs {
   width: 95%; }
   section#lyrics-settings-sm h4, section#lyrics-settings-xs h4 {
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
+    margin-right: 3px;
     margin-top: 10px; }
   section#lyrics-settings-sm input.save, section#lyrics-settings-xs input.save {
     -moz-border-radius: 2px;
@@ -4317,13 +4320,13 @@ section#lyrics-settings-sm, section#lyrics-settings-xs {
     color: white;
     font-weight: normal;
     font-size: 12px;
-    text-transform: uppercase;
-    float: right;
-    margin-top: 10px; }
+    text-transform: uppercase; }
     section#lyrics-settings-sm input.save:hover, section#lyrics-settings-sm input.save:focus, section#lyrics-settings-xs input.save:hover, section#lyrics-settings-xs input.save:focus {
       background-color: #45b7ff; }
   section#lyrics-settings-sm p, section#lyrics-settings-xs p {
     margin-top: 0; }
+    section#lyrics-settings-sm p:nth-child(3), section#lyrics-settings-sm p.third-pause, section#lyrics-settings-sm p.first-pause, section#lyrics-settings-xs p:nth-child(3), section#lyrics-settings-xs p.third-pause, section#lyrics-settings-xs p.first-pause {
+      margin-top: 10px; }
     section#lyrics-settings-sm p input.pause, section#lyrics-settings-xs p input.pause {
       -moz-border-radius: 5px;
       border-radius: 5px;
@@ -4341,6 +4344,9 @@ section#lyrics-settings-sm, section#lyrics-settings-xs {
       padding-top: 3px;
       width: 25px; }
 
+section#lyrics-settings-sm input.save {
+  float: right;
+  margin-top: 10px; }
 section#lyrics-settings-sm p:nth-child(even) {
   float: right; }
 
@@ -4363,7 +4369,7 @@ section#lyrics-container-header, #lyrics-container-form {
     padding-top: 3px;
     width: 100%; }
   section#lyrics-container-header textarea, #lyrics-container-form textarea {
-    height: 308px; }
+    height: 310px; }
 
 section#lyrics-container-header {
   border: 1px solid #cecece;
@@ -5349,7 +5355,10 @@ footer {
     display: none; }
 
   section#lyrics-settings-xs {
-    display: block; } }
+    display: block; }
+    section#lyrics-settings-xs input.save {
+      margin-bottom: 10px;
+      margin-top: 0; } }
 @media only screen and (max-width: 662px) {
   #players-wanted-page h3.wanted {
     margin-left: 0; }

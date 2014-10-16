@@ -220,9 +220,12 @@ span.normal {
 	color: $musiclaps-blue !important;
 }
 
-#registration-full-modal-body, #registration-express-modal-body, #youtube-settings {
-	.glyphicon-question-sign, .password-req, .youtube-id-req {
+#registration-full-modal-body, #registration-express-modal-body, #lyrics-settings-sm, #lyrics-settings-xs, #youtube-settings {
+	.glyphicon-question-sign, .password-req, .lyrics-explanation, .youtube-id-req {
 		color: $musiclaps-blue !important;
+	}
+	.password-req, .lyrics-explanation, .youtube-id-req {
+		font-size: 12px;
 	}
 	.password-req, .youtube-id-req {
 		font-size: 12px;
@@ -1836,16 +1839,18 @@ section#lyrics-settings-sm, section#lyrics-settings-xs {
 	width: 95%;
 	h4 {
 		display: inline-block;
-		margin-bottom: 10px;
+		margin-bottom: 2px; // This is necessary to keep the "3rd pause" paragraph fully aligned to the right
+		margin-right: 3px; // Creates space between text and question mark
 		margin-top: 10px;
 	}
 	input.save {
 		@include submit-button-blue;
-		float: right;
-		margin-top: 10px;
 	}
 	p {
 		margin-top: 0;
+		&:nth-child(3), &.third-pause, &.first-pause { // This part is confusing because the markup is both floated and repeated for sm and xs viewport widths
+			margin-top: 10px;
+		}
 		input.pause {
 			@include form-fields-input(55px)
 		}
@@ -1855,8 +1860,14 @@ section#lyrics-settings-sm, section#lyrics-settings-xs {
 	}
 }
 
-section#lyrics-settings-sm p:nth-child(even) { // Only visible at viewport widths > 688px
-	float: right;
+section#lyrics-settings-sm {
+	input.save {
+		float: right;
+		margin-top: 10px;
+	}
+	p:nth-child(even) { // Only visible at viewport widths > 688px
+		float: right;
+	}
 }
 
 section#lyrics-settings-xs { // Only visible at viewport widths <= 688px
@@ -1875,7 +1886,7 @@ section#lyrics-container-header, #lyrics-container-form {
 		@include form-fields-input(100%);
 	}
 	textarea {
-		height: 308px;
+		height: 310px;
 	}
 }
 
@@ -2927,7 +2938,13 @@ footer {
 @media only screen and (max-width: 688px) {
 // Breakpoint of "Pause and scrolling speed" box
 	section#lyrics-settings-sm { display: none; }
-	section#lyrics-settings-xs { display: block; }
+	section#lyrics-settings-xs { 
+		display: block;
+		input.save {
+			margin-bottom: 10px;
+			margin-top: 0;
+		}
+	}
 }
 
 @media only screen and (max-width: 662px) {

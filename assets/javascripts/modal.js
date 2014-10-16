@@ -23,7 +23,7 @@ $(document).ready(function() {
 		// $('#registrationExpressJS').on('click', function() {
 		// 	$('#registrationExpress').modal('show');
 		// });
-			$('.glyphicon-question-sign').hover(function() {
+			$('.glyphiconQuestionSignRegistration').hover(function() {
 				passwordReq.fadeIn('slow');
 			});
 

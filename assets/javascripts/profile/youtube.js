@@ -8,7 +8,7 @@ youTubeIdReq.hide();
 newYouTubeConnectionForm.hide();
 editYouTubeConnectionForm.hide();
 
-$('.glyphicon-question-sign').hover(function() {
+$('#glyphiconQuestionSignYouTube').hover(function() {
 	youTubeIdReq.fadeIn('slow');
 });
 

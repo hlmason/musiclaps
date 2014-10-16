@@ -5,6 +5,11 @@ $(document).ready(function() {
 	=================================== */
 	var myProjectsDropdownMenu = $('ul#myProjectsDropdownMenu');
 	var myProjectsCaret = $('#myProjectsCaret');
+	var lyricsExplanation = $('.lyricsExplanation');
+
+
+	lyricsExplanation.hide();
+
 
 	$('a#myProjectsLink').on('click', function() {
 		if ( myProjectsDropdownMenu.is(':hidden') ) {
@@ -37,6 +42,11 @@ $(document).ready(function() {
 	});
 	$('a#lyricsLink').on('click', function() {
 		window.location.href = 'my-projects-lyrics.php';
+	});
+
+
+	$('.glyphiconQuestionSignLyrics').hover(function() {
+		lyricsExplanation.fadeIn('slow');
 	});
 
 	/* ===================================

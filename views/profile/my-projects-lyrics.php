@@ -23,12 +23,14 @@
 						<form action="<?php echo BASE_URL; ?>controllers/profile/lyrics-controller.php" method="post">
 							<section class="row col-xs-12" id="lyrics-settings-sm"><!-- Only visible at viewport widths > 688px -->
 								<div>
-									<h4>Pause and scrolling speed</h4>
+									<h4>Pause and scrolling speed</h4><span class="glyphicon glyphicon-question-sign glyphiconQuestionSignLyrics"></span>
 									<input class="save" type="submit" value="Save">
+									<div class="lyrics-explanation lyricsExplanation"><span class="block">You can optionally adjust the scrolling speed of the lyrics.</span>
+									Specify a start/stop time for the lyrics to pause; specify a speed if desired.</div>
 								</div>
 
 								<!-- Markup is backwards because elements are floated right -->
-								<p>3rd pause <input class="pause" type="text" name="3rd" placeholder="00.00"> to <input class="pause" type="text" name="3rd" placeholder="00.00"> speed <input class="speed" name="" type="text" placeholder="1"></p>
+								<p class="third-pause">3rd pause <input class="pause" type="text" name="3rd" placeholder="00.00"> to <input class="pause" type="text" name="3rd" placeholder="00.00"> speed <input class="speed" name="" type="text" placeholder="1"></p>
 
 								<p>1st pause <input class="pause" type="text" name="1st" placeholder="00.00"> to <input class="pause" type="text" name="1st" placeholder="00.00"> speed <input class="speed" name="" type="text" placeholder="1"></p>
 
@@ -39,18 +41,20 @@
 
 							<section class="row col-xs-12" id="lyrics-settings-xs"><!-- Only visible at viewport widths <= 688px -->
 								<div>
-									<h4>Pause and scrolling speed</h4>
-									<input class="save" type="submit" name="" value="Save">
+									<h4>Pause and scrolling speed</h4><span class="glyphicon glyphicon-question-sign glyphiconQuestionSignLyrics"></span>
+									<div class="lyrics-explanation lyricsExplanation">You can optionally adjust the scrolling speed of the lyrics.  Specify a start/stop time for the lyrics to pause; specify a speed if desired.</div>
 								</div>
 
 								<!-- Markup is not backwards because elements are not floated right -->
-								<p>1st pause <input class="pause" type="text" name="1st" placeholder="00.00"> to <input class="pause" type="text" name="1st" placeholder="00.00"> speed <input class="speed" name="" type="text" placeholder="1"></p>
+								<p class="first-pause">1st pause <input class="pause" type="text" name="1st" placeholder="00.00"> to <input class="pause" type="text" name="1st" placeholder="00.00"> speed <input class="speed" name="" type="text" placeholder="1"></p>
 
 								<p>2nd pause <input class="pause" type="text" name="2nd" placeholder="00.00"> to <input class="pause" type="text" name="2nd" placeholder="00.00"> speed <input class="speed" name="" type="text" placeholder="1"></p>
 
 								<p>3rd pause <input class="pause" type="text" name="3rd" placeholder="00.00"> to <input class="pause" type="text" name="3rd" placeholder="00.00"> speed <input class="speed" name="" type="text" placeholder="1"></p>
 
 								<p>4th pause <input class="pause" type="text" name="4th" placeholder="00.00"> to <input class="pause" type="text" name="4th" placeholder="00.00"> speed <input class="speed" name="" type="text" placeholder="1"></p>
+
+								<input class="save" type="submit" name="" value="Save">
 							</section>
 						</form>
 					</div>
@@ -58,9 +62,8 @@
 					<div class="row col-xs-12 col-md-3">
 						<form action="<?php echo BASE_URL; ?>controllers/profile/lyrics-controller.php" method="post">
 							<section id="lyrics-container-header">
-								<label id="display-lyrics-title" for="select_project_lyrics_page">Display Lyrics</label>
+								<label id="display-lyrics-title" for="select_project_lyrics_page">Select Project</label>
 								<select id="select_project_lyrics_page" name="">
-									<option value="select_project">Select Project</option>
 									<option value="project_title">$Project Title</option><!-- Hard-coded placeholder -->
 									<option value="project_title">$Project Title</option><!-- Hard-coded placeholder -->
 								</select>

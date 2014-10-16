@@ -24,7 +24,7 @@
 					</div>
 					
 					<div>
-						<label for="password"><span class="musiclaps-blue">*</span> Password <span class="glyphicon glyphicon-question-sign"></span></label>
+						<label for="password"><span class="musiclaps-blue">*</span> Password <span class="glyphicon glyphicon-question-sign" id="glyphiconQuestionSignRegistration"></span></label>
 						<div class="password-req" id="passwordReq">Passwords must contain 6 to 12 characters and at least 1 letter and 1 number</div>
 						<input id="password" type="password" name="password">
 					</div>

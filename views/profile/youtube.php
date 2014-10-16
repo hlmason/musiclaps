@@ -32,7 +32,7 @@
 										</div>
 
 										<div>
-											<label id="youtube-id-label" for="youtube_id"><span class="musiclaps-blue">*</span> YouTube ID <span class="glyphicon glyphicon-question-sign"></span></label>
+											<label id="youtube-id-label" for="youtube_id"><span class="musiclaps-blue">*</span> YouTube ID <span class="glyphicon glyphicon-question-sign" id="glyphiconQuestionSignYouTube"></span></label>
 											<div class="youtube-id-req" id="youTubeIdReq">The YouTube ID is the group of letters and numbers <strong>at the end</strong> of the YouTube URL (following the equal sign)</div>
 											<input class="youtube-id" id="youtube_id" type="text" name="uid">
 										</div>
