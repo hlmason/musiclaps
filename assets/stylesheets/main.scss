@@ -238,16 +238,20 @@ span.normal {
 	}
 }
 
-img.facebook-icon, img.google-icon, img#reddit-icon, img#tumblr-icon, img#stumbleupon-icon, 
-img#pinterest-icon { // http://business.pinterest.com/en/brand-guidelines: "Maintain empty space equal to at least half the height of the logo on all sides"
-	height: 27px;
-	width: 27px;
+img {
+	&.facebook-icon, &.google-icon, &#reddit-icon, &#tumblr-icon, &#stumbleupon-icon, 
+	&#pinterest-icon { // http://business.pinterest.com/en/brand-guidelines: "Maintain empty space equal to at least half the height of the logo on all sides"
+		height: 27px;
+		width: 27px;
+	}
 }
 
-img.twitter-icon, // https://about.twitter.com/press/brand-assets: "When using the bird with other logos and graphic elements, maintain a safety space that equals 200% the size of the square around the bird.
-img#microsoft-icon {
-	height: 29px;
-	width: 29px;
+img {
+	&.twitter-icon, // https://about.twitter.com/press/brand-assets: "When using the bird with other logos and graphic elements, maintain a safety space that equals 200% the size of the square around the bird.
+	&#microsoft-icon {
+		height: 29px;
+		width: 29px;
+	}
 }
 
 .youtube-links, #info-below-youtube-player, #youtube-link {
@@ -264,42 +268,42 @@ img#microsoft-icon {
 
 table {
 	font-size: 12px;
-	thead tr {
-		text-align: left;
-	}
 	tr {
 		border-top: $table-border;
-		th:first-child {
-			border-left: $table-border;	
+		text-align: left;
+		&.thead-tr {
+			background-color: white !important;
 		}
-		th:last-child {
-			border-right: $table-border;
+		&:not(.thead-tr) {
+			border-bottom: $table-border;
+		}
+		&:nth-child(odd) {
+			background-color: #F4F4F4;
 		}
 		th, td {
 			padding: 8px;
 		}
+		th {
+			&:first-child {
+				border-left: $table-border;	
+			}
+			&:last-child {
+				border-right: $table-border;
+			}
+		}
 		td {
 			vertical-align: middle;
+			&:first-child {
+				border-left: $table-border;
+			}
+			&:last-child {
+				border-right: $table-border;	
+			}
 			img { // Avatar
 				height: 30px;
 				width: 30px;
 			}
 		}
-		td:first-child {
-			border-left: $table-border;
-		}
-		td:last-child {
-			border-right: $table-border;
-		}
-	}
-	tr.thead-tr {
-		background-color: white !important;
-	}
-	tr:not(.thead-tr) {
-		border-bottom: $table-border;
-	}
-	tr:nth-child(odd) {
-		background-color: #F4F4F4;
 	}
 }
 
@@ -439,19 +443,23 @@ nav {
 			}
 		}
 	}
-	ul.navbar-right li#welcome-user-sm, li#welcome-user-xs {
-		margin-right: 10px;
-		margin-top: 28px !important;
-		a {
-			color: #1F91E6 !important; // Otherwise username is gray
-			text-transform: initial; // Otherwise username is capitalized
-			&:hover, &:focus {
-				color: $musiclaps-dark-gray !important;
+	ul.navbar-right li {
+		&#welcome-user-sm, &#welcome-user-xs {
+			a {
+				color: #1F91E6 !important; // Otherwise username is gray
+				text-transform: initial; // Otherwise username is capitalized
+				&:hover, &:focus {
+					color: $musiclaps-dark-gray !important;
+				}
 			}
 		}
-	}
-	li#welcome-user-xs {
-		display: none;
+		&#welcome-user-sm {
+			margin-right: 10px;
+			margin-top: 28px !important;
+		}
+		&#welcome-user-xs {
+			display: none;
+		}
 	}
 }
 
@@ -2562,7 +2570,7 @@ footer {
 		}
 	}
 
-	#privacy-page h3, #terms-page h3, #faqs-page h4 {
+	#privacy-page h3, #terms-page h3, #faqs-page h3 {
 		margin-bottom: 0;
 	}
 

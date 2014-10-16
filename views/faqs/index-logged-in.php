@@ -14,241 +14,191 @@
 
 				<h1>Musiclaps FAQs</h1>
 
-				<h4>Q. What is Musiclaps?</h4>
+<h3>1. What is Musiclaps?</h3>
 					<p>
-						A. Musiclaps is a new online collaboration service that allows worldwide communication through music, by performing and recording music using musiclaps Live Player, 
-						collaborating with other musicians, and uploading your own music. 
-       					Listening to everyone's music, participating with your favorite song or instrument, and creating music friends are some of the ways you can enjoy music through Musiclaps.
+						Musiclaps is a new online collaboration service that allows worldwide communication through music.  
+						Members can record, upload, and share their tracks, allowing members of their choosing to collaborate with them.<br><br>
+       					
+       					In addition to actively participating, members can simply listen to each other's music.  
+       					Musiclaps has the functionality of social networking sites with such features as posting comments, sharing, embedding, favoriting, as well as a unique feature - clapping!
        				</p>
 
-       			<h4>Q. What are the system requirements?</h4>
+       			<h3>2. What are the system requirements?</h3>
        				<p>
-       					A．Microsoft Windows XP (SP3), Windows Vista (SP2), Windows 7, Mac OS 10.5 or newer. More than 2GB of RAM is necessary.
+       					More than 2GB of RAM and Microsoft Windows XP (SP3), Windows Vista (SP2), Windows 7, or Mac OS 10.5+.
        				</p>
 
-       			<h4>Q. Is there a recommended browser?</h4>
+       			<h3>3. What are the browser requirements?</h3>
 					<p>
-						The following browsers are recommended: <a href="https://www.google.com/intl/en_us/chrome/browser/" target="blank">Google Chrome</a> (highly recommended), Firefox, Safari, and Internet Explorer 10 or newer.
+						<a href="https://www.google.com/intl/en_us/chrome/browser/" target="blank">Google Chrome</a> is highly recommended.  
+						Firefox, Safari, and Internet Explorer 10+ are also good.
        				</p>
 
-       			<h4>Q. What is the "Live Player"?</h4>
+       			<h3>4. What is the "Live Player"?</h3>
        				<p>
-       					It is Musiclaps’ original online application for recording and playing multi tracks. 
-       					The recorded songs will not be publicly listed on Musiclaps unless you change its status to Public.
+       					The Live Player is Musiclaps’s original online application for recording and playing multiple tracks.
        				</p>
 
-       			<h4>What is the "Recording Player"</h4>
+       			<h3>5. What is the "Recording Player"</h3>
        				<p>
-       					A．It is Musiclaps’ original application for recording. 
-       					It can also be used as an accompaniment when playing alone. 
-       					The recorded songs will not be publicly listed on Musiclaps unless you change its status to Public.
+       					The Recording Player is Musiclaps’s original application for recording.  
+       					It can also be used as an accompaniment when playing alone.
        				</p>
 
-       			<h4>What is Collab, or Collaboration?</h4>
+		       	<h3>6. What is a track?</h3>
+		       		<p>
+		       			A track is both a single recorded sound layer and a recording comprised of multiple tracks!  
+		       			Final recordings are typically comprised of multiple, layered tracks with one part per track.  
+       					For example, in a recording with piano, guitar, drums, and vocals, there would typically be at least 4 tracks, one for each part.
+		       		</p>
+
+		       	<h3>7. What is a part?</h3>
+	       			<p>
+		       			On Musiclaps, a part is an instrument or sound role.
+		       		</p>
+
+		       <h3>8. Who is the project owner?</h3>
+		       		<p>
+			       		The individual who has recorded and made public a cover or original song using the Live or Recording Player.
+		       		</p>
+
+		       	<h3>9. How does Musiclaps address song copyrights?</h3>
+		       		<p>	
+			       		For original songs, the project owner can select a traditional copyright or Creative Commons license.  
+			       		If the project owner specifies that the song is a cover, or if a copyright type is not selected, the project will automatically be classified as a cover.  
+			       		Please only select a copyright type if your project is using an original song!<br>
+			       		<strong>Note</strong>: Once saved for a particular project, the copyright type cannot be changed.
+			       	</p>
+
+       			<h3>10. What are the types of collaborations?</h3>
        				<p>
-       					A．On Musiclaps, you can add to another member’s song by adding your own track or instrument using the Live Player. 
-       					You can record up to 14 tracks per song. 
-       					There are three types: Open Collab, Requesting Collab and No Collab. No Collab are public listen-only songs.
+       					On Musiclaps, there are three types of collaborations: Open Collab, Requesting Collab and No Collab.  
+       					For Open and Requesting Collab, a member can add to another member’s project by adding their own track or instrument using the Live Player.  
+       					Up to 14 tracks can be added per project.
        				</p>
 
-       			<h4>Q. What is Open Collab?</h4>
+       			<h3>11. What is "Open Collab"?</h3>
        				<p>
-       					A．The public Open Collab songs on musiclaps will display Open Collab. 
-       					You can add your instrumenet part, exchange existing tracks for your part, change the key to play and record, add, arrange or publicize to your liking with these collaborations.
+       					Open Collab allows any member to participate.  
+       					Members can add their track or instrument, swap out existing tracks with theirs, change the project key, arrange and publicize the project.  
+       					Open Collab projects designated as "public" will display on the "Collaborations" page, which is visible by both members and non-members.
        				</p>
 
-       			<h4>Q. What is Requesting Collab?</h4>
+       			<h3>12. What is "Requesting Collab"?</h3>
        				<p>
-	       				A．The public Requesting Collab songs on musiclaps will display Requesting Collab. 
-	       				The owner of the song requests specific instrument parts and other members participate by responding to their request. 
-	       				Once you record and upload the requested part, the owner will automatically be notified. 
-	       				The owner will be able to listen to these parts from a list of participating member names. 
-	       				If there are several participants for one part, the owner will choose one that fits their liking, creating the best collaboration to list as public. 
-	       				Once the collaboration is done and the final song is made public, the display will change to Requesting Collab Completed.
+	       				Requesting Collab means that the project owner requests specific instrumentation.  
+	       				Members participate by responding to the project owner's request.  
+	       				Once the member has recorded and uploaded the requested part, the project owner is automatically notified.<br><br>
+
+	       				The project owner is able to listen to each part from a list of participating member names.  
+	       				If there are several participants for one part, the project owner chooses their preference for the collaboration.<br><br>  
+	       				
+	       				Once the collaboration is done and the project is made public, the display setting changes to Requesting Collab Completed and the project displays on the "Collaborations" page.
 	       			</p>
 
-	       		<h4>Q. What is “Part”?</h4>
-	       			<p>
-		       			A．“Part” indicates each individual’s performance.
+	       		<h3>13. What is "No Collab"?</h3>
+       				<p>
+       					No Collab projects are the default and for listening only.<br>
+       					<strong>Note</strong>: You can change the status from No Collab to Open or Requesting Collab, but the status cannot be changed back to No Collab.
+       				</p>
+
+		       	<h3>14. Where do I go to edit my project?</h3>
+	       			<ul>
+	       				<li>-Click on <span class="bold">My Projects</span> (user menu)</li>
+	       				<li>-Select the appropriate status from the dropdown</li>
+	       				<li>-Click on the rectangular project tile</li>
+	       			</ul>
+
+		       	<h3>15. Where do I go to change my project's status (Private, Public, Group, Audition)?</h3>
+		       		<p> 
+			       		Since newly recorded projects are not automatically listed, you need to follows these steps to change the status:
+		       			<ul>
+		       				<li>-Click on <span class="bold">My Projects</span> (user menu)</li>
+		       				<li>-Select <span class="bold">In Progress/Private</span> from the dropdown</li>
+		       				<li>-Click on the rectangular project tile</li>
+		       				<li>-Below the Live Player on the right-hand side, select the desired status</li>
+		       			</ul>
+				        A project's status can be changed at any time.
 		       		</p>
 
-		       	<h4>Q. What is “Track”?</h4>
-		       		<p>
-		       			A．“Track” indicates what an individual has recorded using an instrument or vocals. 
-		       			One instrument recording is displayed as 1 track.
-       					For example, in a collaboration recording with piano, guitar, drums and vocal, the song is considered to have 4 tracks.
-		       		</p>
-
-		       <h4>Q. What is “Owner”?</h4>
-		       		<p>
-			       		A．“Owner” is the individual that has newly recorded and made public a cover or original song using the Recording Player on Musiclaps.
-		       		</p>
-
-		       	<h4>Q. What is Sound Detail?</h4>
-		       		<p>
-		       			A．When you click on any member’s song title, detailed information on the song will be displayed. 
-		       			You can see detailed information on the song while listening to it. Also, by clicking on the player’s image, you can see the owner’s public information.
-		       		</p>
-
-		       	<h4>Q. What is “Public Information”?</h4>
-		       		<p>
-			       		A．When you click on the player (owner)’s image, their detailed information will be displayed. 
-			       		The owner’s profile, public collaboration songs that they have participated in (Joining Collaboration), their public songs that others have participated in (Joined Collaboration), and their friends list will show up in a list.
-		       		</p>
-		       	<br>	
-
-		       	<h2>About Member Page</h2>
-
-		       	<h4>Q. What is the member’s page?</h4>
-		       		<p>
-			       		A．This personalized page will show up after you register as a member and log in.
-				        Once you log in, the profile page will come up.
-				        The member’s page has access to “Create New Project”, “My Projects”, “Collaboration”, “YouTube Links”, “Message”, “Group”, “My Favorite”and “Profile”.
-				        You can edit or add your information at any time.
-				        After log in, your user name will always be displayed on the right side of the URL bar, making it easy for you to return to the member’s page.
-		       		</p>
-
-		       	<h4>Q. What is “Profile”?</h4>
-		       		<p>
-			       		A．This is the member’s page that displays after member log in.
-					    Please edit and add to your profile by clicking the Edit Profile button.
-					    You can upload your icon picture to be used with the Live Player and your public song page.
-					    We recommend using an image sized 120x120px.
-					    Your public songs will automatically be listed on this page too.
-					    Your addition and edits will be reflected on the public information page.
-		       		</p>	
-
-		       	<h4>Q. What is “Create New Project”?</h4>
-		       		<p>
-			       		A．You can record and create new songs on this page. 
-			       		You can newly record a song using the Recording Player, or upload your MP3 file to save as a new song. 
-			       		Once saved, the song will automatically be saved under In Process (unlisted) in “My Projects”.
-		       		</p>
-
-		       	<h4>Q. What is “My Projects”?</h4>
-		       		<p>
-			       		A. This page allows you to edit and add detailed information on the data or MP3 you recorded via the Recording Player or Live Player.
-			       		You can also edit and add the lyrics to these songs. 
-			       		All newly recorded songs will automatically be saved under In Process (unlisted), so please begin by editing the song information here.
-		       		</p>
-
-		       		<ul>Editing the song:<br><br>
-       					Click on the title or information area of the song you want to edit. 
-       					The Live Player and editing screen will show up.
-       					You can manage and edit the title, status (choice of Public, Private, Group or Progress), whether it is a cover song, description or comment, adding or changing tags and display comments, stage image, type of collaboration, and copyrights on this editing page.
-       					<br><br>
-
-       					If you want to change the image of the project, click on the existing image or the default musiclaps image.
-				        The Change Project Image bar will display below, and you can change the image to one of your liking.
-				        We recommend using an image size of 120x70px.
-				        <br><br>
-
-				       <span class="bold">Note</span>:
-				       <li>The Collaboration Selection is “No Collab” by default.
-				          You can change the status from No Collab to a collaboration, but once you change to Open Collab or Requesting Collab and save,
-				          you will not be able to change the status back.</li>
-				       <li>This also applies to selecting the type of copyright. Once you choose and save, you cannot change it.</li>
-				       <li>Please only apply the copyright if you wrote the lyrics and the song. You do not have to choose a copyright for cover songs.</li>
-				       <li>If you do not choose a copyright type or input the song title in the Cover Song section, the song will automatically be classified as
-				          a cover song.</li>
-				       <li>To show respect to the original song, please input the original song owner name for Cover Songs.</li>
-				    </ul>
-
-				    <ul>Song Status:<br><br>
-				 		My Projects is divided into four categories of statuses: In Progress (unlisted), In Public, In Private, and In Group.
-				        The songs listed under In Public are the only ones that will be shown on musiclaps.
-				      	<li>In Progress (Unlisted) are songs that are currently in progress or under work.</li>
-				        Newly uploaded recordings will automatically be saved here with a default image.
-				        Input the necessary details and select its status after editing.
-				        If you select a status other than Unlisted, the song will be transferred to the chosen status.
-				      	<li>In Public are finished songs that are public on musiclaps.</li>
-				        <li>In Private are unlisted songs You can provide access to friends or others you want to share the song with.</li>
-				        You can copy and send the Private URL to share the song with others.
-				      	<li>In Group are songs that are shared solely to members of a selected group.</li>
-				        A song’s status can be changed at any time.
-				        Any of the instrument parts can be changed to Unlisted.
-				    </ul>
-
-				    <ul>Adding and editing the lyrics<br><br>
- 						When you click on Lyrics, all of your uploaded songs will show up on a pull-down menu. 
- 						Choose the song you want to add Lyrics to, and input the necessary items and lyrics. You can also adjust the scroll speed by lyrics pause and scrolling speed setting.
-				    </ul>
-
-				<h4>Q. What is “YouTube Links”?</h4>
-		       		<p>
-			       		A．“YouTube Links” is a function that allows you to add a corresponding video for your completed song.
-       					For example, you can use the original song video for cover songs, or link your own YouTube video for your original songs.
-       					Copy the Movie ID (the 11 characters/numbers following “=” in the YouTube link) from YouTube, and add as a link.
-       					You can link up to 3 videos for one song.
-		       		</p>
-
-		       	<h4>Q. What is “Message"?</h4>
-		       		<p>
-			       		A．“Message” allows you to communicate with other members.
-				        You can send and receive messages using each other’s User ID.
-				        Click on Add New Friend and input the User ID of the member you want to send a message to, and click ADD.
-				        Their icon will show up, and simultaneously your icon will show up on their page.
-				        You can send them a message by clicking on their icon.
-				        You can also find and add the User ID from the User Name displayed on the bottom of the Live Player.“Message” allows you to communicate with other members.
-				        You can send and receive messages using each other’s User ID.
-				        Click on Add New Friend and input the User ID of the member you want to send a message to, and click ADD.
-				        Their icon will show up, and simultaneously your icon will show up on their page.
-				        You can send them a message by clicking on their icon.
-				        You can also find and add the User ID from the User Name displayed on the bottom of the Live Player.
+			    <h3>16. What are "In Progress/Private" projects?</h3>
+					<p>Unlisted projects.  
+						You can copy and privately share the URL of these projects with friends or any individuals you choose.
+					</p>
+				      		
+				<h3>17. What are group projects?</h3>
+				   	<p>Group projects are shared exclusively with members of a selected group.
+				       Any member's part can be changed to unlisted.
 				    </p>
 
-				<h4>Q. What is “Group”?</h4>
+			    <h3>18. How does the lyrics feature work?</h3>
+			    	<p>
+						On the Lyrics page (<span class="bold">My Projects</span> --> <span class="bold">Lyrics</span>), all of your projects are displayed on a pull-down list.  
+						Choose the project you want to add lyrics to and fill in the necessary fields and lyrics.  
+						You can adjust the scrolling speed by specifying a pause start/stop time and speed.
+					</p>
+
+				<h3>19. How do I change my project image?:</h3>
+		       		<ul>
+       					<li>-Click on the existing image or the default Musiclaps image</li>
+       				</ul>
+			        <p>The Change Project Image bar will display below, and you can change the image to one of your liking.
+			        	We recommend uploading an image size of 120 x 70px.
+			        </p>
+
+				<h3>20. What are "YouTube Links"?</h3>
 		       		<p>
-			       		A．Players who consider each other “friends” or players who have collaborated with each other can form groups.
-				        This applies to songs in “My Projects” with the status “In Group”. Groups are made per song.
-				        The owner chooses the song they want to collaborate on, and inputs the group name and the user names of participating members.
-				        A New Group will be displayed and each participating member of the Group will be added and notified.
-				        Only the listed members will be able to listen to and participate in the Group song.
-				        Only the owner is allowed to add or change the Group information.
-				        Once the Group collaboration is finished and the owner changes the status to something other than Group, the group will end and
+			       		The YouTube Links feature enables a member to add a corresponding video to their project.  
+       					For example, a cover song can link to the original music video posted on YouTube, or an original song can link to the member's own YouTube video.
+		       		</p>
+
+				<h3>21. What is a “Group”?</h3>
+		       		<p>
+			       		Members who are friends or who have collaborated with each other can form a group.  
+				        Groups are created on a per project basis, and the project status must be "Group" (see question #15 for instructions on how to change the status).<br><br> 
+				        
+				        The project owner chooses the project they want to collaborate on and enters the group name and usernames of the participating members.  
+				        A new group displays and the participating members are added and notified.  
+				        Only participating/listed members are able to listen to and participate in the group song, and only the project owner is allowed to add or change the group information.<br><br> 
+				        
+				        Once the collaboration is finished and the project owner changes the status to something other than "Group", the group will end and
 				        be removed from the list.
 		       		</p>
 
-		       	<h4>Q. What is “My Favorite”?</h4>
+		       	<h3>22. What is the “Favorites” page?</h3>
 		       		<p>	
-			       		A．You can click on the favorite button while listening to songs on Musiclaps. 
-			       		These songs will show up on a listed titled My Favorite.
+			       		You can click on the "favorite" (heart) icon while listening to projects on Musiclaps.  
+			       		These projects will appear on the Favorites page.
 			       	</p>
 
-		       	<h4>Q. What about the copyrights for new songs?</h4>
+			    <h3>23. What instruments can I record with?</h3>
 		       		<p>	
-			       		A．If the song is an original song, you can select and register it under the creative commons license on the linked Creative Commons.
-       					Your selected copyright will simultaneously be added onto the Musiclaps database.
+			       		You can easily record any instrument that connects with a cable (e.g. electric guitar, electric bass, keyboard, etc.).  
+			       		Acoustic instruments (e.g. piano, acoustic guitar, trumpet, drums, vocals, etc.) can be recorded using a mic.
 			       	</p>
 
-			    <h4>Q. I’m not playing any instrument but can I make an account just for listening?</h4>
+			   <h3>24. Can I record an instrument that is not listed on the site (i.e. does not have an icon)?</h3>
 		       		<p>	
-			       		A．Yes. As a member you can enjoy songs uploaded by other members, submit claps to the songs you like, and write comments. 
-			       		You can only submit one clap per song. 
-			       		If you click on the favorite button, the song will be added into your My Favorite list on your page. 
-			       		You will have easy access to these songs from your page.
+			       		Yes.  
+			       		If you are playing an instrument that is not on the list, please select “Other".
 			       	</p>
 
-			    <h4>Q. What kind of instruments can I use?</h4>
+			    <h3>25. Can I use my computer‘s built-in mic for recording?</h3>
 		       		<p>	
-			       		A．Electric guitar, electric bass, keyboard, you can use any instrument that connects with a line. 
-			       		Other instruments such as piano, acoustic guitar, trumpet, drums or vocals that cannot be connected can also be recorded using a mic.
+			       		It’s possible but not recommended since it will cause overlapping sounds.
 			       	</p>
 
-			   <h4>Q. Can I play an instrument that is not listed on the site (doesn’t have an icon)?</h4>
+			    <h3>26. It’s acting a little weird.  What should I do?</h3>
 		       		<p>	
-			       		A．Yes. If you are playing an instrument that is not on the list, please select “Other Instrument”.
-			       	</p>
-
-			    <h4>Q. Can I use my computer‘s built-in mic for recording?</h4>
-		       		<p>	
-			       		A．It’s possible but not recommended since it will cause overlapping sounds.
-			       	</p>
-
-			    <h4>Q. It’s acting a little weird.</h4>
-		       		<p>	
-			       		A． Sometimes the problem can be solved by clearing your cache on Google Chrome. 
-			       		To clear the cache: Select Settings>Show advance settings… from the Customize and control icon on the upper right of the Google Chrome screen. Privacy>Clear browsing data…>Empty the cache.
+			       		Sometimes the problem can be solved by clearing your cache.  In Google Chrome you would follow these steps:
+			       		<ul>
+			       			<li>-Select the menu icon at the top right of the browser window and select <span class="bold">Settings</span></li>
+			       			<li>-Click on <span class="bold">Show advanced settings...</span> at the bottom of the page</li>
+			       			<li>-Under "Privacy" click on the <span class="bold">Clear browsing data...</span> button
+			       			Empty the cache</li>
+			       			<li>-Check the box next to <span class="bold">Cached images and files</span> - uncheck the rest of the boxes if you are unsure</li>
+			       			<li>-Click the <span class="bold">Clear browsing data</span> button</li>
+			       		</ul>
 			       	</p>
 
 				<div class="col-sm-1 col-md-2 col-lg-3"></div>	

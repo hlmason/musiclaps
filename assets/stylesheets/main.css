@@ -2957,13 +2957,11 @@ span.normal {
   .modal-footer:not(.registration-modal-footer) input:hover, .modal-footer:not(.registration-modal-footer) input:focus, .navbar-right input:hover, .navbar-right input:focus {
     background-color: #d9d9d9; }
 
-img.facebook-icon, img.google-icon, img#reddit-icon, img#tumblr-icon, img#stumbleupon-icon,
-img#pinterest-icon {
+img.facebook-icon, img.google-icon, img#reddit-icon, img#tumblr-icon, img#stumbleupon-icon, img#pinterest-icon {
   height: 27px;
   width: 27px; }
 
-img.twitter-icon,
-img#microsoft-icon {
+img.twitter-icon, img#microsoft-icon {
   height: 29px;
   width: 29px; }
 
@@ -2977,31 +2975,30 @@ img#microsoft-icon {
 
 table {
   font-size: 12px; }
-  table thead tr {
-    text-align: left; }
   table tr {
-    border-top: 1px solid #dddddd; }
+    border-top: 1px solid #dddddd;
+    text-align: left; }
+    table tr.thead-tr {
+      background-color: white !important; }
+    table tr:not(.thead-tr) {
+      border-bottom: 1px solid #dddddd; }
+    table tr:nth-child(odd) {
+      background-color: #F4F4F4; }
+    table tr th, table tr td {
+      padding: 8px; }
     table tr th:first-child {
       border-left: 1px solid #dddddd; }
     table tr th:last-child {
       border-right: 1px solid #dddddd; }
-    table tr th, table tr td {
-      padding: 8px; }
     table tr td {
       vertical-align: middle; }
+      table tr td:first-child {
+        border-left: 1px solid #dddddd; }
+      table tr td:last-child {
+        border-right: 1px solid #dddddd; }
       table tr td img {
         height: 30px;
         width: 30px; }
-    table tr td:first-child {
-      border-left: 1px solid #dddddd; }
-    table tr td:last-child {
-      border-right: 1px solid #dddddd; }
-  table tr.thead-tr {
-    background-color: white !important; }
-  table tr:not(.thead-tr) {
-    border-bottom: 1px solid #dddddd; }
-  table tr:nth-child(odd) {
-    background-color: #F4F4F4; }
 
 /* ===================================
     Nav
@@ -3114,15 +3111,15 @@ nav ul.navbar-right#logged-out li {
       background-color: #45B7FF; }
     nav ul.navbar-right#logged-out li:last-child a {
       color: white !important; }
-nav ul.navbar-right li#welcome-user-sm, nav li#welcome-user-xs {
+nav ul.navbar-right li#welcome-user-sm a, nav ul.navbar-right li#welcome-user-xs a {
+  color: #1F91E6 !important;
+  text-transform: initial; }
+  nav ul.navbar-right li#welcome-user-sm a:hover, nav ul.navbar-right li#welcome-user-sm a:focus, nav ul.navbar-right li#welcome-user-xs a:hover, nav ul.navbar-right li#welcome-user-xs a:focus {
+    color: #444444 !important; }
+nav ul.navbar-right li#welcome-user-sm {
   margin-right: 10px;
   margin-top: 28px !important; }
-  nav ul.navbar-right li#welcome-user-sm a, nav li#welcome-user-xs a {
-    color: #1F91E6 !important;
-    text-transform: initial; }
-    nav ul.navbar-right li#welcome-user-sm a:hover, nav ul.navbar-right li#welcome-user-sm a:focus, nav li#welcome-user-xs a:hover, nav li#welcome-user-xs a:focus {
-      color: #444444 !important; }
-nav li#welcome-user-xs {
+nav ul.navbar-right li#welcome-user-xs {
   display: none; }
 
 /* ==========================================
@@ -4991,7 +4988,7 @@ footer {
   font-weight: bold;
   margin-top: 15px; }
 
-#privacy-page h3, #terms-page h3, #faqs-page h4 {
+#privacy-page h3, #terms-page h3, #faqs-page h3 {
   margin-bottom: 0; }
 
 #privacy-page p:not(#first-paragraph), #terms-page p, #faqs-page p {
