@@ -56,9 +56,9 @@
 							</section>
 
 							<section id="addPart">
-								<label id="select-sound-label" for="select_sound">Select Your Sound</label>
+								<label id="select-sound-label" for="select_sound">Select Project</label>
 								<select class="select-sound" id="select_sound" name="">
-									<option value="test">Test</option>
+									<option value="test">$Project Title</option><!-- Hard-coded placeholder -->	
 								</select>
 							</section>
 
