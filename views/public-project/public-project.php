@@ -23,7 +23,7 @@
 
 
 					<section class="row col-xs-12 public-project-header">
-						<h3>Project Title</h3><!-- Hard-coded placeholder -->
+						<a href="<?php echo BASE_URL; ?>views/public-project/project-details.php"><h3>$Project Title</h3></a><!-- Hard-coded placeholder -->
 						<h5>Date Uploaded: <span class="normal">07/17/14</span></h5><!-- Hard-coded placeholder -->
 					</section>
 					

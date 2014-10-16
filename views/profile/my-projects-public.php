@@ -17,7 +17,7 @@
 					<?php
 						include(ROOT_PATH . 'views/include/profile/project-listings.php');
 					?>
-					<!-- End of Project listings -->
+					<!-- End of project listings -->
 
 
 						<!-- Project form -->

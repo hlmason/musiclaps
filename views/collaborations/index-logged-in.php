@@ -13,7 +13,7 @@
 
 			<div class="row col-xs-12 col-sm-9">
 				<?php
-					include(ROOT_PATH . 'views/include/public-project-listings-logged-in.php');
+					include(ROOT_PATH . 'views/include/public-project/public-project-listings-logged-in.php');
 				?>
 			</div>
 

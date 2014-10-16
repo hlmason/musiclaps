@@ -1,9 +1,9 @@
 <?php
 	require_once('../../controllers/require/config.php');
 
-	$page_title = 'Project Name'; // Hard-coded placeholder 
+	$page_title = 'Project Name'; // Hard-coded placeholder
 	
-	include(ROOT_PATH . 'views/include/header-logged-in.php');
+	include(ROOT_PATH . 'views/include/header.php');
 
 ?>
 
@@ -11,7 +11,7 @@
 		<div class="container">
 
 			<?php
-				include(ROOT_PATH . 'views/include/user-menu-b-logged-in.php');
+				include(ROOT_PATH . 'views/include/user-menu-b.php');
 			?>
 
 			<div class="row col-lg-10 col-lg-offset-1">				
@@ -26,17 +26,17 @@
 
 
 					<section class="row col-xs-12 public-project-header">
-						<h3>Project Title</h3><!-- Hard-coded placeholder -->
+						<h3>$Project Title</h3><!-- Hard-coded placeholder -->
 					</section>
 					
 					<section class="row col-xs-12 public-project-info">	
 						<div class="row col-xs-4 col-sm-2">
-							<a href="<?php echo BASE_URL; ?>views/profile/public-profile-logged-in.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"></a>
+							<a href="<?php echo BASE_URL; ?>views/profile/public-profile.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"></a>
 						</div>
 
 						<div class="row col-xs-7 col-sm-6">
 							<section class="username-and-number-of-songs">
-								<a href="<?php echo BASE_URL; ?>views/profile/public-profile-logged-in.php"><h4>$username</h4></a><!-- Hard-coded placeholder -->
+								<a href="<?php echo BASE_URL; ?>views/profile/public-profile.php"><h4>$username</h4></a><!-- Hard-coded placeholder -->
 								<h5>$# Songs</h5><!-- Hard-coded placeholder -->
 							</section>
 							
@@ -70,7 +70,13 @@
 
 					<section class="row col-xs-12">
 						<div class="public-project-info" id="project-details-container">
-							<h3>Project Details</h3><a href="<?php echo BASE_URL; ?>views/profile/messages.php"><span class="glyphicon glyphicon-envelope"></span></a>
+							<h3>Project Details</h3><span class="glyphicon glyphicon-envelope" id="glyphiconEnvelope"></span>
+							<!-- Register or login modal -->
+							<?php
+								include(ROOT_PATH . 'views/include/modals/register-or-login.php');
+							?>
+							<!-- End of register or login modal -->
+
 							<div class="row">
 								<div class="col-xs-4">
 									<h4>Genre</h4>
@@ -95,7 +101,7 @@
 					<section class="row col-xs-12">
 						<div class="public-project-info" id="likes-container">
 							<h3>Who Likes this Project</h3>
-							<a href="<?php echo BASE_URL; ?>views/profile/public-profile-logged-in.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"></a><!-- Hard-coded placeholder -->
+							<a href="<?php echo BASE_URL; ?>views/profile/public-profile.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"></a><!-- Hard-coded placeholder -->
 						</div>
 					</section>
 
@@ -112,16 +118,16 @@
 						<div class="row col-xs-12 user-location-map-container">
 							<h3>Location: </h3>
 							<div class="user-location-map"></div><!-- Placeholder -->
-							<a href="<?php echo BASE_URL; ?>views/profile/public-profile-logged-in.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"></a><!-- Hard-coded placeholder -->
+							<a href="<?php echo BASE_URL; ?>views/profile/public-profile.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"></a><!-- Hard-coded placeholder -->
 						</div>
 
 					</section>
 				</div>
 			</div>
-			<div class="col-lg-1"></div>	
+			<div class="col-lg-1"></div>
 		
 		</div>
 
 	<?php
-		include(ROOT_PATH . 'views/include/footer-logged-in.php');
+		include(ROOT_PATH . 'views/include/footer.php');
 	?>
