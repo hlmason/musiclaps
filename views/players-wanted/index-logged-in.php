@@ -62,14 +62,14 @@
 				 
 				 	<div class="players-wanted-container" id="karaokeSongsWantedContainer">
 						<section class="col-xs-10">
-							<h3 class="wanted">Karaoke Songs Wanted</h3>
+							<h3>Karaoke Songs Wanted</h3>
 							<button class="postNewRequest" type="button">Post New Request</button>
 						</section>
 					</div>
 
 					<div class="players-wanted-container" id="bandMembersWantedContainer">
 						<section class="col-xs-10">
-							<h3 class="wanted">Band Members Wanted</h3>
+							<h3>Band Members Wanted</h3>
 							<button class="postNewRequest" type="button">Post New Request</button>
 
 							<div class="table-scroll-x-axis">
@@ -99,28 +99,28 @@
 
 					<div class="players-wanted-container" id="arrangersWantedContainer">
 						<section class="col-xs-10">
-							<h3 class="wanted">Arrangers Wanted</h3>
+							<h3>Arrangers Wanted</h3>
 							<button class="postNewRequest" type="button">Post New Request</button>
 						</section>
 					</div>
 
 					<div class="players-wanted-container" id="lyricWritersWantedContainer">
 						<section class="col-xs-10">
-							<h3 class="wanted">Lyric Writers Wanted</h3>
+							<h3>Lyric Writers Wanted</h3>
 							<button class="postNewRequest" type="button">Post New Request</button>
 						</section>
 					</div>
 
 					<div class="players-wanted-container" id="composersWantedContainer">
 						<section class="col-xs-10">
-							<h3 class="wanted">Composers Wanted</h3>
+							<h3>Composers Wanted</h3>
 							<button class="postNewRequest" type="button">Post New Request</button>
 						</section>
 					</div>
 
 					<div class="players-wanted-container" id="othersWantedContainer">
 						<section class="col-xs-10">
-							<h3 class="wanted">Others Wanted</h3>
+							<h3>Others Wanted</h3>
 							<button class="postNewRequest" type="button">Post New Request</button>
 
 							<div class="table-scroll-x-axis">
@@ -167,10 +167,10 @@
 								<h4 id="new-request">&nbsp; New Request</h4>
 							</div>
 							
-							<form class="new-request-container" action="<?php echo BASE_URL; ?>controllers/players-wanted-controller.php" method="post">
+							<form action="<?php echo BASE_URL; ?>controllers/players-wanted-controller.php" method="post">
 								<div>
 									<label id="request-title-label" for="request_title">Title</label>
-									<input id="request_title" type="text" name="request_title">
+									<input class="request-title" id="request_title" type="text" name="request_title">
 								</div>
 								
 								<div>
@@ -178,7 +178,7 @@
 									<textarea id="request_description" name="request_description"></textarea>
 								</div>
 
-								<input class="post-request" type="submit" value="Post">
+								<input id="post-request" type="submit" value="Post">
 							</form>
 						</section>
 					</div>

@@ -421,9 +421,9 @@ nav {
 		&#logged-out li {
 			border: $nav-border;
 			&:first-child { // "Log in" button
-				background-color: lightgray;
 				@include border-bottom-left-radius(10px);
 				@include border-top-left-radius(10px);
+				background-color: lightgray;
 				&:hover {
 					background-color: #d9d9d9;
 				}
@@ -636,7 +636,7 @@ nav {
 				margin-top: 0;
 			}
 		}
-		img#rainbow-music-notes {
+		img#select-song-img {
 			float: right;
 			height: 179px;
 			margin-top: 15px;
@@ -1027,14 +1027,85 @@ section#recording-instructions {
 }
 
 /* ===================================
-    Players Wanted Page
+    Players Wanted and Forum Pages
 =================================== */
-#players-wanted-page {
+#players-wanted-page, #forum-page {
 	@include border-radius (5px);
 	box-shadow: $box-shadow;
 	border: $nav-border;
-	min-height: 590px;
 	margin: 25px;
+	min-height: 590px;
+	table {
+		width: 100%;
+		span.username {
+			margin-left: 5px;
+		}
+	}
+	h3, button:not(.cancel-topic) {
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+	h3, h4#new-request, h4#post-topic {
+		display: inline-block;
+	}
+	h4#new-request, h4#post-topic {
+		margin-bottom: 5px;
+		margin-left: 2px;
+		margin-top: 0;
+	}
+	button {
+		@include button($musiclaps-light-gray, $musiclaps-dark-gray, 12px, 5px 10px);
+		border: $nav-border;
+		&:hover, &:focus {
+			background-color: #d9d9d9;
+		}
+		&:not(.cancel-topic) {
+			float: right;
+			margin-right: 60px;			
+		}
+		&.cancel-topic {
+			font-weight: bold;
+		}
+	}
+	#glyphicon-and-h4-title {
+		background-color: $musiclaps-light-gray;
+		border-left: $nav-border;
+		border-right: $nav-border;
+		border-top: $nav-border;
+		padding-left: 10px;
+		padding-top: 5px;
+	}
+	form {
+		border: $nav-border;
+		min-height: 273px;
+		padding: 10px;
+		label {
+			&:not(#request-title-label), &:not(#topic-title-label) {
+				@include form-fields-label(10px);
+			}
+			&#request-title-label, &#topic-title-label {
+				margin-bottom: 2px !important;
+			}
+		}
+		input.request-title, input.topic-title, textarea {
+			@include form-fields-input(100%);
+		}
+		textarea {
+			height: 113px;
+		}
+		input#post-request, input#post-topic, button.cancel-topic {
+			margin-top: 10px;
+		}
+		input#post-request, input#post-topic {
+			@include border-radius(10px);
+			@include submit-button($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+			color: white;
+			float: right;
+		}
+	}
+}
+
+#players-wanted-page {
 	padding-bottom: 15px;
 	section#categories-container {
 		border: $nav-border;
@@ -1064,74 +1135,33 @@ section#recording-instructions {
 			}
 		}
 	}
-	table {
-		width: 100%;
-		span.username {
-			margin-left: 5px;
-		}
-	}
-	h3.wanted, button {
-		margin-bottom: 15px;
-		margin-top: 15px;
-	}
-	h3.wanted, h4#new-request {
-		display: inline-block;
-	}
-	h3.wanted {
+	h3 {
 		margin-left: 60px;
-	}
-	button {
-		@include button($musiclaps-light-gray, $musiclaps-dark-gray, 12px, 5px 10px);
-		border: $nav-border;
-		float: right;
-		margin-right: 60px;
-		&:hover, &:focus {
-			background-color: #d9d9d9;
-		}
 	}
 	h4.no-listings {
 		font-weight: normal;
 		margin-top: 0;
 		text-align: center;
 	}
-	h4#new-request {
-		margin-bottom: 5px;
+}
+
+#forum-page {
+	img#dialog-boxes {
+		margin-left: 60px;
+	}
+	h3 { // "Talk with Members"
 		margin-left: 2px;
-		margin-top: 0;
 	}
-	#glyphicon-and-h4-title {
-		background-color: $musiclaps-light-gray;
-		border-left: $nav-border;
-		border-right: $nav-border;
-		border-top: $nav-border;
-		padding-left: 10px;
-		padding-top: 5px;
+	table {
+		th:first-child, td:first-child {
+			border-left: none;
+		}
+		th:last-child, td:last-child {
+			border-right: none;
+		}
 	}
-	form.new-request-container {
-		border: $nav-border;
-		min-height: 260px;
-		padding: 10px;
-		label {
-			&:not(#request-title-label) {
-				@include form-fields-label(10px);
-			}
-			&#request-title-label {
-				margin-bottom: 2px !important;
-			}
-		}
-		input#request_title, textarea {
-			@include form-fields-input(100%);
-		}
-		textarea {
-			height: 113px;
-		}
-		input.post-request {
-			@include border-radius(10px);
-			@include submit-button($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
-			color: white;
-			float: right;
-			margin-top: 10px;
-		}
+	.new-topic-container {
+		margin-top: 25px;
 	}
 }
 
@@ -2848,7 +2878,7 @@ footer {
 			section.projects-container.first { margin-top: 10px; }
 		}
 	}
-	#players-wanted-page { margin-top: 0; }
+	#players-wanted-page, #forum-page { margin-top: 0; }
 	nav {
 		.glyphicon-user { margin-left: 15px; } // Aligns with ".profile-right-container"
 		ul.user-menu a { margin-left: 25px; } // Aligns links with ".glyphicon-user"
@@ -2934,8 +2964,8 @@ footer {
 @media only screen and (max-width: 662px) {
 // Breakpoint of "Post New Request" button ("Players Wanted" Page)
 	#players-wanted-page { 
-		h3.wanted { margin-left: 0; }
-		button { margin-right: 0; }
+		h3 { margin-left: 0; }
+		button { margin-right: 0 !important; }
 	}
 }
 
@@ -2978,7 +3008,11 @@ footer {
 		p { font-size: 15px; }
 		a { font-size: 12px; }
 	}
-	img#rainbow-music-notes { display: none; }
+	#forum-page { 
+		img#dialog-boxes { margin-left: 30px; } // "Talk with Members"
+		button { margin-right: 0 !important; }
+	}
+	img#select-song-img { display: none; } // "Select a song modal"
 	.public-project-info.type-of-collab-container {
 		padding-bottom: 15px;
 		img#cover-song {
@@ -3016,10 +3050,10 @@ footer {
 @media only screen and (max-width: 496px) {
 // Breakpoint of "Post New Request" button ("Players Wanted" Page)
 	#players-wanted-page { 
-		h3.wanted { display: block; }
+		h3 { display: block; }
 		button { 
-			float: left; 
-			margin-top: 0; 
+			float: left !important; 
+			margin-top: 0 !important; 
 		}
 		section.col-xs-10 { 
 			padding-left: 0; 

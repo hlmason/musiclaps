@@ -3092,11 +3092,11 @@ nav ul#flags {
 nav ul.navbar-right#logged-out li {
   border: 1px solid #cecece; }
   nav ul.navbar-right#logged-out li:first-child {
-    background-color: lightgray;
     -moz-border-bottom-left-radius: 10px;
     border-bottom-left-radius: 10px;
     -moz-border-top-left-radius: 10px;
-    border-top-left-radius: 10px; }
+    border-top-left-radius: 10px;
+    background-color: lightgray; }
     nav ul.navbar-right#logged-out li:first-child:hover {
       background-color: #d9d9d9; }
     nav ul.navbar-right#logged-out li:first-child a:hover {
@@ -3266,7 +3266,7 @@ ul.user-menu li#new-project a:not(.dropdown-menu-link), ul.user-menu li#my-proje
       font-weight: normal;
       margin-bottom: 10px;
       margin-top: 0; }
-  .modal-content .modal-body img#rainbow-music-notes {
+  .modal-content .modal-body img#select-song-img {
     float: right;
     height: 179px;
     margin-top: 15px;
@@ -3606,15 +3606,85 @@ section#recording-instructions #save-container {
   float: right; }
 
 /* ===================================
-    Players Wanted Page
+    Players Wanted and Forum Pages
 =================================== */
-#players-wanted-page {
+#players-wanted-page, #forum-page {
   -moz-border-radius: 5px;
   border-radius: 5px;
   box-shadow: 10px 10px 5px #444444;
   border: 1px solid #cecece;
-  min-height: 590px;
   margin: 25px;
+  min-height: 590px; }
+  #players-wanted-page table, #forum-page table {
+    width: 100%; }
+    #players-wanted-page table span.username, #forum-page table span.username {
+      margin-left: 5px; }
+  #players-wanted-page h3, #players-wanted-page button:not(.cancel-topic), #forum-page h3, #forum-page button:not(.cancel-topic) {
+    margin-bottom: 15px;
+    margin-top: 15px; }
+  #players-wanted-page h3, #players-wanted-page h4#new-request, #players-wanted-page h4#post-topic, #forum-page h3, #forum-page h4#new-request, #forum-page h4#post-topic {
+    display: inline-block; }
+  #players-wanted-page h4#new-request, #players-wanted-page h4#post-topic, #forum-page h4#new-request, #forum-page h4#post-topic {
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-top: 0; }
+  #players-wanted-page button, #forum-page button {
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+    border: none;
+    color: #444444;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    padding: 5px 10px;
+    border: 1px solid #cecece; }
+    #players-wanted-page button:hover, #players-wanted-page button:focus, #forum-page button:hover, #forum-page button:focus {
+      background-color: #d9d9d9; }
+    #players-wanted-page button:not(.cancel-topic), #forum-page button:not(.cancel-topic) {
+      float: right;
+      margin-right: 60px; }
+    #players-wanted-page button.cancel-topic, #forum-page button.cancel-topic {
+      font-weight: bold; }
+  #players-wanted-page #glyphicon-and-h4-title, #forum-page #glyphicon-and-h4-title {
+    background-color: #e7e7e7;
+    border-left: 1px solid #cecece;
+    border-right: 1px solid #cecece;
+    border-top: 1px solid #cecece;
+    padding-left: 10px;
+    padding-top: 5px; }
+  #players-wanted-page form, #forum-page form {
+    border: 1px solid #cecece;
+    min-height: 273px;
+    padding: 10px; }
+    #players-wanted-page form label:not(#request-title-label), #players-wanted-page form label:not(#topic-title-label), #forum-page form label:not(#request-title-label), #forum-page form label:not(#topic-title-label) {
+      margin-bottom: 2px;
+      margin-top: 10px; }
+    #players-wanted-page form label#request-title-label, #players-wanted-page form label#topic-title-label, #forum-page form label#request-title-label, #forum-page form label#topic-title-label {
+      margin-bottom: 2px !important; }
+    #players-wanted-page form input.request-title, #players-wanted-page form input.topic-title, #players-wanted-page form textarea, #forum-page form input.request-title, #forum-page form input.topic-title, #forum-page form textarea {
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      border: 1px solid #cecece;
+      padding-bottom: 3px;
+      padding-left: 8px;
+      padding-top: 3px;
+      width: 100%; }
+    #players-wanted-page form textarea, #forum-page form textarea {
+      height: 113px; }
+    #players-wanted-page form input#post-request, #players-wanted-page form input#post-topic, #players-wanted-page form button.cancel-topic, #forum-page form input#post-request, #forum-page form input#post-topic, #forum-page form button.cancel-topic {
+      margin-top: 10px; }
+    #players-wanted-page form input#post-request, #players-wanted-page form input#post-topic, #forum-page form input#post-request, #forum-page form input#post-topic {
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      background-color: #38aaff;
+      border: 1px solid #38aaff;
+      padding: 3px 10px;
+      color: white;
+      float: right; }
+      #players-wanted-page form input#post-request:hover, #players-wanted-page form input#post-request:focus, #players-wanted-page form input#post-topic:hover, #players-wanted-page form input#post-topic:focus, #forum-page form input#post-request:hover, #forum-page form input#post-request:focus, #forum-page form input#post-topic:hover, #forum-page form input#post-topic:focus {
+        background-color: #45b7ff; }
+
+#players-wanted-page {
   padding-bottom: 15px; }
   #players-wanted-page section#categories-container {
     border: 1px solid #cecece;
@@ -3638,76 +3708,23 @@ section#recording-instructions #save-container {
         min-width: 116px;
         padding-left: 15px;
         padding-right: 15px; }
-  #players-wanted-page table {
-    width: 100%; }
-    #players-wanted-page table span.username {
-      margin-left: 5px; }
-  #players-wanted-page h3.wanted, #players-wanted-page button {
-    margin-bottom: 15px;
-    margin-top: 15px; }
-  #players-wanted-page h3.wanted, #players-wanted-page h4#new-request {
-    display: inline-block; }
-  #players-wanted-page h3.wanted {
+  #players-wanted-page h3 {
     margin-left: 60px; }
-  #players-wanted-page button {
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    background-color: #e7e7e7;
-    border: none;
-    color: #444444;
-    font-size: 12px;
-    letter-spacing: 0.5px;
-    padding: 5px 10px;
-    border: 1px solid #cecece;
-    float: right;
-    margin-right: 60px; }
-    #players-wanted-page button:hover, #players-wanted-page button:focus {
-      background-color: #d9d9d9; }
   #players-wanted-page h4.no-listings {
     font-weight: normal;
     margin-top: 0;
     text-align: center; }
-  #players-wanted-page h4#new-request {
-    margin-bottom: 5px;
-    margin-left: 2px;
-    margin-top: 0; }
-  #players-wanted-page #glyphicon-and-h4-title {
-    background-color: #e7e7e7;
-    border-left: 1px solid #cecece;
-    border-right: 1px solid #cecece;
-    border-top: 1px solid #cecece;
-    padding-left: 10px;
-    padding-top: 5px; }
-  #players-wanted-page form.new-request-container {
-    border: 1px solid #cecece;
-    min-height: 260px;
-    padding: 10px; }
-    #players-wanted-page form.new-request-container label:not(#request-title-label) {
-      margin-bottom: 2px;
-      margin-top: 10px; }
-    #players-wanted-page form.new-request-container label#request-title-label {
-      margin-bottom: 2px !important; }
-    #players-wanted-page form.new-request-container input#request_title, #players-wanted-page form.new-request-container textarea {
-      -moz-border-radius: 5px;
-      border-radius: 5px;
-      border: 1px solid #cecece;
-      padding-bottom: 3px;
-      padding-left: 8px;
-      padding-top: 3px;
-      width: 100%; }
-    #players-wanted-page form.new-request-container textarea {
-      height: 113px; }
-    #players-wanted-page form.new-request-container input.post-request {
-      -moz-border-radius: 10px;
-      border-radius: 10px;
-      background-color: #38aaff;
-      border: 1px solid #38aaff;
-      padding: 3px 10px;
-      color: white;
-      float: right;
-      margin-top: 10px; }
-      #players-wanted-page form.new-request-container input.post-request:hover, #players-wanted-page form.new-request-container input.post-request:focus {
-        background-color: #45b7ff; }
+
+#forum-page img#dialog-boxes {
+  margin-left: 60px; }
+#forum-page h3 {
+  margin-left: 2px; }
+#forum-page table th:first-child, #forum-page table td:first-child {
+  border-left: none; }
+#forum-page table th:last-child, #forum-page table td:last-child {
+  border-right: none; }
+#forum-page .new-topic-container {
+  margin-top: 25px; }
 
 /* ======================================================================================================
     Profile, New Project, Projects, Collaborations, YouTube, Messages, Groups, and Public Project Pages
@@ -5257,7 +5274,7 @@ footer {
     #all-music-page .col-xs-12.col-md-4 section.projects-container.first {
       margin-top: 10px; }
 
-  #players-wanted-page {
+  #players-wanted-page, #forum-page {
     margin-top: 0; }
 
   nav .glyphicon-user {
@@ -5342,10 +5359,10 @@ footer {
       margin-bottom: 10px;
       margin-top: 0; } }
 @media only screen and (max-width: 662px) {
-  #players-wanted-page h3.wanted {
+  #players-wanted-page h3 {
     margin-left: 0; }
   #players-wanted-page button {
-    margin-right: 0; } }
+    margin-right: 0 !important; } }
 @media only screen and (max-width: 606px) {
   .project-info-bar select.project-type {
     float: none;
@@ -5383,7 +5400,12 @@ footer {
   section#technology a, section#backstage a, section.music-ed a, section.contests-and-auditions a {
     font-size: 12px; }
 
-  img#rainbow-music-notes {
+  #forum-page img#dialog-boxes {
+    margin-left: 30px; }
+  #forum-page button {
+    margin-right: 0 !important; }
+
+  img#select-song-img {
     display: none; }
 
   .public-project-info.type-of-collab-container {
@@ -5432,11 +5454,11 @@ footer {
     padding-top: 3px;
     width: 50%; } }
 @media only screen and (max-width: 496px) {
-  #players-wanted-page h3.wanted {
+  #players-wanted-page h3 {
     display: block; }
   #players-wanted-page button {
-    float: left;
-    margin-top: 0; }
+    float: left !important;
+    margin-top: 0 !important; }
   #players-wanted-page section.col-xs-10 {
     padding-left: 0; }
     #players-wanted-page section.col-xs-10 table {

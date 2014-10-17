@@ -34,6 +34,7 @@
 		});
 	</script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/header.js"></script>
+	<script src="<?php echo BASE_URL; ?>assets/javascripts/forum.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/user-menu.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/index.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/profile/new-project.js"></script>

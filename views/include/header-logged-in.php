@@ -161,6 +161,8 @@
 							<a class="dropdown-toggle
 								<?php 
 									if ($page_title == "Technology") { 
+										echo "active";
+									} else if ($page_title == "Forum") { 
 										echo "active"; 
 									} else if ($page_title == "Company") { 
 										echo "active"; 
@@ -177,14 +179,14 @@
 										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/under-construction/index-logged-in.php">Technology
 									</a>
 								</li>
-								<!-- <li role="presentation">
+								<li role="presentation">
 									<a class="
-										<?php if ($page_title == "FAQs (Forum)") { 
+										<?php if ($page_title == "Forum") { 
 												echo "active"; 
 											} 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>forum">FAQs (Forum)
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/forum/index-logged-in.php">Forum
 									</a>
-								</li> -->
+								</li>
 								<li role="presentation">
 									<a class="
 										<?php if ($page_title == "Company") { 
