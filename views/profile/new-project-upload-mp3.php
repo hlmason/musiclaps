@@ -56,8 +56,8 @@
 							</section>
 
 							<section id="addPart">
-								<label id="select-sound-label" for="select_sound">Select Project</label>
-								<select class="select-sound" id="select_sound" name="">
+								<label id="select-project-label" for="select_project">Select Project</label>
+								<select class="select-project" id="select_project" name="">
 									<option value="test">$Project Title</option><!-- Hard-coded placeholder -->	
 								</select>
 							</section>
@@ -66,8 +66,9 @@
 								<h4 class="row col-xs-12 red">You have not joined any groups.</h4><!-- Hard-coded placeholder -->	
 							</section>
 
-							<div class="row col-xs-12">
-								<label id="instruments-label" for="instruments">Select Instrument</label>
+							<div class="row col-xs-12" id="select-instruments-container">
+								<label id="instruments-label" for="instruments">Select Instrument</label><span class="glyphicon glyphicon-question-sign glyphicon glyphicon-question-sign-instruments" id="glyphiconQuestionSignInstrument"></span>
+								<div class="select-instrument-explanation" id="selectInstrumentExplanation">If you are playing an instrument that is not on the list, please select “Other".</div>
 								<select class="instruments" id="instruments" name="" size="6">
 									<span><option value="arrangement">&nbsp; Accordion</option></span>
 									<span><option value="banjo">&nbsp; Banjo</option></span>

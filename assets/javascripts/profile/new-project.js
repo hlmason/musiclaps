@@ -5,8 +5,8 @@ $(document).ready(function() {
 
 	var newProject = $('section#newProject');
 	var addPart = $('section#addPart');
+	var selectInstrumentExplanation = $('#selectInstrumentExplanation');
 	var addPartToGroup = $('section#addPartToGroup');
-
 
 	// $('a#newProjectLink').mouseenter (function() {
 	// 	newProjectCaret.addClass('upside-down');
@@ -40,6 +40,7 @@ $(document).ready(function() {
 
 	newProject.hide();
 	addPart.hide();
+	selectInstrumentExplanation.hide();
 	addPartToGroup.hide();
 
 	$('input').on('click', function() {
@@ -56,6 +57,10 @@ $(document).ready(function() {
 			newProject.hide();
 			addPartToGroup.fadeIn('fast');
 		}
+	});
+
+	$('#glyphiconQuestionSignInstrument').hover(function() {
+		selectInstrumentExplanation.fadeIn('slow');
 	});
 
 });

@@ -220,15 +220,14 @@ span.normal {
 	color: $musiclaps-blue !important;
 }
 
-#registration-full-modal-body, #registration-express-modal-body, #lyrics-settings-sm, #lyrics-settings-xs, #youtube-settings {
-	.glyphicon-question-sign, .password-req, .lyrics-explanation, .youtube-id-req {
+#registration-full-modal-body, #registration-express-modal-body, #select-instruments-container, #lyrics-settings-sm, #lyrics-settings-xs, #youtube-settings {
+	.glyphicon-question-sign, .password-req, .select-instrument-explanation, .lyrics-explanation, .youtube-id-req {
 		color: $musiclaps-blue !important;
 	}
-	.password-req, .lyrics-explanation, .youtube-id-req {
+	.password-req, .select-instrument-explanation, .lyrics-explanation, .youtube-id-req {
 		font-size: 12px;
 	}
-	.password-req, .youtube-id-req {
-		font-size: 12px;
+	.password-req, .select-instrument-explanation, .youtube-id-req {
 		margin-bottom: 2px;
 		margin-left: 2px;
 	}
@@ -1374,7 +1373,7 @@ input#change-password {
 	height: 106px;
 }
 
-#genre-form-profile, #skills, .instruments, #genre-form-projects {
+#genre-form-profile, #skills, select.instruments, #genre-form-projects {
 	@include form-fields-input(12px);
 	overflow-y: scroll;
 	padding-top: 2px;
@@ -1389,7 +1388,7 @@ input#change-password {
 	width: 120px;
 }
 
-.instruments {
+select.instruments {
 	padding-left: 0; // Overrides @mixin form-fields-input
 }
 
@@ -1440,10 +1439,10 @@ section.upload-mp3-container {
 	input.comment-new-project-page, section#choose-project-img-container {
 		margin-bottom: 20px;
 	}
-	input.tempo, select.select-sound {
+	input.tempo, select.select-project {
 		margin-left: 5px;
 	}
-	select.select-sound {
+	select.select-project {
 		@include form-fields-input(25%);
 	}
 	input.tempo {
@@ -1453,10 +1452,14 @@ section.upload-mp3-container {
 		color: red;
 		margin-bottom: 5px;
 	}
-	label#project-title-label, label#tempo-label, label#select-sound-label, section.add-part-to-group-container h4, label#instruments-label, label#comment-new-project-page-label {
+	label#project-title-label, label#tempo-label, label#select-project-label, section.add-part-to-group-container h4, label#instruments-label, label#comment-new-project-page-label {
 		margin-top: 20px;
 	}
-	label#instruments-label {
+	#select-instruments-container label {
+		margin-bottom: 2px;
+		margin-right: 3px;
+	}
+	select.instruments {
 		display: block;
 	}
 	section#choose-project-img-container, section#choose-mp3-file-container {

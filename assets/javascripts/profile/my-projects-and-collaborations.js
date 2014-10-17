@@ -3,9 +3,9 @@ $(document).ready(function() {
 	/* ===================================
     	My Projects
 	=================================== */
+	var lyricsExplanation = $('.lyricsExplanation');
 	var myProjectsDropdownMenu = $('ul#myProjectsDropdownMenu');
 	var myProjectsCaret = $('#myProjectsCaret');
-	var lyricsExplanation = $('.lyricsExplanation');
 
 
 	lyricsExplanation.hide();
