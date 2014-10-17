@@ -130,10 +130,10 @@
 							<section class="row col-xs-12 newProject" id="choose-project-img-container">
 								<div class="row">
 									<div class="col-xs-3">	
-										<h4>Project Image</h4>
+										<label for="choose_project_img">Project Image</label>
 									</div>
 									<div class="col-xs-5">
-										<input type="file" name="" value="Choose File">
+										<input id="choose_project_img" type="file" name="" value="Choose File">
 									</div>
 									<div class="col-xs-12 col-sm-4">	
 										<h5>120(w) x 90(h) in jpg format</h5>
@@ -143,10 +143,10 @@
 
 							<section class="row col-xs-12" id="choose-mp3-file-container">
 								<div class="col-xs-3">	
-									<h4>MP3 File</h4>
+									<label for="choose_mp3">MP3 File</label>
 								</div>
 								<div class="col-xs-5">
-									<input type="file" name="" value="Choose File">
+									<input id="choose_mp3" type="file" name="" value="Choose File">
 								</div>
 								<div class="col-xs-12 col-sm-4">	
 									<h5>Max Size 10MB</h5>
