@@ -153,7 +153,7 @@
 
 	<form class="project-form" action="<?php echo BASE_URL; ?>controllers/profile/project-form-controller.php" method="post">
 		<section class="row col-xs-12">
-			<h4 id="copyright">Copyright <span class="normal">(original songs only)</h4>
+			<h4 id="copyright">Copyright <span class="normal">(original songs only)</span></h4>
 			<h4 class="red"><strong>Creative Commons licenses are irrevocable
 			<span class="block">Please think carefully before choosing a CC license</strong></span></h4>
 		</section>

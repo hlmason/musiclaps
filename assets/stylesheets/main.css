@@ -3084,11 +3084,11 @@ nav ul#flags {
     display: inline-block;
     position: relative;
     z-index: 1; }
+    nav ul#flags li:first-child {
+      margin-right: 5px; }
     nav ul#flags li img {
       height: 13px;
       width: auto; }
-    nav ul#flags li:first-child {
-      margin-right: 5px; }
 nav ul.navbar-right#logged-out li {
   border: 1px solid #cecece; }
   nav ul.navbar-right#logged-out li:first-child {
@@ -3156,14 +3156,12 @@ ul.user-menu li:not(.dropdown-menu-list-item) {
       -moz-border-top-right-radius: 5px;
       border-top-right-radius: 5px;
       text-transform: capitalize !important; }
-      ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):not(.active), ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):hover, ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):focus {
+      ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):not(.active) {
         background-color: #f4f4f4; }
-      ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):not(.active):hover, ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):not(.active):focus {
+      ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link).active, ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):hover, ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):focus {
         background-color: white; }
-      ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link).active {
-        background-color: white; }
-  ul.user-menu li:not(.dropdown-menu-list-item)#new-project a:not(.dropdown-menu-link), ul.user-menu li:not(.dropdown-menu-list-item)#my-projects a:not(.dropdown-menu-link), ul.user-menu li:not(.dropdown-menu-list-item)#collaborations a:not(.dropdown-menu-link) {
-    padding: 14px 11.5px 12px; }
+ul.user-menu li#new-project a:not(.dropdown-menu-link), ul.user-menu li#my-projects a:not(.dropdown-menu-link), ul.user-menu li#collaborations a:not(.dropdown-menu-link) {
+  padding: 14px 11.5px 12px; }
 
 /* ===================================
     Modal
@@ -3186,13 +3184,10 @@ ul.user-menu li:not(.dropdown-menu-list-item) {
   .modal-content #registration-full-header button.close, .modal-content #registration-express-header button.close,
   .modal-content #register-header button.close, .modal-content #login-header button.close {
     margin-top: 3px; }
-  .modal-content h2.register-modal-heading, .modal-content h2.registration-full-modal-heading,
-  .modal-content h2.registration-express-modal-heading, .modal-content h2.login-modal-heading {
+  .modal-content h2.register-modal-heading, .modal-content h2.registration-full-modal-heading, .modal-content h2.registration-express-modal-heading, .modal-content h2.login-modal-heading {
     letter-spacing: 0.5px; }
   .modal-content h2.registration-express-modal-heading {
     font-weight: bold !important; }
-  .modal-content h3.want-demo-heading, .modal-content h3.select-song-heading {
-    text-transform: uppercase; }
   .modal-content .modal-body#sn-login-modal-body-sm, .modal-content .modal-body#sn-login-modal-body-xs, .modal-content .modal-body#registration-full-modal-body, .modal-content .modal-body#registration-express-modal-body {
     -moz-border-radius: 0;
     border-radius: 0;
@@ -3209,6 +3204,18 @@ ul.user-menu li:not(.dropdown-menu-list-item) {
     display: none; }
   .modal-content .modal-body#login-modal-body {
     padding-top: 0; }
+    .modal-content .modal-body#login-modal-body input {
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      border: 1px solid #cecece;
+      padding-bottom: 3px;
+      padding-left: 8px;
+      padding-top: 3px;
+      width: 90%;
+      margin-top: 15px; }
+  .modal-content .modal-body#registration-full-modal-body label, .modal-content .modal-body#registration-express-modal-body label {
+    margin-bottom: 2px;
+    margin-top: 10px; }
   .modal-content .modal-body#registration-full-modal-body input, .modal-content .modal-body#registration-express-modal-body input {
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -3217,17 +3224,6 @@ ul.user-menu li:not(.dropdown-menu-list-item) {
     padding-left: 8px;
     padding-top: 3px;
     width: 100%; }
-  .modal-content .modal-body#login-modal-body input {
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    border: 1px solid #cecece;
-    padding-bottom: 3px;
-    padding-left: 8px;
-    padding-top: 3px;
-    width: 90%; }
-  .modal-content .modal-body#registration-full-modal-body label, .modal-content .modal-body#registration-express-modal-body label {
-    margin-bottom: 2px;
-    margin-top: 10px; }
   .modal-content .modal-body label#email-label, .modal-content .modal-body label#birth-date-label-modal, .modal-content .modal-body label#gender-label, .modal-content .modal-body label#zip-label, .modal-content .modal-body img#captcha-img, .modal-content .modal-body #agree-checkbox {
     margin-bottom: 2px;
     margin-top: 15px; }
@@ -3240,10 +3236,7 @@ ul.user-menu li:not(.dropdown-menu-list-item) {
     .modal-content .modal-body #agree-checkbox input {
       margin-top: 4px;
       width: 12px; }
-  .modal-content .modal-body#login-modal-body input {
-    margin-top: 15px; }
-  .modal-content .modal-body.register-or-login-modal-body
-  button {
+  .modal-content .modal-body.register-or-login-modal-body button {
     -moz-border-radius: 10px;
     border-radius: 10px;
     background-color: #e7e7e7;
@@ -3256,15 +3249,11 @@ ul.user-menu li:not(.dropdown-menu-list-item) {
     display: block;
     font-weight: bold;
     width: 100%; }
-    .modal-content .modal-body.register-or-login-modal-body
-    button:hover, .modal-content .modal-body.register-or-login-modal-body
-    button:focus {
+    .modal-content .modal-body.register-or-login-modal-body button:hover, .modal-content .modal-body.register-or-login-modal-body button:focus {
       background-color: #d9d9d9; }
-    .modal-content .modal-body.register-or-login-modal-body
-    button:first-child {
+    .modal-content .modal-body.register-or-login-modal-body button:first-child {
       margin-top: 5px; }
-    .modal-content .modal-body.register-or-login-modal-body
-    button:last-child {
+    .modal-content .modal-body.register-or-login-modal-body button:last-child {
       margin-top: 20px; }
   .modal-content .modal-body h4 {
     margin-bottom: 0;
@@ -3404,12 +3393,8 @@ h1.landing-page {
           background-color: #F4F4F4;
           padding: 4px 7px; }
           #stage #stage-inner #education a span img, #stage #stage-inner #contests a span img {
-            height: 27px;
+            height: auto;
             width: 29px; }
-            #stage #stage-inner #education a span img:first-child, #stage #stage-inner #contests a span img:first-child {
-              height: 25px; }
-            #stage #stage-inner #education a span img:first-child, #stage #stage-inner #contests a span img:first-child {
-              height: 27px; }
     #stage #stage-inner p {
       color: #38aaff;
       font-size: 14px;
@@ -3499,32 +3484,24 @@ section#technology, section#backstage, section.music-ed, section.contests-and-au
       padding-top: 20px; }
     section#technology ul li:not(.first-list-item), section#backstage ul li:not(.first-list-item), section.music-ed ul li:not(.first-list-item), section.contests-and-auditions ul li:not(.first-list-item) {
       padding-top: 10px; }
-
 section#technology, section#backstage, section.music-ed {
   border-bottom: 1px solid #cecece; }
-
 section#technology, section.music-ed {
   background-color: #e7e7e7; }
-
 section#backstage, section.contests-and-auditions {
   background-color: white; }
-
 section#technology img {
   margin-top: 120px;
   height: 133px;
   width: 200px; }
-
 section#backstage img, section.music-ed img, section.contests-and-auditions img {
   width: 150px; }
-
 section#backstage img {
-  margin-top: 80px; }
-
+  margin-top: 90px; }
 section.music-ed img {
-  margin-top: 70px; }
-
+  margin-top: 90px; }
 section.contests-and-auditions img {
-  margin-top: 100px; }
+  margin-top: 140px; }
 
 /* ===================================
     Live Player Page

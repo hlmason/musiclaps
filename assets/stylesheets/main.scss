@@ -368,10 +368,8 @@ nav {
 		&.navbar-left > li { // "Music", "People", and "Our Story" only
 			@include nav-border(#cecece);
 		}
-		.dropdown {
-			a .caret {
-				display: none;
-			}
+		.dropdown a .caret {
+			display: none;
 		}
 		ul.dropdown-menu { // Left unnested so that ".caret" displays on nav below nav but ".dropdown-menu" stylings apply
 			border: $modal-border;
@@ -410,57 +408,59 @@ nav {
 			display: inline-block;
 			position: relative; // Makes flags clickable
 			z-index: 1; // Makes flags clickable
+			&:first-child {
+				margin-right: 5px;
+			}
 			img {
 				height: 13px;
 				width: auto;
 			}
-			&:first-child {
-				margin-right: 5px;
-			}
 		}
 	}
-	ul.navbar-right#logged-out li {
-		border: $nav-border;
-		&:first-child { // "Log in" button
-			background-color: lightgray;
-			@include border-bottom-left-radius(10px);
-			@include border-top-left-radius(10px);
-			&:hover {
-				background-color: #d9d9d9;
+	ul.navbar-right {
+		&#logged-out li {
+			border: $nav-border;
+			&:first-child { // "Log in" button
+				background-color: lightgray;
+				@include border-bottom-left-radius(10px);
+				@include border-top-left-radius(10px);
+				&:hover {
+					background-color: #d9d9d9;
+				}
+				a:hover {
+					color: black !important;
+				}
 			}
-			a:hover {
-				color: black !important;
-			}
-		}
-		&:last-child { // "Register" button
-			background-color: $musiclaps-blue;
-			border: 1px solid $musiclaps-blue;
-			@include border-bottom-right-radius(10px);
-			@include border-top-right-radius(10px);
-			&:hover {
-				background-color: #45B7FF;
-			}
-			a {
-				color: white !important;
-			}
-		}
-	}
-	ul.navbar-right li {
-		&#welcome-user-sm, &#welcome-user-xs {
-			a {
-				color: #1F91E6 !important; // Otherwise username is gray
-				text-transform: initial; // Otherwise username is capitalized
-				&:hover, &:focus {
-					color: $musiclaps-dark-gray !important;
+			&:last-child { // "Register" button
+				background-color: $musiclaps-blue;
+				border: 1px solid $musiclaps-blue;
+				@include border-bottom-right-radius(10px);
+				@include border-top-right-radius(10px);
+				&:hover {
+					background-color: #45B7FF;
+				}
+				a {
+					color: white !important;
 				}
 			}
 		}
-		&#welcome-user-sm {
-			margin-right: 10px;
-			margin-top: 28px !important;
-		}
-		&#welcome-user-xs {
-			display: none;
+		li {
+			&#welcome-user-sm, &#welcome-user-xs {
+				a {
+					color: #1F91E6 !important; // Otherwise username is gray
+					text-transform: initial; // Otherwise username is capitalized
+					&:hover, &:focus {
+						color: $musiclaps-dark-gray !important;
+					}
+				}
+			}
+			&#welcome-user-sm {
+				margin-right: 10px;
+				margin-top: 28px !important;
+			}
+			&#welcome-user-xs {
+				display: none;
+			}
 		}
 	}
 }
@@ -484,11 +484,11 @@ nav {
 		margin-top: 10px;
 	}
 
-	ul.user-menu {
-		li:not(.first-list-item) { // Not "Profile" / "My Profile" tabs
+	ul.user-menu li {
+		&:not(.first-list-item) { // Not "Profile" / "My Profile" tabs
 			padding-left: 2px;
 		}
-		li:not(.dropdown-menu-list-item) {
+		&:not(.dropdown-menu-list-item) {
 			border-bottom: $nav-border;
 			a {
 				padding-left: 12px; // Lines menu up with "Recommended" box (overwrites general padding of 15px for links)
@@ -500,23 +500,19 @@ nav {
 					@include border-top-left-radius(5px);
 					@include border-top-right-radius(5px);
 					text-transform: capitalize !important;
-					&:not(.active), &:hover, &:focus {
+					&:not(.active) {
 						background-color: #f4f4f4;
 					}
-					&:not(.active) {
-						&:hover, &:focus {
-							background-color: white; // Same as active
-						}
-					}
-					 &.active { 
+					&.active, &:hover, &:focus { 
 	 					background-color: white; // Removes hover background color (#f4f4f4) on active tab
 	 				}
 				}
 			}
-			&#new-project, &#my-projects, &#collaborations {
-				a:not(.dropdown-menu-link) { 
-					padding: 14px 11.5px 12px; // Left/right padding lines menu up with "Recommended" box (overwrites general padding of 15px for links)
-				}
+
+		}
+		&#new-project, &#my-projects, &#collaborations {
+			a:not(.dropdown-menu-link) { 
+				padding: 14px 11.5px 12px; // Left/right padding lines menu up with "Recommended" box (overwrites general padding of 15px for links)
 			}
 		}
 	}
@@ -548,15 +544,14 @@ nav {
 			margin-top: 3px;
 		} 
 	}
-	h2.register-modal-heading, h2.registration-full-modal-heading, 
-	h2.registration-express-modal-heading, h2.login-modal-heading {
-		letter-spacing: 0.5px;
-	}
-	h2.registration-express-modal-heading { // Not sure why this is the only heading which needs bold property specified
-		font-weight: bold !important;
-	}
-	h3.want-demo-heading, h3.select-song-heading {
-		text-transform: uppercase;
+	h2 {
+		&.register-modal-heading, &.registration-full-modal-heading, 
+		&.registration-express-modal-heading, &.login-modal-heading {
+			letter-spacing: 0.5px;
+		}
+		&.registration-express-modal-heading { // Not sure why this is the only heading which needs bold property specified
+			font-weight: bold !important;
+		}
 	}
 	.modal-body {
 		&#sn-login-modal-body-sm, &#sn-login-modal-body-xs, 
@@ -582,18 +577,17 @@ nav {
 		}
 		&#login-modal-body {
 			padding-top: 0;
-		}
-		&#registration-full-modal-body, &#registration-express-modal-body {
-			input {
-				@include form-fields-input(100%);
+			input { // Username and Password fields
+				@include form-fields-input(90%);
+				margin-top: 15px;
 			}
-		}
-		&#login-modal-body input { // Form fields
-			@include form-fields-input(90%);
 		}
 		&#registration-full-modal-body, &#registration-express-modal-body {
 			label {
 				@include form-fields-label(10px);
+			}
+			input {
+				@include form-fields-input(100%);
 			}
 		}
 		label#email-label, label#birth-date-label-modal, label#gender-label, label#zip-label, img#captcha-img, #agree-checkbox {
@@ -611,26 +605,20 @@ nav {
 				width: 12px; // Keeps text inline with checkbox
 			}
 		}
-		&#login-modal-body {
-			input { // Username and Password
-				margin-top: 15px;
+		&.register-or-login-modal-body button { // On modal that appears after clicking "Save Recording"
+			@include button($musiclaps-light-gray, $musiclaps-dark-gray, 14px, 5px 10px);
+			border: $nav-border;
+			display: block;
+			font-weight: bold;
+			width: 100%;
+			&:hover, &:focus {
+				background-color: #d9d9d9;
 			}
-		}
-		&.register-or-login-modal-body // On modal that appears after clicking "Save Recording"
-			button {
-				@include button($musiclaps-light-gray, $musiclaps-dark-gray, 14px, 5px 10px);
-				border: $nav-border;
-				display: block;
-				font-weight: bold;
-				width: 100%;
-				&:hover, &:focus {
-					background-color: #d9d9d9;
-				}
-				&:first-child {
-					margin-top: 5px;
-				}
-				&:last-child {
-					margin-top: 20px;
+			&:first-child {
+				margin-top: 5px;
+			}
+			&:last-child {
+				margin-top: 20px;
 			}
 		}
 		h4 {
@@ -667,14 +655,16 @@ nav {
 		&#register-modal-footer, &.registration-modal-footer {
 			border-top: none;
 		}
-		&#register-modal-footer button {
-			@include button($musiclaps-light-gray, $musiclaps-dark-gray, 14px, 5px 10px);
-			border: $nav-border;
-			&:hover, &:focus {
-				background-color: #d9d9d9;
+		&#register-modal-footer { // "Register with Email" button - Note that this is an id
+			button {
+				@include button($musiclaps-light-gray, $musiclaps-dark-gray, 14px, 5px 10px);
+				border: $nav-border;
+				&:hover, &:focus {
+					background-color: #d9d9d9;
+				}
 			}
 		}
-		&.registration-modal-footer input { // "Register" button
+		&.registration-modal-footer input { // "REGISTER" - Note that this is a class
 			@include submit-button-blue-wide(10px);
 			text-transform: uppercase;
 		}
@@ -720,7 +710,6 @@ h1.landing-page {
 		       	 	transition: opacity 0.5s ease-out linear infinite normal forwards; 
 		}
 	}
-
 			@-webkit-keyframes moveSlideshow {
 			    0% { left: 0; }
 			    100% { left: 1010px; }
@@ -763,15 +752,9 @@ h1.landing-page {
 						@include border-radius(100%);
 						background-color: #F4F4F4;
 						padding: 4px 7px;
-							img {
-								height: 27px;
-								width: 29px;
-							&:first-child {
-								height: 25px;
-							}
-							&:first-child {
-								height: 27px;
-							}
+						img {
+							height: auto;
+							width: 29px;
 						}
 					}
 				}
@@ -859,58 +842,54 @@ h1.landing-page {
 	/* ===============================================================
 	    Technology, Backstage, Music Education, Contests and Auditions
 	=============================================================== */
-	section#technology, section#backstage, section.music-ed, section.contests-and-auditions {
-		padding-bottom: 30px;
-		h2 {
-			@include heading(29px, 15px, 30px);
-		}
-		@include section-paragraph-and-links;
-		ul {
-			margin-top: 0;
-			li:first-child {
-				padding-top: 20px;
+	section {
+		&#technology, &#backstage, &.music-ed, &.contests-and-auditions {
+			padding-bottom: 30px;
+			h2 {
+				@include heading(29px, 15px, 30px);
 			}
-			li:not(.first-list-item) {
-				padding-top: 10px;
+			@include section-paragraph-and-links;
+			ul {
+				margin-top: 0;
+				li {
+					&:first-child {
+						padding-top: 20px;
+					}
+					&:not(.first-list-item) {
+						padding-top: 10px;
+					}
+				}
+				// a:visited {
+				// 	color: $musiclaps-dark-gray !important;
+				// }
 			}
-			// a:visited {
-			// 	color: $musiclaps-dark-gray !important;
-			// }
 		}
-	}
-
-	section#technology, section#backstage, section.music-ed {
-		border-bottom: $nav-border;
-	}
-
-	section#technology, section.music-ed {
-		background-color: $musiclaps-light-gray;
-	}
-
-	section#backstage, section.contests-and-auditions {
-		background-color: white;
-	}
-
-	section#technology img {
-		margin-top: 120px;
-		height: 133px;
-		width: 200px;
-	}
-
-	section#backstage img, section.music-ed img, section.contests-and-auditions img {
-		width: 150px;
-	}
-
-	section#backstage img {
-		margin-top: 80px;
-	}
-
-	section.music-ed img {
-		margin-top: 70px;
-	}
-
-	section.contests-and-auditions img {
-		margin-top: 100px;
+		&#technology, &#backstage, &.music-ed {
+			border-bottom: $nav-border;
+		}
+		&#technology, &.music-ed {
+			background-color: $musiclaps-light-gray;
+		}
+		&#backstage, &.contests-and-auditions {
+			background-color: white;
+		}
+		&#technology img {
+			margin-top: 120px;
+			height: 133px;
+			width: 200px;
+		}
+		&#backstage img, &.music-ed img, &.contests-and-auditions img {
+			width: 150px;
+		}
+		&#backstage img {
+			margin-top: 90px;
+		}
+		&.music-ed img {
+			margin-top: 90px;
+		}
+		&.contests-and-auditions img {
+			margin-top: 140px;
+		}
 	}
 
 /* ===================================
