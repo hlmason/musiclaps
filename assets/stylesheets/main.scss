@@ -358,7 +358,7 @@ nav {
 				letter-spacing: 0.5px;
 				text-transform: uppercase;
 				&:hover, &:focus, &.active {
-					color: $musiclaps-blue !important;
+					color: #1F91E6 !important; // Otherwise links are gray
 				}
 				&:not(.welcome-user-link) {
 					padding: 15px;	
@@ -1077,6 +1077,7 @@ section#recording-instructions {
 	}
 	form {
 		border: $nav-border;
+		margin-bottom: 10px;
 		min-height: 273px;
 		padding: 10px;
 		label {
@@ -3049,19 +3050,18 @@ footer {
 
 @media only screen and (max-width: 496px) {
 // Breakpoint of "Post New Request" button ("Players Wanted" Page)
-	#players-wanted-page { 
+	#players-wanted-page, #forum-page {
+		button.post-new-request, h3#musiclaps-forum, img#dialog-boxes, button.post-new-topic { float: left !important; }
+		button.post-new-topic { margin-left: 5px; }
+		span.username { margin-left: 0 !important; }
+	}
+	#players-wanted-page {
+		button { margin-top: 0 !important; }
 		h3 { display: block; }
-		button { 
-			float: left !important; 
-			margin-top: 0 !important; 
-		}
-		section.col-xs-10 { 
-			padding-left: 0; 
-			table { 
-				width: 90%;
-				span.username { margin-left: 0; }
-			}
-		}
+		span.username { margin-left: 0; }
+	}
+	#forum-page {
+		img#dialog-boxes { margin-top: 15px; }
 	}
 	.youtube-links a:not(.first-link) { padding-left: 0 !important; }
 	#info-below-youtube-player {
@@ -3080,6 +3080,14 @@ footer {
 	#project-details-container h4 { font-size: 12px; }
 }
 
+@media only screen and (max-width: 459px) {
+// Breakpoint of "Post New Topic" button
+	button.post-new-topic { 
+		margin-left: 25px !important;
+		margin-top: 0 !important;
+	}
+}
+
 @media only screen and (max-width: 417px) {
 // Breakpoint of "Select a song" heading (Live Player Page)
 	// h1.landing-page { font-size: 18px; } // "Online Music Collaboration Made Simple"
@@ -3095,6 +3103,13 @@ footer {
 		h2 { font-size: 20px; }
 		p { font-size: 12px; }
 		a { font-size: 10px; }
+	}
+	#forum-page {
+		.table-scroll-x-axis {
+			margin-left: 15px;
+			padding-left: 0;
+			width: 89%;
+		}
 	}
 	section.username-and-number-of-songs {
 		h4, h5 { margin-left: 22px !important; }

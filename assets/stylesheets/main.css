@@ -3041,7 +3041,7 @@ nav ul.nav {
     letter-spacing: 0.5px;
     text-transform: uppercase; }
     nav ul.nav a:hover, nav ul.nav a:focus, nav ul.nav a.active {
-      color: #38aaff !important; }
+      color: #1F91E6 !important; }
     nav ul.nav a:not(.welcome-user-link) {
       padding: 15px; }
 nav ul.navbar-left > li {
@@ -3654,6 +3654,7 @@ section#recording-instructions #save-container {
     padding-top: 5px; }
   #players-wanted-page form, #forum-page form {
     border: 1px solid #cecece;
+    margin-bottom: 10px;
     min-height: 273px;
     padding: 10px; }
     #players-wanted-page form label:not(#request-title-label), #players-wanted-page form label:not(#topic-title-label), #forum-page form label:not(#request-title-label), #forum-page form label:not(#topic-title-label) {
@@ -5454,17 +5455,22 @@ footer {
     padding-top: 3px;
     width: 50%; } }
 @media only screen and (max-width: 496px) {
+  #players-wanted-page button.post-new-request, #players-wanted-page h3#musiclaps-forum, #players-wanted-page img#dialog-boxes, #players-wanted-page button.post-new-topic, #forum-page button.post-new-request, #forum-page h3#musiclaps-forum, #forum-page img#dialog-boxes, #forum-page button.post-new-topic {
+    float: left !important; }
+  #players-wanted-page button.post-new-topic, #forum-page button.post-new-topic {
+    margin-left: 5px; }
+  #players-wanted-page span.username, #forum-page span.username {
+    margin-left: 0 !important; }
+
+  #players-wanted-page button {
+    margin-top: 0 !important; }
   #players-wanted-page h3 {
     display: block; }
-  #players-wanted-page button {
-    float: left !important;
-    margin-top: 0 !important; }
-  #players-wanted-page section.col-xs-10 {
-    padding-left: 0; }
-    #players-wanted-page section.col-xs-10 table {
-      width: 90%; }
-      #players-wanted-page section.col-xs-10 table span.username {
-        margin-left: 0; }
+  #players-wanted-page span.username {
+    margin-left: 0; }
+
+  #forum-page img#dialog-boxes {
+    margin-top: 15px; }
 
   .youtube-links a:not(.first-link) {
     padding-left: 0 !important; }
@@ -5480,6 +5486,10 @@ footer {
 
   #project-details-container h4 {
     font-size: 12px; } }
+@media only screen and (max-width: 459px) {
+  button.post-new-topic {
+    margin-left: 25px !important;
+    margin-top: 0 !important; } }
 @media only screen and (max-width: 417px) {
   h3.select-song-heading {
     font-size: 15px; }
@@ -5503,6 +5513,11 @@ footer {
     font-size: 12px; }
   section#technology a, section#backstage a, section.music-ed a, section.contests-and-auditions a {
     font-size: 10px; }
+
+  #forum-page .table-scroll-x-axis {
+    margin-left: 15px;
+    padding-left: 0;
+    width: 89%; }
 
   section.username-and-number-of-songs h4, section.username-and-number-of-songs h5 {
     margin-left: 22px !important; }

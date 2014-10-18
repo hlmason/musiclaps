@@ -63,14 +63,14 @@
 				 	<div id="karaokeSongsWantedContainer">
 						<section class="col-xs-10">
 							<h3>Karaoke Songs Wanted</h3>
-							<button class="postNewRequest" type="button">Post New Request</button>
+							<button class="post-new-request postNewRequest" type="button">Post New Request</button>
 						</section>
 					</div>
 
 					<div id="bandMembersWantedContainer">
 						<section class="col-xs-10">
 							<h3>Band Members Wanted</h3>
-							<button class="postNewRequest" type="button">Post New Request</button>
+							<button class="post-new-request postNewRequest" type="button">Post New Request</button>
 
 							<div class="table-scroll-x-axis">
 								<table><!-- Hard-coded placeholder -->
@@ -100,28 +100,28 @@
 					<div id="arrangersWantedContainer">
 						<section class="col-xs-10">
 							<h3>Arrangers Wanted</h3>
-							<button class="postNewRequest" type="button">Post New Request</button>
+							<button class="post-new-request postNewRequest" type="button">Post New Request</button>
 						</section>
 					</div>
 
 					<div id="lyricWritersWantedContainer">
 						<section class="col-xs-10">
 							<h3>Lyric Writers Wanted</h3>
-							<button class="postNewRequest" type="button">Post New Request</button>
+							<button class="post-new-request postNewRequest" type="button">Post New Request</button>
 						</section>
 					</div>
 
 					<div id="composersWantedContainer">
 						<section class="col-xs-10">
 							<h3>Composers Wanted</h3>
-							<button class="postNewRequest" type="button">Post New Request</button>
+							<button class="post-new-request postNewRequest" type="button">Post New Request</button>
 						</section>
 					</div>
 
 					<div id="othersWantedContainer">
 						<section class="col-xs-10">
 							<h3>Others Wanted</h3>
-							<button class="postNewRequest" type="button">Post New Request</button>
+							<button class="post-new-request postNewRequest" type="button">Post New Request</button>
 
 							<div class="table-scroll-x-axis">
 								<table><!-- Hard-coded placeholder -->

@@ -13,7 +13,7 @@
 
 				<div class="row col-xs-12">
 					<img id="dialog-boxes" src="<?php echo BASE_URL; ?>assets/images/forum-pg/dialog-boxes.png" alt="Three dialog boxes">
-					<h3>Talk with Members</h3>
+					<h3 id="musiclaps-forum">Musiclaps Forum</h3>
 					<button class="post-new-topic" id="postNewTopic" type="button">Post New Topic</button>
 				</div>
 
