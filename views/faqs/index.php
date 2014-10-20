@@ -65,7 +65,7 @@
 		       	<h3>9. How does Musiclaps address song copyrights?</h3>
 		       		<p>	
 			       		For original songs, the project owner can select a traditional copyright or Creative Commons license.  
-			       		If the project owner specifies that the song is a cover, or if a copyright type is not selected, the project will automatically be classified as a cover.  
+			       		If the project owner specifies that the song is a cover, or if a copyright type is not selected, the project is automatically classified as a cover.  
 			       		Please only select a copyright type if your project is using an original song!<br>
 			       		<strong>Note</strong>: Once saved for a particular project, the copyright type cannot be changed.
 			       	</p>
@@ -86,7 +86,7 @@
 
        			<h3>12. What is "Requesting Collab"?</h3>
        				<p>
-	       				Requesting Collab means that the project owner requests specific instrumentation.  
+	       				Requesting Collab means that the project owner is requesting specific instrumentation.  
 	       				Members participate by responding to the project owner's request.  
 	       				Once the member has recorded and uploaded the requested part, the project owner is automatically notified.<br><br>
 
@@ -161,8 +161,7 @@
 				        A new group displays and the participating members are added and notified.  
 				        Only participating/listed members are able to listen to and participate in the group song, and only the project owner is allowed to add or change the group information.<br><br> 
 				        
-				        Once the collaboration is finished and the project owner changes the status to something other than "Group", the group will end and
-				        be removed from the list.
+				        Once the collaboration is finished and the project owner changes the status to something other than "Group", the group ends and is removed from the list.
 		       		</p>
 
 		       	<h3>22. What is the “Favorites” page?</h3>
