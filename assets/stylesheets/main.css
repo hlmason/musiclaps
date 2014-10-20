@@ -4384,7 +4384,7 @@ section#lyrics-container-header {
   border-bottom: 1px solid #cecece;
   border-left: 1px solid #cecece;
   border-right: 1px solid #cecece; }
-  #lyrics-container-form input#save_lyrics {
+  #lyrics-container-form input#save-lyrics {
     -moz-border-radius: 2px;
     border-radius: 2px;
     background-color: #38aaff;
@@ -4392,7 +4392,7 @@ section#lyrics-container-header {
     padding: 5px 10px;
     color: white;
     width: 100%; }
-    #lyrics-container-form input#save_lyrics:hover, #lyrics-container-form input#save_lyrics:focus {
+    #lyrics-container-form input#save-lyrics:hover, #lyrics-container-form input#save-lyrics:focus {
       background-color: #45b7ff; }
 
 .collaborators-container label#collab-label {
@@ -4439,7 +4439,7 @@ section#lyrics-container-header {
       margin-left: 2px; }
     #youtube-settings div:first-child label#new-youtube-connection-label {
       margin-right: 10px; }
-    #youtube-settings div:first-child input#edit_youtube_connection {
+    #youtube-settings div:first-child input.edit-youtube-connection {
       margin-left: 10px; }
   #youtube-settings label#youtube-id-label {
     margin-bottom: 2px;
@@ -4453,16 +4453,16 @@ section#lyrics-container-header {
     padding-top: 3px;
     width: 100%;
     margin-bottom: 5px; }
-  #youtube-settings input#view_youtube_vid, #youtube-settings input#link-to-project {
+  #youtube-settings input#view-youtube-vid, #youtube-settings input#link-to-project {
     -moz-border-radius: 5px;
     border-radius: 5px;
     font-size: 12px;
     width: 100%; }
-  #youtube-settings input#view_youtube_vid {
+  #youtube-settings input#view-youtube-vid {
     background-color: #e7e7e7;
     border: 1px solid #cecece;
     padding: 3px 10px; }
-    #youtube-settings input#view_youtube_vid:hover, #youtube-settings input#view_youtube_vid:focus {
+    #youtube-settings input#view-youtube-vid:hover, #youtube-settings input#view-youtube-vid:focus {
       background-color: #d9d9d9; }
   #youtube-settings input#link-to-project {
     background-color: #38aaff;
@@ -4489,7 +4489,7 @@ section#lyrics-container-header {
   margin-left: 1px; }
 .youtube-page-form label#name-label {
   margin-left: 25px; }
-.youtube-page-form input#save_name, .youtube-page-form input#edit_name {
+.youtube-page-form input#save-name, .youtube-page-form input#edit-name {
   -moz-border-radius: 10px;
   border-radius: 10px;
   background-color: #38aaff;
@@ -4497,7 +4497,7 @@ section#lyrics-container-header {
   padding: 3px 10px;
   color: white;
   font-size: 12px; }
-  .youtube-page-form input#save_name:hover, .youtube-page-form input#save_name:focus, .youtube-page-form input#edit_name:hover, .youtube-page-form input#edit_name:focus {
+  .youtube-page-form input#save-name:hover, .youtube-page-form input#save-name:focus, .youtube-page-form input#edit-name:hover, .youtube-page-form input#edit-name:focus {
     background-color: #45b7ff; }
 .youtube-page-form .xs {
   display: none; }
@@ -5437,7 +5437,7 @@ footer {
     margin-top: 10px; }
   .youtube-page-form select, .youtube-page-form input.name {
     width: 100%; }
-  .youtube-page-form input#save_name, .youtube-page-form input#edit_name {
+  .youtube-page-form input#save-name, .youtube-page-form input#edit-name {
     margin-top: 10px; }
   .youtube-page-form .sm {
     display: none; }

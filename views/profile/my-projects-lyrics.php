@@ -81,7 +81,7 @@
 									<label for="lyrics">Lyrics</label>
 									<textarea id="lyrics" name="lyrics"></textarea>
 								</div>
-								<input id="save_lyrics" type="submit" name="" value="Save">
+								<input id="save-lyrics" type="submit" name="" value="Save">
 							</div>
 						</form>
 					</div>

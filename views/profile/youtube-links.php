@@ -24,10 +24,10 @@
 								<div id="youtube-settings">
 									<form action="<?php echo BASE_URL; ?>controllers/profile/youtube-controller.php" method="post">
 										<div>
-											<input id="new_youtube_connection" type="radio" name="youtube_connection" value="new">
+											<input class="new-youtube-connection" id="new_youtube_connection" type="radio" name="youtube_connection" value="new">
 											<label id="new-youtube-connection-label" for="new_youtube_connection">New</label>
 										 	
-										 	<input id="edit_youtube_connection" type="radio" name="youtube_connection" value="edit">
+										 	<input class="edit-youtube-connection" id="edit_youtube_connection" type="radio" name="youtube_connection" value="edit">
 										 	<label for="edit_youtube_connection">Edit</label>
 										</div>
 
@@ -37,7 +37,7 @@
 											<input class="youtube-id" id="youtube_id" type="text" name="uid">
 										</div>
 										
-										<input id="view_youtube_vid" type="submit" value="View Youtube Video">
+										<input id="view-youtube-vid" type="submit" name="" value="View Youtube Video">
 										
 										<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="YouTube video image"><!-- Hard-coded placeholder -->
 										
@@ -63,7 +63,7 @@
 									<label id="name-label" for="name_sm">Name</label>
 									<input class="name" id="name_sm" type="text" name="">
 
-									<input id="save_name" type="submit" name="" value="Save">
+									<input id="save-name" type="submit" name="" value="Save">
 								</div>
 								
 								<div class="xs"><!-- Only visible at viewport widths <= 580px -->
@@ -78,7 +78,7 @@
 										<label id="name-label" for="name_xs">Name</label>
 										<input class="name" id="name_xs" type="text" name="">
 
-										<input id="save_name" type="submit" name="" value="Save">
+										<input id="save-name" type="submit" name="" value="Save">
 									</div>
 								</div>
 							</form>
@@ -91,7 +91,7 @@
 									<option value="sound">$Project Title</option><!-- Hard-coded placeholder -->
 								</select>
 
-								<input id="edit_name" type="submit" value="Edit">
+								<input id="edit-name" type="submit" value="Edit">
 							</form>
 						</div>
 					

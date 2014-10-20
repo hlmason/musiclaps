@@ -1921,7 +1921,7 @@ section#lyrics-container-header { // "Display Lyrics" and "Select Project"
 	border-bottom: $nav-border;
 	border-left: $nav-border;
 	border-right: $nav-border;
-	input#save_lyrics {
+	input#save-lyrics {
 		@include submit-button-blue-wide(2px);
 	}
 }
@@ -1986,7 +1986,7 @@ section#lyrics-container-header { // "Display Lyrics" and "Select Project"
 		label#new-youtube-connection-label {
 			margin-right: 10px;
 		}
-		input#edit_youtube_connection {
+		input.edit-youtube-connection {
 			margin-left: 10px;
 		}
 	}
@@ -1997,12 +1997,12 @@ section#lyrics-container-header { // "Display Lyrics" and "Select Project"
 		@include form-fields-input(100%);
 		margin-bottom: 5px;
 	}
-	input#view_youtube_vid, input#link-to-project {
+	input#view-youtube-vid, input#link-to-project {
 		@include border-radius(5px);
 		font-size: 12px;
 		width: 100%;
 	}
-	input#view_youtube_vid {
+	input#view-youtube-vid {
 		@include submit-button($musiclaps-light-gray, $nav-border, 3px 10px, #d9d9d9);
 	}
 	input#link-to-project {
@@ -2026,7 +2026,7 @@ section#lyrics-container-header { // "Display Lyrics" and "Select Project"
 	label#name-label {
 		margin-left: 25px;
 	}
-	input#save_name, input#edit_name {
+	input#save-name, input#edit-name {
 		@include border-radius(10px);
 		@include submit-button($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
 		color: white;
@@ -3038,7 +3038,7 @@ footer {
 	.youtube-page-form {
 		label { @include form-fields-label(10px); }
 		select, input.name { width: 100%; }
-		input#save_name, input#edit_name { margin-top: 10px; }
+		input#save-name, input#edit-name { margin-top: 10px; }
 		.sm { display: none; }
 		.xs {
 			display: block;
