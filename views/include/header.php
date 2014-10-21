@@ -121,6 +121,8 @@
 									if ($page_title == "Players Wanted") { 
 										echo "active"; 
 									} else if ($page_title == "Players Available") { 
+										echo "active";
+									} else if ($page_title == "Forum") { 
 										echo "active"; 
 									} else if ($page_title == "Collab Cafe") { 
 										echo "active";
@@ -148,6 +150,14 @@
 								</li>
 								<li role="presentation">
 									<a class="
+										<?php if ($page_title == "Forum") { 
+												echo "active"; 
+											} 
+										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/forum/index.php">Forum
+									</a>
+								</li>
+								<li role="presentation">
+									<a class="
 										<?php 
 											if ($page_title == "Collab Cafe") { 
 												echo "active"; 
@@ -164,8 +174,6 @@
 								<?php 
 									if ($page_title == "Technology") { 
 										echo "active";
-									} else if ($page_title == "Forum") { 
-										echo "active"; 
 									} else if ($page_title == "Company") { 
 										echo "active"; 
 									} else if ($page_title == "Contact") { 
@@ -179,14 +187,6 @@
 										<?php if ($page_title == "Technology") { 
 											echo "active"; } 
 										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/under-construction/">Technology
-									</a>
-								</li>
-								<li role="presentation">
-									<a class="
-										<?php if ($page_title == "Forum") { 
-												echo "active"; 
-											} 
-										?>" role="menuitem" tabindex="-1" href="<?php echo BASE_URL; ?>views/forum/index.php">Forum
 									</a>
 								</li>
 								<li role="presentation">
