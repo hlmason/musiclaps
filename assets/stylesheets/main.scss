@@ -2701,6 +2701,7 @@ footer {
 					}
 				} 
 			}
+			&#flags a { margin-left: 5px; } // Overwrites the above ("&.navbar a:not(.navbar-brand) { margin-left: 10px; }")
 		}
 		// input.search, .glyphicon-search, ul#flags {
 		// 	position: absolute;
@@ -2873,7 +2874,7 @@ footer {
 			@include submit-button($musiclaps-light-gray, $nav-border, 3px 6px, #d9d9d9);
 			@include border-bottom-right-radius(5px);
 			@include border-top-right-radius(5px);
-			margin-left: 2px;
+			margin-left: 1px;
 		}
 	}
 	#musical-notes-map { // Makes map static on smaller devices - currently only working in Opera
@@ -3128,7 +3129,6 @@ footer {
 
 @media only screen and (max-width: 417px) {
 // Breakpoint of "Select a song" heading (Live Player Page)
-	// h1.landing-page { font-size: 18px; } // "Online Music Collaboration Made Simple"
 	h3.select-song-heading { font-size: 15px; }
 	#project-details-container h4 { font-size: 10px; }
 	section.profile-right.profile-page.project-details-page .row { margin-left: 15px; }
@@ -3138,6 +3138,15 @@ footer {
 		margin-left: 0 !important; 
 	}
 	#genre-form-projects { width: 100%; }
+}
+
+@media only screen and (max-width: 400px) {
+// Portrait mode of Samsung Galaxy Note; padding affects iPhone 3GS, 4, and 5
+	h1.landing-page {  // "Online Music Collaboration Made Simple"
+		font-size: 30px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
 }
 
 @media only screen and (max-width: 399px) {
@@ -3203,4 +3212,11 @@ footer {
 		}
 	}
 	.project-info-bar.groups-page select.project-type { margin-left: 10px; }
+}
+
+@media only screen and (max-width: 320px) {
+// Portrait mode of iPhone 3GS, 4, and 5
+	h1.landing-page {  // "Online Music Collaboration Made Simple"
+		font-size: 24px;
+	}
 }

@@ -5064,6 +5064,8 @@ footer {
       padding-bottom: 0 !important; }
       nav ul .dropdown ul.dropdown-menu li a:last-child {
         margin-bottom: 0; }
+  nav ul#flags a {
+    margin-left: 5px; }
   nav form.search {
     display: none; }
   nav .glyphicon-search {
@@ -5231,7 +5233,7 @@ footer {
       border-bottom-right-radius: 5px;
       -moz-border-top-right-radius: 5px;
       border-top-right-radius: 5px;
-      margin-left: 2px; }
+      margin-left: 1px; }
       #sn-login-modal-body-xs input:hover, #sn-login-modal-body-xs input:focus {
         background-color: #d9d9d9; }
 
@@ -5515,6 +5517,11 @@ footer {
 
   #genre-form-projects {
     width: 100%; } }
+@media only screen and (max-width: 400px) {
+  h1.landing-page {
+    font-size: 30px;
+    padding-left: 5px;
+    padding-right: 5px; } }
 @media only screen and (max-width: 399px) {
   section#technology h2, section#backstage h2, section.music-ed h2, section.contests-and-auditions h2 {
     font-size: 20px; }
@@ -5587,3 +5594,6 @@ footer {
 
   .project-info-bar.groups-page select.project-type {
     margin-left: 10px; } }
+@media only screen and (max-width: 320px) {
+  h1.landing-page {
+    font-size: 24px; } }
