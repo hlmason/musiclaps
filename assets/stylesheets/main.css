@@ -2941,11 +2941,11 @@ span.normal {
 .musiclaps-blue {
   color: #38aaff !important; }
 
-#registration-full-modal-body .glyphicon-question-sign, #registration-full-modal-body .password-req, #registration-full-modal-body .select-instrument-explanation, #registration-full-modal-body .lyrics-explanation, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .glyphicon-question-sign, #registration-express-modal-body .password-req, #registration-express-modal-body .select-instrument-explanation, #registration-express-modal-body .lyrics-explanation, #registration-express-modal-body .youtube-id-req, #select-instruments-container .glyphicon-question-sign, #select-instruments-container .password-req, #select-instruments-container .select-instrument-explanation, #select-instruments-container .lyrics-explanation, #select-instruments-container .youtube-id-req, #lyrics-settings-sm .glyphicon-question-sign, #lyrics-settings-sm .password-req, #lyrics-settings-sm .select-instrument-explanation, #lyrics-settings-sm .lyrics-explanation, #lyrics-settings-sm .youtube-id-req, #lyrics-settings-xs .glyphicon-question-sign, #lyrics-settings-xs .password-req, #lyrics-settings-xs .select-instrument-explanation, #lyrics-settings-xs .lyrics-explanation, #lyrics-settings-xs .youtube-id-req, #youtube-settings .glyphicon-question-sign, #youtube-settings .password-req, #youtube-settings .select-instrument-explanation, #youtube-settings .lyrics-explanation, #youtube-settings .youtube-id-req {
+#registration-full-modal-body .glyphicon-question-sign, #registration-full-modal-body .password-req, #registration-full-modal-body .select-part-explanation, #registration-full-modal-body .lyrics-explanation, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .glyphicon-question-sign, #registration-express-modal-body .password-req, #registration-express-modal-body .select-part-explanation, #registration-express-modal-body .lyrics-explanation, #registration-express-modal-body .youtube-id-req, #select-part-container .glyphicon-question-sign, #select-part-container .password-req, #select-part-container .select-part-explanation, #select-part-container .lyrics-explanation, #select-part-container .youtube-id-req, #lyrics-settings-sm .glyphicon-question-sign, #lyrics-settings-sm .password-req, #lyrics-settings-sm .select-part-explanation, #lyrics-settings-sm .lyrics-explanation, #lyrics-settings-sm .youtube-id-req, #lyrics-settings-xs .glyphicon-question-sign, #lyrics-settings-xs .password-req, #lyrics-settings-xs .select-part-explanation, #lyrics-settings-xs .lyrics-explanation, #lyrics-settings-xs .youtube-id-req, #youtube-settings .glyphicon-question-sign, #youtube-settings .password-req, #youtube-settings .select-part-explanation, #youtube-settings .lyrics-explanation, #youtube-settings .youtube-id-req {
   color: #38aaff !important; }
-#registration-full-modal-body .password-req, #registration-full-modal-body .select-instrument-explanation, #registration-full-modal-body .lyrics-explanation, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .password-req, #registration-express-modal-body .select-instrument-explanation, #registration-express-modal-body .lyrics-explanation, #registration-express-modal-body .youtube-id-req, #select-instruments-container .password-req, #select-instruments-container .select-instrument-explanation, #select-instruments-container .lyrics-explanation, #select-instruments-container .youtube-id-req, #lyrics-settings-sm .password-req, #lyrics-settings-sm .select-instrument-explanation, #lyrics-settings-sm .lyrics-explanation, #lyrics-settings-sm .youtube-id-req, #lyrics-settings-xs .password-req, #lyrics-settings-xs .select-instrument-explanation, #lyrics-settings-xs .lyrics-explanation, #lyrics-settings-xs .youtube-id-req, #youtube-settings .password-req, #youtube-settings .select-instrument-explanation, #youtube-settings .lyrics-explanation, #youtube-settings .youtube-id-req {
+#registration-full-modal-body .password-req, #registration-full-modal-body .select-part-explanation, #registration-full-modal-body .lyrics-explanation, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .password-req, #registration-express-modal-body .select-part-explanation, #registration-express-modal-body .lyrics-explanation, #registration-express-modal-body .youtube-id-req, #select-part-container .password-req, #select-part-container .select-part-explanation, #select-part-container .lyrics-explanation, #select-part-container .youtube-id-req, #lyrics-settings-sm .password-req, #lyrics-settings-sm .select-part-explanation, #lyrics-settings-sm .lyrics-explanation, #lyrics-settings-sm .youtube-id-req, #lyrics-settings-xs .password-req, #lyrics-settings-xs .select-part-explanation, #lyrics-settings-xs .lyrics-explanation, #lyrics-settings-xs .youtube-id-req, #youtube-settings .password-req, #youtube-settings .select-part-explanation, #youtube-settings .lyrics-explanation, #youtube-settings .youtube-id-req {
   font-size: 12px; }
-#registration-full-modal-body .password-req, #registration-full-modal-body .select-instrument-explanation, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .password-req, #registration-express-modal-body .select-instrument-explanation, #registration-express-modal-body .youtube-id-req, #select-instruments-container .password-req, #select-instruments-container .select-instrument-explanation, #select-instruments-container .youtube-id-req, #lyrics-settings-sm .password-req, #lyrics-settings-sm .select-instrument-explanation, #lyrics-settings-sm .youtube-id-req, #lyrics-settings-xs .password-req, #lyrics-settings-xs .select-instrument-explanation, #lyrics-settings-xs .youtube-id-req, #youtube-settings .password-req, #youtube-settings .select-instrument-explanation, #youtube-settings .youtube-id-req {
+#registration-full-modal-body .password-req, #registration-full-modal-body .select-part-explanation, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .password-req, #registration-express-modal-body .select-part-explanation, #registration-express-modal-body .youtube-id-req, #select-part-container .password-req, #select-part-container .select-part-explanation, #select-part-container .youtube-id-req, #lyrics-settings-sm .password-req, #lyrics-settings-sm .select-part-explanation, #lyrics-settings-sm .youtube-id-req, #lyrics-settings-xs .password-req, #lyrics-settings-xs .select-part-explanation, #lyrics-settings-xs .youtube-id-req, #youtube-settings .password-req, #youtube-settings .select-part-explanation, #youtube-settings .youtube-id-req {
   margin-bottom: 2px;
   margin-left: 2px; }
 
@@ -3917,7 +3917,7 @@ input#change-password {
 #genre-form-profile, #skills, #genre-form-projects {
   height: 106px; }
 
-#genre-form-profile, #skills, select.instruments, #genre-form-projects {
+#genre-form-profile, #skills, select.parts, #genre-form-projects {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -3928,14 +3928,14 @@ input#change-password {
   overflow-y: scroll;
   padding-top: 2px;
   width: 261px; }
-  #genre-form-profile span, #skills span, select.instruments span, #genre-form-projects span {
+  #genre-form-profile span, #skills span, select.parts span, #genre-form-projects span {
     display: block; }
 
 #choose-avatar-container img {
   height: 120px;
   width: 120px; }
 
-select.instruments {
+select.parts {
   padding-left: 0; }
 
 #recording-player, section.upload-mp3-container {
@@ -3999,12 +3999,14 @@ section.upload-mp3-container input.tempo {
 section.upload-mp3-container section.add-part-to-group-container h4 {
   color: red;
   margin-bottom: 5px; }
-section.upload-mp3-container label#project-title-label, section.upload-mp3-container label#tempo-label, section.upload-mp3-container label#select-project-label, section.upload-mp3-container section.add-part-to-group-container h4, section.upload-mp3-container label#instruments-label, section.upload-mp3-container label#comment-new-project-page-label {
+section.upload-mp3-container label#project-title-label, section.upload-mp3-container label#tempo-label, section.upload-mp3-container label#select-project-label, section.upload-mp3-container section.add-part-to-group-container h4, section.upload-mp3-container label#parts-label, section.upload-mp3-container label#comment-new-project-page-label {
   margin-top: 20px; }
-section.upload-mp3-container #select-instruments-container label {
+section.upload-mp3-container #select-part-container label {
   margin-bottom: 2px;
   margin-right: 3px; }
-section.upload-mp3-container select.instruments {
+section.upload-mp3-container #select-part-container img.instrument {
+  margin-top: 55px; }
+section.upload-mp3-container select.parts {
   display: block; }
 section.upload-mp3-container section#choose-project-img-container input, section.upload-mp3-container section#choose-mp3-file-container input {
   margin-top: 5px; }
@@ -5315,6 +5317,8 @@ footer {
     display: block; }
     #new-project-page.row.col-xs-12.col-md-9 li:not(.first-list-item) {
       padding-left: 5px; }
+  #new-project-page.row.col-xs-12.col-md-9 img.instrument {
+    margin-top: 0; }
   #new-project-page.row.col-xs-12.col-md-9 section#choose-project-img-container h5, #new-project-page.row.col-xs-12.col-md-9 section#choose-mp3-file-container h5 {
     font-weight: normal; }
 
