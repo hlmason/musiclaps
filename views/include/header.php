@@ -36,17 +36,17 @@
 	<nav class="navbar navbar-default">
 		<div class="container">
 			<div class="navbar-header"><!-- For Firefox and IE -->
-	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <button id="navbarToggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
 	            </button>
-	            <h4 data-toggle="collapse" data-target=".navbar-collapse">Menu</h4>
+	            <h4 id="menuJS" data-toggle="collapse" data-target=".navbar-collapse">Menu</h4>
 				<a class="navbar-brand" href="<?php echo BASE_URL; ?>">
 					<img src="<?php echo BASE_URL; ?>assets/images/header-and-footer/musiclaps-logo.png" alt="Musiclaps logo">
 				</a>
 			</div>
-			<div class="collapse navbar-collapse">
+			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="nav navbar-nav navbar-left">
 					<li>
 						<div class="dropdown">

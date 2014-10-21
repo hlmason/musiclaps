@@ -1,12 +1,42 @@
 $(document).ready(function() {
 
+	/* ================================================
+	    User icon / User Menu (mobile viewport widths)
+	================================================ */
+	var userMenu = $('ul.userMenu');
+	var h4UserMenu = $('h4.userMenu');
+
+	$('.glyphiconUser').on('click', function() { // Does the same thing as function below
+		if ( userMenu.is(':hidden') ) {
+			userMenu.slideDown('fast');
+			h4UserMenu.addClass('menu-link-active-js');
+		} else {
+			userMenu.slideUp('fast');
+			h4UserMenu.removeClass('menu-link-active-js');
+		}
+	});
+	
+	h4UserMenu.on('click', function() { // Does the same thing as function above
+		if ( userMenu.is(':hidden') ) {
+			userMenu.slideDown('fast');
+			h4UserMenu.addClass('menu-link-active-js');
+		} else {
+			userMenu.slideUp('fast');
+			h4UserMenu.removeClass('menu-link-active-js');
+		}
+	});
+
+	$(window).resize(function() { // Makes menu appear when window is made larger than 991px after ul.menu has been slided up 
+	  	if ($(window).width() > 991) {
+	     	userMenu.show();
+	  	}
+	});
+
 	/* ===================================
 	    New Project
 	=================================== */
 	var newProjectDropdownMenu = $('ul#newProjectDropdownMenu');
 	var newProjectCaret = $('#newProjectCaret');
-
-	var userMenu = $('ul.userMenu');
 
 
 	// $('a#newProjectLink').mouseenter (function() {
@@ -110,31 +140,6 @@ $(document).ready(function() {
 	});
 	$('a#collaboratorsLink').on('click', function() {
 		window.location.href = 'collaborations-collaborators.php';
-	});
-
-	/* ===================================
-	    User icon / User Menu
-	=================================== */
-	$('.glyphiconUser').on('click', function() { // Does the same thing as function below
-		if ( userMenu.is(':hidden') ) {
-			userMenu.slideDown('fast');
-		} else {
-			userMenu.slideUp('fast');
-		}
-	});
-	
-	$('h4.userMenu').on('click', function() { // Does the same thing as function above
-		if ( userMenu.is(':hidden') ) {
-			userMenu.slideDown('fast');
-		} else {
-			userMenu.slideUp('fast');
-		}
-	});
-
-	$(window).resize(function() { // Makes menu appear when window is made larger than 991px after ul.menu has been slided up 
-	  	if ($(window).width() > 991) {
-	     	userMenu.show();
-	  	}
 	});
 
 });

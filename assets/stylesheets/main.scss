@@ -183,6 +183,10 @@ a:hover {
 	ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"; // IE8
 }
 
+.menu-link-active-js {
+	color: #1F91E6;
+}
+
 form {
 	label#birth-date-label-modal, label#gender-label, 
 	label#birth-date-label-profile, label#collab-label { // Full registration modal, Profile page, and Collaborators page 
@@ -328,7 +332,10 @@ nav {
 		h4 { // Collapsed main menu
 			float: right;
 			margin-right: 10px;
-			margin-top: 30px; 
+			margin-top: 30px;
+			&:hover {
+				color: #1F91E6;
+			} 
 		}
 		img { // Musiclaps logo
 			height: 45px;
@@ -465,9 +472,9 @@ nav {
 	}
 }
 
-	/* ==========================================
+	/* ===========================================
 	    Nav below top nav / collapsed "User Menu"
-	========================================== */
+	=========================================== */
 	nav .glyphicon-user {
 		@include border-radius(4px);
 		color: #888;
@@ -482,6 +489,9 @@ nav {
 		margin-bottom: 0;
 		margin-left: 5px;
 		margin-top: 10px;
+		&:hover {
+			color: #1F91E6;
+		}
 	}
 
 	ul.user-menu li {
@@ -2515,10 +2525,8 @@ section.profile-right.profile-page { // Profile Page only
 	}
 }
 
-section.profile-right.profile-page.project-details-page {
-	.row {
-		margin-left: 10px; // Overwrites "margin-left: 15px"
-	}
+section.profile-right.profile-page.project-details-page .row {
+	margin-left: 10px; // Overwrites "margin-left: 15px"
 }
 
 // section.profile-right.profile-page.public-profile-page {
@@ -3123,6 +3131,7 @@ footer {
 	// h1.landing-page { font-size: 18px; } // "Online Music Collaboration Made Simple"
 	h3.select-song-heading { font-size: 15px; }
 	#project-details-container h4 { font-size: 10px; }
+	section.profile-right.profile-page.project-details-page .row { margin-left: 15px; }
 	h2.user-id, h4.edit-profile, h4.save-profile { margin-left: 10px; }
 	input.save#save-genre { 
 		float: right; 

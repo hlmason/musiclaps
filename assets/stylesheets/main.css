@@ -2915,6 +2915,9 @@ a:hover {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"; }
 
+.menu-link-active-js {
+  color: #1F91E6; }
+
 form label#birth-date-label-modal, form label#gender-label,
 form label#birth-date-label-profile, form label#collab-label {
   margin-right: 2px; }
@@ -3018,6 +3021,8 @@ nav .navbar-header {
     float: right;
     margin-right: 10px;
     margin-top: 30px; }
+    nav .navbar-header h4:hover {
+      color: #1F91E6; }
   nav .navbar-header img {
     height: 45px;
     width: 155px; }
@@ -3123,9 +3128,9 @@ nav ul.navbar-right li#welcome-user-sm {
 nav ul.navbar-right li#welcome-user-xs {
   display: none; }
 
-/* ==========================================
+/* ===========================================
     Nav below top nav / collapsed "User Menu"
-========================================== */
+=========================================== */
 nav .glyphicon-user {
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -3139,6 +3144,8 @@ h4.user-menu {
   margin-bottom: 0;
   margin-left: 5px;
   margin-top: 10px; }
+  h4.user-menu:hover {
+    color: #1F91E6; }
 
 ul.user-menu li:not(.first-list-item) {
   padding-left: 2px; }
@@ -5495,6 +5502,9 @@ footer {
 
   #project-details-container h4 {
     font-size: 10px; }
+
+  section.profile-right.profile-page.project-details-page .row {
+    margin-left: 15px; }
 
   h2.user-id, h4.edit-profile, h4.save-profile {
     margin-left: 10px; }
