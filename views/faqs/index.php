@@ -105,7 +105,7 @@
 		       	<h3>14. Where do I go to edit my project?</h3>
 	       			<ul>
 	       				<li>-Click on <span class="bold">My Projects</span> (user menu)</li>
-	       				<li>-Select the appropriate status from the dropdown</li>
+	       				<li>-Select the appropriate status (<span class="bold">"In Progress/Private"</span>, <span class="bold">"Public"</span>, <span class="bold">"Group"</span>, or <span class="bold">"Audition"</span>) from the dropdown</li>
 	       				<li>-Click on the rectangular project tile</li>
 	       			</ul>
 
@@ -184,7 +184,7 @@
 
 			    <h3>25. Can I use my computer‘s built-in mic for recording?</h3>
 		       		<p>	
-			       		It’s possible but not recommended since it will cause overlapping sounds.
+			       		It’s possible but not recommended since it will create feedback.
 			       	</p>
 
 			    <h3>26. It’s acting a little weird.  What should I do?</h3>
