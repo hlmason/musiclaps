@@ -21,15 +21,15 @@ function musicianSilhouetteRandomizer() {
 }
 
 
-// Makes logo lighter if you hover over it
+// // Makes logo lighter if you hover over it
 
 // $(document).ready(function() {
 
 // 	var navbarBrandImg = $('.navbar-brand-img-js');
 
-// 	$(navbarBrandImg).hover(function() 
+// 	navbarBrandImg.hover(function() 
 // 	{	
-// 		if (navbarBrandImg.attr('src') == 'assets/images/header-and-footer/musiclaps-logo-original-lighter.png')
+// 		if (navbarBrandImg.attr('src') === 'assets/images/header-and-footer/musiclaps-logo-original-lighter.png')
 // 		{
 // 			navbarBrandImg.attr('src', 'assets/images/header-and-footer/musiclaps-logo-original-darker.png');
 // 		} else {

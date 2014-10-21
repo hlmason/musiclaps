@@ -57,7 +57,7 @@ $(document).ready(function() {
 
 		$.post(registrationForm.attr('action'), registrationForm.serialize(), function(data) {
 			console.log(data);
-			if (data['error'] == true) {
+			if (data['error'] === true) {
 				registrationInputField.css('border', '2px solid #38AAFF');
 				registrationSelectOption.css('border', '2px solid #38AAFF');
 				validationErrorMessages.html(data['html']);

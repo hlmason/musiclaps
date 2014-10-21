@@ -21,7 +21,7 @@
 							</section>
 
 							<div class="col-xs-12 col-md-5">
-								<div id="youtube-settings">
+								<div id="youtube-links-settings">
 									<form action="<?php echo BASE_URL; ?>controllers/profile/youtube-controller.php" method="post">
 										<div>
 											<input class="new-youtube-connection" id="new_youtube_connection" type="radio" name="youtube_connection" value="new">

@@ -16,7 +16,7 @@
 
 			<div class="row col-lg-10 col-lg-offset-1">				
 					
-				<div class="row col-xs-12 col-md-9 public-profile-b-page">
+				<div class="row col-xs-12 col-md-9 project-details-page">
 
 					<!-- Recording Player -->
 					<div class="row col-xs-12 live-player-container">
@@ -106,8 +106,8 @@
 					</section>
 
 				</div>
-				<div class="row col-xs-12 col-md-3 profile-right-container public-profile-b-page">
-					<section class="profile-right profile-page public-profile-b-page"><!-- views/profile/index.php does not contain the class name "public-profile-page" -->
+				<div class="row col-xs-12 col-md-3 profile-right-container project-details-page">
+					<section class="profile-right profile-page project-details-page"><!-- views/profile/index.php does not contain the class name "public-profile-page" -->
 						
 						<div class="row first-row">
 							<div class="col-xs-121">
