@@ -1,43 +1,11 @@
 $(document).ready(function() {
 
-	var newProjectDropdownMenu = $('ul#newProjectDropdownMenu');
-	var newProjectCaret = $('#newProjectCaret');
-
 	var newProject = $('section#newProject');
 	var addPart = $('section#addPart');
 	var selectPartExplanation = $('#selectPartExplanation');
 	var addPartToGroup = $('section#addPartToGroup');
 
 	var instrumentImg = $('img.instrumentJS');
-
-	// $('a#newProjectLink').mouseenter (function() {
-	// 	newProjectCaret.addClass('upside-down');
-	// 	newProjectDropdownMenu.show();
-	// });
-
-	$('a#newProjectLink').on('click', function() {
-		if ( newProjectDropdownMenu.is(':hidden') ) {
-			newProjectCaret.addClass('upside-down');
-			newProjectDropdownMenu.show();
-		} else {
-			newProjectCaret.removeClass('upside-down');
-			newProjectDropdownMenu.hide();
-		}		
-	});
-
-	newProjectDropdownMenu.mouseleave (function() { // Makes dropdown menu go away without having to click.  Note: not implemented for collapsed menu - poor UX
-		if ($(window).width() > 991) {
-			newProjectCaret.removeClass('upside-down');
-			newProjectDropdownMenu.hide();
-		}		
-	});
-	
-	$('a#recordingPlayerLink').on('click', function() {
-		window.location.href = 'new-project-recording-player.php';
-	});
-	$('a#uploadMP3Link').on('click', function() {
-		window.location.href = 'new-project-upload-mp3.php';
-	});
 
 
 	newProject.hide();
@@ -64,7 +32,6 @@ $(document).ready(function() {
 	$('#glyphiconQuestionSignPart').hover(function() {
 		selectPartExplanation.fadeIn('slow');
 	});
-
 
 	/* ================================================
 		// Sorry this code is so dumb.  TODO: Refactor

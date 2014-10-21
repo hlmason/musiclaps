@@ -4,83 +4,11 @@ $(document).ready(function() {
     	My Projects
 	=================================== */
 	var lyricsExplanation = $('.lyricsExplanation');
-	var myProjectsDropdownMenu = $('ul#myProjectsDropdownMenu');
-	var myProjectsCaret = $('#myProjectsCaret');
-
 
 	lyricsExplanation.hide();
 
-
-	$('a#myProjectsLink').on('click', function() {
-		if ( myProjectsDropdownMenu.is(':hidden') ) {
-			myProjectsCaret.addClass('upside-down');
-			myProjectsDropdownMenu.show();
-		} else {
-			myProjectsCaret.removeClass('upside-down');
-			myProjectsDropdownMenu.hide();
-		}		
-	});
-
-	myProjectsDropdownMenu.mouseleave (function() { // Makes dropdown menu go away without having to click.  Note: not implemented for collapsed menu - poor UX
-		if ($(window).width() > 991) {
-			myProjectsCaret.removeClass('upside-down');
-			myProjectsDropdownMenu.hide();
-		}	
-	});
-	
-	$('a#inProgressPrivateLink').on('click', function() {
-		window.location.href = 'my-projects-in-progress-private.php';
-	});
-	$('a#publicLink').on('click', function() {
-		window.location.href = 'my-projects-public.php';
-	});
-	$('a#groupLink').on('click', function() {
-		window.location.href = 'my-projects-group.php';
-	});
-	$('a#auditionLink').on('click', function() {
-		window.location.href = 'my-projects-audition.php';
-	});
-	$('a#lyricsLink').on('click', function() {
-		window.location.href = 'my-projects-lyrics.php';
-	});
-
-
 	$('.glyphiconQuestionSignLyrics').hover(function() {
 		lyricsExplanation.fadeIn('slow');
-	});
-
-	/* ===================================
-	    Collaborations
-	=================================== */
-	var collaborationsDropdownMenu = $('ul#collaborationsDropdownMenu');
-	var collaborationsCaret = $('#collaborationsCaret');
-
-	
-	$('a#collaborationsLink').on('click', function() {
-		if ( collaborationsDropdownMenu.is(':hidden') ) {
-			collaborationsCaret.addClass('upside-down');
-			collaborationsDropdownMenu.show();
-		} else {
-			collaborationsCaret.removeClass('upside-down');
-			collaborationsDropdownMenu.hide();
-		}		
-	});
-
-	collaborationsDropdownMenu.mouseleave (function() { // Makes dropdown menu go away without having to click.  Note: not implemented for collapsed menu - poor UX
-		if ($(window).width() > 991) {
-			collaborationsCaret.removeClass('upside-down');
-			collaborationsDropdownMenu.hide();
-		}	
-	});
-	
-	$('a#openCollabLink').on('click', function() {
-		window.location.href = 'collaborations-open-collab.php';
-	});
-	$('a#requestingCollabLink').on('click', function() {
-		window.location.href = 'collaborations-requesting-collab.php';
-	});
-	$('a#collaboratorsLink').on('click', function() {
-		window.location.href = 'collaborations-collaborators.php';
 	});
 
 	/* ====================================
