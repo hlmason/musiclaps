@@ -897,8 +897,11 @@ h1.landing-page {
 		&.music-ed img {
 			margin-top: 90px;
 		}
-		&.contests-and-auditions img {
-			margin-top: 140px;
+		&.contests-and-auditions {
+			padding-bottom: 0;
+			img {
+				margin-top: 140px;
+			}
 		}
 	}
 
@@ -2587,7 +2590,7 @@ h1.db-error-message {
 footer {
 	background-color: $musiclaps-light-gray !important;
 	border-top: $nav-border !important;
-	.navbar-brand {
+	a.navbar-brand {
 		color: $musiclaps-dark-gray !important;
 		font-size: 12px;
 		img { // Musiclaps logo
@@ -2595,14 +2598,17 @@ footer {
 			width: 50%;
 		}
 	}
-	.navbar-left li {
-		@include nav-border(#cecece);
-		margin-top: 13px;
-		a {
-			@include nav-link($musiclaps-dark-gray, 12px);
-			&:hover, &:focus {
-				color: $musiclaps-blue !important;
-			}
+	ul.navbar-left {
+		margin-left: 0 !important;
+		li {
+			@include nav-border(#cecece);
+			margin-top: 13px;
+			a {
+				@include nav-link($musiclaps-dark-gray, 14px);
+				&:hover, &:focus {
+					color: $musiclaps-blue !important;
+				}
+			}	
 		}
 	}
 	ul:last-child a {
@@ -2684,7 +2690,7 @@ footer {
 @media only screen and (max-width: 991px) {
 // Point at which Bootstrap's nav becomes uncollapsed (this is by default 767px but has been customized), point at which nav below top nav collapses into "User Menu", and breakpoint of social media icons on footer
 	nav {
-		&.navbar a:not(.navbar-brand) { margin-left: 10px; }
+		&.navbar a:not(a.navbar-brand) { margin-left: 10px; }
 		ul {
 			&.nav a { padding: 10px !important; }
 			&.navbar-left { 
@@ -2842,15 +2848,15 @@ footer {
 	#youtube-links-settings { margin-left: 0; }
 	section.projects-container.favorites-page:not(.first-listing) { margin-left: 15px; }
 	footer {
-		.navbar-brand { position: absolute; }
-		.navbar-left, .navbar-right { margin-top: 50px; }
-		.navbar-left { 
+		a.navbar-brand { position: absolute; }
+		ul.navbar-left, ul.navbar-right { margin-top: 50px; }
+		ul.navbar-left { 
 			float: left !important;
 			margin-left: 5px;
 			padding-bottom: 15px;
 			li { border-left: none; } // Removes border to the left of links
 		}
-		.navbar-right {
+		ul.navbar-right {
 			float: right !important;
 			text-align: right;
 		}
@@ -3154,7 +3160,6 @@ footer {
 		&#technology, &#backstage, &.music-ed, &.contests-and-auditions {
 			h2 { font-size: 20px; }
 			p { font-size: 12px; }
-			a { font-size: 10px; }
 		}
 	}
 	#forum-page .table-scroll-x-axis {
