@@ -35,7 +35,7 @@
 					</div>
 
 					<div id="agree-checkbox">
-						<input type="checkbox" name="tos" value="agree">&nbsp; I have read the Musiclaps <a href="<?php echo BASE_URL; ?>views/privacy/" target="blank">Privacy Policy</a> and agree to the Musiclaps <a href="<?php echo BASE_URL; ?>views/terms/" target="blank">Terms of Use</a>.
+						<input type="checkbox" name="tos" value="agree">&nbsp; I agree to the Musiclaps <a href="<?php echo BASE_URL; ?>views/terms/" target="blank">Terms of Use</a> and <a href="<?php echo BASE_URL; ?>views/privacy/" target="blank">Privacy Policy</a>.
 					</div>
 				</div>
 				
