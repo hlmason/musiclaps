@@ -914,6 +914,7 @@ h1.landing-page {
 =================================== */
 #live-player-container {
 	margin-left: 0;
+	padding-left: 0; // Centers Live Player on page
 	padding-right: 0; // Lines Live Player up with "Select a song" modal
 	text-align: center;
 }
@@ -3100,6 +3101,11 @@ footer {
 	section.create-new-group-container select { @include form-fields-input(50%); } // "Select Project"
 }
 
+@media only screen and (max-width: 569px) {
+// Landscape mode of Motorola Defy, Droid, Droid X, Milestone
+	img#cover-song { margin-top: 0 !important; }
+}
+
 @media only screen and (max-width: 496px) {
 // Breakpoint of "Post New Request" button ("Players Wanted" Page)
 	#players-wanted-page, #forum-page {
@@ -3236,23 +3242,43 @@ footer {
 	.project-info-bar.groups-page select.project-type { margin-left: 10px; }
 }
 
+@media only screen and (max-width: 375px) {
+// Portrait mode of iPhone 6
+	.public-project-info.type-of-collab-container {
+		h5 { 
+			margin-bottom: 0 !important; 
+			margin-top: 0 !important;
+		}
+		img#cover-song { margin-top: 12px !important; }
+	}
+	.share-to-social-networks-container img:not(.first-img) { margin-left: 12.5px; }
+}
+
+@media only screen and (max-width: 360px) {
+// Portrait mode of Blackberry Z30; Google Nexus 5; HTC One X, EVO LTE; HTC Sensation, Evo 3D; Nokia C5, C6, C7, N97, N8, X7; 
+// Samsung Galaxy Note 3; Samsung Galaxy Note II; Samsung Galaxy III, Galaxy Nexus; Samsung Galaxy S4; Sony Xperia S, Ion; Sony Xperia Z, Z1
+	#select-song-container { margin-left: 0; }
+	section.public-project-header {
+		h3 { margin-bottom: 0; }
+		h5 {
+			float: none;
+			margin-top: 0;
+		}
+	}
+	.share-to-social-networks-container img:not(.first-img) { margin-left: 9px; }
+}
+
 @media only screen and (max-width: 320px) {
 // Portrait mode of iPhone 3GS, 4, 5; Google Nexus S; HTC Evo, Touch HD, Desire HD, Desire; LG Optimus 2X, Optimus 3D, Optimus Black; 
 // Nokia Lumia 7X0, Lumia 8XX, Lumia 900, N800, N810, N900; Samsung Galaxy S, S II, W
-	h1.landing-page {  // "Online Music Collaboration Made Simple"
-		font-size: 24px;
-	}
-	#stage-inner {
-		p { margin-top: -36px !important; } // "Record a Demo"
-	}
-	#select-song-container {
-		margin-left: 0;
-		a.select-song { font-size: 14px; }
-	}
+	h1.landing-page { font-size: 24px; } // "Online Music Collaboration Made Simple"
+	#stage-inner p { margin-top: -36px !important; } // "Record a Demo"
+	a.select-song { font-size: 14px; }
 	section#recording-instructions {
 		#recording-buttons-instructions h2 { margin-top: 0; }
 		#recording-buttons-img { margin-top: 15px; }
 		#allow-flash-instructions { margin-top: 0 !important; }
 		#recording-area-img img { margin-top: 35px; }
-	} 
+	}
+	.share-to-social-networks-container img:not(.first-img) { margin-left: 2.5px; }
 }

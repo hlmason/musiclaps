@@ -3520,6 +3520,7 @@ section.contests-and-auditions {
 =================================== */
 #live-player-container {
   margin-left: 0;
+  padding-left: 0;
   padding-right: 0;
   text-align: center; }
 
@@ -5469,6 +5470,9 @@ footer {
     padding-left: 8px;
     padding-top: 3px;
     width: 50%; } }
+@media only screen and (max-width: 569px) {
+  img#cover-song {
+    margin-top: 0 !important; } }
 @media only screen and (max-width: 496px) {
   #players-wanted-page button.post-new-request, #players-wanted-page h3#musiclaps-forum, #players-wanted-page img#dialog-boxes, #forum-page button.post-new-request, #forum-page h3#musiclaps-forum, #forum-page img#dialog-boxes {
     float: left !important; }
@@ -5608,6 +5612,27 @@ footer {
 
   .project-info-bar.groups-page select.project-type {
     margin-left: 10px; } }
+@media only screen and (max-width: 375px) {
+  .public-project-info.type-of-collab-container h5 {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important; }
+  .public-project-info.type-of-collab-container img#cover-song {
+    margin-top: 12px !important; }
+
+  .share-to-social-networks-container img:not(.first-img) {
+    margin-left: 12.5px; } }
+@media only screen and (max-width: 360px) {
+  #select-song-container {
+    margin-left: 0; }
+
+  section.public-project-header h3 {
+    margin-bottom: 0; }
+  section.public-project-header h5 {
+    float: none;
+    margin-top: 0; }
+
+  .share-to-social-networks-container img:not(.first-img) {
+    margin-left: 9px; } }
 @media only screen and (max-width: 320px) {
   h1.landing-page {
     font-size: 24px; }
@@ -5615,10 +5640,8 @@ footer {
   #stage-inner p {
     margin-top: -36px !important; }
 
-  #select-song-container {
-    margin-left: 0; }
-    #select-song-container a.select-song {
-      font-size: 14px; }
+  a.select-song {
+    font-size: 14px; }
 
   section#recording-instructions #recording-buttons-instructions h2 {
     margin-top: 0; }
@@ -5627,4 +5650,7 @@ footer {
   section#recording-instructions #allow-flash-instructions {
     margin-top: 0 !important; }
   section#recording-instructions #recording-area-img img {
-    margin-top: 35px; } }
+    margin-top: 35px; }
+
+  .share-to-social-networks-container img:not(.first-img) {
+    margin-left: 2.5px; } }
