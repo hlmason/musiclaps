@@ -154,7 +154,7 @@
 
 				<h3>21. What is a “Group”?</h3>
 		       		<p>
-			       		Members who are friends or who have collaborated with each other can form a group.  
+			       		Members who are "friends" (i.e. who have connected on the "Messages" page) can form a group.   
 				        Groups are created on a per project basis, and the project status must be "Group" (see question #15 for instructions on how to change the status).<br><br> 
 				        
 				        The project owner chooses the project they want to collaborate on and enters the group name and usernames of the participating members.  
