@@ -646,11 +646,15 @@ nav {
 				margin-top: 0;
 			}
 		}
-		img#select-song-img {
-			float: right;
-			height: 179px;
-			margin-top: 15px;
-			width: 270px;
+		&#select-song-modal-body {
+			padding-bottom: 0;
+			padding-top: 0;
+			img#select-song-img {
+				float: right;
+				height: 179px;
+				margin-top: 15px;
+				width: 270px;
+			}
 		}
 	}
 	#sn-login-modal-body-sm, #sn-login-modal-body-xs, 
@@ -910,6 +914,7 @@ h1.landing-page {
 =================================== */
 #live-player-container {
 	margin-left: 0;
+	padding-right: 0; // Lines Live Player up with "Select a song" modal
 	text-align: center;
 }
 
@@ -949,7 +954,7 @@ section#recording-instructions {
 			margin-bottom: 0;
 		}
 	}
-	#record-start-instructions {
+	#recording-start-instructions {
 		margin-top: 45px;
 	}
 	#recording-area-img img {
@@ -3113,15 +3118,16 @@ footer {
 	#info-below-youtube-player h4 { font-size: 12px; }
 }
 
+@media only screen and (max-width: 464px) {
+// Breakpoint of "(so that you can record)." (Live Player Page)
+	section#recording-instructions {
+		#allow-flash-instructions { margin-top: 20px !important; }
+	}
+}
+
 @media only screen and (max-width: 459px) {
 // Breakpoint of Youtube link
 	.public-project-info.type-of-collab-container h5 { margin-top: 15px; }
-}
-
-@media only screen and (max-width: 447px) {
-// Breakpoint of "You can add up to 3 YouTube videos per project" (YouTube Page)
-	#info-below-youtube-player img { margin-top: 10px; }
-	#project-details-container h4 { font-size: 12px; }
 }
 
 @media only screen and (max-width: 449px) {
@@ -3131,6 +3137,12 @@ footer {
 		margin-left: 25px !important;
 		margin-top: 0 !important;
 	}
+}
+
+@media only screen and (max-width: 447px) {
+// Breakpoint of "You can add up to 3 YouTube videos per project" (YouTube Page)
+	#info-below-youtube-player img { margin-top: 10px; }
+	#project-details-container h4 { font-size: 12px; }
 }
 
 @media only screen and (max-width: 417px) {
@@ -3152,6 +3164,11 @@ footer {
 		font-size: 30px;
 		padding-left: 5px;
 		padding-right: 5px;
+	}
+	section#recording-instructions {
+		#recording-buttons-instructions h2 { margin-top: 5px; }
+		#allow-flash-instructions { margin-top: 10px !important; }
+		#recording-start-instructions h2 { margin-top: 0; }
 	}
 }
 
@@ -3220,11 +3237,22 @@ footer {
 }
 
 @media only screen and (max-width: 320px) {
-// Portrait mode of iPhone 3GS, 4, and 5
+// Portrait mode of iPhone 3GS, 4, 5; Google Nexus S; HTC Evo, Touch HD, Desire HD, Desire; LG Optimus 2X, Optimus 3D, Optimus Black; 
+// Nokia Lumia 7X0, Lumia 8XX, Lumia 900, N800, N810, N900; Samsung Galaxy S, S II, W
 	h1.landing-page {  // "Online Music Collaboration Made Simple"
 		font-size: 24px;
 	}
 	#stage-inner {
 		p { margin-top: -36px !important; } // "Record a Demo"
 	}
+	#select-song-container {
+		margin-left: 0;
+		a.select-song { font-size: 14px; }
+	}
+	section#recording-instructions {
+		#recording-buttons-instructions h2 { margin-top: 0; }
+		#recording-buttons-img { margin-top: 15px; }
+		#allow-flash-instructions { margin-top: 0 !important; }
+		#recording-area-img img { margin-top: 35px; }
+	} 
 }

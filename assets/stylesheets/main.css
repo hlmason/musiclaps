@@ -3273,11 +3273,14 @@ ul.user-menu li#new-project a:not(.dropdown-menu-link), ul.user-menu li#my-proje
       font-weight: normal;
       margin-bottom: 10px;
       margin-top: 0; }
-  .modal-content .modal-body img#select-song-img {
-    float: right;
-    height: 179px;
-    margin-top: 15px;
-    width: 270px; }
+  .modal-content .modal-body#select-song-modal-body {
+    padding-bottom: 0;
+    padding-top: 0; }
+    .modal-content .modal-body#select-song-modal-body img#select-song-img {
+      float: right;
+      height: 179px;
+      margin-top: 15px;
+      width: 270px; }
   .modal-content #sn-login-modal-body-sm, .modal-content #sn-login-modal-body-xs,
   .modal-content #registration-express-modal-body, .modal-content #login-modal-body, .modal-content .modal-footer {
     text-align: center; }
@@ -3517,6 +3520,7 @@ section.contests-and-auditions {
 =================================== */
 #live-player-container {
   margin-left: 0;
+  padding-right: 0;
   text-align: center; }
 
 a.select-song {
@@ -3543,7 +3547,7 @@ section#recording-instructions #allow-flash-chrome-container {
   margin-top: 15px; }
   section#recording-instructions #allow-flash-chrome-container p {
     margin-bottom: 0; }
-section#recording-instructions #record-start-instructions {
+section#recording-instructions #recording-start-instructions {
   margin-top: 45px; }
 section#recording-instructions #recording-area-img img {
   margin-top: 22px; }
@@ -5486,20 +5490,23 @@ footer {
 
   #info-below-youtube-player h4 {
     font-size: 12px; } }
+@media only screen and (max-width: 464px) {
+  section#recording-instructions #allow-flash-instructions {
+    margin-top: 20px !important; } }
 @media only screen and (max-width: 459px) {
   .public-project-info.type-of-collab-container h5 {
     margin-top: 15px; } }
+@media only screen and (max-width: 449px) {
+  button.post-new-topic {
+    float: left !important;
+    margin-left: 25px !important;
+    margin-top: 0 !important; } }
 @media only screen and (max-width: 447px) {
   #info-below-youtube-player img {
     margin-top: 10px; }
 
   #project-details-container h4 {
     font-size: 12px; } }
-@media only screen and (max-width: 449px) {
-  button.post-new-topic {
-    float: left !important;
-    margin-left: 25px !important;
-    margin-top: 0 !important; } }
 @media only screen and (max-width: 417px) {
   h3.select-song-heading {
     font-size: 15px; }
@@ -5523,7 +5530,14 @@ footer {
   h1.landing-page {
     font-size: 30px;
     padding-left: 5px;
-    padding-right: 5px; } }
+    padding-right: 5px; }
+
+  section#recording-instructions #recording-buttons-instructions h2 {
+    margin-top: 5px; }
+  section#recording-instructions #allow-flash-instructions {
+    margin-top: 10px !important; }
+  section#recording-instructions #recording-start-instructions h2 {
+    margin-top: 0; } }
 @media only screen and (max-width: 399px) {
   section#technology h2, section#backstage h2, section.music-ed h2, section.contests-and-auditions h2 {
     font-size: 20px; }
@@ -5599,4 +5613,18 @@ footer {
     font-size: 24px; }
 
   #stage-inner p {
-    margin-top: -36px !important; } }
+    margin-top: -36px !important; }
+
+  #select-song-container {
+    margin-left: 0; }
+    #select-song-container a.select-song {
+      font-size: 14px; }
+
+  section#recording-instructions #recording-buttons-instructions h2 {
+    margin-top: 0; }
+  section#recording-instructions #recording-buttons-img {
+    margin-top: 15px; }
+  section#recording-instructions #allow-flash-instructions {
+    margin-top: 0 !important; }
+  section#recording-instructions #recording-area-img img {
+    margin-top: 35px; } }

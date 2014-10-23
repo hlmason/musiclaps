@@ -8,7 +8,7 @@
 					</button>
 					<h3 class="modal-title select-song-heading" id="selectSongLabel">Select a song <span>from our sample music</span></h3>
 				</div>
-				<div class="modal-body">
+				<div class="modal-body" id="select-song-modal-body">
 					<ul>
 						<li><a>Let It Go</a> (Frozen)</li>
 						<li><a>Get Lucky</a> (Daft Punk)</li>

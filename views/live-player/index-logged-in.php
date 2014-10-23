@@ -21,7 +21,7 @@
 				<iframe width="620" height="380" src="https://www.musiclaps.com/embed/player?songid=null" frameborder="0" scrolling="no"></iframe><!-- Placeholder -->
 			</div>
 			<div class="row col-xs-11 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3" id="select-song-container">
-				<a class="select-song" id="selectSongJS">Select a song from our library</a>
+				<a class="select-song" id="selectSongJS">Select a song from our sample music</a>
 			</div>
 		</div>
 		
@@ -31,7 +31,7 @@
 			<!-- Step 1 -->
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-6 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3">
+					<div class="col-xs-6 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3" id="recording-buttons-instructions">
 						<h2><span>1. </span>Click the <span class="red">REC</span> button (above).</h2>
 					</div>
 					<div class="col-xs-6 col-sm-5 col-md-4 col-lg-3" id="recording-buttons-img">
@@ -67,7 +67,7 @@
 			<!-- Step 3 -->
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-6 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3" id="record-start-instructions">
+					<div class="col-xs-6 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3" id="recording-start-instructions">
 						<h2><span>3. </span>Click <span class="red">REC START</span> (above).</h2>
 					</div>
 					<div class="col-xs-6 col-sm-5 col-md-4 col-lg-3" id="recording-area-img">
