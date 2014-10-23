@@ -3621,8 +3621,7 @@ section#recording-instructions #save-container {
   border-radius: 5px;
   box-shadow: 10px 10px 5px #444444;
   border: 1px solid #cecece;
-  margin: 25px;
-  min-height: 590px; }
+  margin: 25px; }
   #players-wanted-page table, #forum-page table {
     width: 100%; }
     #players-wanted-page table span.username, #forum-page table span.username {
@@ -5052,7 +5051,7 @@ footer {
   section.profile-right.profile-page {
     height: 1346px; } }
 @media only screen and (max-width: 991px) {
-  nav.navbar a:not(a.navbar-brand) {
+  nav.navbar a:not(.navbar-brand) {
     margin-left: 10px; }
   nav ul.nav a {
     padding: 10px !important; }
@@ -5467,10 +5466,8 @@ footer {
     padding-top: 3px;
     width: 50%; } }
 @media only screen and (max-width: 496px) {
-  #players-wanted-page button.post-new-request, #players-wanted-page h3#musiclaps-forum, #players-wanted-page img#dialog-boxes, #players-wanted-page button.post-new-topic, #forum-page button.post-new-request, #forum-page h3#musiclaps-forum, #forum-page img#dialog-boxes, #forum-page button.post-new-topic {
+  #players-wanted-page button.post-new-request, #players-wanted-page h3#musiclaps-forum, #players-wanted-page img#dialog-boxes, #forum-page button.post-new-request, #forum-page h3#musiclaps-forum, #forum-page img#dialog-boxes {
     float: left !important; }
-  #players-wanted-page button.post-new-topic, #forum-page button.post-new-topic {
-    margin-left: 5px; }
   #players-wanted-page span.username, #forum-page span.username {
     margin-left: 0 !important; }
 
@@ -5498,8 +5495,9 @@ footer {
 
   #project-details-container h4 {
     font-size: 12px; } }
-@media only screen and (max-width: 459px) {
+@media only screen and (max-width: 449px) {
   button.post-new-topic {
+    float: left !important;
     margin-left: 25px !important;
     margin-top: 0 !important; } }
 @media only screen and (max-width: 417px) {
@@ -5598,4 +5596,7 @@ footer {
     margin-left: 10px; } }
 @media only screen and (max-width: 320px) {
   h1.landing-page {
-    font-size: 24px; } }
+    font-size: 24px; }
+
+  #stage-inner p {
+    margin-top: -36px !important; } }

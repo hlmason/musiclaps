@@ -769,7 +769,7 @@ h1.landing-page {
 					}
 				}
 			}
-			p {
+			p {  // "Record a Demo"
 				color: $musiclaps-blue;
 				font-size: 14px;
 				margin-top: 25px;
@@ -1046,7 +1046,7 @@ section#recording-instructions {
 	box-shadow: $box-shadow;
 	border: $nav-border;
 	margin: 25px;
-	min-height: 590px;
+	// min-height: 590px;
 	table {
 		width: 100%;
 		span.username {
@@ -2690,7 +2690,7 @@ footer {
 @media only screen and (max-width: 991px) {
 // Point at which Bootstrap's nav becomes uncollapsed (this is by default 767px but has been customized), point at which nav below top nav collapses into "User Menu", and breakpoint of social media icons on footer
 	nav {
-		&.navbar a:not(a.navbar-brand) { margin-left: 10px; }
+		&.navbar a:not(.navbar-brand) { margin-left: 10px; }
 		ul {
 			&.nav a { padding: 10px !important; }
 			&.navbar-left { 
@@ -2899,7 +2899,7 @@ footer {
 		#education, #contests {
 			a { display: none; }
 		}
-		p { margin-top: -30px !important; }
+		p { margin-top: -30px !important; } // "Record a Demo"
 		ul { top: -55px !important; }
 	}
 	.wmuSlider { display: none; } // Hides image slider below stage
@@ -3098,8 +3098,7 @@ footer {
 @media only screen and (max-width: 496px) {
 // Breakpoint of "Post New Request" button ("Players Wanted" Page)
 	#players-wanted-page, #forum-page {
-		button.post-new-request, h3#musiclaps-forum, img#dialog-boxes, button.post-new-topic { float: left !important; }
-		button.post-new-topic { margin-left: 5px; }
+		button.post-new-request, h3#musiclaps-forum, img#dialog-boxes { float: left !important; }
 		span.username { margin-left: 0 !important; }
 	}
 	#players-wanted-page {
@@ -3125,9 +3124,10 @@ footer {
 	#project-details-container h4 { font-size: 12px; }
 }
 
-@media only screen and (max-width: 459px) {
+@media only screen and (max-width: 449px) {
 // Breakpoint of "Post New Topic" button
-	button.post-new-topic { 
+	button.post-new-topic {
+		float: left !important;
 		margin-left: 25px !important;
 		margin-top: 0 !important;
 	}
@@ -3223,5 +3223,8 @@ footer {
 // Portrait mode of iPhone 3GS, 4, and 5
 	h1.landing-page {  // "Online Music Collaboration Made Simple"
 		font-size: 24px;
+	}
+	#stage-inner {
+		p { margin-top: -36px !important; } // "Record a Demo"
 	}
 }
