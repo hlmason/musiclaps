@@ -20,7 +20,7 @@
 						Members can record, upload, and share their tracks, allowing members of their choosing to collaborate with them.<br><br>
        					
        					In addition to actively participating, members can simply listen to each other's music.  
-       					Musiclaps has the functionality of social networking sites with such features as posting comments, sharing, embedding, favoriting, as well as a unique feature - clapping!
+       					Musiclaps has the functionality of social networking applications with such features as posting comments, sharing, embedding, favoriting, as well as a unique feature - clapping!
        				</p>
 
        			<h3>2. What are the system requirements?</h3>
@@ -176,7 +176,7 @@
 			       		Acoustic instruments (e.g. piano, acoustic guitar, trumpet, drums, vocals, etc.) can be recorded using a mic.
 			       	</p>
 
-			   <h3>24. Can I record an instrument that is not listed on the site (i.e. does not have an icon)?</h3>
+			   <h3>24. Can I record an instrument that is not listed (i.e. does not have an icon)?</h3>
 		       		<p>	
 			       		Yes.  
 			       		If you are playing an instrument that is not on the list, please select “Other".
