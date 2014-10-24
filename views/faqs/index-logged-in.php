@@ -99,7 +99,7 @@
 	       		<h3>13. What is "No Collab"?</h3>
        				<p>
        					No Collab projects are the default and for listening only.<br>
-       					<strong>Note</strong>: You can change the status from No Collab to Open or Requesting Collab, but the status cannot be changed back to No Collab.
+       					<strong>Note</strong>: The status of a project can be changed from No Collab to Open or Requesting Collab, but it cannot be changed back to No Collab.
        				</p>
 
 		       	<h3>14. Where do I go to edit my project?</h3>
@@ -111,7 +111,7 @@
 
 		       	<h3>15. Where do I go to change my project's status (Private, Public, Group, Audition)?</h3>
 		       		<p> 
-			       		Since newly recorded projects are not automatically listed, you need to follows these steps to change the status:
+			       		Since newly recorded projects are not automatically listed, you need to follow these steps to change the status:
 		       			<ul>
 		       				<li>-Click on <span class="bold">My Projects</span> (user menu)</li>
 		       				<li>-Select <span class="bold">In Progress/Private</span> from the dropdown</li>
