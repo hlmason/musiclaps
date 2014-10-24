@@ -16,7 +16,7 @@
 
 				<h3>1. What is Musiclaps?</h3>
 					<p>
-						Musiclaps is a new online collaboration service that allows worldwide communication through music.  
+						Musiclaps is a new online application that allows worldwide collaboration through music.  
 						Members can record, upload, and share their tracks, allowing members of their choosing to collaborate with them.<br><br>
        					
        					In addition to actively participating, members can simply listen to each other's music.  
