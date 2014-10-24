@@ -2371,6 +2371,8 @@ section.public-project-header h5, img#cover-song {
 		}
 	}
 	&#project-details-container {
+		border-bottom: $nav-border;
+		padding-bottom: 12px;
 		h3 {
 			display: inline-block;
 			margin-bottom: 0;
@@ -2390,7 +2392,10 @@ section.public-project-header h5, img#cover-song {
 			min-width: 120px;
 		}
 	}
-	#likes-container {
+	&#likes-container {
+		h3 {
+			margin-bottom: 13px;
+		}
 		img.avatar {
 			height: 65px;
 			width: 65px;
@@ -3259,7 +3264,7 @@ footer {
 // Samsung Galaxy Note 3; Samsung Galaxy Note II; Samsung Galaxy III, Galaxy Nexus; Samsung Galaxy S4; Sony Xperia S, Ion; Sony Xperia Z, Z1
 	#select-song-container { margin-left: 0; }
 	section.public-project-header {
-		h3 { margin-bottom: 0; }
+		h3.public-project-page { margin-bottom: 0; }
 		h5 {
 			float: none;
 			margin-top: 0;
