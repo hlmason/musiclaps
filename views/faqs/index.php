@@ -172,7 +172,7 @@
 
 			    <h3>23. What instruments can I record with?</h3>
 		       		<p>	
-			       		You can easily record any instrument that connects with a cable (e.g. electric guitar, electric bass, keyboard, etc.).  
+			       		Any.  You can easily record any instrument that connects with a cable (e.g. electric guitar, electric bass, keyboard, etc.).  
 			       		Acoustic instruments (e.g. piano, acoustic guitar, trumpet, drums, vocals, etc.) can be recorded using a mic.
 			       	</p>
 
