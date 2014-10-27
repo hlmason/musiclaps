@@ -39,10 +39,10 @@
 											<a href="<?php echo BASE_URL; ?>views/profile/public-profile-logged-in.php"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
 											<span class="username">$username</span></a>
 										</td>
-										<td>$date</td><!-- Hard-coded placeholder -->
-										<td>$project title</td><!-- Hard-coded placeholder -->
-										<td>$type of collab</td><!-- Hard-coded placeholder -->
-										<td>$instrument</td><!-- Hard-coded placeholder -->
+										<td>$Date</td><!-- Hard-coded placeholder -->
+										<td>$Project Title</td><!-- Hard-coded placeholder -->
+										<td>$Type of collab</td><!-- Hard-coded placeholder -->
+										<td>$Instrument</td><!-- Hard-coded placeholder -->
 										<td>
 											<a href="<?php echo BASE_URL; ?>views/profile/messages.php"><span class="glyphicon glyphicon-envelope"></span></a>
 										</td>
@@ -52,10 +52,10 @@
 											<a href="<?php echo BASE_URL; ?>views/profile/public-profile-logged-in.php"><img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
 											<span class="username">$username</span></a>
 										</td>
-										<td>$date</td><!-- Hard-coded placeholder -->
-										<td>$project title</td><!-- Hard-coded placeholder -->
-										<td>$type of collab</td><!-- Hard-coded placeholder -->
-										<td>$instrument</td><!-- Hard-coded placeholder -->
+										<td>$Date</td><!-- Hard-coded placeholder -->
+										<td>$Project Title</td><!-- Hard-coded placeholder -->
+										<td>$Type of collab</td><!-- Hard-coded placeholder -->
+										<td>$Instrument</td><!-- Hard-coded placeholder -->
 										<td>
 											<a href="<?php echo BASE_URL; ?>views/profile/messages.php"><span class="glyphicon glyphicon-envelope"></span></a>
 										</td>
@@ -65,10 +65,10 @@
 											<a href="<?php echo BASE_URL; ?>views/profile/public-profile-logged-in.php"><img id="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user">
 											<span class="username">$username</span></a>
 										</td>
-										<td>$date</td><!-- Hard-coded placeholder -->
-										<td>$project title</td><!-- Hard-coded placeholder -->
-										<td>$type of collab</td><!-- Hard-coded placeholder -->
-										<td>$instrument</td><!-- Hard-coded placeholder -->
+										<td>$Date</td><!-- Hard-coded placeholder -->
+										<td>$Project Title</td><!-- Hard-coded placeholder -->
+										<td>$Type of collab</td><!-- Hard-coded placeholder -->
+										<td>$Instrument</td><!-- Hard-coded placeholder -->
 										<td>
 											<a href="<?php echo BASE_URL; ?>views/profile/messages.php"><span class="glyphicon glyphicon-envelope"></span></a>
 										</td>

@@ -6,8 +6,8 @@
 							</div>
 							<div class="col-xs-12 col-sm-6 col-lg-6">
 								<h3>$Project Title</h3><!-- Hard-coded placeholder -->
-								<h4>$Username &nbsp;&nbsp;|&nbsp;&nbsp; $# plays &nbsp;&nbsp;|&nbsp;&nbsp; $Days/Months ago</h4><!-- Hard-coded placeholder -->
-								<h4>$Message from user</h4><!-- Hard-coded placeholder -->
+								<h4>$username &nbsp;&nbsp;|&nbsp;&nbsp; $# plays &nbsp;&nbsp;|&nbsp;&nbsp; $# days/months ago</h4><!-- Hard-coded placeholder -->
+								<h4>$Description</h4><!-- Hard-coded placeholder -->
 							</div>
 							<div class="col-xs-12 col-sm-3 col-lg-4">
 								<span class="glyphicon glyphicon-ok"></span>
@@ -25,8 +25,8 @@
 							</div>
 							<div class="col-xs-12 col-sm-6 col-lg-6">
 								<h3>$Project Title</h3><!-- Hard-coded placeholder -->
-								<h4>$Username &nbsp;&nbsp;|&nbsp;&nbsp; $# plays &nbsp;&nbsp;|&nbsp;&nbsp; $Days/Months ago</h4><!-- Hard-coded placeholder -->
-								<h4>$Message from user</h4><!-- Hard-coded placeholder -->
+								<h4>$username &nbsp;&nbsp;|&nbsp;&nbsp; $# plays &nbsp;&nbsp;|&nbsp;&nbsp; $# days/months ago</h4><!-- Hard-coded placeholder -->
+								<h4>$Description</h4><!-- Hard-coded placeholder -->
 							</div>
 							<div class="col-xs-12 col-sm-3 col-lg-4">
 								<span class="glyphicon glyphicon-ok"></span>

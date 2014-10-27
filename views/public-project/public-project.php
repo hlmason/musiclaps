@@ -35,7 +35,7 @@
 						<div class="row col-xs-7 col-sm-6">
 							<section class="username-and-number-of-songs">
 								<a href="<?php echo BASE_URL; ?>views/profile/public-profile.php"><h4>$username</h4></a><!-- Hard-coded placeholder -->
-								<h5>$# Songs</h5><!-- Hard-coded placeholder -->
+								<h5>$# songs</h5><!-- Hard-coded placeholder -->
 							</section>
 							
 							<div class="youtube-links">

@@ -55,8 +55,8 @@
 											<a href="<?php echo BASE_URL; ?>views/public-project/public-project-logged-in.php"><img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"></a><!-- Hard-coded placeholder -->
 										</div>
 										<div class="row col-xs-6 col-sm-8 col-md-6">
-											<a href="<?php echo BASE_URL; ?>views/public-project/public-project-logged-in.php"><h4>$project title</h4></a><!-- Hard-coded placeholder -->
-											<h5>$#### Plays</h5><!-- Hard-coded placeholder -->
+											<a href="<?php echo BASE_URL; ?>views/public-project/public-project-logged-in.php"><h4>$Project Title</h4></a><!-- Hard-coded placeholder -->
+											<h5>$#### plays</h5><!-- Hard-coded placeholder -->
 										</div>
 									</section>
 
@@ -65,8 +65,8 @@
 											<a href="<?php echo BASE_URL; ?>views/public-project/public-project-logged-in.php"><img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"></a><!-- Hard-coded placeholder -->
 										</div>
 										<div class="row col-xs-6 col-sm-8 col-md-6">
-											<a href="<?php echo BASE_URL; ?>views/public-project/public-project-logged-in.php"><h4>$project title</h4></a><!-- Hard-coded placeholder -->
-											<h5>$#### Plays</h5><!-- Hard-coded placeholder -->
+											<a href="<?php echo BASE_URL; ?>views/public-project/public-project-logged-in.php"><h4>$Project Title</h4></a><!-- Hard-coded placeholder -->
+											<h5>$#### plays</h5><!-- Hard-coded placeholder -->
 										</div>
 									</section>
 								</div>

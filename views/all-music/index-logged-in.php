@@ -32,7 +32,7 @@
 							<div class="col-xs-6 col-sm-7 col-md-6">
 								<h4>$project title</h4><!-- Hard-coded placeholder -->
 								<h5>By: <span class="normal">$username</span></h5><!-- Hard-coded placeholder -->
-								<h5>Plays: <span class="normal">$# of plays</span></h5><!-- Hard-coded placeholder -->
+								<h5>Plays: <span class="normal">$#</span></h5><!-- Hard-coded placeholder -->
 							</div>
 
 							<div class="col-xs-1 col-sm-3 col-md-2"></div>
@@ -50,7 +50,7 @@
 							<div class="col-xs-6 col-sm-7 col-md-6">
 								<h4>$project title</h4><!-- Hard-coded placeholder -->
 								<h5>By: <span class="normal">$username</span></h5><!-- Hard-coded placeholder -->
-								<h5>Plays: <span class="normal">$# of plays</span></h5><!-- Hard-coded placeholder -->
+								<h5>Plays: <span class="normal">$#</span></h5><!-- Hard-coded placeholder -->
 							</div>
 
 							<div class="col-xs-1 col-sm-3 col-md-2"></div>
@@ -68,7 +68,7 @@
 							<div class="col-xs-6 col-sm-7 col-md-6">
 								<h4>$project title</h4><!-- Hard-coded placeholder -->
 								<h5>By: <span class="normal">$username</span></h5><!-- Hard-coded placeholder -->
-								<h5>Plays: <span class="normal">$# of plays</span></h5><!-- Hard-coded placeholder -->
+								<h5>Plays: <span class="normal">$#</span></h5><!-- Hard-coded placeholder -->
 							</div>
 
 							<div class="col-xs-1 col-sm-3 col-md-2"></div>

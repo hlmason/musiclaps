@@ -7,12 +7,12 @@
 						<div class="col-xs-7 col-sm-6 col-md-7">
 							<h4>$project title</h4><!-- Hard-coded placeholder -->
 							<h5>Upload Date: <span class="normal">$# days ago</span></h5><!-- Hard-coded placeholder -->
-							<h5>Plays: <span class="normal">$# of plays</span></h5><!-- Hard-coded placeholder -->
-							<h5 class="last-h5 xs">$Type of Project <span class="glyphicon glyphicon-lock"></span></h5><!-- Only visible at viewport widths <= 767px -->
+							<h5>Plays: <span class="normal">$#</span></h5><!-- Hard-coded placeholder -->
+							<h5 class="last-h5 xs">$Type of project <span class="glyphicon glyphicon-lock"></span></h5><!-- Only visible at viewport widths <= 767px -->
 						</div>
 
 						<div class="col-sm-3 col-md-2">
-							<h5 class="last-h5 sm">$Type of Project <span class="glyphicon glyphicon-lock"></span></h5><!-- Only visible at viewport widths > 767px -->
+							<h5 class="last-h5 sm">$Type of project <span class="glyphicon glyphicon-lock"></span></h5><!-- Only visible at viewport widths > 767px -->
 						</div>
 					</section>
 

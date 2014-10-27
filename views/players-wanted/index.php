@@ -89,7 +89,7 @@
 												<a href="<?php echo BASE_URL; ?>views/profile/public-profile.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><span class="username">$username</span></a>
 											</td><!-- Hard-coded placeholder -->
 											<td>$Request Title</td><!-- Hard-coded placeholder -->
-											<td>$days/months ago</td><!-- Hard-coded placeholder -->
+											<td>$# days/months ago</td><!-- Hard-coded placeholder -->
 										</tr>
 									</tbody>
 								</table>
@@ -140,7 +140,7 @@
 												<a href="<?php echo BASE_URL; ?>views/profile/public-profile.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><span class="username">$username</span></a>
 											</td><!-- Hard-coded placeholder -->
 											<td>$Request Title</td><!-- Hard-coded placeholder -->
-											<td>$days/months ago</td><!-- Hard-coded placeholder -->
+											<td>$# days/months ago</td><!-- Hard-coded placeholder -->
 										</tr>
 									</tbody>
 								</table>
