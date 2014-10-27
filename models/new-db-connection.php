@@ -1,10 +1,10 @@
 <?php
 //define constants for db_host, db_user, db_pass, and db_database
 //adjust the values below to match your database settings
-define('DB_HOST', '50.18.152.255');
-define('DB_USER', 'mc1q2wlaps');
-define('DB_PASS', 'go0530go'); //set DB_PASS as 'root' if you're using mac
-define('DB_DATABASE', 'musiclaps'); //make sure to set your database
+define('DB_HOST', '');
+define('DB_USER', '');
+define('DB_PASS', ''); //set DB_PASS as 'root' if you're using mac
+define('DB_DATABASE', ''); //make sure to set your database
 
 //connect to database host
 $connection = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_DATABASE);
