@@ -1804,7 +1804,7 @@ form.project-form {
 		}
 	}
 	ul#copyright-types-container {
-		height: 377px;
+		height: 480px;
 		margin-top: 0;
 		padding-left: 15px;
 		li {
@@ -1830,12 +1830,21 @@ form.project-form {
 				font-weight: normal;
 				margin-bottom: 0;
 				margin-top: 0;
-				&.first-h4 {
-					margin-left: 70px;
-				}
-				&:not(.first-h4) {
+				&:not(.last-h4) {
 					margin-left: 15px;
 				}
+				&.last-h4 {
+					margin-left: 70px;
+				}
+				.glyphicon-question-sign {
+					color: $musiclaps-blue;
+					margin-left: 2px;
+					margin-top: 2px;
+				}
+			}
+			.cc-description {
+				font-size: 12px;
+				margin-top: 2px;
 			}
 		}
 	}

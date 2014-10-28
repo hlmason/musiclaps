@@ -4267,7 +4267,7 @@ form.project-form .type-of-collab-container {
     form.project-form .type-of-collab-container input:hover {
       color: #38aaff; }
 form.project-form ul#copyright-types-container {
-  height: 377px;
+  height: 480px;
   margin-top: 0;
   padding-left: 15px; }
   form.project-form ul#copyright-types-container li:first-child {
@@ -4287,10 +4287,17 @@ form.project-form ul#copyright-types-container {
     font-weight: normal;
     margin-bottom: 0;
     margin-top: 0; }
-    form.project-form ul#copyright-types-container li h4.first-h4 {
-      margin-left: 70px; }
-    form.project-form ul#copyright-types-container li h4:not(.first-h4) {
+    form.project-form ul#copyright-types-container li h4:not(.last-h4) {
       margin-left: 15px; }
+    form.project-form ul#copyright-types-container li h4.last-h4 {
+      margin-left: 70px; }
+    form.project-form ul#copyright-types-container li h4 .glyphicon-question-sign {
+      color: #38aaff;
+      margin-left: 2px;
+      margin-top: 2px; }
+  form.project-form ul#copyright-types-container li .cc-description {
+    font-size: 12px;
+    margin-top: 2px; }
 
 #upload-stage-background-img-container input.choose-file, #upload-stage-background-img-container input#save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-project-img-container input.choose-file, section.change-project-img-container input#save-stage-background-img, section.change-project-img-container input.update-file {
   font-size: 12px; }
