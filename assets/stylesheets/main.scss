@@ -1715,14 +1715,19 @@ section.project-form-header {
 	}
 }
 
+.private-url-container {
+	h4 {
+		margin-bottom: 2px;
+	}
+	input.private-url {
+		@include form-fields-input(100%);	
+	}
+}
+
 form.project-form {
 	label {
 		@include form-fields-label(20px);
 		width: 100%;
-		// h4 {
-		// 	margin-bottom: 0;
-		// 	margin-top: 0;
-		// }
 	}
 	input.project-title-project-form, input.credit-cover-song, textarea {
 		@include form-fields-input(100%);

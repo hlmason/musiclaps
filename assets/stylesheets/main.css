@@ -4176,6 +4176,17 @@ section.project-form-header.requesting-collab-page .glyphicon-repeat {
   .volume-and-pan h4.left-to-right {
     margin-left: 70px; }
 
+.private-url-container h4 {
+  margin-bottom: 2px; }
+.private-url-container input.private-url {
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  padding-top: 3px;
+  width: 100%; }
+
 form.project-form label {
   margin-bottom: 2px;
   margin-top: 20px;

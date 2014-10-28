@@ -15,6 +15,7 @@ $(document).ready(function() {
 	    My Projects and Collaborations
 	==================================== */
 	var glyphiconPencil = $('.glyphiconPencil');
+	var privateURL = $('#privateURL');
 	var projectForm = $('#projectForm');
 	var noCollabGlyphicon = $('span.noCollabGlyphicon');
 	var openCollabGlyphicon = $('span.openCollabGlyphicon');
@@ -35,6 +36,7 @@ $(document).ready(function() {
 	$('.noListings').hide();
 
 	glyphiconPencil.hide();
+	privateURL.hide();
 	projectForm.hide();
 	noCollabGlyphicon.hide();
 	openCollabGlyphicon.hide();
@@ -47,6 +49,7 @@ $(document).ready(function() {
 	
 	$(projectsContainer).on('click', function() {
 		projectsContainer.hide();
+		privateURL.fadeIn('fast');
 		projectForm.fadeIn('fast');
 	});
 	$(requestingCollabContainer).on('click', function() {
