@@ -3742,6 +3742,9 @@ section#recording-instructions #save-container {
 /* ======================================================================================================
     Profile, New Project, Projects, Collaborations, YouTube, Messages, Groups, and Public Project Pages
 ====================================================================================================== */
+.row.col-xs-12.col-sm-8.public-profile-page, .row.col-xs-12.col-sm-8.owned-public-collaborations-page, .row.col-xs-12.col-sm-8.joined-public-collaborations-page, .row.col-xs-12.col-sm-8.friends-page {
+  padding-right: 0 !important; }
+
 .avatar-and-username, #new-project-buttons,
 .projects-nav, #collaborations-buttons {
   margin-top: 15px; }
@@ -3817,7 +3820,7 @@ section#messages-header button, section#groups-header button {
     display: inline-block;
     font-size: 12px;
     font-weight: 300; }
-  .about-me li.glyphicon-home {
+  .about-me li#glyphicon-home {
     float: right; }
 
 section.public-projects-and-collaborations-container {
@@ -5676,4 +5679,12 @@ footer {
     margin-top: 35px; }
 
   .share-to-social-networks-container img:not(.first-img) {
-    margin-left: 2.5px; } }
+    margin-left: 2.5px; }
+
+  h2.user-id {
+    margin-left: 20px; }
+
+  section.public-projects-and-collaborations .row.col-xs-6.col-sm-8.col-md-6 {
+    padding-right: 0; }
+  section.public-projects-and-collaborations h4, section.public-projects-and-collaborations h5 {
+    margin-left: 6px !important; } }

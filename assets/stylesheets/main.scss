@@ -1189,6 +1189,12 @@ section#recording-instructions {
 /* ======================================================================================================
     Profile, New Project, Projects, Collaborations, YouTube, Messages, Groups, and Public Project Pages
 ====================================================================================================== */
+.row.col-xs-12.col-sm-8 {
+	&.public-profile-page, &.owned-public-collaborations-page, &.joined-public-collaborations-page, &.friends-page {
+		padding-right: 0 !important; // Centers and aligns project tile with section.profile-right
+	}
+}
+
 .avatar-and-username, #new-project-buttons, 
 .projects-nav, #collaborations-buttons {
 	margin-top: 15px;
@@ -1276,7 +1282,7 @@ section#messages-header button, section#groups-header button { // "Add New Frien
 			font-size: 12px;
 			font-weight: 300;
 		}
-		&.glyphicon-home {
+		&#glyphicon-home {
 			float: right;
 		}
 	}
@@ -3300,4 +3306,9 @@ footer {
 		#recording-area-img img { margin-top: 35px; }
 	}
 	.share-to-social-networks-container img:not(.first-img) { margin-left: 2.5px; }
+	h2.user-id { margin-left: 20px; }
+	section.public-projects-and-collaborations {
+		.row.col-xs-6.col-sm-8.col-md-6 { padding-right: 0; } // Adds more space to the right part of the tile
+		h4, h5 { margin-left: 6px !important; }
+	}
 }

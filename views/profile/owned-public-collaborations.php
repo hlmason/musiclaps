@@ -16,7 +16,7 @@
 		
 			<div class="row col-lg-10 col-lg-offset-1">				
 					
-				<div class="row col-xs-12 col-sm-8 profile-page">
+				<div class="row col-xs-12 col-sm-8 profile-page owned-public-collaborations-page">
 
 					<!-- Avatar and username div -->
 					<?php
