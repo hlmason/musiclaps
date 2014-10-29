@@ -1785,10 +1785,11 @@ form.project-form {
 		margin-bottom: 0;
 		margin-top: 35px;
 	}
-	h4.red { // "Creative Commons licenses are irrevocable.  Please think carefully before choosing a CC license."
+	h4.red {
 		color: red;
 		margin-bottom: 0;
 		margin-top: 0;
+		padding-right: 10px;
 	}
 	h4.red, .type-of-collab-container, ul#copyright-types-container {
 		border-bottom: $nav-border;
@@ -1810,7 +1811,7 @@ form.project-form {
 		}
 	}
 	ul#copyright-types-container {
-		height: 480px;
+		height: 560px;
 		margin-top: 0;
 		padding-left: 15px;
 		li {
@@ -1842,7 +1843,7 @@ form.project-form {
 				&.last-h4 {
 					margin-left: 70px;
 				}
-				.glyphicon-question-sign {
+				.glyphicon-question-sign { // TODO: Fix positioning at smaller viewport widths
 					color: $musiclaps-blue;
 					margin-left: 2px;
 					margin-top: 2px;
@@ -3056,9 +3057,8 @@ footer {
 		}
 		h5 { margin-left: 10px; } // Aligns date project started with project name
 	}
-	ul#copyright-types-container { 
-		height: 493px !important;
-		img, h5 { margin-left: 5px !important; }
+	ul#copyright-types-container {
+		img { margin-left: 5px !important; }
 		h4 { font-size: 12px; }
 	}
 	section.change-project-img-container {
@@ -3129,6 +3129,11 @@ footer {
 @media only screen and (max-width: 569px) {
 // Landscape mode of Motorola Defy, Droid, Droid X, Milestone
 	img#cover-song { margin-top: 0 !important; }
+}
+
+@media only screen and (max-width: 514px) {
+// Breakpoint of copyright types
+	ul#copyright-types-container { height: 743px !important; }
 }
 
 @media only screen and (max-width: 496px) {
@@ -3247,11 +3252,14 @@ footer {
 			input.save-volume { display: none; }
 		}
 	}
-	#no-img-container { 
-		height: 63.3px !important; // One-third the size of recommended height (620px)
-		width: 206.7px !important; // One-third the size of recommended width (190px)
+	form.project-form {
+		input.credit-cover-song { font-size: 10px; }
+		#no-img-container { 
+			height: 63.3px !important; // One-third the size of recommended height (620px)
+			width: 206.7px !important; // One-third the size of recommended width (190px)
+		}
+		ul#copyright-types-container { height: 900px !important; }
 	}
-	ul#copyright-types-container { height: 580px !important; }
 	section#messages-header button { 
 		float: none;
 		margin-bottom: 10px;

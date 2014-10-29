@@ -4249,7 +4249,8 @@ form.project-form h4#type-of-collab, form.project-form h4#copyright {
 form.project-form h4.red {
   color: red;
   margin-bottom: 0;
-  margin-top: 0; }
+  margin-top: 0;
+  padding-right: 10px; }
 form.project-form h4.red, form.project-form .type-of-collab-container, form.project-form ul#copyright-types-container {
   border-bottom: 1px solid #cecece;
   border-left: 1px solid #cecece;
@@ -4270,7 +4271,7 @@ form.project-form .type-of-collab-container {
     form.project-form .type-of-collab-container input:hover {
       color: #38aaff; }
 form.project-form ul#copyright-types-container {
-  height: 480px;
+  height: 560px;
   margin-top: 0;
   padding-left: 15px; }
   form.project-form ul#copyright-types-container li:first-child {
@@ -5415,12 +5416,10 @@ footer {
   .project-info-bar h5 {
     margin-left: 10px; }
 
-  ul#copyright-types-container {
-    height: 493px !important; }
-    ul#copyright-types-container img, ul#copyright-types-container h5 {
-      margin-left: 5px !important; }
-    ul#copyright-types-container h4 {
-      font-size: 12px; }
+  ul#copyright-types-container img {
+    margin-left: 5px !important; }
+  ul#copyright-types-container h4 {
+    font-size: 12px; }
 
   section.change-project-img-container h4, section.change-project-img-container input {
     display: block !important; }
@@ -5499,6 +5498,9 @@ footer {
 @media only screen and (max-width: 569px) {
   img#cover-song {
     margin-top: 0 !important; } }
+@media only screen and (max-width: 514px) {
+  ul#copyright-types-container {
+    height: 743px !important; } }
 @media only screen and (max-width: 496px) {
   #players-wanted-page button.post-new-request, #players-wanted-page h3#musiclaps-forum, #players-wanted-page img#dialog-boxes, #forum-page button.post-new-request, #forum-page h3#musiclaps-forum, #forum-page img#dialog-boxes {
     float: left !important; }
@@ -5612,12 +5614,13 @@ footer {
     .project-info-bar.requesting-collab-page input.save-volume {
       display: none; }
 
-  #no-img-container {
+  form.project-form input.credit-cover-song {
+    font-size: 10px; }
+  form.project-form #no-img-container {
     height: 63.3px !important;
     width: 206.7px !important; }
-
-  ul#copyright-types-container {
-    height: 580px !important; }
+  form.project-form ul#copyright-types-container {
+    height: 900px !important; }
 
   section#messages-header button {
     float: none;
