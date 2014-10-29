@@ -147,8 +147,8 @@
 				        Groups are created on a per project basis, and the project status must be "Group" (please see question #11 for instructions on how to change the status).<br><br> 
 				        
 				        The project owner chooses the project they would like to collaborate on and enters the group name and usernames of the participating users.  
-				        A new group displays and the participating users are added and notified.  
-				        Only participating/listed users are able to listen to and participate in the group project, and only the project owner is allowed to add or change the project information.<br><br> 
+				        A new group displays and the participating users are notified.  
+				        Only participating users are able to listen to and participate in the group project, and only the project owner is allowed to add or edit the project information.<br><br> 
 				        
 				        Once the collaboration is finished and the project owner changes the status to something other than "Group", the group ends and is removed from the list.
 		       		</p>
