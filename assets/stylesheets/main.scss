@@ -1190,7 +1190,7 @@ section#recording-instructions {
     Profile, New Project, Projects, Collaborations, YouTube, Messages, Groups, and Public Project Pages
 ====================================================================================================== */
 .row.col-xs-12.col-sm-8 {
-	&.public-profile-page, &.owned-public-collaborations-page, &.joined-public-collaborations-page, &.friends-page {
+	&.public-profile-pages {
 		padding-right: 0 !important; // Centers and aligns project tile with section.profile-right
 	}
 }
@@ -1264,20 +1264,20 @@ section#messages-header button, section#groups-header button { // "Add New Frien
 		margin-bottom: 7px;
 		margin-top: 2px;
 	}
-	ul.first-ul-profile-page, ul.second-ul-profile-page, ul.third-ul-profile-page {
+	ul.first-ul-profile-pages, ul.second-ul-profile-pages, ul.third-ul-profile-pages {
 		margin-top: 4px;
 	}
-	ul.first-ul-profile-page, ul.second-ul-profile-page {
+	ul.first-ul-profile-pages, ul.second-ul-profile-pages {
 		margin-bottom: 2px;
 	}
-	ul.first-ul-profile-page li {
+	ul.first-ul-profile-pages li {
 		margin-right: 20px; // So it lines up better with "Edit Profile"
 	}
-	ul.third-ul-profile-page {
+	ul.third-ul-profile-pages {
 		margin-bottom: 0;
 	}
 	li {
-		&.profile-page {
+		&.profile-pages {
 			display: inline-block;
 			font-size: 12px;
 			font-weight: 300;
@@ -1322,17 +1322,17 @@ h4.my-public-projects-heading {
 	}
 }
 
-h4.my-public-projects-heading.public-profile-page {
+h4.my-public-projects-heading.public-profile-pages {
 	margin-bottom: 0;
 }
 
-section.public-projects-and-collaborations, section.projects-container.public-profile-page {
+section.public-projects-and-collaborations, section.projects-container.public-profile-pages {
 	h5 {
 		font-weight: normal;
 	}
 }
 
-section.projects-container.public-profile-page { 
+section.projects-container.public-profile-pages { 
 	h4 {
 		margin-bottom: 3px;
 		margin-top: 10px;
@@ -1574,7 +1574,7 @@ section.projects-container {
 	padding-left: 0;
 }
 
-section.projects-container.favorites-page, section.projects-container.public-profile-page {
+section.projects-container.favorites-page, section.projects-container.public-profile-pages {
 	&:hover {
 		background-color: white;
 		cursor: initial;
@@ -2522,7 +2522,7 @@ section.profile-right {
 	}
 }
 
-#youtube-links-settings, section.profile-right:not(.public-profile-page) {
+#youtube-links-settings, section.profile-right:not(.public-profile-pages) {
 	margin-top: 15px;
 }
 
@@ -2563,7 +2563,7 @@ section.profile-right.profile-page.project-details-page .row {
 	margin-left: 10px; // Overwrites "margin-left: 15px"
 }
 
-// section.profile-right.profile-page.public-profile-page {
+// section.profile-right.profile-page.public-profile-pages {
 // 	margin-top: -32px;
 // }
 
@@ -2967,7 +2967,7 @@ footer {
 	.about-me {
 		margin-left: 5px;
 		margin-top: 15px;
-		li.profile-page {
+		li.profile-pages {
 			display: block;
 			float: none !important;
 			margin-top: 8px;
@@ -2981,7 +2981,7 @@ footer {
 		padding-right: 15px;
 	}
 	.profile-right-container.project-details-page { padding-left: 15px; }
-	section.profile-right.profile-page.public-profile-page { margin-top: 15px; }
+	section.profile-right.profile-page.public-profile-pages { margin-top: 15px; }
 	#new-project-page.row.col-xs-12.col-md-9 { 
 		li { 
 			display: block; 
