@@ -15,7 +15,7 @@
 				<li><a class="<?php if ($page_title == "Press") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>views/under-construction/">Press</a></li>
 				<li><a class="<?php if ($page_title == "Contact") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>views/under-construction/">Contact</a></li>
 				<li><a class="<?php if ($page_title == "Privacy Policy") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>views/privacy/">Privacy</a></li>
-				<li><a class="<?php if ($page_title == "Terms of Use") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>views/terms/">Terms</a></li>
+				<li><a class="<?php if ($page_title == "Terms of Service") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>views/terms/">Terms</a></li>
 				<li><a class="<?php if ($page_title == "FAQs") { echo "active"; } ?>" href="<?php echo BASE_URL; ?>views/faqs/">FAQs</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
