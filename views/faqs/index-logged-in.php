@@ -16,7 +16,7 @@
 
 				<h3>1. What is Musiclaps?</h3>
 					<p>
-						Musiclaps is a new online application that enables people worldwide to collaborate musically.  
+						Musiclaps is a new online service that enables people worldwide to collaborate musically.  
 						Using our technology, registered users can easily record, upload, and share tracks, allowing registered users of their choosing to collaborate with them.<br><br>
 
        					Musiclaps has the functionality of social networking applications with such features as adding friends, sending messages, posting comments, favoriting, sharing, and embedding, as well as a unique feature - clapping!
@@ -40,7 +40,7 @@
 
        			<h3>5. What is the "Recording Player"</h3>
        				<p>
-       					The Recording Player is Musiclaps’s original application for recording.  
+       					The Recording Player is Musiclaps’s original online application for recording.  
        					It can also be used as an accompaniment when playing alone.
        				</p>
 
@@ -54,7 +54,7 @@
 			       		For original songs, the project owner can select a traditional copyright or Creative Commons license.  
 			       		<strong>For the purpose of collaboration, the project owner of an original song will want to select a Creative Commons license.</strong>  Please only select a copyright type if your project is using an original song.<br><br>
 
-			       		If a copyright type is not selected, the song will automatically be classified as a cover. 
+			       		If a copyright type is not selected, the song will automatically be classified as a cover.<br> 
 			       		<strong>Note</strong>: Once saved for a particular project, the copyright type cannot be changed.
 			       	</p>
 
