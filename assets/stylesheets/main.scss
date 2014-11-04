@@ -1189,6 +1189,12 @@ section#recording-instructions {
 /* ======================================================================================================
     Profile, New Project, Projects, Collaborations, YouTube, Messages, Groups, and Public Project Pages
 ====================================================================================================== */
+.row.col-xs-12.col-sm-8 {
+	&.public-profile-pages {
+		padding-right: 0 !important; // Centers and aligns project tile with section.profile-right
+	}
+}
+
 .avatar-and-username, #new-project-buttons, 
 .projects-nav, #collaborations-buttons {
 	margin-top: 15px;
@@ -1258,25 +1264,25 @@ section#messages-header button, section#groups-header button { // "Add New Frien
 		margin-bottom: 7px;
 		margin-top: 2px;
 	}
-	ul.first-ul-profile-page, ul.second-ul-profile-page, ul.third-ul-profile-page {
+	ul.first-ul-profile-pages, ul.second-ul-profile-pages, ul.third-ul-profile-pages {
 		margin-top: 4px;
 	}
-	ul.first-ul-profile-page, ul.second-ul-profile-page {
+	ul.first-ul-profile-pages, ul.second-ul-profile-pages {
 		margin-bottom: 2px;
 	}
-	ul.first-ul-profile-page li {
+	ul.first-ul-profile-pages li {
 		margin-right: 20px; // So it lines up better with "Edit Profile"
 	}
-	ul.third-ul-profile-page {
+	ul.third-ul-profile-pages {
 		margin-bottom: 0;
 	}
 	li {
-		&.profile-page {
+		&.profile-pages {
 			display: inline-block;
 			font-size: 12px;
 			font-weight: 300;
 		}
-		&.glyphicon-home {
+		&#glyphicon-home {
 			float: right;
 		}
 	}
@@ -1316,17 +1322,17 @@ h4.my-public-projects-heading {
 	}
 }
 
-h4.my-public-projects-heading.public-profile-page {
+h4.my-public-projects-heading.public-profile-pages {
 	margin-bottom: 0;
 }
 
-section.public-projects-and-collaborations, section.projects-container.public-profile-page {
+section.public-projects-and-collaborations, section.projects-container.public-profile-pages {
 	h5 {
 		font-weight: normal;
 	}
 }
 
-section.projects-container.public-profile-page { 
+section.projects-container.public-profile-pages { 
 	h4 {
 		margin-bottom: 3px;
 		margin-top: 10px;
@@ -1568,7 +1574,7 @@ section.projects-container {
 	padding-left: 0;
 }
 
-section.projects-container.favorites-page, section.projects-container.public-profile-page {
+section.projects-container.favorites-page, section.projects-container.public-profile-pages {
 	&:hover {
 		background-color: white;
 		cursor: initial;
@@ -1715,14 +1721,19 @@ section.project-form-header {
 	}
 }
 
+.private-url-container {
+	h4 {
+		margin-bottom: 2px;
+	}
+	input.private-url {
+		@include form-fields-input(100%);	
+	}
+}
+
 form.project-form {
 	label {
 		@include form-fields-label(20px);
 		width: 100%;
-		// h4 {
-		// 	margin-bottom: 0;
-		// 	margin-top: 0;
-		// }
 	}
 	input.project-title-project-form, input.credit-cover-song, textarea {
 		@include form-fields-input(100%);
@@ -1774,10 +1785,11 @@ form.project-form {
 		margin-bottom: 0;
 		margin-top: 35px;
 	}
-	h4.red { // "Creative Commons licenses are irrevocable.  Please think carefully before choosing a CC license."
+	h4.red {
 		color: red;
 		margin-bottom: 0;
 		margin-top: 0;
+		padding-right: 10px;
 	}
 	h4.red, .type-of-collab-container, ul#copyright-types-container {
 		border-bottom: $nav-border;
@@ -1799,7 +1811,7 @@ form.project-form {
 		}
 	}
 	ul#copyright-types-container {
-		height: 377px;
+		height: 560px;
 		margin-top: 0;
 		padding-left: 15px;
 		li {
@@ -1825,12 +1837,21 @@ form.project-form {
 				font-weight: normal;
 				margin-bottom: 0;
 				margin-top: 0;
-				&.first-h4 {
-					margin-left: 70px;
-				}
-				&:not(.first-h4) {
+				&:not(.last-h4) {
 					margin-left: 15px;
 				}
+				&.last-h4 {
+					margin-left: 70px;
+				}
+				.glyphicon-question-sign { // TODO: Fix positioning at smaller viewport widths
+					color: $musiclaps-blue;
+					margin-left: 2px;
+					margin-top: 2px;
+				}
+			}
+			.cc-description {
+				font-size: 12px;
+				margin-top: 2px;
 			}
 		}
 	}
@@ -2502,7 +2523,7 @@ section.profile-right {
 	}
 }
 
-#youtube-links-settings, section.profile-right:not(.public-profile-page) {
+#youtube-links-settings, section.profile-right:not(.public-profile-pages) {
 	margin-top: 15px;
 }
 
@@ -2543,7 +2564,7 @@ section.profile-right.profile-page.project-details-page .row {
 	margin-left: 10px; // Overwrites "margin-left: 15px"
 }
 
-// section.profile-right.profile-page.public-profile-page {
+// section.profile-right.profile-page.public-profile-pages {
 // 	margin-top: -32px;
 // }
 
@@ -2947,7 +2968,7 @@ footer {
 	.about-me {
 		margin-left: 5px;
 		margin-top: 15px;
-		li.profile-page {
+		li.profile-pages {
 			display: block;
 			float: none !important;
 			margin-top: 8px;
@@ -2961,7 +2982,7 @@ footer {
 		padding-right: 15px;
 	}
 	.profile-right-container.project-details-page { padding-left: 15px; }
-	section.profile-right.profile-page.public-profile-page { margin-top: 15px; }
+	section.profile-right.profile-page.public-profile-pages { margin-top: 15px; }
 	#new-project-page.row.col-xs-12.col-md-9 { 
 		li { 
 			display: block; 
@@ -3036,9 +3057,8 @@ footer {
 		}
 		h5 { margin-left: 10px; } // Aligns date project started with project name
 	}
-	ul#copyright-types-container { 
-		height: 493px !important;
-		img, h5 { margin-left: 5px !important; }
+	ul#copyright-types-container {
+		img { margin-left: 5px !important; }
 		h4 { font-size: 12px; }
 	}
 	section.change-project-img-container {
@@ -3109,6 +3129,11 @@ footer {
 @media only screen and (max-width: 569px) {
 // Landscape mode of Motorola Defy, Droid, Droid X, Milestone
 	img#cover-song { margin-top: 0 !important; }
+}
+
+@media only screen and (max-width: 514px) {
+// Breakpoint of copyright types
+	ul#copyright-types-container { height: 743px !important; }
 }
 
 @media only screen and (max-width: 496px) {
@@ -3227,11 +3252,14 @@ footer {
 			input.save-volume { display: none; }
 		}
 	}
-	#no-img-container { 
-		height: 63.3px !important; // One-third the size of recommended height (620px)
-		width: 206.7px !important; // One-third the size of recommended width (190px)
+	form.project-form {
+		input.credit-cover-song { font-size: 10px; }
+		#no-img-container { 
+			height: 63.3px !important; // One-third the size of recommended height (620px)
+			width: 206.7px !important; // One-third the size of recommended width (190px)
+		}
+		ul#copyright-types-container { height: 900px !important; }
 	}
-	ul#copyright-types-container { height: 580px !important; }
 	section#messages-header button { 
 		float: none;
 		margin-bottom: 10px;
@@ -3286,4 +3314,9 @@ footer {
 		#recording-area-img img { margin-top: 35px; }
 	}
 	.share-to-social-networks-container img:not(.first-img) { margin-left: 2.5px; }
+	h2.user-id, h4.edit-profile, h4.save-profile, h4.dont-save-profile { margin-left: 20px !important; }
+	section.public-projects-and-collaborations {
+		.row.col-xs-6.col-sm-8.col-md-6 { padding-right: 0; } // Adds more space to the right part of the tile
+		h4, h5 { margin-left: 6px !important; }
+	}
 }

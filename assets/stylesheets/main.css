@@ -3742,6 +3742,9 @@ section#recording-instructions #save-container {
 /* ======================================================================================================
     Profile, New Project, Projects, Collaborations, YouTube, Messages, Groups, and Public Project Pages
 ====================================================================================================== */
+.row.col-xs-12.col-sm-8.public-profile-pages {
+  padding-right: 0 !important; }
+
 .avatar-and-username, #new-project-buttons,
 .projects-nav, #collaborations-buttons {
   margin-top: 15px; }
@@ -3805,19 +3808,19 @@ section#messages-header button, section#groups-header button {
   .about-me h4 {
     margin-bottom: 7px;
     margin-top: 2px; }
-  .about-me ul.first-ul-profile-page, .about-me ul.second-ul-profile-page, .about-me ul.third-ul-profile-page {
+  .about-me ul.first-ul-profile-pages, .about-me ul.second-ul-profile-pages, .about-me ul.third-ul-profile-pages {
     margin-top: 4px; }
-  .about-me ul.first-ul-profile-page, .about-me ul.second-ul-profile-page {
+  .about-me ul.first-ul-profile-pages, .about-me ul.second-ul-profile-pages {
     margin-bottom: 2px; }
-  .about-me ul.first-ul-profile-page li {
+  .about-me ul.first-ul-profile-pages li {
     margin-right: 20px; }
-  .about-me ul.third-ul-profile-page {
+  .about-me ul.third-ul-profile-pages {
     margin-bottom: 0; }
-  .about-me li.profile-page {
+  .about-me li.profile-pages {
     display: inline-block;
     font-size: 12px;
     font-weight: 300; }
-  .about-me li.glyphicon-home {
+  .about-me li#glyphicon-home {
     float: right; }
 
 section.public-projects-and-collaborations-container {
@@ -3846,16 +3849,16 @@ h4.my-public-projects-heading {
   h4.my-public-projects-heading span {
     margin-left: 2px; }
 
-h4.my-public-projects-heading.public-profile-page {
+h4.my-public-projects-heading.public-profile-pages {
   margin-bottom: 0; }
 
-section.public-projects-and-collaborations h5, section.projects-container.public-profile-page h5 {
+section.public-projects-and-collaborations h5, section.projects-container.public-profile-pages h5 {
   font-weight: normal; }
 
-section.projects-container.public-profile-page h4 {
+section.projects-container.public-profile-pages h4 {
   margin-bottom: 3px;
   margin-top: 10px; }
-section.projects-container.public-profile-page h5 {
+section.projects-container.public-profile-pages h5 {
   margin-bottom: 1px; }
 
 h4#my-profile {
@@ -4070,12 +4073,12 @@ section.projects-container {
 .favorites-page:last-child.col-sm-12.col-md-6 {
   padding-left: 0; }
 
-section.projects-container.favorites-page:hover, section.projects-container.public-profile-page:hover {
+section.projects-container.favorites-page:hover, section.projects-container.public-profile-pages:hover {
   background-color: white;
   cursor: initial; }
-section.projects-container.favorites-page h4, section.projects-container.favorites-page h5, section.projects-container.public-profile-page h4, section.projects-container.public-profile-page h5 {
+section.projects-container.favorites-page h4, section.projects-container.favorites-page h5, section.projects-container.public-profile-pages h4, section.projects-container.public-profile-pages h5 {
   margin-left: 3px; }
-section.projects-container.favorites-page .glyphicon-trash, section.projects-container.public-profile-page .glyphicon-trash {
+section.projects-container.favorites-page .glyphicon-trash, section.projects-container.public-profile-pages .glyphicon-trash {
   cursor: pointer;
   float: right;
   margin-top: 4px; }
@@ -4176,6 +4179,17 @@ section.project-form-header.requesting-collab-page .glyphicon-repeat {
   .volume-and-pan h4.left-to-right {
     margin-left: 70px; }
 
+.private-url-container h4 {
+  margin-bottom: 2px; }
+.private-url-container input.private-url {
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  padding-top: 3px;
+  width: 100%; }
+
 form.project-form label {
   margin-bottom: 2px;
   margin-top: 20px;
@@ -4235,7 +4249,8 @@ form.project-form h4#type-of-collab, form.project-form h4#copyright {
 form.project-form h4.red {
   color: red;
   margin-bottom: 0;
-  margin-top: 0; }
+  margin-top: 0;
+  padding-right: 10px; }
 form.project-form h4.red, form.project-form .type-of-collab-container, form.project-form ul#copyright-types-container {
   border-bottom: 1px solid #cecece;
   border-left: 1px solid #cecece;
@@ -4256,7 +4271,7 @@ form.project-form .type-of-collab-container {
     form.project-form .type-of-collab-container input:hover {
       color: #38aaff; }
 form.project-form ul#copyright-types-container {
-  height: 377px;
+  height: 560px;
   margin-top: 0;
   padding-left: 15px; }
   form.project-form ul#copyright-types-container li:first-child {
@@ -4276,10 +4291,17 @@ form.project-form ul#copyright-types-container {
     font-weight: normal;
     margin-bottom: 0;
     margin-top: 0; }
-    form.project-form ul#copyright-types-container li h4.first-h4 {
-      margin-left: 70px; }
-    form.project-form ul#copyright-types-container li h4:not(.first-h4) {
+    form.project-form ul#copyright-types-container li h4:not(.last-h4) {
       margin-left: 15px; }
+    form.project-form ul#copyright-types-container li h4.last-h4 {
+      margin-left: 70px; }
+    form.project-form ul#copyright-types-container li h4 .glyphicon-question-sign {
+      color: #38aaff;
+      margin-left: 2px;
+      margin-top: 2px; }
+  form.project-form ul#copyright-types-container li .cc-description {
+    font-size: 12px;
+    margin-top: 2px; }
 
 #upload-stage-background-img-container input.choose-file, #upload-stage-background-img-container input#save-stage-background-img, #upload-stage-background-img-container input.update-file, section.change-project-img-container input.choose-file, section.change-project-img-container input#save-stage-background-img, section.change-project-img-container input.update-file {
   font-size: 12px; }
@@ -4899,7 +4921,7 @@ section.profile-right {
     margin-bottom: 10px;
     margin-top: 3px; }
 
-#youtube-links-settings, section.profile-right:not(.public-profile-page) {
+#youtube-links-settings, section.profile-right:not(.public-profile-pages) {
   margin-top: 15px; }
 
 section.profile-right.profile-page {
@@ -5310,7 +5332,7 @@ footer {
   .about-me {
     margin-left: 5px;
     margin-top: 15px; }
-    .about-me li.profile-page {
+    .about-me li.profile-pages {
       display: block;
       float: none !important;
       margin-top: 8px; }
@@ -5327,7 +5349,7 @@ footer {
   .profile-right-container.project-details-page {
     padding-left: 15px; }
 
-  section.profile-right.profile-page.public-profile-page {
+  section.profile-right.profile-page.public-profile-pages {
     margin-top: 15px; }
 
   #new-project-page.row.col-xs-12.col-md-9 li {
@@ -5394,12 +5416,10 @@ footer {
   .project-info-bar h5 {
     margin-left: 10px; }
 
-  ul#copyright-types-container {
-    height: 493px !important; }
-    ul#copyright-types-container img, ul#copyright-types-container h5 {
-      margin-left: 5px !important; }
-    ul#copyright-types-container h4 {
-      font-size: 12px; }
+  ul#copyright-types-container img {
+    margin-left: 5px !important; }
+  ul#copyright-types-container h4 {
+    font-size: 12px; }
 
   section.change-project-img-container h4, section.change-project-img-container input {
     display: block !important; }
@@ -5478,6 +5498,9 @@ footer {
 @media only screen and (max-width: 569px) {
   img#cover-song {
     margin-top: 0 !important; } }
+@media only screen and (max-width: 514px) {
+  ul#copyright-types-container {
+    height: 743px !important; } }
 @media only screen and (max-width: 496px) {
   #players-wanted-page button.post-new-request, #players-wanted-page h3#musiclaps-forum, #players-wanted-page img#dialog-boxes, #forum-page button.post-new-request, #forum-page h3#musiclaps-forum, #forum-page img#dialog-boxes {
     float: left !important; }
@@ -5591,12 +5614,13 @@ footer {
     .project-info-bar.requesting-collab-page input.save-volume {
       display: none; }
 
-  #no-img-container {
+  form.project-form input.credit-cover-song {
+    font-size: 10px; }
+  form.project-form #no-img-container {
     height: 63.3px !important;
     width: 206.7px !important; }
-
-  ul#copyright-types-container {
-    height: 580px !important; }
+  form.project-form ul#copyright-types-container {
+    height: 900px !important; }
 
   section#messages-header button {
     float: none;
@@ -5658,4 +5682,12 @@ footer {
     margin-top: 35px; }
 
   .share-to-social-networks-container img:not(.first-img) {
-    margin-left: 2.5px; } }
+    margin-left: 2.5px; }
+
+  h2.user-id, h4.edit-profile, h4.save-profile, h4.dont-save-profile {
+    margin-left: 20px !important; }
+
+  section.public-projects-and-collaborations .row.col-xs-6.col-sm-8.col-md-6 {
+    padding-right: 0; }
+  section.public-projects-and-collaborations h4, section.public-projects-and-collaborations h5 {
+    margin-left: 6px !important; } }
