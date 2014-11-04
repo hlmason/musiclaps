@@ -5684,8 +5684,8 @@ footer {
   .share-to-social-networks-container img:not(.first-img) {
     margin-left: 2.5px; }
 
-  h2.user-id {
-    margin-left: 20px; }
+  h2.user-id, h4.edit-profile, h4.save-profile, h4.dont-save-profile {
+    margin-left: 20px !important; }
 
   section.public-projects-and-collaborations .row.col-xs-6.col-sm-8.col-md-6 {
     padding-right: 0; }
