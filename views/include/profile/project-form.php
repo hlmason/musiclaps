@@ -153,51 +153,63 @@
 
 	<form class="project-form" action="<?php echo BASE_URL; ?>controllers/profile/project-form-controller.php" method="post">
 		<section class="row col-xs-12">
-			<h4 id="copyright">Copyright <span class="normal">(original songs only)</span></h4>
-			<h4 class="red"><strong>Creative Commons licenses are irrevocable
-			<span class="block">Please think carefully before choosing a CC license</strong></span></h4>
+			<h4 id="copyright">Copyright Type</h4>
+			<h4 class="red">
+				<strong>
+					** Original songs only **
+					<span class="block">If you want someone to collaborate with you, select a Creative Commons license.</span>
+					<span class="block">Creative Commons licenses are irrevocable - please think carefully before choosing one.</span>
+				</strong>
+			</h4>
 		</section>
 		<div class="row col-xs-12">
 			<ul id="copyright-types-container">
 				<li class="row col-xs-12 first-list-item">
-					<input type="radio" name="" value="all_rights_reserved">
-					<img id="all-rights-reserved" src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/all-rights-reserved.gif" alt="Copyright symbol">
-					<h4 class="first-h4">All Rights Reserved</h4>
-				</li>
-				<li class="row col-xs-12">
 					<input type="radio" name="" value="cc_by">
 					<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/cc-by.png" alt="Attribution symbol">
-					<h4>Attribution</h4>
+					<h4>Attribution<span class="glyphicon glyphicon-question-sign" id="glyphiconQuestionSignCCBY"></span></h4>
+					<div class="cc-description" id="CCBYDescription">This license lets others distribute, remix, tweak, and build upon your work, even commercially, as long as they credit you for the original creation. This is the most accommodating of licenses offered. Recommended for maximum dissemination and use of licensed materials. Source: <a href="https://creativecommons.org/licenses/" target="blank">creativecommons.org/licenses</a></div>
 				</li>
 				<li class="row col-xs-12">
 					<input type="radio" name="" value="cc_by_nd">
 					<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/cc-by-nd.png" alt="Attribution-NoDerivs symbol">
-					<h4>Attribution - No Derivative Works</h4>
+					<h4>Attribution - No Derivative Works<span class="glyphicon glyphicon-question-sign" id="glyphiconQuestionSignCCBYND"></span></h4>
+					<div class="cc-description" id="CCBYNDDescription">This license allows for redistribution, commercial and non-commercial, as long as it is passed along unchanged and in whole, with credit to you. Source: <a href="https://creativecommons.org/licenses/" target="blank">creativecommons.org/licenses</a></div>
 				</li>
 				<li class="row col-xs-12">
 					<input type="radio" name="" value="cc_by_nc_sa">
 					<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/cc-by-nc-sa.png" alt="Attribution-NonCommercial-ShareAlike symbol">
-					<h4>Attribution - NonCommercial - Share Alike</h4>
+					<h4>Attribution - NonCommercial - Share Alike<span class="glyphicon glyphicon-question-sign" id="glyphiconQuestionSignCCBYNCSA"></span></h4>
+					<div class="cc-description" id="CCBYNCSADescription">This license lets others remix, tweak, and build upon your work non-commercially, as long as they credit you and license their new creations under the identical terms. Source: <a href="https://creativecommons.org/licenses/" target="blank">creativecommons.org/licenses</a></div>
 				</li>
 				<li class="row col-xs-12">
 					<input type="radio" name="" value="cc_by_sa">
 					<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/cc-by-sa.png" alt="Attribution-ShareAlike symbol">
-					<h4>Attribution - Share Alike</h4>
+					<h4>Attribution - Share Alike<span class="glyphicon glyphicon-question-sign" id="glyphiconQuestionSignCCBYSA"></span></h4>
+					<div class="cc-description" id="CCBYSADescription">This license lets others remix, tweak, and build upon your work even for commercial purposes, as long as they credit you and license their new creations under the identical terms. This license is often compared to “copyleft” free and open source software licenses. All new works based on yours will carry the same license, so any derivatives will also allow commercial use. This is the license used by Wikipedia, and is recommended for materials that would benefit from incorporating content from Wikipedia and similarly licensed projects. Source: <a href="https://creativecommons.org/licenses/" target="blank">creativecommons.org/licenses</a></div>
 				</li>
 				<li class="row col-xs-12">
 					<input type="radio" name="" value="cc_by_nc">
 					<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/cc-by-nc.png" alt="Attribution-NonCommercial symbol">
-					<h4>Attribution - NonCommercial</h4>
+					<h4>Attribution - NonCommercial<span class="glyphicon glyphicon-question-sign" id="glyphiconQuestionSignCCBYNC"></span></h4>
+					<div class="cc-description" id="CCBYNCDescription">This license lets others remix, tweak, and build upon your work non-commercially, and although their new works must also acknowledge you and be non-commercial, they don’t have to license their derivative works on the same terms. Source: <a href="https://creativecommons.org/licenses/" target="blank">creativecommons.org/licenses</a></div>
 				</li>
 				<li class="row col-xs-12">
 					<input type="radio" name="" value="cc_by_nc_nd">
 					<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/cc-by-nc-nd.png" alt="Attribution-NonCommercial-NoDerivs symbol">
-					<h4>Attribution - NonCommercial - No Derivative Works</h4>
+					<h4>Attribution - NonCommercial - No Derivative Works<span class="glyphicon glyphicon-question-sign" id="glyphiconQuestionSignCCBYNCND"></span></h4>
+					<div class="cc-description" id="CCBYNCNDDescription">This license is the most restrictive of the six main Creative Commons licenses, only allowing others to download your works and share them with others as long as they credit you, but they can’t change them in any way or use them commercially. Source: <a href="https://creativecommons.org/licenses/" target="blank">creativecommons.org/licenses</a></div>
 				</li>
 				<li class="row col-xs-12">
 					<input type="radio" name="" value="public_domain">
 					<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/public-domain.png" alt="Public Domain symbol">
-					<h4>Public Domain</h4>
+					<h4>Public Domain<span class="glyphicon glyphicon-question-sign" id="glyphiconQuestionSignPublicDomain"></span></h4>
+					<div class="cc-description" id="PublicDomainDescription">The Public Domain Mark is recommended for works that are free of known copyright around the world. These will typically be very old works.  It is not recommended for use with works that are in the public domain in some jurisdictions if they also known to be restricted by copyright in others. Source: <a href="http://creativecommons.org/about/pdm" target="blank">creativecommons.org/about/pdm</a></div>
+				</li>
+				<li class="row col-xs-12">
+					<input type="radio" name="" value="all_rights_reserved">
+					<img id="all-rights-reserved" src="<?php echo BASE_URL; ?>assets/images/profile-pages/copyright/all-rights-reserved.gif" alt="Copyright symbol">
+					<h4 class="last-h4">All Rights Reserved</h4>
 				</li>
 			</ul>
 		</div>

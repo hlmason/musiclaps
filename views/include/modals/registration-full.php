@@ -24,7 +24,7 @@
 					</div>
 					
 					<div>
-						<label for="password"><span class="musiclaps-blue">*</span> Password <span class="glyphicon glyphicon-question-sign" id="glyphiconQuestionSignRegistration"></span></label>
+						<label for="password"><span class="musiclaps-blue">*</span> Password <span class="glyphicon glyphicon-question-sign glyphiconQuestionSignRegistration"></span></label>
 						<div class="password-req" id="passwordReq">Passwords must contain 6 to 12 characters and at least 1 letter and 1 number</div>
 						<input id="password" type="password" name="password">
 					</div>
@@ -65,7 +65,7 @@
 					</div>
 					
 					<div id="agree-checkbox">
-						<input type="checkbox" name="tos" value="agree">&nbsp; I agree to the Musiclaps <a href="<?php echo BASE_URL; ?>views/terms/" target="blank">Terms of Use</a> and <a href="<?php echo BASE_URL; ?>views/privacy/" target="blank">Privacy Policy</a>.
+						<input type="checkbox" name="tos" value="agree">&nbsp; I agree to the Musiclaps <a href="<?php echo BASE_URL; ?>views/terms/" target="blank">Terms of Service</a> and <a href="<?php echo BASE_URL; ?>views/privacy/" target="blank">Privacy Policy</a>.
 					</div>
 				</div>
 				

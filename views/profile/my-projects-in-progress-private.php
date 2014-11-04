@@ -19,6 +19,10 @@
 					?>
 					<!-- End of project listings -->
 
+						<div class="row col-xs-12 private-url-container" id="privateURL">
+							<h4>Private URL</h4><!-- Hard-coded placeholder -->
+							<input class="private-url"><!-- Hard-coded placeholder -->
+						</div>
 
 						<!-- Project form -->
 						<?php

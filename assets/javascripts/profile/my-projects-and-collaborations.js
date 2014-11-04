@@ -15,6 +15,7 @@ $(document).ready(function() {
 	    My Projects and Collaborations
 	==================================== */
 	var glyphiconPencil = $('.glyphiconPencil');
+	var privateURL = $('#privateURL');
 	var projectForm = $('#projectForm');
 	var noCollabGlyphicon = $('span.noCollabGlyphicon');
 	var openCollabGlyphicon = $('span.openCollabGlyphicon');
@@ -22,6 +23,14 @@ $(document).ready(function() {
 
 	var requestingCollabForm = $('#requestingCollabForm');
 	var requestingCollabContainer = $('section#requestingCollabContainer');
+
+	var CCBYDescription = $('#CCBYDescription');
+	var CCBYNDDescription = $('#CCBYNDDescription');
+	var CCBYNCSADescription = $('#CCBYNCSADescription');
+	var CCBYSADescription = $('#CCBYSADescription');
+	var CCBYNCDescription = $('#CCBYNCDescription');
+	var CCBYNCNDDescription = $('#CCBYNCNDDescription');
+	var PublicDomainDescription = $('#PublicDomainDescription');
 
 	var changeProjectImgContainer = $('section.changeProjectImgContainer');
 	
@@ -35,6 +44,7 @@ $(document).ready(function() {
 	$('.noListings').hide();
 
 	glyphiconPencil.hide();
+	privateURL.hide();
 	projectForm.hide();
 	noCollabGlyphicon.hide();
 	openCollabGlyphicon.hide();
@@ -42,11 +52,20 @@ $(document).ready(function() {
 
 	requestingCollabForm.hide();
 
+	CCBYDescription.hide();
+	CCBYNDDescription.hide();
+	CCBYNCSADescription.hide();
+	CCBYSADescription.hide();
+	CCBYNCDescription.hide();
+	CCBYNCNDDescription.hide();
+	PublicDomainDescription.hide();
+
 	changeProjectImgContainer.hide();
 
 	
 	$(projectsContainer).on('click', function() {
 		projectsContainer.hide();
+		privateURL.fadeIn('fast');
 		projectForm.fadeIn('fast');
 	});
 	$(requestingCollabContainer).on('click', function() {
@@ -68,34 +87,112 @@ $(document).ready(function() {
 		}
 	});
 
-	$('input.noCollab').on('click', function() {
-		noCollabGlyphicon.show();
-		if ( openCollabGlyphicon.is(':visible') ) {
-			openCollabGlyphicon.hide();
-		}
-		if ( requestingCollabGlyphicon.is(':visible') ) {
-			requestingCollabGlyphicon.hide();
-		}
-	});
-	$('input.openCollab').on('click', function() {
-		openCollabGlyphicon.show();
-		if ( noCollabGlyphicon.is(':visible') ) {
-			noCollabGlyphicon.hide();
-		}
-		if ( requestingCollabGlyphicon.is(':visible') ) {
-			requestingCollabGlyphicon.hide();
-		}
-	});
-	$('input.requestingCollab').on('click', function() {
-		requestingCollabGlyphicon.show();
-		if ( openCollabGlyphicon.is(':visible') ) {
-			openCollabGlyphicon.hide();
-		}
-		if ( noCollabGlyphicon.is(':visible') ) {
-			noCollabGlyphicon.hide();
-		}
-	});
+		 /* ===================================
+		    Type of Collaboration
+		=================================== */
+		$('input.noCollab').on('click', function() {
+			noCollabGlyphicon.show();
+			if ( openCollabGlyphicon.is(':visible') ) {
+				openCollabGlyphicon.hide();
+			}
+			if ( requestingCollabGlyphicon.is(':visible') ) {
+				requestingCollabGlyphicon.hide();
+			}
+		});
+		$('input.openCollab').on('click', function() {
+			openCollabGlyphicon.show();
+			if ( noCollabGlyphicon.is(':visible') ) {
+				noCollabGlyphicon.hide();
+			}
+			if ( requestingCollabGlyphicon.is(':visible') ) {
+				requestingCollabGlyphicon.hide();
+			}
+		});
+		$('input.requestingCollab').on('click', function() {
+			requestingCollabGlyphicon.show();
+			if ( openCollabGlyphicon.is(':visible') ) {
+				openCollabGlyphicon.hide();
+			}
+			if ( noCollabGlyphicon.is(':visible') ) {
+				noCollabGlyphicon.hide();
+			}
+		});
 
+		/* ===================================
+		    Copyright Type
+		=================================== */
+		$('#glyphiconQuestionSignCCBY').hover(function() {
+			CCBYDescription.fadeIn('slow');
+
+			CCBYNDDescription.hide();
+			CCBYNCSADescription.hide();
+			CCBYSADescription.hide();
+			CCBYNCDescription.hide();
+			CCBYNCNDDescription.hide();
+			PublicDomainDescription.hide();
+		});
+		$('#glyphiconQuestionSignCCBYND').hover(function() {
+			CCBYNDDescription.fadeIn('slow');
+			
+			CCBYDescription.hide();
+			CCBYNCSADescription.hide();
+			CCBYSADescription.hide();
+			CCBYNCDescription.hide();
+			CCBYNCNDDescription.hide();
+			PublicDomainDescription.hide();
+		});
+		$('#glyphiconQuestionSignCCBYNCSA').hover(function() {
+			CCBYNCSADescription.fadeIn('slow');
+
+			CCBYDescription.hide();
+			CCBYNDDescription.hide();
+			CCBYSADescription.hide();
+			CCBYNCDescription.hide();
+			CCBYNCNDDescription.hide();
+			PublicDomainDescription.hide();
+		});
+		$('#glyphiconQuestionSignCCBYSA').hover(function() {
+			CCBYSADescription.fadeIn('slow');
+
+			CCBYDescription.hide();
+			CCBYNDDescription.hide();
+			CCBYNCSADescription.hide();
+			CCBYNCDescription.hide();
+			CCBYNCNDDescription.hide();
+			PublicDomainDescription.hide();
+		});
+		$('#glyphiconQuestionSignCCBYNC').hover(function() {
+			CCBYNCDescription.fadeIn('slow');
+
+			CCBYDescription.hide();
+			CCBYNDDescription.hide();
+			CCBYNCSADescription.hide();
+			CCBYSADescription.hide();
+			CCBYNCNDDescription.hide();
+			PublicDomainDescription.hide();
+		});
+		$('#glyphiconQuestionSignCCBYNCND').hover(function() {
+			CCBYNCNDDescription.fadeIn('slow');
+
+			CCBYDescription.hide();
+			CCBYNDDescription.hide();
+			CCBYNCSADescription.hide();
+			CCBYSADescription.hide();
+			CCBYNCDescription.hide();
+			PublicDomainDescription.hide();
+		});
+		$('#glyphiconQuestionSignPublicDomain').hover(function() {
+			PublicDomainDescription.fadeIn('slow');
+
+			CCBYDescription.hide();
+			CCBYNDDescription.hide();
+			CCBYNCSADescription.hide();
+			CCBYSADescription.hide();
+			CCBYNCDescription.hide();
+			CCBYNCNDDescription.hide();
+		});
+
+	/* =================================== */
 
 	$(projectImg).mouseenter(function() { // TODO: Fix
 		glyphiconPencil.show();

@@ -40,66 +40,66 @@
 						<div class="row col-xs-12">
 							<div class="username-and-img">
 								<img class="first-img" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-								<h5 class="first-h5">$username</h5><!-- Hard-coded placeholder -->
-								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
+								<h5 class="first-h5 username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
 							</div>
 							<div class="username-and-img">
 								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-								<h5>$username</h5><!-- Hard-coded placeholder -->
-								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
+								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
 							</div>
 							<div class="username-and-img">
 								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-								<h5>$username</h5><!-- Hard-coded placeholder -->
-								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
+								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
 							</div>
 							<div class="username-and-img">
 								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-								<h5>$username</h5><!-- Hard-coded placeholder -->
-								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
+								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
 							</div>
 							<div class="username-and-img">
 								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-								<h5>$username</h5><!-- Hard-coded placeholder -->
-								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
+								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
 							</div>
 							<div class="username-and-img">
 								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-								<h5>$username</h5><!-- Hard-coded placeholder -->
-								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
+								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
 							</div>
 						</div>
 
 						<div class="row col-xs-12">
 							<div class="username-and-img">
 								<img class="first-img" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-								<h5 class="first-h5">$username</h5><!-- Hard-coded placeholder -->
-								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
+								<h5 class="first-h5 username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
 							</div>
 							<div class="username-and-img">
 								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-								<h5>$username</h5><!-- Hard-coded placeholder -->
-								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
+								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
 							</div>
 							<div class="username-and-img">
 								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-								<h5>$username</h5><!-- Hard-coded placeholder -->
-								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
+								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
 							</div>
 							<div class="username-and-img">
 								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-								<h5>$username</h5><!-- Hard-coded placeholder -->
-								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
+								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
 							</div>
 							<div class="username-and-img">
 								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-								<h5>$username</h5><!-- Hard-coded placeholder -->
-								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
+								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
 							</div>
 							<div class="username-and-img">
 								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-								<h5>$username</h5><!-- Hard-coded placeholder -->
-								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span><!-- Hard-coded placeholder -->
+								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
 							</div>
 						</div>
 					</div>

@@ -107,7 +107,7 @@
 
 				</div>
 				<div class="row col-xs-12 col-md-3 profile-right-container project-details-page">
-					<section class="profile-right profile-page project-details-page"><!-- views/profile/index.php does not contain the class name "public-profile-page" -->
+					<section class="profile-right profile-page project-details-page">
 						
 						<div class="row first-row">
 							<div class="col-xs-121">

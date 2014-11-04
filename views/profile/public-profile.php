@@ -17,7 +17,7 @@
 		
 			<div class="row col-lg-10 col-lg-offset-1">				
 					
-				<div class="row col-xs-12 col-sm-8 profile-page">
+				<div class="row col-xs-12 col-sm-8 profile-page public-profile-pages">
 
 					<!-- Avatar and username div -->
 					<?php
@@ -53,7 +53,7 @@
 
 				</div>		
 				<div class="row col-xs-12 col-sm-4 profile-right-container">
-					<section class="profile-right profile-page public-profile-page"><!-- views/profile/index.php does not contain the class name "public-profile-page" -->
+					<section class="profile-right profile-page public-profile-pages"><!-- views/profile/index.php does not contain the class name "public-profile-pages" -->
 						
 						<div class="row first-row">
 							<div class="col-xs-7 col-offset-xs-1">
