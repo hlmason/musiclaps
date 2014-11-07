@@ -54,8 +54,8 @@
 					</div>
 					
 					<div>
-						<label id="zip-label" for="zip"><span class="musiclaps-blue">*</span> Zip/Postal Code</label>
-						<input id="zip" type="text" name="zipcode">
+						<label id="zip-or-postal-code" for="zip_or_postal_code"><span class="musiclaps-blue">*</span> Zip/Postal Code</label><!-- Note: 'zip-or-postal-code' must be an id to work -->
+						<input id="zip_or_postal_code" type="text" name="zipcode">
 					</div>
 					
 					<div>

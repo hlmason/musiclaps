@@ -100,8 +100,8 @@
 										?>
 									<!-- End of birth date form -->
 									<div class="col-xs-12 col-lg-6">
-										<label for="zip">Zip/Postal Code</label>
-										<input id="zip" type="text" name="zipcode">
+										<label for="zip_or_postal_code">Zip/Postal Code</label>
+										<input class="zip-or-postal-code" id="zip_or_postal_code" type="text" name="zipcode">
 									</div>
 								</div>
 

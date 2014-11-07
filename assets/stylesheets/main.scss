@@ -600,8 +600,8 @@ nav {
 				@include form-fields-input(100%);
 			}
 		}
-		label#email-label, label#birth-date-label-modal, label#gender-label, label#zip-label, img#captcha-img, #agree-checkbox {
-			@include form-fields-label(15px);
+		label#email-label, label#birth-date-label-modal, label#gender-label, label#zip-or-postal-code, img#captcha-img, #agree-checkbox {
+			@include form-fields-label(15px); // Note: 'zip-or-postal-code' must be an id to work
 		}
 		img#captcha-img {
 			display: block; // For viewport widths <= 767px
@@ -1354,10 +1354,10 @@ form.profile-page {
 	label {
 		@include form-fields-label(25px);
 	}
-	select.birth-date-field, input#zip { // Adds space btwn field and label. Should remain inside "form.profile-page"; otherwise it will affect modal fields
+	select.birth-date-field, input.zip-or-postal-code { // Adds space btwn field and label. Note: 'select.birth-date-field' should remain inside "form.profile-page"; otherwise it will affect modal fields
 		margin-left: 5px;
 	}
-	input#zip {
+	input.zip-or-postal-code {
 		@include form-fields-input(151px);
 	}
 	input.website-url, input.website-title, textarea, input.change-username {
@@ -2032,6 +2032,7 @@ section#lyrics-container-header { // "Display Lyrics" and "Select Project"
 #youtube-links-settings {
 	border: $nav-border;
 	margin-left: 3px;
+	margin-top: 15px;
 	padding: 7px 15px;
 	text-align: center;
 	width: 90%;
@@ -2523,20 +2524,17 @@ section.profile-right {
 	}
 }
 
-#youtube-links-settings, section.profile-right:not(.public-profile-pages) {
-	margin-top: 15px;
-}
-
 section.profile-right.profile-page { // Profile Page only
-	height: 1011px;
+	height: 1026px;
+	margin-top: 25px;
 	.row {
 		margin-left: 15px;
 		width: 90%;
 		&:first-child { // listeners/claps
 			text-align: center;
 		}
-		&:not(.first-row) { // listeners/claps
-			height: 115px;
+		&:not(.first-row) { // Not listeners/claps
+			height: 114px;
 		}
 		&:not(.last-row) {
 			border-bottom: 1px solid #999;
@@ -2712,11 +2710,11 @@ footer {
 	section.public-project-header h5, img#cover-song {
 		margin-right: 24px !important;  // Aligns elements with Live Player
 	}
-	form.profile-page input#change-password {
-		margin-top: 30px;
+	form.profile-page input#change-password { // Needs either this level of specificity or "!important" tag
+		margin-top: 25px;
 		margin-left: 0;
 	}
-	section.profile-right.profile-page { height: 1346px; }
+	section.profile-right.profile-page { height: 1457px; }
 }
 
 @media only screen and (max-width: 991px) {
@@ -2864,7 +2862,7 @@ footer {
 	#upload-avatar li { font-size: 12px; }
 	input#save-profile { 
 		margin-left: 0 !important; 
-		margin-top: 10px !important;
+		margin-top: 25px !important;
 	}
 	.profile-right-container {
 		margin-left: 25px;
@@ -2874,7 +2872,7 @@ footer {
 			margin-top: 80px;
 			padding-left: 0;
 		}
-		section.profile-right.profile-page { height: 1361px; }
+		section.profile-right.profile-page { height: 1555px; }
 	}
 	.public-project-page.row.col-xs-12.col-md-3, .recommended.row.col-md-3, .youtube-page.row.col-md-3 { display: none; } // Project listings and "Recommended" box
 	#youtube-links-settings { margin-left: 0; }
@@ -3237,7 +3235,6 @@ footer {
 		border-bottom: none !important;
 		ul { margin-left: 10px !important; }
 	}
-	form.profile-page input#save-profile { margin-top: 0 !important; }
 	section.project-form-header {
 		h3 { margin-right: 0; } // For "Requesting Collab" page project listings
 		.glyphicon-lock { margin-right: 3px; }
@@ -3319,4 +3316,5 @@ footer {
 		.row.col-xs-6.col-sm-8.col-md-6 { padding-right: 0; } // Adds more space to the right part of the tile
 		h4, h5 { margin-left: 6px !important; }
 	}
+	form.profile-page input.zip-or-postal-code { margin-left: 0; }
 }

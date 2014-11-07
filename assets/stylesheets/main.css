@@ -3231,7 +3231,7 @@ ul.user-menu li#new-project a:not(.dropdown-menu-link), ul.user-menu li#my-proje
     padding-left: 8px;
     padding-top: 3px;
     width: 100%; }
-  .modal-content .modal-body label#email-label, .modal-content .modal-body label#birth-date-label-modal, .modal-content .modal-body label#gender-label, .modal-content .modal-body label#zip-label, .modal-content .modal-body img#captcha-img, .modal-content .modal-body #agree-checkbox {
+  .modal-content .modal-body label#email-label, .modal-content .modal-body label#birth-date-label-modal, .modal-content .modal-body label#gender-label, .modal-content .modal-body label#zip-or-postal-code, .modal-content .modal-body img#captcha-img, .modal-content .modal-body #agree-checkbox {
     margin-bottom: 2px;
     margin-top: 15px; }
   .modal-content .modal-body img#captcha-img {
@@ -3870,9 +3870,9 @@ h4#my-profile {
 form.profile-page label {
   margin-bottom: 2px;
   margin-top: 25px; }
-form.profile-page select.birth-date-field, form.profile-page input#zip {
+form.profile-page select.birth-date-field, form.profile-page input.zip-or-postal-code {
   margin-left: 5px; }
-form.profile-page input#zip {
+form.profile-page input.zip-or-postal-code {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -4465,6 +4465,7 @@ section#lyrics-container-header {
 #youtube-links-settings {
   border: 1px solid #cecece;
   margin-left: 3px;
+  margin-top: 15px;
   padding: 7px 15px;
   text-align: center;
   width: 90%; }
@@ -4921,18 +4922,16 @@ section.profile-right {
     margin-bottom: 10px;
     margin-top: 3px; }
 
-#youtube-links-settings, section.profile-right:not(.public-profile-pages) {
-  margin-top: 15px; }
-
 section.profile-right.profile-page {
-  height: 1011px; }
+  height: 1026px;
+  margin-top: 25px; }
   section.profile-right.profile-page .row {
     margin-left: 15px;
     width: 90%; }
     section.profile-right.profile-page .row:first-child {
       text-align: center; }
     section.profile-right.profile-page .row:not(.first-row) {
-      height: 115px; }
+      height: 114px; }
     section.profile-right.profile-page .row:not(.last-row) {
       border-bottom: 1px solid #999; }
     section.profile-right.profile-page .row.user-location-map-container {
@@ -5077,11 +5076,11 @@ footer {
     margin-right: 24px !important; }
 
   form.profile-page input#change-password {
-    margin-top: 30px;
+    margin-top: 25px;
     margin-left: 0; }
 
   section.profile-right.profile-page {
-    height: 1346px; } }
+    height: 1457px; } }
 @media only screen and (max-width: 991px) {
   nav.navbar a:not(.navbar-brand) {
     margin-left: 10px; }
@@ -5211,7 +5210,7 @@ footer {
 
   input#save-profile {
     margin-left: 0 !important;
-    margin-top: 10px !important; }
+    margin-top: 25px !important; }
 
   .profile-right-container {
     margin-left: 25px;
@@ -5221,7 +5220,7 @@ footer {
       margin-top: 80px;
       padding-left: 0; }
     .profile-right-container section.profile-right.profile-page {
-      height: 1361px; }
+      height: 1555px; }
 
   .public-project-page.row.col-xs-12.col-md-3, .recommended.row.col-md-3, .youtube-page.row.col-md-3 {
     display: none; }
@@ -5598,9 +5597,6 @@ footer {
     #upload-avatar ul {
       margin-left: 10px !important; }
 
-  form.profile-page input#save-profile {
-    margin-top: 0 !important; }
-
   section.project-form-header h3 {
     margin-right: 0; }
   section.project-form-header .glyphicon-lock {
@@ -5690,4 +5686,7 @@ footer {
   section.public-projects-and-collaborations .row.col-xs-6.col-sm-8.col-md-6 {
     padding-right: 0; }
   section.public-projects-and-collaborations h4, section.public-projects-and-collaborations h5 {
-    margin-left: 6px !important; } }
+    margin-left: 6px !important; }
+
+  form.profile-page input.zip-or-postal-code {
+    margin-left: 0; } }
