@@ -2032,7 +2032,6 @@ section#lyrics-container-header { // "Display Lyrics" and "Select Project"
 #youtube-links-settings {
 	border: $nav-border;
 	margin-left: 3px;
-	margin-top: 15px;
 	padding: 7px 15px;
 	text-align: center;
 	width: 90%;
@@ -2524,9 +2523,12 @@ section.profile-right {
 	}
 }
 
+#youtube-links-settings, section.profile-right:not(.public-profile-pages) {
+	margin-top: 15px;
+}
+
 section.profile-right.profile-page { // Profile Page only
 	height: 1026px;
-	margin-top: 25px;
 	.row {
 		margin-left: 15px;
 		width: 90%;
@@ -2714,7 +2716,7 @@ footer {
 		margin-top: 25px;
 		margin-left: 0;
 	}
-	section.profile-right.profile-page { height: 1457px; }
+	section.profile-right.profile-page { height: 1342px; }
 }
 
 @media only screen and (max-width: 991px) {
@@ -2872,7 +2874,7 @@ footer {
 			margin-top: 80px;
 			padding-left: 0;
 		}
-		section.profile-right.profile-page { height: 1555px; }
+		section.profile-right.profile-page { height: 1371px; }
 	}
 	.public-project-page.row.col-xs-12.col-md-3, .recommended.row.col-md-3, .youtube-page.row.col-md-3 { display: none; } // Project listings and "Recommended" box
 	#youtube-links-settings { margin-left: 0; }
@@ -2981,6 +2983,10 @@ footer {
 	}
 	.profile-right-container.project-details-page { padding-left: 15px; }
 	section.profile-right.profile-page.public-profile-pages { margin-top: 15px; }
+	section.profile-right.profile-page { // Profile Page only
+		height: 1026px !important; 
+		margin-top: 25px; 
+	}
 	#new-project-page.row.col-xs-12.col-md-9 { 
 		li { 
 			display: block; 

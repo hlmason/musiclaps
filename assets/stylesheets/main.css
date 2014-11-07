@@ -4465,7 +4465,6 @@ section#lyrics-container-header {
 #youtube-links-settings {
   border: 1px solid #cecece;
   margin-left: 3px;
-  margin-top: 15px;
   padding: 7px 15px;
   text-align: center;
   width: 90%; }
@@ -4922,9 +4921,11 @@ section.profile-right {
     margin-bottom: 10px;
     margin-top: 3px; }
 
+#youtube-links-settings, section.profile-right:not(.public-profile-pages) {
+  margin-top: 15px; }
+
 section.profile-right.profile-page {
-  height: 1026px;
-  margin-top: 25px; }
+  height: 1026px; }
   section.profile-right.profile-page .row {
     margin-left: 15px;
     width: 90%; }
@@ -5080,7 +5081,7 @@ footer {
     margin-left: 0; }
 
   section.profile-right.profile-page {
-    height: 1457px; } }
+    height: 1342px; } }
 @media only screen and (max-width: 991px) {
   nav.navbar a:not(.navbar-brand) {
     margin-left: 10px; }
@@ -5220,7 +5221,7 @@ footer {
       margin-top: 80px;
       padding-left: 0; }
     .profile-right-container section.profile-right.profile-page {
-      height: 1555px; }
+      height: 1371px; }
 
   .public-project-page.row.col-xs-12.col-md-3, .recommended.row.col-md-3, .youtube-page.row.col-md-3 {
     display: none; }
@@ -5350,6 +5351,10 @@ footer {
 
   section.profile-right.profile-page.public-profile-pages {
     margin-top: 15px; }
+
+  section.profile-right.profile-page {
+    height: 1026px !important;
+    margin-top: 25px; }
 
   #new-project-page.row.col-xs-12.col-md-9 li {
     display: block; }
