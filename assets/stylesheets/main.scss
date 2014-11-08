@@ -3187,6 +3187,9 @@ footer {
 // Breakpoint of "You can add up to 3 YouTube videos per project" (YouTube Page)
 	#info-below-youtube-player img { margin-top: 10px; }
 	#project-details-container h4 { font-size: 12px; }
+	#privacy-page, #terms-page, #faqs-page {
+		h1 { font-size: 20px; }
+	}
 }
 
 @media only screen and (max-width: 417px) {
