@@ -5377,6 +5377,11 @@ footer {
   #upload-stage-background-img-container {
     margin-top: 15px; }
 
+  .type-of-collab-container {
+    height: 98px !important; }
+    .type-of-collab-container input {
+      width: 90%; }
+
   .messages-container.col-xs-9 {
     padding-right: 15px !important; }
 
@@ -5573,7 +5578,10 @@ footer {
   section#recording-instructions #allow-flash-instructions {
     margin-top: 10px !important; }
   section#recording-instructions #recording-start-instructions h2 {
-    margin-top: 0; } }
+    margin-top: 0; }
+
+  ul#copyright-types-container h4.last-h4 {
+    margin-left: 15px !important; } }
 @media only screen and (max-width: 399px) {
   section#technology h2, section#backstage h2, section.music-ed h2, section.contests-and-auditions h2 {
     font-size: 20px; }
@@ -5615,7 +5623,7 @@ footer {
     .project-info-bar.requesting-collab-page input.save-volume {
       display: none; }
 
-  form.project-form input.credit-cover-song {
+  form.project-form input.credit-cover-song, form.project-form textarea.description, form.project-form textarea.search-tags {
     font-size: 10px; }
   form.project-form #no-img-container {
     height: 63.3px !important;

@@ -3006,6 +3006,10 @@ footer {
 		}
 	}
 	#upload-stage-background-img-container { margin-top: 15px; }
+	.type-of-collab-container {
+		height: 98px !important;
+		input { width: 90%; }
+	}
 	.messages-container.col-xs-9 { padding-right: 15px !important; }
 	#privacy-page, #terms-page, #faqs-page {
 		h1 {
@@ -3210,6 +3214,7 @@ footer {
 		#allow-flash-instructions { margin-top: 10px !important; }
 		#recording-start-instructions h2 { margin-top: 0; }
 	}
+	ul#copyright-types-container h4.last-h4 { margin-left: 15px !important; } // "All Rights Reserved"
 }
 
 @media only screen and (max-width: 399px) {
@@ -3256,7 +3261,7 @@ footer {
 		}
 	}
 	form.project-form {
-		input.credit-cover-song { font-size: 10px; }
+		input.credit-cover-song, textarea.description, textarea.search-tags { font-size: 10px; }
 		#no-img-container { 
 			height: 63.3px !important; // One-third the size of recommended height (620px)
 			width: 206.7px !important; // One-third the size of recommended width (190px)

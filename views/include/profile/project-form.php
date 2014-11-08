@@ -89,7 +89,7 @@
 			<label for="search_tags">Search Tags
 				<input class="save" type="submit" name="" value="Save">
 			</label>
-			<textarea id="search_tags" name="" placeholder="Examples: Song Title, Genre, etc."></textarea>
+			<textarea class="search-tags" id="search_tags" name="" placeholder="Examples: Song Title, Genre, etc."></textarea>
 		</form>
 	</div>
 
@@ -134,15 +134,15 @@
 		<div class="row col-xs-12">
 			<div class="type-of-collab-container">
 				<div class="row">
-					<div class="col-xs-4">
+					<div class="col-xs-12 col-sm-4">
 						<span class="glyphicon glyphicon-ok noCollabGlyphicon"></span>
 						<input class="noCollab" type="submit" name="" value="No Collab">
 					</div>
-					<div class="col-xs-4">
+					<div class="col-xs-12 col-sm-4">
 						<span class="glyphicon glyphicon-ok openCollabGlyphicon"></span>
 						<input class="openCollab" type="submit" name="" value="Open Collab">
 					</div>
-					<div class="col-xs-4">
+					<div class="col-xs-12 col-sm-4">
 						<span class="glyphicon glyphicon-ok requestingCollabGlyphicon"></span>
 						<input class="requestingCollab" type="submit" name="" value="Requesting Collab">
 					</div>
