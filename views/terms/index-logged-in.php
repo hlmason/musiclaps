@@ -1,7 +1,7 @@
 <?php
 	require_once('../../controllers/require/config.php');
 
-	$page_title = 'Terms of Use';
+	$page_title = 'Terms of Service';
 	
 	include(ROOT_PATH . 'views/include/header-logged-in.php');
 ?>
@@ -12,191 +12,164 @@
 			
 				<!-- Keep paragraphs to approximately 45-75 characters per line -->
 
-				<h1>Musiclaps Terms of Use</h1>
+				<h1>Musiclaps Terms of Service</h1><br>
 
-				<h3>Introduction</h3>
-					<p>
-						Welcome to the music-sharing site called, "musiclaps" -- enjoy music with people all over the world! 
-						In order to complete registration, Users of the Site ("Users") must indicate that they have read and agreed to the Terms of Use. 
-						By using or accessing to the service, you agree to this Terms of Use.
-					</p>
+				<p>
+					Welcome to the website and online service "Musiclaps" (hereinafter "Musiclaps", "the site", "the app", or "the Services" ) that enables people worldwide to collaborate musically.  
+					<strong>By using the app and/or visiting the site - including all content available through the musiclaps.com domain name - you indicate that you agree to the Musiclaps terms and conditions (hereinafter "Terms of Service").  
+					If you do not agree to the Terms of Service, please refrain from using and/or visiting the app.</strong>
+				</p>
 
-				<h3>Article 1 (General Provisions)</h3>
+				<h3>Article 1 (Company)</h3>
 					<ol>
 						<li>
-							Site "musiclaps" is a community sharing service on the Internet that Musiclaps Media, Inc. (referred to as "the Company") is operated.
-							Terms musiclaps (hereinafter referred to as the "Agreement") is intended to adapt to any relationship between our company and all who use the musiclaps (hereinafter referred to as "User").
+							Musiclaps is owned and operated by Musiclaps Media, Inc. (hereinafter "the company", we", "our", or "us").
 						</li>
-						<li>User shall accept the agreement to use the services in this Agreement.</li>
-						<li>We may revise at any time without notice to Users, these Terms and Uses.  
-							For information on changing this Agreement, and shall be applied in preference to the terms of the past, are effective on this service.
+						<li>The Terms of Service shall dictate the relationship between the company and anyone using the app and/or visiting the site (hereinafter "users" or "user").</li>
+						<li>We may revise the Terms of Service at any time without notice; please review the them on occasion so that you can stay informed of any changes.
 						</li>
 					</ol>
 
-				<h3>Article 2 (Definition of terms)</h3>
-					<ul>
-						<li>Our company: Musiclaps Media, Inc.</li>
-						<li>Our Domain name: http://musiclaps.com</li>
-						<li>The Services: website of musiclaps and any service provided through musiclaps</li>
-						<li>User: Anyone who uses the Services including those who are interested to register, use our web applications, and visit the website of musiclaps</li>
-						<li>Member: User who registered to the Services.</li>
-					</ul>
+				<h3>Article 2 (Purpose)</h3>
 					<p>
-						In this service the "post" refers to uploading, it was posted through of this service, any information text, image, audio, and video clips.
-						The term "member information" refers member has registered, the information of all e-mail address, display name, and profile.
+						In making Musiclaps available to any registered user, our aim is to provide opportunities for the exchange of musical ideas and collaboration.
 					</p>
 
-				<h3>Article 3 (The purpose and content of the Service)</h3>
+				<h3>Article 3 (Pricing)</h3>
 					<p>
-						By sharing the music that has been submitted by the member, in this service, we aims to provide opportunities and exchange of information through the music, we'll try offering something pleasant happier life of everyone of the User.
-						By uploaded music and related to sound by everyone of the member, joining collaboration, posted comments, ratings, and picked keyword & tag in this service, you will continue to further the high quality information about music.
+						Registration for and basic use of Musiclaps is free.
 					</p>
 
-
-				<h3>Article 4 (For membership information)</h3>
+				<h3>Article 4 (Registration and Registered Users)</h3>
 					<p>
-						Those of who use this Service and want to take advantage of the services that require registration, please observe the following conditions.
-						When you register with this service, the membership information from registration screen provided by this service member is assumed to be transmitted through the Internet line.
-						We assumed that if the information has been transmitted successfully, we have accepted as a member.
-						The User shall enter true and accurate information as your own information. 
-						In addition, for the account that we have determined is not a true and accurate, and shall be able to remove at its discretion without prior members.
-						For membership information that is registered through the Service, regardless of our public and private ownership, it is assumed that our company hold and manage.
-						About the information entered by the member, member shall be responsible for any publication of data that was sent through this Service.
-						Information about the use and management of a member, the member shall be responsible for themselves.
-						With respect to the result of any action and regardless of whether or not the member himself did, is carried out under its own membership information, members shall be responsible for his own.
-						A Member shall be responsible for solving any problem related to copyright and privacy right. We do not assume any responsibility.
+						In order to access all features of Musiclaps, a user must register and should be aware of the following:
+						<ol>
+							<li>When you register, the data is assumed to be transmitted through the Internet; 
+							if the information is submitted successfully, you are registered;</li>
+							<li>You shall enter true, accurate, and current information; 
+							if we discover that your account contains false, inaccurate, or outdated information, it may be deleted at our discretion and without notification.</li>
+							<li>You shall be solely responsible for your postings and the consequences of posting, including any issues relating to copyright; 
+							<li>You shall be responsible for the postings - and the consequences of posting - by anyone masquerading and using your account as a result of your negligence or sharing your login information.</li>
+						</ol>
 					</p>
 
-				<h3>Article 5 (for membership)</h3>
+				<h3>Article 5 (Login Information)</h3>
 					<p>
-						We may cancel the membership in the case of the following reasons:
-					</p>
-					<ul>
-						<li>If you have posted inappropriate information</li>
-						<li>If there is act contrary to this Agreement</li>
-						<li>If there is unauthorized use of the password</li>
-						<li>If there is a fallacy of member information</li>
-						<li>If there is an act contrary to this Agreement</li>
-						<li>If there is reason to be equivalent to determine our company's disadvantage</li>
-					</ul>
-
-				<h3>Article 6 (For the password of members)</h3>
-					<p>
-						A member shall be responsible for managing and using their email address and password to use the Services.
-						A member shall not disclose, lend, transfer, sell registered email address and password.
-						Member shall not to be used by e-mail address, transfer or, to a third party password using the member registration.
-						Our company will not bear any responsibility on damages caused by inappropriate administration of registered email address and password.
+						Registered users shall be responsible for managing and using their email address and password for the app:
+						<ol>
+							<li>You shall not disclose, lend, transfer, or sell your registered email address and password;</li>
+							<li>You shall not use someone else's email address and password;</li>
+							<li>We shall not bear any responsibility for loss or damage caused by mismanagement of your registered email address and password.</li>
+						</ol>
 					</p>
 
-				<h3>Article 7 (Fee of the Service)</h3>
+				<h3>Article 6 (Disclaimer)</h3>
 					<p>
-						Registration for and basic use of the Services will be free.
+						The company shall bear no responsibility for damages to a user caused by the contents or use of Musiclaps (including the damages caused by trouble with a third party).  
+						We shall not assume administrative duties, archive contents, or be obligated to remove submitted content.  
+						We do not manage the sites or apps linked to from Musiclaps and are not responsible for their contents; we cannot guarantee the faultlessness, accuracy, applicability, usability or non-infringement of contents of such sites or apps.  
+						We also do not guarantee the accuracy of the information provided via Musiclaps.  
+						Users shall be responsible for their own behavior on Musiclaps; any conflicts resulting in damage claims shall be at the user's own expense.  
+						We offer no warranty of any kind and shall not be liable for any damages resulting from data loss or suspension of service.    
+						The company may change the name, specifications, or services of Musiclaps at anytime without notice; the company shall bear no responsibility for damages caused by such changes.  
+						User hereby agrees not to claim any damages against the company in cases to which any paragraphs of this Article are applicable.
 					</p>
 
-				<h3>Article 8 (Disclaimer)</h3>
-					<p>
-						Our company shall bear no responsibility for the damages to a member caused by the contents or use of the Services (including the damages caused by the trouble, etc. with a third party).
-						Information submitted in this service, we will not assume administrative duties, archive the contents, the obligation to remove.
-						The websites linked from the Services are not managed by our company.
-						Our company will not guaranty faultlessness, accuracy, applicability, usability or non-infringement of contents on the websites linked from the Services.
-						Information provided by this service, we do not guarantee the accuracy of the information, and integrity. 
-						And shall use the Service based on their own responsibility, for the behavior of the user conflict through the Service, with respect to such claim for damages shall be addressed in its own expense and responsibility.
-						In terms of the data we have saved, and shall not make any warranty of any kind with respect to the contents saved. 
-						Also, stop running dispute against data loss or server that is stored on the Service, in relation to the damages and we shall not be liable to any. 
-						Our company may change name, specification, or service menu of the Services anytime without notice. 
-						Our company shall bear no responsibility for damages caused by such changes.
-						A member and a User hereby agree not to claim any damages against our company in cases to which any Paragraphs of this Article is applicable.
-					</p>
-
-					<h3>Article 9 (Temporary Suspension / Discontinuance of the Service)</h3>
-						<p>
-							Without prior notice to our Users, our company may suspend or discontinue all or part of the provision of the Services by the following reasons. We are no warranties with regard to the detriment of the user or damage due to the suspension of the Service, we do not take responsibility for any service.
+					<h3>Article 7 (Temporary Suspension or Discontinuance of App)</h3>
+						<p> 					
+ 							Without prior notice to users, the company may suspend or discontinue all or part of the Services for the following reasons:
 						</p>
-						<ul>
-							<li>When periodical or urgent maintenances of operating system of the Service are needed</li>
-							<li>When maintenance of facilities for the operation of this service, the inspection</li>
-							<li>When operating system of the Services are stopped due to accidents</li>
-							<li>When there is trouble in the fire system equipment, such as by a power outage</li>
-							<li>When you can no longer provide a service natural disaster, war, convulsion, due to labor dispute</li>
-							<li>If it is determined that the other, operational, technical, and it is necessary to perform an interruption of our provision of the Services</li>
-						</ul>
+						<ol>
+							<li>Routine or urgent maintenance of the app's operating system is needed;</li>
+							<li>Inspection or maintenance of facilities for the operation of the Services is needed;</li>
+							<li>The app's operating system is halted in the event of an accident;</li>
+							<li>There is trouble with the fire system equipment, such as that caused by a power outage;</li>
+							<li>There is a natural disaster, war or convulsion, or labor dispute;</li>
+							<li>It is determined that it is necessary to halt the Services for other operational or technical reasons.</li>
+						</ol>
 
-				<h3>Article 10 (For the use of the content posted copyrights)</h3>
+				<h3>Article 8 (Copyright)</h3>
 					<p>
-						Copyright on the contents that the user has uploaded or posted on the Service, shall belong to the principle user.
-						A member hereby grants to our company a right to use these contents for free on a nonexclusive basis. 
-						Our company has a right to publish member-generated contents to public on promotional purposes, such as edit, use, reform, publication, collaboration, reproduction, public transmission, screening, exhibition, transfer, translation etc and right of the current copyright holder on the derivative work.
-						Current copyright owner grants another user to use them only within the scope of this service.
-						The User grants a right to edit of posts made ​​by other users, such as delivery to the meta-data, collaborate and publish in our site, and post to the site that we are affiliated.
-						Our company will assume the uploaded and posted contents in this Service to review freely, decision of whether or not published, edit posts, and delete.
+						Copyright of the contents that the user has uploaded or posted on the app shall belong to the principle user.  
+						Users hereby grant to the company, its affiliates, and partners a nonexclusive, irrevocable, royalty-free, sublicensable, worldwide license to create derivative works of, edit, use, reform, publish, collaborate, reproduce, publicly transmit, screen, exhibit, transfer, translate the content they have generated using the app.  
+						Current copyright owner grants another user the right to user the copyrighted material only within the scope of this service.
+						User grants the right to edit posts made ​​by other users, such as delivery to the meta-data, collaborate and publish in our site, and post to the site that we are affiliated.
+						The company will assume the uploaded and posted contents in this Service to review freely, decision of whether or not published, edit posts, and delete.
 					</p>
 
-				<h3>Article 11 (About Collaboration)</h3>
+				<h3>Article 9 (About Collaboration)</h3>
 					<p>
 						In our service, collaboration function that the contents uploaded by members, another user use it as a collaboration has been implemented. 
 						Member grants a right that the other members to use the content as a collaboration in this service. Such member shall not exercise any rights such as moral right, intellectual property right or any other right against the use of the contents by other Users.
 						Copyright of the altered contents will belong to a member who implemented such alteration. 
 						A copyright or other rights of the member who created original contents will not be affected by such alteration.
-						A member hereby grants to our company a right to use its altered contents for free on a non exclusive basis.
+						User hereby grants to the company a right to use their altered contents for free on a nonexclusive basis.
 						User shall grant the right to our company to uses its altered contents for such advertising and promotion purposes of the Services. 
 						Our company may sublicense the same right to any third party designated by our company. A member shall not exercise any rights such as moral right, intellectual property right, or any other right against our company or a third party sublicensed by our company.
-						A member shall not alter contents such as impaired rights of original work, defamation of the performer or the copyright holder when member use collaborative function of the Service.
-						Our company has a right to delete or stop publishing all or part of such contents without notice.
-						Our company shall not take any responsibility for the result of the use of altered contents by a user that is beyond the scope of the Services.
-						Our company shall not be responsible for any trouble caused by collaborative function. 
-						If there is any trouble between members, such members shall have to settle the problem by themselves.
+						User shall not alter contents such as impaired rights of original work, defamation of the performer or the copyright holder when member use collaborative function of the Service.
+						The company has a right to delete or stop publishing all or part of such contents without notice.
+						The company shall not take any responsibility for the result of the use of altered contents by a user that is beyond the scope of the Services.
+						The company shall not be responsible for any trouble caused by collaborative function. 
+						If there is any trouble between users, such users shall have to settle the problem by themselves.
 					</p>
 
-				<h3>Article 12 (Prohibited Acts)</h3>
+				<h3>Article 10 (Prohibited Acts)</h3>
 					<p>
-						Activities listed below are prohibited on the Services.
+						The following activities are prohibited:
 					</p>
-					<ul>
-						<li>Acts in violation of these Terms of Use</li>
-						<li>Acts imply that you lead or lead to criminal behavior</li>
-						<li>Recommend or encourage the act of criminal behavior</li>
-						<li>Act that disclosure of personally identifiable information to other users or third parties </li>
-						<li>Act of prejudice to other users or third parties</li>
-						<li>Acts that could be offensive to public order and morals</li>
-						<li>Act of impersonating others using this service</li>
-			            <li>Acts contrary to the law</li>
-			            <li>Conduct attacks on infrastructure of the Service by wrongful act</li>
-			            <li>To conduct intensive system of this service deliberately</li>
-			            <li>Acts that aim profit without permission from our company</li>
-			            <li>Infringe the intellectual property rights of third parties (except those that have been licensed in this agreement)</li>
-			            <li>Slander action against other users, or to a third party</li>
-			            <li>Acts that owns the user account member of one person, a duplicate for the purpose of fraud</li>
-			            <li>Acts carried out without the permission of our advertising, publicity, or solicitation with respect to third party</li>
-			            <li>Act to prevent the operation of the Service</li>
-			            <li>Acts that violate a person’s honor, social trust, privacy, right of publicity, copyright, intellectual property right, and 
-			            any other kind of right.</li>
-			            <li>Acts that our company considers as inappropriate.</li>
-					</ul>
+					<ol>
+						<li>Violating the Terms of Service;</li>
+						<li>Recommending or encouraging criminal behavior, or implying that you lead criminal behavior;</li>
+						<li>Disclosing personally identifiable information to other users or third parties;</li>
+						<li>Indicating prejudice toward other users or third parties;</li>
+						<li>Knowingly or inadvertently offending public order or morals;</li>
+						<li>Impersonating others;</li>
+			            <li>Violating the law;</li>
+			            <li>Attacking the app infrastructure;</li>
+			            <li>Profiting from the app without permission from the company;</li>
+			            <li>Infringing upon the intellectual property rights of third parties (except those that have been licensed in the Terms of Service;</li>
+			            <li>Slandering other users or a third party;</li>
+			            <li>Acts that owns the user account member of one person, a duplicate for the purpose of fraud;</li>
+			            <li>Advertising, publicizing, or soliciting without permission from the company;</li>
+			            <li>Obstructing app services;</li>
+			            <li>Violating a person’s honor, social trust, privacy, right of publicity, copyright, intellectual property right, or 
+			            any other kind of right;</li>
+			            <li>Committing inappropriate acts.</li>
+					</ol>
 
-				<h3>Article 13 (Damage claim)</h3>
+				<h3>Article 11 (Damage Claims)</h3>
 					<p>
-						Our company may claim damages (including attorneys’ fee) against members or Users who violate the Terms of Use and cause damages. 
-						Our company will have a right to suspend use of the Services of members or users who the Copyright Law or other laws or ordinances.
+						The company may claim damages (including attorneys’ fees) against users who violate the Terms of Service and cause damages.   
 					</p>
 
-				<h3>Article 14 (membership cancellation)</h3>
+				<h3>Article 12 (Account Cancellation)</h3>
 					<p>
-						A member has a right to cancel its membership at any time through the manner set forth by our company. 
-						Any rights that come with membership will be immediately waived and become null upon cancellation of the membership.
+						A user has the right to cancel their account at any time through the manner set forth by the company. 
+						Any rights that come with registration will be immediately waived and nullified upon cancellation of the account.
 					</p>
-
-				<h3>Article 15 (contact-notification)</h3>
 					<p>
-						If you want to contact us, you shall be carried out by e-mail contact form we provided. 
-						We can not be accepted for notification posted on the Service from non-contact member.
-						Contact for users from us, and shall be made by or to the user, such as e-mail, posting on the Services. 
-						However, the disadvantage of the case in relation to the provision of accurate contact has not been made from the user, we will not be liable.
+						The company may cancel a user's account in the following cases:
+					</p>
+					<ol>
+						<li>User violates copyright or other law;</li>
+						<li>User posts inappropriate information;</li>
+						<li>User successfully gains or unusuccessfully attempts to gain unauthorized access</li>
+						<li>User's personal information is false, inaccurate, or outdated;</li>
+						<li>It is disadvantageous for the company;</li>
+						<li>User commits an act contrary to the Terms of Service.</li>
+					</ol>
+
+				<h3>Article 13 (Contacting the Company)</h3>
+					<p>
+						You may email us at <a href="mailto:contact@musiclaps.com">contact@musiclaps.com</a><br>  
+						We may contact members via the app or directly via the member's registered email address.  
+						The company shall not be liable in the event that a member has registered with inaccurate information.
 					</p>
 				
-				<h3>Article 16 (Governing Law and Jurisdiction)</h3>
+				<h3>Article 14 (Governing Law and Jurisdiction)</h3>
 					<p>
-						This Agreement is intended to comply with the laws of US and is interpreted. 
-						If there is a lawsuit between the user and the Service, we shall be the governed by the laws of the state of California, USA.
+						The Terms of Service are intended to comply with the laws of the United States.  
+						If a lawsuit between the company and user should arise, it shall be governed by the laws of the State of California.
 					</p>
 
 				<div class="col-sm-1 col-md-2 col-lg-3"></div>	
