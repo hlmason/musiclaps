@@ -5547,7 +5547,10 @@ footer {
     margin-top: 10px; }
 
   #project-details-container h4 {
-    font-size: 12px; } }
+    font-size: 12px; }
+
+  #privacy-page h1, #terms-page h1, #faqs-page h1 {
+    font-size: 20px; } }
 @media only screen and (max-width: 417px) {
   h3.select-song-heading {
     font-size: 15px; }
