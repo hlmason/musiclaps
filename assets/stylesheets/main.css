@@ -5564,6 +5564,9 @@ footer {
   h2.user-id, h4.edit-profile, h4.save-profile {
     margin-left: 10px; }
 
+  #upload-avatar {
+    border-bottom: none !important; }
+
   input.save#save-genre {
     float: right;
     margin-left: 0 !important; }
@@ -5608,10 +5611,8 @@ footer {
     margin-left: 10px;
     margin-top: 0 !important; }
 
-  #upload-avatar {
-    border-bottom: none !important; }
-    #upload-avatar ul {
-      margin-left: 10px !important; }
+  #upload-avatar ul {
+    margin-left: 10px !important; }
 
   section.project-form-header h3 {
     margin-right: 0; }
