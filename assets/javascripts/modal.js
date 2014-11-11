@@ -37,11 +37,11 @@ $(document).ready(function() {
 		}
 	});
 
-	$('button.registerOrLoginJS').on('click', function() { // This modal is on the Live Player page
+	$('button.registerOrLogin').on('click', function() { // This modal is on the Live Player page
 		registerOrLogin.modal('show');
 	});
 
-	$('#glyphiconEnvelope').on('click', function() { // This modal is on the Public Project 'B' page
+	$('#glyphiconEnvelope').on('click', function() { // This modal is on the Project Details page
 		registerOrLogin.modal('show');
 	});
 

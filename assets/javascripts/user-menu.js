@@ -6,17 +6,7 @@ $(document).ready(function() {
 	var userMenu = $('ul.userMenu');
 	var h4UserMenu = $('h4.userMenu');
 
-	$('.glyphiconUser').on('click', function() { // Does the same thing as function below
-		if ( userMenu.is(':hidden') ) {
-			userMenu.slideDown('fast');
-			h4UserMenu.addClass('menu-link-active-js');
-		} else {
-			userMenu.slideUp('fast');
-			h4UserMenu.removeClass('menu-link-active-js');
-		}
-	});
-	
-	h4UserMenu.on('click', function() { // Does the same thing as function above
+	$('.glyphiconUser, h4.userMenu').on('click', function() {
 		if ( userMenu.is(':hidden') ) {
 			userMenu.slideDown('fast');
 			h4UserMenu.addClass('menu-link-active-js');

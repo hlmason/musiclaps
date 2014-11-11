@@ -12,22 +12,13 @@ $(document).ready(function() {
 	/* ===================================
 	    Mobile viewport widths
 	=================================== */
-	menu.on('click', function() // Makes "Menu" link stay blue when menu is activated  // // Does the same thing as function below
+	$('h4#menuJS, button#navbarToggle').on('click', function() // Makes "Menu" link stay blue when menu is activated
 	{	
 		if ( navbarCollapse.is(':hidden') ) {
 			menu.addClass('menu-link-active-js');
 		} else { // This is necessary since user can also activate menu by clicking on navicon
 			menu.removeClass('menu-link-active-js');
-		}	
-	});
-
-	$('button#navbarToggle').on('click', function() // // Does the same thing as function above 
-	{	
-		if ( navbarCollapse.is(':hidden') ) {
-			menu.addClass('menu-link-active-js');
-		} else {
-			menu.removeClass('menu-link-active-js');
-		}	
+		}
 	});
 
 	/* ===================================
