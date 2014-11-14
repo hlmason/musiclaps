@@ -42,7 +42,7 @@
 							</li>
 						</ul>
 
-						<form action="<?php echo BASE_URL; ?>controllers/profile/new-project/upload-mp3-controller.php" method="post">
+						<form action="<?php echo BASE_URL; ?>controllers/profile/upload-mp3-controller.php" method="post">
 							<section id="newProject">
 								<div class="row col-xs-12">
 									<label id="project-title-label" for="project_title_new_project">Project Title <span class="normal">(max 80 characters)</span></label>
