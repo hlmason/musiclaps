@@ -1,3 +1,9 @@
+/* ===================================
+    Global Config
+=================================== */
+/* ===================================
+    Mixins
+=================================== */
 /* Includes: Grid system, Forms, Glyphicons, Navs, Navbar, Progress bars, Component animations, Dropdowns, and Modals */
 /* Important Note: @grid-float-breakpoint = @screen-md-min */
 /*!
@@ -2876,12 +2882,6 @@ tbody.collapse.in {
   transform: translate3d(0, 0, 0); }
 
 /* ===================================
-    Global Config
-=================================== */
-/* ===================================
-    Mixins
-=================================== */
-/* ===================================
     Element Selectors
 =================================== */
 html, body {
@@ -3486,58 +3486,6 @@ section.contests-and-auditions {
   padding-bottom: 0; }
   section.contests-and-auditions img {
     margin-top: 140px; }
-
-/* ===================================
-    Live Player Page
-=================================== */
-#live-player-container {
-  margin-left: 0;
-  padding-left: 0;
-  padding-right: 0;
-  text-align: center; }
-
-a.select-song {
-  font-size: 16px; }
-
-section#recording-instructions h1 {
-  text-align: center; }
-section#recording-instructions h2 {
-  font-size: 18px;
-  font-weight: normal; }
-  section#recording-instructions h2 span:not(.block) {
-    font-weight: bold; }
-    section#recording-instructions h2 span:not(.block).red {
-      color: red; }
-    section#recording-instructions h2 span:not(.block).green {
-      color: green; }
-section#recording-instructions #recording-buttons-img {
-  margin-top: 15px; }
-section#recording-instructions #allow-flash-instructions {
-  margin-top: 35px; }
-section#recording-instructions #allow-flash-img {
-  margin-top: 10px; }
-section#recording-instructions #allow-flash-chrome-container {
-  margin-top: 15px; }
-  section#recording-instructions #allow-flash-chrome-container p {
-    margin-bottom: 0; }
-section#recording-instructions #recording-start-instructions {
-  margin-top: 45px; }
-section#recording-instructions #recording-area-img img {
-  margin-top: 22px; }
-section#recording-instructions #save-container {
-  margin-top: 50px;
-  text-align: center; }
-  section#recording-instructions #save-container button.save {
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    background-color: green;
-    border: none;
-    color: white;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    padding: 10px 20px; }
-    section#recording-instructions #save-container button.save:hover, section#recording-instructions #save-container button.save:focus {
-      background-color: #1A9A1A; }
 
 .menu-link-active-js {
   color: #1F91E6; }
@@ -5042,6 +4990,58 @@ h1.db-error-message {
     font-size: 3em; }
   #construction-page #space-above-construction-stage {
     height: 200px; }
+
+/* ===================================
+    Live Player Page
+=================================== */
+#live-player-container {
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center; }
+
+a.select-song {
+  font-size: 16px; }
+
+section#recording-instructions h1 {
+  text-align: center; }
+section#recording-instructions h2 {
+  font-size: 18px;
+  font-weight: normal; }
+  section#recording-instructions h2 span:not(.block) {
+    font-weight: bold; }
+    section#recording-instructions h2 span:not(.block).red {
+      color: red; }
+    section#recording-instructions h2 span:not(.block).green {
+      color: green; }
+section#recording-instructions #recording-buttons-img {
+  margin-top: 15px; }
+section#recording-instructions #allow-flash-instructions {
+  margin-top: 35px; }
+section#recording-instructions #allow-flash-img {
+  margin-top: 10px; }
+section#recording-instructions #allow-flash-chrome-container {
+  margin-top: 15px; }
+  section#recording-instructions #allow-flash-chrome-container p {
+    margin-bottom: 0; }
+section#recording-instructions #recording-start-instructions {
+  margin-top: 45px; }
+section#recording-instructions #recording-area-img img {
+  margin-top: 22px; }
+section#recording-instructions #save-container {
+  margin-top: 50px;
+  text-align: center; }
+  section#recording-instructions #save-container button.save {
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: green;
+    border: none;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding: 10px 20px; }
+    section#recording-instructions #save-container button.save:hover, section#recording-instructions #save-container button.save:focus {
+      background-color: #1A9A1A; }
 
 /* ===================================
     Media Queries
