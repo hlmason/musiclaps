@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?php echo BASE_URL; ?>favicon-57.png">
     <link rel="apple-touch-icon-precomposed" sizes="48x48" href="<?php echo BASE_URL; ?>favicon-48.png">
 	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
-	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/stylesheets/main.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/stylesheets/application.css">
 	<title>Musiclaps | <?php echo $page_title; ?></title>
 	<!-- [if lt IE 9]> -->
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>

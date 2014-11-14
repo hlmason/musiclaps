@@ -1,0 +1,213 @@
+/* ===================================
+    Nav
+=================================== */
+nav {
+	&.navbar {
+		@include border-radius(0);
+	}
+	&.navbar-default {
+		background-color: $musiclaps-light-gray;
+		border-bottom: $nav-border;
+	}
+	.navbar-header {
+		height: 78px;
+		button.navbar-toggle {
+			margin-top: 23px;
+		}
+		h4 { // Collapsed main menu
+			float: right;
+			margin-right: 10px;
+			margin-top: 30px;
+			&:hover {
+				color: #1F91E6;
+			} 
+		}
+		img { // Musiclaps logo
+			height: 45px;
+			width: 155px;
+		}
+	}
+	h4, .glyphicon-user {
+		cursor: pointer;
+		display: none;
+	}
+	h4 { // Collapsed main menu and collapsed "User Menu"
+		font-weight: normal;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+	}
+	ul {
+		&.nav {
+			margin-top: 6px; // Required for Bootstrap dropdown menus
+			li { // Also controls nav below top nav / collapsed "User Menu"
+				margin-top: 23px;		
+			}
+			.open > a { // When "Music", "People", or "Our Story" is clicked on
+				background-color: $musiclaps-light-gray !important;
+			}
+			a {
+				@include nav-link($musiclaps-dark-gray, 14px);
+				letter-spacing: 0.5px;
+				text-transform: uppercase;
+				&:hover, &:focus, &.active {
+					color: #1F91E6 !important; // Otherwise links are gray
+				}
+				&:not(.welcome-user-link) {
+					padding: 15px;	
+				}
+			}
+		}
+		&.navbar-left > li { // "Music", "People", and "Our Story" only
+			@include nav-border(#cecece);
+		}
+		.dropdown a .caret {
+			display: none;
+		}
+		ul.dropdown-menu { // Left unnested so that ".caret" displays on nav below nav but ".dropdown-menu" stylings apply
+			border: $modal-border;
+			a {
+				text-transform: capitalize; // Overrides "text-transform: uppercase"
+				&:first-child {
+					margin-top: -15px;
+				}
+				&:last-child {
+					margin-bottom: 8px;	
+				}
+			}
+		}
+	}
+	form.search {
+		display: inline-block;
+		.glyphicon-search {
+			cursor: pointer;
+			margin-left: 15px;
+			margin-top: 30px;
+			&:hover {
+				color: $musiclaps-blue;
+			}
+		}
+		input.search {
+			@include form-fields-input(181px);
+			margin-left: 8px;
+		}
+	}
+	ul#flags {
+		float: right;
+		margin-bottom: 0;
+		margin-left: -80px;
+		margin-top: 3px;
+		li {
+			display: inline-block;
+			position: relative; // Makes flags clickable
+			z-index: 1; // Makes flags clickable
+			&:first-child {
+				margin-right: 5px;
+			}
+			img {
+				height: 13px;
+				width: auto;
+			}
+		}
+	}
+	ul.navbar-right {
+		&#logged-out li {
+			border: $nav-border;
+			&:first-child { // "Log in" button
+				@include border-bottom-left-radius(10px);
+				@include border-top-left-radius(10px);
+				background-color: lightgray;
+				&:hover {
+					background-color: #d9d9d9;
+				}
+				a:hover {
+					color: black !important;
+				}
+			}
+			&:last-child { // "Register" button
+				background-color: $musiclaps-blue;
+				border: 1px solid $musiclaps-blue;
+				@include border-bottom-right-radius(10px);
+				@include border-top-right-radius(10px);
+				&:hover {
+					background-color: #45B7FF;
+				}
+				a {
+					color: white !important;
+				}
+			}
+		}
+		li {
+			&#welcome-user-sm, &#welcome-user-xs {
+				a {
+					color: #1F91E6 !important; // Otherwise username is gray
+					text-transform: initial; // Otherwise username is capitalized
+					&:hover, &:focus {
+						color: $musiclaps-dark-gray !important;
+					}
+				}
+			}
+			&#welcome-user-sm {
+				margin-right: 10px;
+				margin-top: 28px !important;
+			}
+			&#welcome-user-xs {
+				display: none;
+			}
+		}
+	}
+}
+
+	/* ===========================================
+	    Nav below top nav / collapsed "User Menu"
+	=========================================== */
+	nav .glyphicon-user {
+		@include border-radius(4px);
+		color: #888;
+		border: 1px solid #ddd;
+		padding: 10px;
+		&:hover {
+			background-color: #ddd;
+		}
+	}
+
+	h4.user-menu {
+		margin-bottom: 0;
+		margin-left: 5px;
+		margin-top: 10px;
+		&:hover {
+			color: #1F91E6;
+		}
+	}
+
+	ul.user-menu li {
+		&:not(.first-list-item) { // Not "Profile" / "My Profile" tabs
+			padding-left: 2px;
+		}
+		&:not(.dropdown-menu-list-item) {
+			border-bottom: $nav-border;
+			a {
+				padding-left: 12px; // Lines menu up with "Recommended" box (overwrites general padding of 15px for links)
+				padding-right: 12px; // Lines menu up with "Recommended" box (overwrites general padding of 15px for links)
+				&:not(.dropdown-menu-link) {
+					border-left: $nav-border;
+					border-right: $nav-border;
+					border-top: $nav-border;
+					@include border-top-left-radius(5px);
+					@include border-top-right-radius(5px);
+					text-transform: capitalize !important;
+					&:not(.active) {
+						background-color: #f4f4f4;
+					}
+					&.active, &:hover, &:focus { 
+	 					background-color: white; // Removes hover background color (#f4f4f4) on active tab
+	 				}
+				}
+			}
+
+		}
+		&#new-project, &#my-projects, &#collaborations {
+			a:not(.dropdown-menu-link) { 
+				padding: 14px 11.5px 12px; // Left/right padding lines menu up with "Recommended" box (overwrites general padding of 15px for links)
+			}
+		}
+	}

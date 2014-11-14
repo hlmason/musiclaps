@@ -1,0 +1,221 @@
+/* ===================================
+    Landing Page
+=================================== */
+h1.landing-page {
+	@include heading(30px, 0, 0);
+	font-family: $font-family--secondary;
+	a {
+		color: $musiclaps-blue;
+		&:hover, &:focus {
+			color: $musiclaps-dark-gray ; // For "Music Collaboration"
+		}
+	}
+}
+
+	/* ===================================
+	    Musical Notes Map
+	=================================== */
+	#landing-page-hero {
+		margin-top: 20px;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		#musical-notes-map {
+			@include img-replace("landing-pg/musical-notes-map.png", 100%, 5000em);
+			margin-left: -1010em;
+			position: absolute;
+			z-index: -1;
+		    -webkit-animation: moveSlideshow 20s linear infinite normal forwards;
+		       -moz-animation: moveSlideshow 20s linear infinite normal forwards;
+		    	 -o-animation: moveSlideshow 20s linear infinite normal forwards;
+		       		animation: moveSlideshow 20s linear infinite normal forwards;
+		  	-webkit-transition: opacity 0.5s ease-out linear infinite normal forwards;
+		  	   -moz-transition: opacity 0.5s ease-out linear infinite normal forwards;
+		  		 -o-transition: opacity 0.5s ease-out linear infinite normal forwards;
+		       	 	transition: opacity 0.5s ease-out linear infinite normal forwards; 
+		}
+	}
+			@-webkit-keyframes moveSlideshow {
+			    0% { left: 0; }
+			    100% { left: 1010px; }
+			}
+			@-moz-keyframes moveSlideshow {
+			    0% { left: 0; }
+			    100% { left: 1010px; }
+			}
+			@-o-keyframes moveSlideshow {
+			    0% { left: 0; }
+			    100% { left: 1010px; }
+			}
+			@keyframes moveSlideshow {
+			    0% { left: 0; }
+			    100% { left: 1010px; }
+			}
+
+	/* ===================================
+	    Stage
+	=================================== */
+	#stage {
+		background-color: $musiclaps-dark-gray;
+		height: 161px;
+		text-align: center;
+		width: 100%;
+		#stage-inner {
+			margin: 0 auto;
+			max-width: 935px;
+			#education, #contests {
+				margin-top: 52px;
+				a {
+					color: $musiclaps-light-gray;
+					font-family: $font-family--secondary;
+					font-size: 24px;
+					letter-spacing: 0.5px;
+					&:hover, &:focus {
+						color: $musiclaps-blue;
+					}
+					span {
+						@include border-radius(100%);
+						background-color: #F4F4F4;
+						padding: 4px 7px;
+						img {
+							height: auto;
+							width: 29px;
+						}
+					}
+				}
+			}
+			p {  // "Record a Demo"
+				color: $musiclaps-blue;
+				font-size: 14px;
+				margin-top: 25px;
+				text-transform: uppercase;
+				sup {		
+					letter-spacing: 4px;
+				}
+			}
+			ul {
+				position: relative; // For Firefox
+				top: -87px; // For Firefox
+				li {
+					display: inline-block;
+					img { // Play, pause, stop, and record buttons
+						-webkit-transition: 0s linear;
+						   -moz-transition: 0s linear;
+							 -o-transition: 0s linear;
+								transition: 0s linear;
+						width: 75%;
+						// min-width: 57px;
+						&:hover {
+							-webkit-transform: scale(1.1);
+							   -moz-transform: scale(1.1);
+								-ms-transform: scale(1.1);
+								 -o-transform: scale(1.1);
+									transform: scale(1.1);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/* ===================================
+	    Image Slider
+	=================================== */	
+	.wmuSlider {
+		height: 161px;
+	    position: relative;
+	    overflow: hidden;
+		// .wmuSliderWrapper {
+	 //    	display: none;
+		// }
+		.wmuSliderWrapper article {
+			height: 161px;
+		    // position: relative;
+		    text-align: center;
+		    img { // Album covers
+			    opacity: 0.9;
+			    // width: auto;
+			    height: 161px;
+			    width: 161px;
+			    &:hover {
+			    	cursor: pointer;
+			    	opacity: 1;
+			    }
+		    }
+		}
+	}
+
+	.wmuSliderPrev, .wmuSliderNext { // Left and right arrow buttons
+		@include img-replace("landing-pg/sprites.png", 80px, 40px);
+	    position: absolute;
+	    width: 40px;
+	    height: 80px;
+	    text-indent: -9999px;
+	    top: 50%;
+	    margin-top: -40px;
+	}
+
+	.wmuSliderPrev {
+	    background-position: 100% 0; // Controls direction of left slider button
+	    left: 100px;
+	}
+
+	.wmuSliderNext {
+	    right: 100px;
+	}
+
+	/* ===============================================================
+	    Technology, Backstage, Music Education, Contests and Auditions
+	=============================================================== */
+	section {
+		&#technology, &#backstage, &.music-ed, &.contests-and-auditions {
+			padding-bottom: 30px;
+			h2 {
+				@include heading(29px, 15px, 30px);
+			}
+			@include section-paragraph-and-links;
+			ul {
+				margin-top: 0;
+				li {
+					&:first-child {
+						padding-top: 20px;
+					}
+					&:not(.first-list-item) {
+						padding-top: 10px;
+					}
+				}
+				// a:visited {
+				// 	color: $musiclaps-dark-gray !important;
+				// }
+			}
+		}
+		&#technology, &#backstage, &.music-ed {
+			border-bottom: $nav-border;
+		}
+		&#technology, &.music-ed {
+			background-color: $musiclaps-light-gray;
+		}
+		&#backstage, &.contests-and-auditions {
+			background-color: white;
+		}
+		&#technology img {
+			margin-top: 120px;
+			height: 133px;
+			width: 200px;
+		}
+		&#backstage img, &.music-ed img, &.contests-and-auditions img {
+			width: 150px;
+		}
+		&#backstage img {
+			margin-top: 90px;
+		}
+		&.music-ed img {
+			margin-top: 90px;
+		}
+		&.contests-and-auditions {
+			padding-bottom: 0;
+			img {
+				margin-top: 140px;
+			}
+		}
+	}

@@ -1,0 +1,63 @@
+/* ===================================
+    Live Player Page
+=================================== */
+#live-player-container {
+	margin-left: 0;
+	padding-left: 0; // Centers Live Player on page
+	padding-right: 0; // Lines Live Player up with "Select a song" modal
+	text-align: center;
+}
+
+a.select-song {
+	font-size: 16px;
+}
+
+section#recording-instructions {
+	h1 {
+		text-align: center;
+	}
+	h2 {
+		font-size: 18px;
+		font-weight: normal;
+		span:not(.block) {
+			font-weight: bold;
+			&.red {
+				color: red;
+			}
+			&.green {
+				color: green;
+			}
+		}
+	}
+	#recording-buttons-img {
+		margin-top: 15px;
+	}
+	#allow-flash-instructions {
+		margin-top: 35px;
+	}
+	#allow-flash-img {
+		margin-top: 10px;
+	}
+	#allow-flash-chrome-container {
+		margin-top: 15px;
+		p {
+			margin-bottom: 0;
+		}
+	}
+	#recording-start-instructions {
+		margin-top: 45px;
+	}
+	#recording-area-img img {
+		margin-top: 22px;
+	}
+	#save-container {
+		margin-top: 50px;
+		text-align: center;
+		button.save {  // "Save Recording" button
+			@include button(green, white, 14px, 10px 20px);
+			&:hover, &:focus {
+				background-color: #1A9A1A;
+			}
+		}
+	}
+}

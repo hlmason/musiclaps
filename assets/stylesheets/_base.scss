@@ -1,0 +1,164 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	color: $musiclaps-dark-gray;
+	font-family: $font-family--primary;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	padding-left: 0;
+	li { 
+		list-style-type: none;
+	}
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+// .upside-down {
+// 	@include transform(-180deg);
+// 	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); // IE6/7
+// 	ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"; // IE8
+// }
+
+.menu-link-active-js {
+	color: #1F91E6;
+}
+
+form {
+	label#birth-date-label-modal, label#gender-label, 
+	label#birth-date-label-profile, label#collab-label { // Full registration modal, Profile page, and Collaborators page 
+		margin-right: 2px;
+	}
+	textarea {
+		max-width: 100%; // Prevents user from expanding textarea horizontally
+	}
+	h4.error-message {
+		margin-left: 2px !important;
+		margin-top: 5px !important;
+		&:first-child {
+			margin-top: 15px !important; // Overwrites the above ("margin-top: 5px !important")
+		}
+	}
+}
+
+span.block {
+	display: block;
+}
+
+span.bold {
+	font-weight: bold;
+}
+
+span.normal {
+	font-weight: normal;
+}
+
+.glyphicon-ok {
+	color: #DAA520;
+}
+
+.musiclaps-blue {
+	color: $musiclaps-blue !important;
+}
+
+#registration-full-modal-body, #registration-express-modal-body, #select-part-container, #lyrics-settings-sm, #lyrics-settings-xs, #youtube-links-settings {
+	.glyphicon-question-sign, .password-req, .select-part-explanation, .lyrics-explanation, .youtube-id-req {
+		color: $musiclaps-blue !important;
+	}
+	.password-req, .select-part-explanation, .lyrics-explanation, .youtube-id-req {
+		font-size: 12px;
+	}
+	.password-req, .select-part-explanation, .youtube-id-req {
+		margin-bottom: 2px;
+		margin-left: 2px;
+	}
+}
+
+.modal-footer:not(.registration-modal-footer), .navbar-right {
+	input { // "Log in" and "Log out" buttons
+		@include border-radius(10px);
+		@include submit-button($musiclaps-light-gray, $nav-border, 5px 10px, #d9d9d9);
+	}
+}
+
+img {
+	&.facebook-icon, &.google-icon, &#reddit-icon, &#tumblr-icon, &#stumbleupon-icon, 
+	&#pinterest-icon { // http://business.pinterest.com/en/brand-guidelines: "Maintain empty space equal to at least half the height of the logo on all sides"
+		height: 27px;
+		width: 27px;
+	}
+}
+
+img {
+	&.twitter-icon, // https://about.twitter.com/press/brand-assets: "When using the bird with other logos and graphic elements, maintain a safety space that equals 200% the size of the square around the bird.
+	&#microsoft-icon {
+		height: 29px;
+		width: 29px;
+	}
+}
+
+.youtube-links, #info-below-youtube-player, #youtube-link {
+	img {
+		height: 18px;
+		width: 57px;
+	}
+}
+
+.table-scroll-x-axis {
+	overflow-x: auto;
+	width: 100%;
+}
+
+table {
+	font-size: 12px;
+	tr {
+		border-top: $table-border;
+		text-align: left;
+		&.thead-tr {
+			background-color: white !important;
+		}
+		&:not(.thead-tr) {
+			border-bottom: $table-border;
+		}
+		&:nth-child(odd) {
+			background-color: #F4F4F4;
+		}
+		th, td {
+			padding: 8px;
+		}
+		th {
+			&:first-child {
+				border-left: $table-border;	
+			}
+			&:last-child {
+				border-right: $table-border;
+			}
+		}
+		td {
+			vertical-align: middle;
+			&:first-child {
+				border-left: $table-border;
+			}
+			&:last-child {
+				border-right: $table-border;	
+			}
+			img { // Avatar
+				height: 30px;
+				width: 30px;
+			}
+		}
+	}
+}
