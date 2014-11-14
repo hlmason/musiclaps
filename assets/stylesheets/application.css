@@ -2881,6 +2881,9 @@ tbody.collapse.in {
 /* ===================================
     Mixins
 =================================== */
+/* ===================================
+    Element Selectors
+=================================== */
 html, body {
   height: 100%; }
 
@@ -2902,68 +2905,6 @@ a:hover, a:focus {
 
 a:hover {
   cursor: pointer; }
-
-.menu-link-active-js {
-  color: #1F91E6; }
-
-form label#birth-date-label-modal, form label#gender-label,
-form label#birth-date-label-profile, form label#collab-label {
-  margin-right: 2px; }
-form textarea {
-  max-width: 100%; }
-form h4.error-message {
-  margin-left: 2px !important;
-  margin-top: 5px !important; }
-  form h4.error-message:first-child {
-    margin-top: 15px !important; }
-
-span.block {
-  display: block; }
-
-span.bold {
-  font-weight: bold; }
-
-span.normal {
-  font-weight: normal; }
-
-.glyphicon-ok {
-  color: #DAA520; }
-
-.musiclaps-blue {
-  color: #38aaff !important; }
-
-#registration-full-modal-body .glyphicon-question-sign, #registration-full-modal-body .password-req, #registration-full-modal-body .select-part-explanation, #registration-full-modal-body .lyrics-explanation, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .glyphicon-question-sign, #registration-express-modal-body .password-req, #registration-express-modal-body .select-part-explanation, #registration-express-modal-body .lyrics-explanation, #registration-express-modal-body .youtube-id-req, #select-part-container .glyphicon-question-sign, #select-part-container .password-req, #select-part-container .select-part-explanation, #select-part-container .lyrics-explanation, #select-part-container .youtube-id-req, #lyrics-settings-sm .glyphicon-question-sign, #lyrics-settings-sm .password-req, #lyrics-settings-sm .select-part-explanation, #lyrics-settings-sm .lyrics-explanation, #lyrics-settings-sm .youtube-id-req, #lyrics-settings-xs .glyphicon-question-sign, #lyrics-settings-xs .password-req, #lyrics-settings-xs .select-part-explanation, #lyrics-settings-xs .lyrics-explanation, #lyrics-settings-xs .youtube-id-req, #youtube-links-settings .glyphicon-question-sign, #youtube-links-settings .password-req, #youtube-links-settings .select-part-explanation, #youtube-links-settings .lyrics-explanation, #youtube-links-settings .youtube-id-req {
-  color: #38aaff !important; }
-#registration-full-modal-body .password-req, #registration-full-modal-body .select-part-explanation, #registration-full-modal-body .lyrics-explanation, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .password-req, #registration-express-modal-body .select-part-explanation, #registration-express-modal-body .lyrics-explanation, #registration-express-modal-body .youtube-id-req, #select-part-container .password-req, #select-part-container .select-part-explanation, #select-part-container .lyrics-explanation, #select-part-container .youtube-id-req, #lyrics-settings-sm .password-req, #lyrics-settings-sm .select-part-explanation, #lyrics-settings-sm .lyrics-explanation, #lyrics-settings-sm .youtube-id-req, #lyrics-settings-xs .password-req, #lyrics-settings-xs .select-part-explanation, #lyrics-settings-xs .lyrics-explanation, #lyrics-settings-xs .youtube-id-req, #youtube-links-settings .password-req, #youtube-links-settings .select-part-explanation, #youtube-links-settings .lyrics-explanation, #youtube-links-settings .youtube-id-req {
-  font-size: 12px; }
-#registration-full-modal-body .password-req, #registration-full-modal-body .select-part-explanation, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .password-req, #registration-express-modal-body .select-part-explanation, #registration-express-modal-body .youtube-id-req, #select-part-container .password-req, #select-part-container .select-part-explanation, #select-part-container .youtube-id-req, #lyrics-settings-sm .password-req, #lyrics-settings-sm .select-part-explanation, #lyrics-settings-sm .youtube-id-req, #lyrics-settings-xs .password-req, #lyrics-settings-xs .select-part-explanation, #lyrics-settings-xs .youtube-id-req, #youtube-links-settings .password-req, #youtube-links-settings .select-part-explanation, #youtube-links-settings .youtube-id-req {
-  margin-bottom: 2px;
-  margin-left: 2px; }
-
-.modal-footer:not(.registration-modal-footer) input, .navbar-right input {
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  background-color: #e7e7e7;
-  border: 1px solid #cecece;
-  padding: 5px 10px; }
-  .modal-footer:not(.registration-modal-footer) input:hover, .modal-footer:not(.registration-modal-footer) input:focus, .navbar-right input:hover, .navbar-right input:focus {
-    background-color: #d9d9d9; }
-
-img.facebook-icon, img.google-icon, img#reddit-icon, img#tumblr-icon, img#stumbleupon-icon, img#pinterest-icon {
-  height: 27px;
-  width: 27px; }
-
-img.twitter-icon, img#microsoft-icon {
-  height: 29px;
-  width: 29px; }
-
-.youtube-links img, #info-below-youtube-player img, #youtube-link img {
-  height: 18px;
-  width: 57px; }
-
-.table-scroll-x-axis {
-  overflow-x: auto;
-  width: 100%; }
 
 table {
   font-size: 12px; }
@@ -3556,6 +3497,68 @@ section#recording-instructions #save-container {
     padding: 10px 20px; }
     section#recording-instructions #save-container button.save:hover, section#recording-instructions #save-container button.save:focus {
       background-color: #1A9A1A; }
+
+.menu-link-active-js {
+  color: #1F91E6; }
+
+form label#birth-date-label-modal, form label#gender-label,
+form label#birth-date-label-profile, form label#collab-label {
+  margin-right: 2px; }
+form textarea {
+  max-width: 100%; }
+form h4.error-message {
+  margin-left: 2px !important;
+  margin-top: 5px !important; }
+  form h4.error-message:first-child {
+    margin-top: 15px !important; }
+
+span.block {
+  display: block; }
+
+span.bold {
+  font-weight: bold; }
+
+span.normal {
+  font-weight: normal; }
+
+.glyphicon-ok {
+  color: #DAA520; }
+
+.musiclaps-blue {
+  color: #38aaff !important; }
+
+#registration-full-modal-body .glyphicon-question-sign, #registration-full-modal-body .password-req, #registration-full-modal-body .select-part-explanation, #registration-full-modal-body .lyrics-explanation, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .glyphicon-question-sign, #registration-express-modal-body .password-req, #registration-express-modal-body .select-part-explanation, #registration-express-modal-body .lyrics-explanation, #registration-express-modal-body .youtube-id-req, #select-part-container .glyphicon-question-sign, #select-part-container .password-req, #select-part-container .select-part-explanation, #select-part-container .lyrics-explanation, #select-part-container .youtube-id-req, #lyrics-settings-sm .glyphicon-question-sign, #lyrics-settings-sm .password-req, #lyrics-settings-sm .select-part-explanation, #lyrics-settings-sm .lyrics-explanation, #lyrics-settings-sm .youtube-id-req, #lyrics-settings-xs .glyphicon-question-sign, #lyrics-settings-xs .password-req, #lyrics-settings-xs .select-part-explanation, #lyrics-settings-xs .lyrics-explanation, #lyrics-settings-xs .youtube-id-req, #youtube-links-settings .glyphicon-question-sign, #youtube-links-settings .password-req, #youtube-links-settings .select-part-explanation, #youtube-links-settings .lyrics-explanation, #youtube-links-settings .youtube-id-req {
+  color: #38aaff !important; }
+#registration-full-modal-body .password-req, #registration-full-modal-body .select-part-explanation, #registration-full-modal-body .lyrics-explanation, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .password-req, #registration-express-modal-body .select-part-explanation, #registration-express-modal-body .lyrics-explanation, #registration-express-modal-body .youtube-id-req, #select-part-container .password-req, #select-part-container .select-part-explanation, #select-part-container .lyrics-explanation, #select-part-container .youtube-id-req, #lyrics-settings-sm .password-req, #lyrics-settings-sm .select-part-explanation, #lyrics-settings-sm .lyrics-explanation, #lyrics-settings-sm .youtube-id-req, #lyrics-settings-xs .password-req, #lyrics-settings-xs .select-part-explanation, #lyrics-settings-xs .lyrics-explanation, #lyrics-settings-xs .youtube-id-req, #youtube-links-settings .password-req, #youtube-links-settings .select-part-explanation, #youtube-links-settings .lyrics-explanation, #youtube-links-settings .youtube-id-req {
+  font-size: 12px; }
+#registration-full-modal-body .password-req, #registration-full-modal-body .select-part-explanation, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .password-req, #registration-express-modal-body .select-part-explanation, #registration-express-modal-body .youtube-id-req, #select-part-container .password-req, #select-part-container .select-part-explanation, #select-part-container .youtube-id-req, #lyrics-settings-sm .password-req, #lyrics-settings-sm .select-part-explanation, #lyrics-settings-sm .youtube-id-req, #lyrics-settings-xs .password-req, #lyrics-settings-xs .select-part-explanation, #lyrics-settings-xs .youtube-id-req, #youtube-links-settings .password-req, #youtube-links-settings .select-part-explanation, #youtube-links-settings .youtube-id-req {
+  margin-bottom: 2px;
+  margin-left: 2px; }
+
+.modal-footer:not(.registration-modal-footer) input, .navbar-right input {
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #e7e7e7;
+  border: 1px solid #cecece;
+  padding: 5px 10px; }
+  .modal-footer:not(.registration-modal-footer) input:hover, .modal-footer:not(.registration-modal-footer) input:focus, .navbar-right input:hover, .navbar-right input:focus {
+    background-color: #d9d9d9; }
+
+img.facebook-icon, img.google-icon, img#reddit-icon, img#tumblr-icon, img#stumbleupon-icon, img#pinterest-icon {
+  height: 27px;
+  width: 27px; }
+
+img.twitter-icon, img#microsoft-icon {
+  height: 29px;
+  width: 29px; }
+
+.youtube-links img, #info-below-youtube-player img, #youtube-link img {
+  height: 18px;
+  width: 57px; }
+
+.table-scroll-x-axis {
+  overflow-x: auto;
+  width: 100%; }
 
 /* =============================================================================
     New Arrivals, Recommended, Staff Picks, and Collaborations Pages
