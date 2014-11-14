@@ -36,10 +36,6 @@ The "assets/javascripts/customized.bootstrap.min.js" file is a customized Bootst
 
 The "assets/fonts/" folder contains Bootstrap glyphicon files.
 
-The "assets/stylesheets/_config.scss" file contains Sass variables.
-
-The "assets/stylesheets/_utilities.scss" file contains Sass mixins.
-
 Elements/selectors tend to come in the order they appear in the markup; exceptions occur when one or more elements/selectors are grouped together.  In most cases, selectors include element names - despite being unnecessary - to make it easier to identify the context.
 
 Comments have been made liberally and may be outdated.
