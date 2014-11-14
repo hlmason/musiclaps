@@ -3242,6 +3242,47 @@ ul.user-menu li#new-project a:not(.dropdown-menu-link), ul.user-menu li#my-proje
       background-color: #45b7ff; }
 
 /* ===================================
+    Footer
+=================================== */
+#wrapper {
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -50px;
+  min-height: 100%; }
+
+.space-above-footer {
+  height: 100px; }
+
+footer {
+  background-color: #e7e7e7 !important;
+  border-top: 1px solid #cecece !important; }
+  footer a.navbar-brand {
+    color: #444444 !important;
+    font-size: 12px; }
+    footer a.navbar-brand img {
+      height: auto;
+      width: 50%; }
+  footer ul.navbar-left {
+    margin-left: 0 !important; }
+    footer ul.navbar-left li {
+      border-left: 1px solid #cecece;
+      margin-top: 13px; }
+      footer ul.navbar-left li:first-child {
+        border-left: none; }
+      footer ul.navbar-left li a {
+        color: #444444 !important;
+        font-size: 14px;
+        line-height: 0; }
+        footer ul.navbar-left li a:hover, footer ul.navbar-left li a:focus {
+          color: #38aaff !important; }
+  footer ul:last-child a {
+    padding-left: 0;
+    padding-right: 14.5px; }
+  footer #youtube-icon {
+    height: 29px;
+    width: 69px; }
+
+/* ===================================
     Landing Page
 =================================== */
 h1.landing-page {
@@ -5001,47 +5042,6 @@ h1.db-error-message {
     font-size: 3em; }
   #construction-page #space-above-construction-stage {
     height: 200px; }
-
-/* ===================================
-    Footer
-=================================== */
-#wrapper {
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -50px;
-  min-height: 100%; }
-
-.space-above-footer {
-  height: 100px; }
-
-footer {
-  background-color: #e7e7e7 !important;
-  border-top: 1px solid #cecece !important; }
-  footer a.navbar-brand {
-    color: #444444 !important;
-    font-size: 12px; }
-    footer a.navbar-brand img {
-      height: auto;
-      width: 50%; }
-  footer ul.navbar-left {
-    margin-left: 0 !important; }
-    footer ul.navbar-left li {
-      border-left: 1px solid #cecece;
-      margin-top: 13px; }
-      footer ul.navbar-left li:first-child {
-        border-left: none; }
-      footer ul.navbar-left li a {
-        color: #444444 !important;
-        font-size: 14px;
-        line-height: 0; }
-        footer ul.navbar-left li a:hover, footer ul.navbar-left li a:focus {
-          color: #38aaff !important; }
-  footer ul:last-child a {
-    padding-left: 0;
-    padding-right: 14.5px; }
-  footer #youtube-icon {
-    height: 29px;
-    width: 69px; }
 
 /* ===================================
     Media Queries
