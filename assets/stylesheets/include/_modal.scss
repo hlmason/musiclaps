@@ -1,0 +1,157 @@
+/* ===================================
+    Modal
+=================================== */
+.modal-content {
+	border-bottom: $modal-border;
+	border-left: $modal-border;
+	border-right: $modal-border;
+	.modal-header {
+		border-top: $modal-border;
+		button.close {
+			background-color: white;
+			border: none;
+			color: $musiclaps-blue;
+			float: right;
+			font-size: 21px;
+			line-height: 1;
+			&:hover, &:focus {
+				color: #52C4FF;	
+			}
+		}
+	}
+	#registration-full-header, #registration-express-header, 
+	#register-header, #login-header {
+		button.close {
+			margin-top: 3px;
+		} 
+	}
+	h2 {
+		&.register-modal-heading, &.registration-full-modal-heading, 
+		&.registration-express-modal-heading, &.login-modal-heading {
+			letter-spacing: 0.5px;
+		}
+		&.registration-express-modal-heading { // Not sure why this is the only heading which needs bold property specified
+			font-weight: bold !important;
+		}
+	}
+	.modal-body {
+		&#sn-login-modal-body-sm, &#sn-login-modal-body-xs, 
+		&#registration-full-modal-body, &#registration-express-modal-body, {
+			@include border-radius(0);
+			border-bottom: 1px solid #e7e7e7;
+			padding-top: 0;
+			width: 100%;
+		}
+		&#sn-login-modal-body-sm, &#sn-login-modal-body-xs {
+			padding-bottom: 0;
+		}
+		&#sn-login-modal-body-sm { 
+			li {
+				display: inline-block;
+				img {
+					margin-left: 10px;
+				}
+			}
+		}
+		&#sn-login-modal-body-xs {
+			display: none; // Invisible at viewport widths >= 767px
+		}
+		&#login-modal-body {
+			padding-top: 0;
+			input { // Username and Password fields
+				@include form-fields-input(90%);
+				margin-top: 15px;
+			}
+		}
+		&#registration-full-modal-body, &#registration-express-modal-body {
+			label {
+				@include form-fields-label(10px);
+			}
+			input {
+				@include form-fields-input(100%);
+			}
+		}
+		label#email-label, label#birth-date-label-modal, label#gender-label, label#zip-or-postal-code, img#captcha-img, #agree-checkbox {
+			@include form-fields-label(15px); // Note: 'zip-or-postal-code' must be an id to work
+		}
+		img#captcha-img {
+			display: block; // For viewport widths <= 767px
+			height: 50px;
+			width: 210px;
+		}
+		#agree-checkbox { // "I agree to the Musiclaps Terms of Service and Privacy Policy"
+			font-size: 12px;
+			input {
+				margin-top: 4px;
+				width: 12px; // Keeps text inline with checkbox
+			}
+		}
+		&.register-or-login-modal-body button { // On modal that appears after clicking "Save Recording"
+			@include button($musiclaps-light-gray, $musiclaps-dark-gray, 14px, 5px 10px);
+			border: $nav-border;
+			display: block;
+			font-weight: bold;
+			width: 100%;
+			&:hover, &:focus {
+				background-color: #d9d9d9;
+			}
+			&:first-child {
+				margin-top: 5px;
+			}
+			&:last-child {
+				margin-top: 20px;
+			}
+		}
+		h4 {
+			margin-bottom: 0;
+			margin-top: 12px;
+		}
+		ul {
+			display: inline-block;
+		}
+		&#walkthrough {
+			padding-bottom: 5px;
+			h4 {
+				font-weight: normal;
+				margin-bottom: 10px;
+				margin-top: 0;
+			}
+		}
+		&#select-song-modal-body {
+			padding-bottom: 0;
+			padding-top: 0;
+			img#select-song-img {
+				float: right;
+				height: 179px;
+				margin-top: 15px;
+				width: 270px;
+			}
+		}
+	}
+	#sn-login-modal-body-sm, #sn-login-modal-body-xs, 
+	#registration-express-modal-body, #login-modal-body, .modal-footer {
+		text-align: center;
+	}
+
+	.modal-footer {
+		a { // "Forgot password"
+			margin-right: 58px;
+		}
+		&#register-modal-footer, &.registration-modal-footer {
+			border-top: none;
+		}
+		&#register-modal-footer { // "Register with Email" button - Note that this is an id
+			button {
+				@include button($musiclaps-light-gray, $musiclaps-dark-gray, 14px, 5px 10px);
+				border: $nav-border;
+				&:hover, &:focus {
+					background-color: #d9d9d9;
+				}
+			}
+		}
+		&.registration-modal-footer input { // "REGISTER" - Note that this is a class
+			@include submit-button-blue-wide(10px);
+			text-transform: uppercase;
+		}
+	}
+}

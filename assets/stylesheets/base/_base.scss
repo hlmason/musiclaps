@@ -1,0 +1,73 @@
+/* ===================================
+    Element Selectors
+=================================== */
+
+html, body {
+	height: 100%;
+}
+
+body {
+	color: $musiclaps-dark-gray;
+	font-family: $font-family--primary;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	padding-left: 0;
+	li { 
+		list-style-type: none;
+	}
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+table {
+	font-size: 12px;
+	tr {
+		border-top: $table-border;
+		text-align: left;
+		&.thead-tr {
+			background-color: white !important;
+		}
+		&:not(.thead-tr) {
+			border-bottom: $table-border;
+		}
+		&:nth-child(odd) {
+			background-color: #F4F4F4;
+		}
+		th, td {
+			padding: 8px;
+		}
+		th {
+			&:first-child {
+				border-left: $table-border;	
+			}
+			&:last-child {
+				border-right: $table-border;
+			}
+		}
+		td {
+			vertical-align: middle;
+			&:first-child {
+				border-left: $table-border;
+			}
+			&:last-child {
+				border-right: $table-border;	
+			}
+			img { // Avatar
+				height: 30px;
+				width: 30px;
+			}
+		}
+	}
+}

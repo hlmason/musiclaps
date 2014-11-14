@@ -1,0 +1,47 @@
+/* ===================================
+    Footer
+=================================== */
+#wrapper {
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -50px; 
+    min-height: 100%;
+}
+
+.space-above-footer {
+	height: 100px;
+}
+
+footer {
+	background-color: $musiclaps-light-gray !important;
+	border-top: $nav-border !important;
+	a.navbar-brand {
+		color: $musiclaps-dark-gray !important;
+		font-size: 12px;
+		img { // Musiclaps logo
+			height: auto;
+			width: 50%;
+		}
+	}
+	ul.navbar-left {
+		margin-left: 0 !important;
+		li {
+			@include nav-border(#cecece);
+			margin-top: 13px;
+			a {
+				@include nav-link($musiclaps-dark-gray, 14px);
+				&:hover, &:focus {
+					color: $musiclaps-blue !important;
+				}
+			}	
+		}
+	}
+	ul:last-child a {
+		padding-left: 0;
+		padding-right: 14.5px; 
+	}
+	#youtube-icon { // http://www.youtube.com/yt/brand/using-logo.html: "Apply half of the icon's height as a base for clear space"
+		height: 29px;
+		width: 69px;
+	}
+}

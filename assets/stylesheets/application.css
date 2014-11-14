@@ -1,3 +1,9 @@
+/* ===================================
+    Global Config
+=================================== */
+/* ===================================
+    Mixins
+=================================== */
 /* Includes: Grid system, Forms, Glyphicons, Navs, Navbar, Progress bars, Component animations, Dropdowns, and Modals */
 /* Important Note: @grid-float-breakpoint = @screen-md-min */
 /*!
@@ -2876,20 +2882,14 @@ tbody.collapse.in {
   transform: translate3d(0, 0, 0); }
 
 /* ===================================
-    Variables
-=================================== */
-/* ===================================
-    Mixins
-=================================== */
-/* ===================================
-    Global
+    Element Selectors
 =================================== */
 html, body {
   height: 100%; }
 
 body {
   color: #444444;
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 img {
   max-width: 100%;
@@ -2905,77 +2905,6 @@ a:hover, a:focus {
 
 a:hover {
   cursor: pointer; }
-
-.upside-down {
-  -webkit-transform: rotate(-180deg);
-  -moz-transform: rotate(-180deg);
-  -ms-transform: rotate(-180deg);
-  -o-transform: rotate(-180deg);
-  transform: rotate(-180deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-  ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"; }
-
-.menu-link-active-js {
-  color: #1F91E6; }
-
-form label#birth-date-label-modal, form label#gender-label,
-form label#birth-date-label-profile, form label#collab-label {
-  margin-right: 2px; }
-form textarea {
-  max-width: 100%; }
-form h4.error-message {
-  margin-left: 2px !important;
-  margin-top: 5px !important; }
-  form h4.error-message:first-child {
-    margin-top: 15px !important; }
-
-span.block {
-  display: block; }
-
-span.bold {
-  font-weight: bold; }
-
-span.normal {
-  font-weight: normal; }
-
-.glyphicon-ok {
-  color: #DAA520; }
-
-.musiclaps-blue {
-  color: #38aaff !important; }
-
-#registration-full-modal-body .glyphicon-question-sign, #registration-full-modal-body .password-req, #registration-full-modal-body .select-part-explanation, #registration-full-modal-body .lyrics-explanation, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .glyphicon-question-sign, #registration-express-modal-body .password-req, #registration-express-modal-body .select-part-explanation, #registration-express-modal-body .lyrics-explanation, #registration-express-modal-body .youtube-id-req, #select-part-container .glyphicon-question-sign, #select-part-container .password-req, #select-part-container .select-part-explanation, #select-part-container .lyrics-explanation, #select-part-container .youtube-id-req, #lyrics-settings-sm .glyphicon-question-sign, #lyrics-settings-sm .password-req, #lyrics-settings-sm .select-part-explanation, #lyrics-settings-sm .lyrics-explanation, #lyrics-settings-sm .youtube-id-req, #lyrics-settings-xs .glyphicon-question-sign, #lyrics-settings-xs .password-req, #lyrics-settings-xs .select-part-explanation, #lyrics-settings-xs .lyrics-explanation, #lyrics-settings-xs .youtube-id-req, #youtube-links-settings .glyphicon-question-sign, #youtube-links-settings .password-req, #youtube-links-settings .select-part-explanation, #youtube-links-settings .lyrics-explanation, #youtube-links-settings .youtube-id-req {
-  color: #38aaff !important; }
-#registration-full-modal-body .password-req, #registration-full-modal-body .select-part-explanation, #registration-full-modal-body .lyrics-explanation, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .password-req, #registration-express-modal-body .select-part-explanation, #registration-express-modal-body .lyrics-explanation, #registration-express-modal-body .youtube-id-req, #select-part-container .password-req, #select-part-container .select-part-explanation, #select-part-container .lyrics-explanation, #select-part-container .youtube-id-req, #lyrics-settings-sm .password-req, #lyrics-settings-sm .select-part-explanation, #lyrics-settings-sm .lyrics-explanation, #lyrics-settings-sm .youtube-id-req, #lyrics-settings-xs .password-req, #lyrics-settings-xs .select-part-explanation, #lyrics-settings-xs .lyrics-explanation, #lyrics-settings-xs .youtube-id-req, #youtube-links-settings .password-req, #youtube-links-settings .select-part-explanation, #youtube-links-settings .lyrics-explanation, #youtube-links-settings .youtube-id-req {
-  font-size: 12px; }
-#registration-full-modal-body .password-req, #registration-full-modal-body .select-part-explanation, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .password-req, #registration-express-modal-body .select-part-explanation, #registration-express-modal-body .youtube-id-req, #select-part-container .password-req, #select-part-container .select-part-explanation, #select-part-container .youtube-id-req, #lyrics-settings-sm .password-req, #lyrics-settings-sm .select-part-explanation, #lyrics-settings-sm .youtube-id-req, #lyrics-settings-xs .password-req, #lyrics-settings-xs .select-part-explanation, #lyrics-settings-xs .youtube-id-req, #youtube-links-settings .password-req, #youtube-links-settings .select-part-explanation, #youtube-links-settings .youtube-id-req {
-  margin-bottom: 2px;
-  margin-left: 2px; }
-
-.modal-footer:not(.registration-modal-footer) input, .navbar-right input {
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  background-color: #e7e7e7;
-  border: 1px solid #cecece;
-  padding: 5px 10px; }
-  .modal-footer:not(.registration-modal-footer) input:hover, .modal-footer:not(.registration-modal-footer) input:focus, .navbar-right input:hover, .navbar-right input:focus {
-    background-color: #d9d9d9; }
-
-img.facebook-icon, img.google-icon, img#reddit-icon, img#tumblr-icon, img#stumbleupon-icon, img#pinterest-icon {
-  height: 27px;
-  width: 27px; }
-
-img.twitter-icon, img#microsoft-icon {
-  height: 29px;
-  width: 29px; }
-
-.youtube-links img, #info-below-youtube-player img, #youtube-link img {
-  height: 18px;
-  width: 57px; }
-
-.table-scroll-x-axis {
-  overflow-x: auto;
-  width: 100%; }
 
 table {
   font-size: 12px; }
@@ -3313,6 +3242,47 @@ ul.user-menu li#new-project a:not(.dropdown-menu-link), ul.user-menu li#my-proje
       background-color: #45b7ff; }
 
 /* ===================================
+    Footer
+=================================== */
+#wrapper {
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -50px;
+  min-height: 100%; }
+
+.space-above-footer {
+  height: 100px; }
+
+footer {
+  background-color: #e7e7e7 !important;
+  border-top: 1px solid #cecece !important; }
+  footer a.navbar-brand {
+    color: #444444 !important;
+    font-size: 12px; }
+    footer a.navbar-brand img {
+      height: auto;
+      width: 50%; }
+  footer ul.navbar-left {
+    margin-left: 0 !important; }
+    footer ul.navbar-left li {
+      border-left: 1px solid #cecece;
+      margin-top: 13px; }
+      footer ul.navbar-left li:first-child {
+        border-left: none; }
+      footer ul.navbar-left li a {
+        color: #444444 !important;
+        font-size: 14px;
+        line-height: 0; }
+        footer ul.navbar-left li a:hover, footer ul.navbar-left li a:focus {
+          color: #38aaff !important; }
+  footer ul:last-child a {
+    padding-left: 0;
+    padding-right: 14.5px; }
+  footer #youtube-icon {
+    height: 29px;
+    width: 69px; }
+
+/* ===================================
     Landing Page
 =================================== */
 h1.landing-page {
@@ -3323,7 +3293,7 @@ h1.landing-page {
   margin-bottom: 0;
   margin-top: 0;
   text-align: center;
-  font-family: 'Roboto Condensed', sans-serif; }
+  font-family: "Roboto Condensed", sans-serif; }
   h1.landing-page a {
     color: #38aaff; }
     h1.landing-page a:hover, h1.landing-page a:focus {
@@ -3340,9 +3310,9 @@ h1.landing-page {
   #landing-page-hero #musical-notes-map {
     background-image: url("../../assets/images/landing-pg/musical-notes-map.png");
     height: 100%;
+    width: 5000em;
     margin-left: -1010em;
     position: absolute;
-    width: 5000em;
     z-index: -1;
     -webkit-animation: moveSlideshow 20s linear infinite normal forwards;
     -moz-animation: moveSlideshow 20s linear infinite normal forwards;
@@ -3392,7 +3362,7 @@ h1.landing-page {
       margin-top: 52px; }
       #stage #stage-inner #education a, #stage #stage-inner #contests a {
         color: #e7e7e7;
-        font-family: 'Roboto Condensed', sans-serif;
+        font-family: "Roboto Condensed", sans-serif;
         font-size: 24px;
         letter-spacing: 0.5px; }
         #stage #stage-inner #education a:hover, #stage #stage-inner #education a:focus, #stage #stage-inner #contests a:hover, #stage #stage-inner #contests a:focus {
@@ -3449,11 +3419,13 @@ h1.landing-page {
         opacity: 1; }
 
 .wmuSliderPrev, .wmuSliderNext {
+  background-image: url("../../assets/images/landing-pg/sprites.png");
+  height: 80px;
+  width: 40px;
   position: absolute;
   width: 40px;
   height: 80px;
   text-indent: -9999px;
-  background: url("../../assets/images/landing-pg/sprites.png") no-repeat 0 0;
   top: 50%;
   margin-top: -40px; }
 
@@ -3515,57 +3487,67 @@ section.contests-and-auditions {
   section.contests-and-auditions img {
     margin-top: 140px; }
 
-/* ===================================
-    Live Player Page
-=================================== */
-#live-player-container {
-  margin-left: 0;
-  padding-left: 0;
-  padding-right: 0;
-  text-align: center; }
+.menu-link-active-js {
+  color: #1F91E6; }
 
-a.select-song {
-  font-size: 16px; }
+form label#birth-date-label-modal, form label#gender-label,
+form label#birth-date-label-profile, form label#collab-label {
+  margin-right: 2px; }
+form textarea {
+  max-width: 100%; }
+form h4.error-message {
+  margin-left: 2px !important;
+  margin-top: 5px !important; }
+  form h4.error-message:first-child {
+    margin-top: 15px !important; }
 
-section#recording-instructions h1 {
-  text-align: center; }
-section#recording-instructions h2 {
-  font-size: 18px;
+span.block {
+  display: block; }
+
+span.bold {
+  font-weight: bold; }
+
+span.normal {
   font-weight: normal; }
-  section#recording-instructions h2 span:not(.block) {
-    font-weight: bold; }
-    section#recording-instructions h2 span:not(.block).red {
-      color: red; }
-    section#recording-instructions h2 span:not(.block).green {
-      color: green; }
-section#recording-instructions #recording-buttons-img {
-  margin-top: 15px; }
-section#recording-instructions #allow-flash-instructions {
-  margin-top: 35px; }
-section#recording-instructions #allow-flash-img {
-  margin-top: 10px; }
-section#recording-instructions #allow-flash-chrome-container {
-  margin-top: 15px; }
-  section#recording-instructions #allow-flash-chrome-container p {
-    margin-bottom: 0; }
-section#recording-instructions #recording-start-instructions {
-  margin-top: 45px; }
-section#recording-instructions #recording-area-img img {
-  margin-top: 22px; }
-section#recording-instructions #save-container {
-  margin-top: 50px;
-  text-align: center; }
-  section#recording-instructions #save-container button.save {
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    background-color: green;
-    border: none;
-    color: white;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    padding: 10px 20px; }
-    section#recording-instructions #save-container button.save:hover, section#recording-instructions #save-container button.save:focus {
-      background-color: #1A9A1A; }
+
+.glyphicon-ok {
+  color: #DAA520; }
+
+.musiclaps-blue {
+  color: #38aaff !important; }
+
+#registration-full-modal-body .glyphicon-question-sign, #registration-full-modal-body .password-req, #registration-full-modal-body .select-part-explanation, #registration-full-modal-body .lyrics-explanation, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .glyphicon-question-sign, #registration-express-modal-body .password-req, #registration-express-modal-body .select-part-explanation, #registration-express-modal-body .lyrics-explanation, #registration-express-modal-body .youtube-id-req, #select-part-container .glyphicon-question-sign, #select-part-container .password-req, #select-part-container .select-part-explanation, #select-part-container .lyrics-explanation, #select-part-container .youtube-id-req, #lyrics-settings-sm .glyphicon-question-sign, #lyrics-settings-sm .password-req, #lyrics-settings-sm .select-part-explanation, #lyrics-settings-sm .lyrics-explanation, #lyrics-settings-sm .youtube-id-req, #lyrics-settings-xs .glyphicon-question-sign, #lyrics-settings-xs .password-req, #lyrics-settings-xs .select-part-explanation, #lyrics-settings-xs .lyrics-explanation, #lyrics-settings-xs .youtube-id-req, #youtube-links-settings .glyphicon-question-sign, #youtube-links-settings .password-req, #youtube-links-settings .select-part-explanation, #youtube-links-settings .lyrics-explanation, #youtube-links-settings .youtube-id-req {
+  color: #38aaff !important; }
+#registration-full-modal-body .password-req, #registration-full-modal-body .select-part-explanation, #registration-full-modal-body .lyrics-explanation, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .password-req, #registration-express-modal-body .select-part-explanation, #registration-express-modal-body .lyrics-explanation, #registration-express-modal-body .youtube-id-req, #select-part-container .password-req, #select-part-container .select-part-explanation, #select-part-container .lyrics-explanation, #select-part-container .youtube-id-req, #lyrics-settings-sm .password-req, #lyrics-settings-sm .select-part-explanation, #lyrics-settings-sm .lyrics-explanation, #lyrics-settings-sm .youtube-id-req, #lyrics-settings-xs .password-req, #lyrics-settings-xs .select-part-explanation, #lyrics-settings-xs .lyrics-explanation, #lyrics-settings-xs .youtube-id-req, #youtube-links-settings .password-req, #youtube-links-settings .select-part-explanation, #youtube-links-settings .lyrics-explanation, #youtube-links-settings .youtube-id-req {
+  font-size: 12px; }
+#registration-full-modal-body .password-req, #registration-full-modal-body .select-part-explanation, #registration-full-modal-body .youtube-id-req, #registration-express-modal-body .password-req, #registration-express-modal-body .select-part-explanation, #registration-express-modal-body .youtube-id-req, #select-part-container .password-req, #select-part-container .select-part-explanation, #select-part-container .youtube-id-req, #lyrics-settings-sm .password-req, #lyrics-settings-sm .select-part-explanation, #lyrics-settings-sm .youtube-id-req, #lyrics-settings-xs .password-req, #lyrics-settings-xs .select-part-explanation, #lyrics-settings-xs .youtube-id-req, #youtube-links-settings .password-req, #youtube-links-settings .select-part-explanation, #youtube-links-settings .youtube-id-req {
+  margin-bottom: 2px;
+  margin-left: 2px; }
+
+.modal-footer:not(.registration-modal-footer) input, .navbar-right input {
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #e7e7e7;
+  border: 1px solid #cecece;
+  padding: 5px 10px; }
+  .modal-footer:not(.registration-modal-footer) input:hover, .modal-footer:not(.registration-modal-footer) input:focus, .navbar-right input:hover, .navbar-right input:focus {
+    background-color: #d9d9d9; }
+
+img.facebook-icon, img.google-icon, img#reddit-icon, img#tumblr-icon, img#stumbleupon-icon, img#pinterest-icon {
+  height: 27px;
+  width: 27px; }
+
+img.twitter-icon, img#microsoft-icon {
+  height: 29px;
+  width: 29px; }
+
+.youtube-links img, #info-below-youtube-player img, #youtube-link img {
+  height: 18px;
+  width: 57px; }
+
+.table-scroll-x-axis {
+  overflow-x: auto;
+  width: 100%; }
 
 /* =============================================================================
     New Arrivals, Recommended, Staff Picks, and Collaborations Pages
@@ -4979,47 +4961,6 @@ h1.db-error-message {
   text-align: center; }
 
 /* ===================================
-    Footer
-=================================== */
-#wrapper {
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -50px;
-  min-height: 100%; }
-
-.space-above-footer {
-  height: 100px; }
-
-footer {
-  background-color: #e7e7e7 !important;
-  border-top: 1px solid #cecece !important; }
-  footer a.navbar-brand {
-    color: #444444 !important;
-    font-size: 12px; }
-    footer a.navbar-brand img {
-      height: auto;
-      width: 50%; }
-  footer ul.navbar-left {
-    margin-left: 0 !important; }
-    footer ul.navbar-left li {
-      border-left: 1px solid #cecece;
-      margin-top: 13px; }
-      footer ul.navbar-left li:first-child {
-        border-left: none; }
-      footer ul.navbar-left li a {
-        color: #444444 !important;
-        font-size: 14px;
-        line-height: 0; }
-        footer ul.navbar-left li a:hover, footer ul.navbar-left li a:focus {
-          color: #38aaff !important; }
-  footer ul:last-child a {
-    padding-left: 0;
-    padding-right: 14.5px; }
-  footer #youtube-icon {
-    height: 29px;
-    width: 69px; }
-
-/* ===================================
     Privacy, Terms, and FAQs Pages
 =================================== */
 #privacy-page h1, #terms-page h1, #faqs-page h1 {
@@ -5049,6 +4990,58 @@ footer {
     font-size: 3em; }
   #construction-page #space-above-construction-stage {
     height: 200px; }
+
+/* ===================================
+    Live Player Page
+=================================== */
+#live-player-container {
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center; }
+
+a.select-song {
+  font-size: 16px; }
+
+section#recording-instructions h1 {
+  text-align: center; }
+section#recording-instructions h2 {
+  font-size: 18px;
+  font-weight: normal; }
+  section#recording-instructions h2 span:not(.block) {
+    font-weight: bold; }
+    section#recording-instructions h2 span:not(.block).red {
+      color: red; }
+    section#recording-instructions h2 span:not(.block).green {
+      color: green; }
+section#recording-instructions #recording-buttons-img {
+  margin-top: 15px; }
+section#recording-instructions #allow-flash-instructions {
+  margin-top: 35px; }
+section#recording-instructions #allow-flash-img {
+  margin-top: 10px; }
+section#recording-instructions #allow-flash-chrome-container {
+  margin-top: 15px; }
+  section#recording-instructions #allow-flash-chrome-container p {
+    margin-bottom: 0; }
+section#recording-instructions #recording-start-instructions {
+  margin-top: 45px; }
+section#recording-instructions #recording-area-img img {
+  margin-top: 22px; }
+section#recording-instructions #save-container {
+  margin-top: 50px;
+  text-align: center; }
+  section#recording-instructions #save-container button.save {
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: green;
+    border: none;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding: 10px 20px; }
+    section#recording-instructions #save-container button.save:hover, section#recording-instructions #save-container button.save:focus {
+      background-color: #1A9A1A; }
 
 /* ===================================
     Media Queries

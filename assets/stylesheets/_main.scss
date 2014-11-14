@@ -1,0 +1,1762 @@
+
+// .upside-down {
+// 	@include transform(-180deg);
+// 	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); // IE6/7
+// 	ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"; // IE8
+// }
+
+.menu-link-active-js {
+	color: #1F91E6;
+}
+
+form {
+	label#birth-date-label-modal, label#gender-label, 
+	label#birth-date-label-profile, label#collab-label { // Full registration modal, Profile page, and Collaborators page 
+		margin-right: 2px;
+	}
+	textarea {
+		max-width: 100%; // Prevents user from expanding textarea horizontally
+	}
+	h4.error-message {
+		margin-left: 2px !important;
+		margin-top: 5px !important;
+		&:first-child {
+			margin-top: 15px !important; // Overwrites the above ("margin-top: 5px !important")
+		}
+	}
+}
+
+span.block {
+	display: block;
+}
+
+span.bold {
+	font-weight: bold;
+}
+
+span.normal {
+	font-weight: normal;
+}
+
+.glyphicon-ok {
+	color: #DAA520;
+}
+
+.musiclaps-blue {
+	color: $musiclaps-blue !important;
+}
+
+#registration-full-modal-body, #registration-express-modal-body, #select-part-container, #lyrics-settings-sm, #lyrics-settings-xs, #youtube-links-settings {
+	.glyphicon-question-sign, .password-req, .select-part-explanation, .lyrics-explanation, .youtube-id-req {
+		color: $musiclaps-blue !important;
+	}
+	.password-req, .select-part-explanation, .lyrics-explanation, .youtube-id-req {
+		font-size: 12px;
+	}
+	.password-req, .select-part-explanation, .youtube-id-req {
+		margin-bottom: 2px;
+		margin-left: 2px;
+	}
+}
+
+.modal-footer:not(.registration-modal-footer), .navbar-right {
+	input { // "Log in" and "Log out" buttons
+		@include border-radius(10px);
+		@include submit-button($musiclaps-light-gray, $nav-border, 5px 10px, #d9d9d9);
+	}
+}
+
+img {
+	&.facebook-icon, &.google-icon, &#reddit-icon, &#tumblr-icon, &#stumbleupon-icon, 
+	&#pinterest-icon { // http://business.pinterest.com/en/brand-guidelines: "Maintain empty space equal to at least half the height of the logo on all sides"
+		height: 27px;
+		width: 27px;
+	}
+}
+
+img {
+	&.twitter-icon, // https://about.twitter.com/press/brand-assets: "When using the bird with other logos and graphic elements, maintain a safety space that equals 200% the size of the square around the bird.
+	&#microsoft-icon {
+		height: 29px;
+		width: 29px;
+	}
+}
+
+.youtube-links, #info-below-youtube-player, #youtube-link {
+	img {
+		height: 18px;
+		width: 57px;
+	}
+}
+
+.table-scroll-x-axis {
+	overflow-x: auto;
+	width: 100%;
+}
+
+/* =============================================================================
+    New Arrivals, Recommended, Staff Picks, and Collaborations Pages
+============================================================================= */
+#new-arrivals-page, #recommended-page, #staff-picks-page, #collaborations-page {
+	h1 {
+		margin-bottom: 0;
+		margin-top: 15px;
+	}
+	.public-project-listing {
+		border: $nav-border;
+		box-shadow: $box-shadow;
+		color: $musiclaps-dark-gray; // Overrides link color
+		margin-top: 25px;
+		&:hover {
+			background-color: $musiclaps-light-gray;
+			cursor: pointer;
+		}
+		img {
+			min-height: 85px;
+			min-width: 135px;
+			max-height: auto;
+			max-width: 135px;
+			padding-bottom: 10px;
+			padding-left: 10px;
+			padding-top: 10px;
+		}
+		h3, h4:not(.last-h4) {
+			margin-bottom: 0;
+			margin-left: 5px;
+		}
+		h4 {
+			font-weight: normal;
+			&:not(.last-h4) {
+				margin-top: 0;
+			}
+			&.last-h4 {
+				display: inline-block;
+			}
+		}
+	}
+	.ads-container {
+		float: right;
+		img { // No height/width specified because it changes depending upon viewport width
+			float: right;
+			margin-top: 25px; // Aligns ad with project listing
+			&:not(.first-img) {
+				margin-top: 35px; // Overwrites the above ("margin-top: 25px")
+			}
+		}
+	}
+}
+
+/* ===================================
+    All Music Page
+=================================== */
+#all-music-page {
+	h1 {
+		margin-bottom: 0;
+		text-align: center;
+	}
+	.projects-container {
+		box-shadow: $box-shadow;
+		color: $musiclaps-dark-gray; // Overrides link color
+	}
+	.ads-container {
+		img.first-img {
+			float: right;
+		}
+	}
+}
+
+/* ===================================
+    Players Wanted and Forum Pages
+=================================== */
+#players-wanted-page, #forum-page {
+	@include border-radius (5px);
+	box-shadow: $box-shadow;
+	border: $nav-border;
+	margin: 25px;
+	// min-height: 590px;
+	table {
+		width: 100%;
+		span.username {
+			margin-left: 5px;
+		}
+	}
+	h3, button:not(.cancel-topic) {
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+	h3, h4#new-request, h4#post-topic {
+		display: inline-block;
+	}
+	h4#new-request, h4#post-topic {
+		margin-bottom: 5px;
+		margin-left: 2px;
+		margin-top: 0;
+	}
+	button {
+		@include button($musiclaps-light-gray, $musiclaps-dark-gray, 12px, 5px 10px);
+		border: $nav-border;
+		&:hover, &:focus {
+			background-color: #d9d9d9;
+		}
+		&:not(.cancel-topic) {
+			float: right;
+			margin-right: 60px;			
+		}
+		&.cancel-topic {
+			font-weight: bold;
+		}
+	}
+	#glyphicon-and-h4-title {
+		background-color: $musiclaps-light-gray;
+		border-left: $nav-border;
+		border-right: $nav-border;
+		border-top: $nav-border;
+		padding-left: 10px;
+		padding-top: 5px;
+	}
+	form {
+		border: $nav-border;
+		margin-bottom: 10px;
+		min-height: 273px;
+		padding: 10px;
+		label {
+			&:not(#request-title-label), &:not(#topic-title-label) {
+				@include form-fields-label(10px);
+			}
+			&#request-title-label, &#topic-title-label {
+				margin-bottom: 2px !important;
+			}
+		}
+		input.request-title, input.topic-title, textarea {
+			@include form-fields-input(100%);
+		}
+		textarea {
+			height: 113px;
+		}
+		input#post-request, input#post-topic, button.cancel-topic {
+			margin-top: 10px;
+		}
+		input#post-request, input#post-topic {
+			@include border-radius(10px);
+			@include submit-button($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+			color: white;
+			float: right;
+		}
+	}
+}
+
+#players-wanted-page {
+	padding-bottom: 15px;
+	section#categories-container {
+		border: $nav-border;
+		margin-top: 15px;
+		text-align: center;
+		.categories {
+			cursor: pointer;
+			display: inline-block;
+			padding-bottom: 10px;
+			&:hover {
+				background-color: $musiclaps-light-gray;
+			}
+			h4 {
+				&:not(.last-h4) {
+					margin-bottom: 3px;
+					margin-top: 10px;
+				}
+				&.last-h4 {
+					background-color: $musiclaps-light-gray;
+					font-weight: normal;
+					margin: 0 15px;
+				}
+			}
+			img {
+				height: 75px;
+				min-width: 116px;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+	}
+	h3 {
+		margin-left: 60px;
+	}
+	h4.no-listings {
+		font-weight: normal;
+		margin-top: 0;
+		text-align: center;
+	}
+}
+
+#forum-page {
+	img#dialog-boxes {
+		margin-left: 60px;
+	}
+	h3 { // "Talk with Members"
+		margin-left: 2px;
+	}
+	table {
+		th:first-child, td:first-child {
+			border-left: none;
+		}
+		th:last-child, td:last-child {
+			border-right: none;
+		}
+	}
+	.new-topic-container {
+		margin-top: 25px;
+	}
+}
+
+/* ======================================================================================================
+    Profile, New Project, Projects, Collaborations, YouTube, Messages, Groups, and Public Project Pages
+====================================================================================================== */
+.row.col-xs-12.col-sm-8 {
+	&.public-profile-pages {
+		padding-right: 0 !important; // Centers and aligns project tile with section.profile-right
+	}
+}
+
+.avatar-and-username, #new-project-buttons, 
+.projects-nav, #collaborations-buttons {
+	margin-top: 15px;
+}
+
+#new-project-buttons {
+	margin-bottom: 8px;
+	button.navigate:last-child {
+		margin-left: 5px;	
+	}
+}
+
+.projects-nav button.navigate:not(.first-button), 
+#collaborations-buttons button.navigate:not(.first-button) {
+	margin-left: 5px;
+}
+
+button.navigate, 
+section#messages-header button, section#groups-header button { // "Add New Friend" and "Create New Group"
+	@include button(#F4F4F4, $musiclaps-dark-gray, 12px, 5px 10px);
+	border: $nav-border;
+}
+
+.white, .white-button-navigate-hover-js:hover, .white-button-navigate-hover-js:focus {
+	background-color: white !important; // Important tag is necessary for "Add New Friend" button
+	color: #1F91E6 !important;
+}
+
+.avatar-and-username {
+	img.avatar {
+		box-shadow: $box-shadow;
+		height: 100px;
+		max-width: 100px;
+	}
+	h2.user-id {
+		font-weight: normal;
+		margin-top: 0;
+	}
+	#edit-save-profile {
+		text-align: center;
+		h4.edit-profile, h4.save-profile, h4.dont-save-profile {
+			margin-top: 8px;
+		}
+		h4.edit-profile {
+			margin-bottom: 0;
+		}
+		form.profile-page {
+			display: inline-block;
+			h4.save-profile input {
+				@include submit-link;
+				padding-left: 2px;
+			}
+		}
+		h4.save-profile, h4.dont-save-profile {
+			display: inline-block;
+		}
+		.glyphicon {
+			color: $musiclaps-dark-gray;
+		}
+	}
+}
+
+.about-me {
+	border-top: $nav-border;
+	margin-top: -65px;
+	h4 {
+		margin-bottom: 7px;
+		margin-top: 2px;
+	}
+	ul.first-ul-profile-pages, ul.second-ul-profile-pages, ul.third-ul-profile-pages {
+		margin-top: 4px;
+	}
+	ul.first-ul-profile-pages, ul.second-ul-profile-pages {
+		margin-bottom: 2px;
+	}
+	ul.first-ul-profile-pages li {
+		margin-right: 20px; // So it lines up better with "Edit Profile"
+	}
+	ul.third-ul-profile-pages {
+		margin-bottom: 0;
+	}
+	li {
+		&.profile-pages {
+			display: inline-block;
+			font-size: 12px;
+			font-weight: 300;
+		}
+		&#glyphicon-home {
+			float: right;
+		}
+	}
+}
+
+section.public-projects-and-collaborations-container {
+	padding-right: 0;
+	section.public-projects-and-collaborations {
+		border: $nav-border;
+		margin-left: 15px;
+		padding-right: 0;
+		width: 47%;
+		img {
+			height: 85px;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			width: 98px;
+		}
+		h4, h5 {
+			display: inline-block;
+			margin-left: 7px;
+		}
+		h4 {
+			margin-bottom: 0;
+			margin-top: 10px;
+		}
+		h5 {
+			margin-top: 7px;
+		}
+	}
+}
+
+h4.my-public-projects-heading {
+	margin-bottom: 9px;
+	span {
+		margin-left: 2px;
+	}
+}
+
+h4.my-public-projects-heading.public-profile-pages {
+	margin-bottom: 0;
+}
+
+section.public-projects-and-collaborations, section.projects-container.public-profile-pages {
+	h5 {
+		font-weight: normal;
+	}
+}
+
+section.projects-container.public-profile-pages { 
+	h4 {
+		margin-bottom: 3px;
+		margin-top: 10px;
+	}
+	h5 {
+		margin-bottom: 1px;
+	}
+}
+
+h4#my-profile {
+	margin-bottom: 2px;
+}
+
+.progress { // Progress bar
+	margin-bottom: 0 !important;
+}
+
+form.profile-page {
+	label {
+		@include form-fields-label(25px);
+	}
+	select.birth-date-field, input.zip-or-postal-code { // Adds space btwn field and label. Note: 'select.birth-date-field' should remain inside "form.profile-page"; otherwise it will affect modal fields
+		margin-left: 5px;
+	}
+	input.zip-or-postal-code {
+		@include form-fields-input(151px);
+	}
+	input.website-url, input.website-title, textarea, input.change-username {
+		@include form-fields-input(100%);
+	}
+	img { // "Your image"
+		height: 120px;
+		min-width: 120px;
+	}
+	#upload-avatar {
+		border-bottom: $nav-border;
+		li {
+			&:first-child {
+				padding-bottom: 5px;
+			}
+			&:last-child {
+				padding-top: 5px;
+				span {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+	input {
+		&#save-profile {
+			border-top: $nav-border;
+			margin-top: -10px;
+			margin-left: 290px;
+		}
+		&#change-password {
+			margin-top: 49px;
+			margin-left: 65px;
+		}
+	}
+}
+
+input#change-password, #save-profile-container input, #upload-project-container input {
+	@include border-radius(10px);
+}
+
+input#change-password {
+	@include submit-button($musiclaps-light-gray, $nav-border, 3px 10px, #d9d9d9);
+}
+
+#save-profile-container input, #upload-project-container input {
+	@include submit-button($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+	color: white;
+}
+
+#choose-avatar-container input, section#choose-project-img-container input, section#choose-mp3-file-container input {
+	font-size: 12px;
+}
+
+#genre-form-profile, #skills, #genre-form-projects {
+	height: 106px;
+}
+
+#genre-form-profile, #skills, select.parts, #genre-form-projects {
+	@include form-fields-input(12px);
+	overflow-y: scroll;
+	padding-top: 2px;
+	width: 261px;
+	span {
+		display: block; // Makes options stack
+	}
+}
+
+#choose-avatar-container img {
+	height: 120px; 
+	width: 120px;
+}
+
+select.parts {
+	padding-left: 0; // Overrides @mixin form-fields-input
+}
+
+#recording-player, section.upload-mp3-container {
+	margin-top: 15px;
+}
+
+#recording-player {
+	background-color: $musiclaps-dark-gray;
+	height: 352px;
+	width: 606px;
+}
+
+section.upload-mp3-container {
+	h4, h5 {
+		margin-bottom: 5px;
+		margin-top: 5px;
+	}
+	h5, li {
+		font-size: 12px;
+	}
+	ul, section#choose-mp3-file-container {
+		border-bottom: $nav-border;
+		padding-bottom: 10px;
+		padding-left: 0;
+	}
+	ul {
+		margin-bottom: 0;
+		margin-left: 0;
+		width: 98%;
+		li {
+			display: inline-block;
+			&.first-list-item {
+				font-size: 14px;
+				font-weight: bold;
+			}
+			&:not(.first-list-item) {
+				padding-left: 20px;
+			}
+			label {
+				font-weight: normal;
+			}
+		}
+	}
+	input.project-title-new-project, input.comment-new-project-page {
+		@include form-fields-input(100%);
+	}
+	input.comment-new-project-page, section#choose-project-img-container {
+		margin-bottom: 20px;
+	}
+	input.tempo, select.select-project {
+		margin-left: 5px;
+	}
+	select.select-project {
+		@include form-fields-input(25%);
+	}
+	input.tempo {
+		@include form-fields-input(50%);
+	}
+	section.add-part-to-group-container h4 {
+		color: red;
+		margin-bottom: 5px;
+	}
+	label#project-title-label, label#tempo-label, label#select-project-label, section.add-part-to-group-container h4, label#parts-label, label#comment-new-project-page-label {
+		margin-top: 20px;
+	}
+	#select-part-container {
+		label {
+			margin-bottom: 2px;
+			margin-right: 3px;
+		}
+		img.instrument {
+			margin-top: 55px;
+		}
+	}
+	select.parts {
+		display: block;
+	}
+	section#choose-project-img-container, section#choose-mp3-file-container {
+		input {
+			margin-top: 5px;
+		}
+	}
+	#upload-project-container {
+		margin-top: 30px;
+		text-align: center;
+	}
+}
+
+section.projects-container {
+	border: $nav-border;
+	margin-left: 0;
+	margin-top: 15px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	width: 98%;
+	.glyphicon-pencil-container {
+		@include border-radius(100%);
+		background-color: white;
+		left: 50px;
+		opacity: 0.95;
+		padding: 4px 5px;
+		position: absolute;
+		top: 20px;
+		.glyphicon-pencil {
+			height: 20px;
+			text-align: center;
+			width: 20px;
+		}
+	}
+	img {
+		margin-top: 2px;
+		min-width: 100px;
+		height: 60px;
+	}
+	h4 {
+		margin-bottom: 3px;
+		margin-top: 2px;
+	}
+	h5 {
+		margin-bottom: 1px;
+		margin-top: 0;
+		&.last-h5.sm, &.last-h5.xs { // Type of project
+			font-weight: normal;
+		}
+		&.last-h5.xs {
+			display: none; // Only visible at viewport widths <= 767px
+		}
+	}
+	&:hover {
+		background-color: #F4F4F4;
+		cursor: pointer;
+	}
+}
+
+.favorites-page:first-child.col-sm-12.col-md-6 {
+	padding-right: 0;
+}
+
+.favorites-page:last-child.col-sm-12.col-md-6 {
+	padding-left: 0;
+}
+
+section.projects-container.favorites-page, section.projects-container.public-profile-pages {
+	&:hover {
+		background-color: white;
+		cursor: initial;
+	}
+	h4, h5 {
+		margin-left: 3px;
+	}
+	.glyphicon-trash {
+		cursor: pointer;
+		float: right;
+		margin-top: 4px;
+	}
+}
+
+section.projects-container.favorites-page {
+	margin-top: 15px;
+}
+
+.live-player-container, .project-info-bar {
+	margin-top: 15px;
+}
+
+section.project-form-header, .project-info-bar, .volume-and-pan, form.project-form, section.create-new-group-container {
+	.glyphicon:not(.glyphicon-volume-up), select.project-type, input.save-volume-and-pan, input.save:not(#save-genre), input.save-volume {
+		float: right;
+	}
+}
+
+section.project-form-header, .project-info-bar, .volume-and-pan, #save-stage-background-img-and-trash-container {
+	.glyphicon {
+		cursor: pointer;
+	}
+}
+
+section.project-form-header {
+	h3, .glyphicon-repeat, .glyphicon-lock, select.project-type, .glyphicon-trash, h4.project-type /* "Groups" Page */ {
+		margin-right: 10px;
+	}
+	h3, select.project-type, h4.project-type {
+		margin-top: 15px;
+	}
+	h3, h4 {
+		margin-bottom: 0;
+	}
+	h3 {
+		display: inline-block;
+	}
+	h4 {
+		float: right;
+	}
+	.glyphicon {
+		margin-top: 17px;
+		&.glyphicon-repeat {
+			color: $musiclaps-dark-gray; // For "Open Collab" page
+		}
+	}
+	&.requesting-collab-page .glyphicon-repeat {
+		margin-top: 19px; // Overrides "margin-top: 17px;"
+	}
+}
+
+.project-info-bar {
+	background-color: $musiclaps-light-gray;
+	border: $nav-border;
+	h4, h5 {
+		display: inline-block;
+		margin-top: 5px;
+		margin-bottom: 8px;
+	}
+	h4:not(.last-h4), img.audio-mixer { // The ":not(.last-h4)" keeps the slider number on the "Requesting Collab" page from being too far from the slider
+		margin-left: 10px;
+	}
+	img.audio-mixer {
+		cursor: pointer;
+		height: 25px;
+		width: 25px;
+	}
+	h5 {
+		font-weight: normal;
+		margin-left: 20px;
+	}
+	select.project-type, .glyphicon-trash {
+		margin-right: 10px;
+	}
+	select.project-type {
+		margin-top: 8px;
+	}
+	.glyphicon-trash {
+		margin-top: 6px;
+	}
+	&.requesting-collab-page {
+		background-color: white; // Overrides $musiclaps-light-gray
+		&.xs {
+			display: none;
+		}
+		h4, h5 {
+			margin-top: 0;
+		}
+	}
+}
+
+.volume-and-pan, .project-info-bar.requesting-collab-page {
+	border-bottom: $nav-border;
+	border-left: $nav-border;
+	border-right: $nav-border;
+	height: 35px;
+	.glyphicon {
+		margin-top: 9px;
+	}
+	.glyphicon-volume-up {
+		margin-left: 30px;
+	}
+	.slider {
+		@include border-radius(10px);
+		background-color: $musiclaps-light-gray;
+		border: $nav-border;
+		display: inline-block;
+		height: 7px;
+		margin-bottom: 2px;
+		width: 100px;
+	}
+	.glyphicon-save {
+		margin-right: 9px;
+	}
+	input {
+		 &.save-volume-and-pan, &.save-volume {
+			@include submit-link;
+			margin-top: 6px;
+			padding-right: 5px;
+		}
+	}
+}
+
+.volume-and-pan {
+	&.xs { 
+		display: none;
+	}
+	h4 {
+		display: inline-block;
+		margin-top: 0;
+		&.left-to-right {
+			margin-left: 70px;
+		}
+	}
+}
+
+.private-url-container {
+	h4 {
+		margin-bottom: 2px;
+	}
+	input.private-url {
+		@include form-fields-input(100%);	
+	}
+}
+
+form.project-form {
+	label {
+		@include form-fields-label(20px);
+		width: 100%;
+	}
+	input.project-title-project-form, input.credit-cover-song, textarea {
+		@include form-fields-input(100%);
+	}
+	input {
+		&.save {
+			@include submit-button-blue;
+			&#save-genre {
+				margin-left: 49px;
+			}
+		}
+		&.cover-song-checkbox {
+			display: inline-block;
+			margin-left: 2px;
+		}
+	}
+	textarea.description {
+		min-height: 142px;
+	}
+	#no-img-container {
+		background-color: $musiclaps-light-gray;
+		color: #777;
+		height: 80px; // Half the size of recommended height (190px)
+		text-align: center;
+		width: 310px; // Half the size of recommended width (620px)
+		h2 { // "no image"
+			margin-top: 0;
+			padding-top: 20px;
+		}
+	}
+	#upload-stage-background-img-container {
+		border-bottom: $nav-border;
+		border-top: $nav-border;
+		input.choose-file, .glyphicon-trash, #save-stage-background-img-and-trash-container {
+			margin-top: 10px;
+		}
+		input#save-stage-background-img {
+			margin-bottom: 10px;
+		}
+	}
+	h4#type-of-collab, h4#copyright, h4.red {
+		padding-bottom: 5px;
+		padding-left: 10px;
+		padding-top: 5px;
+	}
+	h4#type-of-collab, h4#copyright {
+		background-color: $musiclaps-light-gray;
+		border: $nav-border;
+		margin-bottom: 0;
+		margin-top: 35px;
+	}
+	h4.red {
+		color: red;
+		margin-bottom: 0;
+		margin-top: 0;
+		padding-right: 10px;
+	}
+	h4.red, .type-of-collab-container, ul#copyright-types-container {
+		border-bottom: $nav-border;
+		border-left: $nav-border;
+		border-right: $nav-border;
+	}
+	.type-of-collab-container { // TODO: Fix positioning of ".glyphicon-ok"; not sure what happened here as it was perfectly positioned before
+		height: 36px;
+		text-align: center;
+		input {
+			@include border-radius(10px);
+			@include submit-button($musiclaps-light-gray, $nav-border, 4px 10px, #444);
+			font-size: 12px;
+			// @include button(#F4F4F4, $musiclaps-dark-gray, 12px, 6px 10px);
+			margin-top: 4px;
+			&:hover {
+				color: $musiclaps-blue;
+			}
+		}
+	}
+	ul#copyright-types-container {
+		height: 560px;
+		margin-top: 0;
+		padding-left: 15px;
+		li {
+			&:first-child {
+				margin-top: 10px;
+			}
+			&:not(.first-list-item) {
+				margin-top: 15px;
+			}
+			img {
+				margin-left: 15px;
+				&#all-rights-reserved {
+					height: 32px;
+					width: 32px;
+				}
+				&:not(#all-rights-reserved) {
+					height: 31px;
+					width: 88px;
+				}
+			}
+			h4 {
+				display: inline-block;
+				font-weight: normal;
+				margin-bottom: 0;
+				margin-top: 0;
+				&:not(.last-h4) {
+					margin-left: 15px;
+				}
+				&.last-h4 {
+					margin-left: 70px;
+				}
+				.glyphicon-question-sign { // TODO: Fix positioning at smaller viewport widths
+					color: $musiclaps-blue;
+					margin-left: 2px;
+					margin-top: 2px;
+				}
+			}
+			.cc-description {
+				font-size: 12px;
+				margin-top: 2px;
+			}
+		}
+	}
+}
+
+#upload-stage-background-img-container, section.change-project-img-container {
+	input.choose-file, input#save-stage-background-img, input.update-file {
+		font-size: 12px;
+	}
+	input#save-stage-background-img, input.update-file {
+		@include border-radius(10px);
+	}
+	input#save-stage-background-img, input.update-file {
+		@include submit-button($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+		color: white;
+	}
+}
+
+section.change-project-img-container {
+	form {
+		display: inline-block;
+		width: 100%;
+		.glyphicon-remove {
+			cursor: pointer;
+			float: left !important;
+			margin-top: 12px;
+			&:hover {
+				color: #555;
+			}
+		}
+		label, input.update-file {
+			margin-top: 10px;
+		}
+		label {
+			margin-left: 5px;
+		}
+		input {
+			&.choose-file {
+				margin-left: 25px;
+				margin-top: 10px;
+			}
+			&[type="file"] {
+				display: inline-block;
+			}
+			&.update-file {
+				float: right;
+			}
+		}
+	}
+}
+
+section#lyrics-settings-sm, section#lyrics-settings-xs {
+	border: $nav-border;
+	margin-left: 0;
+	margin-top: 5px;
+	width: 95%;
+	h4 {
+		display: inline-block;
+		margin-bottom: 2px; // This is necessary to keep the "3rd pause" paragraph fully aligned to the right
+		margin-right: 3px; // Creates space between text and question mark
+		margin-top: 10px;
+	}
+	input.save {
+		@include submit-button-blue;
+	}
+	p {
+		margin-top: 0;
+		&:nth-child(3), &.third-pause, &.first-pause { // This part is confusing because the markup is both floated and repeated for sm and xs viewport widths
+			margin-top: 10px;
+		}
+		input {
+			&.pause {
+				@include form-fields-input(54px);
+			}
+			&.speed {
+				@include form-fields-input(23px)
+			}
+		}
+	}
+}
+
+section#lyrics-settings-sm {
+	input.save {
+		float: right;
+		margin-top: 10px;
+	}
+	p:nth-child(even) { // Only visible at viewport widths > 688px
+		float: right;
+	}
+}
+
+section#lyrics-settings-xs { // Only visible at viewport widths <= 688px
+	display: none;
+}
+
+section#lyrics-container-header, #lyrics-container-form {
+	padding: 5px;
+	label {
+		@include form-fields-label(5px);
+		&#title-label, &#display-lyrics-title {
+			margin-top: 0; // Overrides the above ("margin-top: 5px")
+		}
+	}
+	select, input.title, input.songwriter-or-composer, textarea {
+		@include form-fields-input(100%);
+	}
+	textarea {
+		height: 310px;
+	}
+}
+
+section#lyrics-container-header { // "Display Lyrics" and "Select Project"
+	border: $nav-border;
+	margin-top: 15px;
+	label {
+		margin-bottom: 3px;
+		margin-top: 0;
+	}
+	select {
+		margin-bottom: 3px;
+	}
+}
+
+#lyrics-container-form {
+	border-bottom: $nav-border;
+	border-left: $nav-border;
+	border-right: $nav-border;
+	input#save-lyrics {
+		@include submit-button-blue-wide(2px);
+	}
+}
+
+.collaborators-container {
+	label#collab-label {
+		margin-bottom: 12px;
+		margin-top: 25px;
+	}
+	table {
+		margin-left: 0;
+		width: 98%;
+		td {
+			img { // Avatar
+				height: 30px;
+				width: 30px;
+			}
+			span.username {
+				margin-left: 3px;
+			}
+			.glyphicon-envelope {
+				color: $musiclaps-dark-gray;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+#youtube-player {
+	background-color: $musiclaps-dark-gray;
+	height: 247px;
+	margin-top: 15px;
+	width: 403px;
+}
+
+#youtube-links-settings, section.profile-right#youtube-vids {
+	img {
+		height: 80px;
+		width: 120px;
+	}
+}
+
+#info-below-youtube-player h4 {
+	display: inline-block;
+	font-weight: normal;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+#youtube-links-settings {
+	border: $nav-border;
+	margin-left: 3px;
+	padding: 7px 15px;
+	text-align: center;
+	width: 90%;
+	div:first-child { // Radio buttons
+		border-bottom: $nav-border;
+		label {
+			font-weight: normal;
+			margin-left: 2px;
+			&#new-youtube-connection-label {
+				margin-right: 10px;
+			}
+		}
+		input.edit-youtube-connection {
+			margin-left: 10px;
+		}
+	}
+	label#youtube-id-label {
+		@include form-fields-label(10px);
+	}
+	input.youtube-id {
+		@include form-fields-input(100%);
+		margin-bottom: 5px;
+	}
+	input#view-youtube-vid, input#link-to-project {
+		@include border-radius(5px);
+		font-size: 12px;
+		width: 100%;
+	}
+	input#view-youtube-vid {
+		@include submit-button($musiclaps-light-gray, $nav-border, 3px 10px, #d9d9d9);
+	}
+	input#link-to-project {
+		@include submit-button($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+		color: white;
+	}
+	img {
+		margin-top: 10px;
+		padding-bottom: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 10px;
+	}
+}
+
+.youtube-page-form {
+	select, input.name { // "Select Project" and "Name"
+		@include form-fields-input(25%);
+		margin-left: 1px;
+	}
+	label#name-label {
+		margin-left: 25px;
+	}
+	input {
+		&#save-name, &#edit-name {
+			@include border-radius(10px);
+			@include submit-button($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+			color: white;
+			font-size: 12px;
+		}
+	}
+	.xs { display: none; }
+}
+
+section.profile-right#youtube-vids {
+	height: 1024px;
+	padding: 15px;
+	text-align: center;
+	h4 {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	img {
+		cursor: pointer;
+		padding: 10px;
+	}
+}
+
+section#messages-header, section#groups-header {
+	h3 { // "Messages" and "Groups"
+		display: inline-block;
+		margin-bottom: 0;
+		margin-top: 15px;
+	}
+}
+
+section#messages-header {
+	border-bottom: $nav-border;
+	margin-left: 0;
+	padding-left: 5px;
+	width: 98%;
+	a {
+		.glyphicon {
+			color: $musiclaps-dark-gray;
+		}
+		h3 {
+			margin-bottom: 13px;
+			margin-left: 2px;
+		}
+	}
+	button, .glyphicon-arrow-up, .glyphicon-refresh {
+		float: right;
+	}
+	button { // "Add New Friend"
+		margin-right: 18px;
+		margin-top: 11px;
+	}
+	.glyphicon-refresh, .glyphicon-arrow-up {
+		margin-top: 17px;
+	}
+	.glyphicon-arrow-up {
+		margin-right: 7px;
+	}
+}
+
+.add-friend-container {
+	text-align: right;
+	margin-top: 20px;
+	input {
+		&.add-friend-field {
+			@include form-fields-input(25%);
+			margin-left: 2px;
+		}
+		&.add-friend-submit {
+			@include border-radius(10px);
+			@include submit-button($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+			color: white;
+			font-size: 12px;
+			font-weight: normal;
+		}
+	}
+}
+
+.friends-container {
+	text-align: center;
+	.username-and-img {
+		display: inline-block;
+		img:not(.first-img), h5:not(.first-h5) {
+			margin-left: 38px;
+		}
+		img {
+			height: 65px;
+			padding-left: 0;
+			margin-top: 30px;
+			width: 65px;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		h5 {
+			margin-bottom: 0;
+			margin-top: 1px;
+			text-align: center;
+		}
+	}
+}
+
+section.messages-container {
+	img {
+		height: 40px;
+		width: 40px;
+	}
+	h5:first-child, #message-box {
+		margin-top: 25px;
+	}
+	h5 {
+		&:first-child { // Date/time
+			font-weight: normal;
+			margin-bottom: 3px;
+		}
+		&:last-child { // Username
+			margin-top: 3px;
+		}
+	}
+	.messages-container.col-xs-9 {
+		padding-right: 0; // Extends gray message box to the right
+		#existing-message {
+			@include border-radius(4px);
+			background-color: $musiclaps-light-gray;
+			height: 50px;
+			margin-top: 43px;
+			width: 90%;
+		}
+	}
+	label { // "Message to username"
+		margin-left: 2px;	
+	}
+	textarea {
+		@include form-fields-input(100%);
+		height: 113px;
+	}
+	input.send-message {
+		@include border-radius(10px);
+		@include submit-button($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+		color: white;
+		float: right;
+		margin-top: 3px;
+	}
+}
+
+section#groups-header button { // "Create New Group"
+	margin-left: 10px;
+	margin-top: 15px;
+}
+
+section.create-new-group-container, section.groups-container {
+	border: $nav-border;
+	margin-left: 0;
+	width: 98%;
+}
+
+section.create-new-group-container {
+	margin-top: 15px;
+	padding-left: 0;
+	padding-right: 0;
+	h4 {
+		background-color: $musiclaps-light-gray;
+		border-bottom: $nav-border;
+		margin-bottom: 0;
+		margin-top: 0;
+		padding-bottom: 5px;
+		padding-left: 15px;
+		padding-top: 5px;
+		width: 100%;
+	}
+	label {
+		@include form-fields-label(15px);
+	}
+	label, textarea {
+		margin-left: 15px;
+	}
+	input.group-name, select {
+		margin-left: 5px;
+	}
+	input.group-name {
+		@include form-fields-input(50%);
+		margin-top: 15px;
+	}
+	select { // "Select Project"
+		@include form-fields-input(25%);
+		margin-left: 5px;
+	}
+	textarea {
+		@include form-fields-input(90%);
+	}
+	input.save {
+		@include submit-button-blue;
+		margin-bottom: 15px;
+		margin-right: 15px;
+		margin-top: 15px;
+	}
+}
+
+section.groups-container {
+	@include border-radius (5px);
+	margin-top: 15px;
+	h4 {
+		&:first-child { // "Group Name"
+			font-size: 14px;
+			margin-top: 15px;
+			span {
+				margin-left: 3px;
+			}
+		}
+		&:not(.first-h4) {
+			margin-top: 10px;
+		}
+		&:not(.last-h4) {
+			margin-bottom: 10px;
+		}
+		&:last-child {
+			margin-bottom: 15px;
+		}
+	}
+	section.projects-container-groups-page {
+		margin-top: 5px;
+		h4 {
+			margin-bottom: 3px;
+			margin-top: 0;
+		}
+		h5 {
+			font-size: 12px;
+		}
+	}
+}
+
+section.public-project-header {
+	h3, h5 {
+		display: inline-block;
+		margin-bottom: 10px;
+		margin-right: 5px;
+		margin-top: 15px;
+	}
+	h5 {
+		float: right;
+	}
+}
+
+section.public-project-header h5, img#cover-song {
+	margin-right: 10px !important; // Aligns elements with Live Player
+}
+
+.public-project-info {
+	img.avatar {
+		height: 65px;
+		position: absolute;
+		width: 65px;
+	}
+	section.username-and-number-of-songs {
+		h4, h5 {
+			display: inline-block;
+			margin-bottom: 10px;
+			margin-top: 5px;
+		}
+		h5 {
+			margin-left: 5px;
+		}
+	}
+	h5 {
+		font-weight: normal;
+	}
+	.youtube-links {
+		a:not(.first-link) {
+			padding-left: 10px;
+		}
+		img {
+			height: 18px;
+			width: 57px;
+		}
+	}
+	section.number-of-listens {
+		h2, h5 {
+			margin-bottom: 0;
+			margin-top: 0;
+			text-align: right;
+		}
+	}
+	&.type-of-collab-container h5, &.clapping-hands-and-favorites-container h4, img.clapping-hands {
+		margin-bottom: 12px;
+	}
+	&.type-of-collab-container, &#project-detail-container, &.clapping-hands-and-favorites-container {
+		border-bottom: $nav-border;
+		padding-bottom: 5px;
+	}
+	&.type-of-collab-container {
+		h5 {
+			display: inline-block;
+			margin-top: 25px;
+		}
+		.glyphicon:not(.first-glyphicon) {
+			margin-left: 23px;
+		}
+		img#cover-song {
+			float: right;
+			height: 31px;
+			margin-right: 25px;
+			margin-top: 20px;
+			width: 88px;
+		}
+	}
+	&#project-details-container {
+		border-bottom: $nav-border;
+		padding-bottom: 12px;
+		h3 {
+			display: inline-block;
+			margin-bottom: 0;
+		}
+		.glyphicon-envelope {
+			cursor: pointer; // For logged out page
+			margin-left: 15px;
+		}
+		#project-details h4, h4.project-img {
+			font-weight: normal;
+		}
+		h4.project-img {
+			margin-bottom: 5px;
+		}
+		img.project-img {
+			height: 75px;
+			min-width: 120px;
+		}
+	}
+	&#likes-container {
+		h3 {
+			margin-bottom: 13px;
+		}
+		img.avatar {
+			height: 65px;
+			width: 65px;
+		}
+	}
+	img.clapping-hands {
+		height: 25px;
+		width: 25px;
+	}
+	img.clapping-hands, .glyphicon-heart {
+		cursor: pointer;
+	}
+	h4#number-of-claps, h4#number-of-claps-public-project-b-page, h4.favorites {
+		display: inline-block;
+		margin-bottom: 0;
+	}
+	h4#number-of-claps {
+		margin-top: 15px;
+	}
+	h4#number-of-claps-public-project-b-page {
+		margin-top: 25px;
+	}
+	.glyphicon-heart {
+		font-size: 1.25em;
+		margin-left: 30px;
+	}
+	img#facebook-like-button {
+		cursor: pointer;
+		height: 20px;
+		margin-bottom: 15px;
+		width: 47px;
+	}
+}
+
+#share-or-embed-buttons {
+	border-top: $nav-border;
+	button {
+		@include button($musiclaps-light-gray, $musiclaps-dark-gray, 12px, 5px 10px);
+		border: $nav-border;
+		margin-top: 15px;
+		&:last-child {
+			margin-left: 5px;
+		}
+	}
+}
+
+button.musiclaps-dark-gray, .dark-button-navigate-hover-js:hover, .dark-button-navigate-hover-js:focus {
+	background-color: $musiclaps-dark-gray !important; // Important tag is necessary for "Add New Friend"
+	border: 1px solid $musiclaps-dark-gray;
+	color: $musiclaps-blue !important;
+}
+
+.share-to-social-networks-container input, .embed-container textarea {
+	margin-top: 10px;
+}
+
+.share-to-social-networks-container input, .embed-container textarea {
+	@include form-fields-input(100%);
+}
+
+.share-to-social-networks-container {
+	margin-top: 10px;
+	img {
+		cursor: pointer;
+		&:not(.first-img) {
+			margin-left: 13.5px;
+		}
+	}
+}
+
+section#comment-container {
+	label {
+		@include form-fields-label(25px);
+	}
+	textarea {
+		@include form-fields-input(100%);
+	}
+	h4 {
+		display: inline-block;
+		float: right;
+		font-weight: normal;
+		margin-bottom: 0;
+		margin-right: 5px;
+		margin-top: 7px;
+	}
+	input {
+		@include border-radius(10px);
+		@include submit-button($musiclaps-blue, $musiclaps-blue-border, 3px 10px, #45B7FF);
+		color: white;
+		float: right;
+		margin-top: 3px;
+	}
+}
+
+section.profile-right {
+	border: $nav-border;
+	h4 {
+		margin-bottom: 5px;
+	}
+	h5 {
+		font-weight: normal;
+		margin-bottom: 10px;
+		margin-top: 3px;
+	}
+}
+
+#youtube-links-settings, section.profile-right:not(.public-profile-pages) {
+	margin-top: 15px;
+}
+
+section.profile-right.profile-page { // Profile Page only
+	height: 1026px;
+	.row {
+		margin-left: 15px;
+		width: 90%;
+		&:first-child { // listeners/claps
+			text-align: center;
+		}
+		&:not(.first-row) { // Not listeners/claps
+			height: 114px;
+		}
+		&:not(.last-row) {
+			border-bottom: 1px solid #999;
+		}
+		&.user-location-map-container {
+			height: 230px;
+			.user-location-map {
+				background-color: lightblue;
+				height: 160px;
+				width: 100%;
+			}
+			img.avatar {
+				height: 65px;
+				margin-top: 40px;
+				width: 65px;
+			}
+		}
+	}
+	h2 {
+		margin-bottom: 3px;
+	}
+}
+
+section.profile-right.profile-page.project-details-page .row {
+	margin-left: 10px; // Overwrites "margin-left: 15px"
+}
+
+// section.profile-right.profile-page.public-profile-pages {
+// 	margin-top: -32px;
+// }
+
+section.profile-right.recommended {
+	height: 844px;
+	.row {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	h3 { // "Recommended" box
+		margin-bottom: 10px;
+		margin-top: 18px;
+		text-align: center;
+	}
+	h4:not(.first-h4) { // "Free AmpLion Guitar Amp Simulator" and "Realtek High Definition Driver"
+		margin-top: 40px;
+	}
+}
+
+.profile-right.public-project-page {
+	img {
+		height: 75px;
+		margin-top: 15px;
+		width: 120px;
+	}
+	h4, h5 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	h5:last-child { // # Plays
+		font-weight: normal;
+	}
+}
+
+h1.db-error-message {
+	color: $musiclaps-blue;
+	font-weight: normal;
+	text-align: center;
+}
+
+/* ===================================
+    Privacy, Terms, and FAQs Pages
+=================================== */
+#privacy-page, #terms-page, #faqs-page {
+	h1 {
+		@include heading(30px, 0, 0);
+		font-weight: bold;
+		margin-top: 15px;
+	}
+}
+
+#privacy-page, #terms-page, #faqs-page {
+	h3 {
+		margin-bottom: 0;
+	}
+}
+
+#privacy-page p:not(#first-paragraph), #terms-page p, #faqs-page p {
+	margin-top: 0;
+	word-spacing: 1px;
+}
+
+/* ===================================
+    Under Construction Page
+=================================== */
+#construction-page {
+	text-align: center;
+	.glyphicon-home {
+		font-size: 3em;
+	}
+	#space-above-construction-stage {
+		height: 200px;
+	}
+}

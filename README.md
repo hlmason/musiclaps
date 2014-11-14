@@ -36,31 +36,6 @@ The "assets/javascripts/customized.bootstrap.min.js" file is a customized Bootst
 
 The "assets/fonts/" folder contains Bootstrap glyphicon files.
 
-Hand-coded CSS (i.e. Bootstrap overrides) is in the "assets/stylesheets/main.scss" file.  The file is long and may need to be reorganized in the future.  The code is currently organized into the following categories:
-
-Variables<br>
-Mixins<br>
-Global<br>
-Nav<br>
-  Nav below top nav / collapsed "User Menu"<br>
-Modal<br>
-Landing Page<br>
-  Musical Notes Map<br>
-  Stage<br>
-  Image Slider<br>
-  Technology, Backstage, Music Education, Contests and Auditions<br>
-Live Player Page<br>
-New Arrivals, Recommended, Staff Picks, and Collaborations Pages<br>
-All Music Page<br>
-Players Wanted Page<br>
-Profile, New Project, Projects, Collaborations, YouTube, Messages, Groups, and Public Project Pages<br>
-Footer<br>
-  Privacy, Terms, and FAQs Pages<br>
-Under Construction Page<br>
-Media Queries
-
-Please continue to observe the above categories until a new system is implemented.
-
 Elements/selectors tend to come in the order they appear in the markup; exceptions occur when one or more elements/selectors are grouped together.  In most cases, selectors include element names - despite being unnecessary - to make it easier to identify the context.
 
 Comments have been made liberally and may be outdated.
