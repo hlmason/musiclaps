@@ -91,26 +91,25 @@
 				<h3>Article 8 (Copyright)</h3>
 					<p>
 						Copyright of the contents that the user has uploaded or posted on the app shall belong to the principle user.  
-						Users hereby grant to the company, its affiliates, and partners a nonexclusive, irrevocable, royalty-free, sublicensable, worldwide license to create derivative works of, edit, use, reform, publish, collaborate, reproduce, publicly transmit, screen, exhibit, transfer, translate the content they have generated using the app.  
-						Current copyright owner grants another user the right to user the copyrighted material only within the scope of this service.
+						Users hereby grant to the company, its affiliates, and partners a nonexclusive, irrevocable, royalty-free, sublicensable, worldwide license to create derivative works to edit, use, reform, publish, collaborate, reproduce, publicly transmit, screen, exhibit, transfer, translate the content they have generated using the app.  
+						Current copyright owner grants another user the right to use the copyrighted material only within the scope of this service.
 						User grants the right to edit posts made ​​by other users, such as delivery to the meta-data, collaborate and publish in our site, and post to the site that we are affiliated.
 						The company will assume the uploaded and posted contents in this Service to review freely, decision of whether or not published, edit posts, and delete.
 					</p>
 
 				<h3>Article 9 (About Collaboration)</h3>
 					<p>
-						In our service, collaboration function that the contents uploaded by members, another user use it as a collaboration has been implemented. 
-						Member grants a right that the other members to use the content as a collaboration in this service. Such member shall not exercise any rights such as moral right, intellectual property right or any other right against the use of the contents by other Users.
-						Copyright of the altered contents will belong to a member who implemented such alteration. 
-						A copyright or other rights of the member who created original contents will not be affected by such alteration.
-						User hereby grants to the company a right to use their altered contents for free on a nonexclusive basis.
-						User shall grant the right to our company to uses its altered contents for such advertising and promotion purposes of the Services. 
-						Our company may sublicense the same right to any third party designated by our company. A member shall not exercise any rights such as moral right, intellectual property right, or any other right against our company or a third party sublicensed by our company.
-						User shall not alter contents such as impaired rights of original work, defamation of the performer or the copyright holder when member use collaborative function of the Service.
+						Our service enables members to upload musical contents for other users to participate in them as collaboration. 
+						The uploading members grant the other users the right to use the contents through the collaboration process in this service, and not to exercise any rights such as moral right, intellectual property right or any other right against the use of the contents by the other users.
+						Copyright of the altered contents will belong to the users who implemented such alteration. 
+						However, copyright or other rights of the members who created the original contents will not be affected by such alteration. 
+						The users hereby grant the company the right to use their altered contents for free on a nonexclusive basis, for the purpose of advertising, promotion, and so on, for this service. 
+						Our company may sublicense the same right to any third parties designated by our company. 
+						The users shall not exercise any rights such as moral right, intellectual property right, or any other right against our company or third parties sublicensed by our company. 
+						The members shall not alter the original contents in the way of infringing their rights or defaming the participating performers or the copyright holders when they use collaborative function of this service. 
 						The company has a right to delete or stop publishing all or part of such contents without notice.
-						The company shall not take any responsibility for the result of the use of altered contents by a user that is beyond the scope of the Services.
-						The company shall not be responsible for any trouble caused by collaborative function. 
-						If there is any trouble between users, such users shall have to settle the problem by themselves.
+						The company shall not take any responsibilities for the result of the use of the altered contents by the users, in the way beyond the scope of the service. 
+						The company shall not be responsible for any troubles caused by the collaborative function. If any troubles occur between users, the users shall have to solve the problems by themselves.
 					</p>
 
 				<h3>Article 10 (Prohibited Acts)</h3>
@@ -129,7 +128,7 @@
 			            <li>Profiting from the app without permission from the company;</li>
 			            <li>Infringing upon the intellectual property rights of third parties (except those that have been licensed in the Terms of Service;</li>
 			            <li>Slandering other users or a third party;</li>
-			            <li>Acts that owns the user account member of one person, a duplicate for the purpose of fraud;</li>
+			            <li>Owning multiple user accounts for fraudulent purposes;</li>
 			            <li>Advertising, publicizing, or soliciting without permission from the company;</li>
 			            <li>Obstructing app services;</li>
 			            <li>Violating a person’s honor, social trust, privacy, right of publicity, copyright, intellectual property right, or 
