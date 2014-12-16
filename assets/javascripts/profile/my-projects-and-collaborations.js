@@ -194,13 +194,17 @@ $(document).ready(function() {
 
 	/* =================================== */
 
-	$(projectImg).mouseenter(function() { // TODO: Fix
-		glyphiconPencil.show();
+	projectImg.on({
+		mouseenter: function() 
+		{
+			glyphiconPencil.show();
+		},
+		mouseleave: function() 
+		{
+			glyphiconPencil.hide();
+		}
 	});
-	$(projectImg).mouseleave(function() {
-		glyphiconPencil.hide();
-	});
-	$(glyphiconPencil).on('click', function() {
+	glyphiconPencil.on('click', function() {
 		changeProjectImgContainer.fadeIn('fast');
 	});
 
