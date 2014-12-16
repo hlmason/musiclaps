@@ -88,7 +88,7 @@
 		}
 		ul.navbar-right#logged-in {
 			li {
-				&#welcome-user-sm { display: none; }
+				&.messages-sm, &#welcome-user-sm { display: none; }
 				&#welcome-user-xs { 
 					display: block;
 					padding-left: 10px;

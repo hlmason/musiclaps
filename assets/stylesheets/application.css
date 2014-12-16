@@ -5128,7 +5128,7 @@ section#recording-instructions #save-container {
     padding-bottom: 10px; }
     nav ul.navbar-right#logged-out li:last-child a {
       color: #444444 !important; }
-  nav ul.navbar-right#logged-in li#welcome-user-sm {
+  nav ul.navbar-right#logged-in li.messages-sm, nav ul.navbar-right#logged-in li#welcome-user-sm {
     display: none; }
   nav ul.navbar-right#logged-in li#welcome-user-xs {
     display: block;
