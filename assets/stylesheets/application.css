@@ -4063,8 +4063,7 @@ section.projects-container.favorites-page h4, section.projects-container.favorit
 section.projects-container.favorites-page .glyphicon-trash, section.projects-container.public-profile-pages .glyphicon-trash {
   cursor: pointer;
   float: right;
-  margin-top: 42px;
-  bottom: 0; }
+  margin-top: 42px; }
 
 section.projects-container.favorites-page {
   margin-top: 15px; }
