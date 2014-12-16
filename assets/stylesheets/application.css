@@ -3046,6 +3046,13 @@ nav ul.navbar-right#logged-out li {
       background-color: #45B7FF; }
     nav ul.navbar-right#logged-out li:last-child a {
       color: white !important; }
+nav ul.navbar-right li .glyphicon-envelope {
+  cursor: pointer;
+  margin-right: 4px;
+  margin-top: 7px; }
+nav ul.navbar-right li#number-of-messages {
+  margin-right: 10px;
+  margin-top: 28px; }
 nav ul.navbar-right li#welcome-user-sm a, nav ul.navbar-right li#welcome-user-xs a {
   color: #1F91E6 !important;
   text-transform: initial; }

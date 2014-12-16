@@ -218,6 +218,8 @@
 					<li><a><img src="<?php echo BASE_URL; ?>assets/images/header-and-footer/japan-flag.jpg" alt="Japanese flag"></a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right" id="logged-in">
+					<li><span class="glyphicon glyphicon-envelope"></span></li>
+					<li id="number-of-messages">1</li>
 					<li id="welcome-user-sm">Welcome, &nbsp;<span class="musiclaps-blue"><a class="welcome-user-link" href="<?php echo BASE_URL; ?>views/profile/index.php">$firstname</a></span></li><!-- Hard-coded placeholder -->
 					<li id="log-out">
 						<form action="<?php echo BASE_URL; ?>controllers/logout-controller.php" method="post">

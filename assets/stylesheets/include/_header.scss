@@ -137,6 +137,15 @@ nav {
 			}
 		}
 		li {
+			.glyphicon-envelope {
+				cursor: pointer;
+				margin-right: 4px;
+				margin-top: 7px;
+			}
+			&#number-of-messages {
+				margin-right: 10px;
+				margin-top: 28px;
+			}
 			&#welcome-user-sm, &#welcome-user-xs {
 				a {
 					color: #1F91E6 !important; // Otherwise username is gray
