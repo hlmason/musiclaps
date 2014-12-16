@@ -3812,6 +3812,8 @@ section.public-projects-and-collaborations-container {
     margin-left: 15px;
     padding-right: 0;
     width: 47%; }
+    section.public-projects-and-collaborations-container section.public-projects-and-collaborations:hover {
+      background-color: #F4F4F4; }
     section.public-projects-and-collaborations-container section.public-projects-and-collaborations img {
       height: 85px;
       padding-bottom: 10px;

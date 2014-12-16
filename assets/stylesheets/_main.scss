@@ -416,6 +416,9 @@ section.public-projects-and-collaborations-container {
 		margin-left: 15px;
 		padding-right: 0;
 		width: 47%;
+		&:hover {
+			background-color: #F4F4F4;
+		}
 		img {
 			height: 85px;
 			padding-bottom: 10px;
