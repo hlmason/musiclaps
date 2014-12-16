@@ -2966,18 +2966,18 @@ nav ul.nav {
   margin-top: 6px; }
   nav ul.nav li {
     margin-top: 23px; }
-  nav ul.nav .open > a {
-    background-color: #e7e7e7 !important; }
-  nav ul.nav a {
-    color: #444444 !important;
-    font-size: 14px;
-    line-height: 0;
-    letter-spacing: 0.5px;
-    text-transform: uppercase; }
-    nav ul.nav a:hover, nav ul.nav a:focus, nav ul.nav a.active {
-      color: #1F91E6 !important; }
-    nav ul.nav a:not(.welcome-user-link) {
-      padding: 15px; }
+    nav ul.nav li .dropdown.open > a {
+      background-color: #e7e7e7; }
+    nav ul.nav li a {
+      color: #444444 !important;
+      font-size: 14px;
+      line-height: 0;
+      letter-spacing: 0.5px;
+      text-transform: uppercase; }
+      nav ul.nav li a:hover, nav ul.nav li a:focus, nav ul.nav li a.active {
+        color: #1F91E6 !important; }
+      nav ul.nav li a:not(.welcome-user-link) {
+        padding: 15px; }
 nav ul.navbar-left > li {
   border-left: 1px solid #cecece; }
   nav ul.navbar-left > li:first-child {
@@ -4063,7 +4063,8 @@ section.projects-container.favorites-page h4, section.projects-container.favorit
 section.projects-container.favorites-page .glyphicon-trash, section.projects-container.public-profile-pages .glyphicon-trash {
   cursor: pointer;
   float: right;
-  margin-top: 4px; }
+  margin-top: 42px;
+  bottom: 0; }
 
 section.projects-container.favorites-page {
   margin-top: 15px; }

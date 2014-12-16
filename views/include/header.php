@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Official Site of Musiclaps">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Musiclaps | <?php echo $page_title; ?></title>
 	<link rel="icon" href="<?php echo BASE_URL; ?>favicon.ico">
 	<link rel="apple-touch-icon-precomposed" sizes="228x228" href="<?php echo BASE_URL; ?>favicon-228.png">
 	<link rel="apple-touch-icon-precomposed" sizes="195x195" href="<?php echo BASE_URL; ?>favicon-195.png">
@@ -16,10 +17,9 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo BASE_URL; ?>favicon-72.png">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?php echo BASE_URL; ?>favicon-57.png">
     <link rel="apple-touch-icon-precomposed" sizes="48x48" href="<?php echo BASE_URL; ?>favicon-48.png">
-	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
-	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/stylesheets/application.css">
+	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"> --><!-- Link left in for testing purposes -->
 	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>walkthrough/assets/css/tutorial.css"><!-- Julie's Captivate -->
-	<title>Musiclaps | <?php echo $page_title; ?></title>
+	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/stylesheets/application.css">
 	<!-- [if lt IE 9]> -->
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <!-- [endif] -->
@@ -35,17 +35,19 @@
 
 	<nav class="navbar navbar-default">
 		<div class="container">
-			<div class="navbar-header"><!-- For Firefox and IE -->
-	            <button id="navbarToggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<div class="navbar-header">
+	            <button class="navbar-toggle" id="navbarToggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
 	            </button>
 	            <h4 id="menuJS" data-toggle="collapse" data-target=".navbar-collapse">Menu</h4>
+				
 				<a class="navbar-brand" href="<?php echo BASE_URL; ?>">
 					<img src="<?php echo BASE_URL; ?>assets/images/header-and-footer/musiclaps-logo.png" alt="Musiclaps logo">
 				</a>
 			</div>
+			
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="nav navbar-nav navbar-left">
 					<li>

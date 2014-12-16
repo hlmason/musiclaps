@@ -40,21 +40,21 @@ nav {
 		&.nav {
 			margin-top: 6px; // Required for Bootstrap dropdown menus
 			li { // Also controls nav below top nav / collapsed "User Menu"
-				margin-top: 23px;		
-			}
-			.open > a { // When "Music", "People", or "Our Story" is clicked on
-				background-color: $musiclaps-light-gray !important;
-			}
-			a {
-				@include nav-link($musiclaps-dark-gray, 14px);
-				letter-spacing: 0.5px;
-				text-transform: uppercase;
-				&:hover, &:focus, &.active {
-					color: #1F91E6 !important; // Otherwise links are gray
+				margin-top: 23px;
+				.dropdown.open > a { // When "Music", "People", or "Our Story" is clicked on and then hovered over
+					background-color: $musiclaps-light-gray;
 				}
-				&:not(.welcome-user-link) {
-					padding: 15px;	
-				}
+				a {
+					@include nav-link($musiclaps-dark-gray, 14px);
+					letter-spacing: 0.5px;
+					text-transform: uppercase;
+					&:hover, &:focus, &.active {
+						color: #1F91E6 !important; // Otherwise links are gray
+					}
+					&:not(.welcome-user-link) {
+						padding: 15px;	
+					}
+				}	
 			}
 		}
 		&.navbar-left > li { // "Music", "People", and "Our Story" only
