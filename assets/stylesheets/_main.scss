@@ -1,4 +1,3 @@
-
 // .upside-down {
 // 	@include transform(-180deg);
 // 	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); // IE6/7
@@ -437,6 +436,7 @@ section.public-projects-and-collaborations-container {
 			margin-top: 10px;
 		}
 		h5 {
+			color: $musiclaps-dark-gray;
 			margin-top: 7px;
 		}
 	}
