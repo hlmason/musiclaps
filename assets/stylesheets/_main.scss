@@ -156,6 +156,8 @@ img {
 	.projects-container {
 		box-shadow: $box-shadow;
 		color: $musiclaps-dark-gray; // Overrides link color
+		max-height: 84px;
+		overflow: hidden;
 	}
 	.ads-container {
 		img.first-img {

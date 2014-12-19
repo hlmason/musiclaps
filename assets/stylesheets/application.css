@@ -3603,7 +3603,9 @@ img.twitter-icon, img#microsoft-icon {
   text-align: center; }
 #all-music-page .projects-container {
   box-shadow: 10px 10px 5px #444444;
-  color: #444444; }
+  color: #444444;
+  max-height: 84px;
+  overflow: hidden; }
 #all-music-page .ads-container img.first-img {
   float: right; }
 
