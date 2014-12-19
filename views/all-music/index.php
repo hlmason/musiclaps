@@ -30,7 +30,7 @@
 							</div>
 						
 							<div class="col-xs-8 col-sm-10 col-md-8">
-								<h4>$super long project title</h4><!-- Hard-coded placeholder -->
+								<h4>$long project title</h4><!-- Hard-coded placeholder -->
 								<h5>By: <span class="normal">$username</span></h5><!-- Hard-coded placeholder -->
 								<h5>Plays: <span class="normal">$#</span></h5><!-- Hard-coded placeholder -->
 							</div>
@@ -46,7 +46,7 @@
 							</div>
 						
 							<div class="col-xs-8 col-sm-10 col-md-8">
-								<h4>$super long project title</h4><!-- Hard-coded placeholder -->
+								<h4>$long project title</h4><!-- Hard-coded placeholder -->
 								<h5>By: <span class="normal">$username</span></h5><!-- Hard-coded placeholder -->
 								<h5>Plays: <span class="normal">$#</span></h5><!-- Hard-coded placeholder -->
 							</div>
@@ -62,7 +62,7 @@
 							</div>
 						
 							<div class="col-xs-8 col-sm-10 col-md-8">
-								<h4>$super long project title</h4><!-- Hard-coded placeholder -->
+								<h4>$long project title</h4><!-- Hard-coded placeholder -->
 								<h5>By: <span class="normal">$username</span></h5><!-- Hard-coded placeholder -->
 								<h5>Plays: <span class="normal">$#</span></h5><!-- Hard-coded placeholder -->
 							</div>
@@ -78,7 +78,7 @@
 							</div>
 						
 							<div class="col-xs-8 col-sm-10 col-md-8">
-								<h4>$super long project title</h4><!-- Hard-coded placeholder -->
+								<h4>$long project title</h4><!-- Hard-coded placeholder -->
 								<h5>By: <span class="normal">$username</span></h5><!-- Hard-coded placeholder -->
 								<h5>Plays: <span class="normal">$#</span></h5><!-- Hard-coded placeholder -->
 							</div>
@@ -94,7 +94,7 @@
 							</div>
 						
 							<div class="col-xs-8 col-sm-10 col-md-8">
-								<h4>$super long project title</h4><!-- Hard-coded placeholder -->
+								<h4>$long project title</h4><!-- Hard-coded placeholder -->
 								<h5>By: <span class="normal">$username</span></h5><!-- Hard-coded placeholder -->
 								<h5>Plays: <span class="normal">$#</span></h5><!-- Hard-coded placeholder -->
 							</div>
