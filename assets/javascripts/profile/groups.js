@@ -6,10 +6,10 @@ $(document).ready(function() {
 	groupForm.hide();
 	createNewGroupContainer.hide();
 
-	$('#groupProjectsContainerGroupsPage').on('click', function() {
-		$('#groupsContainer').hide();
-		groupForm.fadeIn('fast');
-	});
+	// $('#groupProjectsContainerGroupsPage').on('click', function() {
+	// 	$('#groupsContainer').hide();
+	// 	groupForm.fadeIn('fast');
+	// });
 
 	$('button#createNewGroupButton').on('click', function() {
 		if ( createNewGroupContainer.is(':hidden') ) {

@@ -50,7 +50,31 @@
 					<section class="row col-xs-12 groups-container" id="groupsContainer">
 						<h4 class="first-h4">Group Name: <span class="normal">$Team XY</span></h4><!-- Hard-coded placeholder -->
 						<h4>Project: 
-							<section class="row projects-container projectsContainer projects-container-groups-page" id="groupProjectsContainerGroupsPage">
+							<section class="row projects-container projects-container-groups-page" id="groupProjectsContainerGroupsPage">
+								<div class="col-xs-6 col-sm-3">
+									<span class="glyphicon-pencil-container"><span class="glyphicon glyphicon-pencil glyphiconPencil"></span></span>
+									<img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
+								</div>
+							
+								<div class="col-xs-6 col-sm-6 col-md-7">
+									<h4>$Super Long Project Title</h4><!-- Hard-coded placeholder -->
+									<h5>By: <span class="normal">$username</span></h5><!-- Hard-coded placeholder -->
+									<h5 class="last-h5 xs">Group <span class="glyphicon glyphicon-lock"></span></h5><!-- Only visible at viewport widths <= 767px -->
+								</div>
+
+								<div class="col-sm-3 col-md-2">
+									<h5 class="last-h5 sm">Group <span class="glyphicon glyphicon-lock"></span></h5><!-- Only visible at viewport widths > 767px -->
+								</div>
+							</section>
+						</h4>
+						<h4>Joined: <span class="normal">1 year ago</span></h4><!-- Hard-coded placeholder -->
+						<h4 class="last-h4">Member(s): <span class="normal">UsernameA, UsernameB, UsernameC</span></h4><!-- Hard-coded placeholder -->
+					</section>
+
+					<section class="row col-xs-12 groups-container" id="groupsContainer">
+						<h4 class="first-h4">Group Name: <span class="normal">$Team XY</span></h4><!-- Hard-coded placeholder -->
+						<h4>Project: 
+							<section class="row projects-container projects-container-groups-page" id="groupProjectsContainerGroupsPage">
 								<div class="col-xs-6 col-sm-3">
 									<span class="glyphicon-pencil-container"><span class="glyphicon glyphicon-pencil glyphiconPencil"></span></span>
 									<img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
