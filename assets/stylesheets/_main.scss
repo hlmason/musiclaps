@@ -414,6 +414,9 @@ section.public-projects-and-collaborations-container {
 	section.public-projects-and-collaborations {
 		border: $nav-border;
 		margin-left: 15px;
+		margin-top: 9px;
+		max-height: 85px;
+		overflow: hidden;
 		padding-right: 0;
 		width: 47%;
 		&:hover {
@@ -440,14 +443,10 @@ section.public-projects-and-collaborations-container {
 }
 
 h4.my-public-projects-heading {
-	margin-bottom: 9px;
+	margin-bottom: 0;
 	span {
 		margin-left: 2px;
 	}
-}
-
-h4.my-public-projects-heading.public-profile-pages {
-	margin-bottom: 0;
 }
 
 section.public-projects-and-collaborations, section.projects-container.public-profile-pages {
