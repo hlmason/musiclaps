@@ -188,7 +188,8 @@
 	}
 	.public-project-page.row.col-xs-12.col-md-3, .recommended.row.col-md-3, .youtube-page.row.col-md-3 { display: none; } // Project listings and "Recommended" box
 	#youtube-links-settings { margin-left: 0; }
-	section.projects-container.favorites-page:not(.first-listing) { margin-left: 15px; }
+	.favorites-page.col-sm-12.col-md-6:nth-child(odd) { padding-right: 15px; }
+	.favorites-page.col-sm-12.col-md-6:nth-child(even) { padding-left: 15px; }
 	footer {
 		a.navbar-brand { position: absolute; }
 		ul.navbar-left, ul.navbar-right { margin-top: 50px; }

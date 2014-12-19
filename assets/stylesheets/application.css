@@ -4059,10 +4059,10 @@ section.projects-container {
     background-color: #F4F4F4;
     cursor: pointer; }
 
-.favorites-page:first-child.col-sm-12.col-md-6 {
+.favorites-page.col-sm-12.col-md-6:nth-child(odd) {
   padding-right: 0; }
 
-.favorites-page:last-child.col-sm-12.col-md-6 {
+.favorites-page.col-sm-12.col-md-6:nth-child(even) {
   padding-left: 0; }
 
 section.projects-container.favorites-page:hover, section.projects-container.public-profile-pages:hover {
@@ -4070,13 +4070,20 @@ section.projects-container.favorites-page:hover, section.projects-container.publ
   cursor: initial; }
 section.projects-container.favorites-page h4, section.projects-container.favorites-page h5, section.projects-container.public-profile-pages h4, section.projects-container.public-profile-pages h5 {
   margin-left: 3px; }
+section.projects-container.favorites-page h5.number-of-plays, section.projects-container.public-profile-pages h5.number-of-plays {
+  text-align: right; }
 section.projects-container.favorites-page .glyphicon-trash, section.projects-container.public-profile-pages .glyphicon-trash {
   cursor: pointer;
   float: right;
-  margin-top: 42px; }
+  margin-top: 12px; }
 
 section.projects-container.favorites-page {
-  margin-top: 15px; }
+  margin-top: 15px;
+  max-height: 84px;
+  overflow: hidden; }
+  section.projects-container.favorites-page .col-xs-5.col-sm-6.col-md-5 {
+    padding-right: 0;
+    /* Creates more space for project title */ }
 
 .live-player-container, .project-info-bar {
   margin-top: 15px; }
@@ -5232,8 +5239,11 @@ section#recording-instructions #save-container {
   #youtube-links-settings {
     margin-left: 0; }
 
-  section.projects-container.favorites-page:not(.first-listing) {
-    margin-left: 15px; }
+  .favorites-page.col-sm-12.col-md-6:nth-child(odd) {
+    padding-right: 15px; }
+
+  .favorites-page.col-sm-12.col-md-6:nth-child(even) {
+    padding-left: 15px; }
 
   footer a.navbar-brand {
     position: absolute; }
