@@ -167,7 +167,7 @@
 								<h4 id="new-request">&nbsp; New Request</h4>
 							</div>
 							
-							<form action="<?php echo BASE_URL; ?>controllers/players-wanted-controller.php" method="post">
+							<form action="" method="post">
 								<div>
 									<label id="request-title-label" for="request_title">Title</label>
 									<input class="request-title" id="request_title" type="text" name="request_title">

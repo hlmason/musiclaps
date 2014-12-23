@@ -29,7 +29,7 @@
 
 					<!-- Hidden upon page load -->
 					<div class="add-friend-container row col-xs-12" id="addFriendContainer">
-						<form action="<?php echo BASE_URL; ?>controllers/profile/messages-controller.php" method="post">
+						<form action="" method="post">
 							<label for="add_friend">Member's Username</label>
 							<input class="add-friend-field" id="add_friend" type="text" name="">
 							<input class="add-friend-submit" type="submit" name="" value="Add">
@@ -121,7 +121,7 @@
 						</div>
 
 						<section class="row col-xs-12">
-							<form action="<?php echo BASE_URL; ?>controllers/profile/messages-controller.php" method="post">
+							<form action="" method="post">
 								<span class="glyphicon glyphicon-pencil"></span>
 								<label for="compose_message">Message to $username</label><!-- Hard-coded placeholder -->
 								<textarea id="compose_message" name="compose_message"></textarea>

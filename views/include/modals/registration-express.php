@@ -11,7 +11,7 @@
 				<h2 class="modal-title registration-express-modal-heading" id="registrationExpressLabel">Email Registration</h2>
 			</div>
 			
-			<form action="<?php echo BASE_URL; ?>controllers/registration-controller.php" method="post">	
+			<form action="" method="post">	
 				<div class="modal-body" id="registration-express-modal-body">
 					<div>
 						<label for="email"><span class="musiclaps-blue">*</span> Email Address</label>

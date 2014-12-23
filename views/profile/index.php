@@ -22,7 +22,7 @@
 							<a>
 								<h4 class="edit-profile" id="editProfile"><span class="glyphicon glyphicon-edit"></span>&nbsp; Edit Profile</h4>
 							</a>
-							<form class="profile-page" action="<?php echo BASE_URL; ?>controllers/profile/index-controller.php" method="post">
+							<form class="profile-page" action="" method="post">
 								<h4 class="save-profile" id="saveProfile">
 									<span class="glyphicon glyphicon-save"></span>
 									<input type="submit" value="Save"> | &nbsp;
@@ -109,7 +109,7 @@
 						  		</div><!-- Hard-coded placeholder -->
 							</div>
 
-							<form class="profile-page" action="<?php echo BASE_URL; ?>controllers/profile/index-controller.php" method="post">
+							<form class="profile-page" action="" method="post">
 								<div class="row">
 									<div class="col-xs-12 col-lg-6">
 										<label id="birth-date-label-profile" for="birth_date_profile_page">Birth Date</label>

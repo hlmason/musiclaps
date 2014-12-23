@@ -20,7 +20,7 @@
 						</div>
 						<!-- End of Recording Player -->
 
-						<form action="<?php echo BASE_URL; ?>controllers/profile/lyrics-controller.php" method="post">
+						<form action="" method="post">
 							<section class="row col-xs-12" id="lyrics-settings-sm"><!-- Only visible at viewport widths > 688px -->
 								<div>
 									<h4>Pause and scrolling speed</h4><span class="glyphicon glyphicon-question-sign glyphiconQuestionSignLyrics"></span>
@@ -60,7 +60,7 @@
 					</div>
 
 					<div class="row col-xs-12 col-md-3">
-						<form action="<?php echo BASE_URL; ?>controllers/profile/lyrics-controller.php" method="post">
+						<form action="" method="post">
 							<section id="lyrics-container-header">
 								<label id="display-lyrics-title" for="select_project_lyrics_page">Select Project</label>
 								<select id="select_project_lyrics_page" name="">

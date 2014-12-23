@@ -1,5 +1,5 @@
 	<section class="row col-xs-12 volumeAndPan">
-		<form class="project-form" action="<?php echo BASE_URL; ?>controllers/profile/project-form-controller.php" method="post">
+		<form class="project-form" action="" method="post">
 			<div class="volume-and-pan sm"><!-- Only visible at viewport widths > 580px -->
 				<span class="glyphicon glyphicon-volume-up"></span>
 				<div class="slider"></div>

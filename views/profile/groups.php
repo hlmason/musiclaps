@@ -23,7 +23,7 @@
 					<!-- Hidden upon page load -->
 					<section class="row col-xs-12 create-new-group-container" id="createNewGroupContainer">
 						<h4>Create a New Group</h4>
-						<form action="<?php echo BASE_URL; ?>controllers/profile/groups-controller.php" method="post">
+						<form action="" method="post">
 							<div>
 								<label for="group_name">Group Name</label>
 								<input class="group-name" id="group_name" type="text" name="group_name">

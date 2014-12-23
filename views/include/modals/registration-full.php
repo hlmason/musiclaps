@@ -10,7 +10,7 @@
 				<h2 class="modal-title registration-full-modal-heading" id="registrationFullLabel">Email Registration</h2>
 			</div>
 			
-			<form class="registrationForm" id="resetForm" action="<?php echo BASE_URL; ?>controllers/registration-controller.php" method="post">	
+			<form class="registrationForm" id="resetForm" action="" method="post">	
 				<div class="modal-body" id="registration-full-modal-body">
 					<div id="validationErrorMessages"></div>	
 					<div>

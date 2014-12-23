@@ -62,7 +62,7 @@
 						</section>
 						
 						<section class="row col-xs-12">
-							<form action="<?php echo BASE_URL; ?>controllers/profile/project-form-controller.php" method="post">
+							<form action="" method="post">
 								<div class="project-info-bar requesting-collab-page sm"><!-- Only visible at viewport widths > 731px -->
 									<h4 class="first-h4">$project #</h4><!-- Hard-coded placeholder -->
 									<h4>$instrument name</h4><!-- Hard-coded placeholder -->

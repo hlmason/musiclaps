@@ -54,7 +54,7 @@
 								<h4 id="post-topic">&nbsp; Post Your Topic</h4>
 							</div>
 							
-							<form action="<?php echo BASE_URL; ?>controllers/forum-controller.php" method="post">
+							<form action="" method="post">
 								<div>
 									<label id="topic-title-label" for="topic_title">Title</label>
 									<input class="topic-title" id="topic_title" type="text" name="topic_title">

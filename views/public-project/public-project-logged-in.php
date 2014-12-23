@@ -113,7 +113,7 @@
 					</div>
 
 					<section class="row col-xs-12" id="comment-container">
-						<form action="<?php echo BASE_URL; ?>controllers/public-project-controller.php" method="post">
+						<form action="" method="post">
 							<label for="comment_public_project_page">Post a Comment</label>
 							<textarea id="comment_public_project_page" name=""></textarea>
 							<!-- Markup is backwards because elements are floated right -->
