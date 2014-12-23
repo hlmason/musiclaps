@@ -93,6 +93,10 @@ img {
 	width: 100%;
 }
 
+.row.col-lg-10.col-lg-offset-1 {
+	padding-right: 0;
+}
+
 /* =============================================================================
     New Arrivals, Recommended, Staff Picks, and Collaborations Pages
 ============================================================================= */
@@ -315,6 +319,10 @@ img {
 	&.public-profile-pages {
 		padding-right: 0 !important; // Centers and aligns project tile with section.profile-right
 	}
+}
+
+.row.col-xs-12.col-sm-4.profile-right-container {
+	padding-right: 0;
 }
 
 .avatar-and-username, #new-project-buttons, 
@@ -1108,12 +1116,17 @@ section#lyrics-container-header { // "Display Lyrics" and "Select Project"
 	}
 }
 
-#lyrics-container-form {
-	border-bottom: $nav-border;
-	border-left: $nav-border;
-	border-right: $nav-border;
-	input#save-lyrics {
-		@include submit-button-blue-wide(2px);
+.lyrics-project-container {
+	.row.col-xs-12.col-md-3 {
+		padding-right: 0;
+	}
+	#lyrics-container-form {
+		border-bottom: $nav-border;
+		border-left: $nav-border;
+		border-right: $nav-border;
+		input#save-lyrics {
+			@include submit-button-blue-wide(2px);
+		}
 	}
 }
 
@@ -1226,6 +1239,10 @@ section#lyrics-container-header { // "Display Lyrics" and "Select Project"
 		}
 	}
 	.xs { display: none; }
+}
+
+.row.col-md-3.youtube-page {
+	padding-right: 0;
 }
 
 section.profile-right#youtube-vids {
@@ -1701,20 +1718,23 @@ section.profile-right.profile-page.project-details-page .row {
 // 	margin-top: -32px;
 // }
 
-section.profile-right.recommended {
-	height: 844px;
-	.row {
-		margin-left: auto;
-		margin-right: auto;
-	}
-	h3 { // "Recommended" box
-		margin-bottom: 10px;
-		margin-top: 18px;
-		text-align: center;
-	}
-	h4:not(.first-h4) { // "Free AmpLion Guitar Amp Simulator" and "Realtek High Definition Driver"
-		margin-top: 40px;
-	}
+.row.recommended {
+	padding-right: 0;
+	section.profile-right.recommended {
+		height: 844px;
+		.row {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		h3 { // "Recommended" box
+			margin-bottom: 10px;
+			margin-top: 18px;
+			text-align: center;
+		}
+		h4:not(.first-h4) { // "Free AmpLion Guitar Amp Simulator" and "Realtek High Definition Driver"
+			margin-top: 40px;
+		}
+	}	
 }
 
 .profile-right.public-project-page {
