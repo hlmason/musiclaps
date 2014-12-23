@@ -315,6 +315,10 @@ img {
 /* ======================================================================================================
     Profile, New Project, Projects, Collaborations, YouTube, Messages, Groups, and Public Project Pages
 ====================================================================================================== */
+.project-title {
+	font-size: 12px;
+}
+
 .row.col-xs-12.col-sm-8 {
 	&.public-profile-pages {
 		padding-right: 0 !important; // Centers and aligns project tile with section.profile-right

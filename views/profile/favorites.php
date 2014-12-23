@@ -21,7 +21,7 @@
 								</div>
 							
 								<div class="col-xs-5 col-sm-6 col-md-5">
-									<a href="<?php echo BASE_URL; ?>views/public-project/public-project-logged-in.php"><h4>$Super Long Project Title</h4></a><!-- Hard-coded placeholder -->
+									<a href="<?php echo BASE_URL; ?>views/public-project/public-project-logged-in.php"><h4 class="project-title">$Super Long Project Title</h4></a><!-- Hard-coded placeholder -->
 									<h5>By: <a href="<?php echo BASE_URL; ?>views/profile/public-profile-logged-in.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
 								</div>
 
@@ -39,7 +39,7 @@
 								</div>
 							
 								<div class="col-xs-5 col-sm-6 col-md-5">
-									<a href="<?php echo BASE_URL; ?>views/public-project/public-project-logged-in.php"><h4>$Project Title</h4></a><!-- Hard-coded placeholder -->
+									<a href="<?php echo BASE_URL; ?>views/public-project/public-project-logged-in.php"><h4 class="project-title">$Project Title</h4></a><!-- Hard-coded placeholder -->
 									<h5>By: <a href="<?php echo BASE_URL; ?>views/profile/public-profile-logged-in.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
 								</div>
 
@@ -57,7 +57,7 @@
 								</div>
 							
 								<div class="col-xs-5 col-sm-6 col-md-5">
-									<a href="<?php echo BASE_URL; ?>views/public-project/public-project-logged-in.php"><h4>$Project Title</h4></a><!-- Hard-coded placeholder -->
+									<a href="<?php echo BASE_URL; ?>views/public-project/public-project-logged-in.php"><h4 class="project-title">$Project Title</h4></a><!-- Hard-coded placeholder -->
 									<h5>By: <a href="<?php echo BASE_URL; ?>views/profile/public-profile-logged-in.php"><span class="normal">$long username</span></a></h5><!-- Hard-coded placeholder -->
 								</div>
 
@@ -75,7 +75,7 @@
 								</div>
 							
 								<div class="col-xs-5 col-sm-6 col-md-5">
-									<a href="<?php echo BASE_URL; ?>views/public-project/public-project-logged-in.php"><h4>$Project Title</h4></a><!-- Hard-coded placeholder -->
+									<a href="<?php echo BASE_URL; ?>views/public-project/public-project-logged-in.php"><h4 class="project-title">$Project Title</h4></a><!-- Hard-coded placeholder -->
 									<h5>By: <a href="<?php echo BASE_URL; ?>views/profile/public-profile-logged-in.php"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
 								</div>
 

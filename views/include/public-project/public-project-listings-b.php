@@ -4,7 +4,7 @@
 											<img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
 										</div>
 										<div class="row col-xs-6 col-sm-8 col-md-6">
-											<h4>$Super Long Project Title</h4><!-- Hard-coded placeholder -->
+											<h4 class="project-title">$Super Long Project Title</h4><!-- Hard-coded placeholder -->
 											<h5>$#### plays</h5><!-- Hard-coded placeholder -->
 										</div>
 									</section>
@@ -16,7 +16,7 @@
 											<img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
 										</div>
 										<div class="row col-xs-6 col-sm-8 col-md-6">
-											<h4>$Project Title</h4><!-- Hard-coded placeholder -->
+											<h4 class="project-title">$Project Title</h4><!-- Hard-coded placeholder -->
 											<h5>$#### plays</h5><!-- Hard-coded placeholder -->
 										</div>
 									</section>
@@ -28,7 +28,7 @@
 											<img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
 										</div>
 										<div class="row col-xs-6 col-sm-8 col-md-6">
-											<h4>$Project Title</h4><!-- Hard-coded placeholder -->
+											<h4 class="project-title">$Project Title</h4><!-- Hard-coded placeholder -->
 											<h5>$#### plays</h5><!-- Hard-coded placeholder -->
 										</div>
 									</section>
@@ -40,7 +40,7 @@
 											<img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
 										</div>
 										<div class="row col-xs-6 col-sm-8 col-md-6">
-											<h4>$Long Project Title</h4><!-- Hard-coded placeholder -->
+											<h4 class="project-title">$Long Project Title</h4><!-- Hard-coded placeholder -->
 											<h5>$#### plays</h5><!-- Hard-coded placeholder -->
 										</div>
 									</section>
