@@ -18,7 +18,7 @@ The app was originally built by a back-end engineer in an obscure language calle
 
 Macro Organization:
 
-The macro organization follows the MVC software architectural pattern with pages in the "views" folder; CSS/Sass and Javascript/jQuery files in the "assets" folder; database-related files in the "models" folder; and configuration, form validation, and form processing files in the "controllers" folder.  The "models" and "controllers" folders are for the most part empty since this GitHub project only contains the front-end portion of the project.
+The macro organization loosely follows the MVC software architectural pattern with pages in the "views" folder; CSS/Sass and Javascript/jQuery files in the "assets" folder; and configuration files in the "controllers" folder.  The "controllers" folder is for the most part empty (and the "models" folder was removed at some point) since this GitHub project only contains the front-end portion of the project.
 
 Note that the "walkthrough/" folder contains a separate "assets/" folder.  The "walkthrough/" folder was created by a second front-end development contractor using Adobe Captivate and does not visually or organizationally match the rest of the project with the exception of the "views/include/header.php" and "views/include/footer.php" files.
 
