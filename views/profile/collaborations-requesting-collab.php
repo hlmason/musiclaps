@@ -56,7 +56,7 @@
 						<!-- End of Recording Player -->
 
 						<section class="row col-xs-12 project-form-header requesting-collab-page">
-							<h3>Project Title by <a href="<?php echo BASE_URL; ?>views/profile/">$username</a></h3><!-- Hard-coded placeholder -->
+							<h3>Project Title by <a href="<?php echo BASE_URL; ?>views/profile/public-profile-logged-in.php">$username</a></h3><!-- Hard-coded placeholder -->
 							<a href="<?php echo BASE_URL; ?>views/profile/collaborations.php"><span class="glyphicon glyphicon-repeat"></span></a>
 						</section>
 						

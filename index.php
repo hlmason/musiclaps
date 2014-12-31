@@ -112,10 +112,10 @@
 							Music collaboration would not exist without people.  You will find these individuals here in our backstage section.
 						</p>
 						<ul>
-							<li class="first-list-item"><a>Find a gig</a></li>
-							<li><a>Find a player</a></li>
-							<li><a>Read or post a blog</a></li>
-							<li><a>Post a gig, question, or killer riff!</a></li>
+							<li class="first-list-item"><a href="<?php echo BASE_URL; ?>views/under-construction/">Find a gig</a></li>
+							<li><a href="<?php echo BASE_URL; ?>views/under-construction/">Find a player</a></li>
+							<li><a href="<?php echo BASE_URL; ?>views/under-construction/">Read or post a blog</a></li>
+							<li><a href="<?php echo BASE_URL; ?>views/under-construction/">Post a gig, question, or killer riff!</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4">
@@ -134,9 +134,9 @@
 							Experience the future of music education using Musiclaps.
 						</p>
 						<ul>
-							<li class="first-list-item"><a>Little Kids rock song of the week!</a></li>
-							<li><a>Rockstar GarageBand Composition</a></li>
-							<li><a>Online Video Teacher-Private Lessons</a></li>
+							<li class="first-list-item"><a href="<?php echo BASE_URL; ?>views/under-construction/">Little Kids rock song of the week!</a></li>
+							<li><a href="<?php echo BASE_URL; ?>views/under-construction/">Rockstar GarageBand Composition</a></li>
+							<li><a href="<?php echo BASE_URL; ?>views/under-construction/">Online Video Teacher-Private Lessons</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4">
@@ -157,10 +157,10 @@
 						<ul>
 							<li class="first-list-item"><a href="assets/contests/musiclaps-contest.pdf" target="blank">In-House Contest</a></li>
 							<li><a href="assets/contests/red-hot-chili-peppers.pdf" target="blank">Band Promotion Contest</a></li>
-							<li><a>Content Dev Contest</a></li>
-							<li><a>SpoofTube Contest</a></li>
-							<li><a>Monday Open Mics</a></li>
-							<li><a>Wednesday Battles</a></li>
+							<li><a href="<?php echo BASE_URL; ?>views/under-construction/">Content Dev Contest</a></li>
+							<li><a href="<?php echo BASE_URL; ?>views/under-construction/">SpoofTube Contest</a></li>
+							<li><a href="<?php echo BASE_URL; ?>views/under-construction/">Monday Open Mics</a></li>
+							<li><a href="<?php echo BASE_URL; ?>views/under-construction/">Wednesday Battles</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4">

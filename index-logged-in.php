@@ -92,8 +92,7 @@
 							Take your musical creations to the next level with Musiclaps!<br>
 						</p>
 						<ul>
-							<li class="first-list-item"><a class="registerJS">Set up a profile and start recording</a></li>
-							<li><a href="<?php echo BASE_URL; ?>views/live-player/index-logged-in.php">Try a soundcheck</a></li>
+							<li class="first-list-item"><a href="<?php echo BASE_URL; ?>views/live-player/index-logged-in.php">Try a soundcheck</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4">
@@ -112,10 +111,10 @@
 							Music collaboration would not exist without people.  You will find these individuals here in our backstage section.
 						</p>
 						<ul>
-							<li class="first-list-item"><a>Find a gig</a></li>
-							<li><a>Find a player</a></li>
-							<li><a>Read or post a blog</a></li>
-							<li><a>Post a gig, question, or killer riff!</a></li>
+							<li class="first-list-item"><a href="<?php echo BASE_URL; ?>views/under-construction/index-logged-in.php">Find a gig</a></li>
+							<li><a href="<?php echo BASE_URL; ?>views/under-construction/index-logged-in.php">Find a player</a></li>
+							<li><a href="<?php echo BASE_URL; ?>views/under-construction/index-logged-in.php">Read or post a blog</a></li>
+							<li><a href="<?php echo BASE_URL; ?>views/under-construction/index-logged-in.php">Post a gig, question, or killer riff!</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4">
@@ -134,9 +133,9 @@
 							Experience the future of music education using Musiclaps.
 						</p>
 						<ul>
-							<li class="first-list-item"><a>Little Kids rock song of the week!</a></li>
-							<li><a>Rockstar GarageBand Composition</a></li>
-							<li><a>Online Video Teacher-Private Lessons</a></li>
+							<li class="first-list-item"><a href="<?php echo BASE_URL; ?>views/under-construction/index-logged-in.php">Little Kids rock song of the week!</a></li>
+							<li><a href="<?php echo BASE_URL; ?>views/under-construction/index-logged-in.php">Rockstar GarageBand Composition</a></li>
+							<li><a href="<?php echo BASE_URL; ?>views/under-construction/index-logged-in.php">Online Video Teacher-Private Lessons</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4">
@@ -157,10 +156,10 @@
 						<ul>
 							<li class="first-list-item"><a href="assets/contests/musiclaps-contest.pdf" target="blank">In-House Contest</a></li>
 							<li><a href="assets/contests/red-hot-chili-peppers.pdf" target="blank">Band Promotion Contest</a></li>
-							<li><a>Content Dev Contest</a></li>
-							<li><a>SpoofTube Contest</a></li>
-							<li><a>Monday Open Mics</a></li>
-							<li><a>Wednesday Battles</a></li>
+							<li><a href="<?php echo BASE_URL; ?>views/under-construction/index-logged-in.php">Content Dev Contest</a></li>
+							<li><a href="<?php echo BASE_URL; ?>views/under-construction/index-logged-in.php">SpoofTube Contest</a></li>
+							<li><a href="<?php echo BASE_URL; ?>views/under-construction/index-logged-in.php">Monday Open Mics</a></li>
+							<li><a href="<?php echo BASE_URL; ?>views/under-construction/index-logged-in.php">Wednesday Battles</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4">
