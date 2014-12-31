@@ -33,7 +33,7 @@
 								<tr>
 									<td>#</td><!-- Hard-coded placeholder -->
 									<td>
-										<a href="<?php echo BASE_URL; ?>views/profile/public-profile.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><span class="username">$username</span></a>
+										<a href="<?php echo BASE_URL; ?>views/profile/public-profile-logged-in.php"><img class="avatar" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><span class="username">$username</span></a>
 									</td><!-- Hard-coded placeholder -->
 									<td>$Topic Title</td><!-- Hard-coded placeholder -->
 									<td>$# days/months ago</td><!-- Hard-coded placeholder -->

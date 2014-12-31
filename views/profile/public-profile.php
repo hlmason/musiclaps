@@ -109,5 +109,5 @@
 		</div>
 
 	<?php
-		include(ROOT_PATH . 'views/include/footer-logged-in.php');
+		include(ROOT_PATH . 'views/include/footer.php');
 	?>
