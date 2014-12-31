@@ -16,13 +16,13 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo BASE_URL; ?>favicon-72.png">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?php echo BASE_URL; ?>favicon-57.png">
     <link rel="apple-touch-icon-precomposed" sizes="48x48" href="<?php echo BASE_URL; ?>favicon-48.png">
-	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/stylesheets/application.css">
 	<title>Musiclaps | <?php echo $page_title; ?></title>
 	<!-- [if lt IE 9]> -->
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <!-- [endif] -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="<?php echo BASE_URL; ?>assets/javascripts/customized.bootstrap.min.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/index.js"></script>
 	<script src="<?php echo BASE_URL; ?>assets/javascripts/wmuSlider.min.js"></script>

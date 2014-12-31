@@ -29,7 +29,7 @@
 
        			<h3>3. What are the browser requirements?</h3>
 					<p>
-						We highly recommend <a href="https://www.google.com/intl/en_us/chrome/browser/" target="blank">Google Chrome</a>.  
+						We highly recommend <a href="//www.google.com/intl/en_us/chrome/browser/" target="blank">Google Chrome</a>.  
 						Firefox, Safari, and Internet Explorer 10+ are also good.
        				</p>
 

@@ -21,7 +21,7 @@
 							</div>
 							
 							<div class="col-xs-6">
-								<a href="http://solmire.com/" target="blank"><img src="<?php echo BASE_URL; ?>assets/images/ads/midi-to-mp3.png" alt="Ad for MIDI to MP3 Online Converter"></a>
+								<a href="//solmire.com/" target="blank"><img src="<?php echo BASE_URL; ?>assets/images/ads/midi-to-mp3.png" alt="Ad for MIDI to MP3 Online Converter"></a>
 							</div>
 						</div>
 						
