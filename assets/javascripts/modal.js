@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 	passwordReq.hide();
 
-	$('.registerJS').on('click', function() { // This is a link on header.php and index.php, and a button on register-or-login.php
+	$('.registerJS').on('click', function() {
 		if ( registerOrLogin.is(':visible') ) { // This modal is on the Live Player page
 			registerOrLogin.modal('hide');
 			register.modal('show');
@@ -27,7 +27,7 @@ $(document).ready(function() {
 				passwordReq.fadeIn('slow');
 			});
 
-	$('.loginJS').on('click', function() { // This is a link on login.php and a button on register-or-login.php
+	$('.loginJS').on('click', function() {
 		if ( registerOrLogin.is(':visible') ) { // This modal is on the Live Player page
 			registerOrLogin.modal('hide');
 			login.modal('show');

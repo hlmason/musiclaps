@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Official Site of Musiclaps">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="228x228" href="favicon-228.png">
+	<link rel="apple-touch-icon-precomposed" sizes="195x195" href="favicon-195.png">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon-152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="favicon-128.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon-120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="favicon-96.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon-72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon-57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="48x48" href="favicon-48.png">
+	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> --><!-- Link left in for testing purposes -->
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/application.css">
+	<title>Musiclaps | Play with the World Today</title>
+	<!-- [if lt IE 9]> -->
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <!-- [endif] -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="assets/javascripts/customized.bootstrap.min.js"></script>
+	<script src="assets/javascripts/index.js"></script>
+	<script src="assets/javascripts/wmuSlider.min.js"></script>
+	<script src="walkthrough/assets/js/standard.js"></script><!-- Julie's Captivate -->
+	<script src="assets/javascripts/public-project.js"></script>
+</head>
+<body>
+
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header"><!-- For Firefox and IE -->
+	            <button id="navbarToggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+	            </button>
+	            <h4 id="menuJS" data-toggle="collapse" data-target=".navbar-collapse">Menu</h4>
+				<a class="navbar-brand" href="index-logged-in.html">
+					<img src="assets/images/header-and-footer/musiclaps-logo.png" alt="Musiclaps logo">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="nav navbar-nav navbar-left">
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="musicDropdownLink" data-toggle="dropdown">Music<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" id="musicDropdownMenu" role="menu" aria-labelledby="musicDropdownLink">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="views/new-arrivals/index-logged-in.html">New Arrivals
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="views/recommended/index-logged-in.html">Recommended
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="views/staff-picks/index-logged-in.html">Staff Picks
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="views/collaborations/index-logged-in.html">Collaborations
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="views/all-music/index-logged-in.html">All Music
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="peopleDropdownLink" data-toggle="dropdown">People<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" id="peopleDropdownMenu" role="menu" aria-labelledby="peopleDropdownLink">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="views/players-wanted/index-logged-in.html">Players Wanted
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="views/under-construction/index-logged-in.html">Players Available
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="views/forum/index-logged-in.html">Forum
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="views/under-construction/index-logged-in.html">Collab Cafe
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="ourStoryDropdownLink" data-toggle="dropdown">Our Story<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" id="ourStoryDropdownMenu" role="menu" aria-labelledby="ourStoryDropdownLink">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="views/under-construction/index-logged-in.html">Technology
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="views/under-construction/index-logged-in.html">Company
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="views/under-construction/index-logged-in.html">Contact
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+
+				<form class="search" action="" method="get">
+					<span class="glyphicon glyphicon-search" id="glyphiconSearch"></span><input class="search" id="searchJS" type="text" name="search" placeholder="Search">
+				</form>
+				
+				<ul id="flags">
+					<li><a><img id="usa-flag" src="assets/images/header-and-footer/usa-flag.jpg" alt="American flag"></a></li>
+					<li><a><img src="assets/images/header-and-footer/japan-flag.jpg" alt="Japanese flag"></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right" id="logged-in">
+					<li class="messages-sm"><span class="glyphicon glyphicon-envelope"></span></li>
+					<li class="messages-sm" id="number-of-messages">1</li>
+					<li id="welcome-user-sm">Welcome, &nbsp;<span class="musiclaps-blue"><a class="welcome-user-link" href="views/profile/index.html">$firstname</a></span></li><!-- Hard-coded placeholder -->
+					<li id="log-out">
+						<form action="" method="post">
+							<input type="submit" value="Log out">
+						</form>
+					</li>
+					<li id="welcome-user-xs">Welcome, &nbsp;
+						<span class="musiclaps-blue">
+							<a class="welcome-user-link" href="views/profile/index.html">$firstname
+							</a>
+						</span>
+						<span class="glyphicon glyphicon-envelope"></span>
+						<span class="number-of-messages">1</span>
+					</li><!-- Hard-coded placeholder -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="wrapper">
+
+		<h1 class="landing-page">
+			Online <a href="views/collaborations/index-logged-in.html">Music Collaboration</a> Made Simple
+		</h1>
+		<div id="landing-page-hero">
+			<div id="musical-notes-map"></div>
+			<script>musicianSilhouetteRandomizer()</script><!-- Randomly rotates through silhouette images of musicians on landing page -->
+		</div>
+		
+		<div class="container" id="stage">
+			<div id="stage-inner">
+				<div class="row">
+					<div class="col-sm-4" id="education">
+						<a href="#music-ed"><span><img src="assets/images/landing-pg/music-book.png" alt="Book with music note"></span><br>
+						Education</a><!-- Visible at viewport widths >= 768px -->
+					</div>
+					<div class="col-sm-4">
+						<p>
+							<sup>...... </sup> Record a Demo&nbsp;<sup> ......</sup>
+						</p>
+					</div>
+					<div class="col-sm-4" id="contests">
+						<a href="#contests-and-auditions"><span><img src="assets/images/landing-pg/trophy.png" alt="Trophy"></span><br>
+						Contests</a><!-- Visible at viewport widths >= 768px -->
+					</div>
+				</div>
+				<div class="row">		
+					<ul>
+						<li><a href="views/live-player/index-logged-in.html"><img src="assets/images/landing-pg/play-btn.png" alt="Play button"></a></li>
+						<li><a href="views/live-player/index-logged-in.html"><img src="assets/images/landing-pg/pause-btn.png" alt="Pause button"></a></li>
+						<li><a href="views/live-player/index-logged-in.html"><img src="assets/images/landing-pg/stop-btn.png" alt="Stop button"></a></li>
+						<li><a href="views/live-player/index-logged-in.html"><img src="assets/images/landing-pg/record-btn.png" alt="Record button"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="container wmuSlider">
+		    <div class="row wmuSliderWrapper">
+		    	<article>
+		            <img src="assets/images/sample-album-covers/electric-ladyland.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/in-a-sentimental-mood.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/miseducation-of-lauryn-hill.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/suburbs.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/21.jpg"><!-- Placeholder -->
+		        </article>
+		    	<article>
+		            <img src="assets/images/sample-album-covers/at-folsom-prison.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/help.png"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/fire-of-unknown-origin.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/bodyguard.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/mandatory-fun.jpg"><!-- Placeholder -->
+		        </article>
+		        <article>
+		            <img src="assets/images/sample-album-covers/dark-side-of-the-moon.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/dreamboat-annie.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/rumours.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/damn-the-torpedoes.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/nebraska.jpg"><!-- Placeholder -->
+		        </article>
+		        <article>
+		        	<img src="assets/images/sample-album-covers/lungs.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/colour-the-small-one.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/im-over-it.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/holy-fire.jpg"><!-- Placeholder -->
+		            <img src="assets/images/sample-album-covers/mobius-strips.jpg"><!-- Placeholder -->
+		        </article>
+		    </div>
+		</div>
+		<script>
+			var options = { slideshow: false, animation: 'slide' };
+			$('.wmuSlider').wmuSlider(options);
+		</script>
+
+		<section id="technology">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 col-md-offset-1">
+						<h2>Technology</h2>
+						<p><!-- Keep to approximately 45-75 characters per line -->
+							Musiclaps makes music collaboration easy by enabling you to record and upload tracks using just your computer.  You can then share your work so that others can listen and collaborate by recording their tracks on top of yours.<br><br>
+
+							Take your musical creations to the next level with Musiclaps!<br>
+						</p>
+						<ul>
+							<li class="first-list-item"><a href="views/live-player/index-logged-in.html">Try a soundcheck</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<img src="assets/images/landing-pg/collaborate.png" alt="Silhouette of two people with music notes between them">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="backstage">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 col-md-offset-1">					
+						<h2>Backstage</h2>
+						<p><!-- Keep to approximately 45-75 characters per line -->
+							Music collaboration would not exist without people.  You will find these individuals here in our backstage section.
+						</p>
+						<ul>
+							<li class="first-list-item"><a href="views/under-construction/index-logged-in.html">Find a gig</a></li>
+							<li><a href="views/under-construction/index-logged-in.html">Find a player</a></li>
+							<li><a href="views/under-construction/index-logged-in.html">Read or post a blog</a></li>
+							<li><a href="views/under-construction/index-logged-in.html">Post a gig, question, or killer riff!</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<img src="assets/images/landing-pg/backstage.png" alt="Backstage pass">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="music-ed">
+			<div class="container">
+				<div class="row">
+					<a id="music-ed"><div class="col-md-7 col-md-offset-1"></a>		
+						<h2>Music Education</h2>
+						<p><!-- Keep to approximately 45-75 characters per line -->
+							Experience the future of music education using Musiclaps.
+						</p>
+						<ul>
+							<li class="first-list-item"><a href="views/under-construction/index-logged-in.html">Little Kids rock song of the week!</a></li>
+							<li><a href="views/under-construction/index-logged-in.html">Rockstar GarageBand Composition</a></li>
+							<li><a href="views/under-construction/index-logged-in.html">Online Video Teacher-Private Lessons</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<img src="assets/images/landing-pg/music-book.png" alt="Book with music note">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contests-and-auditions">
+			<div class="container">
+				<div class="row">
+					<a id="contests-and-auditions"><div class="col-md-7 col-md-offset-1"></a>					
+						<h2>Contests and Auditions</h2>
+						<p><!-- Keep to approximately 45-75 characters per line -->
+							Compete in one of our contests.
+						</p>
+						<ul>
+							<li class="first-list-item"><a href="assets/contests/musiclaps-contest.pdf" target="blank">In-House Contest</a></li>
+							<li><a href="assets/contests/red-hot-chili-peppers.pdf" target="blank">Band Promotion Contest</a></li>
+							<li><a href="views/under-construction/index-logged-in.html">Content Dev Contest</a></li>
+							<li><a href="views/under-construction/index-logged-in.html">SpoofTube Contest</a></li>
+							<li><a href="views/under-construction/index-logged-in.html">Monday Open Mics</a></li>
+							<li><a href="views/under-construction/index-logged-in.html">Wednesday Battles</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<img src="assets/images/landing-pg/trophy.png" alt="Trophy">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="space-above-footer"></div>
+	</div>
+
+	<footer class="navbar-default">
+		<div class="container">
+			<a class="navbar-brand" href="index-logged-in.html">
+				<img src="assets/images/header-and-footer/musiclaps-logo.png" alt="Musiclaps logo">&nbsp; &copy; 2015
+			</a>
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="views/under-construction/index-logged-in.html">Company</a></li>
+				<li><a href="views/under-construction/index-logged-in.html">Press</a></li>
+				<li><a href="views/under-construction/index-logged-in.html">Contact</a></li>
+				<li><a href="views/privacy/index-logged-in.html">Privacy</a></li>
+				<li><a href="views/terms/index-logged-in.html">Terms</a></li>
+				<li><a href="views/faqs/index-logged-in.html">FAQs</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="//www.facebook.com/Musiclaps" target="blank"><img class="facebook-icon" src="assets/images/global/facebook-icon.png" alt="Facebook icon"></a></li>
+				<li><a href="//twitter.com/musiclaps" target="blank"><img class="twitter-icon" src="assets/images/global/twitter-icon.png" alt="Twitter icon"></a></li>
+				<li><a href="//www.youtube.com/user/Musiclaps" target="blank"><img id="youtube-icon" src="assets/images/header-and-footer/youtube-icon.png" alt="YouTube icon"></a></li>
+			</ul>
+		</div>
+	</footer>
+	<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+	<script>
+		WebFont.load({
+		    google: {
+		      families: ['Roboto Condensed', 'Roboto:300,400,700']
+		    }
+		});
+	</script>
+	<script src="assets/javascripts/header.js"></script>
+	<script src="assets/javascripts/forum.js"></script>
+	<script src="assets/javascripts/user-menu.js"></script>
+	<script src="assets/javascripts/profile/index.js"></script>
+	<script src="assets/javascripts/profile/new-project.js"></script>
+	<script src="assets/javascripts/profile/my-projects-and-collaborations.js"></script>
+	<script src="assets/javascripts/profile/youtube.js"></script>
+	<script src="assets/javascripts/profile/messages.js"></script>
+	<script src="assets/javascripts/profile/groups.js"></script>
+	<script src="assets/javascripts/live-player.js"></script>
+	<script src="assets/javascripts/players-wanted.js"></script>
+</body>
+</html>

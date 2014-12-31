@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Official Site of Musiclaps">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../../favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="228x228" href="../../favicon-228.png">
+	<link rel="apple-touch-icon-precomposed" sizes="195x195" href="../../favicon-195.png">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../favicon-152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../favicon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="../../favicon-128.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../../favicon-120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../favicon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="../../favicon-96.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../favicon-72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../favicon-57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="48x48" href="../../favicon-48.png">
+	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> --><!-- Link left in for testing purposes -->
+	<link rel="stylesheet" type="text/css" href="../../assets/stylesheets/application.css">
+	<title>Musiclaps | Upload MP3</title>
+	<!-- [if lt IE 9]> -->
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <!-- [endif] -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../../assets/javascripts/customized.bootstrap.min.js"></script>
+	<script src="../../assets/javascripts/index.js"></script>
+	<script src="../../assets/javascripts/wmuSlider.min.js"></script>
+	<script src="../../walkthrough/assets/js/standard.js"></script><!-- Julie's Captivate -->
+	<script src="../../assets/javascripts/public-project.js"></script>
+</head>
+<body>
+
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header"><!-- For Firefox and IE -->
+	            <button id="navbarToggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+	            </button>
+	            <h4 id="menuJS" data-toggle="collapse" data-target=".navbar-collapse">Menu</h4>
+				<a class="navbar-brand" href="../../index-logged-in.html">
+					<img src="../../assets/images/header-and-footer/musiclaps-logo.png" alt="Musiclaps logo">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="nav navbar-nav navbar-left">
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="musicDropdownLink" data-toggle="dropdown">Music<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" id="musicDropdownMenu" role="menu" aria-labelledby="musicDropdownLink">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/new-arrivals/index-logged-in.html">New Arrivals
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/recommended/index-logged-in.html">Recommended
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/staff-picks/index-logged-in.html">Staff Picks
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/collaborations/index-logged-in.html">Collaborations
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/all-music/index-logged-in.html">All Music
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="peopleDropdownLink" data-toggle="dropdown">People<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" id="peopleDropdownMenu" role="menu" aria-labelledby="peopleDropdownLink">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/players-wanted/index-logged-in.html">Players Wanted
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Players Available
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/forum/index-logged-in.html">Forum
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Collab Cafe
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="ourStoryDropdownLink" data-toggle="dropdown">Our Story<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" id="ourStoryDropdownMenu" role="menu" aria-labelledby="ourStoryDropdownLink">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Technology
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Company
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Contact
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+
+				<form class="search" action="" method="get">
+					<span class="glyphicon glyphicon-search" id="glyphiconSearch"></span><input class="search" id="searchJS" type="text" name="search" placeholder="Search">
+				</form>
+				
+				<ul id="flags">
+					<li><a><img id="usa-flag" src="../../assets/images/header-and-footer/usa-flag.jpg" alt="American flag"></a></li>
+					<li><a><img src="../../assets/images/header-and-footer/japan-flag.jpg" alt="Japanese flag"></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right" id="logged-in">
+					<li class="messages-sm"><span class="glyphicon glyphicon-envelope"></span></li>
+					<li class="messages-sm" id="number-of-messages">1</li>
+					<li id="welcome-user-sm">Welcome, &nbsp;<span class="musiclaps-blue"><a class="welcome-user-link" href="../../views/profile/index.html">$firstname</a></span></li><!-- Hard-coded placeholder -->
+					<li id="log-out">
+						<form action="" method="post">
+							<input type="submit" value="Log out">
+						</form>
+					</li>
+					<li id="welcome-user-xs">Welcome, &nbsp;
+						<span class="musiclaps-blue">
+							<a class="welcome-user-link" href="../../views/profile/index.html">$firstname
+							</a>
+						</span>
+						<span class="glyphicon glyphicon-envelope"></span>
+						<span class="number-of-messages">1</span>
+					</li><!-- Hard-coded placeholder -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="wrapper">
+		<div class="container">
+			
+			<nav class="row col-lg-10 col-lg-offset-1">
+				<span class="glyphicon glyphicon-user glyphiconUser"></span>
+	            <h4 class="user-menu userMenu">User Menu</h4>
+				<ul class="nav navbar-nav user-menu userMenu">
+					<li class="first-list-item">
+						<a href="../../views/profile/">My Profile
+						</a>
+					</li>
+					
+					<li id="new-project">
+						<a class="active" id="newProjectLink">New Project<span class="caret" id="newProjectCaret"></span>
+						</a>
+						<ul class="dropdown-menu" id="newProjectDropdownMenu" aria-labelledby="newProjectDropdownMenu">
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="recordingPlayerLink">Recording Player
+								</a>
+							</li>
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link active" id="uploadMP3Link">Upload MP3
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li id="my-projects">
+						<a id="myProjectsLink">My Projects<span class="caret" id="myProjectsCaret"></span>
+						</a>
+						<ul class="dropdown-menu" id="myProjectsDropdownMenu" aria-labelledby="myProjectsDropdownMenu">
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="inProgressPrivateLink">In Progress / Private
+								</a>
+							</li>
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="publicLink">Public
+								</a>
+							</li>
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="groupLink">Group
+								</a>
+							</li>
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="auditionLink">Audition
+								</a>
+							</li>
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="lyricsLink">Lyrics
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li id="collaborations">
+						<a id="collaborationsLink">Collaborations<span class="caret" id="collaborationsCaret"></span>
+						</a>
+						<ul class="dropdown-menu" id="collaborationsDropdownMenu" aria-labelledby="collaborationsDropdownMenu">
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="openCollabLink">Open Collab
+								</a>
+							</li>
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="requestingCollabLink">Requesting Collab
+								</a>
+							</li>
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="collaboratorsLink">Collaborators
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="../../views/profile/youtube-links.html">YouTube Links
+						</a>
+					</li>
+					
+					<li>
+						<a href="../../views/profile/messages.html">Messages
+						</a>
+					</li>
+					
+					<li>
+						<a href="../../views/profile/groups.html">Groups
+						</a>
+					</li>
+					
+					<li>
+						<a href="../../views/profile/favorites.html">Favorites
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="col-lg-1"></div>
+		
+			<div class="row col-lg-10 col-lg-offset-1">				
+					
+				<div class="row col-xs-12 col-md-9" id="new-project-page">
+
+					<section class="upload-mp3-container">
+						<div class="row">
+							<div class="col-xs-6">
+								<h4>Upload an MP3 file</h4>
+								<h5>128-bit to 160-bit</h5>
+								<h5>Note: <span class="normal">128-bit is recommended<span class="block"> (Uploads take longer with higher bit rates)</span></span></h5>
+							</div>
+							
+							<div class="col-xs-6">
+								<a href="http://solmire.com/" target="blank"><img src="../../assets/images/ads/midi-to-mp3.png" alt="Ad for MIDI to MP3 Online Converter"></a>
+							</div>
+						</div>
+						
+						<ul class="row col-xs-12">
+							<li class="first-list-item">Type of Project</li>
+							<li>
+								<input id="new_project" type="radio" name="project_type" value="newProject">
+								<label for="new_project">&nbsp;New Project</label>
+							</li>
+							<li>
+								<input id="add_part" type="radio" name="project_type" value="addPart">
+								<label for="add_part">&nbsp;Add Part</label>
+							</li>
+							<li>
+								<input id="add_part_to_group" type="radio" name="project_type" value="addPartToGroup"> 
+								<label for="add_part_to_group">&nbsp;Add Part to Group</label>
+							</li>
+						</ul>
+
+						<form action="" method="post">
+							<section id="newProject">
+								<div class="row col-xs-12">
+									<label id="project-title-label" for="project_title_new_project">Project Title <span class="normal">(max 80 characters)</span></label>
+									<input class="project-title-new-project" id="project_title_new_project" type="text" name="">
+								</div>
+
+								<div class="row col-xs-12">
+									<label id="tempo-label" for="tempo">Tempo <span class="normal">(leave blank if unsure)</span></label>
+									<input class="tempo" id="tempo" type="text" name="">
+								</div>
+							</section>
+
+							<section id="addPart">
+								<label id="select-project-label" for="select_project">Select Project</label>
+								<select class="select-project" id="select_project" name="">
+									<option value="test">$Project Title</option><!-- Hard-coded placeholder -->	
+								</select>
+							</section>
+
+							<section class="add-part-to-group-container" id="addPartToGroup">
+								<h4 class="row col-xs-12 red">You have not joined any groups.</h4><!-- Hard-coded placeholder -->	
+							</section>
+
+							<div class="row" id="select-part-container">
+								<div class="col-xs-12 col-sm-6">
+									<label id="parts-label" for="parts">Select a Part</label><span class="glyphicon glyphicon-question-sign glyphicon" id="glyphiconQuestionSignPart"></span>
+									<div class="select-part-explanation" id="selectPartExplanation">If you are playing a part that is not on the list, please select “Other".</div>
+									<select class="parts" id="parts" name="" size="6">
+										<span><option class="accordionJS" value="arrangement">&nbsp; Accordion</option></span>
+										<span><option class="banjoJS" value="banjo">&nbsp; Banjo</option></span>
+										<span><option class="bassJS" value="bass">&nbsp; Bass</option></span>
+										<span><option class="castanetsJS" value="castanets">&nbsp; Castanets</option></span>
+										<span><option class="celloJS" value="cello">&nbsp; Cello</option></span>
+										<span><option class="clarinetJS" value="clarinet">&nbsp; Clarinet</option></span>
+										<span><option class="congasJS" value="congas">&nbsp; Congas</option></span>
+										<span><option class="contrabassJS" value="contrabass">&nbsp; Contrabass</option></span>
+										<span><option class="drumKit" value="drum_kit">&nbsp; Drums</option></span>
+										<span><option class="fiddleJS" value="fiddle">&nbsp; Fiddle</option></span>
+										<span><option class="fluteJS" value="flute">&nbsp; Flute</option></span>
+										<span><option class="guitarAcoustic" value="guitar_acoustic">&nbsp; Guitar (Acoustic)</option></span>
+										<span><option class="guitarAcousticElectric" value="guitar_acoustic_electric">&nbsp; Guitar (Acoustic-Electric)</option></span>
+										<span><option class="guitarClassical" value="guitar_classical">&nbsp; Guitar (Classical) </option></span>
+										<span><option class="guitarElectric1" value="guitar_electric_1">&nbsp; Guitar (Electric 1)</option></span>
+										<span><option class="guitarElectric2" value="guitar_electric_2">&nbsp; Guitar (Electric 2)</option></span>
+										<span><option class="guitarElectric3" value="guitar_electric_3">&nbsp; Guitar (Electric 3)</option></span>
+										<span><option class="guitarElectric4" value="guitar_electric_4">&nbsp; Guitar (Electric 4)</option></span>
+										<span><option class="guitarElectric5" value="guitar_electric_5">&nbsp; Guitar (Electric 5)</option></span>
+										<span><option class="guitarElectric6" value="guitar_electric_6">&nbsp; Guitar (Electric 6)</option></span>
+										<span><option class="guitarSemiAcoustic" value="guitar_semi_acoustic">&nbsp; Guitar (Semi-Acoustic)</option></span>
+										<span><option class="harmonicaJS" value="harmonica">&nbsp; Harmonica</option></span>
+										<span><option class="harpJS" value="harp">&nbsp; Harp</option></span>
+										<span><option class="hornJS" value="horn">&nbsp; Horn</option></span>
+										<span><option class="keyboard1JS" value="keyboard_1">&nbsp; Keyboard 1</option></span>
+										<span><option class="keyboard2JS" value="keyboard_2">&nbsp; Keyboard 2</option></span>
+										<span><option class="keyboard3JS" value="keyboard_3">&nbsp; Keyboard 3</option></span>
+										<span><option class="lyricsJS" value="lyrics">&nbsp; Lyrics</option></span>
+										<span><option class="mandolinJS" value="mandolin">&nbsp; Mandolin</option></span>
+										<span><option class="maracasJS" value="maracas">&nbsp; Maracas</option></span>
+										<span><option class="marimbaJS" value="marimba">&nbsp; Marimba</option></span>
+										<span><option class="metallophoneJS" value="metallophone">&nbsp; Metallophone</option></span>
+										<span><option class="melodicaJS" value="melodica">&nbsp; Melodica</option></span>
+										<span><option class="mixerJS" value="mixer">&nbsp; Mixer</option></span>
+										<span><option class="oboeJS" value="oboe">&nbsp; Oboe</option></span>
+										<span><option class="ocarinaJS" value="ocarina">&nbsp; Ocarina</option></span>
+										<span><option class="organJS" value="organ">&nbsp; Organ</option></span>
+										<span><option class="otherJS" value="other">&nbsp; Other</option></span>
+										<span><option class="percussionJS" value="percussion">&nbsp; Percussion</option></span>
+										<span><option class="pianoElectric" value="piano_electric">&nbsp; Piano (Electric)</option></span>
+										<span><option class="pianoGrand" value="piano_grand">&nbsp; Piano (Grand)</option></span>
+										<span><option class="pianoUpright" value="piano_upright">&nbsp; Piano (Upright)</option></span>
+										<span><option class="piccoloJS" value="piccolo">&nbsp; Piccolo</option></span>
+										<span><option class="recorderAlto" value="recorder_alto">&nbsp; Recorder (Alto)</option></span>
+										<span><option class="recorderSoprano" value="recorder_soprano">&nbsp; Recorder (Soprano)</option></span>
+										<span><option class="saxAlto" value="sax_alto">&nbsp; Saxophone (Alto)</option></span>
+										<span><option class="saxBaritone" value="sax_baritone">&nbsp; Saxophone (Baritone)</option></span>
+										<span><option class="saxSoprano" value="sax_soprano">&nbsp; Saxophone (Soprano)</option></span>
+										<span><option class="saxTenor" value="sax_tenor">&nbsp; Saxophone (Tenor)</option></span>
+										<span><option class="shakuhachiJS" value="shakuhachi">&nbsp; Shakuhachi</option></span>
+										<span><option class="shamisenJS" value="shamisen">&nbsp; Shamisen</option></span>
+										<span><option class="tambourineJS" value="tambourine">&nbsp; Tambourine</option></span>
+										<span><option class="timpaniJS" value="timpani">&nbsp; Timpani</option></span>
+										<span><option class="triangleJS" value="triangle">&nbsp; Triangle</option></span>
+										<span><option class="tromboneJS" value="trombone">&nbsp; Trombone</option></span>
+										<span><option class="trumpet1JS" value="trumpet_1">&nbsp; Trumpet 1</option></span>
+										<span><option class="trumpet2JS" value="trumpet_2">&nbsp; Trumpet 2</option></span>
+										<span><option class="ukuleleJS" value="ukulele">&nbsp; Ukulele</option></span>
+										<span><option class="violaJS" value="viola">&nbsp; Viola</option></span>
+										<span><option class="violinJS" value="violin">&nbsp; Violin</option></span>
+										<span><option class="mic1JS" value="vocals_1">&nbsp; Vocals 1</option></span>
+										<span><option class="mic2JS" value="vocals_2">&nbsp; Vocals 2</option></span>
+										<span><option class="mic3JS" value="vocals_3">&nbsp; Vocals 3</option></span>
+										<span><option class="wadaikoJS" value="wadaiko">&nbsp; Wadaiko</option></span>
+										<span><option class="xylophoneJS" value="xylophone">&nbsp; Xylophone</option></span>
+									</select>
+								</div>
+								<div class="col-xs-12 col-sm-6">
+									<img class="instrument instrumentJS accordionJS" src="../../assets/images/profile-pages/instruments/accordion.png" alt="Accordion">
+									<img class="instrument instrumentJS bassJS" src="../../assets/images/profile-pages/instruments/bass.png" alt="Bass">
+									<img class="instrument instrumentJS castanetsJS" src="../../assets/images/profile-pages/instruments/castanets.png" alt="Castanets">
+									<img class="instrument instrumentJS celloJS" src="../../assets/images/profile-pages/instruments/cello.png" alt="Cello">
+									<img class="instrument instrumentJS clarinetJS" src="../../assets/images/profile-pages/instruments/clarinet.png" alt="Clarinet">
+									<img class="instrument instrumentJS congasJS" src="../../assets/images/profile-pages/instruments/congas.png" alt="Congas">
+									<img class="instrument instrumentJS contrabassJS" src="../../assets/images/profile-pages/instruments/contrabass.png" alt="Contrabass">
+									<img class="instrument instrumentJS drumKit" src="../../assets/images/profile-pages/instruments/drum-kit.png" alt="Drum kit">
+									<img class="instrument instrumentJS fiddleJS" src="../../assets/images/profile-pages/instruments/violin.png" alt="Fiddle">
+									<img class="instrument instrumentJS fluteJS" src="../../assets/images/profile-pages/instruments/flute.png" alt="Flute">
+									<img class="instrument instrumentJS guitarAcoustic" src="../../assets/images/profile-pages/instruments/guitar-acoustic.png" alt="Acoustic guitar">
+									<img class="instrument instrumentJS guitarAcousticElectric" src="../../assets/images/profile-pages/instruments/guitar-acoustic-electric.png" alt="Acoustic-electric Guitar">
+									<img class="instrument instrumentJS guitarClassical" src="../../assets/images/profile-pages/instruments/guitar-classical.png" alt="Classical Guitar">
+									<img class="instrument instrumentJS guitarElectric1" src="../../assets/images/profile-pages/instruments/guitar-electric-1.png" alt="Electric Guitar 1">
+									<img class="instrument instrumentJS guitarElectric2" src="../../assets/images/profile-pages/instruments/guitar-electric-2.png" alt="Electric Guitar 2">
+									<img class="instrument instrumentJS guitarElectric3" src="../../assets/images/profile-pages/instruments/guitar-electric-3.png" alt="Electric Guitar 3">
+									<img class="instrument instrumentJS guitarElectric4" src="../../assets/images/profile-pages/instruments/guitar-electric-4.png" alt="Electric Guitar 4">
+									<img class="instrument instrumentJS guitarElectric5" src="../../assets/images/profile-pages/instruments/guitar-electric-5.png" alt="Electric Guitar 5">
+									<img class="instrument instrumentJS guitarElectric6" src="../../assets/images/profile-pages/instruments/guitar-electric-6.png" alt="Electric Guitar 6">
+									<img class="instrument instrumentJS guitarSemiAcoustic" src="../../assets/images/profile-pages/instruments/guitar-semi-acoustic.png" alt="Semi-acoustic Guitar">
+									<img class="instrument instrumentJS harmonicaJS" src="../../assets/images/profile-pages/instruments/harmonica.png" alt="Harmonica">
+									<img class="instrument instrumentJS harpJS" src="../../assets/images/profile-pages/instruments/harp.png" alt="Harp">
+									<img class="instrument instrumentJS hornJS" src="../../assets/images/profile-pages/instruments/horn.png" alt="Horn">
+									<img class="instrument instrumentJS keyboard1JS" src="../../assets/images/profile-pages/instruments/keyboard-1.png" alt="Keyboard 1">
+									<img class="instrument instrumentJS keyboard2JS" src="../../assets/images/profile-pages/instruments/keyboard-2.png" alt="Keyboard 2">
+									<img class="instrument instrumentJS keyboard3JS" src="../../assets/images/profile-pages/instruments/keyboard-3.png" alt="Keyboard 3">
+									<img class="instrument instrumentJS mandolinJS" src="../../assets/images/profile-pages/instruments/mandolin.png" alt="Mandolin">
+									<img class="instrument instrumentJS maracasJS" src="../../assets/images/profile-pages/instruments/maracas.png" alt="Maracas">
+									<img class="instrument instrumentJS marimbaJS" src="../../assets/images/profile-pages/instruments/marimba.png" alt="Marimba">
+									<img class="instrument instrumentJS melodicaJS" src="../../assets/images/profile-pages/instruments/melodica.png" alt="Melodica">
+									<img class="instrument instrumentJS metallophoneJS" src="../../assets/images/profile-pages/instruments/metallophone.png" alt="Metallophone">
+									<img class="instrument instrumentJS mixerJS" src="../../assets/images/profile-pages/instruments/mixer.png" alt="Audio mixer">
+									<img class="instrument instrumentJS oboeJS" src="../../assets/images/profile-pages/instruments/oboe.png" alt="Oboe">
+									<img class="instrument instrumentJS ocarinaJS" src="../../assets/images/profile-pages/instruments/ocarina.png" alt="Ocarina">
+									<img class="instrument instrumentJS organJS" src="../../assets/images/profile-pages/instruments/organ.png" alt="Organ">
+									<img class="instrument instrumentJS pianoElectric" src="../../assets/images/profile-pages/instruments/piano-electric.png" alt="Electric piano">
+									<img class="instrument instrumentJS pianoGrand" src="../../assets/images/profile-pages/instruments/piano-grand.png" alt="Grand piano">
+									<img class="instrument instrumentJS pianoUpright" src="../../assets/images/profile-pages/instruments/piano-upright.png" alt="Upright piano">
+									<img class="instrument instrumentJS piccoloJS" src="../../assets/images/profile-pages/instruments/piccolo.png" alt="Piccolo">
+									<img class="instrument instrumentJS recorderSoprano" src="../../assets/images/profile-pages/instruments/recorder-soprano.png" alt="Soprano recorder">
+									<img class="instrument instrumentJS recorderAlto" src="../../assets/images/profile-pages/instruments/recorder-alto.png" alt="Alto recorder">
+									<img class="instrument instrumentJS sopranoAlto" src="../../assets/images/profile-pages/instruments/soprano-alto.png" alt="Soprano soprano">
+									<img class="instrument instrumentJS saxAlto" src="../../assets/images/profile-pages/instruments/sax-alto.png" alt="Alto saxophone">
+									<img class="instrument instrumentJS saxBaritone" src="../../assets/images/profile-pages/instruments/sax-baritone.png" alt="Baritone saxophone">
+									<img class="instrument instrumentJS saxSoprano" src="../../assets/images/profile-pages/instruments/sax-soprano.png" alt="Soprano saxophone">
+									<img class="instrument instrumentJS saxTenor" src="../../assets/images/profile-pages/instruments/sax-tenor.png" alt="Tenor saxophone">
+									<img class="instrument instrumentJS shakuhachiJS" src="../../assets/images/profile-pages/instruments/shakuhachi.png" alt="Shakuhachi">
+									<img class="instrument instrumentJS shamisenJS" src="../../assets/images/profile-pages/instruments/shamisen.png" alt="Shamisen">
+									<img class="instrument instrumentJS tambourineJS" src="../../assets/images/profile-pages/instruments/tambourine.png" alt="Tambourine">
+									<img class="instrument instrumentJS timpaniJS" src="../../assets/images/profile-pages/instruments/timpani.png" alt="Timpani">
+									<img class="instrument instrumentJS triangleJS" src="../../assets/images/profile-pages/instruments/triangle.png" alt="Triangle">
+									<img class="instrument instrumentJS tromboneJS" src="../../assets/images/profile-pages/instruments/trombone.png" alt="Trombone">
+									<img class="instrument instrumentJS trumpet1JS" src="../../assets/images/profile-pages/instruments/trumpet-1.png" alt="Trumpet 1">
+									<img class="instrument instrumentJS trumpet2JS" src="../../assets/images/profile-pages/instruments/trumpet-2.png" alt="Trumpet 2">
+									<img class="instrument instrumentJS ukuleleJS" src="../../assets/images/profile-pages/instruments/ukulele.png" alt="Ukulele">
+									<img class="instrument instrumentJS violaJS" src="../../assets/images/profile-pages/instruments/viola.png" alt="Viola">
+									<img class="instrument instrumentJS violinJS" src="../../assets/images/profile-pages/instruments/violin.png" alt="Violin">
+									<img class="instrument instrumentJS mic1JS" src="../../assets/images/profile-pages/instruments/mic-1.png" alt="Mic 1">
+									<img class="instrument instrumentJS mic2JS" src="../../assets/images/profile-pages/instruments/mic-2.png" alt="Mic 2">
+									<img class="instrument instrumentJS mic3JS" src="../../assets/images/profile-pages/instruments/mic-3.png" alt="Mic 3">
+									<img class="instrument instrumentJS wadaikoJS" src="../../assets/images/profile-pages/instruments/wadaiko.png" alt="Wadaiko">
+									<img class="instrument instrumentJS xylophoneJS" src="../../assets/images/profile-pages/instruments/xylophone.png" alt="Xylophone">
+								</div>
+							</div>
+
+							<div class="row col-xs-12">
+								<label id="comment-new-project-page-label" for="comment_new_project_page">Comment <span class="normal">(max 50 characters)</span></label>
+								<input class="comment-new-project-page" id="comment_new_project_page" type="text" name="comment-new-project-page">
+							</div>
+
+							<section class="row col-xs-12 newProject" id="choose-project-img-container">
+								<div class="row">
+									<div class="col-xs-3">	
+										<label for="choose_project_img">Project Image</label>
+									</div>
+									<div class="col-xs-5">
+										<input id="choose_project_img" type="file" name="" value="Choose File">
+									</div>
+									<div class="col-xs-12 col-sm-4">	
+										<h5>120(w) x 90(h) in jpg format</h5>
+									</div>
+								</div>
+							</section>
+
+							<section class="row col-xs-12" id="choose-mp3-file-container">
+								<div class="col-xs-3">	
+									<label for="choose_mp3">MP3 File</label>
+								</div>
+								<div class="col-xs-5">
+									<input id="choose_mp3" type="file" name="" value="Choose File">
+								</div>
+								<div class="col-xs-12 col-sm-4">	
+									<h5>Max Size 10MB</h5>
+								</div>
+							</section>
+
+							<div class="row col-xs-12" id="upload-project-container">
+								<input type="submit" name="" value="Upload Project">
+							</div>
+						</form>
+					</section>
+
+				</div>
+				<div class="row col-md-3 recommended">
+					<section class="profile-right recommended">
+						
+						<div class="row col-xs-12">
+							<h3>Recommended</h3>
+						</div>
+
+						<div class="row col-xs-12 first-row">
+							<h4 class="first-h4">Free Guitar Amp Simulator for Mac and Windows</h4>
+							<a href="http://www.synthtopia.com/content/2010/01/22/free-guitar-amp-simulator-for-mac-windows/" target="blank"><img src="../../assets/images/ads/free-guitar-amp-simulator.jpg" alt="Free Guitar Amp Simulator"></a>
+						</div>
+
+						<div class="row col-xs-12">
+							<h4>Free AmpLion Guitar Amp Simulator </h4>
+							<h5>ampLion Free gives you the opportunity to experience the quality of ampLion simulation. You gain free access to one of the most famous guitar amps ever made.</h5>
+							<a href="https://www.macupdate.com/app/mac/40400/amplion-free" target="blank"><img src="../../assets/images/ads/free-amplion-simulator.jpg" alt="Free AmpLion Guitar Amp Simulator"></a>
+						</div>
+
+						<div class="row col-xs-12">
+							<h4>Realtek High Definition Driver</h4>
+							<h5>Realtek high definition (HD) audio drivers are now available, adding countless "driver customizations" and supporting a number of new Realtek chips.</h5>
+							<a href="http://218.210.127.131/downloads/Default.aspx?Langid=1" target="blank"><img src="../../assets/images/ads/realtek-logo.gif" alt="RealTek logo"></a>
+						</div>
+
+					</section>
+				</div>
+			</div>
+			<div class="col-lg-1"></div>	
+		
+		</div>
+
+		
+		<div class="space-above-footer"></div>
+	</div>
+
+	<footer class="navbar-default">
+		<div class="container">
+			<a class="navbar-brand" href="../../index-logged-in.html">
+				<img src="../../assets/images/header-and-footer/musiclaps-logo.png" alt="Musiclaps logo">&nbsp; &copy; 2015
+			</a>
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="../../views/under-construction/index-logged-in.html">Company</a></li>
+				<li><a href="../../views/under-construction/index-logged-in.html">Press</a></li>
+				<li><a href="../../views/under-construction/index-logged-in.html">Contact</a></li>
+				<li><a href="../../views/privacy/index-logged-in.html">Privacy</a></li>
+				<li><a href="../../views/terms/index-logged-in.html">Terms</a></li>
+				<li><a href="../../views/faqs/index-logged-in.html">FAQs</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="//www.facebook.com/Musiclaps" target="blank"><img class="facebook-icon" src="../../assets/images/global/facebook-icon.png" alt="Facebook icon"></a></li>
+				<li><a href="//twitter.com/musiclaps" target="blank"><img class="twitter-icon" src="../../assets/images/global/twitter-icon.png" alt="Twitter icon"></a></li>
+				<li><a href="//www.youtube.com/user/Musiclaps" target="blank"><img id="youtube-icon" src="../../assets/images/header-and-footer/youtube-icon.png" alt="YouTube icon"></a></li>
+			</ul>
+		</div>
+	</footer>
+	<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+	<script>
+		WebFont.load({
+		    google: {
+		      families: ['Roboto Condensed', 'Roboto:300,400,700']
+		    }
+		});
+	</script>
+	<script src="../../assets/javascripts/header.js"></script>
+	<script src="../../assets/javascripts/forum.js"></script>
+	<script src="../../assets/javascripts/user-menu.js"></script>
+	<script src="../../assets/javascripts/profile/index.js"></script>
+	<script src="../../assets/javascripts/profile/new-project.js"></script>
+	<script src="../../assets/javascripts/profile/my-projects-and-collaborations.js"></script>
+	<script src="../../assets/javascripts/profile/youtube.js"></script>
+	<script src="../../assets/javascripts/profile/messages.js"></script>
+	<script src="../../assets/javascripts/profile/groups.js"></script>
+	<script src="../../assets/javascripts/live-player.js"></script>
+	<script src="../../assets/javascripts/players-wanted.js"></script>
+</body>
+</html>

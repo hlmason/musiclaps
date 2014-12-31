@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Official Site of Musiclaps">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../../favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="228x228" href="../../favicon-228.png">
+	<link rel="apple-touch-icon-precomposed" sizes="195x195" href="../../favicon-195.png">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../favicon-152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../favicon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="../../favicon-128.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../../favicon-120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../favicon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="../../favicon-96.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../favicon-72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../favicon-57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="48x48" href="../../favicon-48.png">
+	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> --><!-- Link left in for testing purposes -->
+	<link rel="stylesheet" type="text/css" href="../../assets/stylesheets/application.css">
+	<title>Musiclaps | Live Player</title>
+	<!-- [if lt IE 9]> -->
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <!-- [endif] -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../../assets/javascripts/customized.bootstrap.min.js"></script>
+	<script src="../../assets/javascripts/index.js"></script>
+	<script src="../../assets/javascripts/wmuSlider.min.js"></script>
+	<script src="../../walkthrough/assets/js/standard.js"></script><!-- Julie's Captivate -->
+	<script src="../../assets/javascripts/public-project.js"></script>
+</head>
+<body>
+
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header"><!-- For Firefox and IE -->
+	            <button id="navbarToggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+	            </button>
+	            <h4 id="menuJS" data-toggle="collapse" data-target=".navbar-collapse">Menu</h4>
+				<a class="navbar-brand" href="../../index-logged-in.html">
+					<img src="../../assets/images/header-and-footer/musiclaps-logo.png" alt="Musiclaps logo">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="nav navbar-nav navbar-left">
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="musicDropdownLink" data-toggle="dropdown">Music<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" id="musicDropdownMenu" role="menu" aria-labelledby="musicDropdownLink">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/new-arrivals/index-logged-in.html">New Arrivals
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/recommended/index-logged-in.html">Recommended
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/staff-picks/index-logged-in.html">Staff Picks
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/collaborations/index-logged-in.html">Collaborations
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/all-music/index-logged-in.html">All Music
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="peopleDropdownLink" data-toggle="dropdown">People<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" id="peopleDropdownMenu" role="menu" aria-labelledby="peopleDropdownLink">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/players-wanted/index-logged-in.html">Players Wanted
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Players Available
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/forum/index-logged-in.html">Forum
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Collab Cafe
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="ourStoryDropdownLink" data-toggle="dropdown">Our Story<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" id="ourStoryDropdownMenu" role="menu" aria-labelledby="ourStoryDropdownLink">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Technology
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Company
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Contact
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+
+				<form class="search" action="" method="get">
+					<span class="glyphicon glyphicon-search" id="glyphiconSearch"></span><input class="search" id="searchJS" type="text" name="search" placeholder="Search">
+				</form>
+				
+				<ul id="flags">
+					<li><a><img id="usa-flag" src="../../assets/images/header-and-footer/usa-flag.jpg" alt="American flag"></a></li>
+					<li><a><img src="../../assets/images/header-and-footer/japan-flag.jpg" alt="Japanese flag"></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right" id="logged-in">
+					<li class="messages-sm"><span class="glyphicon glyphicon-envelope"></span></li>
+					<li class="messages-sm" id="number-of-messages">1</li>
+					<li id="welcome-user-sm">Welcome, &nbsp;<span class="musiclaps-blue"><a class="welcome-user-link" href="../../views/profile/index.html">$firstname</a></span></li><!-- Hard-coded placeholder -->
+					<li id="log-out">
+						<form action="" method="post">
+							<input type="submit" value="Log out">
+						</form>
+					</li>
+					<li id="welcome-user-xs">Welcome, &nbsp;
+						<span class="musiclaps-blue">
+							<a class="welcome-user-link" href="../../views/profile/index.html">$firstname
+							</a>
+						</span>
+						<span class="glyphicon glyphicon-envelope"></span>
+						<span class="number-of-messages">1</span>
+					</li><!-- Hard-coded placeholder -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Walkthrough modal -->
+		<div class="modal fade" id="wantWalkthrough" tabindex="-1" role="dialog" aria-labelledby="wantWalkthroughLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">&times;</span>
+							<span class="sr-only">Close</span>
+						</button>
+						<h3 class="modal-title want-demo-heading" id="wantWalkthroughLabel">Welcome to soundcheck !</h3>
+					</div>
+					<div class="modal-body" id="walkthrough">
+						<h4>Would you like a walkthrough?<h4>
+						<form>
+							<span class="block"><input type="radio" name="selection" value="yes">&nbsp; <a class="yesOrNo" id="yes"><span class="bold">Yes</span>, I'm new to this</a></span>
+							<span class="block"><input type="radio" name="selection" value="no">&nbsp; <a class="yesOrNo" id="no"><span class="bold">No</span>, thank you</a></span>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of walkthrough modal -->
+
+		<!-- Select song modal -->
+		<div class="modal fade" id="selectSong" tabindex="-1" role="dialog" aria-labelledby="selectSongLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">&times;</span>
+							<span class="sr-only">Close</span>
+						</button>
+						<h3 class="modal-title select-song-heading" id="selectSongLabel">Select a song <span>from our sample music</span></h3>
+					</div>
+					<div class="modal-body" id="select-song-modal-body">
+						<ul>
+							<li><a>Let It Go</a> (Frozen)</li>
+							<li><a>Get Lucky</a> (Daft Punk)</li>
+							<li><a>Rolling In The Deep</a> (Adele)</li>
+							<li><a>Haven't Met You Yet</a> (Michael Buble)</li>
+							<li><a>If I Ain't Got You</a> (Alicia Keys)</li>
+							<li><a>Come As You Are</a> (Nirvana)</li>
+							<li><a>Greatest Love Of All</a> (Whitney Houston)</li>
+							<li><a>Let It Be</a> (The Beatles)</li>
+							<li><a>Yesterday</a> (The Beatles)</li>
+						</ul>
+						<img id="select-song-img" src="../../assets/images/live-player-pg/rainbow-music-notes.png" alt="Music notes of different colors">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of select song modal -->
+
+	<div id="wrapper">
+		
+		<div class="container">
+			<div class="row col-xs-12" id="live-player-container">
+				<iframe width="620" height="380" src="https://www.musiclaps.com/embed/player?songid=null" frameborder="0" scrolling="no"></iframe><!-- Placeholder -->
+			</div>
+			<div class="row col-xs-11 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3" id="select-song-container">
+				<a class="select-song" id="selectSongJS">Select a song from our sample music</a>
+			</div>
+		</div>
+		
+		<section id="recording-instructions">
+			<h1>Record in 3 steps:</h1>
+			
+			<!-- Step 1 -->
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3" id="recording-buttons-instructions">
+						<h2><span>1. </span>Click the <span class="red">REC</span> button (above).</h2>
+					</div>
+					<div class="col-xs-6 col-sm-5 col-md-4 col-lg-3" id="recording-buttons-img">
+						<img src="../../assets/images/live-player-pg/recording-buttons.png" alt="Recording buttons">
+					</div>
+					<div class="col-sm-1 col-md-2 col-lg-3"></div>
+				</div>
+			</div>
+			<!-- End of Step 1 -->
+			
+			<!-- Step 2 -->
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3" id="allow-flash-instructions">
+						<h2><span>2. </span><span class="green">Allow Flash</span>.<span class="block">(so that you can record).</span></h2>
+					</div>
+					<div class="col-xs-6 col-sm-5 col-md-4 col-lg-3" id="allow-flash-img">
+						<img src="../../assets/images/live-player-pg/allow-flash.png" alt="Pop-up">
+					</div>
+					<div class="col-sm-1 col-md-2 col-lg-3"></div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3" id="allow-flash-chrome-container">
+						<p>We recommend using <a href="https://www.google.com/intl/en_us/chrome/browser/" target="blank">Google Chrome</a>.&nbsp; In Chrome, you may also need to click "Allow" at the top of the page:</p>
+						<img src="../../assets/images/live-player-pg/chrome-allow-flash.png" alt="Pop-up in Google Chrome">
+					</div>
+					<div class="col-sm-1 col-md-2 col-lg-3"></div>
+				</div>
+
+			</div>
+			<!-- End of Step 2 -->
+
+			<!-- Step 3 -->
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3" id="recording-start-instructions">
+						<h2><span>3. </span>Click <span class="red">REC START</span> (above).</h2>
+					</div>
+					<div class="col-xs-6 col-sm-5 col-md-4 col-lg-3" id="recording-area-img">
+						<img src="../../assets/images/live-player-pg/recording-area.png" alt="Recording area of Live Player">
+					</div>
+					<div class="col-sm-1 col-md-2 col-lg-3"></div>
+				</div>
+			</div>
+			<!-- End of Step 3 -->
+
+			<div class="container" id="save-container">
+				<button class="save" type="button">Save Recording</button><!-- Need to add logic -->
+			</div>
+
+<!-- 			<div class="container" id="save-container">
+				<button class="save" id="registrationExpressJS" type="button">Save Recording</button>
+			</div> --> <!-- Express registration per Bart's request.  Not sure where/how this is going to be integrated. -->
+
+			<!-- Register or login modal -->
+			<div class="modal fade registerOrLogin" tabindex="-1" role="dialog" aria-labelledby="registerOrLoginLabel" aria-hidden="true">
+				<div class="modal-dialog modal-sm">
+					<div class="modal-content">
+
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">
+								<span aria-hidden="true">&times;</span>
+								<span class="sr-only">Close</span>
+							</button>
+							<h3 class="modal-title" id="registerOrLoginLabel">Please register or log in to save</h3>
+						</div>
+
+						<div class="modal-body register-or-login-modal-body">
+							<button class="registerJS" type="button">Register</button>
+							<button class="loginJS" type="button">Log in</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- End of register or login modal -->
+
+			<!-- Express registration per Bart's request.  Not sure where/how this is going to be integrated. -->
+			<div class="modal fade" id="registrationExpress" tabindex="-1" role="dialog" aria-labelledby="registrationExpressLabel" aria-hidden="true">
+				<div class="modal-dialog modal-sm">
+					<div class="modal-content">
+						
+						<div class="modal-header" id="registration-express-header">
+							<button type="button" class="close" data-dismiss="modal">
+								<span aria-hidden="true">&times;</span>
+								<span class="sr-only">Close</span>
+							</button>
+							<h2 class="modal-title registration-express-modal-heading" id="registrationExpressLabel">Email Registration</h2>
+						</div>
+						
+						<form action="" method="post">	
+							<div class="modal-body" id="registration-express-modal-body">
+								<div>
+									<label for="email"><span class="musiclaps-blue">*</span> Email Address</label>
+									<input id="email" type="email" name="email">
+								</div>
+								
+								<div>
+									<label for="username"><span class="musiclaps-blue">*</span> Username</label>
+									<input id="username" type="text" name="userid">
+								</div>
+								
+								<div>
+									<label for="password"><span class="musiclaps-blue">*</span> Password <span class="glyphicon glyphicon-question-sign glyphiconQuestionSignRegistration"></span></label>
+									<div class="password-req" id="passwordReq">Passwords must contain 6 to 12 characters and at least 1 letter and 1 number</div>
+									<input id="password" type="password" name="password">
+								</div>
+								
+								<div>
+									<label for="confirm_password"><span class="musiclaps-blue">*</span> Confirm Password</label>
+									<input id="confirm_password" type="password" name="confirm_password">
+								</div>
+
+								<div id="agree-checkbox">
+									<input type="checkbox" name="tos" value="agree">&nbsp; I agree to the Musiclaps <a href="../../views/terms/" target="blank">Terms of Service</a> and <a href="../../views/privacy/" target="blank">Privacy Policy</a>.
+								</div>
+							</div>
+							
+							<div class="modal-footer registration-modal-footer">
+								<input type="submit" value="Register">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- End of express registration modal -->
+
+		</section>
+
+
+		<div class="space-above-footer"></div>
+	</div>
+
+	<footer class="navbar-default">
+		<div class="container">
+			<a class="navbar-brand" href="../../index-logged-in.html">
+				<img src="../../assets/images/header-and-footer/musiclaps-logo.png" alt="Musiclaps logo">&nbsp; &copy; 2015
+			</a>
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="../../views/under-construction/index-logged-in.html">Company</a></li>
+				<li><a href="../../views/under-construction/index-logged-in.html">Press</a></li>
+				<li><a href="../../views/under-construction/index-logged-in.html">Contact</a></li>
+				<li><a href="../../views/privacy/index-logged-in.html">Privacy</a></li>
+				<li><a href="../../views/terms/index-logged-in.html">Terms</a></li>
+				<li><a href="../../views/faqs/index-logged-in.html">FAQs</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="//www.facebook.com/Musiclaps" target="blank"><img class="facebook-icon" src="../../assets/images/global/facebook-icon.png" alt="Facebook icon"></a></li>
+				<li><a href="//twitter.com/musiclaps" target="blank"><img class="twitter-icon" src="../../assets/images/global/twitter-icon.png" alt="Twitter icon"></a></li>
+				<li><a href="//www.youtube.com/user/Musiclaps" target="blank"><img id="youtube-icon" src="../../assets/images/header-and-footer/youtube-icon.png" alt="YouTube icon"></a></li>
+			</ul>
+		</div>
+	</footer>
+	<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+	<script>
+		WebFont.load({
+		    google: {
+		      families: ['Roboto Condensed', 'Roboto:300,400,700']
+		    }
+		});
+	</script>
+	<script src="../../assets/javascripts/header.js"></script>
+	<script src="../../assets/javascripts/forum.js"></script>
+	<script src="../../assets/javascripts/user-menu.js"></script>
+	<script src="../../assets/javascripts/profile/index.js"></script>
+	<script src="../../assets/javascripts/profile/new-project.js"></script>
+	<script src="../../assets/javascripts/profile/my-projects-and-collaborations.js"></script>
+	<script src="../../assets/javascripts/profile/youtube.js"></script>
+	<script src="../../assets/javascripts/profile/messages.js"></script>
+	<script src="../../assets/javascripts/profile/groups.js"></script>
+	<script src="../../assets/javascripts/live-player.js"></script>
+	<script src="../../assets/javascripts/players-wanted.js"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Official Site of Musiclaps">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Musiclaps | Congratulations</title>
+	<title>Musiclaps | Walkthrough</title>
 	<link rel="icon" href="../favicon.ico">
 	<link rel="apple-touch-icon-precomposed" sizes="228x228" href="../favicon-228.png">
 	<link rel="apple-touch-icon-precomposed" sizes="195x195" href="../favicon-195.png">
@@ -472,39 +472,39 @@
 	<!-- End of login modal -->
 
 	<div id="wrapper">
-		<div class="container">
-	    <img src="images/colored_notes_border.png" width="800" height="100" alt=""/>
-	     	<div id="contentwrap">
-	       		<div id="content" style="height:400px;">
-	              <p>Congratulations! </p>
-	                <p>
-	                You completed the walkthrough.</p><p> Please wait while we re-direct you to the
-	                  <?php 
-					  $answer = $_POST['answer'];
-					  if ($answer == "profile") {
-						  echo "sign up page.";
-						//re-direct to signup page
-						 echo "<script language='javascript'>
-						 	$('#registerJS').modal('show');
-						 </script>";
-
-					  	  } else {
-							  echo "soundcheck.";
-							  //re-direct to soundcheck
-	                          echo 
-	                          	"<script language='javascript'>
-		                          	setTimeout(function() {
-		                          		window.location.replace('../views/live-player/index.html');
-		                          	}, 5000);
-								</script>";
-						  }
-					?>
-	                  
-	                </p>
-	               
-	             </div>
-	           <img src="images/colored_notes_border.png" width="800" height="100" alt=""/> 
-		   </div>
+		<div class="container">      
+			<div id="CaptivateContent">&nbsp;</div>
+			
+			<script type="text/javascript">
+				var strURLFull = window.document.location.toString();
+				var intTemp = strURLFull.indexOf("?");
+				var	strURLParams = "";
+				if(intTemp != -1)
+				{
+					strURLParams = strURLFull.substring(intTemp + 1, strURLFull.length);
+				}
+			    var so = new SWFObject("walkthrough.swf", "Captivate", "1201", "860", "10", "#CCCCCC");
+				so.addParam("quality", "high");
+				so.addParam("name", "Captivate");
+				so.addParam("id", "Captivate");
+				so.addParam("wmode", "window");
+				so.addParam("bgcolor","#ffffff");
+				so.addParam("seamlesstabbing","false");
+				so.addParam("menu", "false");
+				so.addParam("AllowScriptAccess","always");
+				so.addVariable("variable1", "value1");
+				if(strURLParams != "")
+				{
+					so.addVariable("flashvars",strURLParams);
+				}
+				so.setAttribute("redirectUrl", "http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash");
+				so.write("CaptivateContent");
+			</script>
+		      
+			<script type="text/javascript">
+				document.getElementById('Captivate').focus();
+				document.Captivate.focus();
+			</script>
 		</div>
 
 		

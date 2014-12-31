@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Official Site of Musiclaps">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../../favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="228x228" href="../../favicon-228.png">
+	<link rel="apple-touch-icon-precomposed" sizes="195x195" href="../../favicon-195.png">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../favicon-152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../favicon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="../../favicon-128.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../../favicon-120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../favicon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="../../favicon-96.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../favicon-72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../favicon-57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="48x48" href="../../favicon-48.png">
+	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> --><!-- Link left in for testing purposes -->
+	<link rel="stylesheet" type="text/css" href="../../assets/stylesheets/application.css">
+	<title>Musiclaps | Messages</title>
+	<!-- [if lt IE 9]> -->
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <!-- [endif] -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../../assets/javascripts/customized.bootstrap.min.js"></script>
+	<script src="../../assets/javascripts/index.js"></script>
+	<script src="../../assets/javascripts/wmuSlider.min.js"></script>
+	<script src="../../walkthrough/assets/js/standard.js"></script><!-- Julie's Captivate -->
+	<script src="../../assets/javascripts/public-project.js"></script>
+</head>
+<body>
+
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header"><!-- For Firefox and IE -->
+	            <button id="navbarToggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+	            </button>
+	            <h4 id="menuJS" data-toggle="collapse" data-target=".navbar-collapse">Menu</h4>
+				<a class="navbar-brand" href="../../index-logged-in.html">
+					<img src="../../assets/images/header-and-footer/musiclaps-logo.png" alt="Musiclaps logo">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="nav navbar-nav navbar-left">
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="musicDropdownLink" data-toggle="dropdown">Music<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" id="musicDropdownMenu" role="menu" aria-labelledby="musicDropdownLink">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/new-arrivals/index-logged-in.html">New Arrivals
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/recommended/index-logged-in.html">Recommended
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/staff-picks/index-logged-in.html">Staff Picks
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/collaborations/index-logged-in.html">Collaborations
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/all-music/index-logged-in.html">All Music
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="peopleDropdownLink" data-toggle="dropdown">People<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" id="peopleDropdownMenu" role="menu" aria-labelledby="peopleDropdownLink">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/players-wanted/index-logged-in.html">Players Wanted
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Players Available
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/forum/index-logged-in.html">Forum
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Collab Cafe
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="ourStoryDropdownLink" data-toggle="dropdown">Our Story<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" id="ourStoryDropdownMenu" role="menu" aria-labelledby="ourStoryDropdownLink">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Technology
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Company
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Contact
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+
+				<form class="search" action="" method="get">
+					<span class="glyphicon glyphicon-search" id="glyphiconSearch"></span><input class="search" id="searchJS" type="text" name="search" placeholder="Search">
+				</form>
+				
+				<ul id="flags">
+					<li><a><img id="usa-flag" src="../../assets/images/header-and-footer/usa-flag.jpg" alt="American flag"></a></li>
+					<li><a><img src="../../assets/images/header-and-footer/japan-flag.jpg" alt="Japanese flag"></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right" id="logged-in">
+					<li class="messages-sm"><span class="glyphicon glyphicon-envelope"></span></li>
+					<li class="messages-sm" id="number-of-messages">1</li>
+					<li id="welcome-user-sm">Welcome, &nbsp;<span class="musiclaps-blue"><a class="welcome-user-link" href="../../views/profile/index.html">$firstname</a></span></li><!-- Hard-coded placeholder -->
+					<li id="log-out">
+						<form action="" method="post">
+							<input type="submit" value="Log out">
+						</form>
+					</li>
+					<li id="welcome-user-xs">Welcome, &nbsp;
+						<span class="musiclaps-blue">
+							<a class="welcome-user-link" href="../../views/profile/index.html">$firstname
+							</a>
+						</span>
+						<span class="glyphicon glyphicon-envelope"></span>
+						<span class="number-of-messages">1</span>
+					</li><!-- Hard-coded placeholder -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="wrapper">
+		<div class="container">
+			
+			<nav class="row col-lg-10 col-lg-offset-1">
+				<span class="glyphicon glyphicon-user glyphiconUser"></span>
+	            <h4 class="user-menu userMenu">User Menu</h4>
+				<ul class="nav navbar-nav user-menu userMenu">
+					<li class="first-list-item">
+						<a href="../../views/profile/">My Profile
+						</a>
+					</li>
+					
+					<li id="new-project">
+						<a id="newProjectLink">New Project<span class="caret" id="newProjectCaret"></span>
+						</a>
+						<ul class="dropdown-menu" id="newProjectDropdownMenu" aria-labelledby="newProjectDropdownMenu">
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="recordingPlayerLink">Recording Player
+								</a>
+							</li>
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="uploadMP3Link">Upload MP3
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li id="my-projects">
+						<a id="myProjectsLink">My Projects<span class="caret" id="myProjectsCaret"></span>
+						</a>
+						<ul class="dropdown-menu" id="myProjectsDropdownMenu" aria-labelledby="myProjectsDropdownMenu">
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="inProgressPrivateLink">In Progress / Private
+								</a>
+							</li>
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="publicLink">Public
+								</a>
+							</li>
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="groupLink">Group
+								</a>
+							</li>
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="auditionLink">Audition
+								</a>
+							</li>
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="lyricsLink">Lyrics
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li id="collaborations">
+						<a id="collaborationsLink">Collaborations<span class="caret" id="collaborationsCaret"></span>
+						</a>
+						<ul class="dropdown-menu" id="collaborationsDropdownMenu" aria-labelledby="collaborationsDropdownMenu">
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="openCollabLink">Open Collab
+								</a>
+							</li>
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="requestingCollabLink">Requesting Collab
+								</a>
+							</li>
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="collaboratorsLink">Collaborators
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="../../views/profile/youtube-links.html">YouTube Links
+						</a>
+					</li>
+					
+					<li>
+						<a class="active" href="../../views/profile/messages.html">Messages
+						</a>
+					</li>
+					
+					<li>
+						<a href="../../views/profile/groups.html">Groups
+						</a>
+					</li>
+					
+					<li>
+						<a href="../../views/profile/favorites.html">Favorites
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="col-lg-1"></div>
+
+			<div class="row col-lg-10 col-lg-offset-1">				
+					
+				<div class="row col-xs-12 col-md-9" id="messages-page">
+
+					<section class="row col-xs-12" id="messages-header">
+						<a href="../../views/profile/messages.html">
+							<span class="glyphicon glyphicon-envelope"></span>
+							<h3>Messages</h3>
+						</a>
+						<a href="../../views/profile/messages.html">
+							<span class="glyphicon glyphicon-refresh"></span>
+						</a>
+						<a href="#">
+							<span class="glyphicon glyphicon-arrow-up"></span>
+						</a>
+						<button class="white-button-navigate-hover-js" type="button" id="addFriendButton">Add New Friend</button>
+					</section>
+
+					<!-- Hidden upon page load -->
+					<div class="add-friend-container row col-xs-12" id="addFriendContainer">
+						<form action="" method="post">
+							<label for="add_friend">Member's Username</label>
+							<input class="add-friend-field" id="add_friend" type="text" name="">
+							<input class="add-friend-submit" type="submit" name="" value="Add">
+						</form>
+					</div>
+
+					<div class="friends-container row col-xs-12" id="friendsContainer">
+						<div class="row col-xs-12">
+							<div class="username-and-img">
+								<img class="first-img" src="../../assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<h5 class="first-h5 username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+							</div>
+							<div class="username-and-img">
+								<img src="../../assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+							</div>
+							<div class="username-and-img">
+								<img src="../../assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+							</div>
+							<div class="username-and-img">
+								<img src="../../assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+							</div>
+							<div class="username-and-img">
+								<img src="../../assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+							</div>
+							<div class="username-and-img">
+								<img src="../../assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+							</div>
+						</div>
+
+						<div class="row col-xs-12">
+							<div class="username-and-img">
+								<img class="first-img" src="../../assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<h5 class="first-h5 username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+							</div>
+							<div class="username-and-img">
+								<img src="../../assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+							</div>
+							<div class="username-and-img">
+								<img src="../../assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+							</div>
+							<div class="username-and-img">
+								<img src="../../assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+							</div>
+							<div class="username-and-img">
+								<img src="../../assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+							</div>
+							<div class="username-and-img">
+								<img src="../../assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+							</div>
+						</div>
+					</div>
+
+					<!-- Hidden upon page load -->
+					<section class="messages-container" id="messagesContainer">
+						<div class="row"> 
+							<div class="col-xs-3">
+								<h5>06/17/2013 at 4:42pm</h5><!-- Hard-coded placeholder -->
+								<a href="../../views/profile/">
+									<a href="../../views/profile/public-profile-logged-in.html"><img src="../../assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+									<h5 class="first-h5">$username</h5></a><!-- Hard-coded placeholder -->
+								</a>
+							</div>
+							
+							<div class="col-xs-9 messages-container">
+								<div id="existing-message"></div><!-- Hard-coded placeholder -->
+							</div>
+						</div>
+
+						<section class="row col-xs-12">
+							<form action="" method="post">
+								<span class="glyphicon glyphicon-pencil"></span>
+								<label for="compose_message">Message to $username</label><!-- Hard-coded placeholder -->
+								<textarea id="compose_message" name="compose_message"></textarea>
+								<input class="send-message" type="submit" name="" value="Send">
+							</form>
+						</section>
+					</section>
+				</div>
+				<div class="row col-md-3 recommended">
+					<section class="profile-right recommended">
+						
+						<div class="row col-xs-12">
+							<h3>Recommended</h3>
+						</div>
+
+						<div class="row col-xs-12 first-row">
+							<h4 class="first-h4">Free Guitar Amp Simulator for Mac and Windows</h4>
+							<a href="http://www.synthtopia.com/content/2010/01/22/free-guitar-amp-simulator-for-mac-windows/" target="blank"><img src="../../assets/images/ads/free-guitar-amp-simulator.jpg" alt="Free Guitar Amp Simulator"></a>
+						</div>
+
+						<div class="row col-xs-12">
+							<h4>Free AmpLion Guitar Amp Simulator </h4>
+							<h5>ampLion Free gives you the opportunity to experience the quality of ampLion simulation. You gain free access to one of the most famous guitar amps ever made.</h5>
+							<a href="https://www.macupdate.com/app/mac/40400/amplion-free" target="blank"><img src="../../assets/images/ads/free-amplion-simulator.jpg" alt="Free AmpLion Guitar Amp Simulator"></a>
+						</div>
+
+						<div class="row col-xs-12">
+							<h4>Realtek High Definition Driver</h4>
+							<h5>Realtek high definition (HD) audio drivers are now available, adding countless "driver customizations" and supporting a number of new Realtek chips.</h5>
+							<a href="http://218.210.127.131/downloads/Default.aspx?Langid=1" target="blank"><img src="../../assets/images/ads/realtek-logo.gif" alt="RealTek logo"></a>
+						</div>
+
+					</section>
+				</div>	
+			</div>
+			<div class="col-lg-1"></div>	
+		
+		</div>
+
+		
+		<div class="space-above-footer"></div>
+	</div>
+
+	<footer class="navbar-default">
+		<div class="container">
+			<a class="navbar-brand" href="../../index-logged-in.html">
+				<img src="../../assets/images/header-and-footer/musiclaps-logo.png" alt="Musiclaps logo">&nbsp; &copy; 2015
+			</a>
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="../../views/under-construction/index-logged-in.html">Company</a></li>
+				<li><a href="../../views/under-construction/index-logged-in.html">Press</a></li>
+				<li><a href="../../views/under-construction/index-logged-in.html">Contact</a></li>
+				<li><a href="../../views/privacy/index-logged-in.html">Privacy</a></li>
+				<li><a href="../../views/terms/index-logged-in.html">Terms</a></li>
+				<li><a href="../../views/faqs/index-logged-in.html">FAQs</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="//www.facebook.com/Musiclaps" target="blank"><img class="facebook-icon" src="../../assets/images/global/facebook-icon.png" alt="Facebook icon"></a></li>
+				<li><a href="//twitter.com/musiclaps" target="blank"><img class="twitter-icon" src="../../assets/images/global/twitter-icon.png" alt="Twitter icon"></a></li>
+				<li><a href="//www.youtube.com/user/Musiclaps" target="blank"><img id="youtube-icon" src="../../assets/images/header-and-footer/youtube-icon.png" alt="YouTube icon"></a></li>
+			</ul>
+		</div>
+	</footer>
+	<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+	<script>
+		WebFont.load({
+		    google: {
+		      families: ['Roboto Condensed', 'Roboto:300,400,700']
+		    }
+		});
+	</script>
+	<script src="../../assets/javascripts/header.js"></script>
+	<script src="../../assets/javascripts/forum.js"></script>
+	<script src="../../assets/javascripts/user-menu.js"></script>
+	<script src="../../assets/javascripts/profile/index.js"></script>
+	<script src="../../assets/javascripts/profile/new-project.js"></script>
+	<script src="../../assets/javascripts/profile/my-projects-and-collaborations.js"></script>
+	<script src="../../assets/javascripts/profile/youtube.js"></script>
+	<script src="../../assets/javascripts/profile/messages.js"></script>
+	<script src="../../assets/javascripts/profile/groups.js"></script>
+	<script src="../../assets/javascripts/live-player.js"></script>
+	<script src="../../assets/javascripts/players-wanted.js"></script>
+</body>
+</html>

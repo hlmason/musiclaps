@@ -52,10 +52,10 @@ $(document).ready(function() {
 	});
 	
 	$('a#recordingPlayerLink').on('click', function() {
-		window.location.href = 'new-project-recording-player.php';
+		window.location.href = 'new-project-recording-player.html';
 	});
 	$('a#uploadMP3Link').on('click', function() {
-		window.location.href = 'new-project-upload-mp3.php';
+		window.location.href = 'new-project-upload-mp3.html';
 	});
 
 	/* ===================================
@@ -83,19 +83,19 @@ $(document).ready(function() {
 	});
 	
 	$('a#inProgressPrivateLink').on('click', function() {
-		window.location.href = 'my-projects-in-progress-private.php';
+		window.location.href = 'my-projects-in-progress-private.html';
 	});
 	$('a#publicLink').on('click', function() {
-		window.location.href = 'my-projects-public.php';
+		window.location.href = 'my-projects-public.html';
 	});
 	$('a#groupLink').on('click', function() {
-		window.location.href = 'my-projects-group.php';
+		window.location.href = 'my-projects-group.html';
 	});
 	$('a#auditionLink').on('click', function() {
-		window.location.href = 'my-projects-audition.php';
+		window.location.href = 'my-projects-audition.html';
 	});
 	$('a#lyricsLink').on('click', function() {
-		window.location.href = 'my-projects-lyrics.php';
+		window.location.href = 'my-projects-lyrics.html';
 	});
 
 	/* ===================================
@@ -123,13 +123,13 @@ $(document).ready(function() {
 	});
 	
 	$('a#openCollabLink').on('click', function() {
-		window.location.href = 'collaborations-open-collab.php';
+		window.location.href = 'collaborations-open-collab.html';
 	});
 	$('a#requestingCollabLink').on('click', function() {
-		window.location.href = 'collaborations-requesting-collab.php';
+		window.location.href = 'collaborations-requesting-collab.html';
 	});
 	$('a#collaboratorsLink').on('click', function() {
-		window.location.href = 'collaborations-collaborators.php';
+		window.location.href = 'collaborations-collaborators.html';
 	});
 
 });

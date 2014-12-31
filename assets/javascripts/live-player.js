@@ -11,7 +11,7 @@ $(document).ready(function() {
 	$('input').on('click', function() { // Asks whether user wants walkthrough
 		if ( $('input[value="yes"]').is(':checked') ) { // If yes,
 			wantWalkthrough.modal('hide'); // modal is hidden
-			window.location.href='../../walkthrough/walkthrough.php'; // and user is redirected to walkthrough;
+			window.location.href='../../walkthrough/walkthrough.html'; // and user is redirected to walkthrough;
 		} else if ( $('input[value="no"]').is(':checked') ) { // if no,
 			wantWalkthrough.modal('hide'); // modal is hidden and Live Player is revealed.
 			selectSong.modal('show');
@@ -23,7 +23,7 @@ $(document).ready(function() {
 		$(this).data('clicked', true);
 		if ( $('a#yes').data('clicked') ) { // If yes,
 			wantWalkthrough.modal('hide'); // modal is hidden
-			window.location.href='../../walkthrough/walkthrough.php'; // and user is redirected to walkthrough;
+			window.location.href='../../walkthrough/walkthrough.html'; // and user is redirected to walkthrough;
 		} else if ( $('a#no').data('clicked') ) { // if no,
 			wantWalkthrough.modal('hide'); // modal is hidden and Live Player is revealed.
 			selectSong.modal('show');

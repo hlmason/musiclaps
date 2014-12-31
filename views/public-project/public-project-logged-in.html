@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Official Site of Musiclaps">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../../favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="228x228" href="../../favicon-228.png">
+	<link rel="apple-touch-icon-precomposed" sizes="195x195" href="../../favicon-195.png">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../favicon-152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../favicon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="../../favicon-128.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../../favicon-120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../favicon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="../../favicon-96.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../favicon-72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../favicon-57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="48x48" href="../../favicon-48.png">
+	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> --><!-- Link left in for testing purposes -->
+	<link rel="stylesheet" type="text/css" href="../../assets/stylesheets/application.css">
+	<title>Musiclaps | Project Name</title><!-- Hard-coded placeholder -->
+	<!-- [if lt IE 9]> -->
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <!-- [endif] -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../../assets/javascripts/customized.bootstrap.min.js"></script>
+	<script src="../../assets/javascripts/index.js"></script>
+	<script src="../../assets/javascripts/wmuSlider.min.js"></script>
+	<script src="../../walkthrough/assets/js/standard.js"></script><!-- Julie's Captivate -->
+	<script src="../../assets/javascripts/public-project.js"></script>
+</head>
+<body>
+
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header"><!-- For Firefox and IE -->
+	            <button id="navbarToggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+	            </button>
+	            <h4 id="menuJS" data-toggle="collapse" data-target=".navbar-collapse">Menu</h4>
+				<a class="navbar-brand" href="../../index-logged-in.html">
+					<img src="../../assets/images/header-and-footer/musiclaps-logo.png" alt="Musiclaps logo">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="nav navbar-nav navbar-left">
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="musicDropdownLink" data-toggle="dropdown">Music<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" id="musicDropdownMenu" role="menu" aria-labelledby="musicDropdownLink">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/new-arrivals/index-logged-in.html">New Arrivals
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/recommended/index-logged-in.html">Recommended
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/staff-picks/index-logged-in.html">Staff Picks
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/collaborations/index-logged-in.html">Collaborations
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/all-music/index-logged-in.html">All Music
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="peopleDropdownLink" data-toggle="dropdown">People<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" id="peopleDropdownMenu" role="menu" aria-labelledby="peopleDropdownLink">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/players-wanted/index-logged-in.html">Players Wanted
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Players Available
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/forum/index-logged-in.html">Forum
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Collab Cafe
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="ourStoryDropdownLink" data-toggle="dropdown">Our Story<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" id="ourStoryDropdownMenu" role="menu" aria-labelledby="ourStoryDropdownLink">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Technology
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Company
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Contact
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+
+				<form class="search" action="" method="get">
+					<span class="glyphicon glyphicon-search" id="glyphiconSearch"></span><input class="search" id="searchJS" type="text" name="search" placeholder="Search">
+				</form>
+				
+				<ul id="flags">
+					<li><a><img id="usa-flag" src="../../assets/images/header-and-footer/usa-flag.jpg" alt="American flag"></a></li>
+					<li><a><img src="../../assets/images/header-and-footer/japan-flag.jpg" alt="Japanese flag"></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right" id="logged-in">
+					<li class="messages-sm"><span class="glyphicon glyphicon-envelope"></span></li>
+					<li class="messages-sm" id="number-of-messages">1</li>
+					<li id="welcome-user-sm">Welcome, &nbsp;<span class="musiclaps-blue"><a class="welcome-user-link" href="../../views/profile/index.html">$firstname</a></span></li><!-- Hard-coded placeholder -->
+					<li id="log-out">
+						<form action="" method="post">
+							<input type="submit" value="Log out">
+						</form>
+					</li>
+					<li id="welcome-user-xs">Welcome, &nbsp;
+						<span class="musiclaps-blue">
+							<a class="welcome-user-link" href="../../views/profile/index.html">$firstname
+							</a>
+						</span>
+						<span class="glyphicon glyphicon-envelope"></span>
+						<span class="number-of-messages">1</span>
+					</li><!-- Hard-coded placeholder -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="wrapper">
+		<div class="container">
+
+			<div class="row col-lg-10 col-lg-offset-2">				
+					
+				<div class="row col-xs-12 col-md-9">
+
+					<!-- Recording Player -->
+					<div class="row col-xs-12 live-player-container">
+						<iframe width="620" height="380" src="https://www.musiclaps.com/embed/player?songid=null" frameborder="0" scrolling="no"></iframe><!-- Placeholder -->
+					</div>
+					<!-- End of Recording Player -->
+
+
+					<section class="row col-xs-12 public-project-header">
+						<a href="../../views/public-project/project-details-logged-in.html"><h3 class="public-project-page">$Project Title</h3></a><!-- Hard-coded placeholder -->
+						<h5>Date Uploaded: <span class="normal">07/17/14</span></h5><!-- Hard-coded placeholder -->
+					</section>
+					
+					<section class="row col-xs-12 public-project-info">	
+						<div class="row col-xs-4 col-sm-2">
+							<a href="../../views/profile/public-profile-logged-in.html"><img class="avatar" src="../../assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"></a>
+						</div>
+
+						<div class="row col-xs-7 col-sm-6">
+							<section class="username-and-number-of-songs">
+								<a href="../../views/profile/public-profile-logged-in.html"><h4>$username</h4></a><!-- Hard-coded placeholder -->
+								<h5>$# songs</h5><!-- Hard-coded placeholder -->
+							</section>
+							
+							<div class="youtube-links">
+								<a class="first-link" href="#"><img src="../../assets/images/profile-pages/link-to-youtube-icon.jpg" alt="Link to YouTube icon"></a><!-- Hard-coded placeholder -->
+								<a href="#"><img src="../../assets/images/profile-pages/link-to-youtube-icon-gray.png" alt="Link to YouTube icon"></a><!-- Hard-coded placeholder -->
+								<a href="#"><img src="../../assets/images/profile-pages/link-to-youtube-icon-gray.png" alt="Link to YouTube icon"></a><!-- Hard-coded placeholder -->
+							</div>
+						</div>
+
+						<div class="row col-xs-1 col-sm-4">
+							<section class="number-of-listens">
+								<h2>#</h2>
+								<h5>listens</h5>
+							</section>
+						</div>
+					</section>
+					
+					<section class="row col-xs-12">
+						<div class="type-of-collab-container public-project-info">
+							<span class="glyphicon first-glyphicon"></span><!-- Placeholder -->
+							<h5>No Collab</h5>
+
+							<span class="glyphicon glyphicon-ok"></span><!-- Hard-coded placeholder -->
+							<h5>Open Collab</h5>
+
+							<span class="glyphicon"></span><!-- Placeholder -->
+							<h5>Requesting Collab</h5>
+
+							<img id="cover-song" src="../../assets/images/public-project-pages/cover-song.png" alt="Cover song icon">
+						</div>
+					</section>
+
+
+					<section class="row col-xs-12 public-project-info">
+						<img class="clapping-hands" src="../../assets/images/public-project-pages/clapping-hands.png" alt="1 pair of clapping hands">
+						<h4 id="number-of-claps"># claps</h4><!-- Hard-coded placeholder -->
+						
+						<!-- <span class="glyphicon glyphicon-thumbs-up"></span> -->
+
+						<span class="glyphicon glyphicon-heart"></span>
+						<h4 class="favorites"># favorites</h4><!-- Hard-coded placeholder -->
+					</section>
+					
+					<div class="row col-xs-12 public-project-info">
+						<img id="facebook-like-button" src="../../assets/images/public-project-pages/facebook-like-button.png" alt="Facebook 'like' button">
+					</div>
+
+
+					<div class="row col-xs-12">
+						<div id="share-or-embed-buttons">
+							<button class="navigate musiclaps-dark-gray" id="share" type="button">Share</button>
+							<button class="navigate dark-button-navigate-hover-js" id="embed" type="button">Embed</button>
+						</div>
+					</div>
+
+					<div class="row col-xs-12">
+						<div class="share-to-social-networks-container" id="shareToSocialNetworksContainer">
+							<img class="facebook-icon first-img" src="../../assets/images/global/facebook-icon.png" alt="Facebook icon"><!-- Hard-coded placeholder -->
+							<img class="twitter-<!-- Hard-coded placeholder -->icon" src="../../assets/images/global/twitter-icon.png" alt="Twitter icon">
+							<img class="google-icon" src="../../assets/images/global/google-icon.jpg" alt="Google icon"><!-- Hard-coded placeholder -->
+							<img id="reddit-icon" src="../../assets/images/public-project-pages/reddit-icon.gif" alt="Reddit icon"><!-- Hard-coded placeholder -->
+							<img id="tumblr-icon" src="../../assets/images/public-project-pages/tumblr-icon.png" alt="Tumblr icon"><!-- Hard-coded placeholder -->
+							<img id="pinterest-icon" src="../../assets/images/public-project-pages/pinterest-icon.png" alt="Pinterest icon"><!-- Hard-coded placeholder -->
+							<img id="stumbleupon-icon" src="../../assets/images/public-project-pages/stumbleupon-icon.jpg" alt="Stumbleupon icon"><!-- Hard-coded placeholder -->
+
+							<input type="text" value="https://www.musiclaps.com//play?songid=8a022c7833672178"><!-- Hard-coded placeholder -->
+						</div>
+
+						<!-- Hidden upon page load -->
+						<div class="embed-container" id="embedContainer">
+							<textarea>
+								<iframe width="620" height="380" src="https://www.musiclaps.com//embed/player?songid=8a022c7833672178" frameborder="0" scrolling="no"></iframe><!-- Hard-coded placeholder -->
+							</textarea>
+						</div>
+					</div>
+
+					<section class="row col-xs-12" id="comment-container">
+						<form action="" method="post">
+							<label for="comment_public_project_page">Post a Comment</label>
+							<textarea id="comment_public_project_page" name=""></textarea>
+							<!-- Markup is backwards because elements are floated right -->
+							<input type="submit" value="Post">
+							<h4>500 characters remaining</h4><!-- Hard-coded placeholder -->
+						</form>
+					</section>
+
+				</div>
+				<div class="row col-xs-12 col-md-3 public-project-page">
+					<div class="profile-right public-project-page">
+						<div class="row col-xs-12">
+							<img src="../../assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
+						</div>
+						<section class="row col-xs-12">
+							<a href="../../views/public-project/public-project-logged-in.html"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
+							<h5>User: <a href="../../views/profile/public-profile-logged-in.html"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
+							<h5># Plays</h5><!-- Hard-coded placeholder -->
+						</section>
+
+						<div class="row col-xs-12">
+							<img src="../../assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
+						</div>
+						<section class="row col-xs-12">
+							<a href="../../views/public-project/public-project-logged-in.html"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
+							<h5>User: <a href="../../views/profile/public-profile-logged-in.html"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
+							<h5># Plays</h5><!-- Hard-coded placeholder -->
+						</section>
+
+						<div class="row col-xs-12">
+							<img src="../../assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
+						</div>
+						<section class="row col-xs-12">
+							<a href="../../views/public-project/public-project-logged-in.html"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
+							<h5>User: <a href="../../views/profile/public-profile-logged-in.html"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
+							<h5># Plays</h5><!-- Hard-coded placeholder -->
+						</section>
+
+						<div class="row col-xs-12">
+							<img src="../../assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
+						</div>
+						<section class="row col-xs-12">
+							<a href="../../views/public-project/public-project-logged-in.html"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
+							<h5>User: <a href="../../views/profile/public-profile-logged-in.html"><span class="normal">$username</span></a></h5><!-- Hard-coded placeholder -->
+							<h5># Plays</h5><!-- Hard-coded placeholder -->
+						</section>
+					</div>
+				</div>		
+			</div>
+			<!-- <div class="col-lg-1"></div>	 -->
+		
+		</div>
+
+		
+		<div class="space-above-footer"></div>
+	</div>
+
+	<footer class="navbar-default">
+		<div class="container">
+			<a class="navbar-brand" href="../../index-logged-in.html">
+				<img src="../../assets/images/header-and-footer/musiclaps-logo.png" alt="Musiclaps logo">&nbsp; &copy; 2015
+			</a>
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="../../views/under-construction/index-logged-in.html">Company</a></li>
+				<li><a href="../../views/under-construction/index-logged-in.html">Press</a></li>
+				<li><a href="../../views/under-construction/index-logged-in.html">Contact</a></li>
+				<li><a href="../../views/privacy/index-logged-in.html">Privacy</a></li>
+				<li><a href="../../views/terms/index-logged-in.html">Terms</a></li>
+				<li><a href="../../views/faqs/index-logged-in.html">FAQs</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="//www.facebook.com/Musiclaps" target="blank"><img class="facebook-icon" src="../../assets/images/global/facebook-icon.png" alt="Facebook icon"></a></li>
+				<li><a href="//twitter.com/musiclaps" target="blank"><img class="twitter-icon" src="../../assets/images/global/twitter-icon.png" alt="Twitter icon"></a></li>
+				<li><a href="//www.youtube.com/user/Musiclaps" target="blank"><img id="youtube-icon" src="../../assets/images/header-and-footer/youtube-icon.png" alt="YouTube icon"></a></li>
+			</ul>
+		</div>
+	</footer>
+	<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+	<script>
+		WebFont.load({
+		    google: {
+		      families: ['Roboto Condensed', 'Roboto:300,400,700']
+		    }
+		});
+	</script>
+	<script src="../../assets/javascripts/header.js"></script>
+	<script src="../../assets/javascripts/forum.js"></script>
+	<script src="../../assets/javascripts/user-menu.js"></script>
+	<script src="../../assets/javascripts/profile/index.js"></script>
+	<script src="../../assets/javascripts/profile/new-project.js"></script>
+	<script src="../../assets/javascripts/profile/my-projects-and-collaborations.js"></script>
+	<script src="../../assets/javascripts/profile/youtube.js"></script>
+	<script src="../../assets/javascripts/profile/messages.js"></script>
+	<script src="../../assets/javascripts/profile/groups.js"></script>
+	<script src="../../assets/javascripts/live-player.js"></script>
+	<script src="../../assets/javascripts/players-wanted.js"></script>
+</body>
+</html>

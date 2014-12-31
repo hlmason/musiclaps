@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Official Site of Musiclaps">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../../favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="228x228" href="../../favicon-228.png">
+	<link rel="apple-touch-icon-precomposed" sizes="195x195" href="../../favicon-195.png">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../favicon-152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../favicon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="../../favicon-128.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../../favicon-120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../favicon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="../../favicon-96.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../favicon-72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../favicon-57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="48x48" href="../../favicon-48.png">
+	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> --><!-- Link left in for testing purposes -->
+	<link rel="stylesheet" type="text/css" href="../../assets/stylesheets/application.css">
+	<title>Musiclaps | Audition Projects</title>
+	<!-- [if lt IE 9]> -->
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <!-- [endif] -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../../assets/javascripts/customized.bootstrap.min.js"></script>
+	<script src="../../assets/javascripts/index.js"></script>
+	<script src="../../assets/javascripts/wmuSlider.min.js"></script>
+	<script src="../../walkthrough/assets/js/standard.js"></script><!-- Julie's Captivate -->
+	<script src="../../assets/javascripts/public-project.js"></script>
+</head>
+<body>
+
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header"><!-- For Firefox and IE -->
+	            <button id="navbarToggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+	            </button>
+	            <h4 id="menuJS" data-toggle="collapse" data-target=".navbar-collapse">Menu</h4>
+				<a class="navbar-brand" href="../../index-logged-in.html">
+					<img src="../../assets/images/header-and-footer/musiclaps-logo.png" alt="Musiclaps logo">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="nav navbar-nav navbar-left">
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="musicDropdownLink" data-toggle="dropdown">Music<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" id="musicDropdownMenu" role="menu" aria-labelledby="musicDropdownLink">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/new-arrivals/index-logged-in.html">New Arrivals
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/recommended/index-logged-in.html">Recommended
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/staff-picks/index-logged-in.html">Staff Picks
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/collaborations/index-logged-in.html">Collaborations
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/all-music/index-logged-in.html">All Music
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="peopleDropdownLink" data-toggle="dropdown">People<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" id="peopleDropdownMenu" role="menu" aria-labelledby="peopleDropdownLink">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/players-wanted/index-logged-in.html">Players Wanted
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Players Available
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/forum/index-logged-in.html">Forum
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Collab Cafe
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="ourStoryDropdownLink" data-toggle="dropdown">Our Story<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" id="ourStoryDropdownMenu" role="menu" aria-labelledby="ourStoryDropdownLink">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Technology
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Company
+									</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../../views/under-construction/index-logged-in.html">Contact
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+
+				<form class="search" action="" method="get">
+					<span class="glyphicon glyphicon-search" id="glyphiconSearch"></span><input class="search" id="searchJS" type="text" name="search" placeholder="Search">
+				</form>
+				
+				<ul id="flags">
+					<li><a><img id="usa-flag" src="../../assets/images/header-and-footer/usa-flag.jpg" alt="American flag"></a></li>
+					<li><a><img src="../../assets/images/header-and-footer/japan-flag.jpg" alt="Japanese flag"></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right" id="logged-in">
+					<li class="messages-sm"><span class="glyphicon glyphicon-envelope"></span></li>
+					<li class="messages-sm" id="number-of-messages">1</li>
+					<li id="welcome-user-sm">Welcome, &nbsp;<span class="musiclaps-blue"><a class="welcome-user-link" href="../../views/profile/index.html">$firstname</a></span></li><!-- Hard-coded placeholder -->
+					<li id="log-out">
+						<form action="" method="post">
+							<input type="submit" value="Log out">
+						</form>
+					</li>
+					<li id="welcome-user-xs">Welcome, &nbsp;
+						<span class="musiclaps-blue">
+							<a class="welcome-user-link" href="../../views/profile/index.html">$firstname
+							</a>
+						</span>
+						<span class="glyphicon glyphicon-envelope"></span>
+						<span class="number-of-messages">1</span>
+					</li><!-- Hard-coded placeholder -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="wrapper">
+		<div class="container">
+			
+			<nav class="row col-lg-10 col-lg-offset-1">
+				<span class="glyphicon glyphicon-user glyphiconUser"></span>
+	            <h4 class="user-menu userMenu">User Menu</h4>
+				<ul class="nav navbar-nav user-menu userMenu">
+					<li class="first-list-item">
+						<a href="../../views/profile/">My Profile
+						</a>
+					</li>
+					
+					<li id="new-project">
+						<a id="newProjectLink">New Project<span class="caret" id="newProjectCaret"></span>
+						</a>
+						<ul class="dropdown-menu" id="newProjectDropdownMenu" aria-labelledby="newProjectDropdownMenu">
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="recordingPlayerLink">Recording Player
+								</a>
+							</li>
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="uploadMP3Link">Upload MP3
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li id="my-projects">
+						<a class="active" id="myProjectsLink">My Projects<span class="caret" id="myProjectsCaret"></span>
+						</a>
+						<ul class="dropdown-menu" id="myProjectsDropdownMenu" aria-labelledby="myProjectsDropdownMenu">
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="inProgressPrivateLink">In Progress / Private
+								</a>
+							</li>
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="publicLink">Public
+								</a>
+							</li>
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="groupLink">Group
+								</a>
+							</li>
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link active" id="auditionLink">Audition
+								</a>
+							</li>
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="lyricsLink">Lyrics
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li id="collaborations">
+						<a id="collaborationsLink">Collaborations<span class="caret" id="collaborationsCaret"></span>
+						</a>
+						<ul class="dropdown-menu" id="collaborationsDropdownMenu" aria-labelledby="collaborationsDropdownMenu">
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="openCollabLink">Open Collab
+								</a>
+							</li>
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="requestingCollabLink">Requesting Collab
+								</a>
+							</li>
+							<li class="dropdown-menu-list-item">
+								<a class="dropdown-menu-link" id="collaboratorsLink">Collaborators
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="../../views/profile/youtube-links.html">YouTube Links
+						</a>
+					</li>
+					
+					<li>
+						<a href="../../views/profile/messages.html">Messages
+						</a>
+					</li>
+					
+					<li>
+						<a href="../../views/profile/groups.html">Groups
+						</a>
+					</li>
+					
+					<li>
+						<a href="../../views/profile/favorites.html">Favorites
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="col-lg-1"></div>
+		
+			<div class="row col-lg-10 col-lg-offset-1">				
+					
+				<div class="row col-xs-12 col-md-9 projects-container">
+
+					<!-- Project listings -->
+					<section class="row projects-container projectsContainer">
+						<div class="col-xs-5 col-sm-3">
+							<span class="glyphicon-pencil-container"><span class="glyphicon glyphicon-pencil glyphiconPencil"></span></span>
+							<img class="projectImg" src="../../assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
+						</div>
+					
+						<div class="col-xs-7 col-sm-6 col-md-7">
+							<h4>$project title</h4><!-- Hard-coded placeholder -->
+							<h5>Upload Date: <span class="normal">$# days ago</span></h5><!-- Hard-coded placeholder -->
+							<h5>Plays: <span class="normal">$#</span></h5><!-- Hard-coded placeholder -->
+							<h5 class="last-h5 xs">$Type of project <span class="glyphicon glyphicon-lock"></span></h5><!-- Only visible at viewport widths <= 767px -->
+						</div>
+
+						<div class="col-sm-3 col-md-2">
+							<h5 class="last-h5 sm">$Type of project <span class="glyphicon glyphicon-lock"></span></h5><!-- Only visible at viewport widths > 767px -->
+						</div>
+					</section>
+
+					<section class="row projects-container projectsContainer">
+						<div class="col-xs-5 col-sm-3">
+							<span class="glyphicon-pencil-container"><span class="glyphicon glyphicon-pencil glyphiconPencil"></span></span>
+							<img class="projectImg" src="../../assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
+						</div>
+					
+						<div class="col-xs-7 col-sm-6 col-md-7">
+							<h4>$project title</h4><!-- Hard-coded placeholder -->
+							<h5>Upload Date: <span class="normal">$# days ago</span></h5><!-- Hard-coded placeholder -->
+							<h5>Plays: <span class="normal">$#</span></h5><!-- Hard-coded placeholder -->
+							<h5 class="last-h5 xs">$Type of project <span class="glyphicon glyphicon-lock"></span></h5><!-- Only visible at viewport widths <= 767px -->
+						</div>
+
+						<div class="col-sm-3 col-md-2">
+							<h5 class="last-h5 sm">$Type of project <span class="glyphicon glyphicon-lock"></span></h5><!-- Only visible at viewport widths > 767px -->
+						</div>
+					</section>
+
+
+					<section class="noListings">
+						<h4>You currently have no projects in this category</h4>
+					</section>
+					<!-- End of project listings -->
+
+
+						<!-- Project form -->
+						<div id="projectForm">
+
+							<!-- Recording Player -->
+							<div class="row col-xs-12 live-player-container">
+								<iframe width="620" height="380" src="https://www.musiclaps.com/embed/player?songid=null" frameborder="0" scrolling="no"></iframe><!-- Placeholder -->
+							</div>
+							<!-- End of Recording Player -->
+
+
+							<section class="row col-xs-12 project-form-header">
+								<h3>Project Title</h3><!-- Hard-coded placeholder -->
+								<!-- Markup is backwards because elements are floated right -->
+								<span class="glyphicon glyphicon-trash"></span>
+								<select class="project-type" name="">
+									<option value="private">Private</option>
+									<option value="public">Public</option>
+									<option value="group">Group</option>
+									<option value="audition">Audition</option>
+								</select>
+								<span class="glyphicon glyphicon-lock"></span>
+								<span class="glyphicon glyphicon-repeat"></span>
+							</section>
+
+							
+							<section class="row col-xs-12">
+								<div class="project-info-bar">
+									<h4 class="first-h4">$project #</h4><!-- Hard-coded placeholder -->
+									<img class="audio-mixer audioMixer" src="../../assets/images/profile-pages/audio-mixer.jpg" alt="Audio mixer icon">
+									<h4>$instrument name</h4><!-- Hard-coded placeholder -->
+									<h5>$date project started</h5>
+
+									<!-- Markup is backwards because elements are floated right -->
+									<span class="glyphicon glyphicon-trash"></span>
+									<select class="project-type">
+										<option value="private">Private</option><!-- Hard-coded placeholder -->
+									</select>
+								</div>
+							</section>
+							<!-- Volume and pan -->
+							<section class="row col-xs-12 volumeAndPan">
+								<form class="project-form" action="" method="post">
+									<div class="volume-and-pan sm"><!-- Only visible at viewport widths > 580px -->
+										<span class="glyphicon glyphicon-volume-up"></span>
+										<div class="slider"></div>
+										<h4>100</h4><!-- Hard-coded placeholder -->
+
+										<h4 class="left-to-right">L</h4>
+										<div class="slider"></div>
+										<h4>R</h4>
+
+										<span class="glyphicon glyphicon-save"></span>
+										<input class="save-volume-and-pan" type="submit" name="" value="Save">
+									</div>
+
+									<div class="volume-and-pan xs"><!-- Only visible at viewport widths <= 580px -->
+										<div>
+											<span class="glyphicon glyphicon-volume-up"></span>
+											<div class="slider"></div>
+											<h4>100</h4><!-- Hard-coded placeholder -->
+										</div>
+
+										<div>
+											<h4 class="left-to-right">L</h4>
+											<div class="slider"></div>
+											<h4 class="right">R</h4>
+										</div>
+
+										<div>
+											<span class="glyphicon glyphicon-save"></span>
+											<input class="save-volume-and-pan" type="submit" name="" value="Save">
+										</div>
+									</div>
+								</form>
+							</section>
+							<!-- End of volume and pan -->
+
+							<div class="row col-xs-12">
+								<form class="project-form" action="" method="post">
+									<label for="project_title_project_form">Project Title
+										<input class="save" type="submit" name="" value="Save">
+									</label>
+									<input class="project-title-project-form" id="project_title_project_form" type="text" name="">
+								</form>
+							</div>
+
+							<div class="row col-xs-12">
+								<form class="project-form" action="" method="post">
+									<label id="cover-song-label">Cover Song
+										<input class="cover-song-checkbox" type="checkbox" name="">
+										<input class="save" type="submit" name="" value="Save">
+									</label>
+									<input class="credit-cover-song" id="credit_cover_song" type="text" name="" placeholder="Please credit the songwriter if it is not you.">
+								</form>
+							</div>
+
+							<div class="row col-xs-12">
+								<form class="project-form" action="" method="post">
+									<label for="description">Description
+										<input class="save" type="submit" name="" value="Save">
+									</label>
+									<textarea class="description" id="description" name="" placeholder="If you are requesting collaboration, you can mention which instrument(s) here."></textarea>
+								</form>
+							</div>
+
+							<div class="row col-xs-12">
+								<form class="project-form" action="" method="post">
+									<label for="genre">Genre <span class="normal">(select one or more)</span>
+										<input class="save" id="save-genre" type="submit" name="save_genre" value="Save">
+									</label>
+									<div id="genre-form-projects">
+										<!-- Genre form -->
+										<span><input type="checkbox" name="alternative">&nbsp; Alternative</span>
+										<span><input type="checkbox" name="anime">&nbsp; Anime</span>
+										<span><input type="checkbox" name="asian_pop">&nbsp; Asian Pop</span>
+										<span><input type="checkbox" name="blues">&nbsp; Blues</span>
+										<span><input type="checkbox" name="bossa_nova">&nbsp; Bossa Nova</span>
+										<span><input type="checkbox" name="children">&nbsp; Children</span>
+										<span><input type="checkbox" name="classical">&nbsp; Classical</span>
+										<span><input type="checkbox" name="country">&nbsp; Country</span>
+										<span><input type="checkbox" name="dance">&nbsp; Dance</span>
+										<span><input type="checkbox" name="disco">&nbsp; Disco</span>
+										<span><input type="checkbox" name="easy_listening">&nbsp; Easy Listening</span>
+										<span><input type="checkbox" name="electronic">&nbsp; Electronic</span>
+										<span><input type="checkbox" name="enka">&nbsp; Enka</span>
+										<span><input type="checkbox" name="european">&nbsp; European</span>
+										<span><input type="checkbox" name="folk">&nbsp; Folk</span>
+										<span><input type="checkbox" name="funk">&nbsp; Funk</span>
+										<span><input type="checkbox" name="fusion">&nbsp; Fusion</span>
+										<span><input type="checkbox" name="gospel">&nbsp; Gospel</span>
+										<span><input type="checkbox" name="hip_hop">&nbsp; Hip Hop</span>
+										<span><input type="checkbox" name="indie_pop">&nbsp; Indie Pop</span>
+										<span><input type="checkbox" name="jazz">&nbsp; Jazz</span>
+										<span><input type="checkbox" name="latin">&nbsp; Latin</span>
+										<span><input type="checkbox" name="new_age">&nbsp; New Age</span>
+										<span><input type="checkbox" name="opera">&nbsp; Opera</span>
+										<span><input type="checkbox" name="pop">&nbsp; Pop</span>
+										<span><input type="checkbox" name="rnb">&nbsp; R&B</span>
+										<span><input type="checkbox" name="rap">&nbsp; Rap</span>
+										<span><input type="checkbox" name="reggae">&nbsp; Reggae</span>
+										<span><input type="checkbox" name="rock">&nbsp; Rock</span>
+										<span><input type="checkbox" name="samba">&nbsp; Samba</span>
+										<span><input type="checkbox" name="soul">&nbsp; Soul</span>
+										<span><input type="checkbox" name="techno">&nbsp; Techno</span>
+										<span><input type="checkbox" name="world">&nbsp; World</span>
+									</div>
+									<!-- End of genre form -->
+								</form>
+							</div>
+
+							<div class="row col-xs-12">
+								<form class="project-form" action="" method="post">
+									<label for="search_tags">Search Tags
+										<input class="save" type="submit" name="" value="Save">
+									</label>
+									<textarea class="search-tags" id="search_tags" name="" placeholder="Examples: Song Title, Genre, etc."></textarea>
+								</form>
+							</div>
+
+							<div class="row col-xs-12">
+								<form class="project-form" action="" method="post">
+									<label for="scrolling_comment">Scrolling Comment
+										<input class="save" type="submit" name="" value="Save">
+									</label>
+									<textarea id="scrolling_comment" name=""></textarea>
+								</form>
+							</div>
+
+							<form class="project-form" action="" method="post" enctype="multipart/form-data">
+								<div class="row col-xs-12">
+									<label for="stage_background_img">Stage Background Image <span class="normal">(620w x 190h recommended)</span>
+									</label>
+								</div>
+								<div class="row col-xs-12">
+									<div class="row">
+										<div class="col-xs-12 col-sm-6">
+											<div id="no-img-container">
+												<h2>no image</h2>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-6">
+											<div id="upload-stage-background-img-container">
+												<input class="choose-file" id="stage_background_img" type="file" name="" value="Choose File">
+												<div id="save-stage-background-img-and-trash-container">
+													<input id="save-stage-background-img" type="submit" name="" value="Save">
+													<span class="glyphicon glyphicon-trash"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+
+							<form class="project-form" action="" method="post">
+								<section class="row col-xs-12">
+									<h4 id="type-of-collab">Type of Collaboration</h4>
+								</section>
+								<div class="row col-xs-12">
+									<div class="type-of-collab-container">
+										<div class="row">
+											<div class="col-xs-12 col-sm-4">
+												<span class="glyphicon glyphicon-ok noCollabGlyphicon"></span>
+												<input class="noCollab" type="submit" name="" value="No Collab">
+											</div>
+											<div class="col-xs-12 col-sm-4">
+												<span class="glyphicon glyphicon-ok openCollabGlyphicon"></span>
+												<input class="openCollab" type="submit" name="" value="Open Collab">
+											</div>
+											<div class="col-xs-12 col-sm-4">
+												<span class="glyphicon glyphicon-ok requestingCollabGlyphicon"></span>
+												<input class="requestingCollab" type="submit" name="" value="Requesting Collab">
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+
+							<form class="project-form" action="" method="post">
+								<section class="row col-xs-12">
+									<h4 id="copyright">Copyright Type</h4>
+									<h4 class="red">
+										<strong>
+											** Original songs only **
+											<span class="block">If you want someone to collaborate with you, select a Creative Commons license.</span>
+											<span class="block">Creative Commons licenses are irrevocable - please think carefully before choosing one.</span>
+										</strong>
+									</h4>
+								</section>
+								<div class="row col-xs-12">
+									<ul id="copyright-types-container">
+										<li class="row col-xs-12 first-list-item">
+											<input type="radio" name="" value="cc_by">
+											<img src="../../assets/images/profile-pages/copyright/cc-by.png" alt="Attribution symbol">
+											<h4>Attribution<span class="glyphicon glyphicon-question-sign" id="glyphiconQuestionSignCCBY"></span></h4>
+											<div class="cc-description" id="CCBYDescription">This license lets others distribute, remix, tweak, and build upon your work, even commercially, as long as they credit you for the original creation. This is the most accommodating of licenses offered. Recommended for maximum dissemination and use of licensed materials. Source: <a href="//creativecommons.org/licenses/" target="blank">creativecommons.org/licenses</a></div>
+										</li>
+										<li class="row col-xs-12">
+											<input type="radio" name="" value="cc_by_nd">
+											<img src="../../assets/images/profile-pages/copyright/cc-by-nd.png" alt="Attribution-NoDerivs symbol">
+											<h4>Attribution - No Derivative Works<span class="glyphicon glyphicon-question-sign" id="glyphiconQuestionSignCCBYND"></span></h4>
+											<div class="cc-description" id="CCBYNDDescription">This license allows for redistribution, commercial and non-commercial, as long as it is passed along unchanged and in whole, with credit to you. Source: <a href="//creativecommons.org/licenses/" target="blank">creativecommons.org/licenses</a></div>
+										</li>
+										<li class="row col-xs-12">
+											<input type="radio" name="" value="cc_by_nc_sa">
+											<img src="../../assets/images/profile-pages/copyright/cc-by-nc-sa.png" alt="Attribution-NonCommercial-ShareAlike symbol">
+											<h4>Attribution - NonCommercial - Share Alike<span class="glyphicon glyphicon-question-sign" id="glyphiconQuestionSignCCBYNCSA"></span></h4>
+											<div class="cc-description" id="CCBYNCSADescription">This license lets others remix, tweak, and build upon your work non-commercially, as long as they credit you and license their new creations under the identical terms. Source: <a href="//creativecommons.org/licenses/" target="blank">creativecommons.org/licenses</a></div>
+										</li>
+										<li class="row col-xs-12">
+											<input type="radio" name="" value="cc_by_sa">
+											<img src="../../assets/images/profile-pages/copyright/cc-by-sa.png" alt="Attribution-ShareAlike symbol">
+											<h4>Attribution - Share Alike<span class="glyphicon glyphicon-question-sign" id="glyphiconQuestionSignCCBYSA"></span></h4>
+											<div class="cc-description" id="CCBYSADescription">This license lets others remix, tweak, and build upon your work even for commercial purposes, as long as they credit you and license their new creations under the identical terms. This license is often compared to “copyleft” free and open source software licenses. All new works based on yours will carry the same license, so any derivatives will also allow commercial use. This is the license used by Wikipedia, and is recommended for materials that would benefit from incorporating content from Wikipedia and similarly licensed projects. Source: <a href="//creativecommons.org/licenses/" target="blank">creativecommons.org/licenses</a></div>
+										</li>
+										<li class="row col-xs-12">
+											<input type="radio" name="" value="cc_by_nc">
+											<img src="../../assets/images/profile-pages/copyright/cc-by-nc.png" alt="Attribution-NonCommercial symbol">
+											<h4>Attribution - NonCommercial<span class="glyphicon glyphicon-question-sign" id="glyphiconQuestionSignCCBYNC"></span></h4>
+											<div class="cc-description" id="CCBYNCDescription">This license lets others remix, tweak, and build upon your work non-commercially, and although their new works must also acknowledge you and be non-commercial, they don’t have to license their derivative works on the same terms. Source: <a href="//creativecommons.org/licenses/" target="blank">creativecommons.org/licenses</a></div>
+										</li>
+										<li class="row col-xs-12">
+											<input type="radio" name="" value="cc_by_nc_nd">
+											<img src="../../assets/images/profile-pages/copyright/cc-by-nc-nd.png" alt="Attribution-NonCommercial-NoDerivs symbol">
+											<h4>Attribution - NonCommercial - No Derivative Works<span class="glyphicon glyphicon-question-sign" id="glyphiconQuestionSignCCBYNCND"></span></h4>
+											<div class="cc-description" id="CCBYNCNDDescription">This license is the most restrictive of the six main Creative Commons licenses, only allowing others to download your works and share them with others as long as they credit you, but they can’t change them in any way or use them commercially. Source: <a href="//creativecommons.org/licenses/" target="blank">creativecommons.org/licenses</a></div>
+										</li>
+										<li class="row col-xs-12">
+											<input type="radio" name="" value="public_domain">
+											<img src="../../assets/images/profile-pages/copyright/public-domain.png" alt="Public Domain symbol">
+											<h4>Public Domain<span class="glyphicon glyphicon-question-sign" id="glyphiconQuestionSignPublicDomain"></span></h4>
+											<div class="cc-description" id="PublicDomainDescription">The Public Domain Mark is recommended for works that are free of known copyright around the world. These will typically be very old works.  It is not recommended for use with works that are in the public domain in some jurisdictions if they also known to be restricted by copyright in others. Source: <a href="http://creativecommons.org/about/pdm" target="blank">creativecommons.org/about/pdm</a></div>
+										</li>
+										<li class="row col-xs-12">
+											<input type="radio" name="" value="all_rights_reserved">
+											<img id="all-rights-reserved" src="../../assets/images/profile-pages/copyright/all-rights-reserved.gif" alt="Copyright symbol">
+											<h4 class="last-h4">All Rights Reserved</h4>
+										</li>
+									</ul>
+								</div>
+							</form>
+
+						</div>
+						<!-- End of project form -->
+
+
+					<!-- "Change Project Image" form -->
+					<section class="row col-xs-12 change-project-img-container changeProjectImgContainer">
+
+						<form action="" method="post" enctype="multipart/form-data">
+							<span class="glyphicon glyphicon-remove glyphiconRemove"></span>
+							<label for="change_project_img">Change Project Image</label>
+						
+							<input class="choose-file" id="change_project_img" type="file" value="Choose File">
+							
+							<input class="update-file" type="submit" value="Update">
+						</form>
+					</section>
+
+					<!-- End of "Change Project Image" form -->
+
+				</div>
+				<div class="row col-md-3 recommended">
+					<section class="profile-right recommended">
+						
+						<div class="row col-xs-12">
+							<h3>Recommended</h3>
+						</div>
+
+						<div class="row col-xs-12 first-row">
+							<h4 class="first-h4">Free Guitar Amp Simulator for Mac and Windows</h4>
+							<a href="http://www.synthtopia.com/content/2010/01/22/free-guitar-amp-simulator-for-mac-windows/" target="blank"><img src="../../assets/images/ads/free-guitar-amp-simulator.jpg" alt="Free Guitar Amp Simulator"></a>
+						</div>
+
+						<div class="row col-xs-12">
+							<h4>Free AmpLion Guitar Amp Simulator </h4>
+							<h5>ampLion Free gives you the opportunity to experience the quality of ampLion simulation. You gain free access to one of the most famous guitar amps ever made.</h5>
+							<a href="https://www.macupdate.com/app/mac/40400/amplion-free" target="blank"><img src="../../assets/images/ads/free-amplion-simulator.jpg" alt="Free AmpLion Guitar Amp Simulator"></a>
+						</div>
+
+						<div class="row col-xs-12">
+							<h4>Realtek High Definition Driver</h4>
+							<h5>Realtek high definition (HD) audio drivers are now available, adding countless "driver customizations" and supporting a number of new Realtek chips.</h5>
+							<a href="http://218.210.127.131/downloads/Default.aspx?Langid=1" target="blank"><img src="../../assets/images/ads/realtek-logo.gif" alt="RealTek logo"></a>
+						</div>
+
+					</section>
+				</div>
+
+			</div>
+			<div class="col-lg-1"></div>	
+		
+		</div>
+
+		
+		<div class="space-above-footer"></div>
+	</div>
+
+	<footer class="navbar-default">
+		<div class="container">
+			<a class="navbar-brand" href="../../index-logged-in.html">
+				<img src="../../assets/images/header-and-footer/musiclaps-logo.png" alt="Musiclaps logo">&nbsp; &copy; 2015
+			</a>
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="../../views/under-construction/index-logged-in.html">Company</a></li>
+				<li><a href="../../views/under-construction/index-logged-in.html">Press</a></li>
+				<li><a href="../../views/under-construction/index-logged-in.html">Contact</a></li>
+				<li><a href="../../views/privacy/index-logged-in.html">Privacy</a></li>
+				<li><a href="../../views/terms/index-logged-in.html">Terms</a></li>
+				<li><a href="../../views/faqs/index-logged-in.html">FAQs</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="//www.facebook.com/Musiclaps" target="blank"><img class="facebook-icon" src="../../assets/images/global/facebook-icon.png" alt="Facebook icon"></a></li>
+				<li><a href="//twitter.com/musiclaps" target="blank"><img class="twitter-icon" src="../../assets/images/global/twitter-icon.png" alt="Twitter icon"></a></li>
+				<li><a href="//www.youtube.com/user/Musiclaps" target="blank"><img id="youtube-icon" src="../../assets/images/header-and-footer/youtube-icon.png" alt="YouTube icon"></a></li>
+			</ul>
+		</div>
+	</footer>
+	<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+	<script>
+		WebFont.load({
+		    google: {
+		      families: ['Roboto Condensed', 'Roboto:300,400,700']
+		    }
+		});
+	</script>
+	<script src="../../assets/javascripts/header.js"></script>
+	<script src="../../assets/javascripts/forum.js"></script>
+	<script src="../../assets/javascripts/user-menu.js"></script>
+	<script src="../../assets/javascripts/profile/index.js"></script>
+	<script src="../../assets/javascripts/profile/new-project.js"></script>
+	<script src="../../assets/javascripts/profile/my-projects-and-collaborations.js"></script>
+	<script src="../../assets/javascripts/profile/youtube.js"></script>
+	<script src="../../assets/javascripts/profile/messages.js"></script>
+	<script src="../../assets/javascripts/profile/groups.js"></script>
+	<script src="../../assets/javascripts/live-player.js"></script>
+	<script src="../../assets/javascripts/players-wanted.js"></script>
+</body>
+</html>
