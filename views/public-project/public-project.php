@@ -3,7 +3,6 @@
 
 	$page_title = 'Project Name'; // Hard-coded placeholder
 	
-	include(ROOT_PATH . 'models/new-db-connection.php');
 	include(ROOT_PATH . 'views/include/header.php');
 
 ?>

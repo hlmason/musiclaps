@@ -3,7 +3,6 @@
 
 	$page_title = 'Collaborators';
 	
-	include(ROOT_PATH . 'models/new-db-connection.php');
 	include(ROOT_PATH . 'views/include/header-logged-in.php');
 	include(ROOT_PATH . 'views/include/profile/user-menu.php');
 
