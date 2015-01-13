@@ -12,7 +12,7 @@ Back-End Framework: None currently
 
 Background: 
 
-The app was originally built by a back-end engineer in an obscure language called TeraScript.  A front-end development contractor was later hired, and the app was recoded from scratch (in HTML/PHP, CSS/Sass, and Javascript/jQuery).  In the future, the server-side language will not be PHP.
+The app was originally built by a back-end engineer in an obscure program called TeraScript.  A front-end development contractor was later hired, and the app front-end was recoded from scratch (in HTML/PHP, CSS/Sass, and Javascript/jQuery).  In the future, the server-side language will not be PHP.
 
 =================================
 
