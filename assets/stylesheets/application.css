@@ -4160,17 +4160,9 @@ section.project-form-header.requesting-collab-page .glyphicon-repeat {
     margin-top: 9px; }
   .volume-and-pan .glyphicon-volume-up, .project-info-bar.requesting-collab-page .glyphicon-volume-up {
     margin-left: 30px; }
-  .volume-and-pan .slider, .project-info-bar.requesting-collab-page .slider {
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    background-color: #e7e7e7;
-    border: 1px solid #cecece;
+  .volume-and-pan input.slider, .project-info-bar.requesting-collab-page input.slider {
     display: inline-block;
-    height: 7px;
-    margin-bottom: 2px;
     width: 100px; }
-  .volume-and-pan .glyphicon-save, .project-info-bar.requesting-collab-page .glyphicon-save {
-    margin-right: 9px; }
   .volume-and-pan input.save-volume-and-pan, .volume-and-pan input.save-volume, .project-info-bar.requesting-collab-page input.save-volume-and-pan, .project-info-bar.requesting-collab-page input.save-volume {
     background: none;
     border: none;
@@ -4180,6 +4172,8 @@ section.project-form-header.requesting-collab-page .glyphicon-repeat {
     padding-right: 5px; }
     .volume-and-pan input.save-volume-and-pan:hover, .volume-and-pan input.save-volume-and-pan:focus, .volume-and-pan input.save-volume:hover, .volume-and-pan input.save-volume:focus, .project-info-bar.requesting-collab-page input.save-volume-and-pan:hover, .project-info-bar.requesting-collab-page input.save-volume-and-pan:focus, .project-info-bar.requesting-collab-page input.save-volume:hover, .project-info-bar.requesting-collab-page input.save-volume:focus {
       color: #2a6496; }
+  .volume-and-pan .glyphicon-save, .project-info-bar.requesting-collab-page .glyphicon-save {
+    margin-right: 9px; }
 
 .volume-and-pan.xs {
   display: none; }

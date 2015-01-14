@@ -832,24 +832,19 @@ section.project-form-header {
 	.glyphicon-volume-up {
 		margin-left: 30px;
 	}
-	.slider {
-		@include border-radius(10px);
-		background-color: $musiclaps-light-gray;
-		border: $nav-border;
-		display: inline-block;
-		height: 7px;
-		margin-bottom: 2px;
-		width: 100px;
-	}
-	.glyphicon-save {
-		margin-right: 9px;
-	}
 	input {
+		&.slider {
+			display: inline-block;
+			width: 100px;
+		}
 		 &.save-volume-and-pan, &.save-volume {
 			@include submit-link;
 			margin-top: 6px;
 			padding-right: 5px;
 		}
+	}
+	.glyphicon-save {
+		margin-right: 9px;
 	}
 }
 
