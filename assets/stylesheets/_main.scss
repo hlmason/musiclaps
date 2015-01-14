@@ -835,6 +835,8 @@ section.project-form-header {
 	input {
 		&.slider {
 			display: inline-block;
+			position: relative;
+			top: 2px;
 			width: 100px;
 		}
 		 &.save-volume-and-pan, &.save-volume {
