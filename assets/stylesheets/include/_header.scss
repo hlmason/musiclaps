@@ -216,7 +216,7 @@ nav {
 		}
 		&#new-project, &#my-projects, &#collaborations {
 			a:not(.dropdown-menu-link) { 
-				padding: 14px 11.5px 12px; // Left/right padding lines menu up with "Recommended" box (overwrites general padding of 15px for links)
+				padding: 14px 13px 12px; // Left/right padding lines menu up with "Recommended" box (overwrites general padding of 15px for links)
 			}
 		}
 	}
