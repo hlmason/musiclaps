@@ -3104,7 +3104,7 @@ ul.user-menu li:not(.dropdown-menu-list-item) {
       ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link).active, ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):hover, ul.user-menu li:not(.dropdown-menu-list-item) a:not(.dropdown-menu-link):focus {
         background-color: white; }
 ul.user-menu li#new-project a:not(.dropdown-menu-link), ul.user-menu li#my-projects a:not(.dropdown-menu-link), ul.user-menu li#collaborations a:not(.dropdown-menu-link) {
-  padding: 14px 11.5px 12px; }
+  padding: 14px 13px 12px; }
 
 /* ===================================
     Modal
