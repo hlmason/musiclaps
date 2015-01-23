@@ -4626,6 +4626,10 @@ section#messages-header {
       margin-bottom: 0;
       margin-top: 1px;
       text-align: center; }
+    .friends-container .username-and-img .glyphicon-trash {
+      opacity: 0; }
+    .friends-container .username-and-img .new-span-wrapper:hover .glyphicon-trash {
+      opacity: 1; }
 
 section.messages-container img {
   height: 40px;

@@ -44,28 +44,38 @@
 							</div>
 							<div class="username-and-img">
 								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
-								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+								<span class="new-span-wrapper">
+									<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+									<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+								</span>
 							</div>
 							<div class="username-and-img">
 								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
-								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+								<span class="new-span-wrapper">
+									<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+									<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+								</span>
 							</div>
 							<div class="username-and-img">
 								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
-								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+								<span class="new-span-wrapper">
+									<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+									<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+								</span>
 							</div>
 							<div class="username-and-img">
 								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
-								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+								<span class="new-span-wrapper">
+									<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+									<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+								</span>
 							</div>
 							<div class="username-and-img">
 								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
-								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+								<span class="new-span-wrapper">
+									<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+									<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+								</span>
 							</div>
 						</div>
 
@@ -77,28 +87,38 @@
 							</div>
 							<div class="username-and-img">
 								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
-								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+								<span class="new-span-wrapper">
+									<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+									<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+								</span>
 							</div>
 							<div class="username-and-img">
 								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
-								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+								<span class="new-span-wrapper">
+									<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+									<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+								</span>
 							</div>
 							<div class="username-and-img">
 								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
-								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+								<span class="new-span-wrapper">
+									<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+									<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+								</span>
 							</div>
 							<div class="username-and-img">
 								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
-								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+								<span class="new-span-wrapper">
+									<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+									<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+								</span>
 							</div>
 							<div class="username-and-img">
 								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
-								<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
-								<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+								<span class="new-span-wrapper">
+									<h5 class="username">$username</h5><!-- Hard-coded placeholder -->
+									<span class="glyphicon glyphicon-trash" id="glyphiconTrash"></span>
+								</span>
 							</div>
 						</div>
 					</div>
