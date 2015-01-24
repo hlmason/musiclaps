@@ -664,18 +664,23 @@ section.projects-container {
 	padding-bottom: 10px;
 	padding-top: 10px;
 	width: 98%;
-	.glyphicon-pencil-container {
-		@include border-radius(100%);
-		background-color: white;
-		left: 50px;
-		opacity: 0.95;
-		padding: 4px 5px;
-		position: absolute;
-		top: 20px;
-		.glyphicon-pencil {
-			height: 20px;
-			text-align: center;
-			width: 20px;
+	.glyphicon-pencil-div {
+		&:hover .glyphicon-pencil-container {
+			opacity: 1;
+		}
+		.glyphicon-pencil-container {
+			@include border-radius(100%);
+			background-color: white;
+			left: 50px;
+			opacity: 0;
+			padding: 4px 5px;
+			position: absolute;
+			top: 20px;
+			.glyphicon-pencil {
+				height: 20px;
+				text-align: center;
+				width: 20px;
+			}
 		}
 	}
 	img {
@@ -1316,15 +1321,11 @@ section#messages-header {
 }
 
 .friends-container {
-	text-align: center;
 	.img-and-div {
 		display: inline-block;
-		// img:not(.first-img), h5:not(.first-h5) {
-		// 	margin-left: 38px;
-		// }
 		img, .username-and-trash {
-			margin-left: 19px;
-			margin-right: 19px;
+			margin-left: 16px;
+			margin-right: 16px;
 		}
 		img {
 			height: 65px;
@@ -1336,14 +1337,13 @@ section#messages-header {
 			}
 		}
 		.username-and-trash {
+		 	text-align: center;
 			&:hover .glyphicon-trash {
 			 	opacity: 1;
-			 	text-align: center;
 			}
 			h5 {
 				margin-bottom: 0;
 				margin-top: 1px;
-				text-align: center;
 			}
 			.glyphicon-trash {
 				opacity: 0;

@@ -38,7 +38,7 @@
 					<div class="friends-container row col-xs-12" id="friendsContainer">
 						<div class="row col-xs-12">
 							<div class="img-and-div">
-								<img class="first-img" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 								<div class="username-and-trash">
 									<h5 class="first-h5 username">$username</h5><!-- Hard-coded placeholder -->
 									<span class="glyphicon glyphicon-trash"></span>
@@ -81,7 +81,7 @@
 							</div>
 
 							<div class="img-and-div">
-								<img class="first-img" src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
+								<img src="<?php echo BASE_URL; ?>assets/images/profile-pages/female-avatar.png" alt="Placeholder for female Musiclaps user"><!-- Hard-coded placeholder -->
 								<div class="username-and-trash">
 									<h5 class="first-h5 username">$username</h5><!-- Hard-coded placeholder -->
 									<span class="glyphicon glyphicon-trash"></span>

@@ -1,6 +1,10 @@
 					<section class="row projects-container projectsContainer">
 						<div class="col-xs-5 col-sm-3">
-							<span class="glyphicon-pencil-container"><span class="glyphicon glyphicon-pencil glyphiconPencil"></span></span>
+							<div class="glyphicon-pencil-div">
+								<span class="glyphicon-pencil-container">
+									<span class="glyphicon glyphicon-pencil glyphiconPencil"></span>
+								</span>
+							</div>
 							<img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
 						</div>
 					
@@ -18,7 +22,11 @@
 
 					<section class="row projects-container projectsContainer">
 						<div class="col-xs-5 col-sm-3">
-							<span class="glyphicon-pencil-container"><span class="glyphicon glyphicon-pencil glyphiconPencil"></span></span>
+							<div class="glyphicon-pencil-div">
+								<span class="glyphicon-pencil-container">
+									<span class="glyphicon glyphicon-pencil glyphiconPencil"></span>
+								</span>
+							</div>
 							<img class="projectImg" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
 						</div>
 					

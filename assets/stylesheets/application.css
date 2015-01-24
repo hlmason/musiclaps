@@ -4039,16 +4039,18 @@ section.projects-container {
   padding-bottom: 10px;
   padding-top: 10px;
   width: 98%; }
-  section.projects-container .glyphicon-pencil-container {
+  section.projects-container .glyphicon-pencil-div:hover .glyphicon-pencil-container {
+    opacity: 1; }
+  section.projects-container .glyphicon-pencil-div .glyphicon-pencil-container {
     -moz-border-radius: 100%;
     border-radius: 100%;
     background-color: white;
     left: 50px;
-    opacity: 0.95;
+    opacity: 0;
     padding: 4px 5px;
     position: absolute;
     top: 20px; }
-    section.projects-container .glyphicon-pencil-container .glyphicon-pencil {
+    section.projects-container .glyphicon-pencil-div .glyphicon-pencil-container .glyphicon-pencil {
       height: 20px;
       text-align: center;
       width: 20px; }
@@ -4609,27 +4611,25 @@ section#messages-header {
     .add-friend-container input.add-friend-submit:hover, .add-friend-container input.add-friend-submit:focus {
       background-color: #45b7ff; }
 
-.friends-container {
-  text-align: center; }
-  .friends-container .img-and-div {
-    display: inline-block; }
-    .friends-container .img-and-div img, .friends-container .img-and-div .username-and-trash {
-      margin-left: 19px;
-      margin-right: 19px; }
-    .friends-container .img-and-div img {
-      height: 65px;
-      padding-left: 0;
-      margin-top: 30px;
-      width: 65px; }
-      .friends-container .img-and-div img:hover {
-        cursor: pointer; }
+.friends-container .img-and-div {
+  display: inline-block; }
+  .friends-container .img-and-div img, .friends-container .img-and-div .username-and-trash {
+    margin-left: 16px;
+    margin-right: 16px; }
+  .friends-container .img-and-div img {
+    height: 65px;
+    padding-left: 0;
+    margin-top: 30px;
+    width: 65px; }
+    .friends-container .img-and-div img:hover {
+      cursor: pointer; }
+  .friends-container .img-and-div .username-and-trash {
+    text-align: center; }
     .friends-container .img-and-div .username-and-trash:hover .glyphicon-trash {
-      opacity: 1;
-      text-align: center; }
+      opacity: 1; }
     .friends-container .img-and-div .username-and-trash h5 {
       margin-bottom: 0;
-      margin-top: 1px;
-      text-align: center; }
+      margin-top: 1px; }
     .friends-container .img-and-div .username-and-trash .glyphicon-trash {
       opacity: 0; }
 
