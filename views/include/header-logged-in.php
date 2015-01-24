@@ -222,7 +222,7 @@
 					<li class="messages-sm" id="number-of-messages">1</li>
 					<li id="welcome-user-sm">Welcome, &nbsp;<span class="musiclaps-blue"><a class="welcome-user-link" href="<?php echo BASE_URL; ?>views/profile/index.php">$firstname</a></span></li><!-- Hard-coded placeholder -->
 					<li id="log-out">
-						<form action="" method="post">
+						<form action="<?php echo BASE_URL; ?>controllers/logout-controller.php" method="post">
 							<input type="submit" value="Log out">
 						</form>
 					</li>
