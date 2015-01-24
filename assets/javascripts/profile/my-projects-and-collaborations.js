@@ -203,7 +203,8 @@ $(document).ready(function() {
 	// 		glyphiconPencil.hide();
 	// 	}
 	// });
-	glyphiconPencil.on('click', function() {
+	glyphiconPencil.on('click', function(event) {
+		event.stopPropagation();
 		changeProjectImgContainer.fadeIn('fast');
 	});
 
