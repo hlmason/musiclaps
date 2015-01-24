@@ -4611,21 +4611,27 @@ section#messages-header {
 
 .friends-container {
   text-align: center; }
-  .friends-container .username-and-img {
+  .friends-container .img-and-div {
     display: inline-block; }
-    .friends-container .username-and-img img:not(.first-img), .friends-container .username-and-img h5:not(.first-h5) {
-      margin-left: 38px; }
-    .friends-container .username-and-img img {
+    .friends-container .img-and-div img, .friends-container .img-and-div .username-and-trash {
+      margin-left: 19px;
+      margin-right: 19px; }
+    .friends-container .img-and-div img {
       height: 65px;
       padding-left: 0;
       margin-top: 30px;
       width: 65px; }
-      .friends-container .username-and-img img:hover {
+      .friends-container .img-and-div img:hover {
         cursor: pointer; }
-    .friends-container .username-and-img h5 {
+    .friends-container .img-and-div .username-and-trash:hover .glyphicon-trash {
+      opacity: 1;
+      text-align: center; }
+    .friends-container .img-and-div .username-and-trash h5 {
       margin-bottom: 0;
       margin-top: 1px;
       text-align: center; }
+    .friends-container .img-and-div .username-and-trash .glyphicon-trash {
+      opacity: 0; }
 
 section.messages-container img {
   height: 40px;

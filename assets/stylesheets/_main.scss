@@ -1317,10 +1317,14 @@ section#messages-header {
 
 .friends-container {
 	text-align: center;
-	.username-and-img {
+	.img-and-div {
 		display: inline-block;
-		img:not(.first-img), h5:not(.first-h5) {
-			margin-left: 38px;
+		// img:not(.first-img), h5:not(.first-h5) {
+		// 	margin-left: 38px;
+		// }
+		img, .username-and-trash {
+			margin-left: 19px;
+			margin-right: 19px;
 		}
 		img {
 			height: 65px;
@@ -1331,10 +1335,19 @@ section#messages-header {
 				cursor: pointer;
 			}
 		}
-		h5 {
-			margin-bottom: 0;
-			margin-top: 1px;
-			text-align: center;
+		.username-and-trash {
+			&:hover .glyphicon-trash {
+			 	opacity: 1;
+			 	text-align: center;
+			}
+			h5 {
+				margin-bottom: 0;
+				margin-top: 1px;
+				text-align: center;
+			}
+			.glyphicon-trash {
+				opacity: 0;
+			}
 		}
 	}
 }
