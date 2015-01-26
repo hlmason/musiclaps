@@ -43,7 +43,6 @@ $(document).ready(function() {
 	
 	$('.noListings').hide();
 
-	glyphiconPencil.hide();
 	privateURL.hide();
 	projectForm.hide();
 	noCollabGlyphicon.hide();
@@ -194,17 +193,18 @@ $(document).ready(function() {
 
 	/* =================================== */
 
-	projectImg.on({
-		mouseenter: function() 
-		{
-			glyphiconPencil.show();
-		},
-		mouseleave: function() 
-		{
-			glyphiconPencil.hide();
-		}
-	});
-	glyphiconPencil.on('click', function() {
+	// projectImg.on({
+	// 	mouseenter: function() 
+	// 	{
+	// 		glyphiconPencil.show();
+	// 	},
+	// 	mouseleave: function() 
+	// 	{
+	// 		glyphiconPencil.hide();
+	// 	}
+	// });
+	glyphiconPencil.on('click', function(event) {
+		event.stopPropagation();
 		changeProjectImgContainer.fadeIn('fast');
 	});
 
