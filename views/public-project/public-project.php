@@ -133,7 +133,7 @@
 						</div>
 
 						<div class="row col-xs-12">
-							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
+							<img class="first-img" src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
 						</div>
 						<section class="row col-xs-12">
 							<a href="<?php echo BASE_URL; ?>views/public-project/public-project.php"><h4>$Project Name</h4></a><!-- Hard-coded placeholder -->
