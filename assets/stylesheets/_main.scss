@@ -665,10 +665,10 @@ section.projects-container {
 	padding-top: 10px;
 	width: 98%;
 	.glyphicon-pencil-div {
-		&:hover .glyphicon-pencil-container {
+		&:hover span.glyphicon-pencil-container {
 			opacity: 1;
 		}
-		.glyphicon-pencil-container {
+		span.glyphicon-pencil-container {
 			@include border-radius(100%);
 			background-color: white;
 			left: 50px;
@@ -1547,12 +1547,20 @@ section.public-project-header h5, img#cover-song {
 		.glyphicon:not(.first-glyphicon) {
 			margin-left: 23px;
 		}
-		img#cover-song {
-			float: right;
-			height: 31px;
-			margin-right: 25px;
-			margin-top: 20px;
-			width: 88px;
+		#song-description-container {
+			display: inline;
+			img#cover-song, h5#song-description  {
+				float: right;
+			}
+			img#cover-song {
+				height: 31px;
+				margin-right: 25px;
+				margin-top: 20px;
+				width: 88px;
+			}
+			h5#song-description {
+				margin-right: 4px;
+			}
 		}
 	}
 	&#project-details-container {
@@ -1752,10 +1760,19 @@ section.profile-right.profile-page.project-details-page .row {
 }
 
 .profile-right.public-project-page {
+	#lyrics-player {
+		background-color: $musiclaps-light-gray;
+		height: 361px;
+		margin-top: 15px;
+		width: 295px;
+	}
 	img {
 		height: 75px;
 		margin-top: 15px;
 		width: 120px;
+		&:first-child {
+			margin-top: 41px;
+		}
 	}
 	h4, h5 {
 		margin-top: 0;

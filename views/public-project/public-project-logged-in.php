@@ -10,7 +10,7 @@
 	<div id="wrapper">
 		<div class="container">
 
-			<div class="row col-lg-10 col-lg-offset-2">				
+			<div class="row col-lg-10 col-lg-offset-1">				
 					
 				<div class="row col-xs-12 col-md-9">
 
@@ -63,7 +63,11 @@
 							<span class="glyphicon"></span><!-- Placeholder -->
 							<h5>Requesting Collab</h5>
 
-							<img id="cover-song" src="<?php echo BASE_URL; ?>assets/images/public-project-pages/cover-song.png" alt="Cover song icon">
+							<!-- Markup is backwards because elements are floated right -->
+							<div id="song-description-container">
+								<img id="cover-song" src="<?php echo BASE_URL; ?>assets/images/public-project-pages/cover-song.png" alt="Cover song icon">
+								<h5 id="song-description">Cover Song</h5>
+							</div>
 						</div>
 					</section>
 
@@ -124,6 +128,10 @@
 				</div>
 				<div class="row col-xs-12 col-md-3 public-project-page">
 					<div class="profile-right public-project-page">
+						<div class="row col-xs-12">
+							<div id="lyrics-player"></div><!-- Lyrics player -->
+						</div>
+
 						<div class="row col-xs-12">
 							<img src="<?php echo BASE_URL; ?>assets/images/live-player-pg/rainbow-music-notes.png" alt="Project image"><!-- Hard-coded placeholder -->
 						</div>

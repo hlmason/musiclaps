@@ -416,9 +416,15 @@
 	img#select-song-img { display: none; } // "Select a song modal"
 	.public-project-info.type-of-collab-container {
 		padding-bottom: 15px;
-		img#cover-song {
+		div#song-description-container {
 			display: block;
-			float: none !important;
+			img#cover-song, h5#song-description {
+				float: none !important;
+				margin-top: 0;
+			}
+			img#cover-song {
+				margin-right: 4px !important;
+			}
 		}
 	}
 	.volume-and-pan.sm { display: none; }
