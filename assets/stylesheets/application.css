@@ -5003,7 +5003,7 @@ section.profile-right.profile-page.project-details-page .row {
   height: 75px;
   margin-top: 15px;
   width: 120px; }
-  .profile-right.public-project-page img:first-child {
+  .profile-right.public-project-page img.first-img {
     margin-top: 41px; }
 .profile-right.public-project-page h4, .profile-right.public-project-page h5 {
   margin-top: 0;
